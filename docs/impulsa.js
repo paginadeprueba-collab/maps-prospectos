@@ -8,7 +8,15 @@
   const IMPULSA_WORKER_URL = "https://impulsa-investigador.lagosscarlos44.workers.dev";
   const API = (IMPULSA_WORKER_URL || (typeof WORKER_URL !== "undefined" ? WORKER_URL : "")).replace(/\/$/, "");
   const $ = (id) => document.getElementById(id);
-  const e = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&", "<": "<", ">": ">", '"': """, "'": "&#39;" }[c]));
+  function e(s) {
+    return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+      "&": "&" + "amp;",
+      "<": "&" + "lt;",
+      ">": "&" + "gt;",
+      '"': "&" + "quot;",
+      "'": "&#39;"
+    }[c]));
+  }
 
   let resultados = cargar();
   let prospectos = []; // de la búsqueda elegida
@@ -253,13 +261,14 @@
   }
 
   /* ---------- wiring ---------- */
-  $("impBusqueda").addEventListener("change", cargarBusqueda);
-  $("impBtnSig").addEventListener("click", seleccionarSiguientes);
-  $("impBtnInvestigar").addEventListener("click", investigar);
-  $("impBanda").addEventListener("change", renderOportunidades);
-  $("impExpJson").addEventListener("click", exportJson);
-  $("impExpCsv").addEventListener("click", exportCsv);
-  $("impImp").addEventListener("change", (ev) => ev.target.files[0] && importJson(ev.target.files[0]));
-  $("btnTopImpulsa").addEventListener("click", () => { location.hash = "#/impulsa"; });
+  const on = (id, ev, fn) => { const el = $(id); if (el) el.addEventListener(ev, fn); };
+  on("impBusqueda", "change", cargarBusqueda);
+  on("impBtnSig", "click", seleccionarSiguientes);
+  on("impBtnInvestigar", "click", investigar);
+  on("impBanda", "change", renderOportunidades);
+  on("impExpJson", "click", exportJson);
+  on("impExpCsv", "click", exportCsv);
+  on("impImp", "change", (ev) => ev.target.files[0] && importJson(ev.target.files[0]));
+  on("btnTopImpulsa", "click", () => { location.hash = "#/impulsa"; });
   if ((location.hash || "").startsWith("#/impulsa")) window.impulsaShow(location.hash);
 })();
