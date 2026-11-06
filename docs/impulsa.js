@@ -31,6 +31,12 @@
     const r = resultados[k];
     return r && r.investigado_en && Date.now() - Date.parse(r.investigado_en) < DIAS_CACHE * 864e5;
   }
+  // Acceso compartido para el módulo comercial (impulsa-comercial.js): mismo objeto, misma clave de localStorage.
+  window.impulsaDatos = {
+    get: (k) => resultados[k] || null,
+    set: (k, r) => { resultados[k] = r; guardar(); },
+    all: () => resultados,
+  };
   function fechaAR(iso) {
     try { return new Date(iso).toLocaleString("es-AR", { timeZone: "America/Argentina/Buenos_Aires" }) + " (hora Argentina)"; } catch { return iso; }
   }
@@ -137,7 +143,8 @@
         }
         (data.resultados || []).forEach((r) => {
           const p = lote.find((x) => keyDe(x) === r.key) || {};
-          resultados[r.key] = { ...r, origen: { busqueda: $("impBusqueda").value, prospecto: p } };
+          const previo = resultados[r.key];
+          resultados[r.key] = { ...r, origen: { busqueda: $("impBusqueda").value, prospecto: p }, ...(previo && previo.comercial ? { comercial: previo.comercial } : {}) };
           estado[r.key] = r.error ? "error" : "listo";
         });
         guardar();
@@ -161,7 +168,8 @@
       a.className = "search-item"; a.style.textDecoration = "none";
       a.href = "#/impulsa/f/" + encodeURIComponent(r.key);
       a.innerHTML = `<div class="q">${e(r.nombre?.valor)} <span class="imp-score b-${r.puntuacion.banda.id}">${r.puntuacion.score}</span></div>
-        <div class="meta">${e(r.puntuacion.banda.label)} · confianza ${r.puntuacion.confianza}% · ${e((r.puntuacion.servicios || [])[0] || "")}</div>`;
+        <div class="meta">${e(r.puntuacion.banda.label)} · confianza ${r.puntuacion.confianza}% · ${e((r.puntuacion.servicios || [])[0] || "")}</div>` +
+        (window.impulsaComercial ? `<div class="meta">CRM: ${e(window.impulsaComercial.estadoLabel((r.comercial && r.comercial.estado) || "pendiente"))}${r.comercial && r.comercial.proxima_accion ? " · próxima: " + e(r.comercial.proxima_accion) : ""}</div>` : "");
       box.appendChild(a);
     });
   }
@@ -182,6 +190,7 @@
     const cw = r.calidad_web && r.calidad_web.tipo !== "no_disponible" ? r.calidad_web.valor : null;
     box.innerHTML = `
       <a href="#/impulsa/oportunidades" class="back">← Oportunidades</a>
+      <div id="impComercial"></div>
       <div class="panel">
         <h2 class="hero">${e(r.nombre?.valor)}</h2>
         <p class="lead">${e(r.categoria?.valor || "")} · ${e(r.direccion?.valor || "")}</p>
@@ -212,6 +221,7 @@
       <p class="hint">Investigado: ${e(fechaAR(r.investigado_en))}${r.errores?.length ? " · Errores: " + e(r.errores.join("; ")) : ""}</p>
       <div class="toolbar"><input id="impWeb" class="field" style="min-height:44px;flex:1" placeholder="¿Conocés su web? https://…" value="${e(r.origen?.prospecto?.website || "")}" />
       <button type="button" class="btn btn-primary btn-sm" id="impReinv">Re-investigar</button></div></div>`;
+    try { if (window.impulsaComercial) window.impulsaComercial.render(k, $("impComercial")); } catch (err) { console.error(err); }
     $("impReinv").addEventListener("click", async () => {
       const p = { ...(r.origen?.prospecto || {}), key: k, website: $("impWeb").value.trim() };
       if (!p.nombre) p.nombre = r.nombre?.valor;
@@ -220,7 +230,7 @@
         const res = await fetch(API + "/investigar", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prospectos: [p] }) });
         const d = await res.json();
         if (!res.ok) throw new Error(d.error || res.status);
-        resultados[k] = { ...d.resultados[0], origen: { ...(r.origen || {}), prospecto: p } };
+        resultados[k] = { ...d.resultados[0], origen: { ...(r.origen || {}), prospecto: p }, comercial: r.comercial };
         guardar(); renderFicha(k);
       } catch (err) { alert("Error: " + err.message); $("impReinv").disabled = false; }
     });
@@ -349,7 +359,12 @@
         for (const [k, r] of Object.entries(nuevos)) {
           if (!r || !r.puntuacion) continue;
           const prev = resultados[k];
-          if (!prev || Date.parse(r.investigado_en) > Date.parse(prev.investigado_en)) { resultados[k] = r; n++; }
+          const ts = (x) => Date.parse((x && x.comercial && x.comercial.actualizado) || 0) || 0;
+          if (!prev || Date.parse(r.investigado_en) > Date.parse(prev.investigado_en)) {
+            // Conserva el CRM más reciente (sincronización Android/PC por export/import).
+            const com = ts(prev) > ts(r) ? prev.comercial : r.comercial;
+            resultados[k] = com ? { ...r, comercial: com } : r; n++;
+          } else if (ts(r) > ts(prev)) { prev.comercial = r.comercial; n++; }
         }
         guardar(); alert(`Importados ${n} resultados.`); renderOportunidades();
       } catch (err) { alert("JSON inválido: " + err.message); }
