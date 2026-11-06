@@ -240,7 +240,48 @@
     const filas = lista().map((r) => [v(r.nombre), v(r.categoria), v(r.telefono), v(r.whatsapp), v(r.google_maps), v(r.website),
       v(r.redes?.instagram) , v(r.redes?.facebook), v(r.rating), v(r.resenas), v(r.agenda),
       r.puntuacion.score, r.puntuacion.banda.id, r.puntuacion.confianza, (r.puntuacion.servicios || []).join(" | "), (r.puntuacion.problemas || []).join(" | "), r.investigado_en].map(q).join(","));
-    descargar("impulsa-oportunidades.csv", "\ufeff" + cols.join(",") + "\n" + filas.join("\n"), "text/csv");
+    descargar("impulsa-oportunidades.csv", "\ufeff" + cols.join(",") + "\n" + filas.join("\n"), "text/csv;charset=utf-8");
+  }
+  function fichasHtml() {
+    const rows = lista().slice().sort((a, b) => (b.puntuacion.score ?? 0) - (a.puntuacion.score ?? 0));
+    const ok = (d) => d && d.tipo !== "no_disponible" && d.valor != null && d.valor !== "" ? d.valor : null;
+    const ul = (arr) => "<ul>" + arr.map((x) => "<li>" + e(x) + "</li>").join("") + "</ul>";
+    const card = (r) => {
+      const pu = r.puntuacion || {};
+      const sub = [ok(r.categoria), ok(r.direccion)].filter(Boolean).map(e).join(" · ");
+      const comp = Object.entries(pu.componentes || {}).map(([k, v]) => e(k.replace("_", " ") + " " + v)).join(" · ");
+      const tel = ok(r.telefono), wa = ok(r.whatsapp), gm = ok(r.google_maps);
+      const cont = [tel ? "Tel: <a href=\"tel:" + e(String(tel).replace(/[^\d+]/g, "")) + "\">" + e(tel) + "</a>" : "",
+        wa ? "<a href=\"" + e(wa) + "\">WhatsApp</a>" : "", gm ? "<a href=\"" + e(gm) + "\">Google Maps</a>" : ""].filter(Boolean).join(" · ");
+      return "<section class=\"c\"><h2>" + e(r.nombre?.valor) + "</h2>" + (sub ? "<p class=\"s\">" + sub + "</p>" : "") +
+        "<p><span class=\"b b-" + e(pu.banda?.id) + "\">" + e(pu.score ?? "–") + "</span> " + e(pu.banda?.label || "") + " · confianza " + e(pu.confianza ?? "–") + "%</p>" +
+        (comp ? "<p class=\"h\">Componentes: " + comp + "</p>" : "") +
+        (pu.motivos?.length ? "<h3>Por qué</h3>" + ul(pu.motivos) : "") +
+        (pu.problemas?.length ? "<h3>Problemas encontrados</h3>" + ul(pu.problemas) : "") +
+        "<h3 class=\"of\">Servicios recomendados</h3>" + ul(pu.servicios || []) +
+        (cont ? "<p class=\"k\">" + cont + "</p>" : "") +
+        (pu.nota ? "<p class=\"h\">" + e(pu.nota) + "</p>" : "") + "</section>";
+    };
+    const css = "body{margin:0;padding:12px;background:#0b0d12;color:#e8eaf0;font:16px/1.45 system-ui,-apple-system,Roboto,sans-serif}" +
+      ".top{max-width:720px;margin:0 auto 12px}.top h1{font-size:20px;margin:0}.top p{color:#9aa3b2;margin:4px 0 0;font-size:13px}" +
+      ".c{max-width:720px;margin:0 auto 14px;background:#151922;border:1px solid #262c3a;border-radius:16px;padding:16px;page-break-inside:avoid;break-inside:avoid}" +
+      ".c h2{margin:0 0 4px;font-size:21px}.s{color:#9aa3b2;margin:0 0 10px;font-size:14px}.h{color:#9aa3b2;font-size:13px}" +
+      ".c h3{font-size:15px;margin:14px 0 4px}.c ul{margin:0;padding-left:20px}.of{color:#7ee2a8}" +
+      ".b{display:inline-block;min-width:34px;text-align:center;padding:3px 10px;border-radius:999px;font-weight:700;background:#7a1d1d;color:#fff}" +
+      ".b-media{background:#8a5a00}.b-alta{background:#1e6b3a}.k{margin-top:12px;font-size:14px}a{color:#8ab4ff}" +
+      "@media print{body{background:#fff;color:#000}.c{background:#fff;border-color:#bbb}.s,.h,.top p{color:#444}.of{color:#1e6b3a}a{color:#00e}}";
+    return "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">" +
+      "<title>IMPULSA – Oportunidades</title><style>" + css + "</style></head><body><div class=\"top\"><h1>IMPULSA – Oportunidades (" + rows.length + ")</h1><p>Exportado " +
+      e(new Date().toLocaleString("es-AR")) + " · ordenado por puntaje</p></div>" + rows.map(card).join("") + "</body></html>";
+  }
+  async function exportFichas() {
+    const nombre = "impulsa-oportunidades.html";
+    const html = fichasHtml();
+    descargar(nombre, html, "text/html;charset=utf-8");
+    try {
+      const f = new File([html], nombre, { type: "text/html" });
+      if (navigator.canShare && navigator.canShare({ files: [f] })) await navigator.share({ files: [f], title: "IMPULSA – Oportunidades" });
+    } catch (err) { /* compartir es opcional */ }
   }
   function importJson(file) {
     const fr = new FileReader();
@@ -268,6 +309,7 @@
   on("impBanda", "change", renderOportunidades);
   on("impExpJson", "click", exportJson);
   on("impExpCsv", "click", exportCsv);
+  on("impExpFichas", "click", exportFichas);
   on("impImp", "change", (ev) => ev.target.files[0] && importJson(ev.target.files[0]));
   on("btnTopImpulsa", "click", () => { location.hash = "#/impulsa"; });
   if ((location.hash || "").startsWith("#/impulsa")) window.impulsaShow(location.hash);
