@@ -1,6 +1,15 @@
 {
   "searches": [
     {
+      "id": "20261105-225050_abogados-1-barrio-caba",
+      "query": "abogados · 1 barrio CABA",
+      "date": "20261105-225050",
+      "date_label": "2026-11-05 22:50 (America/Buenos_Aires)",
+      "n_raw": 72,
+      "n_limpio": 15,
+      "file": "20261105-225050_abogados-1-barrio-caba.json"
+    },
+    {
       "id": "20261104-211413_electricistas-12-barrios-caba",
       "query": "electricistas · 12 barrios CABA",
       "date": "20261104-211413",
