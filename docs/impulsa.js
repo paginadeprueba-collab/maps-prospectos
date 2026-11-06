@@ -275,13 +275,51 @@
       e(new Date().toLocaleString("es-AR")) + " · ordenado por puntaje</p></div>" + rows.map(card).join("") + "</body></html>";
   }
   async function exportFichas() {
+    const rows = lista();
+    if (!rows.length) {
+      alert("No hay negocios investigados para mostrar.");
+      return;
+    }
     const nombre = "impulsa-oportunidades.html";
     const html = fichasHtml();
-    descargar(nombre, html, "text/html;charset=utf-8");
-    try {
-      const f = new File([html], nombre, { type: "text/html" });
-      if (navigator.canShare && navigator.canShare({ files: [f] })) await navigator.share({ files: [f], title: "IMPULSA – Oportunidades" });
-    } catch (err) { /* compartir es opcional */ }
+    const url = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
+    const viejo = document.getElementById("impFichasVista");
+    if (viejo) viejo.remove();
+    const overlay = document.createElement("div");
+    overlay.id = "impFichasVista";
+    overlay.style.cssText = "position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;background:#0b0d12";
+    const bar = document.createElement("div");
+    bar.style.cssText = "display:flex;gap:8px;flex-wrap:wrap;padding:10px 12px;background:#151922;border-bottom:1px solid #262c3a";
+    const mkBtn = (label, primary) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = label;
+      b.style.cssText = "min-height:44px;padding:8px 14px;border-radius:999px;font:600 14px system-ui,sans-serif;border:1px solid #262c3a;background:" + (primary ? "#2dd4bf" : "#1b212b") + ";color:" + (primary ? "#042f2e" : "#e8eaf0");
+      bar.appendChild(b);
+      return b;
+    };
+    const btnCerrar = mkBtn("Cerrar", false);
+    const btnComp = mkBtn("Compartir", true);
+    const btnPrint = mkBtn("Imprimir / PDF", false);
+    const iframe = document.createElement("iframe");
+    iframe.title = "Fichas IMPULSA";
+    iframe.style.cssText = "flex:1;width:100%;border:0;background:#0b0d12";
+    overlay.appendChild(bar);
+    overlay.appendChild(iframe);
+    document.body.appendChild(overlay);
+    iframe.src = url;
+    const cerrar = () => { overlay.remove(); URL.revokeObjectURL(url); };
+    btnCerrar.addEventListener("click", cerrar);
+    btnPrint.addEventListener("click", () => {
+      try { iframe.contentWindow.print(); } catch (err) { window.open(url, "_blank"); }
+    });
+    btnComp.addEventListener("click", async () => {
+      try {
+        const f = new File([html], nombre, { type: "text/html" });
+        if (navigator.canShare && navigator.canShare({ files: [f] })) await navigator.share({ files: [f], title: "IMPULSA – Oportunidades" });
+        else window.open(url, "_blank");
+      } catch (err) { /* cancelado */ }
+    });
   }
   function importJson(file) {
     const fr = new FileReader();
