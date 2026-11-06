@@ -275,51 +275,69 @@
       e(new Date().toLocaleString("es-AR")) + " · ordenado por puntaje</p></div>" + rows.map(card).join("") + "</body></html>";
   }
   async function exportFichas() {
-    const rows = lista();
-    if (!rows.length) {
-      alert("No hay negocios investigados para mostrar.");
-      return;
+    try {
+      const rows = lista();
+      if (!rows.length) {
+        alert("No hay negocios investigados para mostrar.");
+        return;
+      }
+      const nombre = "impulsa-oportunidades.html";
+      const html = fichasHtml();
+      const viejo = document.getElementById("impFichasVista");
+      if (viejo) viejo.remove();
+      const overlay = document.createElement("div");
+      overlay.id = "impFichasVista";
+      overlay.style.cssText = "position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%;z-index:2147483647;display:flex;flex-direction:column;background:#0b0d12";
+      const bar = document.createElement("div");
+      bar.style.cssText = "flex:none;display:flex;gap:8px;flex-wrap:wrap;padding:10px 12px;padding-top:max(10px,env(safe-area-inset-top));background:#151922;border-bottom:1px solid #262c3a";
+      const mkBtn = (label, primary) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.textContent = label;
+        b.style.cssText = "min-height:44px;padding:8px 14px;border-radius:999px;font:600 14px system-ui,sans-serif;border:1px solid #262c3a;background:" + (primary ? "#2dd4bf" : "#1b212b") + ";color:" + (primary ? "#042f2e" : "#e8eaf0");
+        bar.appendChild(b);
+        return b;
+      };
+      const btnCerrar = mkBtn("Cerrar", false);
+      const btnComp = mkBtn("Compartir", true);
+      const btnPrint = mkBtn("Imprimir / PDF", false);
+      const caja = document.createElement("div");
+      caja.style.cssText = "flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:12px";
+      const cuerpo = /<body>([\s\S]*)<\/body>/i.exec(html);
+      const estilo = /<style>([\s\S]*)<\/style>/i.exec(html);
+      if (estilo) {
+        const st = document.createElement("style");
+        st.textContent = estilo[1];
+        overlay.appendChild(st);
+      }
+      caja.innerHTML = cuerpo ? cuerpo[1] : html;
+      overlay.appendChild(bar);
+      overlay.appendChild(caja);
+      document.body.appendChild(overlay);
+      document.body.style.overflow = "hidden";
+      const cerrar = () => {
+        overlay.remove();
+        document.body.style.overflow = "";
+      };
+      btnCerrar.addEventListener("click", cerrar);
+      btnPrint.addEventListener("click", () => {
+        try { window.print(); } catch (err) { alert("No pude imprimir."); }
+      });
+      btnComp.addEventListener("click", async () => {
+        try {
+          const f = new File([html], nombre, { type: "text/html;charset=utf-8" });
+          if (navigator.share && navigator.canShare && navigator.canShare({ files: [f] })) {
+            await navigator.share({ files: [f], title: "IMPULSA – Oportunidades" });
+            return;
+          }
+        } catch (err) { /* cancelado o no soportado */ }
+        try {
+          if (navigator.share) await navigator.share({ title: "IMPULSA – Oportunidades", text: caja.innerText.slice(0, 3500) });
+        } catch (err2) { /* cancelado */ }
+      });
+    } catch (err) {
+      alert("No pude abrir las fichas: " + (err && err.message ? err.message : err));
     }
-    const nombre = "impulsa-oportunidades.html";
-    const html = fichasHtml();
-    const url = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
-    const viejo = document.getElementById("impFichasVista");
-    if (viejo) viejo.remove();
-    const overlay = document.createElement("div");
-    overlay.id = "impFichasVista";
-    overlay.style.cssText = "position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;background:#0b0d12";
-    const bar = document.createElement("div");
-    bar.style.cssText = "display:flex;gap:8px;flex-wrap:wrap;padding:10px 12px;background:#151922;border-bottom:1px solid #262c3a";
-    const mkBtn = (label, primary) => {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.textContent = label;
-      b.style.cssText = "min-height:44px;padding:8px 14px;border-radius:999px;font:600 14px system-ui,sans-serif;border:1px solid #262c3a;background:" + (primary ? "#2dd4bf" : "#1b212b") + ";color:" + (primary ? "#042f2e" : "#e8eaf0");
-      bar.appendChild(b);
-      return b;
-    };
-    const btnCerrar = mkBtn("Cerrar", false);
-    const btnComp = mkBtn("Compartir", true);
-    const btnPrint = mkBtn("Imprimir / PDF", false);
-    const iframe = document.createElement("iframe");
-    iframe.title = "Fichas IMPULSA";
-    iframe.style.cssText = "flex:1;width:100%;border:0;background:#0b0d12";
-    overlay.appendChild(bar);
-    overlay.appendChild(iframe);
-    document.body.appendChild(overlay);
-    iframe.src = url;
-    const cerrar = () => { overlay.remove(); URL.revokeObjectURL(url); };
-    btnCerrar.addEventListener("click", cerrar);
-    btnPrint.addEventListener("click", () => {
-      try { iframe.contentWindow.print(); } catch (err) { window.open(url, "_blank"); }
-    });
-    btnComp.addEventListener("click", async () => {
-      try {
-        const f = new File([html], nombre, { type: "text/html" });
-        if (navigator.canShare && navigator.canShare({ files: [f] })) await navigator.share({ files: [f], title: "IMPULSA – Oportunidades" });
-        else window.open(url, "_blank");
-      } catch (err) { /* cancelado */ }
-    });
   }
   function importJson(file) {
     const fr = new FileReader();
@@ -348,6 +366,7 @@
   on("impExpJson", "click", exportJson);
   on("impExpCsv", "click", exportCsv);
   on("impExpFichas", "click", exportFichas);
+  window.impulsaExportarFichas = exportFichas;
   on("impImp", "change", (ev) => ev.target.files[0] && importJson(ev.target.files[0]));
   on("btnTopImpulsa", "click", () => { location.hash = "#/impulsa"; });
   if ((location.hash || "").startsWith("#/impulsa")) window.impulsaShow(location.hash);

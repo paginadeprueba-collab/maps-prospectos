@@ -746,7 +746,7 @@
           </select>
         </div>
         <div class="toolbar">
-          <button type="button" class="btn btn-primary btn-sm" id="impExpFichas">Exportar fichas (celular / PDF)</button>
+          <button type="button" class="btn btn-primary btn-sm" id="impExpFichas" onclick="window.impulsaExportarFichas&&window.impulsaExportarFichas()">Exportar fichas (celular / PDF)</button>
           <button type="button" class="btn btn-ghost btn-sm" id="impExpJson">Exportar JSON</button>
           <button type="button" class="btn btn-ghost btn-sm" id="impExpCsv">Exportar planilla (CSV)</button>
           <label class="btn btn-ghost btn-sm">Importar JSON<input type="file" id="impImp" accept="application/json,.json" hidden /></label>
@@ -1627,6 +1627,6 @@
 
     Promise.all([loadIndex(false), rebuildSeenLinks(), checkPagesEstado()]).then(route);
   </script>
-  <script src="impulsa.js"></script>
+  <script src="impulsa.js?v=20261106c"></script>
 </body>
 </html>
