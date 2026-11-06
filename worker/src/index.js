@@ -5,8 +5,12 @@
  * GET  /estado              ?run_id= | latest → estado del run
  * GET  /estado-prospecto    ?key= → { key, status }
  * POST /estado-prospecto    { key, status } → guarda en KV ESTADOS
+ * POST /investigar         { prospectos: [...] } → Investigador Comercial IMPULSA (máx 10)
  * OPTIONS /*                CORS preflight
  */
+
+import { investigarProspecto } from "./investigar.js";
+import { puntuar } from "./scoring.js";
 
 const ALLOWED_STATUSES = new Set(["pendiente", "contactado", "no_interesa"]);
 
@@ -22,6 +26,10 @@ export default {
     try {
       if (request.method === "POST" && url.pathname === "/buscar") {
         return withCors(env, origin, await handleBuscar(request, env));
+      }
+      if (request.method === "POST" && url.pathname === "/investigar") {
+        if (origin && !isAllowedOrigin(env, origin)) return json({ error: "origin_not_allowed" }, 403);
+        return withCors(env, origin, await handleInvestigar(request, env));
       }
       if (request.method === "GET" && url.pathname === "/estado") {
         return withCors(env, origin, await handleEstado(url, env));
@@ -351,4 +359,37 @@ async function handlePostProspecto(request, env) {
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
+}
+
+/* ========== IMPULSA: Investigador Comercial ========== */
+const INVESTIGAR_MAX = 10;
+
+/** POST /investigar { prospectos: [{ key, nombre, website?, telefono, whatsapp, link_maps, rating, reseñas, categoria, direccion }] } */
+async function handleInvestigar(request, env) {
+  // Token opcional: si se configura el secret IMPULSA_TOKEN, se exige el header X-Impulsa-Token.
+  if (env.IMPULSA_TOKEN && request.headers.get("X-Impulsa-Token") !== env.IMPULSA_TOKEN) {
+    return json({ error: "unauthorized" }, 401);
+  }
+  const body = await readJson(request);
+  const lista = Array.isArray(body.prospectos) ? body.prospectos : [];
+  if (!lista.length) return json({ error: "prospectos_required" }, 400);
+  if (lista.length > INVESTIGAR_MAX) {
+    return json({ error: "lote_demasiado_grande", max: INVESTIGAR_MAX }, 400);
+  }
+  const resultados = [];
+  // Secuencial para no saturar sitios ni el límite de subrequests del plan gratuito.
+  for (const p of lista) {
+    if (!p || typeof p !== "object") continue;
+    try {
+      const inv = await investigarProspecto(p);
+      resultados.push({ ...inv, puntuacion: puntuar(inv), investigado_en: new Date().toISOString() });
+    } catch (e) {
+      resultados.push({
+        key: String(p.key || p.nombre || ""),
+        error: String((e && e.message) || e).slice(0, 200),
+        investigado_en: new Date().toISOString(),
+      });
+    }
+  }
+  return json({ ok: true, version: "impulsa-1", n: resultados.length, resultados });
 }

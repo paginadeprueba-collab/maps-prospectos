@@ -571,13 +571,35 @@
       background: var(--surface-2);
     }
     .opt-row .switch { color: var(--text); font-size: .88rem; }
+
+    /* ===== IMPULSA ===== */
+    .imp-row { display:flex; align-items:center; gap:10px; padding:12px; margin:8px 0; background:var(--surface); border:1px solid var(--border); border-radius:12px; cursor:pointer; }
+    .imp-row input { width:20px; height:20px; accent-color:var(--accent); flex:none; }
+    .imp-main { flex:1; min-width:0; }
+    .imp-main strong { display:block; font-size:.95rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .imp-main small { color:var(--muted); font-size:.8rem; }
+    .imp-st { font-size:.75rem; font-weight:700; padding:4px 8px; border-radius:999px; background:var(--surface-2); color:var(--muted); white-space:nowrap; }
+    .st-listo { background:var(--wa-soft); color:var(--wa); } .st-error { background:var(--danger-soft); color:var(--danger); }
+    .st-investigando, .st-en_cola { background:var(--warn-soft); color:var(--warn); }
+    .imp-score { display:inline-block; min-width:42px; text-align:center; font-weight:800; border-radius:10px; padding:2px 8px; background:var(--surface-2); }
+    .b-excelente { background:var(--wa-soft); color:var(--wa); } .b-alta { background:var(--accent-soft); color:var(--accent-text); }
+    .b-media { background:var(--warn-soft); color:var(--warn); } .b-baja { background:var(--danger-soft); color:var(--danger); }
+    .imp-tbl { width:100%; border-collapse:collapse; font-size:.9rem; }
+    .imp-tbl th { text-align:left; vertical-align:top; padding:8px 8px 8px 0; color:var(--muted); font-weight:600; width:34%; }
+    .imp-tbl td { padding:8px 0; border-bottom:1px solid var(--border); word-break:break-word; }
+    .imp-ev { font-size:.72rem; color:var(--muted); margin-top:2px; }
+    .t-comprobado { color:var(--ok); font-weight:700; } .t-estimado { color:var(--warn); font-weight:700; }
+    .t-hipotesis { color:var(--danger); font-weight:700; } .t-no_disponible { color:var(--muted); font-weight:700; }
   </style>
 </head>
 <body>
   <header class="appbar">
     <div class="inner">
       <h1 class="brand">Fábrica de <span>Prospectos</span></h1>
-      <button type="button" class="btn btn-ghost btn-sm" id="btnTopBuscar">Buscar</button>
+      <div style="display:flex;gap:6px">
+        <button type="button" class="btn btn-ghost btn-sm" id="btnTopImpulsa">IMPULSA</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="btnTopBuscar">Buscar</button>
+      </div>
     </div>
   </header>
 
@@ -690,6 +712,47 @@
         <strong>Nada por acá</strong>
         Probá otra pestaña o desactivá «Ocultar ya vistos».
       </div>
+    </section>
+
+    <section id="viewImpulsa" class="hidden">
+      <a href="#/" class="back">← Fábrica</a>
+      <h2 style="margin:0 0 4px;font-size:1.35rem;letter-spacing:-0.03em">Investigador Comercial IMPULSA</h2>
+      <div class="tabs" role="tablist">
+        <a class="tab imp-tab active" data-sub="investigacion" href="#/impulsa" style="text-align:center;text-decoration:none">Investigación</a>
+        <a class="tab imp-tab" data-sub="oportunidades" href="#/impulsa/oportunidades" style="text-align:center;text-decoration:none">Oportunidades</a>
+        <a class="tab imp-tab" data-sub="ficha" style="text-align:center;text-decoration:none;pointer-events:none">Ficha</a>
+      </div>
+      <div id="impInvestigacion">
+        <select id="impBusqueda" class="field" style="min-height:48px;font-size:.95rem" aria-label="Búsqueda de Fábrica">
+          <option value="">Elegí una búsqueda de Fábrica…</option>
+        </select>
+        <div class="toolbar" style="margin-top:10px">
+          <button type="button" class="btn btn-ghost btn-sm" id="impBtnSig">Elegir próximos 10</button>
+          <label class="toggle"><input type="checkbox" id="impForzar" /> Forzar (aunque tenga &lt;7 días)</label>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="impBtnInvestigar" style="margin-top:8px">Investigar seleccionados</button>
+        <p class="hint" id="impMsg">Solo se analiza el sitio web si existe. Instagram, Facebook y Meta Ads no se scrapean: figuran como «no disponible».</p>
+        <p class="count-line" id="impCount"></p>
+        <div id="impLista"></div>
+      </div>
+      <div id="impOportunidades" class="hidden">
+        <div class="toolbar">
+          <select id="impBanda" class="field" style="min-height:44px;flex:1;font-size:.9rem" aria-label="Banda">
+            <option value="">Todas las bandas</option>
+            <option value="excelente">85-100 excelente</option>
+            <option value="alta">70-84 alta</option>
+            <option value="media">50-69 media</option>
+            <option value="baja">&lt;50 baja</option>
+          </select>
+        </div>
+        <div class="toolbar">
+          <button type="button" class="btn btn-ghost btn-sm" id="impExpJson">Exportar JSON</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="impExpCsv">Exportar CSV</button>
+          <label class="btn btn-ghost btn-sm">Importar JSON<input type="file" id="impImp" accept="application/json,.json" hidden /></label>
+        </div>
+        <div id="impOpps"></div>
+      </div>
+      <div id="impFicha" class="hidden"></div>
     </section>
   </main>
 
@@ -1475,6 +1538,8 @@
 
     function route() {
       const h = location.hash || "#/";
+      if (h.startsWith("#/impulsa")) { if (window.impulsaShow) window.impulsaShow(h); return; }
+      if (window.impulsaHide) window.impulsaHide();
       if (h === "#buscar") {
         showList();
         el("buscar").scrollIntoView({ behavior: "smooth" });
@@ -1561,5 +1626,6 @@
 
     Promise.all([loadIndex(false), rebuildSeenLinks(), checkPagesEstado()]).then(route);
   </script>
+  <script src="impulsa.js"></script>
 </body>
 </html>
