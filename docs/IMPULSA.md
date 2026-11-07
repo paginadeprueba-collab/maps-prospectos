@@ -88,7 +88,7 @@ SOFTWARE.
 
 ## Propuesta comercial con la plantilla final (CRECIMIENTO COMERCIAL)
 
-«Generar propuesta comercial» → **Imprimir / PDF** ya no imprime el HTML: arma un PDF de 12 páginas sobre la plantilla final aprobada (`docs/propuesta/plantilla-base.pdf.b64`), con los datos del diagnóstico existente (nombre, rubro, rating, reseñas, web y agenda detectadas). El diagnóstico, el análisis y el buscador no cambian.
+«Generar propuesta comercial» → **Imprimir / PDF** arma el PDF de 12 páginas sobre la plantilla final (`docs/propuesta/plantilla-base.pdf.b64`) con el diagnóstico ya existente de ese negocio: nombre, calificación, reseñas, web y agenda solo si hay evidencia, y la oportunidad que el diagnóstico marca. No imprime el borrador HTML. Si el generador o pdf-lib/fontkit no cargan, avisa el error y no abre la impresión vieja. El diagnóstico, el análisis y el buscador no cambian.
 
 - Código: `docs/propuesta-pdf.js` (usa pdf-lib + fontkit desde unpkg). Posiciones y estilos de cada texto variable: `docs/propuesta/plantilla-slots.json`, generados con `docs/propuesta/construir_plantilla.py`.
 - Bloques fijos sin cambios: Carlos Serrano, caso y testimonio Contreras, fuentes institucionales, cierre por WhatsApp 5491168713479 (el mensaje preparado se adapta al rubro).
