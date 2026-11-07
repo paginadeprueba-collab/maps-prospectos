@@ -549,6 +549,8 @@
     "#impDocVista .imc-bar button.p{background:#2dd4bf;color:#042f2e}#impDocVista .imc-bar button.on{outline:2px solid #2dd4bf}" +
     "#impDocVista .imc-scroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:10px}" +
     "#impDocVista .imc-ed{background:var(--surface);color:var(--text);max-width:820px;margin:0 auto;padding:14px;border-radius:14px}" +
+    ".imc-pdf-listo{background:#0f172a;color:#fff;padding:12px 14px;border-radius:14px;margin:0 auto 10px;max-width:820px}" +
+    ".imc-pdf-listo a,.imc-pdf-listo button{display:inline-block;margin:8px 8px 0 0;background:#2dd4bf;color:#042f2e;font-weight:700;padding:10px 14px;border-radius:999px;text-decoration:none;border:0;font:inherit;min-height:44px}" +
     "@media print{body.imc-print>*:not(#impDocVista){display:none!important}body.imc-print #impDocVista{position:static;display:block;background:#fff}body.imc-print .imc-bar{display:none!important}body.imc-print .imc-scroll{overflow:visible;padding:0}}" + DOC_CSS;
   function injectCss() { if (document.getElementById("imcCss")) return; const s = document.createElement("style"); s.id = "imcCss"; s.textContent = UI_CSS; document.head.appendChild(s); }
 
@@ -619,7 +621,13 @@
   }
 
   /* --- Editor + vista previa: overlay a pantalla completa (apto Android) --- */
-  function cerrarVista() { const v = document.getElementById("impDocVista"); if (v) v.remove(); document.body.style.overflow = ""; document.body.classList.remove("imc-print"); }
+  function cerrarVista() {
+    const v = document.getElementById("impDocVista");
+    if (v && v._pdfUrls) v._pdfUrls.forEach((u) => { try { URL.revokeObjectURL(u); } catch (x) { /* nada */ } });
+    if (v) v.remove();
+    document.body.style.overflow = "";
+    document.body.classList.remove("imc-print");
+  }
   function abrirEditor(k, modo) {
     docDe(k, getR(k), false);
     cerrarVista();
@@ -636,8 +644,8 @@
     const pintar = () => {
       const d = com(getR(k)).doc;
       ov.querySelectorAll("[data-b]").forEach((b) => b.classList.toggle("on", b.dataset.b === (vista === "editar" ? "editar" : tipoDoc)));
-      if (vista === "editar") { scroll.innerHTML = editorHtml(d); bindEditor(k, scroll); }
-      else scroll.innerHTML = tipoDoc === "diag" ? htmlDiagnostico(d) : htmlPropuesta(d);
+      if (vista === "editar") { scroll.innerHTML = editorHtml(d, tipoDoc); bindEditor(k, scroll, tipoDoc); }
+      else scroll.innerHTML = tipoDoc === "diag" ? htmlDiagnostico(d) : previewPropuestaPdf(k, d);
       scroll.scrollTop = 0;
     };
     ov.querySelector(".imc-bar").addEventListener("click", async (ev) => {
@@ -656,28 +664,24 @@
         const avisos = controlCalidad(d);
         if (!d.revisado) { alert("Antes del PDF definitivo, marcá «Revisé el contenido» al final de Editar." + (avisos.length ? "\n\nControl de calidad:\n- " + avisos.join("\n- ") : "")); vista = "editar"; return pintar(); }
         if (avisos.length && !confirm("Control de calidad:\n- " + avisos.join("\n- ") + "\n\n¿Generar el PDF igual?")) return;
-        if (vista === "editar") { vista = "preview"; pintar(); }
-        if (tipoDoc === "prop" && window.impulsaPropuestaPDF) {
-          /* Propuesta: PDF con la plantilla final aprobada (docs/propuesta-pdf.js). El diagnóstico no cambia. */
-          const P = window.impulsaPropuestaPDF, info = P.infoDesde(analizar(getR(k)), d);
-          const archivo = "propuesta-" + d.negocio.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) + ".pdf";
-          b.disabled = true; const txtB = b.textContent; b.textContent = "Generando PDF…";
-          try {
-            const res = await P.descargar(info, archivo);
-            registrarDoc(k, tipoDoc);
-            if (!res.completo) alert("Ya existe web o agenda: la propuesta se adaptó para no reemplazar lo que funciona (inversión $400.000). Revisala antes de enviarla.");
-            if (res.avisos.length) alert("Revisá el PDF:\n- " + res.avisos.join("\n- "));
-          } catch (x) { alert("No pude generar el PDF con la plantilla: " + (x && x.message ? x.message : x)); }
-          finally { b.disabled = false; b.textContent = txtB; }
+        if (tipoDoc === "prop") {
+          /* Propuesta: siempre el PDF de 12 páginas. Si falla, no se imprime el HTML viejo. */
+          vista = "preview"; pintar();
+          await exportarPropuesta(k, com(getR(k)).doc, b, { registrar: true });
           return;
         }
+        if (vista === "editar") { vista = "preview"; pintar(); }
         registrarDoc(k, tipoDoc);
         document.body.classList.add("imc-print");
         setTimeout(() => { try { window.print(); } catch (x) { alert("No pude abrir la impresión."); } setTimeout(() => document.body.classList.remove("imc-print"), 1000); }, 200);
         return;
       }
+      if (a === "share" && tipoDoc === "prop") {
+        await exportarPropuesta(k, com(getR(k)).doc, b, { registrar: true });
+        return;
+      }
       if (a === "share") {
-        const html = "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + e(d.negocio) + "</title><style>" + DOC_CSS + "</style></head><body style=\"margin:0;background:#fff\">" + (tipoDoc === "diag" ? htmlDiagnostico(d) : htmlPropuesta(d)) + "</body></html>";
+        const html = "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + e(d.negocio) + "</title><style>" + DOC_CSS + "</style></head><body style=\"margin:0;background:#fff\">" + htmlDiagnostico(d) + "</body></html>";
         const nombre = (tipoDoc === "diag" ? "diagnostico-" : "propuesta-") + d.negocio.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) + ".html";
         try {
           const f = new File([html], nombre, { type: "text/html" });
@@ -687,6 +691,79 @@
       }
     });
     pintar();
+  }
+  function previewPropuestaPdf(k, d) {
+    const P = window.impulsaPropuestaPDF;
+    if (!P) return "<div class=\"imc-ed\"><h3>No se puede armar la propuesta</h3><p>No se cargó el generador del PDF. Recargá la página. No se imprime el borrador HTML.</p></div>";
+    let S;
+    try { S = P.textos(P.infoDesde(analizar(getR(k)), d)); }
+    catch (err) { return "<div class=\"imc-ed\"><p>No pude leer el diagnóstico para la propuesta: " + e(err && err.message ? err.message : err) + "</p></div>"; }
+    const fila = (tit, val) => "<h3>" + e(tit) + "</h3><p>" + e(val) + "</p>";
+    return "<div class=\"imc-ed\"><h3 style=\"margin-top:0\">Propuesta Crecimiento Comercial · 12 páginas</h3>" +
+      "<p class=\"hint\">Textos que se escriben en la plantilla final a partir del diagnóstico de este negocio. Carlos Serrano, el caso Contreras y las fuentes quedan como en la plantilla. No es el borrador HTML.</p>" +
+      fila("Nombre", (S.p1_nombre_1 + " " + S.p1_nombre_2).trim()) +
+      fila("Qué observamos", S.p2_obs1 + " " + S.p2_obs2) +
+      fila("Oportunidad del diagnóstico", S.p2_oportunidad) +
+      fila("Interpretación", S.p3_texto) +
+      fila("Oferta", S.p11_intro) +
+      fila("Web", S.p11_web) +
+      fila("Agenda", S.p11_agenda) +
+      fila("Inversión", S.p11_total + " · " + S.p11_etapas) +
+      "<p class=\"hint\">Oferta: " + e(S.oferta) + (S.completo ? " · paquete base" : " · adaptada a lo que ya tiene") + ".</p></div>";
+  }
+  async function exportarPropuesta(k, d, boton, opts) {
+    const registrar = !opts || opts.registrar !== false;
+    const P = window.impulsaPropuestaPDF;
+    if (!P || !P.descargar || !P.infoDesde) {
+      alert("No se cargó el generador del PDF de 12 páginas (propuesta-pdf.js). Recargá la página. No se abre la impresión del borrador HTML.");
+      return;
+    }
+    let info;
+    try { info = P.infoDesde(analizar(getR(k)), d); }
+    catch (err) {
+      alert("No pude usar el diagnóstico para la propuesta. No se abre la impresión HTML.\n\n" + (err && err.message ? err.message : err));
+      return;
+    }
+    const archivo = "propuesta-" + String(d.negocio || "negocio").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) + ".pdf";
+    const prev = boton ? boton.textContent : "";
+    if (boton) { boton.disabled = true; boton.textContent = "Generando PDF…"; }
+    try {
+      const res = await P.descargar(info, archivo);
+      if (registrar) registrarDoc(k, "prop");
+      mostrarPdfListo(res);
+      if (!res.completo) alert("El diagnóstico muestra web o agenda: la propuesta se adaptó para no reemplazar lo que ya funciona. La inversión sigue en $400.000. Revisala antes de enviarla.");
+      if (res.avisos && res.avisos.length) alert("Revisá el PDF antes de enviarlo. Hay texto que no entró en el espacio de la plantilla:\n- " + res.avisos.join("\n- "));
+    } catch (x) {
+      alert("No pude generar el PDF de 12 páginas. No se abre la impresión del borrador HTML.\n\n" + (x && x.message ? x.message : x));
+    } finally {
+      if (boton) { boton.disabled = false; boton.textContent = prev || "Imprimir / PDF"; }
+    }
+  }
+  function mostrarPdfListo(res) {
+    const ov = document.getElementById("impDocVista");
+    const scroll = ov && ov.querySelector(".imc-scroll");
+    if (!ov || !scroll || !res || !res.url) return;
+    ov._pdfUrls = ov._pdfUrls || [];
+    ov._pdfUrls.push(res.url);
+    const viejo = scroll.querySelector(".imc-pdf-listo");
+    if (viejo) viejo.remove();
+    const box = document.createElement("div");
+    box.className = "imc-pdf-listo";
+    box.appendChild(document.createTextNode("PDF de 12 páginas listo. "));
+    const a = document.createElement("a");
+    a.href = res.url; a.download = res.nombre || "propuesta.pdf"; a.textContent = "Abrir / guardar PDF";
+    box.appendChild(a);
+    if (res.file && navigator.share) {
+      const b = document.createElement("button");
+      b.type = "button"; b.textContent = "Compartir";
+      b.addEventListener("click", async () => {
+        try { await navigator.share({ files: [res.file], title: res.nombre || "Propuesta" }); }
+        catch (err) { if (err && err.name === "AbortError") return; alert("No se pudo compartir. Usá «Abrir / guardar PDF»."); }
+      });
+      box.appendChild(b);
+    }
+    scroll.insertBefore(box, scroll.firstChild);
+    scroll.scrollTop = 0;
   }
   function registrarDoc(k, tipoDoc) {
     const r = getR(k), c = com(r), d = c.doc;
@@ -699,11 +776,12 @@
   }
   const ta = (name, v, rows) => "<textarea data-f=\"" + name + "\" rows=\"" + (rows || 4) + "\">" + e(v) + "</textarea>";
   const inp = (name, v, ph) => "<input data-f=\"" + name + "\" value=\"" + e(v) + "\" placeholder=\"" + e(ph || "") + "\">";
-  function editorHtml(d) {
+  function editorHtml(d, modo) {
     const avisos = controlCalidad(d);
     const c = d.contacto || {};
     return "<div class=\"imc-ed imc-box\"><h3 style=\"margin-top:0\">Revisión antes de enviar · " + e(d.negocio) + " · v" + e(d.version) + "</h3>" +
       "<p class=\"hint\">Nada se envía automáticamente. Editá, revisá la vista previa y recién después usá Imprimir / PDF. Nivel: <strong>" + e(d.nivel) + "</strong>.</p>" +
+      (modo === "prop" ? "<p class=\"hint\">«Imprimir / PDF» arma la plantilla final de 12 páginas de Crecimiento Comercial con este diagnóstico (datos, interpretación, oportunidades y oferta). No copia otro caso y, si falla, no abre la impresión del borrador HTML.</p>" : "") +
       (avisos.length ? "<div class=\"imc-msg\" style=\"border-color:var(--warn)\"><strong>Control de calidad</strong><br>" + avisos.map(e).join("<br>") + "</div>" : "") +
       "<label>1. Situación actual</label>" + ta("situacion", d.situacion, 5) +
       "<label>2. Fortalezas (una por línea)</label>" + ta("fortalezas", d.fortalezas.join("\n"), 5) +
@@ -727,9 +805,9 @@
       "<label style=\"font-size:15px;color:var(--text)\"><input type=\"checkbox\" data-f=\"revisado\"" + (d.revisado ? " checked" : "") + ">Revisé el contenido, la ortografía y los precios</label>" +
       "<div class=\"toolbar\"><button type=\"button\" class=\"btn btn-primary btn-sm\" data-save=\"1\">Guardar cambios</button></div></div>";
   }
-  function bindEditor(k, scroll) {
+  function bindEditor(k, scroll, modo) {
     const b = scroll.querySelector("[data-save]");
-    if (b) b.addEventListener("click", () => { leerEditor(k, scroll); scroll.innerHTML = editorHtml(com(getR(k)).doc); bindEditor(k, scroll); alert("Cambios guardados."); });
+    if (b) b.addEventListener("click", () => { leerEditor(k, scroll); scroll.innerHTML = editorHtml(com(getR(k)).doc, modo); bindEditor(k, scroll, modo); alert("Cambios guardados."); });
   }
   function leerEditor(k, scroll) {
     if (!scroll.querySelector("[data-f]")) return;
@@ -803,10 +881,15 @@
       const v = c.versiones[+b.dataset.ver];
       cerrarVista();
       const ov = document.createElement("div"); ov.id = "impDocVista";
-      ov.innerHTML = "<div class=\"imc-bar\"><button type=\"button\" data-x=\"1\">Cerrar</button><button type=\"button\" class=\"p\" data-p=\"1\">Imprimir / PDF</button></div><div class=\"imc-scroll\">" + (v.tipo === "diagnostico" ? htmlDiagnostico(v.snapshot) : htmlPropuesta(v.snapshot)) + "</div>";
+      const cuerpo = v.tipo === "diagnostico" ? htmlDiagnostico(v.snapshot) : previewPropuestaPdf(k, v.snapshot);
+      ov.innerHTML = "<div class=\"imc-bar\"><button type=\"button\" data-x=\"1\">Cerrar</button><button type=\"button\" class=\"p\" data-p=\"1\">Imprimir / PDF</button></div><div class=\"imc-scroll\">" + cuerpo + "</div>";
       document.body.appendChild(ov); document.body.style.overflow = "hidden";
       ov.querySelector("[data-x]").addEventListener("click", cerrarVista);
-      ov.querySelector("[data-p]").addEventListener("click", () => { document.body.classList.add("imc-print"); setTimeout(() => { try { window.print(); } catch (x) { /* nada */ } setTimeout(() => document.body.classList.remove("imc-print"), 1000); }, 200); });
+      ov.querySelector("[data-p]").addEventListener("click", async (ev) => {
+        if (v.tipo === "propuesta") { await exportarPropuesta(k, v.snapshot, ev.currentTarget, { registrar: false }); return; }
+        document.body.classList.add("imc-print");
+        setTimeout(() => { try { window.print(); } catch (x) { alert("No pude abrir la impresión."); } setTimeout(() => document.body.classList.remove("imc-print"), 1000); }, 200);
+      });
     }));
   }
   const opcionesEstado = (sel) => ESTADOS.map((x) => "<option value=\"" + x[0] + "\"" + (x[0] === sel ? " selected" : "") + ">" + e(x[1]) + "</option>").join("");
