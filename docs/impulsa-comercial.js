@@ -657,6 +657,20 @@
         if (!d.revisado) { alert("Antes del PDF definitivo, marcá «Revisé el contenido» al final de Editar." + (avisos.length ? "\n\nControl de calidad:\n- " + avisos.join("\n- ") : "")); vista = "editar"; return pintar(); }
         if (avisos.length && !confirm("Control de calidad:\n- " + avisos.join("\n- ") + "\n\n¿Generar el PDF igual?")) return;
         if (vista === "editar") { vista = "preview"; pintar(); }
+        if (tipoDoc === "prop" && window.impulsaPropuestaPDF) {
+          /* Propuesta: PDF con la plantilla final aprobada (docs/propuesta-pdf.js). El diagnóstico no cambia. */
+          const P = window.impulsaPropuestaPDF, info = P.infoDesde(analizar(getR(k)), d);
+          const archivo = "propuesta-" + d.negocio.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) + ".pdf";
+          b.disabled = true; const txtB = b.textContent; b.textContent = "Generando PDF…";
+          try {
+            const res = await P.descargar(info, archivo);
+            registrarDoc(k, tipoDoc);
+            if (!res.completo) alert("Ya existe web o agenda: la propuesta se adaptó para no reemplazar lo que funciona (inversión $400.000). Revisala antes de enviarla.");
+            if (res.avisos.length) alert("Revisá el PDF:\n- " + res.avisos.join("\n- "));
+          } catch (x) { alert("No pude generar el PDF con la plantilla: " + (x && x.message ? x.message : x)); }
+          finally { b.disabled = false; b.textContent = txtB; }
+          return;
+        }
         registrarDoc(k, tipoDoc);
         document.body.classList.add("imc-print");
         setTimeout(() => { try { window.print(); } catch (x) { alert("No pude abrir la impresión."); } setTimeout(() => document.body.classList.remove("imc-print"), 1000); }, 200);

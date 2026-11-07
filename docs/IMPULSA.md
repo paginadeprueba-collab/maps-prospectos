@@ -85,3 +85,11 @@ SOFTWARE.
 - Para que funcione en producción hay que **desplegar el Worker** (`wrangler deploy` desde `worker/`). Este PR no despliega nada.
 - Los prospectos de Fábrica hoy no traen `website` (el filtro busca negocios sin web), así que en la mayoría el análisis web queda `no_disponible`. En la ficha se puede cargar una web conocida y **Re-investigar**.
 - Resultados guardados por dispositivo; la sincronización es por export/import JSON.
+
+## Propuesta comercial con la plantilla final (CRECIMIENTO COMERCIAL)
+
+«Generar propuesta comercial» → **Imprimir / PDF** ya no imprime el HTML: arma un PDF de 12 páginas sobre la plantilla final aprobada (`docs/propuesta/plantilla-base.pdf.b64`), con los datos del diagnóstico existente (nombre, rubro, rating, reseñas, web y agenda detectadas). El diagnóstico, el análisis y el buscador no cambian.
+
+- Código: `docs/propuesta-pdf.js` (usa pdf-lib + fontkit desde unpkg). Posiciones y estilos de cada texto variable: `docs/propuesta/plantilla-slots.json`, generados con `docs/propuesta/construir_plantilla.py`.
+- Bloques fijos sin cambios: Carlos Serrano, caso y testimonio Contreras, fuentes institucionales, cierre por WhatsApp 5491168713479 (el mensaje preparado se adapta al rubro).
+- Sin web ni agenda verificadas: oferta base $400.000 (dos etapas de $200.000). Si hay web o agenda: la oferta se adapta sin reemplazar lo que funciona, con la misma inversión de $400.000.
