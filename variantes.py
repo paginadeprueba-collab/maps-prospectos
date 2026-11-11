@@ -1,112 +1,51 @@
 #!/usr/bin/env python3
-"""Expande el rubro de cada query a sinónimos/variantes para cubrir más resultados."""
+"""Expande el rubro de cada query a sinónimos/variantes para cubrir más resultados.
+
+La lista vive en docs/rubros.json (la misma que muestra la página).
+"""
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import unicodedata
 from pathlib import Path
-
-# clave normalizada (sin acentos, lower) -> lista de variantes a buscar
-VARIANTES: dict[str, list[str]] = {
-    "abogados": [
-        "abogados",
-        "abogado",
-        "estudio jurídico",
-        "abogado laboral",
-        "abogado civil",
-    ],
-    "abogado": [
-        "abogados",
-        "abogado",
-        "estudio jurídico",
-        "abogado laboral",
-    ],
-    "odontologos": [
-        "odontólogos",
-        "odontólogo",
-        "dentista",
-        "clínica dental",
-        "consultorio odontológico",
-    ],
-    "dentistas": [
-        "dentista",
-        "odontólogos",
-        "clínica dental",
-    ],
-    "cirujanos plasticos": [
-        "cirujano plástico",
-        "cirugía estética",
-        "clínica de estética",
-        "medicina estética",
-    ],
-    "cirugia estetica": [
-        "cirugía estética",
-        "cirujano plástico",
-        "clínica de estética",
-        "medicina estética",
-    ],
-    "clinicas esteticas": [
-        "clínica estética",
-        "medicina estética",
-        "cirugía estética",
-    ],
-    "inmobiliarias": [
-        "inmobiliaria",
-        "inmobiliarias",
-        "agente inmobiliario",
-        "martillero",
-    ],
-    "contadores": [
-        "contador",
-        "contadores",
-        "estudio contable",
-        "contador público",
-    ],
-    "arquitectos": [
-        "arquitecto",
-        "arquitectos",
-        "estudio de arquitectura",
-    ],
-    "veterinarias": [
-        "veterinaria",
-        "veterinario",
-        "clínica veterinaria",
-    ],
-    "psicologos": [
-        "psicólogo",
-        "psicólogos",
-        "psicóloga",
-        "consultorio psicológico",
-    ],
-    "plomeros": ["plomero", "plomería", "gasista plomero"],
-    "electricistas": ["electricista", "electricistas", "instalaciones eléctricas"],
-    "cerrajeros": ["cerrajero", "cerrajería", "cerrajeros 24 horas"],
-    "gasistas": ["gasista", "gasista matriculado", "plomero gasista"],
-    "mudanzas": ["mudanzas", "empresa de mudanzas", "fletes mudanzas"],
-    "fumigadores": ["fumigación", "control de plagas", "fumigadores"],
-    "aire acondicionado": [
-        "aire acondicionado",
-        "instalación aire acondicionado",
-        "técnico aire acondicionado",
-    ],
-    "mecanicos": ["mecánico", "taller mecánico", "mecánica automotor"],
-    "peluquerias": ["peluquería", "peluquerías", "salon de belleza", "hair salon"],
-    "barberias": ["barbería", "barberias", "barber shop"],
-    "unas": ["manicura", "uñas", "nail salon", "podología"],
-    "gimnasios": ["gimnasio", "gimnasios", "gym"],
-    "panaderias": ["panadería", "panaderías", "confitería"],
-    "kioscos": ["kiosco", "kioscos", "maxikiosco"],
-    "ferreterias": ["ferretería", "ferreterías"],
-    "restaurantes": ["restaurante", "restaurantes", "parrilla", "comida casera"],
-}
 
 
 def norm(s: str) -> str:
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"\s+", " ", s.lower().strip())
+
+
+def catalogo_path() -> Path:
+    return Path(__file__).resolve().parent / "docs" / "rubros.json"
+
+
+def cargar_catalogo() -> dict:
+    path = catalogo_path()
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or not isinstance(data.get("grupos"), list):
+        raise SystemExit(f"ERROR: catálogo inválido {path}")
+    return data
+
+
+def _armar_variantes(data: dict) -> dict[str, list[str]]:
+    out: dict[str, list[str]] = {}
+    for grupo in data["grupos"]:
+        for item in grupo.get("items") or []:
+            variantes = [str(v).strip() for v in (item.get("variantes") or []) if str(v).strip()]
+            claves = [str(item.get("nombre") or "").strip()]
+            claves += [str(a).strip() for a in (item.get("alias") or []) if str(a).strip()]
+            for clave in claves:
+                if clave:
+                    out[norm(clave)] = list(variantes)
+    return out
+
+
+CATALOGO = cargar_catalogo()
+VARIANTES: dict[str, list[str]] = _armar_variantes(CATALOGO)
 
 
 def variants_for_rubro(rubro: str) -> list[str]:

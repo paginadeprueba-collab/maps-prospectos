@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import re
 import sys
 from pathlib import Path
@@ -18,7 +19,20 @@ OUT_FIELDS = [
     "link_maps",
     "direccion",
     "categoria",
+    "horarios",
 ]
+
+# Días como los escribe el scraper (Maps en español).
+_DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+_DIA_CORTO = {
+    "lunes": "lun",
+    "martes": "mar",
+    "miércoles": "mié",
+    "jueves": "jue",
+    "viernes": "vie",
+    "sábado": "sáb",
+    "domingo": "dom",
+}
 
 
 def _get(row: dict, *keys: str) -> str:
@@ -74,6 +88,54 @@ def whatsapp_link(phone_digits: str) -> str:
     if len(phone_digits) == 10 and phone_digits.startswith("11"):
         return f"https://wa.me/549{phone_digits}"
     return ""
+
+
+def format_open_hours(raw: str) -> str:
+    """Pasa el JSON de horarios del scraper a una línea corta. Vacío si no hay."""
+    text = (raw or "").replace("\u202f", " ").replace("\xa0", " ").strip()
+    if not text or text in ("{}", "[]", "null", "None"):
+        return ""
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return ""
+    if not isinstance(data, dict):
+        return ""
+    por_dia: dict[str, str] = {}
+    for clave, valor in data.items():
+        dia = str(clave or "").strip().lower()
+        if isinstance(valor, list):
+            horas = ", ".join(str(x).strip() for x in valor if str(x).strip())
+        else:
+            horas = str(valor or "").strip()
+        if dia and horas:
+            por_dia[dia] = horas
+    if not por_dia:
+        return ""
+
+    def es_cerrado(horas: str) -> bool:
+        return horas.strip().lower() in ("cerrado", "closed", "cerrado permanentemente")
+
+    seq = [(dia, por_dia[dia]) for dia in _DIAS if dia in por_dia and not es_cerrado(por_dia[dia])]
+    if not seq:
+        # El scraper dijo el horario y todos los días figuran cerrados.
+        if all(es_cerrado(v) for v in por_dia.values()):
+            return "Cerrado"
+        return ""
+    grupos: list[tuple[list[str], str]] = []
+    for dia, horas in seq:
+        if grupos and grupos[-1][1] == horas:
+            grupos[-1][0].append(dia)
+        else:
+            grupos.append(([dia], horas))
+    partes: list[str] = []
+    for dias, horas in grupos:
+        if len(dias) == 1:
+            etiqueta = _DIA_CORTO.get(dias[0], dias[0][:3])
+        else:
+            etiqueta = f"{_DIA_CORTO.get(dias[0], dias[0][:3])} a {_DIA_CORTO.get(dias[-1], dias[-1][:3])}"
+        partes.append(f"{etiqueta} {horas}")
+    return " · ".join(partes)[:300]
 
 
 def website_empty(row: dict) -> bool:
@@ -182,6 +244,7 @@ def main() -> int:
                     "link_maps": _get(row, "link", "url", "maps_url", "Link"),
                     "direccion": _get(row, "address", "complete_address", "direccion", "Address"),
                     "categoria": _get(row, "category", "categoria", "Category"),
+                    "horarios": format_open_hours(_get(row, "open_hours", "horarios", "Open Hours")),
                 }
             )
 

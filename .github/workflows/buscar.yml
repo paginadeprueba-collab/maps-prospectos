@@ -58,6 +58,7 @@ jobs:
       min_resenas: ${{ steps.query.outputs.min_resenas }}
       issue_number: ${{ steps.query.outputs.issue_number }}
       queries_json: ${{ steps.query.outputs.queries_json }}
+      seleccion: ${{ steps.expand.outputs.seleccion }}
     permissions:
       contents: write
       issues: write
@@ -84,7 +85,7 @@ jobs:
             # Quitar prefijo Buscar: (case insensitive)
             Q=$(printf '%s' "$TITLE" | sed -E 's/^[Bb][Uu][Ss][Cc][Aa][Rr]:[[:space:]]*//')
             Q=$(printf '%s' "$Q" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-            DEPTH="1"
+            DEPTH="4"
             RATING="4.0"
             RESENAS="10"
             EXPANDIR="true"
@@ -214,13 +215,16 @@ jobs:
           fi
           echo "Queries (pre-variantes):"
           cat -n queries.txt || true
+          # Rubro y barrios de ESTA búsqueda, antes de los sinónimos.
+          cp queries.txt queries_base.txt
+          python3 seleccion.py queries_base.txt seleccion.json
           # Expandir sinónimos de rubro (abogados→estudio jurídico, etc.)
           python3 variantes.py queries.txt queries_var.txt
           mv queries_var.txt queries.txt
           echo "Queries (con variantes):"
           cat -n queries.txt
-          # Agrupar en batches (amortiza Docker/Chrome; máx 20 jobs)
-          python3 batch_matrix.py queries.txt matrix.json --max-jobs 20 --batch 4
+          # Agrupar en batches (hasta 20 a la vez; si hay más, esperan turno)
+          python3 batch_matrix.py queries.txt matrix.json --max-jobs 60 --batch 4
           COUNT=$(python3 -c 'import json; print(len(json.load(open("matrix.json"))))')
           NQ=$(wc -l < queries.txt | tr -d ' ')
           if [ "$COUNT" = "0" ]; then
@@ -231,6 +235,9 @@ jobs:
             echo "matrix<<EOFMATRIX"
             python3 -c 'import json; print(json.dumps(json.load(open("matrix.json")), ensure_ascii=False))'
             echo "EOFMATRIX"
+            echo "seleccion<<EOFSEL"
+            cat seleccion.json
+            echo "EOFSEL"
           } >> "$GITHUB_OUTPUT"
           echo "Total: $NQ queries en $COUNT jobs (batch)"
 
@@ -281,7 +288,7 @@ jobs:
     needs: preparar
     if: needs.preparar.outputs.count != '0' && needs.preparar.outputs.count != ''
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 20
     continue-on-error: true
     permissions:
       contents: read
@@ -309,13 +316,18 @@ jobs:
           DEPTH_N="${DEPTH:-1}"
           # concurrencia del scraper ≈ min(4, NQ) ; timeout según profundidad
           if [ "$NQ" -lt 2 ]; then C=2; elif [ "$NQ" -gt 4 ]; then C=4; else C="$NQ"; fi
-          if [ "$DEPTH_N" -ge 3 ] 2>/dev/null; then
-            TO=7m
+          # depth 1 se cortaba a los 2 min (el contenedor moría con exit 137)
+          # y solo alcanzaba la primera página de Maps (~20). Con más depth
+          # hay que dejarlo terminar: el scraper documenta hasta 10.
+          if [ "$DEPTH_N" -ge 8 ] 2>/dev/null; then
+            TO=12m
+            IDLE=2m
+          elif [ "$DEPTH_N" -ge 3 ] 2>/dev/null; then
+            TO=8m
             IDLE=90s
           else
-            # modo rápido: acotar wall time (~1–2 min meta)
-            TO=2m
-            IDLE=25s
+            TO=4m
+            IDLE=45s
           fi
           echo "Batch [$IDX]: $NQ queries | depth=$DEPTH_N | -c $C | timeout $TO"
           cat -n query.txt
@@ -379,6 +391,7 @@ jobs:
           BUSQUEDA: ${{ needs.preparar.outputs.busqueda }}
           MIN_RATING: ${{ needs.preparar.outputs.min_rating }}
           MIN_RESENAS: ${{ needs.preparar.outputs.min_resenas }}
+          SELECCION_JSON: ${{ needs.preparar.outputs.seleccion }}
         run: |
           set -euo pipefail
           mkdir -p output final docs/data raw_parts
@@ -412,11 +425,13 @@ jobs:
             --min-reviews "${MIN_RESENAS:-10}" \
             --modo or
 
+          printf '%s\n' "${SELECCION_JSON:-}" > seleccion.json
           python3 resumen.py \
             --limpio final/limpio.csv \
             --raw output/raw.csv \
             --query "$BUSQUEDA" \
             --json-dir docs/data \
+            --seleccion seleccion.json \
             --max-items 100
 
           N_LIMPIO=$(python3 -c 'import csv; print(sum(1 for _ in csv.DictReader(open("final/limpio.csv",encoding="utf-8"))))')

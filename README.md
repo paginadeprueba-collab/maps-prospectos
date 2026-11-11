@@ -31,8 +31,8 @@ También: [Run workflow](https://github.com/paginadeprueba-collab/maps-prospecto
 ## Workflow paralelo (rápido)
 
 1. **preparar** — `expandir.py` → matrix JSON; `estado.json` = in_progress; comenta el issue si aplica.
-2. **scrape** — hasta **20** jobs en paralelo, cada uno Docker `gosom/google-maps-scraper`  
-   `-depth 1 -c 2 -lang es -exit-on-inactivity 1m`, `DISABLE_TELEMETRY=1`, timeout 10 min.
+2. **scrape** — hasta **20** jobs a la vez (si hay más, esperan turno), cada uno Docker `gosom/google-maps-scraper`  
+   `-lang es`, profundidad **4** (rápida) o **10** (profunda; el tope documentado del scraper), `DISABLE_TELEMETRY=1`.
 3. **unir** — junta `raw-*`, `filtrar.py` (dedupe), `resumen.py` → `docs/data/*.json`, limpia estado, artifact `prospectos`, cierra issue.
 
 Zonas: CABA → 48 barrios; Zona Norte/Oeste/Sur → partidos; GBA → todos. Zona chica no se parte.
