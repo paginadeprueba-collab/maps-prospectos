@@ -72,6 +72,7 @@ def build_markdown(rows: list[dict], n_raw: int, query: str, max_items: int = 10
         maps = (r.get("link_maps") or "").strip()
         wa = (r.get("whatsapp") or "").strip()
         tel = (r.get("telefono") or "").strip()
+        horas = (r.get("horarios") or "").strip()
 
         lines.append(f"### {i}. {nombre}")
         meta = f"⭐ {rating} ({reseñas} reseñas)"
@@ -80,6 +81,8 @@ def build_markdown(rows: list[dict], n_raw: int, query: str, max_items: int = 10
         lines.append(meta)
         if dire:
             lines.append(dire)
+        if horas:
+            lines.append(f"Horario: {horas}")
         parts = []
         if maps:
             parts.append(f"[📍 Ver en Maps]({maps})")
@@ -94,13 +97,38 @@ def build_markdown(rows: list[dict], n_raw: int, query: str, max_items: int = 10
     return "\n".join(lines)
 
 
+def load_seleccion(raw: str) -> dict:
+    """JSON en texto o ruta a un archivo. Vacío si no hay nada usable."""
+    text = (raw or "").strip()
+    if not text:
+        return {}
+    if not text.startswith("{"):
+        path = Path(text)
+        if path.is_file():
+            text = path.read_text(encoding="utf-8").strip()
+        else:
+            return {}
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    rubro = str(data.get("rubro") or "").strip()
+    barrios = [str(b).strip() for b in (data.get("barrios") or []) if str(b).strip()]
+    lugares = [str(b).strip() for b in (data.get("lugares") or []) if str(b).strip()]
+    return {"rubro": rubro, "barrios": barrios, "lugares": lugares}
+
+
 def build_json_payload(
     rows: list[dict],
     query: str,
     n_raw: int,
     timestamp: str,
     slug: str,
+    seleccion: dict | None = None,
 ) -> dict:
+    sel = seleccion or {}
     return {
         "id": f"{timestamp}_{slug}",
         "query": query,
@@ -108,6 +136,9 @@ def build_json_payload(
         "date_label": datetime.now(TZ).strftime("%Y-%m-%d %H:%M (America/Buenos_Aires)"),
         "n_raw": n_raw,
         "n_limpio": len(rows),
+        "rubro": sel.get("rubro") or "",
+        "barrios": list(sel.get("barrios") or []),
+        "lugares": list(sel.get("lugares") or []),
         "prospects": [
             {
                 "nombre": r.get("nombre") or "",
@@ -118,6 +149,7 @@ def build_json_payload(
                 "link_maps": r.get("link_maps") or "",
                 "direccion": r.get("direccion") or "",
                 "categoria": r.get("categoria") or "",
+                "horarios": r.get("horarios") or "",
             }
             for r in rows
         ],
@@ -146,6 +178,9 @@ def update_index(index_path: Path, entry: dict) -> None:
             "date_label": entry.get("date_label", ""),
             "n_raw": entry.get("n_raw", 0),
             "n_limpio": entry.get("n_limpio", 0),
+            "rubro": entry.get("rubro") or "",
+            "barrios": list(entry.get("barrios") or []),
+            "lugares": list(entry.get("lugares") or []),
             "file": f"{entry['id']}.json",
         },
     )
@@ -164,6 +199,7 @@ def main() -> int:
     ap.add_argument("--md-out", default="")
     ap.add_argument("--json-dir", default="")
     ap.add_argument("--max-items", type=int, default=100)
+    ap.add_argument("--seleccion", default="", help="JSON o archivo con rubro y barrios")
     args = ap.parse_args()
 
     limpio = Path(args.limpio)
@@ -191,7 +227,9 @@ def main() -> int:
         now = datetime.now(TZ)
         ts = now.strftime("%Y%m%d-%H%M%S")
         slug = slugify(query)
-        payload = build_json_payload(rows, query, n_raw, ts, slug)
+        payload = build_json_payload(
+            rows, query, n_raw, ts, slug, seleccion=load_seleccion(args.seleccion)
+        )
         data_dir = Path(args.json_dir)
         data_dir.mkdir(parents=True, exist_ok=True)
         out_file = data_dir / f"{payload['id']}.json"

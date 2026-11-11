@@ -1,0 +1,412 @@
+{
+  "nota": "Barrios de búsquedas que ya se hicieron. Se armó con las consultas reales de cada búsqueda y se unió a la sesión guardada. No borra ni cambia los prospectos.",
+  "combos": [
+    {
+      "id": "20261105-225050_abogados-1-barrio-caba",
+      "rubro": "abogados",
+      "barrios": [
+        "Palermo"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-05 22:50 (America/Buenos_Aires)",
+      "date": "20261105-225050",
+      "n_limpio": 15,
+      "n_raw": 72,
+      "query": "abogados · 1 barrio CABA"
+    },
+    {
+      "id": "20261104-211413_electricistas-12-barrios-caba",
+      "rubro": "electricistas",
+      "barrios": [
+        "Retiro",
+        "San Nicolás",
+        "Monserrat",
+        "San Telmo",
+        "Balvanera",
+        "Almagro",
+        "Caballito",
+        "Villa Crespo",
+        "Chacarita",
+        "Puerto Madero",
+        "Constitución",
+        "San Cristóbal"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-04 21:14 (America/Buenos_Aires)",
+      "date": "20261104-211413",
+      "n_limpio": 77,
+      "n_raw": 468,
+      "query": "electricistas · 12 barrios CABA"
+    },
+    {
+      "id": "20261104-123812_electricistas-8-barrios-caba",
+      "rubro": "electricistas",
+      "barrios": [
+        "Palermo",
+        "Belgrano",
+        "Núñez",
+        "Saavedra",
+        "Colegiales",
+        "Coghlan",
+        "Villa Urquiza",
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-04 12:38 (America/Buenos_Aires)",
+      "date": "20261104-123812",
+      "n_limpio": 64,
+      "n_raw": 294,
+      "query": "electricistas · 8 barrios CABA"
+    },
+    {
+      "id": "20261104-112732_inmobiliarias-15-barrios-caba",
+      "rubro": "inmobiliarias",
+      "barrios": [
+        "Boedo",
+        "Parque Patricios",
+        "Barracas",
+        "La Boca",
+        "Nueva Pompeya",
+        "Parque Chacabuco",
+        "Villa Soldati",
+        "Villa Lugano",
+        "Villa Riachuelo",
+        "Parque Avellaneda",
+        "Villa General Mitre",
+        "Villa Ortúzar",
+        "Villa Pueyrredón",
+        "Parque Chas",
+        "La Paternal"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-04 11:27 (America/Buenos_Aires)",
+      "date": "20261104-112732",
+      "n_limpio": 78,
+      "n_raw": 553,
+      "query": "inmobiliarias · 15 barrios CABA"
+    },
+    {
+      "id": "20261104-092554_odontologos-8-barrios-caba",
+      "rubro": "odontólogos",
+      "barrios": [
+        "Palermo",
+        "Belgrano",
+        "Núñez",
+        "Saavedra",
+        "Colegiales",
+        "Coghlan",
+        "Villa Urquiza",
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-04 09:25 (America/Buenos_Aires)",
+      "date": "20261104-092554",
+      "n_limpio": 58,
+      "n_raw": 482,
+      "query": "odontólogos · 8 barrios CABA"
+    },
+    {
+      "id": "20261102-164458_odontologos-6-barrios-caba",
+      "rubro": "odontólogos",
+      "barrios": [
+        "Puerto Madero",
+        "Chacarita",
+        "Constitución",
+        "San Cristóbal",
+        "Caballito",
+        "Villa Crespo"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-02 16:44 (America/Buenos_Aires)",
+      "date": "20261102-164458",
+      "n_limpio": 53,
+      "n_raw": 303,
+      "query": "odontólogos · 6 barrios CABA"
+    },
+    {
+      "id": "20261102-114004_odontologos-11-barrios-caba",
+      "rubro": "odontólogos",
+      "barrios": [
+        "Parque Avellaneda",
+        "Villa General Mitre",
+        "Villa Pueyrredón",
+        "Villa Ortúzar",
+        "La Paternal",
+        "Parque Chas",
+        "Agronomía",
+        "Villa Real",
+        "Versalles",
+        "Vélez Sársfield",
+        "Monte Castro"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-02 11:40 (America/Buenos_Aires)",
+      "date": "20261102-114004",
+      "n_limpio": 110,
+      "n_raw": 531,
+      "query": "odontólogos · 11 barrios CABA"
+    },
+    {
+      "id": "20261101-192736_inmobiliarias-9-barrios-caba",
+      "rubro": "inmobiliarias",
+      "barrios": [
+        "Boedo",
+        "Parque Patricios",
+        "Barracas",
+        "La Boca",
+        "Nueva Pompeya",
+        "Parque Chacabuco",
+        "Villa Soldati",
+        "Villa Lugano",
+        "Villa Riachuelo"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-01 19:27 (America/Buenos_Aires)",
+      "date": "20261101-192736",
+      "n_limpio": 38,
+      "n_raw": 269,
+      "query": "inmobiliarias · 9 barrios CABA"
+    },
+    {
+      "id": "20261101-124802_odontologos-9-barrios-caba",
+      "rubro": "odontólogos",
+      "barrios": [
+        "Boedo",
+        "Parque Patricios",
+        "Barracas",
+        "La Boca",
+        "Nueva Pompeya",
+        "Parque Chacabuco",
+        "Villa Soldati",
+        "Villa Lugano",
+        "Villa Riachuelo"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-01 12:48 (America/Buenos_Aires)",
+      "date": "20261101-124802",
+      "n_limpio": 100,
+      "n_raw": 409,
+      "query": "odontólogos · 9 barrios CABA"
+    },
+    {
+      "id": "20261101-101358_abogados-4-barrios-caba",
+      "rubro": "abogados",
+      "barrios": [
+        "Boedo",
+        "Parque Patricios",
+        "La Boca",
+        "Barracas"
+      ],
+      "lugares": [],
+      "fecha": "2026-11-01 10:13 (America/Buenos_Aires)",
+      "date": "20261101-101358",
+      "n_limpio": 35,
+      "n_raw": 218,
+      "query": "abogados · 4 barrios CABA"
+    },
+    {
+      "id": "20261031-234055_arquitectos-6-barrios-caba",
+      "rubro": "arquitectos",
+      "barrios": [
+        "Flores",
+        "Villa del Parque",
+        "Villa Ortúzar",
+        "Villa Pueyrredón",
+        "La Paternal",
+        "Villa General Mitre"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-31 23:40 (America/Buenos_Aires)",
+      "date": "20261031-234055",
+      "n_limpio": 19,
+      "n_raw": 200,
+      "query": "arquitectos · 6 barrios CABA"
+    },
+    {
+      "id": "20261031-202941_plomeros-4-barrios-caba",
+      "rubro": "plomeros",
+      "barrios": [
+        "Caballito",
+        "Villa Crespo",
+        "Chacarita",
+        "Puerto Madero"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-31 20:29 (America/Buenos_Aires)",
+      "date": "20261031-202941",
+      "n_limpio": 30,
+      "n_raw": 134,
+      "query": "plomeros · 4 barrios CABA"
+    },
+    {
+      "id": "20261031-173607_psicologos-6-barrios-caba",
+      "rubro": "psicólogos",
+      "barrios": [
+        "Villa Crespo",
+        "Puerto Madero",
+        "Chacarita",
+        "Caballito",
+        "Balvanera",
+        "Retiro"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-31 17:36 (America/Buenos_Aires)",
+      "date": "20261031-173607",
+      "n_limpio": 54,
+      "n_raw": 203,
+      "query": "psicólogos · 6 barrios CABA"
+    },
+    {
+      "id": "20261031-163018_inmobiliarias-2-barrios-caba",
+      "rubro": "inmobiliarias",
+      "barrios": [
+        "Villa Crespo",
+        "Chacarita"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-31 16:30 (America/Buenos_Aires)",
+      "date": "20261031-163018",
+      "n_limpio": 12,
+      "n_raw": 63,
+      "query": "inmobiliarias · 2 barrios CABA"
+    },
+    {
+      "id": "20261031-160603_abogados-3-barrios-caba",
+      "rubro": "abogados",
+      "barrios": [
+        "Flores",
+        "Liniers",
+        "Mataderos"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-31 16:06 (America/Buenos_Aires)",
+      "date": "20261031-160603",
+      "n_limpio": 30,
+      "n_raw": 157,
+      "query": "abogados · 3 barrios CABA"
+    },
+    {
+      "id": "20261030-232031_cirugia-estetica-1-barrio-caba",
+      "rubro": "cirugía estética",
+      "barrios": [
+        "Monserrat"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 23:20 (America/Buenos_Aires)",
+      "date": "20261030-232031",
+      "n_limpio": 9,
+      "n_raw": 55,
+      "query": "cirugía estética · 1 barrio CABA"
+    },
+    {
+      "id": "20261030-225539_abogados-2-barrios-caba",
+      "rubro": "abogados",
+      "barrios": [
+        "Palermo",
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:55 (America/Buenos_Aires)",
+      "date": "20261030-225539",
+      "n_limpio": 21,
+      "n_raw": 142,
+      "query": "abogados · 2 barrios CABA"
+    },
+    {
+      "id": "20261030-225219_abogados-2-barrios-caba",
+      "rubro": "abogados",
+      "barrios": [
+        "Palermo",
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:52 (America/Buenos_Aires)",
+      "date": "20261030-225219",
+      "n_limpio": 0,
+      "n_raw": 0,
+      "query": "abogados · 2 barrios CABA"
+    },
+    {
+      "id": "20261030-225005_abogados-2-barrios-caba",
+      "rubro": "abogados",
+      "barrios": [
+        "Palermo",
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:50 (America/Buenos_Aires)",
+      "date": "20261030-225005",
+      "n_limpio": 21,
+      "n_raw": 140,
+      "query": "abogados · 2 barrios CABA"
+    },
+    {
+      "id": "20261030-222606_abogados-2-barrios-caba",
+      "rubro": "Abogados",
+      "barrios": [
+        "Belgrano",
+        "Colegiales"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:26 (America/Buenos_Aires)",
+      "date": "20261030-222606",
+      "n_limpio": 5,
+      "n_raw": 40,
+      "query": "Abogados · 2 barrios CABA"
+    },
+    {
+      "id": "20261030-221800_peluquerias-caballito",
+      "rubro": "peluquerías",
+      "barrios": [
+        "Caballito"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:18 (America/Buenos_Aires)",
+      "date": "20261030-221800",
+      "n_limpio": 5,
+      "n_raw": 16,
+      "query": "peluquerías · Caballito"
+    },
+    {
+      "id": "20261030-221541_peluquerias-test-2-barrios",
+      "rubro": "peluquerías",
+      "barrios": [
+        "Palermo",
+        "Belgrano"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:15 (America/Buenos_Aires)",
+      "date": "20261030-221541",
+      "n_limpio": 7,
+      "n_raw": 32,
+      "query": "peluquerías · test 2 barrios"
+    },
+    {
+      "id": "20261030-220946_peluquerias-2-barrios-caba",
+      "rubro": "peluquerías",
+      "barrios": [
+        "Palermo",
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 22:09 (America/Buenos_Aires)",
+      "date": "20261030-220946",
+      "n_limpio": 3,
+      "n_raw": 16,
+      "query": "peluquerías · 2 barrios CABA"
+    },
+    {
+      "id": null,
+      "rubro": "Abogados",
+      "barrios": [
+        "Recoleta"
+      ],
+      "lugares": [],
+      "fecha": "2026-10-30 21:53 (America/Buenos_Aires)",
+      "date": "20261030-215348",
+      "n_limpio": null,
+      "n_raw": null,
+      "query": "Abogados · 1 barrio CABA"
+    }
+  ]
+}

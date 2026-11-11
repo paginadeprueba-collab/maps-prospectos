@@ -559,6 +559,37 @@
       background: var(--accent-soft);
       color: var(--accent-text);
     }
+    .chip-barrio.ya:not(.active),
+    .chip-rubro.ya:not(.active) {
+      border-color: var(--warn);
+      background: var(--warn-soft);
+    }
+    .chip-barrio.active.ya,
+    .chip-rubro.active.ya {
+      box-shadow: inset 0 0 0 2px var(--warn);
+    }
+    .ya-badge {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 0 6px;
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--warn);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+      vertical-align: 1px;
+    }
+    .ya-resumen {
+      margin: 0 0 12px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--warn-soft);
+      color: var(--text);
+      font-size: .88rem;
+      line-height: 1.45;
+    }
+    .hours { color: var(--muted); font-size: .85rem; margin: -8px 0 12px; }
     .opt-row {
       display: flex;
       flex-wrap: wrap;
@@ -621,11 +652,11 @@
           <div id="rubroGroups" class="rubro-groups" aria-label="Rubros sugeridos"></div>
 
           <div class="opt-row">
-            <label class="switch" title="Depth 3: más resultados, más lento">
+            <label class="switch" title="Profunda: recorre más resultados y tarda más">
               <input type="checkbox" id="chkProfunda" />
               Búsqueda profunda
             </label>
-            <span class="hint" style="margin:0;font-size:.8rem" id="profundaHint">Rápida ≈ depth 1 · Profunda ≈ depth 3</span>
+            <span class="hint" style="margin:0;font-size:.8rem" id="profundaHint">Rápida mira más resultados · Profunda mira hasta el máximo</span>
           </div>
 
           <div class="quick-row" style="margin-top:4px">
@@ -633,6 +664,7 @@
             <button type="button" class="btn btn-ghost btn-tiny" id="btnClearBarrios">Limpiar</button>
           </div>
 
+          <p id="yaResumen" class="ya-resumen hidden"></p>
           <div id="zonasWrap"></div>
 
           <div class="meta-row" id="barrioMeta">
@@ -782,58 +814,13 @@
     let searchMode = "caba"; // caba | libre
     const selectedBarrios = new Set();
 
-    const RUBRO_MENUS = [
-      {
-        title: "Pagan mucho por cliente",
-        items: [
-          "abogados", "odontólogos", "cirugía estética", "clínicas estéticas",
-          "inmobiliarias", "contadores", "arquitectos", "veterinarias", "psicólogos"
-        ],
-      },
-      {
-        title: "Más demandados",
-        items: [
-          "plomeros", "electricistas", "cerrajeros", "gasistas", "mudanzas",
-          "fumigadores", "aire acondicionado", "mecánicos"
-        ],
-      },
-      {
-        title: "Básicos",
-        items: [
-          "peluquerías", "barberías", "uñas", "gimnasios", "panaderías",
-          "kioscos", "ferreterías", "restaurantes"
-        ],
-      },
-    ];
-
-    // Misma lógica que variantes.py (aprox) para ETA en la UI
-    const RUBRO_VARIANTES = {
-      abogados: ["abogados", "abogado", "estudio jurídico", "abogado laboral", "abogado civil"],
-      odontólogos: ["odontólogos", "odontólogo", "dentista", "clínica dental"],
-      "cirugía estética": ["cirujano plástico", "cirugía estética", "clínica de estética", "medicina estética"],
-      "clínicas estéticas": ["clínica estética", "medicina estética", "cirugía estética"],
-      inmobiliarias: ["inmobiliaria", "inmobiliarias", "agente inmobiliario"],
-      contadores: ["contador", "contadores", "estudio contable"],
-      arquitectos: ["arquitecto", "arquitectos", "estudio de arquitectura"],
-      veterinarias: ["veterinaria", "veterinario", "clínica veterinaria"],
-      psicólogos: ["psicólogo", "psicólogos", "consultorio psicológico"],
-      plomeros: ["plomero", "plomería", "gasista plomero"],
-      electricistas: ["electricista", "electricistas"],
-      cerrajeros: ["cerrajero", "cerrajería"],
-      gasistas: ["gasista", "gasista matriculado"],
-      mudanzas: ["mudanzas", "empresa de mudanzas"],
-      fumigadores: ["fumigación", "control de plagas"],
-      "aire acondicionado": ["aire acondicionado", "técnico aire acondicionado"],
-      mecánicos: ["mecánico", "taller mecánico"],
-      peluquerías: ["peluquería", "peluquerías", "salon de belleza"],
-      barberías: ["barbería", "barberías"],
-      uñas: ["uñas", "manicura", "nail salon"],
-      gimnasios: ["gimnasio", "gimnasios"],
-      panaderías: ["panadería", "panaderías"],
-      kioscos: ["kiosco", "kioscos"],
-      ferreterías: ["ferretería", "ferreterías"],
-      restaurantes: ["restaurante", "restaurantes", "parrilla"],
-    };
+    // La misma lista que usa el workflow (docs/rubros.json).
+    let CATALOGO = [];
+    const DEPTH_RAPIDA = "4";
+    const DEPTH_PROFUNDA = "10";
+    const LS_COMBOS = "fp_combos_busqueda";
+    const MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+    let historial = [];
 
     function normKey(s) {
       return String(s || "")
@@ -849,10 +836,21 @@
       if (!r) return [];
       const nk = normKey(r);
       let found = null;
-      for (const [k, vals] of Object.entries(RUBRO_VARIANTES)) {
-        if (normKey(k) === nk || normKey(k).startsWith(nk) || nk.startsWith(normKey(k))) {
-          found = vals;
+      const items = CATALOGO.flatMap((g) => g.items || []);
+      for (const item of items) {
+        const claves = [item.nombre].concat(item.alias || []);
+        if (claves.some((k) => normKey(k) === nk)) {
+          found = item.variantes || [];
           break;
+        }
+      }
+      if (!found) {
+        for (const item of items) {
+          const k = normKey(item.nombre);
+          if (k === nk || k.startsWith(nk) || nk.startsWith(k)) {
+            found = item.variantes || [];
+            break;
+          }
         }
       }
       const out = [];
@@ -866,6 +864,145 @@
         out.push(t);
       }
       return out;
+    }
+
+    function canonicalRubro(nombre) {
+      const nk = normKey(nombre);
+      if (!nk) return "";
+      const items = CATALOGO.flatMap((g) => g.items || []);
+      for (const item of items) {
+        const claves = [item.nombre].concat(item.alias || []);
+        if (claves.some((k) => normKey(k) === nk)) return normKey(item.nombre);
+      }
+      for (const item of items) {
+        const k = normKey(item.nombre);
+        if (k === nk || k.startsWith(nk) || nk.startsWith(k)) return k;
+      }
+      return nk;
+    }
+
+    function fechaCorta(s) {
+      const m = String(s || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+      if (!m) return String(s || "").trim();
+      return Number(m[3]) + " " + MESES[Number(m[2]) - 1] + " " + m[1];
+    }
+
+    function loadLocalCombos() {
+      try {
+        const data = JSON.parse(localStorage.getItem(LS_COMBOS) || "[]");
+        return Array.isArray(data) ? data : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function barrioEnCombo(combo, barrio) {
+      return (combo.barrios || []).some((b) => normKey(b) === normKey(barrio));
+    }
+
+    function hitsRubroBarrio(rubro, barrio) {
+      const rk = canonicalRubro(rubro);
+      const publicados = historial.filter(
+        (c) => !c.local && canonicalRubro(c.rubro) === rk && barrioEnCombo(c, barrio)
+      );
+      if (publicados.length) return publicados;
+      return historial.filter(
+        (c) => c.local && canonicalRubro(c.rubro) === rk && barrioEnCombo(c, barrio)
+      );
+    }
+
+    function hitsRubro(rubro) {
+      const rk = canonicalRubro(rubro);
+      return historial.filter((c) => canonicalRubro(c.rubro) === rk && ((c.barrios || []).length || (c.lugares || []).length || c.query));
+    }
+
+    function recordarSeleccion(rubro, barrios) {
+      const item = {
+        local: true,
+        rubro: rubro,
+        barrios: barrios.slice(),
+        lugares: [],
+        fecha: new Date().toISOString().slice(0, 16).replace("T", " "),
+        date: "",
+        n_limpio: null,
+        query: rubro,
+      };
+      const previos = loadLocalCombos();
+      previos.unshift(item);
+      localStorage.setItem(LS_COMBOS, JSON.stringify(previos.slice(0, 200)));
+      historial.push(item);
+      pintarYa();
+    }
+
+    function textoHit(hit) {
+      const cuando = fechaCorta(hit.fecha || hit.date || "");
+      const cant =
+        hit.n_limpio === 0 || hit.n_limpio
+          ? hit.n_limpio + " resultados en esa búsqueda"
+          : "";
+      return [cuando && "el " + cuando, cant].filter(Boolean).join(", ");
+    }
+
+    function pintarChipYa(btn, hits) {
+      btn.classList.toggle("ya", hits.length > 0);
+      let badge = btn.querySelector(".ya-badge");
+      if (!hits.length) {
+        if (badge) badge.remove();
+        if (btn.dataset.yaTitle) {
+          btn.removeAttribute("title");
+          delete btn.dataset.yaTitle;
+        }
+        return;
+      }
+      if (!badge) {
+        badge = document.createElement("span");
+        badge.className = "ya-badge";
+        btn.appendChild(badge);
+      }
+      badge.textContent = "ya";
+      const ordenados = hits.slice().sort((a, b) => String(b.date || b.fecha || "").localeCompare(String(a.date || a.fecha || "")));
+      const ultimo = ordenados[0];
+      const veces = ordenados.length > 1 ? " Lo buscaste " + ordenados.length + " veces." : "";
+      btn.title = "Ya lo elegiste" + (textoHit(ultimo) ? " (" + textoHit(ultimo) + ")." : ".") + veces + " Podés buscarlo de nuevo.";
+      btn.dataset.yaTitle = "1";
+    }
+
+    function pintarYa() {
+      const rubro = (el("rubroBox") && el("rubroBox").value || "").trim();
+      document.querySelectorAll(".chip-rubro").forEach((btn) => {
+        pintarChipYa(btn, hitsRubro(btn.dataset.rubro || btn.childNodes[0].textContent || ""));
+      });
+      document.querySelectorAll(".chip-barrio").forEach((btn) => {
+        const barrio = btn.getAttribute("data-barrio");
+        pintarChipYa(btn, rubro ? hitsRubroBarrio(rubro, barrio) : []);
+      });
+      const box = el("yaResumen");
+      if (!box) return;
+      if (!rubro) {
+        box.classList.add("hidden");
+        box.textContent = "";
+        return;
+      }
+      const barriosYa = ALL_BARRIOS.filter((b) => hitsRubroBarrio(rubro, b).length);
+      if (!barriosYa.length) {
+        box.classList.add("hidden");
+        box.textContent = "";
+        return;
+      }
+      const muestra = barriosYa.slice(0, 4).join(", ");
+      const resto = barriosYa.length > 4 ? " y " + (barriosYa.length - 4) + " más" : "";
+      let ultimo = null;
+      barriosYa.forEach((b) => {
+        hitsRubroBarrio(rubro, b).forEach((h) => {
+          const clave = String(h.date || h.fecha || "");
+          if (!ultimo || clave > String(ultimo.date || ultimo.fecha || "")) ultimo = h;
+        });
+      });
+      const detalle = ultimo ? " El último: " + textoHit(ultimo) + "." : "";
+      box.textContent =
+        "En amarillo: " + rubro + " ya lo buscaste en " + muestra + resto + "." +
+        detalle + " Si querés, podés elegirlo otra vez.";
+      box.classList.remove("hidden");
     }
 
     let searchStartedAt = 0;
@@ -980,10 +1117,10 @@
     function estimateMinutes(nQueries, profunda) {
       if (nQueries <= 0) return 0;
       const batch = 4;
-      const jobs = Math.min(20, Math.ceil(nQueries / batch));
-      // ~45–70s por job en paralelo (docker+scrape); profunda ~2x
-      const per = profunda ? 2.2 : 1.0;
-      return Math.max(1, Math.ceil(jobs / 8 * per) + (profunda ? 1 : 0));
+      const jobs = Math.min(60, Math.ceil(nQueries / batch));
+      const waves = Math.ceil(jobs / 20);
+      const perWave = profunda ? 8 : 4;
+      return Math.max(3, waves * perWave);
     }
 
     function updateBarrioMeta() {
@@ -1058,6 +1195,7 @@
         wrap.appendChild(block);
       });
       updateBarrioMeta();
+      pintarYa();
     }
 
     function setSearchMode(mode) {
@@ -1185,7 +1323,7 @@
       let label = "";
       let fallbackQ = "";
       const profunda = !!(el("chkProfunda") && el("chkProfunda").checked);
-      const depth = profunda ? "3" : "1";
+      const depth = profunda ? DEPTH_PROFUNDA : DEPTH_RAPIDA;
 
       if (searchMode === "caba") {
         const rubro = (el("rubroBox").value || "").trim();
@@ -1208,6 +1346,7 @@
           " CABA" +
           (profunda ? " · profunda" : "");
         fallbackQ = queries.join("; ");
+        recordarSeleccion(rubro, [...selectedBarrios]);
         payload = {
           query: label,
           queries,
@@ -1300,25 +1439,28 @@
       const wrap = el("rubroGroups");
       if (!wrap) return;
       wrap.innerHTML = "";
-      RUBRO_MENUS.forEach((g) => {
+      CATALOGO.forEach((g) => {
         const block = document.createElement("div");
         block.className = "rubro-group";
         const title = document.createElement("p");
         title.className = "rubro-group-title";
-        title.textContent = g.title;
+        title.textContent = g.titulo;
         block.appendChild(title);
         const chips = document.createElement("div");
         chips.className = "chips-rubro";
-        g.items.forEach((name) => {
+        (g.items || []).forEach((item) => {
+          const name = item.nombre;
           const btn = document.createElement("button");
           btn.type = "button";
           btn.className = "chip-rubro";
+          btn.dataset.rubro = name;
           btn.textContent = name;
           btn.addEventListener("click", () => {
             el("rubroBox").value = name;
             document.querySelectorAll(".chip-rubro").forEach((c) => c.classList.remove("active"));
             btn.classList.add("active");
             updateBarrioMeta();
+            pintarYa();
             el("rubroBox").focus();
           });
           chips.appendChild(btn);
@@ -1326,6 +1468,7 @@
         block.appendChild(chips);
         wrap.appendChild(block);
       });
+      pintarYa();
     }
 
 
@@ -1503,6 +1646,7 @@
           `<h3>${i + 1}. ${esc(r.nombre || "Sin nombre")}${seen}</h3>` +
           `<div class="stars">★ ${esc(rating)} · ${esc(rev)} reseñas${cat}</div>` +
           (r.direccion ? `<div class="addr">${esc(r.direccion)}</div>` : "") +
+          (r.horarios ? `<div class="hours">Horario: ${esc(r.horarios)}</div>` : "") +
           `<div class="actions">${actions || '<span style="color:var(--muted)">Sin links</span>'}</div>` +
           `<div class="status-row">` +
           `<button type="button" class="status-btn ${st === "pendiente" ? "active-pendiente" : ""}" data-st="pendiente">Pendiente</button>` +
@@ -1518,7 +1662,7 @@
 
     function downloadCsv() {
       const rows = filteredSorted();
-      const cols = ["nombre", "reseñas", "rating", "telefono", "whatsapp", "link_maps", "direccion", "categoria", "estado"];
+      const cols = ["nombre", "reseñas", "rating", "telefono", "whatsapp", "link_maps", "direccion", "categoria", "horarios", "estado"];
       const escCell = (v) => {
         const s = String(v ?? "");
         if (/[",\n]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
@@ -1602,14 +1746,14 @@
       c.addEventListener("click", () => applyZona(c.getAttribute("data-zona")));
     });
     renderZonas();
-    renderRubroGroups();
     setSearchMode("caba");
     if (el("rubroBox")) {
       el("rubroBox").addEventListener("input", () => {
         document.querySelectorAll(".chip-rubro").forEach((c) => {
-          c.classList.toggle("active", normKey(c.textContent) === normKey(el("rubroBox").value));
+          c.classList.toggle("active", normKey(c.dataset.rubro || "") === normKey(el("rubroBox").value));
         });
         updateBarrioMeta();
+        pintarYa();
       });
     }
     if (el("chkProfunda")) {
@@ -1625,7 +1769,96 @@
     });
     window.addEventListener("hashchange", route);
 
-    Promise.all([loadIndex(false), rebuildSeenLinks(), checkPagesEstado()]).then(route);
+    function parsearQueryHistorica(q) {
+      const texto = String(q || "").trim();
+      const medio = texto.match(/^(.+?)\s+·\s+(.+)$/);
+      if (medio) {
+        const rubro = medio[1].trim();
+        const resto = medio[2].trim();
+        const exacto = ALL_BARRIOS.find((b) => normKey(b) === normKey(resto));
+        return { rubro: rubro, barrios: exacto ? [exacto] : [], lugares: [] };
+      }
+      const en = texto.match(/^(.+?)\s+en\s+(.+)$/i);
+      if (en) {
+        const rubro = en[1].trim();
+        const lugar = en[2].replace(/,?\s*caba$/i, "").trim();
+        const barrio = ALL_BARRIOS.find((b) => normKey(b) === normKey(lugar));
+        if (barrio) return { rubro: rubro, barrios: [barrio], lugares: [] };
+        return { rubro: rubro, barrios: [], lugares: lugar ? [lugar] : [] };
+      }
+      return null;
+    }
+
+    function armarHistorial(combosFile, searches) {
+      const porId = new Map();
+      (combosFile || []).forEach((c) => {
+        if (!c || !c.rubro) return;
+        const clave = c.id || "q:" + (c.query || "") + "|" + (c.date || c.fecha || "");
+        porId.set(clave, Object.assign({ local: false }, c));
+      });
+      (searches || []).forEach((s) => {
+        const parsed = s.rubro ? null : parsearQueryHistorica(s.query || "");
+        const item = {
+          local: false,
+          id: s.id,
+          rubro: s.rubro || (parsed && parsed.rubro) || "",
+          barrios: s.barrios && s.barrios.length ? s.barrios : (parsed && parsed.barrios) || [],
+          lugares: s.lugares && s.lugares.length ? s.lugares : (parsed && parsed.lugares) || [],
+          fecha: s.date_label || "",
+          date: s.date || "",
+          n_limpio: s.n_limpio,
+          query: s.query || "",
+        };
+        if (!item.rubro) return;
+        if (porId.has(s.id)) {
+          const prev = porId.get(s.id);
+          porId.set(s.id, Object.assign({}, item, {
+            rubro: prev.rubro || item.rubro,
+            barrios: prev.barrios && prev.barrios.length ? prev.barrios : item.barrios,
+            lugares: prev.lugares && prev.lugares.length ? prev.lugares : item.lugares,
+            n_limpio: item.n_limpio != null ? item.n_limpio : prev.n_limpio,
+            fecha: item.fecha || prev.fecha,
+            date: item.date || prev.date,
+          }));
+        } else {
+          porId.set(s.id, item);
+        }
+      });
+      const locales = loadLocalCombos().map((c) => Object.assign({ local: true }, c));
+      return Array.from(porId.values()).concat(locales);
+    }
+
+    async function loadCatalogo() {
+      try {
+        const res = await fetch("./rubros.json?v=20261111");
+        if (!res.ok) throw new Error("rubros " + res.status);
+        const data = await res.json();
+        CATALOGO = data.grupos || [];
+      } catch (e) {
+        console.warn(e);
+        CATALOGO = [];
+      }
+      renderRubroGroups();
+    }
+
+    async function loadHistorial() {
+      let file = [];
+      try {
+        const res = await fetch(DATA_BASE + "combos.json?t=" + Date.now());
+        if (res.ok) {
+          const data = await res.json();
+          file = data.combos || [];
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+      historial = armarHistorial(file, (indexData && indexData.searches) || []);
+      pintarYa();
+    }
+
+    Promise.all([loadIndex(false), loadCatalogo(), rebuildSeenLinks(), checkPagesEstado()])
+      .then(() => loadHistorial())
+      .then(route);
   </script>
   <script src="propuesta-pdf.js?v=20261107b"></script>
   <script src="impulsa-comercial.js?v=20261107b"></script>

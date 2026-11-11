@@ -1,0 +1,331 @@
+{
+  "grupos": [
+    {
+      "titulo": "Pagan mucho por cliente",
+      "items": [
+        {
+          "nombre": "abogados",
+          "variantes": ["abogados", "abogado", "estudio jurídico", "abogado laboral", "abogado civil"]
+        },
+        {
+          "nombre": "odontólogos",
+          "alias": ["dentistas"],
+          "variantes": ["odontólogos", "odontólogo", "dentista", "clínica dental", "consultorio odontológico"]
+        },
+        {
+          "nombre": "cirugía estética",
+          "alias": ["cirujanos plásticos"],
+          "variantes": ["cirujano plástico", "cirugía estética", "clínica de estética", "medicina estética"]
+        },
+        {
+          "nombre": "clínicas estéticas",
+          "variantes": ["clínica estética", "medicina estética", "cirugía estética"]
+        },
+        {
+          "nombre": "inmobiliarias",
+          "variantes": ["inmobiliaria", "inmobiliarias", "agente inmobiliario", "martillero"]
+        },
+        {
+          "nombre": "contadores",
+          "variantes": ["contador", "contadores", "estudio contable", "contador público"]
+        },
+        {
+          "nombre": "arquitectos",
+          "variantes": ["arquitecto", "arquitectos", "estudio de arquitectura"]
+        },
+        {
+          "nombre": "veterinarias",
+          "variantes": ["veterinaria", "veterinario", "clínica veterinaria"]
+        },
+        {
+          "nombre": "psicólogos",
+          "variantes": ["psicólogo", "psicólogos", "psicóloga", "consultorio psicológico"]
+        }
+      ]
+    },
+    {
+      "titulo": "Más demandados",
+      "items": [
+        {
+          "nombre": "plomeros",
+          "variantes": ["plomero", "plomería", "gasista plomero"]
+        },
+        {
+          "nombre": "electricistas",
+          "variantes": ["electricista", "electricistas", "instalaciones eléctricas"]
+        },
+        {
+          "nombre": "cerrajeros",
+          "variantes": ["cerrajero", "cerrajería", "cerrajeros 24 horas"]
+        },
+        {
+          "nombre": "gasistas",
+          "variantes": ["gasista", "gasista matriculado", "plomero gasista"]
+        },
+        {
+          "nombre": "mudanzas",
+          "variantes": ["mudanzas", "empresa de mudanzas", "fletes mudanzas"]
+        },
+        {
+          "nombre": "fumigadores",
+          "variantes": ["fumigación", "control de plagas", "fumigadores"]
+        },
+        {
+          "nombre": "aire acondicionado",
+          "variantes": ["aire acondicionado", "instalación aire acondicionado", "técnico aire acondicionado"]
+        },
+        {
+          "nombre": "mecánicos",
+          "variantes": ["mecánico", "taller mecánico", "mecánica automotor"]
+        }
+      ]
+    },
+    {
+      "titulo": "Básicos",
+      "items": [
+        {
+          "nombre": "peluquerías",
+          "variantes": ["peluquería", "peluquerías", "salon de belleza", "hair salon"]
+        },
+        {
+          "nombre": "barberías",
+          "variantes": ["barbería", "barberias", "barber shop"]
+        },
+        {
+          "nombre": "uñas",
+          "variantes": ["manicura", "uñas", "nail salon", "podología"]
+        },
+        {
+          "nombre": "gimnasios",
+          "variantes": ["gimnasio", "gimnasios", "gym"]
+        },
+        {
+          "nombre": "panaderías",
+          "variantes": ["panadería", "panaderías", "confitería"]
+        },
+        {
+          "nombre": "kioscos",
+          "variantes": ["kiosco", "kioscos", "maxikiosco"]
+        },
+        {
+          "nombre": "ferreterías",
+          "variantes": ["ferretería", "ferreterías"]
+        },
+        {
+          "nombre": "restaurantes",
+          "variantes": ["restaurante", "restaurantes", "parrilla", "comida casera"]
+        }
+      ]
+    },
+    {
+      "titulo": "Salud",
+      "items": [
+        {
+          "nombre": "kinesiólogos",
+          "variantes": ["kinesiólogo", "kinesiología", "kinesiólogo deportivo"]
+        },
+        {
+          "nombre": "nutricionistas",
+          "variantes": ["nutricionista", "nutrición", "licenciado en nutrición"]
+        },
+        {
+          "nombre": "dermatólogos",
+          "variantes": ["dermatólogo", "dermatología", "clínica dermatológica"]
+        },
+        {
+          "nombre": "fonoaudiólogos",
+          "variantes": ["fonoaudiólogo", "fonoaudiología"]
+        },
+        {
+          "nombre": "pediatras",
+          "variantes": ["pediatra", "pediatría", "clínica pediátrica"]
+        },
+        {
+          "nombre": "clínicas médicas",
+          "variantes": ["clínica médica", "consultorio médico", "médico clínico"]
+        },
+        {
+          "nombre": "ópticas",
+          "variantes": ["óptica", "ópticas", "anteojos"]
+        },
+        {
+          "nombre": "psicopedagogos",
+          "variantes": ["psicopedagogo", "psicopedagogía"]
+        },
+        {
+          "nombre": "traumatólogos",
+          "variantes": ["traumatólogo", "traumatología"]
+        },
+        {
+          "nombre": "centros de diagnóstico",
+          "variantes": ["centro de diagnóstico", "laboratorio de análisis", "análisis clínicos"]
+        }
+      ]
+    },
+    {
+      "titulo": "Estética",
+      "items": [
+        {
+          "nombre": "centros de estética",
+          "variantes": ["centro de estética", "estética facial", "tratamiento estético"]
+        },
+        {
+          "nombre": "depilación",
+          "variantes": ["depilación", "depilación definitiva", "centro de depilación"]
+        },
+        {
+          "nombre": "masajistas",
+          "variantes": ["masajista", "masajes", "masajes descontracturantes"]
+        },
+        {
+          "nombre": "spa",
+          "variantes": ["spa", "spa urbano"]
+        },
+        {
+          "nombre": "cejas y pestañas",
+          "variantes": ["cejas y pestañas", "diseño de cejas", "extensión de pestañas"]
+        }
+      ]
+    },
+    {
+      "titulo": "Profesionales",
+      "items": [
+        {
+          "nombre": "escribanos",
+          "variantes": ["escribano", "escribanía", "escribano público"]
+        },
+        {
+          "nombre": "gestores",
+          "variantes": ["gestor", "gestoría", "gestor automotor"]
+        },
+        {
+          "nombre": "ingenieros",
+          "variantes": ["ingeniero", "estudio de ingeniería", "ingeniero civil"]
+        },
+        {
+          "nombre": "fotógrafos",
+          "variantes": ["fotógrafo", "estudio fotográfico", "fotógrafo de eventos"]
+        },
+        {
+          "nombre": "diseñadores",
+          "variantes": ["diseñador gráfico", "estudio de diseño", "diseño gráfico"]
+        },
+        {
+          "nombre": "consultores",
+          "variantes": ["consultor", "consultora de empresas", "consultoría"]
+        }
+      ]
+    },
+    {
+      "titulo": "Oficios",
+      "items": [
+        {
+          "nombre": "pintores",
+          "variantes": ["pintor", "pintor de obras", "pintura de interiores"]
+        },
+        {
+          "nombre": "albañiles",
+          "variantes": ["albañil", "albañilería", "construcción"]
+        },
+        {
+          "nombre": "carpinteros",
+          "variantes": ["carpintero", "carpintería", "muebles a medida"]
+        },
+        {
+          "nombre": "herreros",
+          "variantes": ["herrero", "herrería", "rejas"]
+        },
+        {
+          "nombre": "techistas",
+          "variantes": ["techista", "reparación de techos", "techos"]
+        },
+        {
+          "nombre": "jardineros",
+          "variantes": ["jardinero", "jardinería", "paisajismo"]
+        },
+        {
+          "nombre": "tapiceros",
+          "variantes": ["tapicero", "tapicería", "tapizado de sillones"]
+        }
+      ]
+    },
+    {
+      "titulo": "Comercios",
+      "items": [
+        {
+          "nombre": "farmacias",
+          "variantes": ["farmacia", "farmacias"]
+        },
+        {
+          "nombre": "dietéticas",
+          "variantes": ["dietética", "dietéticas", "productos naturales"]
+        },
+        {
+          "nombre": "florerías",
+          "variantes": ["florería", "florerías", "flores"]
+        },
+        {
+          "nombre": "gomerías",
+          "variantes": ["gomería", "gomerías", "neumáticos"]
+        },
+        {
+          "nombre": "librerías",
+          "variantes": ["librería", "librerías"]
+        },
+        {
+          "nombre": "heladerías",
+          "variantes": ["heladería", "heladerías"]
+        },
+        {
+          "nombre": "rotiserías",
+          "variantes": ["rotisería", "rotiserías", "comida para llevar"]
+        },
+        {
+          "nombre": "pet shops",
+          "variantes": ["pet shop", "tienda de mascotas", "alimentos para mascotas"]
+        },
+        {
+          "nombre": "carnicerías",
+          "variantes": ["carnicería", "carnicerías"]
+        },
+        {
+          "nombre": "verdulerías",
+          "variantes": ["verdulería", "verdulerías"]
+        }
+      ]
+    },
+    {
+      "titulo": "Servicios",
+      "items": [
+        {
+          "nombre": "academias",
+          "variantes": ["academia", "academia de idiomas", "instituto"]
+        },
+        {
+          "nombre": "jardines de infantes",
+          "variantes": ["jardín de infantes", "jardín maternal", "guardería"]
+        },
+        {
+          "nombre": "agencias de viajes",
+          "variantes": ["agencia de viajes", "agencia de turismo", "turismo"]
+        },
+        {
+          "nombre": "hoteles",
+          "variantes": ["hotel", "hoteles", "hotel boutique"]
+        },
+        {
+          "nombre": "salones de fiesta",
+          "variantes": ["salón de fiestas", "salón de eventos", "quinta para eventos"]
+        },
+        {
+          "nombre": "lavanderías",
+          "variantes": ["lavandería", "lavanderías", "tintorería"]
+        },
+        {
+          "nombre": "aseguradoras",
+          "variantes": ["aseguradora", "productor de seguros", "seguros"]
+        }
+      ]
+    }
+  ]
+}
