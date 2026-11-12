@@ -3,15 +3,15 @@
  * textos variables sobre docs/propuesta/plantilla-base.pdf. No copia el caso Núñez: nombre, calificación,
  * reseñas, web, agenda e interpretación salen de ESE diagnóstico. Si el dato no está, no se afirma que
  * falte. Si ya hay web o agenda, la oferta no las reemplaza y no inventa un precio parcial: la base
- * sigue en $400.000 (dos etapas de $200.000) cuando corresponde esa implementación.
+ * sigue en $350.000 por 2 años cuando corresponde esa implementación.
  * Bloques fijos de la plantilla (Carlos Serrano, caso y testimonio Contreras, fuentes, publicidad
  * opcional) no se redibujan. Texto seleccionable y enlaces clicables. */
 (function (root) {
   "use strict";
-  const PRECIO_BASE = { total: "$400.000", etapas: "Dos etapas de $200.000" };
+  const PRECIO_BASE = { total: "$350.000", etapas: "por 2 años" };
   const WA = "5491168713479";
   const P11_ACOMP = "Acompañamiento semanal durante el primer mes. 24 meses de mantenimiento y actualización de datos.";
-  const P12_PAGO = "$200.000 para iniciar el desarrollo y $200.000 al finalizar, una vez revisados los entregables y dados de alta los servicios acordados.";
+  const P12_PAGO = "Inversión de $350.000 por 2 años, por la web con agenda de turnos directo a WhatsApp.";
 
   function terminos(rubId) {
     const salud = rubId === "salud";

@@ -74,9 +74,9 @@ ok(!/74/.test(S1.p2_obs1 + S1.p3_texto), "el texto no arrastra las 74 reseñas d
 ok(/no encontramos una web vinculada/i.test(S1.p2_obs2) && !/no tiene web/i.test(S1.p2_obs2), "no afirma ausencia de web solo por no verla");
 ok(/pudimos verificar una agenda/i.test(S1.p2_obs2) && !/no hay agenda|no tiene agenda/i.test(S1.p2_obs2), "agenda no verificada, no negada");
 ok(/diagnóstico/i.test(S1.p2_oportunidad) && !/unir esa confianza/i.test(S1.p2_oportunidad), "la oportunidad sale del diagnóstico, no del párrafo de Núñez");
-ok(S1.oferta === "base" && S1.p11_total === "$400.000" && S1.p11_etapas === "Dos etapas de $200.000", "paquete base $400.000");
+ok(S1.oferta === "base" && S1.p11_total === "$350.000" && S1.p11_etapas === "por 2 años", "paquete base $350.000 por 2 años");
 ok(/Dominio \.com por 2 años/.test(S1.p11_web) && /Agenda de solicitudes 24\/7/.test(S1.p11_agenda), "alcance base de web y agenda");
-ok(/\$200\.000 para iniciar/.test(S1.p12_s4) && /\$200\.000 al finalizar/.test(S1.p12_s4), "pagos 200.000 y 200.000");
+ok(/\$350\.000 por 2 años/.test(S1.p12_s4) && !/\$200\.000|para iniciar|al finalizar/.test(S1.p12_s4), "inversión $350.000 por 2 años, sin cuotas");
 ok(!/IMPULSA|recordatorio/i.test(JSON.stringify(S1)), "el PDF no dice IMPULSA ni recordatorios");
 ok(/113 reseñas/.test(S1.p3_texto), "la interpretación cita las reseñas reales");
 
@@ -95,7 +95,7 @@ ok(!/no tiene web/i.test(S2.p2_obs2 + S2.p5_texto), "no dice que no tiene web");
 ok(/Ajustamos la web/.test(S2.p8_s2) && !/Creamos la web/.test(S2.p8_s2), "no ofrece crear la web que ya existe");
 ok(!/Dominio \.com por 2 años/.test(S2.p11_web), "no ofrece un dominio nuevo si ya hay web");
 ok(/Agenda de solicitudes 24\/7/.test(S2.p11_agenda), "sí ofrece agenda porque no está verificada");
-ok(S2.p11_total === "$400.000" && !/\$150|\$250|\$300/.test(S2.p11_total + S2.p11_etapas + S2.p12_s4), "no inventa un precio parcial");
+ok(S2.p11_total === "$350.000" && S2.p11_etapas === "por 2 años" && !/\$150|\$250|\$300|\$200/.test(S2.p11_total + S2.p11_etapas + S2.p12_s4), "no inventa un precio parcial");
 ok(/4,6/.test(S2.p2_obs1) && /80/.test(S2.p2_resenas), "datos propios de Clínica Sur");
 
 const conAmbos = ficha({
@@ -111,7 +111,7 @@ ok(S3.oferta === "con_web_y_agenda", "oferta con web y agenda");
 ok(/ya tiene agenda/i.test(S3.p6_texto) && /se mantiene/i.test(S3.p11_agenda), "no ofrece otra agenda");
 ok(/no lo reemplaza|sin reemplazar/i.test(S3.p5_texto + S3.p11_intro), "no reemplaza la web");
 ok(!/Creamos la web/.test(S3.p8_s2), "el paso de implementación integra lo existente");
-ok(S3.p11_total === "$400.000", "mismo precio de base, sin parcial");
+ok(S3.p11_total === "$350.000" && S3.p11_etapas === "por 2 años", "mismo precio de base, sin parcial");
 
 const insuficiente = ficha({
   nombre: dato("Estudio Pérez"),
@@ -127,7 +127,7 @@ ok(!/no tiene web|no tiene agenda|no tienen web/i.test(JSON.stringify(S4)), "dat
 ok(/no encontramos una web vinculada/i.test(S4.p2_obs2), "dice que no la vio, no que no exista");
 ok(/estudio/i.test(S4.p1_estrategia) && /clientes/.test(S4.p2_resenas_txt), "rubro legal: estudio y clientes");
 ok(!/consultorio|pacientes|tratamientos/.test([S4.p2_obs1, S4.p2_obs2, S4.p3_texto, S4.p5_texto, S4.p6_texto, S4.p11_intro, S4.p11_web, S4.p11_agenda].join(" ")), "el texto variable del estudio no habla de consultorio");
-ok(S4.oferta === "base" && S4.p11_total === "$400.000", "la base sigue en $400.000");
+ok(S4.oferta === "base" && S4.p11_total === "$350.000" && S4.p11_etapas === "por 2 años", "la base sigue en $350.000 por 2 años");
 
 const verificada = ficha({
   nombre: dato("Peluquería Norte"),
@@ -206,7 +206,7 @@ print(json.dumps({"pages": doc.page_count, "text": text, "links": links}))
   ok(pdf.links.some((u) => u.includes("ortodonciacontreras.com")), nombre + " conserva el enlace de Contreras");
   ok(pdf.links.some((u) => u.startsWith("https://wa.me/5491168713479")), nombre + " conserva el WhatsApp aprobado");
   ok(/73%/.test(pdf.text) && /84%/.test(pdf.text), nombre + " conserva las fuentes institucionales");
-  ok(/\$400\.000/.test(pdf.text) && /\$200\.000/.test(pdf.text), nombre + " muestra la inversión acordada");
+  ok(/\$350\.000/.test(pdf.text) && /por 2 años/.test(pdf.text) && !/\$400\.000/.test(pdf.text) && !/\$200\.000/.test(pdf.text), nombre + " muestra $350.000 por 2 años, sin el precio anterior");
   if (nombre !== "insuficiente") ok(!/Núñez|NUNEZ/.test(pdf.text), nombre + " no deja el nombre Núñez en el PDF");
   if (nombre === "armonident") {
     ok(/ARMONIDENT/.test(pdf.text) && /113/.test(pdf.text) && !/\b74\b/.test(pdf.text), "ARMONIDENT lleva sus 113 reseñas");

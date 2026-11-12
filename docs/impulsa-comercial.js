@@ -731,7 +731,7 @@
       const res = await P.descargar(info, archivo);
       if (registrar) registrarDoc(k, "prop");
       mostrarPdfListo(res);
-      if (!res.completo) alert("El diagnóstico muestra web o agenda: la propuesta se adaptó para no reemplazar lo que ya funciona. La inversión sigue en $400.000. Revisala antes de enviarla.");
+      if (!res.completo) alert("El diagnóstico muestra web o agenda: la propuesta se adaptó para no reemplazar lo que ya funciona. La inversión sigue en $350.000 por 2 años. Revisala antes de enviarla.");
       if (res.avisos && res.avisos.length) alert("Revisá el PDF antes de enviarlo. Hay texto que no entró en el espacio de la plantilla:\n- " + res.avisos.join("\n- "));
     } catch (x) {
       alert("No pude generar el PDF de 12 páginas. No se abre la impresión del borrador HTML.\n\n" + (x && x.message ? x.message : x));
