@@ -1,7 +1,3 @@
 {
-  "status": "in_progress",
-  "query": "gasistas · 19 barrios CABA",
-  "started_at": "2026-11-14T20:56:51-03:00",
-  "started_at_label": "2026-11-14 20:56 (America/Buenos_Aires)",
-  "started_at_epoch": 1794700611
+  "status": "idle"
 }
