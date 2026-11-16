@@ -7,6 +7,7 @@ Proxy gratis (free tier) entre la página de GitHub Pages y GitHub Actions + KV 
 | Método | Ruta | Qué hace |
 |--------|------|----------|
 | `POST` | `/buscar` | Body `{ "query": "peluquerías en CABA" }` → `workflow_dispatch` |
+| `GET`  | `/resenas?id=` | Preview público de una ficha de Maps (`ChIJ…` o `0x…:0x…`). Lo usa «Crear web de ejemplo» para leer reseñas reales. Hay que volver a desplegar el Worker para que exista en producción. |
 | `GET`  | `/estado?run_id=` | Estado / progreso del run (o el último si no hay `run_id`) |
 | `GET`  | `/estado-prospecto?key=` | Estado de un prospecto (`pendiente` / `contactado` / `no_interesa`) |
 | `POST` | `/estado-prospecto` | Body `{ "key", "status" }` → guarda en KV `ESTADOS` |
