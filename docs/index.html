@@ -859,13 +859,15 @@
 
   <script src="ejemplo/codec.js?v=20261116b"></script>
   <script src="ejemplo/hogar.js?v=20261116b"></script>
-  <script src="ejemplo/resenas.js?v=20261116c"></script>
+  <script src="ejemplo/resenas.js?v=20261116d"></script>
   <script>
     /* ========== CONFIG ========== */
     // Pegá acá la URL del Worker cuando lo deploys (sin barra final).
     // Ej: "https://maps-prospectos.tu-usuario.workers.dev"
     // Vacío = fallback a crear issue en GitHub.
     const WORKER_URL = "https://maps-prospectos.mapsprospectos.workers.dev";
+    // Worker aparte, solo para leer reseñas de Maps. No usa el de la Fábrica.
+    const RESENAS_URL = "https://resenas-maps.lagosscarlos44.workers.dev";
 
 
     const ZONAS_CABA = {
@@ -1774,7 +1776,7 @@
       let aviso = "No pude leer las reseñas de Maps. La web queda solo con las estrellas.";
       try {
         const leidas = window.EjemploResenas
-          ? await EjemploResenas.leer(r.link_maps, { worker: WORKER_URL, timeout: 10000 })
+          ? await EjemploResenas.leer(r.link_maps, { worker: RESENAS_URL, timeout: 10000 })
           : { ok: false, reseñas: [] };
         if (leidas.ok && leidas.reseñas && leidas.reseñas.length) {
           reseñas = leidas.reseñas;
