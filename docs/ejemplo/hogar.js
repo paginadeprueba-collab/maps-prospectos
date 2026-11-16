@@ -449,7 +449,10 @@
       const texto = String(item.texto || item.t || item.text || item.comentario || "").trim();
       if (!texto) continue;
       const nombre = String(item.nombre || item.n || item.autor || item.author || "").trim();
-      out.push([nombre.slice(0, 40), texto.slice(0, 180)]);
+      const estrellas = Number(item.estrellas || item.rating || item.stars || 0);
+      const fila = [nombre.slice(0, 40), texto.slice(0, 180)];
+      if (estrellas >= 1 && estrellas <= 5) fila.push(Math.round(estrellas));
+      out.push(fila);
     }
     return out;
   }
@@ -487,6 +490,7 @@
     id: "hogar",
     titulo: "Mantenimiento del hogar",
     pagina: "ejemplo/hogar.html",
+    pagina2: "ejemplo/hogar-2.html",
     rubros: RUBROS,
     porId: function (id) { return porId[id] || null; },
     resolver: resolver,

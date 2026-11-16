@@ -2,6 +2,7 @@
  * Cloudflare Worker — Fábrica de Prospectos
  *
  * POST /buscar              { query?, queries? } → dispara workflow_dispatch
+ * GET  /resenas             ?id=ChIJ… | 0x…:0x… → texto del preview de Maps (reseñas)
  * GET  /estado              ?run_id= | latest → estado del run
  * GET  /estado-prospecto    ?key= → { key, status }
  * POST /estado-prospecto    { key, status } → guarda en KV ESTADOS
@@ -11,6 +12,7 @@
 
 import { investigarProspecto } from "./investigar.js";
 import { puntuar } from "./scoring.js";
+import { idValido, leerPreview } from "./resenas.js";
 
 const ALLOWED_STATUSES = new Set(["pendiente", "contactado", "no_interesa"]);
 
@@ -30,6 +32,10 @@ export default {
       if (request.method === "POST" && url.pathname === "/investigar") {
         if (origin && !isAllowedOrigin(env, origin)) return json({ error: "origin_not_allowed" }, 403);
         return withCors(env, origin, await handleInvestigar(request, env));
+      }
+      if (request.method === "GET" && url.pathname === "/resenas") {
+        if (origin && !isAllowedOrigin(env, origin)) return json({ error: "origin_not_allowed" }, 403);
+        return withCors(env, origin, await handleResenas(url));
       }
       if (request.method === "GET" && url.pathname === "/estado") {
         return withCors(env, origin, await handleEstado(url, env));
@@ -110,6 +116,21 @@ function withCors(env, origin, response) {
     statusText: response.statusText,
     headers,
   });
+}
+
+async function handleResenas(url) {
+  const id = url.searchParams.get("id") || "";
+  if (!idValido(id)) return json({ error: "id" }, 400);
+  try {
+    const text = await leerPreview(id);
+    return new Response(text, {
+      status: 200,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" },
+    });
+  } catch (err) {
+    const status = err && err.status ? err.status : 502;
+    return json({ error: "maps", message: String(err && err.message ? err.message : err) }, status);
+  }
 }
 
 function json(body, status = 200) {

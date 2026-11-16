@@ -618,8 +618,11 @@
       box-shadow: var(--shadow);
     }
     .ejemplo-card h3 { margin: 0 0 4px; font-size: 1.15rem; letter-spacing: -0.02em; }
-    .ejemplo-card .field { min-height: 44px; font-size: 16px; margin: 10px 0; }
-    .ejemplo-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    .ejemplo-card { max-height: min(92vh, 760px); overflow: auto; }
+    .ejemplo-card .field { min-height: 44px; font-size: 16px; margin: 8px 0; }
+    .ejemplo-diseno { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+    .ejemplo-diseno h4 { margin: 0; font-size: .95rem; }
+    .ejemplo-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
     .ejemplo-actions .btn { flex: 1 1 120px; }
     @media (min-width: 720px) {
       .ejemplo-sheet { align-items: center; }
@@ -830,20 +833,33 @@
     <div class="ejemplo-card">
       <h3 id="ejemploSheetTitle">Web de ejemplo</h3>
       <p class="hint" id="ejemploSheetNombre"></p>
-      <p class="hint" id="ejemploSheetMsg">Se abrió en otra pestaña. WhatsApp abre el mensaje listo y no lo envía solo.</p>
-      <p class="hint" id="ejemploSheetError" hidden></p>
-      <input id="ejemploSheetUrl" class="field" readonly aria-label="Link de la web de ejemplo" />
-      <div class="ejemplo-actions">
-        <button type="button" class="btn btn-primary" id="ejemploCopiar">Copiar link</button>
-        <a class="btn btn-ghost" id="ejemploAbrir" href="#" target="_blank" rel="noopener">Abrir</a>
-        <a class="btn btn-wa" id="ejemploWa" href="#" target="_blank" rel="noopener">WhatsApp con el link</a>
+      <p class="hint" id="ejemploSheetMsg">Buscando reseñas en Google Maps…</p>
+      <div class="ejemplo-diseno">
+        <h4>Diseño 1</h4>
+        <input id="ejemploUrl1" class="field" readonly aria-label="Link del diseño 1" />
+        <div class="ejemplo-actions">
+          <button type="button" class="btn btn-primary" data-copy="ejemploUrl1">Copiar link</button>
+          <a class="btn btn-ghost" id="ejemploAbrir1" href="#" target="_blank" rel="noopener">Abrir</a>
+          <a class="btn btn-wa" id="ejemploWa1" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
       </div>
+      <div class="ejemplo-diseno">
+        <h4>Diseño 2</h4>
+        <input id="ejemploUrl2" class="field" readonly aria-label="Link del diseño 2" />
+        <div class="ejemplo-actions">
+          <button type="button" class="btn btn-primary" data-copy="ejemploUrl2">Copiar link</button>
+          <a class="btn btn-ghost" id="ejemploAbrir2" href="#" target="_blank" rel="noopener">Abrir</a>
+          <a class="btn btn-wa" id="ejemploWa2" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <p class="hint">WhatsApp abre el mensaje listo y no lo envía solo.</p>
       <button type="button" class="btn btn-ghost btn-block" id="ejemploCerrar">Cerrar</button>
     </div>
   </div>
 
-  <script src="ejemplo/codec.js?v=20261116a"></script>
-  <script src="ejemplo/hogar.js?v=20261116a"></script>
+  <script src="ejemplo/codec.js?v=20261116b"></script>
+  <script src="ejemplo/hogar.js?v=20261116b"></script>
+  <script src="ejemplo/resenas.js?v=20261116c"></script>
   <script>
     /* ========== CONFIG ========== */
     // Pegá acá la URL del Worker cuando lo deploys (sin barra final).
@@ -1725,27 +1741,27 @@
       sheet.hidden = true;
     }
 
-    function mostrarEjemploSheet(url, r, error) {
-      const sheet = el("ejemploSheet");
-      sheet.classList.remove("hidden");
-      sheet.hidden = false;
-      el("ejemploSheetNombre").textContent = (r && r.nombre) || "";
-      el("ejemploSheetError").textContent = error || "";
-      el("ejemploSheetError").hidden = !error;
-      const input = el("ejemploSheetUrl");
+    function pintarLinkEjemplo(n, url, r) {
+      const input = el("ejemploUrl" + n);
+      const abrir = el("ejemploAbrir" + n);
+      const wa = el("ejemploWa" + n);
       input.value = url || "";
-      const abrir = el("ejemploAbrir");
       abrir.href = url || "#";
       abrir.classList.toggle("hidden", !url);
-      const wa = el("ejemploWa");
       if (url) {
         wa.href = waEjemplo(r, url);
         wa.classList.remove("hidden");
       } else wa.classList.add("hidden");
-      const msg = el("ejemploSheetMsg");
-      msg.textContent = url
-        ? "Se abrió en otra pestaña. WhatsApp abre el mensaje listo y no lo envía solo."
-        : "No se pudo armar el link.";
+    }
+
+    function mostrarEjemploSheet(url1, url2, r, aviso) {
+      const sheet = el("ejemploSheet");
+      sheet.classList.remove("hidden");
+      sheet.hidden = false;
+      el("ejemploSheetNombre").textContent = (r && r.nombre) || "";
+      pintarLinkEjemplo(1, url1, r);
+      pintarLinkEjemplo(2, url2, r);
+      el("ejemploSheetMsg").textContent = aviso || "";
     }
 
     async function abrirEjemplo(r, btn) {
@@ -1753,18 +1769,40 @@
       if (!listo || !window.EjemploCodec) return;
       if (btn) btn.disabled = true;
       const win = window.open("about:blank", "_blank");
+      mostrarEjemploSheet("", "", r, "Buscando reseñas en Google Maps…");
+      let reseñas = [];
+      let aviso = "No pude leer las reseñas de Maps. La web queda solo con las estrellas.";
       try {
-        const hash = await EjemploCodec.pack(listo.payload);
-        const url = urlEjemplo(listo.grupo.pagina, hash);
+        const leidas = window.EjemploResenas
+          ? await EjemploResenas.leer(r.link_maps, { worker: WORKER_URL, timeout: 10000 })
+          : { ok: false, reseñas: [] };
+        if (leidas.ok && leidas.reseñas && leidas.reseñas.length) {
+          reseñas = leidas.reseñas;
+          aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
+        } else if (leidas.motivo === "tiempo") {
+          aviso = "La lectura de Maps tardó más de 10 segundos. La web queda solo con las estrellas.";
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+      try {
+        const payload = listo.payload;
+        if (reseñas.length) payload.e = reseñas;
+        else if (!payload.e) aviso = aviso || "La web queda solo con las estrellas.";
+        const hash = await EjemploCodec.pack(payload);
+        const pagina2 = listo.grupo.pagina2 || "ejemplo/hogar-2.html";
+        const url1 = urlEjemplo(listo.grupo.pagina, hash);
+        const url2 = urlEjemplo(pagina2, hash);
         if (win) {
-          win.location.replace(url);
+          win.location.replace(url1);
           win.opener = null;
         }
-        mostrarEjemploSheet(url, r);
+        if (reseñas.length) aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
+        mostrarEjemploSheet(url1, url2, r, aviso);
       } catch (e) {
         console.warn(e);
         if (win) win.close();
-        mostrarEjemploSheet("", r, "No se pudo armar el link.");
+        mostrarEjemploSheet("", "", r, "No se pudo armar el link.");
       } finally {
         if (btn) btn.disabled = false;
       }
@@ -1882,21 +1920,24 @@
     el("ejemploSheet").addEventListener("click", (e) => {
       if (e.target === el("ejemploSheet")) cerrarEjemploSheet();
     });
-    el("ejemploCopiar").addEventListener("click", async () => {
-      const url = el("ejemploSheetUrl").value;
+    el("ejemploSheet").addEventListener("click", async (e) => {
+      const btn = e.target.closest("[data-copy]");
+      if (!btn) return;
+      const input = el(btn.getAttribute("data-copy"));
+      const url = input ? input.value : "";
       if (!url) return;
       let ok = false;
       try {
         await navigator.clipboard.writeText(url);
         ok = true;
-      } catch (e) {
-        const input = el("ejemploSheetUrl");
+      } catch (err) {
         input.focus();
         input.select();
-        try { ok = document.execCommand("copy"); } catch (err) { ok = false; }
+        try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
       }
-      el("ejemploCopiar").textContent = ok ? "Copiado" : "Seleccioná el link";
-      setTimeout(() => { el("ejemploCopiar").textContent = "Copiar link"; }, 1600);
+      const prev = btn.textContent;
+      btn.textContent = ok ? "Copiado" : "Seleccioná el link";
+      setTimeout(() => { btn.textContent = prev; }, 1600);
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && !el("ejemploSheet").classList.contains("hidden")) cerrarEjemploSheet();

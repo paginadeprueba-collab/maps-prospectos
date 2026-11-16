@@ -339,8 +339,8 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
 </div>
 <noscript><p style="padding:24px">Esta página se arma en el navegador con los datos del link.</p></noscript>
 
-<script src="codec.js?v=20261116a"></script>
-<script src="hogar.js?v=20261116a"></script>
+<script src="codec.js?v=20261116b"></script>
+<script src="hogar.js?v=20261116b"></script>
 <script>
 (function () {
   var timers = [];
@@ -517,21 +517,21 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
       var sub = data.s && data.v ? fmtNum(data.v) + " reseñas en Google Maps" : (data.v && !data.s ? "reseñas en Google Maps" : "Calificación en Google Maps");
       track.innerHTML = '<div class="rev"><article class="rev-card rev-generica"><div>' +
         (data.s ? '<div class="st">' + estrellas(data.s) + "</div>" : "") +
-        '<div class="big">' + esc(big) + '</div><p class="sub">' + esc(sub) + "</p></div>" +
-        '<p class="rev-nota">Calificación pública de Google Maps. Esta página no inventa comentarios ni nombres.</p></article></div>';
+        '<div class="big">' + esc(big) + '</div><p class="sub">' + esc(sub) + "</p></div></article></div>";
       dots.hidden = true;
       return;
     }
 
     q("revTitle").textContent = "Lo que dicen sus clientes";
     dots.hidden = textos.length < 2;
-    textos.forEach(function (r, i) {
+    textos.forEach(function (r) {
       var nombre = String(r[0] || "").trim();
+      var stRev = r[2] ? estrellas(r[2]) : (data.s ? estrellas(data.s) : "");
       var who = nombre
         ? '<div class="rev-who"><span class="av">' + esc(nombre.charAt(0).toUpperCase()) + "</span><div><b>" + esc(nombre) + "</b><small>Reseña de Google</small></div></div>"
-        : '<div class="rev-who"><div><b>Reseña de Google</b><small>Sin nombre en los datos</small></div></div>';
+        : "";
       track.insertAdjacentHTML("beforeend", '<div class="rev"><article class="rev-card"><div>' +
-        (data.s ? '<div class="st">' + estrellas(data.s) + "</div>" : "") +
+        (stRev ? '<div class="st">' + stRev + "</div>" : "") +
         "<q>" + esc(r[1]) + "</q></div>" + who + "</article></div>");
       dots.insertAdjacentHTML("beforeend", "<i></i>");
     });

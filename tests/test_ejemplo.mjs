@@ -20,8 +20,9 @@ sandbox.globalThis = sandbox;
 vm.createContext(sandbox);
 vm.runInContext(fs.readFileSync(new URL("../docs/ejemplo/codec.js", import.meta.url), "utf8"), sandbox);
 vm.runInContext(fs.readFileSync(new URL("../docs/ejemplo/hogar.js", import.meta.url), "utf8"), sandbox);
+vm.runInContext(fs.readFileSync(new URL("../docs/ejemplo/resenas.js", import.meta.url), "utf8"), sandbox);
 
-const { EjemploCodec, EjemploGrupos } = sandbox;
+const { EjemploCodec, EjemploGrupos, EjemploResenas } = sandbox;
 const hogar = EjemploGrupos.hogar;
 const BARRIOS = ["Palermo", "Belgrano", "Parque Chacabuco", "Flores", "San Telmo", "Villa Urquiza", "Caballito", "Colegiales"];
 
@@ -153,5 +154,52 @@ const links = {
   cerrajero: await EjemploCodec.pack(hogar.payload(sinTel, ctx("electricistas"))),
 };
 fs.writeFileSync("/tmp/ejemplo-links.json", JSON.stringify(links, null, 2));
+
+const solerLink = electricista.prospects.find((p) => p.nombre === "Electricista Soler").link_maps;
+assert.equal(EjemploResenas.fichaId(solerLink), "ChIJsTLJ91S1vJURA6wDG8_IYSc");
+assert.equal(EjemploResenas.fichaId("https://maps.example/?q=nada"), "");
+
+function reviewEl(name, text, stars) {
+  const el = [];
+  el[1] = [];
+  el[1][4] = [];
+  el[1][4][5] = [name];
+  el[2] = [];
+  el[2][0] = [stars];
+  el[2][15] = [[text]];
+  return [el];
+}
+const data = [];
+data[6] = [];
+data[6][175] = [];
+data[6][175][9] = [[[[
+  reviewEl("Ana", "Vinieron al toque y dejaron todo prolijo.", 5),
+  reviewEl("Luis", "Más o menos, tardaron.", 3),
+  reviewEl("Mora", "x".repeat(220), 4),
+  reviewEl("", "Sin nombre no entra.", 5),
+]]]];
+// The structure above is too nested. Build it explicitly.
+const lista = [
+  reviewEl("Ana", "Vinieron al toque y dejaron todo prolijo.", 5),
+  reviewEl("Luis", "Más o menos, tardaron.", 3),
+  reviewEl("Mora", "Trabajo largo. " + "palabra ".repeat(40), 4),
+  reviewEl("", "Sin nombre no entra.", 5),
+];
+const arbol = [];
+arbol[6] = [];
+arbol[6][175] = [];
+arbol[6][175][9] = [];
+arbol[6][175][9][0] = [];
+arbol[6][175][9][0][0] = lista;
+const parsed = EjemploResenas.parse(")]}'\n" + JSON.stringify(arbol));
+assert.equal(parsed.length, 3);
+assert.equal(parsed[0][0], "Ana");
+assert.equal(parsed[0][2], 5);
+assert.equal(parsed[1][0], "Mora");
+assert.ok(parsed[1][1].length <= 161);
+assert.equal(parsed[2][0], "Luis");
+assert.equal(parsed.some((r) => r[1].includes("Sin nombre")), false);
+assert.equal(EjemploResenas.parse("no es json").length, 0);
+
 console.log("links", Object.fromEntries(Object.entries(links).map(([k, v]) => [k, v.length])));
 console.log("ok");
