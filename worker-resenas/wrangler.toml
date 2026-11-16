@@ -1,0 +1,8 @@
+# Worker aparte: solo lee reseñas públicas de Google Maps.
+# No comparte KV ni secretos con el Worker de la Fábrica.
+
+name = "resenas-maps"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+account_id = "541fb3ccecd98c7d2867451ce5334ce1"
+workers_dev = true
