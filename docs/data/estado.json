@@ -1,3 +1,7 @@
 {
-  "status": "idle"
+  "status": "in_progress",
+  "query": "__completar_resenas__",
+  "started_at": "2026-11-17T01:16:49-03:00",
+  "started_at_label": "2026-11-17 01:16 (America/Buenos_Aires)",
+  "started_at_epoch": 1794889009
 }
