@@ -10,6 +10,8 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+from resenas_maps import completar_resenas
+
 # Argentina sin DST desde 2009 → UTC-3 fijo (evita depender de tzdata en runners)
 TZ = timezone(timedelta(hours=-3))
 
@@ -120,6 +122,24 @@ def load_seleccion(raw: str) -> dict:
     return {"rubro": rubro, "barrios": barrios, "lugares": lugares}
 
 
+def _prospecto_json(r: dict) -> dict:
+    item = {
+        "nombre": r.get("nombre") or "",
+        "reseñas": r.get("reseñas") or "",
+        "rating": r.get("rating") or "",
+        "telefono": r.get("telefono") or "",
+        "whatsapp": r.get("whatsapp") or "",
+        "link_maps": r.get("link_maps") or "",
+        "direccion": r.get("direccion") or "",
+        "categoria": r.get("categoria") or "",
+        "horarios": r.get("horarios") or "",
+    }
+    texto = r.get("reseñas_texto")
+    if isinstance(texto, list):
+        item["reseñas_texto"] = texto
+    return item
+
+
 def build_json_payload(
     rows: list[dict],
     query: str,
@@ -139,20 +159,7 @@ def build_json_payload(
         "rubro": sel.get("rubro") or "",
         "barrios": list(sel.get("barrios") or []),
         "lugares": list(sel.get("lugares") or []),
-        "prospects": [
-            {
-                "nombre": r.get("nombre") or "",
-                "reseñas": r.get("reseñas") or "",
-                "rating": r.get("rating") or "",
-                "telefono": r.get("telefono") or "",
-                "whatsapp": r.get("whatsapp") or "",
-                "link_maps": r.get("link_maps") or "",
-                "direccion": r.get("direccion") or "",
-                "categoria": r.get("categoria") or "",
-                "horarios": r.get("horarios") or "",
-            }
-            for r in rows
-        ],
+        "prospects": [_prospecto_json(r) for r in rows],
     }
 
 
@@ -224,6 +231,7 @@ def main() -> int:
                 f.write("\n")
 
     if args.json_dir:
+        completar_resenas(rows)
         now = datetime.now(TZ)
         ts = now.strftime("%Y%m%d-%H%M%S")
         slug = slugify(query)

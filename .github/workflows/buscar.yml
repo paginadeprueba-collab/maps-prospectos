@@ -160,6 +160,23 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p output final docs/data
+          # El botón «Completar reseñas» manda esta query por el Worker existente.
+          # No scrapea: el job de unir solo lee fichas que todavía no tienen reseñas.
+          if [ "$BUSQUEDA" = "__completar_resenas__" ]; then
+            echo '[]' > matrix.json
+            echo '{}' > seleccion.json
+            {
+              echo "count=0"
+              echo "matrix<<EOFMATRIX"
+              echo "[]"
+              echo "EOFMATRIX"
+              echo "seleccion<<EOFSEL"
+              echo "{}"
+              echo "EOFSEL"
+            } >> "$GITHUB_OUTPUT"
+            echo "Modo completar reseñas: sin scrape"
+            exit 0
+          fi
           if [ -n "${QUERIES_JSON:-}" ]; then
             echo "Usando lista explícita de queries (sin expandir)"
             python3 << 'PY'
@@ -369,7 +386,7 @@ jobs:
     needs: [preparar, scrape]
     if: always() && needs.preparar.result == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 60
     permissions:
       contents: write
       issues: write
@@ -395,6 +412,11 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p output final docs/data raw_parts
+          if [ "$BUSQUEDA" = "__completar_resenas__" ]; then
+            python3 resenas_maps.py --json-dir docs/data
+            echo "n_limpio=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           echo "Artefactos descargados:"
           find raw_parts -type f | sort || true
 
