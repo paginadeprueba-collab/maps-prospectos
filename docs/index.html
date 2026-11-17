@@ -743,6 +743,8 @@
       </div>
 
       <p class="section-title">Anteriores</p>
+      <button type="button" class="btn btn-ghost btn-block" id="btnCompletarResenas">Completar reseñas</button>
+      <p class="hint">Para las búsquedas que ya están guardadas. Lee solo la ficha de cada negocio, sin volver a buscar. Las nuevas ya traen las reseñas.</p>
       <div id="listEmpty" class="empty hidden">
         <strong>Todavía no hay búsquedas</strong>
         Arrancá con el cuadro de arriba.
@@ -1100,6 +1102,7 @@
     let seenLinks = new Set(); // links de OTRAS búsquedas
     let pollTimer = null;
     let activeRunId = null;
+    let completandoResenas = false;
     let localStatuses = loadLocalStatuses();
 
     function esc(s) {
@@ -1362,7 +1365,9 @@
           data.status === "queued"
             ? "En cola…"
             : data.status === "in_progress"
-              ? data.jobs_total
+              ? completandoResenas
+                ? "Completando reseñas guardadas…"
+                : data.jobs_total
                 ? "Scrapeando… " + data.jobs_done + "/" + data.jobs_total + " jobs"
                 : "Scrapeando en la nube…"
               : data.conclusion === "success"
@@ -1373,19 +1378,75 @@
 
         if (!data.in_progress) {
           stopPoll();
-          const runId = activeRunId;
+          const eraResenas = completandoResenas;
+          completandoResenas = false;
           activeRunId = null;
           const ok = data.conclusion === "success" || data.conclusion === "failure" || !data.conclusion;
-          setProgress(
-            true,
-            92,
-            ok ? "Listo — buscando resultados nuevos…" : ("Terminó: " + (data.conclusion || "")),
-            "92%"
-          );
-          await waitForNewSearch(searchLabelExpect, 36);
+          if (eraResenas) {
+            setProgress(true, 100, ok ? "Listo — reseñas guardadas" : ("Terminó: " + (data.conclusion || "")), "100%", "Recargá la búsqueda para verlas.");
+            await loadIndex(false);
+            if (currentId) {
+              try { await openSearch(currentId); } catch (e) { console.warn(e); }
+            }
+            setTimeout(() => setProgress(false), 4000);
+          } else {
+            setProgress(
+              true,
+              92,
+              ok ? "Listo — buscando resultados nuevos…" : ("Terminó: " + (data.conclusion || "")),
+              "92%"
+            );
+            await waitForNewSearch(searchLabelExpect, 36);
+          }
         }
       } catch (e) {
         console.warn(e);
+      }
+    }
+
+    async function completarResenasGuardadas() {
+      if (!WORKER_URL) {
+        alert("Sin Worker no se puede lanzar el completado. Las búsquedas nuevas igual guardan reseñas.");
+        return;
+      }
+      if (activeRunId) {
+        alert("Ya hay una tarea en curso.");
+        return;
+      }
+      completandoResenas = true;
+      searchStartedAt = Date.now();
+      searchEtaMs = 8 * 60 * 1000;
+      const btn = el("btnCompletarResenas");
+      if (btn) btn.disabled = true;
+      setProgress(true, 8, "Lanzando completado de reseñas…", "8%", "Lee las fichas ya guardadas. No vuelve a buscar.");
+      try {
+        const res = await fetch(WORKER_URL.replace(/\/$/, "") + "/buscar", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: "__completar_resenas__" }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.message || data.error || "Error " + res.status);
+        activeRunId = data.run_id || null;
+        if (!activeRunId || data.status === "completed") {
+          await sleep(2000);
+          try {
+            const er = await fetch(WORKER_URL.replace(/\/$/, "") + "/estado?t=" + Date.now(), { cache: "no-store" });
+            const ed = await er.json();
+            if (ed.run_id) activeRunId = ed.run_id;
+          } catch (_) {}
+        }
+        setProgress(true, 15, "En cola — completando reseñas…", "15%");
+        stopPoll();
+        pollTimer = setInterval(pollEstado, 4000);
+        setTimeout(pollEstado, 1500);
+      } catch (e) {
+        console.warn(e);
+        completandoResenas = false;
+        setProgress(false);
+        alert("No pude lanzar el completado (" + e.message + ").");
+      } finally {
+        if (btn) btn.disabled = false;
       }
     }
 
@@ -1766,26 +1827,39 @@
       el("ejemploSheetMsg").textContent = aviso || "";
     }
 
+    function reseñasGuardadas(payload) {
+      const e = payload && Array.isArray(payload.e) ? payload.e : [];
+      return e.filter((r) => r && String(r[0] || "").trim() && String(r[1] || "").trim());
+    }
+
     async function abrirEjemplo(r, btn) {
       const listo = prepararEjemplo(r);
       if (!listo || !window.EjemploCodec) return;
       if (btn) btn.disabled = true;
       const win = window.open("about:blank", "_blank");
-      mostrarEjemploSheet("", "", r, "Buscando reseñas en Google Maps…");
+      const guardadas = reseñasGuardadas(listo.payload);
       let reseñas = [];
       let aviso = "No pude leer las reseñas de Maps. La web queda solo con las estrellas.";
-      try {
-        const leidas = window.EjemploResenas
-          ? await EjemploResenas.leer(r.link_maps, { worker: RESENAS_URL, timeout: 10000 })
-          : { ok: false, reseñas: [] };
-        if (leidas.ok && leidas.reseñas && leidas.reseñas.length) {
-          reseñas = leidas.reseñas;
-          aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
-        } else if (leidas.motivo === "tiempo") {
-          aviso = "La lectura de Maps tardó más de 10 segundos. La web queda solo con las estrellas.";
+      let deBusqueda = false;
+      if (guardadas.length) {
+        reseñas = guardadas;
+        deBusqueda = true;
+        aviso = "Usé " + reseñas.length + " reseñas guardadas de la búsqueda. El diseño 1 se abrió en otra pestaña.";
+      } else {
+        mostrarEjemploSheet("", "", r, "Buscando reseñas en Google Maps…");
+        try {
+          const leidas = window.EjemploResenas
+            ? await EjemploResenas.leer(r.link_maps, { worker: RESENAS_URL, timeout: 10000 })
+            : { ok: false, reseñas: [] };
+          if (leidas.ok && leidas.reseñas && leidas.reseñas.length) {
+            reseñas = leidas.reseñas;
+            aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
+          } else if (leidas.motivo === "tiempo") {
+            aviso = "La lectura de Maps tardó más de 10 segundos. La web queda solo con las estrellas.";
+          }
+        } catch (e) {
+          console.warn(e);
         }
-      } catch (e) {
-        console.warn(e);
       }
       try {
         const payload = listo.payload;
@@ -1799,7 +1873,7 @@
           win.location.replace(url1);
           win.opener = null;
         }
-        if (reseñas.length) aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
+        if (reseñas.length && !deBusqueda) aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
         mostrarEjemploSheet(url1, url2, r, aviso);
       } catch (e) {
         console.warn(e);
@@ -1945,6 +2019,9 @@
       if (e.key === "Escape" && !el("ejemploSheet").classList.contains("hidden")) cerrarEjemploSheet();
     });
     el("btnBuscar").addEventListener("click", launchSearch);
+    if (el("btnCompletarResenas")) {
+      el("btnCompletarResenas").addEventListener("click", completarResenasGuardadas);
+    }
     el("btnTopBuscar").addEventListener("click", () => {
       location.hash = "#buscar";
       if (searchMode === "caba") el("rubroBox").focus();
