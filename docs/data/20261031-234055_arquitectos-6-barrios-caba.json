@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491136924564",
       "link_maps": "https://www.google.com/maps/place/Aura+glass/data=!4m7!3m6!1s0x95bcb7c479d44207:0xf76c543876347981!8m2!3d-34.6062552!4d-58.485484!16s%2Fg%2F11zbml4835!19sChIJB0LUecS3vJURgXk0djhUbPc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Nazca 2543, C1417FXA Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de cristales"
+      "categoria": "Tienda de cristales",
+      "reseñas_texto": [
+        {
+          "nombre": "Adriana procopio",
+          "texto": "Me salió todo genial! Súper profesionales los chicos y re lindo el trabajo realizado! Los súper recomiendo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "maria magdalena cavallari",
+          "texto": "Fui atendida por su propio dueño, muy recomendable el producto que compre, excelente calidad y precio!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "emilse pierri",
+          "texto": "Excelente los trabajos, Mosquiteros de 10, mampara tb de 10 y un pecho techo en el patio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "rodrigo Mercado",
+          "texto": "Muy buen servicio, atención excelente y muy simpáticos recomiendo 10/10",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Rancho Asociados - Estudio de arquitectura",
@@ -24,7 +46,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Rancho+Asociados+-+Estudio+de+arquitectura/data=!4m7!3m6!1s0x95bccb481f331531:0x3baba6d0e06e0dff!8m2!3d-34.6274286!4d-58.4306996!16s%2Fg%2F11y3j5ngpg!19sChIJMRUzH0jLvJUR_w1u4NCmqzs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Directorio, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Joan Manuel Satta",
+          "texto": "La mejor experiencia en una obra que tuve en toda mi vida. Gente profesional, responsable, resolutiva y puntual. Durante toda la obra manejamos una…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "SOL VALCARCE",
+          "texto": "Recomiendo 100%! Muy detallistas, comprometidos y atentos. Siempre dispuestos a escuchar cada idea que tuve, y ellos hicieron lo suyo para que todo salga como…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Belen Soma",
+          "texto": "Son lo más! Nos hicieron un plano hermoso para remodelar una parte de nuestra casa. Son atentos, prolijos, buen gusto.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eugenia Manzoni",
+          "texto": "Una experiencia unica con los chicos de Rancho! Súper recomendable! 🙌",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Fauda Home Deco",
@@ -34,7 +78,14 @@
       "whatsapp": "https://wa.me/5491134341489",
       "link_maps": "https://www.google.com/maps/place/Fauda+Home+Deco/data=!4m7!3m6!1s0x95bcb78ff4cd2517:0x4a80ef550b375cbe!8m2!3d-34.627509!4d-58.4291572!16s%2Fg%2F11fsjbg3yq!19sChIJFyXN9I-3vJURvlw3C1XvgEo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Directorio 186, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "David Russo",
+          "texto": "Excelente servicio, muy predispuestos y atentos a todo lo que les pedimos!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estudio Maleza. Arquitectura + Paisaje",
@@ -44,7 +95,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Estudio+Maleza.+Arquitectura+%2B+Paisaje/data=!4m7!3m6!1s0x95bcb7d07fda6209:0x6231156ebfba0178!8m2!3d-34.5830653!4d-58.4874289!16s%2Fg%2F11f7knsvqm!19sChIJCWLaf9C3vJUReAG6v24VMWI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Burela 1867 d.4, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Arquitecto paisajista"
+      "categoria": "Arquitecto paisajista",
+      "reseñas_texto": [
+        {
+          "nombre": "Mercedes Valcarce",
+          "texto": "Altamente recomendable! Son profesionales, saben cómo diseñar en función al espacio, muy creativos y el servicio fue excelente, siempre estuvieron bien…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Héctor Andrés Basavilbaso",
+          "texto": "Excelente trabajo realizado por este equipo de profesionales. El diseño y la diagramación siempre fueron gestadas interpretando los deseos y sueños del…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ivana Patiño",
+          "texto": "Excelentes profesionales. Buenas personas. La combinación perfecta!!!! Una experiencia enriquecedora. Muchas gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Beatriz Lahitte",
+          "texto": "Muy recomendable!! Excelente trabajo, muy dedicados y confiables.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Fusión",
@@ -54,7 +127,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Fusi%C3%B3n/data=!4m7!3m6!1s0x95bcb77f66906d89:0xe630214de6d943e4!8m2!3d-34.5851358!4d-58.5027433!16s%2Fg%2F11j5klmj60!19sChIJiW2QZn-3vJUR5EPZ5k0hMOY?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Carlos Antonio López 2865, C1419 ETO, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Arquitecto"
+      "categoria": "Arquitecto",
+      "reseñas_texto": [
+        {
+          "nombre": "Santos Candaloro",
+          "texto": "Buena atención",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "LEVY&RESELS arquitectas",
@@ -64,7 +144,14 @@
       "whatsapp": "https://wa.me/5491145529633",
       "link_maps": "https://www.google.com/maps/place/LEVY%26RESELS+arquitectas/data=!4m7!3m6!1s0x95bcb5e05a88df85:0x45d79a34f788c68!8m2!3d-34.5821825!4d-58.46069!16s%2Fg%2F11ggsbs9g9!19sChIJhd-IWuC1vJURaIx4T6N5XQQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Elcano 3917 PB, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Isaac Daniel Levi",
+          "texto": "La excelencia en Arquitectura Moderna... Lo recomiendo!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "RSO ARQUITECTOS",
@@ -74,7 +161,8 @@
       "whatsapp": "https://wa.me/5491161458770",
       "link_maps": "https://www.google.com/maps/place/RSO+ARQUITECTOS/data=!4m7!3m6!1s0x95bcb535c5f81859:0xbd7870f42eaf9306!8m2!3d-34.5993518!4d-58.4810146!16s%2Fg%2F11f6v6l2rb!19sChIJWRj4xTW1vJURBpOvLvRweL0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Empedrado 2342, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Asociación de arquitectos"
+      "categoria": "Asociación de arquitectos",
+      "reseñas_texto": []
     },
     {
       "nombre": "VM Arquitectos",
@@ -84,7 +172,8 @@
       "whatsapp": "https://wa.me/5491125590250",
       "link_maps": "https://www.google.com/maps/place/VM+Arquitectos/data=!4m7!3m6!1s0x95bcb7c70b18dc59:0xf30219d6724a3612!8m2!3d-34.596835!4d-58.5061546!16s%2Fg%2F11fqpvd1wv!19sChIJWdwYC8e3vJUREjZKctYZAvM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nueva York 3550, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": []
     },
     {
       "nombre": "C - Estudio",
@@ -94,7 +183,14 @@
       "whatsapp": "https://wa.me/5491140951008",
       "link_maps": "https://www.google.com/maps/place/C+-+Estudio/data=!4m7!3m6!1s0x95bcb50b85af32d5:0x4ea986982516a651!8m2!3d-34.5774077!4d-58.4708434!16s%2Fg%2F11sr6ngbc3!19sChIJ1TKvhQu1vJURUaYWJZiGqU4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Donado 1601, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Joaquín Ierfino",
+          "texto": "Excelente estudio de Arquitectura! Muy lindos diseños y de materiales de calidad. Muy recomendable!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "MARQ STUDIO - Maquetas de Arquitectura",
@@ -104,7 +200,8 @@
       "whatsapp": "https://wa.me/5491123209336",
       "link_maps": "https://www.google.com/maps/place/MARQ+STUDIO+-+Maquetas+de+Arquitectura/data=!4m7!3m6!1s0x95bcca7a975843d7:0x8f42ec8c80f58eca!8m2!3d-34.6043406!4d-58.4546846!16s%2Fg%2F11f3nb74lv!19sChIJ10NYl3rKvJURyo71gIzsQo8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Dr. Luis Beláustegui 901, C1416CXI Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Constructor de modelos de arquitectura e ingeniería"
+      "categoria": "Constructor de modelos de arquitectura e ingeniería",
+      "reseñas_texto": []
     },
     {
       "nombre": "Casa Nueva • Reformas a medida • Diseño bioclimático • Asesoría • Buenos Aires | Costa Atlántica | Córdoba",
@@ -114,7 +211,29 @@
       "whatsapp": "https://wa.me/5491167070301",
       "link_maps": "https://www.google.com/maps/place/Casa+Nueva+%E2%80%A2+Reformas+a+medida+%E2%80%A2+Dise%C3%B1o+bioclim%C3%A1tico+%E2%80%A2+Asesor%C3%ADa+%E2%80%A2+Buenos+Aires+%7C+Costa+Atl%C3%A1ntica+%7C+C%C3%B3rdoba/data=!4m7!3m6!1s0x95bcb79aceeea341:0xd8505aa58c70b661!8m2!3d-38.45155!4d-63.5989752!16s%2Fg%2F11grvpxx3t!19sChIJQaPuzpq3vJURYbZwjKVaUNg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "{\"borough\":\"\",\"street\":\"\",\"city\":\"\",\"postal_code\":\"\",\"state\":\"\",\"country\":\"\"}",
-      "categoria": "Arquitecto"
+      "categoria": "Arquitecto",
+      "reseñas_texto": [
+        {
+          "nombre": "Matias Centeno",
+          "texto": "Evaluamos un proyecto de reformas en una casa 100m2 con Daniel. Le solicitamos asesoramiento, croquis y anteproyecto preliminar. Excelente la atención…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Faku P",
+          "texto": "Daniel es un excelente profesional, sus años de experiencia en la construcción y su capacidad nos ayudaron a armar el anteproyecto de nuestra casa y lograr…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Leibowich",
+          "texto": "Excelente profesional. En 2017 Realizamos una obra de mediana a gran envergadura de un clínica médica con quirofano. Obra previa existente con demolición casi…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Castro",
+          "texto": "Nos habilitó el local súper rápido, nos explicó todo lo que necesitábamos saber, nos acompañó en el proceso y fue muy accesible. Excelente trabajo. Muchas…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Arquitectura Borda",
@@ -124,7 +243,29 @@
       "whatsapp": "https://wa.me/5491135798418",
       "link_maps": "https://www.google.com/maps/place/Arquitectura+Borda/data=!4m7!3m6!1s0x95bcc9e09876dc47:0xbfefae2731e0e413!8m2!3d-34.6445724!4d-58.4852896!16s%2Fg%2F11wgrk0czy!19sChIJR9x2mODJvJURE-TgMSeu778?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Dr. Florentino Ameghino 815, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Arquitecto"
+      "categoria": "Arquitecto",
+      "reseñas_texto": [
+        {
+          "nombre": "carla becerra",
+          "texto": "Excelente profesional! Súper recomendable! Hicimos la refacción de la cocina y quedé súper encantada!!! todo lo realizado fue acorde al presupuesto..!!!",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Ana María Paez",
+          "texto": "Quedé muy conforme con el trabajo. Excelente asesoramiento, diseños funcionales y un trato muy amable. La volvería a elegir.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ramiro Saravia",
+          "texto": "Excelente arquitecta. Escuchó todas mis ideas y las transformó en un proyecto mucho mejor de lo que imaginaba. Muy profesional y responsable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jeremías Gutierrez Posadas",
+          "texto": "Muy recomendable. Cumplió con todo lo acordado, excelente comunicación y un resultado final de gran calidad.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "SOAE ISKANDARANI SOAE arquitectos",
@@ -134,7 +275,29 @@
       "whatsapp": "https://wa.me/5491146377424",
       "link_maps": "https://www.google.com/maps/place/SOAE+ISKANDARANI+SOAE+arquitectos/data=!4m7!3m6!1s0x95bcc98c5b5fbd5f:0xb0e39b77260de17f!8m2!3d-34.6261213!4d-58.4704672!16s%2Fg%2F1td6hn_2!19sChIJX71fW4zJvJURf-ENJneb47A?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Avellaneda 2820, C1406FZN Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Carlos Djedjeian",
+          "texto": "Impecables, en todo sentido.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Miguel Salem",
+          "texto": "súper responsables",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniela Perez",
+          "texto": "Profesionales de primera",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Mario",
+          "texto": "Ok",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Hura Arquitectura",
@@ -144,7 +307,29 @@
       "whatsapp": "https://wa.me/5491143124740",
       "link_maps": "https://www.google.com/maps/place/Hura+Arquitectura/data=!4m7!3m6!1s0x95bccb57634df857:0x6ac9775994a69987!8m2!3d-34.6000665!4d-58.4873664!16s%2Fg%2F11nmt79dzd!19sChIJV_hNY1fLvJURh5mmlFl3yWo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nogoyá 2681, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Gaston Barbeito",
+          "texto": "Tuvimos una excelente experiencia con el estudio. Cumplieron con todo lo pactado, tanto en los plazos como en la calidad del trabajo, algo que valoramos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tomas Lara",
+          "texto": "Excelente.!!!! Profesionalidad y por sobre todo cumplimiento en los tiempos.!!! Presupuesto aceptablemente acorde al costo final , prolijidad, materiales de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ybarra",
+          "texto": "Excelente trabajo, desde el primer momento mostraron profesionalismo, compromiso y dedicación sobre el proyecto, entendiendo desde el primer momento que era lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Guillermo Cardoso",
+          "texto": "Excelente servicio, atención y disposición. El asesor muy profesional y su explicación fue muy clara y de gran paciencia. Recomendables 👏🏻👏🏻👏🏻👏🏻",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Montaggio Arquitectura",
@@ -154,7 +339,24 @@
       "whatsapp": "https://wa.me/5491153855303",
       "link_maps": "https://www.google.com/maps/place/Montaggio+Arquitectura/data=!4m7!3m6!1s0x95bcb5e010fd0e43:0x86c63f3b7eb3a1e3!8m2!3d-34.581532!4d-58.462115!16s%2Fg%2F11d_z7rxz1!19sChIJQw79EOC1vJUR46Gzfjs_xoY?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "14 de Julio 1024 3B, C1024 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Perez",
+          "texto": "Excelente servicio, profesionalismo y seriedad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Zaldivar",
+          "texto": "Muy buenos",
+          "estrellas": 4
+        },
+        {
+          "nombre": "MARIANA MARIANA",
+          "texto": "Excelente",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "GRIS Arquitectura - Sor Juana Ines de la Cruz 1457",
@@ -164,7 +366,29 @@
       "whatsapp": "https://wa.me/5491148553411",
       "link_maps": "https://www.google.com/maps/place/GRIS+Arquitectura+-+Sor+Juana+Ines+de+la+Cruz+1457/data=!4m7!3m6!1s0x95bccb7b1cacb1b3:0x8bde02b70d56f02f!8m2!3d-34.6094664!4d-58.4603309!16s%2Fg%2F11g232lw2s!19sChIJs7GsHHvLvJURL_BWDbcC3os?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Sor Juana Inés de la Cruz 1457, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Arquitecto"
+      "categoria": "Arquitecto",
+      "reseñas_texto": [
+        {
+          "nombre": "Sandra Beatriz Botaya",
+          "texto": "Departamentos modernos y con diseño muy original pero sería bueno que tuvieran un mejor mantenimiento sobre todo los ascensores la fumigación y las…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "IARDENA STILMAN",
+          "texto": "Excelente espacio!! Original y muy habitable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maximo Santa Cruz Guanes",
+          "texto": "De diez la obra que terminando a pintar , gracias a Diis.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lilian Enriquez",
+          "texto": "Me encantó volver a mí barrio💜",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ArquiProp Estudio",
@@ -174,7 +398,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/ArquiProp+Estudio/data=!4m7!3m6!1s0x95bcb630586ea7d5:0x68b89f16923ff93a!8m2!3d-34.5990668!4d-58.4990944!16s%2Fg%2F11b78pyqlj!19sChIJ1aduWDC2vJUROvk_khafuGg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Campana 3426, C1417ADF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Arquitecto"
+      "categoria": "Arquitecto",
+      "reseñas_texto": [
+        {
+          "nombre": "Melanie Tavares",
+          "texto": "Excelente atención. Son todos muy amables, en especial la señorita Marlene que me asesoró acerca de los alquileres disponibles.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "laura luzzani",
+          "texto": "Muy buena atención.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "pablo lopez",
+          "texto": "Exelente atención!! Super recomendable!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Liliana Garrote",
+          "texto": "Excelente atención, seriedad. Sr Humberto de lo mejor",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Leder Denegri Arquitectos",
@@ -184,7 +430,24 @@
       "whatsapp": "https://wa.me/5491156386942",
       "link_maps": "https://www.google.com/maps/place/Leder+Denegri+Arquitectos/data=!4m7!3m6!1s0x95bcb5c1490dc96f:0xcca9a82d826ad1ad!8m2!3d-34.5742309!4d-58.4737749!16s%2Fg%2F1tctyr3m!19sChIJb8kNScG1vJURrdFqgi2oqcw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Donado 1945 of. 305, C1430DRK DoHo, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "jose godoy",
+          "texto": "Grandes proyectos de manos de profesionales..",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Amigo",
+          "texto": "Muy interesante",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Dario D",
+          "texto": "Excelente. Arquitectos",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "GR I Estudio",
@@ -194,7 +457,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/GR+I+Estudio/data=!4m7!3m6!1s0x95bccb9bc78370a5:0x708d27c1e50fa55!8m2!3d-34.6175041!4d-58.4570901!16s%2Fg%2F11fl8lt95d!19sChIJpXCDx5vLvJURVfpQHnzSCAc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Felipe Vallese 1644, C1406FSF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Estudio de arquitectura"
+      "categoria": "Estudio de arquitectura",
+      "reseñas_texto": [
+        {
+          "nombre": "Leandro Agustin Rodriguez",
+          "texto": "Nada más que palabras de agradecimiento para todo el equipo de GR, fueron muy amables y profesionales desde el primer momento. Acompañándonos no sólo desde el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ernesto Castro",
+          "texto": "Quiero recomendar a Estudio GR por el excelente trabajo que hicieron en la remodelación de mi casa. Hace 7 años me acompañaron desde el primer momento, incluso…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Belen Mammone",
+          "texto": "Nos acompañaron en todo el proceso. Desde la búsqueda de la propiedad, ya que nosotros queríamos algo para remodelar, asi que todas las visitas a ph destruidos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariela Sexer",
+          "texto": "Compre un PH remodelado por el estudio GR en el barrio de Boedo. Ellos además de reformas hacen flipping es decir compran propiedades para reciclar y luego las…",
+          "estrellas": 5
+        }
+      ]
     }
   ]
 }

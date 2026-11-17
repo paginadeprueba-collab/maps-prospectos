@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491136547311",
       "link_maps": "https://www.google.com/maps/place/Weekend+Beauty+Studio/data=!4m7!3m6!1s0x95bccb2f875f09f9:0x85dc08017e26dc24!8m2!3d-34.6107643!4d-58.3803347!16s%2Fg%2F11syz2q26v!19sChIJ-Qlfhy_LvJURJNwmfgEI3IU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bernardo de Irigoyen 214 Piso 7 Depto D, C1072 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Centro de estética"
+      "categoria": "Centro de estética",
+      "reseñas_texto": [
+        {
+          "nombre": "Galilea Delarosa",
+          "texto": "Excelente yrabajo, me realice loz servicios de pestañas y uñas esculpidas Me asesoraron para el efecto acorde a mi rostro y las uñas el diseño que queria…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stheisy Ascanio",
+          "texto": "¡Me encantaron mis uñas! Quedaron preciosas, tal como las quería. Muy buena atención, dedicación y excelente trabajo. ¡Volveré sin duda! 💕",
+          "estrellas": 5
+        },
+        {
+          "nombre": "alejandra",
+          "texto": "Me hice lifting de pestañas, muy lindo trabajo. Muy buen trato y un servicio excelente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Soledad Vidal Freyre",
+          "texto": "Me hice alisado y corte de puntas. Excelente todo. El resultado y la atención.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Marea Spa",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491133132750",
       "link_maps": "https://www.google.com/maps/place/Marea+Spa/data=!4m7!3m6!1s0x95bccb343f58274b:0xaea8598234ed7c44!8m2!3d-34.6123809!4d-58.3731376!16s%2Fg%2F11yfj7l4kq!19sChIJSydYPzTLvJURRHztNIJZqK4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Belgrano 485 Piso 3, Local 8, C1092 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Centro de estética"
+      "categoria": "Centro de estética",
+      "reseñas_texto": [
+        {
+          "nombre": "Sabrina Gambino",
+          "texto": "Súper excelente! Me hago perfilado de cejas y quedan bellísimas cada vez, Adri es re delicada. Y las uñas me quedan impecables gracias a la mano que tiene…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica Glover",
+          "texto": "Fueron súper cálidas y amables desde el primer momento. El masaje me alivió toda la inflamación del cuerpo y el tratamiento facial fue increíble también.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "noelia moreira",
+          "texto": "Adri es lo más!! no la cambio por nadie estoy un poco alejada pero voy igual. Es una ámbito agradable con vibra alta positiva y dónde te sentís super bien!…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Celeste Leila TOLEDO",
+          "texto": "Hermoso trabajo 💕 Me hice laminado y perfilado de cejas y me encanto. La atención fue excelente, muy amorosa y atenta. También se atendió mi mamá y nos…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dra Paula Bellino - Cirugía Plástica y Reconstructiva - Medicina Estética",
@@ -34,7 +78,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dra+Paula+Bellino+-+Cirug%C3%ADa+Pl%C3%A1stica+y+Reconstructiva+-+Medicina+Est%C3%A9tica/data=!4m7!3m6!1s0x95bccb5a024167bd:0x77cbe3214d51aa29!8m2!3d-34.6000852!4d-58.3865692!16s%2Fg%2F11z7lfpp9g!19sChIJvWdBAlrLvJURKapRTSHjy3c?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Uruguay 743, C1015 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Centro médico"
+      "categoria": "Centro médico",
+      "reseñas_texto": [
+        {
+          "nombre": "Lujan Quiñones",
+          "texto": "Excelente atención y profesionalismo. Me sentí acompañada en todo momento y el resultado fue muy bueno, acorde a lo que buscaba. Sin dudas recomiendo su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Alvarado",
+          "texto": "Estoy tiernamente agradecida Dra.Paulina .Desde el momento 0 de la llamada hasta ahora por la atención y el cuidado,la disponibilidad y sobre todas las cosas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Francisco Iribarren",
+          "texto": "Fui a la consulta con la Dra. Paula y quedé muy conforme. Es súper profesional, atenta y los resultados se notaron enseguida. La recomiendo 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "fede j",
+          "texto": "Me hice una blefaroplastia superior e inferior con la Dra. Paula Bellino y la experiencia fue excelente de principio a fin. Desde la primera consulta me…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Centro de Estética Flor",
@@ -44,7 +110,29 @@
       "whatsapp": "https://wa.me/5491159822499",
       "link_maps": "https://www.google.com/maps/place/Centro+de+Est%C3%A9tica+Flor/data=!4m7!3m6!1s0x95bccb1532018803:0xe9b782ea45113dff!8m2!3d-34.6095082!4d-58.3842072!16s%2Fg%2F11hyh_x55v!19sChIJA4gBMhXLvJUR_z0RReqCt-k?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. de Mayo 1260, C1085ABP, C1085ABP Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Esteticista"
+      "categoria": "Esteticista",
+      "reseñas_texto": [
+        {
+          "nombre": "elba perez",
+          "texto": "Re profesional. Muchísimo tiempo que voy y no la cambiaría por nada al mundo. Precios justos. Excelente profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Florencia Lujan Santillan",
+          "texto": "Me gusta la atención, muy buenos precios, tal vez los mejores de la zona",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joanna Matiauda",
+          "texto": "Es genial! Muy recomendable y profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nancy Beatriz",
+          "texto": "Mary la dueña es lo más",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Hadassah Medicina Estética",
@@ -54,7 +142,24 @@
       "whatsapp": "https://wa.me/5491153392024",
       "link_maps": "https://www.google.com/maps/place/Hadassah+Medicina+Est%C3%A9tica/data=!4m7!3m6!1s0x95bccbb405268e51:0x3d10c4d967ff0825!8m2!3d-34.612555!4d-58.3750667!16s%2Fg%2F11zxms8d0f!19sChIJUY4mBbTLvJURJQj_Z9nEED0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Belgrano 615, C1092AAG Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Esteticista"
+      "categoria": "Esteticista",
+      "reseñas_texto": [
+        {
+          "nombre": "Karol Bello",
+          "texto": "Súper contenta con mi resultado. Desde el primer momento me atendieron muy bien, fueron súper amables y me explicaron todo con mucha paciencia. Sin duda…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Génesis Castro",
+          "texto": "Muy lindo lugar, excelentes profesionales. Me orientaron en el procedimiento a realizar según lo que les expresé que me incomodaba. Recomendados👏🏼",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juliana Cabrera",
+          "texto": "Los profesionales que atienden son los mejores, siempre con brindan una asesoría previa y realizan el seguimiento de los procedimientos, 100% recomendados, de…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Cala Medicina Estetica y Cirugia Plastica ( Dres . Barrera)",
@@ -64,7 +169,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Cala+Medicina+Estetica+y+Cirugia+Plastica+%28+Dres+.+Barrera%29/data=!4m7!3m6!1s0x95bccb89aebee785:0x82ffe0068060da54!8m2!3d-34.5977866!4d-58.3787097!16s%2Fg%2F11g1ndmn8_!19sChIJhee-ronLvJURVNpggAbg_4I?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Paraguay 824 Piso 1, C1057 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Centro médico"
+      "categoria": "Centro médico",
+      "reseñas_texto": [
+        {
+          "nombre": "Julieta Ferreiros",
+          "texto": "Después de haber tenido consultas con otros cirujanos, llegué al Dr. Augusto a través de las redes sociales y desde la primera consulta supe que quería que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Johanna Di Santo",
+          "texto": "Excelente atención. Soy paciente desde hace años y siempre me sentí en las mejores manos. Este año me animé a operarme el pecho: todo fue impecable y los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Flor Castelli",
+          "texto": "Después de varias consultas con otros cirujanos llegué al Dr Augusto por recomendación y me fui sabiendo que era él con quien iba a realizarme la cirugía…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cami Torelli",
+          "texto": "Excelente experiencia de principio a fin con el dr Augusto, desde las primeras consultas sobre la cirugía, los días previos, durante y después. Estoy más que…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dr Andres Castrilli",
@@ -74,7 +201,29 @@
       "whatsapp": "https://wa.me/5491135819772",
       "link_maps": "https://www.google.com/maps/place/Dr+Andres+Castrilli/data=!4m7!3m6!1s0x95bccbd93ac74ce5:0xec84e32c64fe91df!8m2!3d-34.6012713!4d-58.3916258!16s%2Fg%2F11r9lgwb6x!19sChIJ5UzHOtnLvJUR35H-ZCzjhOw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Rodríguez Peña 660, C1020 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Cirujano plástico"
+      "categoria": "Cirujano plástico",
+      "reseñas_texto": [
+        {
+          "nombre": "Monica Natalia Yurich",
+          "texto": "Voy a compartir mi experiencia con Andrés y su equipo, desde el primer contacto hasta la actualidad. Voy a contarles todo por partes, desde los detalles más…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Milagros Merlo",
+          "texto": "El doctor muy genio! Me operé la nariz hace 1 año y 2 meses y estoy encantada con el resultado. Superó ampliamente mis expectativas, nunca imaginé que mi nariz…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agustina Pereira",
+          "texto": "Me realice un aumento mamario con el Dr. y fue la mejor decisión! Me aconsejó, me sacó todas las dudas y me dio mucha seguridad. El resultado mucho mejor de lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "martina cabrera",
+          "texto": "Estoy muy contenta con la atención que recibí. El doctor fue súper profesional, atento y me hizo sentir muy cómoda en todo momento. También quiero destacar al…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ZENNA Estética Médica y Recuperación Capìlar",
@@ -84,7 +233,29 @@
       "whatsapp": "https://wa.me/5491171381483",
       "link_maps": "https://www.google.com/maps/place/ZENNA+Est%C3%A9tica+M%C3%A9dica+y+Recuperaci%C3%B3n+Cap%C3%AClar/data=!4m7!3m6!1s0x95bccb1c4b26db49:0xfa04b3866ee9f486!8m2!3d-34.6147472!4d-58.3724289!16s%2Fg%2F11wy0206bh!19sChIJSdsmSxzLvJURhvTpboazBPo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "México 441, C1097 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Centro médico"
+      "categoria": "Centro médico",
+      "reseñas_texto": [
+        {
+          "nombre": "Braian Ramirez",
+          "texto": "Me hice un transplante capilar en la clinica y la verdad quede absolutamente satisfecho por el ambiente y por la calidad humana. En mi vida me hice 3 implantes…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "gabriela figueroa",
+          "texto": "Excelencia en profesionalismo y resultados. Atención integral de la salud estética. La piel me quedó como nueva y la nutricionista me ayudó a organizar mi…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mey Casares",
+          "texto": "Me encanta este lugar 💕 siempre me atienden con una sonrisa y se nota que realmente se preocupan por cada detalle. Los tratamientos son buenísimos y te…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Susana Jimenez",
+          "texto": "Muy satisfecha por los resultados que voy obteniendo, por supuesto que sigo yendo por más! Estoy con tratamiento para la caída del cabello, mi piel estaba…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "VILAND - Clínica de medicina capilar y estética",
@@ -94,7 +265,29 @@
       "whatsapp": "https://wa.me/5491153462782",
       "link_maps": "https://www.google.com/maps/place/VILAND+-+Cl%C3%ADnica+de+medicina+capilar+y+est%C3%A9tica/data=!4m7!3m6!1s0x95bccbe97ab4cd11:0xeaa3d2f6841d326!8m2!3d-34.6127182!4d-58.3780014!16s%2Fg%2F11p4cf198x!19sChIJEc20eunLvJURJtNBaC89qg4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Belgrano 835, C1095 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica especializada"
+      "categoria": "Clínica especializada",
+      "reseñas_texto": [
+        {
+          "nombre": "Daniel Urrutipi",
+          "texto": "Me hice el implante hace más de un año, me atendieron re bien, re profesionales y cuidado. Después hice los controles como ellos me pidieron y seguí con las…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julian Bovino",
+          "texto": "Llevo un poco mas de 2 meses de tratamiento con las terapias y sinceramente lo que mas destaco es la excelente atención que recibi por parte del muy buen grupo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "gustavo trevisan",
+          "texto": "En cuanto a mi experiencia destaco el gran nivel de honestidad a la hora de el diagnóstico!, en cuanto al tratamiento si es excelente!, y la atención es muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ivan Kuntz",
+          "texto": "EDIT: después de 1 año y medio puedo dar una opinión. 1/ la densidad no es muy buena. Me rapé la cabeza el otro día y se nota mucho la diferencia entre el pelo…",
+          "estrellas": 2
+        }
+      ]
     }
   ]
 }

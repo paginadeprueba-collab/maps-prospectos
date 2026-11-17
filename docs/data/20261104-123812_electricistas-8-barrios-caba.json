@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491161873700",
       "link_maps": "https://www.google.com/maps/place/Electricista+Soler/data=!4m7!3m6!1s0x95bcb554f7c932b1:0x2761c8cf1b03ac03!8m2!3d-34.57745!4d-58.4370668!16s%2Fg%2F11tn_2pp5j!19sChIJsTLJ91S1vJURA6wDG8_IYSc?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Soler 6034, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "A PF",
+          "texto": "Excelente trabajo de Guido y su hijo. Muy profesionales, detallistas, prolijos y buena onda. Super recomendados.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eduardo Ratto",
+          "texto": "Contacté a Guido por un asunto con un dimmer. No era demasiado importante y no pintaba sencillo. Eso no fue un obstáculo para que viniera con la mejor onda. De…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "chip douglas",
+          "texto": "Genios totales, super profesionales, transparentes y un servicio de gran calidad. Resolvieron todo rápido y me enviaron la factura. 100% recomendados.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Santi Jimenez",
+          "texto": "Atención muy rápida. Pasó el mismo día arreglar el cable de una estufa y me lo do dejo perfecto",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "EDUFE , CONTROLES REMOTOS. SERVICE TV LED, CAMARAS DE SEGURIDAD CCTV , PLAZA 4295 SAAVEDRA CABA LABORATORIO PROPIO!",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491165162586",
       "link_maps": "https://www.google.com/maps/place/EDUFE+,+CONTROLES+REMOTOS.+SERVICE+TV+LED,+CAMARAS+DE+SEGURIDAD+CCTV+,+PLAZA+4295+SAAVEDRA+CABA+LABORATORIO+PROPIO!/data=!4m7!3m6!1s0x95bcb7c8f91b1a2d:0xdb04d8808fef6493!8m2!3d-34.552011!4d-58.4880915!16s%2Fg%2F11jl2v5j8r!19sChIJLRob-ci3vJURk2Tvj4DYBNs?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Plaza este 4295, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Empresa de electrónica"
+      "categoria": "Empresa de electrónica",
+      "reseñas_texto": [
+        {
+          "nombre": "Carolina Brizuela Perez",
+          "texto": "Excelente atencion y dedicación. Eduardo es muy amable, honesto, y confiable. Llevé para que copie un control, que no andaba muy muy bien y la copia es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Emanuel Coronel",
+          "texto": "Excelente atención , llevé a reparar un control de TV Samsung , quedó funcionando de 10 .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ignacio Gonzalez",
+          "texto": "Inmejorable la atención de este lugar. Un capo total. Buena gente y buen comerciante",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Rosa Fringuelli",
+          "texto": "Muy buena atención y la persona que me atendió (no recuerdo su nombre) super cordial y resolvió mi problema al instante.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "AG ELECTRICISTA MATRICULADO",
@@ -34,7 +78,29 @@
       "whatsapp": "https://wa.me/5491128713421",
       "link_maps": "https://www.google.com/maps/place/AG+ELECTRICISTA+MATRICULADO/data=!4m7!3m6!1s0x95bcb5e804bbd51f:0x46ea9a05ee350798!8m2!3d-34.5611727!4d-58.4533229!16s%2Fg%2F11sf8462h6!19sChIJH9W7BOi1vJURmAc17gWa6kY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Echeverría 2109, C1428DRK Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Alberto Díaz",
+          "texto": "Se nota la pasión que tiene un profesional en su oficio por cómo labura y el trato que tiene que con sus clientes. 100% recomendable, gran electricista y mejor…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rodrigo Ferreira",
+          "texto": "Ayer domingo me contacte con alvaro,porque me quede sin luz. Hoy lunes vino a primera hs,muy honesto y me cobro lo acordado y me dejo todo de primera. Muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "jorge ulman",
+          "texto": "Excelente profesional. Vino un sábado a la noche y me resolvió un problema grande que tenía. Precio más que razonable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elvio Esposito",
+          "texto": "Excelente servicio, super recomendable. Alvaro cumplio con lo dicho desde el primer momento, presupuesto, horario, todo. Una persona muy prolija y de…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Artigas",
@@ -44,7 +110,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Artigas/data=!4m7!3m6!1s0x95bcb7a76bb17ef5:0xaec7a4f4bf9604ac!8m2!3d-34.5465314!4d-58.4636087!16s%2Fg%2F11q2ct0x48!19sChIJ9X6xa6e3vJURrASWv_Skx64?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Crisólogo Larralde 1935, C1429 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Eugenia Rojas",
+          "texto": "Exelente servicio. Resultó ser un electricista muy bueno y meticuloso en su trabajo.Me resolvió el problema que tenía buscando la mejor opción y además a un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Molares",
+          "texto": "Muy profesional, me aconsejó en varias cuestiones que hacen la diferencia y el trabajo impecable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Ruibal",
+          "texto": "Tenía que cambiar cuatro enchufes, Juan fue en todo momento muy amable y paciente para explicarme qué necesitaba comprar y cuánto me iba a costar el trabajo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Acosta",
+          "texto": "Recomendable 100% su trabajo y amabilidad, tenia un caos eléctrico, llego y me dice tranquila lo vamos a solucionar y asi fue.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Franco",
@@ -54,7 +142,29 @@
       "whatsapp": "https://wa.me/5491151547676",
       "link_maps": "https://www.google.com/maps/place/Electricista+Franco/data=!4m7!3m6!1s0x95bccbe8423b06ff:0xf5bd4d213cb84a31!8m2!3d-34.5926611!4d-58.4149059!16s%2Fg%2F11kjjspsdr!19sChIJ_wY7QujLvJURMUq4PCFNvfU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Guise 1668, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Camila Garcia Ferreira",
+          "texto": "Recomiendo 100% a Franco. Hizo un trabajo excepcional instalando un ventilador con alas retráctil + una lampara de techo + un arreglo a la luz del lavadero…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Lafont",
+          "texto": "Super recomendable! Franco me soluciono un problema que otras personas no pudieron. La atención por whatsapp fue súper rapida y en menos de una hora ya estaba…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Valentina Mazzei",
+          "texto": "Un genio total Franco! La verdad que impecable el servicio. Dejo todo super prolijo, además de encima tomarse la molestia de limpiar los apliques, la verdad lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ale Giordano",
+          "texto": "Excelente el servicio de Franco. Lo súper recomiendo. Muy profesional y atento. Me resolvió todo lo que necesitaba 🙌🏻 10/10",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Juan, técnico matriculado",
@@ -64,7 +174,29 @@
       "whatsapp": "https://wa.me/5491160163170",
       "link_maps": "https://www.google.com/maps/place/Electricista+Juan,+t%C3%A9cnico+matriculado/data=!4m7!3m6!1s0x95bcb78e17e7c8a9:0x946b23a838818758!8m2!3d-34.5727428!4d-58.4768192!16s%2Fg%2F11z7wl6trc!19sChIJqcjnF463vJURWIeBOKgja5Q?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Mendoza 4406, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Albor",
+          "texto": "Juan hizo un trabajo excelente en casa. Tuve problemas con una central de riego que creí no iba a poder resolver. Con paciencia, dedicación y sobre todo por su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Javier Boccoli",
+          "texto": "Excelente profesional. Muy recomendado! Hizo un trabajo de instalación eléctrica de aires acondicionados en mi casa y estuvo todo perfecto.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabo Illanes",
+          "texto": "Excelente trabajo. Muy buen trato y muy prolijo para trabajar. Recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nahuel Bianchi",
+          "texto": "Me hizo un trabajo en casa, todo excelente. Buen precio y muy profesional.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista matriculado",
@@ -74,7 +206,29 @@
       "whatsapp": "https://wa.me/5491140272414",
       "link_maps": "https://www.google.com/maps/place/Electricista+matriculado/data=!4m7!3m6!1s0x95bcb5003f0cdd2b:0xc1ffbd3c0e45ef3b!8m2!3d-34.5820694!4d-58.4118666!16s%2Fg%2F11lzpzjrtz!19sChIJK90MPwC1vJURO-9FDjy9_8E?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Gral. Las Heras 3734, C1425ATO Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "patriickk p7",
+          "texto": "Quiero agradecer a Martín por el excelente trabajo que realizó. Desde el primer momento fue muy atento, responsable y profesional. Solucionó todo de manera…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lactamar C.R",
+          "texto": "Excelente atención de Martín. Se acercó el domingo a mi domicilio para solucionar un problema eléctrico. Muy amable, responsable y con excelente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ulises ezequiel Aguiar",
+          "texto": "Todo quedó funcionando perfecto y con total seguridad. Muy buen servicio, da gusto encontrar gente honesta para estas reparaciones.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luz Villanueva",
+          "texto": "Muy buen servicio, super rápido me atendieron y responsable, volvería sin dudarlo! Muchas gracias!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Villa Urquiza",
@@ -84,7 +238,29 @@
       "whatsapp": "https://wa.me/5491124950911",
       "link_maps": "https://www.google.com/maps/place/Electricista+Villa+Urquiza/data=!4m7!3m6!1s0x266f5aa68dbaf9ef:0x25628f29ae8f8ffb!8m2!3d-34.5689915!4d-58.4815133!16s%2Fg%2F11yrzb9s3l!19sChIJ7_m6jaZabyYR-4-PrimPYiU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Lugones 2676, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Diego Gonzalez",
+          "texto": "Un genio total! Super recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jaxi",
+          "texto": "Buena atención, solucionó en breve mi problema. Vino en 20 minutos y eso que lo llamé un sábado a la tarde.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nico Porsili",
+          "texto": "Tuve inconveniente hace una hora lo cual el electricista diego fue muy amable rápido a la hora de llegar y trabajar muy buena predisposición a l hora de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Facundo Barbaro",
+          "texto": "Genio total. Me solucionó un problema con mi tablero rápido . Super recomendable.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Jorge Electricidad",
@@ -94,7 +270,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Jorge+Electricidad/data=!4m7!3m6!1s0x95bcb7756840d9ed:0xe345bbec301bd3b!8m2!3d-34.5688124!4d-58.5071429!16s%2Fg%2F11p10bh6bw!19sChIJ7dlAaHW3vJURO70Bw75bNA4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Medeyros 3595, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Nahir D",
+          "texto": "Desde el primer instante demostró interés y buena predisposición para ayudar y resolver mis dudas sobre un circuito eléctrico para una maqueta. Se nota el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yanina Ieracitano",
+          "texto": "Quede muy conforme con el trabajo que me hizo, súper recomendable. Buen precio y responsabilidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Serra",
+          "texto": "Precio y calidad en el servicio. El trabajo que teníamos que hacer era complejo, pero con inteligencia y creatividad lo pudo llevar a cabo. Un genio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "VM M",
+          "texto": "Muy amable y responsable con el tema que tuvo q resolver, lo súper recomiendo!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Servicio 95 electricistas",
@@ -104,7 +302,29 @@
       "whatsapp": "https://wa.me/5491135873310",
       "link_maps": "https://www.google.com/maps/place/Servicio+95+electricistas/data=!4m7!3m6!1s0x95bccb014b59ca8f:0x4b41326090c4ee94!8m2!3d-34.5978049!4d-58.4030185!16s%2Fg%2F11zy31l8b9!19sChIJj8pZSwHLvJURlO7EkGAyQUs?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Paraguay 2474, C1121ABN Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Alvaro Ruiz",
+          "texto": "Genios. Francisco y su equipo me atendieron cordialmente. Desde el día 1 se ofrecieron a ir a relevar el lugar y el día pactado para los trabajos estuvieron…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Vijande",
+          "texto": "Excelente. Muy recomendable. Me quedé sin luz un domingo, vinieron rápido, encontraron el problema enseguida y lo solucionaron.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hilda Ester Pereyra",
+          "texto": "Muy buen servicio. Enseguida respondieron mi consulta y arreglamos la vista. Instalaron una jabalina y el cableado correspondiente, reubicaron una lámpara en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis Carlos Aguilar Malave",
+          "texto": "Muy buen trabajo. Atendieron la urgencia en tiempo y forma, Además de ser bastante educado. Problema solucionado en tiempo récord",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Adrian Rafael Gil",
@@ -114,7 +334,29 @@
       "whatsapp": "https://wa.me/5491176235878",
       "link_maps": "https://www.google.com/maps/place/Electricista+Adrian+Rafael+Gil/data=!4m7!3m6!1s0x95bcb7d68ba9256d:0xe18fc70f50c5e1cd!8m2!3d-34.5632459!4d-58.4663226!16s%2Fg%2F11kq2m583z!19sChIJbSWpi9a3vJURzeHFUA_Hj-E?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Blanco Encalada 3153, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "anabella saidman",
+          "texto": "Es impecable, hizo un muy buen trabajo , responsable . Muy recomendable !!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria De Los Angeles Chacón",
+          "texto": "Execelente profesional.. responsable y un trabajo impecable. Recomendados.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina",
+          "texto": "Buen profesional, prolijo, responsable. Recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adriana Pena",
+          "texto": "Muy puntual y prolijo en el trabajo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad Florida",
@@ -124,7 +366,29 @@
       "whatsapp": "https://wa.me/5491178275227",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Florida/data=!4m7!3m6!1s0x95bcb78977372697:0x4a9790bb74c6a087!8m2!3d-34.571592!4d-58.5045607!16s%2Fg%2F11nvlz7s2j!19sChIJlyY3d4m3vJURh6DGdLuQl0o?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Manuela Pedraza 6275, C1431AKG Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Ale M",
+          "texto": "Excelente electricista matriculado. Cumplió en tiempo y forma con el trabajo solicitado, con un presupuesto totalmente adecuado a los tiempos que corren. Lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariano Javier Bielak",
+          "texto": "Muy buen laburo, siempre responsable y de confianza. Es electricista matriculado, trabaja muy bien y cumple con lo acordado. Lo recomiendo sin dudas.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "leonardo ridolfi",
+          "texto": "Contraté un electricista matriculado y la diferencia se notó, trabajo prolijo, cumplió los tiempos y dejó todo en orden. Muy buena atención y honestidad al…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristian Carrizo",
+          "texto": "¡Excelente profesional, 100% recomendable! Quiero dejar esta reseña porque hoy en día es realmente difícil encontrar un profesional con el nivel de compromiso…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ELECTRIC INSTALACIONES SRL",
@@ -134,7 +398,29 @@
       "whatsapp": "https://wa.me/5491165446872",
       "link_maps": "https://www.google.com/maps/place/ELECTRIC+INSTALACIONES+SRL/data=!4m7!3m6!1s0x95bcb5ea05b85d6d:0x8f879aad311d4a!8m2!3d-34.5946024!4d-58.4437734!16s%2Fg%2F11t89ys8tx!19sChIJbV24Beq1vJURSh0xrZqHjwA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 2550, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de seguridad contra incendios"
+      "categoria": "Servicio de seguridad contra incendios",
+      "reseñas_texto": [
+        {
+          "nombre": "Sergio Miño",
+          "texto": "Gente muy profesional en su trabajo,sin dudas es recomendable esta empresa",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Milus Rodríguez",
+          "texto": "Empresa responsable, trabajos impecables y en forma y tiempo...lo súper recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andree Soto",
+          "texto": "Excelente servicio !☺️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Bruno Mejía",
+          "texto": "Totalmente recomendable 💯👍🏽",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "SGH ELECTRICISTA CERTIFICADO",
@@ -144,7 +430,29 @@
       "whatsapp": "https://wa.me/5491157725242",
       "link_maps": "https://www.google.com/maps/place/SGH+ELECTRICISTA+CERTIFICADO/data=!4m7!3m6!1s0x95bcb50071df884d:0xb6d7f61291ef3ab3!8m2!3d-34.553783!4d-58.4620344!16s%2Fg%2F11y0zpk2lg!19sChIJTYjfcQC1vJURszrvkRL217Y?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Quesada 2286, B1429 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Gabriel Sánchez",
+          "texto": "Profesional, puntual, atento y respetuoso 100% recomendado Cambio una térmica y quedó impecable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Abril Garat",
+          "texto": "un capo Juan, súper prolijo y amable. recontra recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Milagros",
+          "texto": "Impecable, respetuoso y profesional. Me explicó detalladamente cada arreglo, solucionó todo rápido y eficientemente. Como mujer que vive sola me brindó mucha…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Antonella Fava",
+          "texto": "Excelente trabajo y profesional, en verdad que lo recomiendo. Lo llamé y vino a la hora, hizo un cableado muy prolijo. Muy contenta con el resultado. Gracias…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Edgardo silvero",
@@ -154,7 +462,29 @@
       "whatsapp": "https://wa.me/5491136647859",
       "link_maps": "https://www.google.com/maps/place/Electricista+Edgardo+silvero/data=!4m7!3m6!1s0x95bcb783cc8afdd5:0xcddce261168b9bd8!8m2!3d-34.566512!4d-58.4942158!16s%2Fg%2F11hdmvthbn!19sChIJ1f2KzIO3vJUR2JuLFmHi3M0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Triunvirato 5673, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Bernarda Mendelson",
+          "texto": "Edgardo es un genio! Vino en el día a solucionar el problema. Super profesional y experto ! Lo recomiendo 100% :D",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Edgardo Gradwohl",
+          "texto": "Un verdadero fenómeno!!! El y los chicos que trabajan con Edgardo!!!! Excelente trato, te explica todo, pero sobre todo rescato el don de gente! Muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martín Harris",
+          "texto": "Excelente atención y servicio. Muy recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paulo Grimaldi",
+          "texto": "Soy arquitecto, lo contraté varias veces y siempre cumple con todo. No le tengo que decir 20 veces las cosas, un capo, super recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ELECTRICISTA MATRICULADO La Luz de Casa",
@@ -164,7 +494,29 @@
       "whatsapp": "https://wa.me/5491131829922",
       "link_maps": "https://www.google.com/maps/place/ELECTRICISTA+MATRICULADO+La+Luz+de+Casa/data=!4m7!3m6!1s0x5d03d98753e0bed:0xaa6ac03b5e4a5491!8m2!3d-34.5684229!4d-58.4899651!16s%2Fg%2F11wj47vbrp!19sChIJ7Qs-dZg90AURkVRKXjvAaqo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Díaz Colodrero 3100, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "gonzalo piacenza",
+          "texto": "Muy contento con el resultado, prolijo y muy conciente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paola Ibañez",
+          "texto": "Trabaja muy bien, cumple con lo pautado en tiempo y forma, da garantía de su trabajo, súper recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Beredo",
+          "texto": "Lo super recomiendo. Nos contestó rapido, y solucionó eficientemente el problema que teniamos en casa.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jesica Cropanese",
+          "texto": "Excelente atención!! Recomiendo 100%",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Águila Volt- Instalaciones Eléctricas",
@@ -174,7 +526,29 @@
       "whatsapp": "https://wa.me/5491131591977",
       "link_maps": "https://www.google.com/maps/place/%C3%81guila+Volt-+Instalaciones+El%C3%A9ctricas/data=!4m7!3m6!1s0x800ea9e4f767d2a1:0xf4f32a3cc1cd98fb!8m2!3d-34.5918206!4d-58.3964052!16s%2Fg%2F11n9c74cwh!19sChIJodJn9-SpDoAR-5jNwTwq8_Q?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Peña 2114, C1126ABD Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Florencia Gori",
+          "texto": "Lo contacté para hacer una arreglo en mi casa , respondio rápido. Hizo un muy buen trabajo, muy prolijo, buen precio, muy profesional. Recomiendo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Analuz Almada",
+          "texto": "Excelente trabajo. Muy puntual, profesional y resolvió el problema rápidamente. Lo recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Matias Alan Pais",
+          "texto": "Tenía un corto en casa que no sabía de dónde venía, me estaba volviendo loco. Le escribí, le comenté el tema, vino a la tarde a casa. Reviso y encontró rápido…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elena Orlova",
+          "texto": "Recomiendo, me realizo la instalacion electrica para mi aire acondicionado, ordenado y puntual, precios razonables.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electrotecnia Belgrano",
@@ -184,7 +558,29 @@
       "whatsapp": "https://wa.me/5491162050032",
       "link_maps": "https://www.google.com/maps/place/Electrotecnia+Belgrano/data=!4m7!3m6!1s0x95bcb51ce06d8b7d:0xcdce474eb378ca94!8m2!3d-34.6159202!4d-58.4333055!16s%2Fg%2F11px8jk01y!19sChIJfYtt4By1vJURlMp4s05Hzs0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "{\"borough\":\"\",\"street\":\"\",\"city\":\"\",\"postal_code\":\"\",\"state\":\"\",\"country\":\"\"}",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Elsa Dulsan",
+          "texto": "Recomiendo! Sus trabajos son M buenos,.Puntualidad,responsabilidad y calidad!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriel Epstein",
+          "texto": "Súper recomendable . Muy eficientes y respo sables. Gracias Javier por tu trabajo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Tomás",
+          "texto": "Súper recomendable! Tuve que realizar una instalación eléctrica integral en un departamento muy viejo con cambio de cables, tomas y lámparas. Además se agregó…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Le Li",
+          "texto": "Excelente atención muy buen servicio recomendables Gracias Javier 😀",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Moreno (Palermo)",
@@ -194,7 +590,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Moreno+%28Palermo%29/data=!4m7!3m6!1s0x95bcb5f58d31c7a9:0x93891d6a02054cdc!8m2!3d-34.5807911!4d-58.4245469!16s%2Fg%2F11z_t_1p_6!19sChIJqccxjfW1vJUR3EwFAmodiZM?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Darregueyra 2408 PB B, C1425ABC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Tatiana A.",
+          "texto": "Excelente servicio. Es rápido, amable y muy profesional. No cobra de más, te explica todo con claridad y trabaja con honestidad. Da gusto encontrar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Brenda Melnik",
+          "texto": "Súper recomendable y excelente servicio! Me quedo de 10 todo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "SICRO SA",
+          "texto": "Es de recomendar pedí un presupuesto no tardo lo vino a ver y el trabajo fue impecable muy conforme para recomendar y volver a llamar",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriel Vivas",
+          "texto": "Muy buen trabajo y trato super rapido",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Agustín Escobar",
@@ -204,7 +622,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Agust%C3%ADn+Escobar/data=!4m7!3m6!1s0x95bcc9f74d2e358f:0x62a9387f4aced637!8m2!3d-34.543279!4d-58.4817609!16s%2Fg%2F11xh93jy_d!19sChIJjzUuTffJvJURN9bOSn84qWI?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pico 3160, C1429EGD Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Leonardo Enrique LeoEnri",
+          "texto": "Excelente. Cumplidor, muy educado, muy honesto, muy prolijo y sabe mucho. Agustín es un electricista de primera, totalmente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lionel Rose",
+          "texto": "Agus una masa, trabaja super bien, es de confianza",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joel Gonzalez",
+          "texto": "Muy profesional, y sobre todo transparente. Por si sos de tener dudas, ves cómo se maneja y te quedas tranquilo de todo. Más que recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nazarena Prada",
+          "texto": "Lo recomiendo 100%! Trabaja excelente, se manejó de manera súper profesional y me armó un presupuesto bien claro y prolijo 🙌🏻.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Charra",
@@ -214,7 +654,29 @@
       "whatsapp": "https://wa.me/5491150351994",
       "link_maps": "https://www.google.com/maps/place/Electricista+Charra/data=!4m7!3m6!1s0x95bcb70007da1a5f:0x7a59a7705a4b6d93!8m2!3d-34.5771879!4d-58.4986165!16s%2Fg%2F11zyprkm9f!19sChIJXxraBwC3vJURk21LWnCnWXo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. de los Constituyentes 5250, C1431 Villa Pueyrredon, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Vanina",
+          "texto": "Excelente servicio,super recomendable y buen precio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "sealiah iero",
+          "texto": "Genial !! En 30 minutos puso todo en orden , excelente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carola Carvajal",
+          "texto": "genio total. en el mismo dia que escribí, a menos de dos horas, resolvió el problema rapidísimo y el precio fue súper acorde a su trabajo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Olga Aguirre",
+          "texto": "Un servicio espectacular, no tuve ningún problema mas 🤩🤩🤩",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Cuba",
@@ -224,7 +686,29 @@
       "whatsapp": "https://wa.me/5491155736541",
       "link_maps": "https://www.google.com/maps/place/Electricista+Cuba/data=!4m7!3m6!1s0x95bcb5001e1d1b9d:0xde14701472332e92!8m2!3d-34.5550748!4d-58.4601951!16s%2Fg%2F11z73knq18!19sChIJnRsdHgC1vJURki4zchRwFN4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cuba 2734, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Nicolas Triemstra",
+          "texto": "Excelente servicio, muy profesional y responsable. Trabaja de manera prolija, cumple con los tiempos y ofrece muy buenos precios. Totalmente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Verón",
+          "texto": "Excelente servicio, precio y prolijidad! Instalaron un ventilador, un plafón y arreglaron una luz rapidísimo. Los vamos a llamar para cualquier instalación…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "SUSANA MOLINA",
+          "texto": "Muy prolijo y con buenos conocimientos,rapidas soluciones y buen precio,super recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Danna Solano",
+          "texto": "Buena predisposición, conocimiento y buena calidad de materiales",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Hernan vega Electricista",
@@ -234,7 +718,29 @@
       "whatsapp": "https://wa.me/5491169726533",
       "link_maps": "https://www.google.com/maps/place/Hernan+vega+Electricista/data=!4m7!3m6!1s0x95bcb500256707ab:0x7f9ffc5cc209102a!8m2!3d-34.5769771!4d-58.4053901!16s%2Fg%2F11z56tymw7!19sChIJqwdnJQC1vJURKhAJwlz8n38?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Jeronimo Salguero 3084, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Gea",
+          "texto": "Excelente servicio! Puntualidad con los horarios establecidos, limpieza y orden en los trabajos y mucha amabilidad para explicar el trabajo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jesica Oltra",
+          "texto": "Muy buena atención. Me instalo las lámparas en mi casa.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Damian Cabrera",
+          "texto": "La verdad 10/10 super recomendable y de confianza",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Facundo Gomez",
+          "texto": "El mejor electricista muy buena atencion buenas disponibilidad",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Agustin Ferrari",
@@ -244,7 +750,24 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Agustin+Ferrari/data=!4m7!3m6!1s0x95bcb7f1ecc2b749:0x115af6deb41f5992!8m2!3d-34.5439914!4d-58.4705159!16s%2Fg%2F11j3lrhk__!19sChIJSbfC7PG3vJURklkftN72WhE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Ruiz Huidobro 2307, C1429 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Adriana Faura",
+          "texto": "Me resolvió un montón de temas cables enchufes ect.Trabajo honesto precios accesibles .Eficiente ..lo vuelvo a llamar",
+          "estrellas": 5
+        },
+        {
+          "nombre": "BRUNO IAN SAINT ESTEVEN",
+          "texto": "Super recomendable! Siempre me salva las papas",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Alberto Paz Martinez",
+          "texto": "Por su profesionalismo y dedicación",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista - Nicolas ⚡️💡",
@@ -254,7 +777,29 @@
       "whatsapp": "https://wa.me/5491133142551",
       "link_maps": "https://www.google.com/maps/place/Electricista+-+Nicolas+%E2%9A%A1%EF%B8%8F%F0%9F%92%A1/data=!4m7!3m6!1s0x95bcb7513d61a7c3:0xebd538b123b0716a!8m2!3d-34.5756918!4d-58.4987579!16s%2Fg%2F11z2ydbp_t!19sChIJw6dhPVG3vJURanGwI7E41es?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Tomás A. Le Bretón 5868, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Fiore",
+          "texto": "Me salvó! Tenía un corto en casa y lo resolvió al toque. Super copado y honesto. Gracias!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana Cristina Tiesqui",
+          "texto": "Hizo un trabajo enorme en mí casa. Cambio toda la instalación eléctrica. Capacidad y calidez humana.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jaime Usach",
+          "texto": "Excelente! Recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pat Lávaque",
+          "texto": "Muy recomendable!!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "S.l.S. electricistas",
@@ -264,7 +809,29 @@
       "whatsapp": "https://wa.me/5491122615481",
       "link_maps": "https://www.google.com/maps/place/S.l.S.+electricistas/data=!4m7!3m6!1s0x95bcb76ab40c4911:0x2ece850eee19149f!8m2!3d-34.5586082!4d-58.4693111!16s%2Fg%2F11y4b_vkp_!19sChIJEUkMtGq3vJURnxQZ7g6Fzi4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Zapiola 2921, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Cecilia Soto",
+          "texto": "Un genio! Me arregló la térmica con lluvia y todo y súper rápido.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "moises ramos",
+          "texto": "Sergio es un crack, ordenado, profesional, Tuve un problema con la térmica que se encuentra en el tablero principal. Lo arreglo en el acto.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabian Espin Jaramillo",
+          "texto": "Un capo Sergio, hizo las mediciones que necesitaba y luego quedamos en hacer un trabajo con unas lámparas, recomendado.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Matías Federico",
+          "texto": "Un genio Sergio me solucionó un problemon de madrugada. Confiable y recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista domiciliario",
@@ -274,7 +841,24 @@
       "whatsapp": "https://wa.me/5491151087670",
       "link_maps": "https://www.google.com/maps/place/Electricista+domiciliario/data=!4m7!3m6!1s0x95bcb575309cb53d:0xd666a9f3c4717d37!8m2!3d-34.5763233!4d-58.4552606!16s%2Fg%2F11fm7kldft!19sChIJPbWcMHW1vJURN31xxPOpZtY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. Enrique Martínez 985, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "María Florencia Lasa",
+          "texto": "Impecable! Super recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "San Marco Marmoleria",
+          "texto": "Impecable el servicio, muy recomendable!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hugo Sanchez",
+          "texto": "Muy buen profesional. Excelente trabajo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista domiciliario",
@@ -284,7 +868,29 @@
       "whatsapp": "https://wa.me/5491159755298",
       "link_maps": "https://www.google.com/maps/place/Electricista+domiciliario/data=!4m7!3m6!1s0x95bccb00025bb4bf:0x7de61c43a6f07a3b!8m2!3d-34.5959986!4d-58.4031322!16s%2Fg%2F11zznwdfc6!19sChIJv7RbAgDLvJURO3rwpkMc5n0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Pueyrredón 1266, C1118AAP Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Marina Pabon",
+          "texto": "Excelente servicio y precio justo, muy amable y cordial.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "catalina ale monserrat",
+          "texto": "Muy buen profesional, llegó a horario,y fue muy respetuoso.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gonzalo Obregon",
+          "texto": "Todo muy bien,me soluciono el cortocircuito.recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jime Pomar",
+          "texto": "Todo muy bien, recomiendo.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "D y F Instalaciones Electricas",
@@ -294,7 +900,14 @@
       "whatsapp": "https://wa.me/5491172373608",
       "link_maps": "https://www.google.com/maps/place/D+y+F+Instalaciones+Electricas/data=!4m7!3m6!1s0x95bccb4eeba4390b:0xdf6fce430134acf8!8m2!3d-34.5977006!4d-58.4225202!16s%2Fg%2F11ntdbk50y!19sChIJCzmk607LvJUR-Kw0AUPOb98?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Córdoba 3950, C1188AAS Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan",
+          "texto": "Me cambio varias tomas en mal estado a muy buen precio. Gran profesional y muy educado.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Gasista/Electricista 24hs",
@@ -304,7 +917,24 @@
       "whatsapp": "https://wa.me/5491154851939",
       "link_maps": "https://www.google.com/maps/place/Gasista%2FElectricista+24hs/data=!4m7!3m6!1s0x95bcb760d520f4e5:0x51da8c3869416c2a!8m2!3d-34.5778953!4d-58.4907101!16s%2Fg%2F11kj00q4fx!19sChIJ5fQg1WC3vJURKmxBaTiM2lE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Blanco Encalada 5435, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Nazareno Maciel",
+          "texto": "Axel coloco varios artefactos , soluciono un corto, y agrego una línea independiente con termica para un aire acondicionado split. Todo muy Bien. Para…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eliana Mariel Sosa",
+          "texto": "Excelente, soluciono mi problema de inmediato. Claro y expeditivo a la hora de dar una solución. Gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hugo Hermosilla",
+          "texto": "Excelente servicio! Recomendable.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "CABA SOLUCIONES ELECTRICAS",
@@ -314,7 +944,24 @@
       "whatsapp": "https://wa.me/5491178285231",
       "link_maps": "https://www.google.com/maps/place/CABA+SOLUCIONES+ELECTRICAS/data=!4m7!3m6!1s0x95bccb0001b98e6d:0xf56fff36cc0bbae8!8m2!3d-34.5916115!4d-58.39186!16s%2Fg%2F11nw3lcv88!19sChIJbY65AQDLvJUR6LoLzDb_b_U?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Callao, Av. Gral. Las Heras &, Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Naviel Maksad",
+          "texto": "Excelente trabajo de parte de los chicos para mi local comercial, profesionalismo y calidad certificada",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monica Parra Tango",
+          "texto": "Muy buena y rapida atencion !! Gracias ..Los seguiré llamando",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ignacio Saint Martin",
+          "texto": "Excelente servicio, segunda vez que llamo y muy contento",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Rodolfo",
@@ -324,7 +971,19 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Rodolfo/data=!4m7!3m6!1s0x95bccb249d29d5ad:0x280d281f4ba81449!8m2!3d-34.5943599!4d-58.4215599!16s%2Fg%2F11y2mw362b!19sChIJrdUpnSTLvJURSRSoSx8oDSg?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "1180, Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "gustavo pagni",
+          "texto": "Un genio, vino y me solucionó el problema en un periquete, precio accesible Gracias ahora tengo luz en el baño !!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "juana albert",
+          "texto": "Excrlente!!. Muchas gracias por tu visita.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Leonardo Cruz Electricista Matriculado",
@@ -334,7 +993,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Leonardo+Cruz+Electricista+Matriculado/data=!4m7!3m6!1s0xa12b0d3fac387b49:0x722364ec36f06bf!8m2!3d-34.5519073!4d-58.4733503!16s%2Fg%2F11zz58mh71!19sChIJSXs4rD8NK6ERvwZvw042Igc?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Crisólogo Larralde 2976, C1429BTW Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Mariela Cruz",
+          "texto": "Me mudé y me ayudó con la revisión de la instalación eléctrica, me asesoró en cuanto a iluminación y cambió algunas térmicas, dejo todo muy prolijo y seguro…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "InstaLight",
@@ -344,7 +1010,19 @@
       "whatsapp": "https://wa.me/5491123264760",
       "link_maps": "https://www.google.com/maps/place/InstaLight/data=!4m7!3m6!1s0x95bccb59178b88f1:0x4eb91b44c15212d9!8m2!3d-34.5897444!4d-58.4038727!16s%2Fg%2F11nqp142ng!19sChIJ8YiLF1nLvJUR2RJSwUQbuU4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Juncal 2669, C1425AYE Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Lilo Stich",
+          "texto": "Excelente experiencia. Super profesionales desde el momento de hacer el presupuesto hasta las reparaciones. Responden rápido, resuelven en el día, educados…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana Rios",
+          "texto": "Excelente trabajo, calidad precio de 10!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Pablo Instalaciones Eléctricas – Saavedra",
@@ -354,7 +1032,14 @@
       "whatsapp": "https://wa.me/5491136163708",
       "link_maps": "https://www.google.com/maps/place/Pablo+Instalaciones+El%C3%A9ctricas+%E2%80%93+Saavedra/data=!4m7!3m6!1s0x86402ca8997dd555:0x4b13bab4703a35e!8m2!3d-34.5516939!4d-58.4760617!16s%2Fg%2F11z2vg_41j!19sChIJVdV9magsQIYRXqMDR6s7sQQ?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pinto 3708, C1429 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Norma Maza",
+          "texto": "Exelente servicio y atencion",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "SELECTRIC ARGENTINA",
@@ -364,7 +1049,14 @@
       "whatsapp": "https://wa.me/5491155681177",
       "link_maps": "https://www.google.com/maps/place/SELECTRIC+ARGENTINA/data=!4m7!3m6!1s0x95bcb7fada647d17:0xc5a00af3fd8ae8be!8m2!3d-34.548157!4d-58.4826557!16s%2Fg%2F11n0flfxd6!19sChIJF31k2vq3vJURvuiK_fMKoMU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Superí 4374, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Franco cana",
+          "texto": "Excelente servicio, trabajan con responsabilidad y profesionalismo. Los técnicos son muy atentos y se nota la experiencia en cada trabajo. Totalmente…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista de Villa Urquiza",
@@ -374,7 +1066,14 @@
       "whatsapp": "https://wa.me/5491137879904",
       "link_maps": "https://www.google.com/maps/place/Electricista+de+Villa+Urquiza/data=!4m7!3m6!1s0x95bcb7d49be188e5:0x9b20a142cdcae8b!8m2!3d-34.5763854!4d-58.4931232!16s%2Fg%2F11j4rrmkd5!19sChIJ5Yjhm9S3vJURi67cLBQKsgk?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Burela 2530, C1431 C1431EHD, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Ricardo velez vera",
+          "texto": "Excelente servicio! resolvió al toque el inconveniente electrico!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electromecanica Ground Roberts",
@@ -384,7 +1083,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electromecanica+Ground+Roberts/data=!4m7!3m6!1s0x95bcb7d4d02b4f7b:0x89cf736cbc51b445!8m2!3d-34.5576675!4d-58.4716583!16s%2Fg%2F11h7kvm82p!19sChIJe08r0NS3vJURRbRRvGxzz4k?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Iberá 3200, C1429 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudina Garbari",
+          "texto": "Excelente atención! Veníamos viajando y se rompió el auto. Nos solucionaron el problema. Muy buen precio y honestidad en el trabajo. Realmente agradecidos con…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "´Eléctrico Gus´ Electricista",
@@ -394,7 +1100,14 @@
       "whatsapp": "https://wa.me/5491121760001",
       "link_maps": "https://www.google.com/maps/place/%C2%B4El%C3%A9ctrico+Gus%C2%B4+Electricista/data=!4m7!3m6!1s0x95bcb7c765a7fb5f:0x87e7149bb3295e58!8m2!3d-34.5670666!4d-58.4910804!16s%2Fg%2F11nvz141wb!19sChIJX_unZce3vJURWF4ps5sU54c?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Iberá 5105, C1431AEK AEK, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Andrea Leonardis",
+          "texto": "Excelente profesional !!!! para recomendar a los amigos",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "GAMELECTRIC srl",
@@ -404,7 +1117,29 @@
       "whatsapp": "https://wa.me/5491145511820",
       "link_maps": "https://www.google.com/maps/place/GAMELECTRIC+srl/data=!4m7!3m6!1s0x95bcb5c0443283d1:0x2992934bd6cf2c55!8m2!3d-34.5732767!4d-58.4422035!16s%2Fg%2F11c1xqg7cm!19sChIJ0YMyRMC1vJURVSzP1kuTkik?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Calle Jorge Newbery 2551 45511820, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Axel P.",
+          "texto": "Excelente lugar. Muy amables y por sobretodo muy buen asesoramiento. Lleve foto de los toma corrientes y puntos que tenía que reemplazar. Fui a comprar la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquín Alis",
+          "texto": "Buenos precios y gran predisposición de los muchachos para responder todas mis consultas. Muy recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Barbara Salom",
+          "texto": "Gracias a los chicos de Gamelectric por la buena onda, la paciencia, predisposición y amabilidad, sobre todo de Cristian que es muy atento. Los elijo siempre.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gonzalo Sebastian",
+          "texto": "Exelente atención !!! Me asesoran y buscaron dar solución, le dedicaron tiempo y compromiso!!! Hiper recomendable...Charly y su equipo !!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad Chispita",
@@ -414,7 +1149,29 @@
       "whatsapp": "https://wa.me/5491131191973",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Chispita/data=!4m7!3m6!1s0x95bcb5ffb01316b5:0x885c9dc2c32d4886!8m2!3d-34.5847266!4d-58.4154773!16s%2Fg%2F11kcsj89t7!19sChIJtRYTsP-1vJURhkgtw8KdXIg?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Raúl Scalabrini Ortiz 2560, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Martin Spasiuk",
+          "texto": "Atención de 10, llego y resolvió todo en pocos minutos. Fácil de coordinar y súper transparente todo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Bellora",
+          "texto": "Excelente atención por parte de Marcelo. Vino a mi casa temprano para que me pudiera ir a trabajar a horario, realizó el trabajo muy rápido y dejó todo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea Puntillo",
+          "texto": "Contraté a Marcelo porque me mudé y tenía que mudar los ventiladores de techo e instalar artefactos nuevos. Excelente trabajo realizado, en tiempo y forma.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Georgina Lucesoli",
+          "texto": "excelente atención y método de trabajo. Lo llamé ante una emergencia, no había luz en toda la casa y las térmicas no funcionaban. Me indicó por teléfono cosas…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Feldman Electricista Matriculado",
@@ -424,7 +1181,29 @@
       "whatsapp": "https://wa.me/5491128780090",
       "link_maps": "https://www.google.com/maps/place/Feldman+Electricista+Matriculado/data=!4m7!3m6!1s0x95bcb5c629a41ed7:0x52e804779a1b42c0!8m2!3d-34.5585386!4d-58.4511904!16s%2Fg%2F11vjjj9xww!19sChIJ1x6kKca1vJURwEIbmncE6FI?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juramento 1800, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Ana Gabriela Acosta",
+          "texto": "Excelente trabajo! Recableado desde el sótano hasta el departamento, se agregaron conexiones nuevas y se reubicó y acondionó el tablero al consumo actual. Todo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "marcos marucco",
+          "texto": "Genial, instaló un ventilador de techo. Super prolijo, detallista y amable. Trabjo súper recomendable 100%. Además el valor muy ajustado. De. 10",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Caro Martinez",
+          "texto": "El servicio que presta es claramente recomendable! Un 100%. Con mi marido tuvimos un corte de luz inesperado (nos saltó el disyuntor de nuestro dpto) y no…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Aguilar",
+          "texto": "Un genio absoluto!! Respondió rápido y pudo venir en menos de una hora. Trabajó sin apuros, con cuidado y mucho detalle. Hizo un excelente trabajo y encima se…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Frank",
@@ -434,7 +1213,29 @@
       "whatsapp": "https://wa.me/5491151547676",
       "link_maps": "https://www.google.com/maps/place/Electricista+Frank/data=!4m7!3m6!1s0x95bcb56306e83617:0x71dde1ce78d07e32!8m2!3d-34.5750202!4d-58.4406974!16s%2Fg%2F11t1hcw6v6!19sChIJFzboBmO1vJURMn7QeM7h3XE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cdad. de la Paz 228, C1426AGD Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "JS Politti",
+          "texto": "Impecable desde el primer momento! Lo llame sin casi tener idea de como explicarle lo que necesitaba y con toda la paciencia del mundo me aconsejó, vino a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gaby Huide",
+          "texto": "Llamamos a Juan en plena ola de calor. Teníamos un aire acondicionado recién instalado, habiamos llamado a un par de electricistas recomendados por conocidos y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eugenia Diaz",
+          "texto": "Franco fue muy atento y puntual. Colgó nuestra lampara colgante y fue de gran ayuda. Precios justos, lo recomendaría 10/10.Gracias! -Euge y Martin",
+          "estrellas": 5
+        },
+        {
+          "nombre": "santiago erausquin",
+          "texto": "Brillante, puntual, respetó los tiempos prometidos. Compró los insumos que necesitó y trajo todos los recibos. Me dio facilidades de pago. Un capo. Súper…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad San Jorge h.",
@@ -444,7 +1245,29 @@
       "whatsapp": "https://wa.me/5491149746653",
       "link_maps": "https://www.google.com/maps/place/Electricidad+San+Jorge+h./data=!4m7!3m6!1s0x95bccbca96a64d45:0xdaa0051294eefc1a!8m2!3d-34.5923068!4d-58.4265025!16s%2Fg%2F11cjj4vgsx!19sChIJRU2mlsrLvJURGvzulBIFoNo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gorriti 4577, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Jesica Lora Galatro",
+          "texto": "Que decirles del trabajo y la atención de Flavio? 100000/10. Acudí a él luego de que el electricista anterior me plantara con la obra de mi departamento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Freire",
+          "texto": "Excelente atención, cumplió en horario, resolvió lo que necesitábamos en precio, tiempo. Recomendable y vamos a seguir llamándolo para otros arreglos que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gaston Herrera",
+          "texto": "Flavio . Excelente profesional. Con Mucha experiencia. Prolijo y rápido. Lo recomiendo siempre.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Santiago Geymonat",
+          "texto": "Unos genios! Siempre una excelente atención, tienen de todo y con muy buenos precios! Excelente💪",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad Chispita",
@@ -454,7 +1277,29 @@
       "whatsapp": "https://wa.me/5491131191973",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Chispita/data=!4m7!3m6!1s0x95bcb5b13c37cb41:0x6964256de379f339!8m2!3d-34.5793479!4d-58.4481444!16s%2Fg%2F11rdypjnz6!19sChIJQcs3PLG1vJUROfN5420lZGk?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Maure 3262, C1426CVJ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Alfredo ARIENTI",
+          "texto": "Muy profesional. claro en definir precio. Soluciono el problema.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuela Canevari",
+          "texto": "Un genio Marcelo. Vino rapidísimo, no solo me soluciono el problema sino que fue muy comunicativo a la hora de contarme qué generaba el problema y cómo iba a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Billeke Viera",
+          "texto": "Muy amable y diligente. Se preocupó por hacer bien el trabajo, en tiempo y forma, fue puntual e incluso me sugirió resguardar a los gatitos de casa para que no…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea Ezquerra",
+          "texto": "Excelente atención, muy amable, rápido. Te da mucha confianza, sin duda volvería a llamarlo. Me salvó gracias.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad Chispita",
@@ -464,7 +1309,29 @@
       "whatsapp": "https://wa.me/5491131191973",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Chispita/data=!4m7!3m6!1s0x95bcb574b7baad05:0xa3d2cac2a67712b!8m2!3d-34.5551561!4d-58.4591663!16s%2Fg%2F11szb_6b_d!19sChIJBa26t3S1vJURK3FnKqwsPQo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Manuel Ugarte 2158, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Luz Vespa",
+          "texto": "Excelente servicio. Muy profesional. Nos solucionó el problema de forma rápida un día sábado.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicole Rivas",
+          "texto": "Muy amable. Es electricista matriculado y eso es muy importante. Tuvimos un problema con la térmica que era más grande de lo que esperábamos y además del…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Camila Díaz",
+          "texto": "Llamamos a Marcelo por una emergencia. Concurrió muy rápido al domicilio y resolvió el problema dentro del departamento. Después nos envío un informe con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "natalia fiscella",
+          "texto": "Recomiendo el servicio! Respuesta rápida y excelente asesoramiento!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Facundo",
@@ -474,7 +1341,29 @@
       "whatsapp": "https://wa.me/5491144468453",
       "link_maps": "https://www.google.com/maps/place/Electricista+Facundo/data=!4m7!3m6!1s0x95bcb9b40e1145b9:0x416ce50c4282c85a!8m2!3d-34.5476989!4d-58.5032757!16s%2Fg%2F11csqfxwyt!19sChIJuUURDrS5vJURWsiCQgzlbEE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Francisco Narciso de Laprida, Chile &, Villa Martelli, Provincia de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Esteban Procopio",
+          "texto": "Facundo me hizo un trabajo espectacular. Además es de confianza, que es lo más importante. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cyntia Sandes",
+          "texto": "Excelente trabajo! Lo recomiendo 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Somos UNSAM Eventos",
+          "texto": "Excelente trabajo, buena atención, profesional y puntual. Lo recomendamos siempre.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ignacio Manuel Fariña",
+          "texto": "Excelente trabajo. Prolijidad, responsabilidad y precio increíble. Lo tendré en cuenta para futuros proyectos.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Ariel Matriculado. Villa Urquiza",
@@ -484,7 +1373,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Ariel+Matriculado.+Villa+Urquiza/data=!4m7!3m6!1s0x95bcb7b33f93e445:0xc68bb2c9a93e0d3!8m2!3d-34.5712829!4d-58.4930974!16s%2Fg%2F11q25pt31m!19sChIJReSTP7O3vJUR0-CTmiy7aAw?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Aguas Buenas 3000 1431, C1431DZB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcela Blázquez",
+          "texto": "Recomiendo totalmente a Ariel y Juan. Hicieron un trabajo excelente y muy prolijo instalando las luminarias en mi departamento. Además de ser rápidos y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "juan carlos De La Vía Levy",
+          "texto": "Ariel y Juan son unos genios. Llegaron a la hora que dijeron y resolvieron el problema que tenía súper bien y rápido. Me cobraron lo justo por un trabajo bien…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Chaco Ramirez Fotografía",
+          "texto": "Excelente servicio! La comunicación fue rapidísima. Muy cordial en el trato y muy profesional. Llegó puntual a la cita y lo resolvió en el tiempo que esperaba…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica L",
+          "texto": "Ariel brinda un excelente servicio, es puntual, su trabajo es impecable y deja toda el área donde hace su trabajo super limpio. Ya he realizado varios trabajos…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista Urgencias 24hs",
@@ -494,7 +1405,29 @@
       "whatsapp": "https://wa.me/5491128602913",
       "link_maps": "https://www.google.com/maps/place/Electricista+Urgencias+24hs/data=!4m7!3m6!1s0x95bcb76ea2f7388f:0x7c51d78f5895ada2!8m2!3d-34.5688103!4d-58.4631895!16s%2Fg%2F11pkc9kx6n!19sChIJjzj3om63vJURoq2VWI_XUXw?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Mcal. Antonio José de Sucre 3250, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Rafael Bohórquez",
+          "texto": "Agustín es un excelente electricista y está más que recomendado. Lo contraté dos veces para trabajos de electricidad en dos departamentos y en ambas ocasiones…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jairo Santillan",
+          "texto": "Muy recomendable. Excelente profesional, sobre todo muy prolijo. Solucionó el problema con mucha paciencia y en muy poco tiempo, me quedé sin luz durante un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alberto Di Cianni",
+          "texto": "Excelente atención y predisposición para solucionar mi problema. Técnicamente muy capacitado. Altamente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rafael Feugeas",
+          "texto": "Agustín nos salvó un domingo al mediodía que tuvimos un cortocircuito. Nos dio asistencia por teléfono rápida y de calidad y pudimos resolver el problema en 5…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Gerardo Britto Electricista",
@@ -504,7 +1437,29 @@
       "whatsapp": "https://wa.me/5491162152376",
       "link_maps": "https://www.google.com/maps/place/Gerardo+Britto+Electricista/data=!4m7!3m6!1s0x95bcb5e855bc37c7:0xac8a2843560b2f33!8m2!3d-34.5766821!4d-58.4454667!16s%2Fg%2F11g21wfm4d!19sChIJxze8Vei1vJURMy8LVkMoiqw?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Calle Jorge Newbery 2967, C1426CYC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Matias Bravo",
+          "texto": "Lo llamé un domingo al mediodía porque me había quedado sin electricidad. Me atendió en seguida y por teléfono me indicó como solucionar el problema. Excelente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Caruso",
+          "texto": "Excelente todo, rápido, honesto, un copado!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alberto Raggio",
+          "texto": "Excelente servicio máxima predisposición. Genio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "HEBE ROSA Retta",
+          "texto": "Rápido solución de los problemas",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Luminarte - Materiales Eléctricos - Electricidad",
@@ -514,7 +1469,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Luminarte+-+Materiales+El%C3%A9ctricos+-+Electricidad/data=!4m7!3m6!1s0x95bcb762d6d2ac83:0xc619dfc8abce1cff!8m2!3d-34.55045!4d-58.470805!16s%2Fg%2F11f9dj7j8h!19sChIJg6zS1mK3vJUR_xzOq8jfGcY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Crisólogo Larralde 2652, C1429BTT Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Eduardo Merech",
+          "texto": "Tengo años trabajando con Ale y Fabricio ,te dan excelente atención y asesoramiento. Precio sin competencia. LOS RECOMIENDO.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Agustin Gazzotti",
+          "texto": "Negocio que vende a buen precios productos eléctricos y ciertos productos de iluminación. En general los Precios son razonables",
+          "estrellas": 4
+        },
+        {
+          "nombre": "DiegS Villarreal",
+          "texto": "Atencion excelente, precios muy buenos y muy buen asesoramiento",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo G",
+          "texto": "Muy buena atención.",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "L.E.M Electricidad del Automóvil",
@@ -524,7 +1501,29 @@
       "whatsapp": "https://wa.me/5491145424810",
       "link_maps": "https://www.google.com/maps/place/L.E.M+Electricidad+del+Autom%C3%B3vil/data=!4m7!3m6!1s0x95bcb68f5c6c5f75:0xcd173505f939b2f7!8m2!3d-34.558438!4d-58.4748606!16s%2Fg%2F11b6pnhfdx!19sChIJdV9sXI-2vJUR97I5-QU1F80?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Dr. Ricardo Balbín 3133, C1430AAC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Taller mecánico"
+      "categoria": "Taller mecánico",
+      "reseñas_texto": [
+        {
+          "nombre": "Betina Duarte",
+          "texto": "Luis es una persona excepcional. Le llevé mi Surán con un problema de arranque que parece ser algo bastante típico de las Surán, el burro de arranque, y la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Gil",
+          "texto": "Excelente experiencia, actuó de modo muy honesto y muy profesional desde el primer contacto hasta la resolución del problema.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Francisco LC",
+          "texto": "Lleve mi VW Golf a Luis luego de 3 talleres donde no lo podían solucionar por un falla en las luces. En unas pocas horas me lo solucionó y a un costo muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "matias guisasola",
+          "texto": "Impecable y super recomendada la atención de Luis. Muy profesional y honesto. No conseguimos el repuesto original de una bomba limpiaparabrisas y logró adaptar…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad Medrano",
@@ -534,7 +1533,29 @@
       "whatsapp": "https://wa.me/5491121383645",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Medrano/data=!4m7!3m6!1s0x95bcca7d137bffff:0x6cf647f0c85f869f!8m2!3d-34.5966334!4d-58.4190418!16s%2Fg%2F11f5btn9l1!19sChIJ__97E33KvJURn4ZfyPBH9mw?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "José A. Cabrera 3724, C1186AAT C1186AAT, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Adolfo Benitez",
+          "texto": "Exelente lugar muy buenas atención y bueno precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nahuel De La Calle",
+          "texto": "Local chico pero bien surtido y con buenos precios.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Román A",
+          "texto": "Buena atención y precios.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "J. M.",
+          "texto": "Excelente stock, gran atención y asesoramiento.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Gasista - Electricista Matriculado",
@@ -544,7 +1565,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Gasista+-+Electricista+Matriculado/data=!4m7!3m6!1s0x95bcb713c969a1a9:0xe69ade67490a4529!8m2!3d-34.5597549!4d-58.4810219!16s%2Fg%2F11hrcfz3hc!19sChIJqaFpyRO3vJURKUUKSWfemuY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Manuela Pedraza 4086 DTO 2, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Andrea Medina Diaz",
+          "texto": "Muy buen trabajo. Vino enseguida y me resolvió la conexión de mi horno. Me salvó. Quedé de volver a contactarlo para temas eléctricos. Cordial, cumplido y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lionel Wachs",
+          "texto": "Respondió rápido, vino un sábado por la mañana y me solucionó el desperfecto. Presupuesto ok. Recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Diego Arís Las Sepas",
+          "texto": "Laburá 10 puntos, se re movió para conseguir el repuesto y tuvo que venir varias veces hasta poder tenerlo todo solucionado.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Candelaria Elias",
+          "texto": "Solucionó el problema rápido, super amable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricista matriculado urgencias",
@@ -554,7 +1597,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+matriculado+urgencias/data=!4m7!3m6!1s0x95bcb51856fa8299:0x7920aeed2e7a9105!8m2!3d-34.5779612!4d-58.4497527!16s%2Fg%2F11l348_4gj!19sChIJmYL6Vhi1vJURBZF6Lu2uIHk?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Conde 718, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Facundo Nahuel Pafundi",
+          "texto": "Excelente atención. Me comuniqué a la mañana y en menos de 2 horas tenía el corto solucionado. Económico y de calidad!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Lorenzo",
+          "texto": "Lo llame y en el día resolvió el inconveniente, el trabajo quedó excelente se notó además su dedicación y conocimientos al explicar claramente el trabajo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gregorio Armendaris",
+          "texto": "Muy buen servicio y Adrian muy buena onda. Me explicó todo y funciona a la perfección.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Soledad",
+          "texto": "Llamamos x un certificado de jabalina de puesta a tierra que nos pedía el Gob de la Ciudad para el local.No entendíamos nada, nos explicó y lo hizo. Un 10! 💪",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electricidad Saavedra",
@@ -564,7 +1629,29 @@
       "whatsapp": "https://wa.me/5491146660701",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Saavedra/data=!4m7!3m6!1s0x95bcbc36398d5023:0xca34588d1435e03a!8m2!3d-34.5651607!4d-58.6839187!16s%2Fg%2F11bbrmyrb6!19sChIJI1CNOTa8vJUROuA1FI1YNMo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "BND Bella Vista Buenos Aires AR, 20 de Junio 1010, B1661, Argentina",
-      "categoria": "Mayorista de productos electrónicos"
+      "categoria": "Mayorista de productos electrónicos",
+      "reseñas_texto": [
+        {
+          "nombre": "Manuel Nunes",
+          "texto": "Exelente atención de la gente, me guiaron y recomendaron muchísimas cosas positivas y encima con la mejor onda",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Fernández",
+          "texto": "Excelente atención, muy buenos precios sigan así!!",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Julio Laurino",
+          "texto": "Busque cables de 2.5 para instalación domiciliaria en todas las casas de San Miguel y el mejor precio y calidad lo encontré en Electricidad Saavedra. Además…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hector Anibal Ares",
+          "texto": "Muy buena la atencion tienen de todo y ademas si no lo sabes te esplican cm se hace",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Elektron",
@@ -574,7 +1661,29 @@
       "whatsapp": "https://wa.me/5491145521878",
       "link_maps": "https://www.google.com/maps/place/Elektron/data=!4m7!3m6!1s0x95bcce7687a60ec9:0x6643160f9bad2a29!8m2!3d-34.5743987!4d-58.4596976!16s%2Fg%2F1tcw4tm1!19sChIJyQ6mh3bOvJURKSqtmw8WQ2Y?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Elcano 3302, C1426EJR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Doncor",
+          "texto": "Me atendieron muy bien y me asesoraron también. Los recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "diego gongora",
+          "texto": "Buena atención, brindan buen asesoramiento son pacientes, buen surtido de materiales eléctricos, precios razonables, hacen factura a.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Gabriel DIAZ",
+          "texto": "Un poco caro pagas la zona",
+          "estrellas": 3
+        },
+        {
+          "nombre": "Arco iris Milani",
+          "texto": "Me sorprendió la malisima atención del encargado. Siempre compraba ahí. Se oponía a hacerme un cambio de una bombilla de casi $3000 porque en mi velador no…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Franade SRL",
@@ -584,7 +1693,8 @@
       "whatsapp": "https://wa.me/5491145426283",
       "link_maps": "https://www.google.com/maps/place/Franade+SRL/data=!4m7!3m6!1s0x95bcb6e90a723051:0x177b80359cbfbbbf!8m2!3d-34.5523843!4d-58.4932648!16s%2Fg%2F1hc4jvw7m!19sChIJUTByCum2vJURv7u_nDWAexc?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Ramallo 4608, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de instalación eléctrica"
+      "categoria": "Servicio de instalación eléctrica",
+      "reseñas_texto": []
     },
     {
       "nombre": "Electricidad Ramallo",
@@ -594,7 +1704,29 @@
       "whatsapp": "https://wa.me/5491136030603",
       "link_maps": "https://www.google.com/maps/place/Electricidad+Ramallo/data=!4m7!3m6!1s0x95bcb6a28c0f0777:0x9f0b3bdf627ca307!8m2!3d-34.542492!4d-58.4719448!16s%2Fg%2F1tj1t8bq!19sChIJdwcPjKK2vJURB6N8Yt87C58?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Ramallo 2339, C1429DUM Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Sofía Rodriguez Recchia",
+          "texto": "Impecable la atención de Daniel. Lo volvimos loco durante una hora y la verdad de 10, nos ayudó y asesoró con todas nuestras dudas. Súper recomendable y buenos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alvaro Grimolizzi",
+          "texto": "Excelente! Hice un pedido de frente de tableros antiguos, cumplieron con todo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ulises Bayley",
+          "texto": "Buenisima atención. Tienen todo lo que no encontras en otras casas de electricidad y encima a muy buen precio. La mejor del barrio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "María Elena",
+          "texto": "Tienen de todo, son muy atentos y te arman el cable con los terminales si sos inútil como yo con la electricidad de favor. Los recomiendo.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Materiales Eléctricos Electro Congreso",
@@ -604,7 +1736,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Materiales+El%C3%A9ctricos+Electro+Congreso/data=!4m7!3m6!1s0x95bcb6817ed58b8d:0x7aaae3a0aa92e31d!8m2!3d-34.5570342!4d-58.4661616!16s%2Fg%2F11b6ht4kh8!19sChIJjYvVfoG2vJURHeOSqqDjqno?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Congreso 2795, C1428BVQ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de electricidad"
+      "categoria": "Tienda de electricidad",
+      "reseñas_texto": [
+        {
+          "nombre": "Jenny Benítez",
+          "texto": "Excelente comercio. Tienen lo que buscas, Excelente atención.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martin Alberti Amil",
+          "texto": "Compré un dimmer. Tienen variedad de productos. Buena atención.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nestor Colina",
+          "texto": "Terribles, la ganas de laburar ninguna, hoy 11/02 a las 11 am y esta cerrado y adicional no tiene aviso si están de vacaciones, solo un cartel q dice abierto…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Facundo El Akolo",
+          "texto": "Mienten con el horario...viernes hábil 15:50 y no están...y por acá mismo figura abierto...",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Electricista Gonzalo",
@@ -614,7 +1768,29 @@
       "whatsapp": "https://wa.me/5491151762990",
       "link_maps": "https://www.google.com/maps/place/Electricista+Gonzalo/data=!4m7!3m6!1s0x95bcb5943102da17:0xb68616187779c3bd!8m2!3d-34.564874!4d-58.4660154!16s%2Fg%2F1thkswrr!19sChIJF9oCMZS1vJURvcN5dxgWhrY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cap. Gral. Ramón Freire 2290, C1428 CZF, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Mariana Mascotti",
+          "texto": "Muy buena experiencia. Vino enseguida; se adapto a nuestras posibilidades. Costos razonables. Puntualidad. Volveríamos a llamarlo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucho Lefevre",
+          "texto": "Excelente!! Calidad y precio!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fermin Rodriguez Penelas",
+          "texto": "Muy recomendado",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan manuel Delgado",
+          "texto": "Poco profesional! Lee los msj y jamás contesta, gente así no se como tiene trabajo todavía!",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Electricidad en general. Electricista en C.A.B.A. a domicilio.",
@@ -624,7 +1800,29 @@
       "whatsapp": "https://wa.me/5491160495195",
       "link_maps": "https://www.google.com/maps/place/Electricidad+en+general.+Electricista+en+C.A.B.A.+a+domicilio./data=!4m7!3m6!1s0x95bccbf4f25252c1:0x5c8f297c56fa5343!8m2!3d-34.5948766!4d-58.401951!16s%2Fg%2F11j0qy6lp6!19sChIJwVJS8vTLvJURQ1P6Vnwpj1w?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Sta. Fe 2450 Loc 118, C1123 AAT, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Carolina Mehrabian",
+          "texto": "Trabaja muy bien y con precios accesibles. Muy honesto me parecio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gonzalo Lopez",
+          "texto": "Muy eficiente y prolijo y lo mas importante no me cobro caro",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yael Aguirre Balbi",
+          "texto": "Muy recomendable . Es honesto y trabaja muy bien .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Ignacio Salomón",
+          "texto": "Muy prolijo, entrega a tiempo y dentro de los precios razonables!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Electro Encalada",
@@ -634,7 +1832,29 @@
       "whatsapp": "https://wa.me/5491147888988",
       "link_maps": "https://www.google.com/maps/place/Electro+Encalada/data=!4m7!3m6!1s0x95bcb42b46c65e7b:0x5d6340b1dc783e46!8m2!3d-34.5588058!4d-58.4585664!16s%2Fg%2F1tf6ncz2!19sChIJe17GRiu0vJURRj543LFAY10?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Blanco Encalada 2335, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Tienda de herramientas"
+      "categoria": "Tienda de herramientas",
+      "reseñas_texto": [
+        {
+          "nombre": "Gabriel Gomez",
+          "texto": "No solo para el gremio. También te asesoran. Gran surtido, precios bastante buenos. Muchos precios a la vista, eso me gusta ya que ves lo que te cobran y no…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Didzuilis",
+          "texto": "PESIMA atención. Pase ayer preguntando por una linterna (habia ido tambien a la ferreteria que esta al lado por el mismo tema), hoy pase nuevamente porque no…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Camila Brie",
+          "texto": "Buenas noches. Acaa figuró un celular robado, un iPhone.. o se l o robo alguien de ahí o llevaron para venderlo. Tengo la foto donde figura el iPhone de mi…",
+          "estrellas": 2
+        },
+        {
+          "nombre": "Diego H. Rubio",
+          "texto": "Sábado 29/08/26 11:20hs. cerrado",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Electricista Palermo PyA Soluciones",
@@ -644,7 +1864,19 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Electricista+Palermo+PyA+Soluciones/data=!4m7!3m6!1s0x95bcb5f85f67171f:0x415aafeb55569209!8m2!3d-34.5842129!4d-58.4210664!16s%2Fg%2F11lkzt3gx4!19sChIJHxdnX_i1vJURCZJWVeuvWkE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pje. Virasoro 2360, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Electricista"
+      "categoria": "Electricista",
+      "reseñas_texto": [
+        {
+          "nombre": "Federico De Palma",
+          "texto": "Vino de inmediato apenas lo llame, se me corto la luz por algo que hice y rápidamente lo pudo solucionar, barato y rapido",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandra Jossian Véliz Colmenares",
+          "texto": "Me cobró 3mil pesos por solo mirar el foco y no hacer nada",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }

@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491163704170",
       "link_maps": "https://www.google.com/maps/place/Salon+de+Belleza+Andrea+Vannucci+%28En+Palermo+Beauty+Salon+-+Peluqueria%29/data=!4m7!3m6!1s0x95bcca8071b88ab1:0x1cf6bb6867bd7400!8m2!3d-34.5891494!4d-58.4168526!16s%2Fg%2F11b6z3yxyv!19sChIJsYq4cYDKvJURAHS9Z2i79hw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Medrano 1920, C1425GDH Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Karen Pardo",
+          "texto": "Quedé muy contenta con mi experiencia. Desde que llegué me atendieron con muchísima amabilidad y me hicieron sentir muy cómoda. El lugar tiene un ambiente muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Flor De Luz Olveira",
+          "texto": "Mi mejor versión, mi mejor experiencia!! Sin dudas es el Salón de Andrea Vannucci!! Excelente profesional!! Teniendo un equipo de excelencia con Eduardo!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "veronica ruggirello",
+          "texto": "Hermosa experiencia! Todos muy gentiles y profesionales, reserva po WhatsApp súper rápida y flexible. Fui por un alisado y ahora después de ya haberlo lavado…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pato Gallardo",
+          "texto": "Amable y muy profesional, los años de experiencia de Andrea se ven en las propuestas y cortes a la hora de cambiar de look. He pasado por varios y siempre…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Amaya",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491125842670",
       "link_maps": "https://www.google.com/maps/place/Amaya/data=!4m7!3m6!1s0x95bccb40a16c67f5:0x207dc35001ad5a0f!8m2!3d-34.5882113!4d-58.4142595!16s%2Fg%2F11g0nntw_1!19sChIJ9WdsoUDLvJURD1qtAVDDfSA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Güemes 3699, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Cin K.",
+          "texto": "Excelente servicio. Y Alberto es lo más!!! Lo amo. Me quedó el pelo hermoso y es la única persona a la que se lo confío",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monica Marcela Pucheta",
+          "texto": "Con total seguridad lo recomiendo excelentísima calidad humana y profesionalismo!!! Alberto Amaya y Staff. Felicitaciones !!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Miriam Grignoli",
+          "texto": "Muy buenos cortes. Soy clienta de años. Sabe lo que hace. Muy buen precio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cecilia López Caradzoglu",
+          "texto": "Fui por primera vez y tuve una muy buena experiencia. Alberto escuchó mis necesidades y propuso un corte que me gustó mucho como me quedo. Muy dedicado en todo…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "LA PELU BUENOS AIRES",
@@ -34,7 +78,29 @@
       "whatsapp": "https://wa.me/5491133032283",
       "link_maps": "https://www.google.com/maps/place/LA+PELU+BUENOS+AIRES/data=!4m7!3m6!1s0x95bcb590dd9c17ad:0x20455b9d64ab48bc!8m2!3d-34.5780448!4d-58.4310034!16s%2Fg%2F11gzm15g4!19sChIJrRec3ZC1vJURvEirZJ1bRSA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bonpland 2391, C1425 FWE, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "J P",
+          "texto": "La verdad, un crack. Muy buena onda, te atiende de diez y te deja el corte tal cual se lo pedís. Se nota que le pone ganas a lo que hace",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agostina Leone",
+          "texto": "Leo un genio! Me corto y me tiño, todo excelente, super recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "katja tyczynska",
+          "texto": "Hace años que me corto con Leo, es un copado, y siempre te hace un corte con mucha onda. La pelu tiene su encanto y la buena música no falta. No quería dejar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Alejos",
+          "texto": "Me corte con Leo. Excelente!!! Hermoso corte, super dedicado. Mejoró lo que yo había llevado como propuesta. Bonus track: fui con mi hija de 18 años, que le…",
+          "estrellas": 5
+        }
+      ]
     }
   ]
 }

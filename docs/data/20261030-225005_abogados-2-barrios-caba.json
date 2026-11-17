@@ -14,7 +14,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Fernando+Bliman+-+Asesor+Legal+y+Consultor+de+Negocios/data=!4m7!3m6!1s0x95bccbd25d44b8b3:0x5ab4938d6a0de8b5!8m2!3d-34.6096892!4d-58.4280364!16s%2Fg%2F11h04p5vyy!19sChIJs7hEXdLLvJURtegNao2TtFo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pringles 260 piso 1 departamento D, C1183AED Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado de patentes"
+      "categoria": "Abogado de patentes",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Usandivaras",
+          "texto": "Me acompaño en un asunto inmobiliario y fue un excelente profesional desde el día 01. Super recomendado",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro F",
+          "texto": "Fernando me ayudó a identificar riesgos y oportunidades en la búsqueda de mi primer hogar, terminando en una operación exitosa. Me brindó una sensación de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Cortes",
+          "texto": "Deseo expresar mi más sincera satisfacción con los servicios brindados por Fernando Bliman, quien ha realizado un trabajo impecable. Desde el inicio, demostró…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mauro M",
+          "texto": "Gracias Fer! La tranquilidad y seguridad que brindás tanto vos con tu energía y presencia, como con tus servicios y eficiencia, no tiene precio. ✨️🥇✨️",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Chen Segovia Abogados",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491168031646",
       "link_maps": "https://www.google.com/maps/place/Chen+Segovia+Abogados/data=!4m7!3m6!1s0x95bccb2092f85219:0x5cd077ec8656e0e0!8m2!3d-34.5944449!4d-58.398528!16s%2Fg%2F11ss5b7j6f!19sChIJGVL4kiDLvJUR4OBWhux30Fw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Arenales 2218, C1124 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado laboralista"
+      "categoria": "Abogado laboralista",
+      "reseñas_texto": [
+        {
+          "nombre": "Nicolás López Brun",
+          "texto": "Excelente trato, humano, responsable. Máximo es realmente muy gentil. Un placer saber que cuando los necesito puedo contar con ellos. Totalmente de confianza.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luisina Galetto",
+          "texto": "Excelente atención y predisposición ante las mil consultas que me surgieron! Los super recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Xiteria Nihil",
+          "texto": "Excelentes profesionales, amables y atentos, tienen buen diálogo y te aclaran toda las dudas durante el proceso además de que activan desde el primer día sin…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "E utu",
+          "texto": "Muy buena experiencia. Excelente atención y me ayudaron con todos mis problemas, muy humanos. Muchas gracias!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estudio Prieto Fasano",
@@ -34,7 +78,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Estudio+Prieto+Fasano/data=!4m7!3m6!1s0x95bcb5bb81913279:0xc711b95bcf5997dd!8m2!3d-34.5667757!4d-58.4317326!16s%2Fg%2F11f50x300r!19sChIJeTKRgbu1vJUR3ZdZz1u5Ecc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "BWT, Av. del Libertador 4510, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado especializado en derecho laboral"
+      "categoria": "Abogado especializado en derecho laboral",
+      "reseñas_texto": [
+        {
+          "nombre": "Seon-Woo Nam",
+          "texto": "Profesionales como la copa de un pino, pero sobre todo muy cercanos y empáticos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "fernando andrade",
+          "texto": "Un Gran Equipo, excelentes Profesionales y sobre todo MUY BUENAS PERSONAS.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Gimenez",
+          "texto": "Muy buenos profesionales",
+          "estrellas": 5
+        },
+        {
+          "nombre": "santiago Laffaye",
+          "texto": "El estudio cuenta con excelentes profesionales !!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Irigoyen & Asociados | Estudio Jurídico.",
@@ -44,7 +110,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Irigoyen+%26+Asociados+%7C+Estudio+Jur%C3%ADdico./data=!4m7!3m6!1s0x5376f163d589557:0x6161366e8ad7405a!8m2!3d-34.6158238!4d-58.4332985!16s%2Fg%2F11ygg90svx!19sChIJV5VYPRZvNwURWkDXim42YWE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "{\"borough\":\"\",\"street\":\"\",\"city\":\"\",\"postal_code\":\"\",\"state\":\"\",\"country\":\"\"}",
-      "categoria": "Bufete"
+      "categoria": "Bufete",
+      "reseñas_texto": [
+        {
+          "nombre": "mateo mendez",
+          "texto": "Muy atento el abogado Carlos. Pude recuperar el dinero que me vaciaron de mi cuenta bancaria, sumado a los daños generados del caso, excelente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juani Greco",
+          "texto": "Me ayudó con un préstamo que sacaron a mi nombre. Por suerte pude quedarme tranquilo y me lo solucionó.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ignaciio herrera",
+          "texto": "Tuve una excelente experiencia con el Dr. Carlos Irigoyen. Llevó adelante la sucesión con muchísima responsabilidad y siempre estuvo dispuesto a explicarme…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "German Di Benedetto",
+          "texto": "El abogado Carlos Irigoyen me ayudo con una estafa bancaria cuando me vaciaron el homebanking. Pude recuperar todo el dinero. Muy satisfecho la verdad",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estudio Juridico Camps & Asoc",
@@ -54,7 +142,29 @@
       "whatsapp": "https://wa.me/5491169262057",
       "link_maps": "https://www.google.com/maps/place/Estudio+Juridico+Camps+%26+Asoc/data=!4m7!3m6!1s0x95bcb703cf2dc91b:0x1f7be971c89d8a42!8m2!3d-34.5909292!4d-58.3964234!16s%2Fg%2F11gyz1xjcl!19sChIJG8ktzwO3vJURQoqdyHHpex8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Pres. Jose E. Uriburu 1517, C1114AAO Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado empresarial"
+      "categoria": "Abogado empresarial",
+      "reseñas_texto": [
+        {
+          "nombre": "Mariano Gorriti",
+          "texto": "Muy buena experiencia con el estudio. Me atendieron con seriedad desde el primer momento, explicando todo claro y sin prometer cosas que no corresponden. Se…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Franco Montaña",
+          "texto": "La verdad muy contento y feliz con la atención con la Dra camps en su estudio jurídico. Desde el minuto cero siempre me acompañó en el proceso judicial. La…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Georgina Ghiorzzo",
+          "texto": "Super recomendable!, La dra Yanil es muy profesional, te asesora en tiempo y forma en base a las posibilidades reales del caso y te da las alternativas a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Clara Preisz",
+          "texto": "Excelente atención! Los únicos que supieron ayudarme con una sucesión complicada. Gracias!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "AB Estudio Jurídico",
@@ -64,7 +174,29 @@
       "whatsapp": "https://wa.me/5491122398932",
       "link_maps": "https://www.google.com/maps/place/AB+Estudio+Jur%C3%ADdico/data=!4m7!3m6!1s0x95bcb5863a12e631:0xe35fe5eac6d55ebd!8m2!3d-34.5846206!4d-58.4229256!16s%2Fg%2F11zd94ddmw!19sChIJMeYSOoa1vJURvV7VxurlX-M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gurruchaga 2254, C1425FEH Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado"
+      "categoria": "Abogado",
+      "reseñas_texto": [
+        {
+          "nombre": "Jaz Amarilla",
+          "texto": "Excelente atención y asesoramiento. Desde el primer momento me brindaron un trato muy profesional, resolvieron todas mis dudas y me acompañaron durante todo el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Melody",
+          "texto": "​Excelente profesional la dra. Acuña. Desde la primera consulta me brindó muchísima tranquilidad, explicando cada paso de manera clara. Muy comprometida…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Valentino Di Stante",
+          "texto": "La verdad, Trinidad una genia. Siempre me explicó todo claro, estuvo súper pendiente y me hizo sentir tranquilo durante todo el proceso. La recomiendo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Palu",
+          "texto": "Excelente atención de la doctora, necesitaba ayuda con urgencia y ella estuvo acompañándome a cada paso.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "A&G Abogados y Gestoria",
@@ -74,7 +206,29 @@
       "whatsapp": "https://wa.me/5491135335386",
       "link_maps": "https://www.google.com/maps/place/A%26G+Abogados+y+Gestoria/data=!4m7!3m6!1s0x95bcb5811148661f:0xb8b28fc6a054c35a!8m2!3d-34.5855822!4d-58.4212005!16s%2Fg%2F11f4qmvqp1!19sChIJH2ZIEYG1vJURWsNUoMaPsrg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Armenia 2281, Piso 2, C1425FBE, C1425 FBE, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado"
+      "categoria": "Abogado",
+      "reseñas_texto": [
+        {
+          "nombre": "Leandro Nuñez",
+          "texto": "100% recomendable, David muchas gracias por todo desde el día 1 super atento, amable y profesional. Vuelvo a decirlo 100% recomendable yo se los recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Misael Salum",
+          "texto": "100% recomendables. Atención y guía en todo el proceso!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rocío Pereyra",
+          "texto": "Muy profesionales, atentos y confiables. Francamente por la experiencia, lo recomiendo con total tranquilidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Belen Sanchez",
+          "texto": "Todo perfecto, nos ayudaron en todo lo que necesitábamos. La mejor predisposición. Gracias!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Abogado penalista Dr. Pagano diego",
@@ -84,7 +238,24 @@
       "whatsapp": "https://wa.me/5491161362206",
       "link_maps": "https://www.google.com/maps/place/Abogado+penalista+Dr.+Pagano+diego/data=!4m7!3m6!1s0x95bccb658095bf01:0x6f751e47177758d1!8m2!3d-34.5899423!4d-58.4012466!16s%2Fg%2F11z69h686p!19sChIJAb-VgGXLvJUR0Vh3F0cedW8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado penalista"
+      "categoria": "Abogado penalista",
+      "reseñas_texto": [
+        {
+          "nombre": "Karen Baez",
+          "texto": "Excelente profesional. Muy claro, responsable y siempre disponible. 100% recomendado.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Raúl Yonar",
+          "texto": "Un genio. Lo conocí, escucho mi caso y desde ese día me asesoro y me ayudó, después le pedí que sea mi abogado y nos conocimos más. Hoy me sigue ayudando a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ELPEAJEROCK",
+          "texto": "Un gran profesional ,Super recomendable ,estuvimos en un apuros legales y el Doctor resolvio todo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Abogados Laborales Portillo&castro",
@@ -94,7 +265,24 @@
       "whatsapp": "https://wa.me/5491167943280",
       "link_maps": "https://www.google.com/maps/place/Abogados+Laborales+Portillo%26castro/data=!4m7!3m6!1s0x95bccb4b5e20d761:0x42ec0c75c9601e4f!8m2!3d-34.5901887!4d-58.4108532!16s%2Fg%2F11nyd4yt8g!19sChIJYdcgXkvLvJURTx5gyXUM7EI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Cnel. Díaz 1815, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicios legales"
+      "categoria": "Servicios legales",
+      "reseñas_texto": [
+        {
+          "nombre": "Anibal Ortiz",
+          "texto": "Muy buen asesoramiento y calidad humana. Siempre me entendieron y me explicaron cada una de las etapas de mi reclamo todas las veces que lo necesité. La…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Benitez",
+          "texto": "Desde el primer contacto super profesional y muy buena atención, por eso contraté sus servicios y los destaco, no duden en ponerse en contacto con Mariana…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudia Paniagua",
+          "texto": "Muy buenos profesionales Mariana y Nicolás,excelente asesoramiento quedé muy contenta por todo lo qué logré con ellos,recomendable 100%👏👏 Muchas gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estudio Juridico & de Traducción DS",
@@ -104,7 +292,19 @@
       "whatsapp": "https://wa.me/5491155165776",
       "link_maps": "https://www.google.com/maps/place/Estudio+Juridico+%26+de+Traducci%C3%B3n+DS/data=!4m7!3m6!1s0x95bcb57ff376845f:0x2c2c1c87e4da704e!8m2!3d-34.5865871!4d-58.416914!16s%2Fg%2F11c0rw8h8q!19sChIJX4R283-1vJURTnDa5IccLCw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Güemes 3926, C1025 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Traductor"
+      "categoria": "Traductor",
+      "reseñas_texto": [
+        {
+          "nombre": "Gustavo Garcete",
+          "texto": "Excelente atención. La Dra está siempre disponible y lleva adelante mis casos en tiempo y forma. Muchas gracias!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Florencia Bayo",
+          "texto": "Excelente atención, recomiendo ampliamente.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Maspero Abogados",
@@ -114,7 +314,8 @@
       "whatsapp": "https://wa.me/5491144273935",
       "link_maps": "https://www.google.com/maps/place/Maspero+Abogados/data=!4m7!3m6!1s0x95bcb51e16273fdb:0x2d22a7093224d5a2!8m2!3d-34.5828413!4d-58.4277199!16s%2Fg%2F11n54v6tjb!19sChIJ2z8nFh61vJURotUkMgmnIi0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Fray Justo Sta. María de Oro 2150, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicios legales"
+      "categoria": "Servicios legales",
+      "reseñas_texto": []
     },
     {
       "nombre": "Estudio Juridico Integral M&O",
@@ -124,7 +325,14 @@
       "whatsapp": "https://wa.me/5491148072895",
       "link_maps": "https://www.google.com/maps/place/Estudio+Juridico+Integral+M%26O/data=!4m7!3m6!1s0x95bcb555b10276e9:0x90150e7cf838ce1a!8m2!3d-34.578366!4d-58.4048379!16s%2Fg%2F11gj_jfftk!19sChIJ6XYCsVW1vJURGs44-HwOFZA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Castex 3315, C1425CDE C1425CDE, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Bufete"
+      "categoria": "Bufete",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejandro Marti",
+          "texto": "Especialistas en Sucesiones - Divorcios - Asesoramiento PYME",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estudio Cabezas - Soluciones Legales",
@@ -134,7 +342,19 @@
       "whatsapp": "https://wa.me/5491150648387",
       "link_maps": "https://www.google.com/maps/place/Estudio+Cabezas+-+Soluciones+Legales/data=!4m7!3m6!1s0x95bccbc1b913d5d5:0x7c4784bc9859ca7e!8m2!3d-34.5884466!4d-58.4011331!16s%2Fg%2F11p254r4w9!19sChIJ1dUTucHLvJURfspZmLyER3w?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Laprida 1898, C1425EKR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicios legales"
+      "categoria": "Servicios legales",
+      "reseñas_texto": [
+        {
+          "nombre": "Ma Soledad Romero Caporale",
+          "texto": "Excelente experiencia con el estudio. Destaco la profesionalidad, la atención y el compromiso con el que trabajan. Me brindaron confianza y tranquilidad en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roxy Aranda",
+          "texto": "Súper agradecida con Estudio Cabezas. Atravesar un trámite legal no es nada fácil y genera mucha incertidumbre, pero desde el día uno me contuvieron y me…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "DF Buenos Aires",
@@ -144,7 +364,19 @@
       "whatsapp": "https://wa.me/5491155640251",
       "link_maps": "https://www.google.com/maps/place/DF+Buenos+Aires/data=!4m7!3m6!1s0x95bccbe3c32d9615:0x8e1e4d488d7b8c7c!8m2!3d-34.5959498!4d-58.3876283!16s%2Fg%2F11sy1x9tx4!19sChIJFZYtw-PLvJURfIx7jUhNHo4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Sta. Fe, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado"
+      "categoria": "Abogado",
+      "reseñas_texto": [
+        {
+          "nombre": "Ethel Anahi Proz",
+          "texto": "Excelente asesoramiento con respecto al reclamo del seguro. Muy atento y cordial el trato. Definitivamente, volveré",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Clarisa Casasola",
+          "texto": "Me asesoraron de primera. Muy atentos la verdad.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "AS Sucesiones",
@@ -154,7 +386,14 @@
       "whatsapp": "https://wa.me/5491171371884",
       "link_maps": "https://www.google.com/maps/place/AS+Sucesiones/data=!4m7!3m6!1s0x95bccb5fedf37941:0x51b5ab6b3533a2d8!8m2!3d-34.5835893!4d-58.4236239!16s%2Fg%2F11rmwc_fhk!19sChIJQXnz7V_LvJUR2KIzNWurtVE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Charcas 4336 1B, C1425BNL Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado de sucesiones"
+      "categoria": "Abogado de sucesiones",
+      "reseñas_texto": [
+        {
+          "nombre": "Nahuel Barrozo",
+          "texto": "Excelente abogado, me resolvió la sucesión de manera muy ágil",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "D'angelo Aída Susana",
@@ -164,7 +403,8 @@
       "whatsapp": "https://wa.me/5491145114180",
       "link_maps": "https://www.google.com/maps/place/D%27angelo+A%C3%ADda+Susana/data=!4m7!3m6!1s0x95bcb59c5b5d934f:0x53bfeefb22d14eb5!8m2!3d-34.5759832!4d-58.4212662!16s%2Fg%2F1hc12cqct!19sChIJT5NdW5y1vJURtU7RIvvuv1M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Cerviño 4502, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado"
+      "categoria": "Abogado",
+      "reseñas_texto": []
     },
     {
       "nombre": "Estudio Jurídico Miguel Juan Duffy",
@@ -174,7 +414,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Estudio+Jur%C3%ADdico+Miguel+Juan+Duffy/data=!4m7!3m6!1s0x95bccb0994090eb5:0x4fef3bd6124ff5dc!8m2!3d-34.5866432!4d-58.4067028!16s%2Fg%2F11yrl_cy1g!19sChIJtQ4JlAnLvJUR3PVPEtY7708?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Billinghurst 2181, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicios legales"
+      "categoria": "Servicios legales",
+      "reseñas_texto": [
+        {
+          "nombre": "Fancy Messa",
+          "texto": "Es un muy buen abogado, resolvió mi caso a favor mío.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Abogada Dra. Flores",
@@ -184,7 +431,8 @@
       "whatsapp": "https://wa.me/5491169514991",
       "link_maps": "https://www.google.com/maps/place/Abogada+Dra.+Flores/data=!4m7!3m6!1s0x95bcb5f77ae5b597:0xd542edf4397fdf0b!8m2!3d-34.5709625!4d-58.442487!16s%2Fg%2F11zyjbdfl8!19sChIJl7Xleve1vJURC99_OfTtQtU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Cabildo 559, C1426AAS Palermo, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado"
+      "categoria": "Abogado",
+      "reseñas_texto": []
     },
     {
       "nombre": "A&G integral Abogados",
@@ -194,7 +442,29 @@
       "whatsapp": "https://wa.me/5491157427163",
       "link_maps": "https://www.google.com/maps/place/A%26G+integral+Abogados/data=!4m7!3m6!1s0x95bcb5f030b4e0d3:0xcd0ddba9d31261a7!8m2!3d-34.5844808!4d-58.4217516!16s%2Fg%2F11fhrhtbmw!19sChIJ0-C0MPC1vJURp2ES06nbDc0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Charcas 4189, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Bufete"
+      "categoria": "Bufete",
+      "reseñas_texto": [
+        {
+          "nombre": "Viviana Cosentino",
+          "texto": "Muy buen servicio y eficiencia. Se ocupó de mi caso laboral el Dr David Escobar y logró obtener buenos resultados. Muy conforme con su trabajo y dedicación. Lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sil Sabbath",
+          "texto": "Muy buena atención y asesoramiento, están dispuestos a resolver y acompañar durante todo el proceso. Los recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudia Fernández",
+          "texto": "La verdad muy buena atención muy recomendable cual quiere duda o inquietud que tenga podes asesórate con ellos muy bueno le doy más que diez estrella",
+          "estrellas": 5
+        },
+        {
+          "nombre": "homer facht",
+          "texto": "Tuve un problema laboral, no querían pagarme y me solucionaron el problema en poco tiempo, muy efectivo y profesional el trato hacía el cliente, lo recomiendo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estudio Jurídico Bobrovsky",
@@ -204,7 +474,29 @@
       "whatsapp": "https://wa.me/5491148431770",
       "link_maps": "https://www.google.com/maps/place/Estudio+Jur%C3%ADdico+Bobrovsky/data=!4m7!3m6!1s0x95bcca8ee2b8cc3b:0x94b7a9653fd7a217!8m2!3d-34.5858637!4d-58.4368656!16s%2Fg%2F1tnpm5rm!19sChIJO8y44o7KvJURF6LXP2Wpt5Q?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Humboldt 1550, C1414 CTN, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Bufete"
+      "categoria": "Bufete",
+      "reseñas_texto": [
+        {
+          "nombre": "Fernando Tracogna",
+          "texto": "Es un estudio jurídico que opera (defendiendo los derechos e intereses de los jubilados) desde 1980. Cuarenta años de trayectoria es suficiente para lograr el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "aldo bellizzi",
+          "texto": "Buenos Dias Doctores, mi consulta es, yo soy jubilado en madryn tengo dirección alla, pero vivo en san Rafael alternadamente, la doctora Pierini me inicio una…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Sequeira",
+          "texto": "Buena atencion ,estudio jurídico con especialidad en derecho previsional ,respuesta rapida.se recomienda.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "José Sinise",
+          "texto": "Exelente trato por parte de Catalina, integrante del bufete profesional, clara y concreta información.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Ateneo de la Democracia",
@@ -214,7 +506,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Ateneo+de+la+Democracia/data=!4m7!3m6!1s0x95bcb59214ba3fb9:0x6896782eaf891876!8m2!3d-34.582164!4d-58.435834!16s%2Fg%2F11c2hyt5gg!19sChIJuT-6FJK1vJURdhiJry54lmg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bonpland 1861, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Abogado de Derecho de familia"
+      "categoria": "Abogado de Derecho de familia",
+      "reseñas_texto": [
+        {
+          "nombre": "Liliana Triana",
+          "texto": "Excelente grupo de personas, jóvenes y no tanto. Siempre con la mejor onda. Saludos para todos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "facundo Khazki",
+          "texto": "Por que es el mejor comite de toda la comuna 14 es decir el barrio de palermo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis Terreno",
+          "texto": "Mi lugar en el Mundo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Francisco Domínguez",
+          "texto": "Qué vergüenza ser radical",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }

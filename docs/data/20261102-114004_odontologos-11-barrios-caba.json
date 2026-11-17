@@ -14,7 +14,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dental+Pleno+%28Monroe+5677%29/data=!4m7!3m6!1s0x95bcb7b3c76587b9:0x4215e80dace3fb7a!8m2!3d-34.5778984!4d-58.4927678!16s%2Fg%2F11jvpksdwm!19sChIJuYdlx7O3vJURevvjrA3oFUI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Monroe 5677, C1431 C1431CBA, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Clr. Claudia Alejandra Braura",
+          "texto": "Excelente atención desde la recepcionista hasta la Dra. Fernanda, un amor de persona. Siempre dispuesta a solucionar cualquier inconveniente con paciencia y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Bautista Navarro Gomez",
+          "texto": "La atención es excelente!!! Conozco a la Sra. Belen Pérez hace años, es excelente profesional, paciente, amorosa con los niños... Atendió a mi hijo y ahora…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lara Andrada",
+          "texto": "Hace dos años que llevo a mi hijo, que hoy tiene 8 años, y siempre tuvimos una excelente experiencia. Se atiende con Belén, quien le realizó extracciones y le…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica Piatis",
+          "texto": "La Dra Fernanda atiende a mi hija y ella la ama. Es súper dulce. Te explica todo y trasmite mucha tranquilidad! Caro que es la secretaria, es otro amor!! Súper…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Integrada JR",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491123253541",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Integrada+JR/data=!4m7!3m6!1s0x95bcc95fb58ca7b1:0xfc9eb95e5dba84a3!8m2!3d-34.6352008!4d-58.4669374!16s%2Fg%2F11fwjw8n3d!19sChIJsaeMtV_JvJURo4S6XV65nvw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Directorio 2855 1 \"D, C1406HAQ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Nicolas Erice",
+          "texto": "Desde que estaba en la primaria me atiendo con la Dra. Janneth, al igual que a toda mi familia. Su profesionalismo, atención, nivel de detalle y prolijidad son…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yami Aranda",
+          "texto": "Me realicé un tratamiento prolongado y también me arreglé varias caries con la doctora Janneth,Es una excelente profesional, muy dedicada, atenta y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Melina Nieto",
+          "texto": "Excelente profesional, muy cálida y amable con los pacientes. Acudí con mi hija, que le tenía terror a los odontologxs. En la consulta, le explicó con mucha…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rita Liliana Caruso",
+          "texto": "Excelente la atención, la profesionalidad y honestidad de la Dra. Janneth Rivas. Me hizo arreglos en 2 muelas que estaban destruidas, salvando las piezas…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontólogico Karina Atilio",
@@ -34,7 +78,29 @@
       "whatsapp": "https://wa.me/5491146828000",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odont%C3%B3logico+Karina+Atilio/data=!4m7!3m6!1s0x95bcc94981cfb8af:0x864b4b763089ce2e!8m2!3d-34.6400536!4d-58.5090547!16s%2Fg%2F11fpg9tl37!19sChIJr7jPgUnJvJURLs6JMHZLS4Y?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cnel. Ramón L. Falcón 5830, C1408DRJ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Mirta Elisabet Mendicino",
+          "texto": "La profesional que me atiende hace muchos años.La odontologa Karina es una profesional increíble.Porque siempre hace lo mejor para que el paciente se vaya…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carla Mankowski",
+          "texto": "Excelente karina, combina profesionalidad ,calidad y empatia. Me siento muy bien de haberla elegido. Tambien la secretaria Carla, muy trato y predisposicion…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvana Falcione",
+          "texto": "Ademas de realizar muy bien su trabajo Karina es empatica con sus pacientes y atenta a sus sensaciones y necesidades, a pesar del terror que me provoca ir al…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leonardo Saponaro",
+          "texto": "Excelente atención. Me hice extracciones y prótesis en el mismo día. Un lujo. 10 estrellas pondría. Gracias por todo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio odontológico",
@@ -44,7 +110,29 @@
       "whatsapp": "https://wa.me/5491157827760",
       "link_maps": "https://www.google.com/maps/place/Consultorio+odontol%C3%B3gico/data=!4m7!3m6!1s0x95bcb77603c8dd4f:0x9eb3134a541cd0c0!8m2!3d-34.6168872!4d-58.5294179!16s%2Fg%2F11l2kw0wxv!19sChIJT93IA3a3vJURwNAcVEoTs54?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cortina 2719, C1419CQA C1419CQA, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Yamila Pecar",
+          "texto": "Excelente atencion! Lograron en poco tiempo el deseo de mi hija para su cumple de 15!❤️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "vanesa oyola",
+          "texto": "Rita una genia, una paciencia. Gracias por tu atención y por el espacio relajado que generas. Super recomendable y profesional. Así como el equipo ya que me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Micaela De La Llana",
+          "texto": "La odontóloga Rita es los más. Muy atenta, amable y contenedora. Ideal para las que tenemos algo de miedito al dentista. Recomendable 100%.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta González",
+          "texto": "Excelente profesional! Super recomendable. Buena onda, positiva. Da gusto atenderse con Rita!!. Una genia!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Ortodoncia y ortopedia maxilar- Dra. Marina Dalla Vecchia.",
@@ -54,7 +142,29 @@
       "whatsapp": "https://wa.me/5491130346074",
       "link_maps": "https://www.google.com/maps/place/Ortodoncia+y+ortopedia+maxilar-+Dra.+Marina+Dalla+Vecchia./data=!4m7!3m6!1s0x95bcc9a891e3a9b9:0x62d368d68faea51!8m2!3d-34.6397767!4d-58.5213866!16s%2Fg%2F11x7s7j8fy!19sChIJuanjkajJvJURUer6aI02LQY?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lisandro de la Torre 67, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Ortodoncista"
+      "categoria": "Ortodoncista",
+      "reseñas_texto": [
+        {
+          "nombre": "Matias Battocchio",
+          "texto": "Excelente profesional. Estoy haciendo mi tratamiento de ortodoncia con Marina desde principios de año y la experiencia es impecable. Más allá de lo técnico…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mireya Escobar",
+          "texto": "Excelente profesional y muy amable con el trato, siempre me atiende con paciencia, buena onda. Estoy realizando mi tratamiento de ortodoncia con ella y, desde…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Miriam Avalos",
+          "texto": "Excelente atencion, lleve mi hija para ortodoncia y colocacion de brackets y le explico todo re bien y con mucha paciencia. Dificil que te vayas de ahi con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Correa",
+          "texto": "Excelente atención y profesional, desde que entras a realizar la primer consulta quedas a gusto de como debe ser el tratamiento, de todos los consultorios y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Fuselli Alejandro A",
@@ -64,7 +174,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Fuselli+Alejandro+A/data=!4m7!3m6!1s0x95bcb6129e8ce1bd:0x936ee8ed3660f7e7!8m2!3d-34.5858034!4d-58.4747401!16s%2Fg%2F1q62dmj7w!19sChIJveGMnhK2vJUR5_dgNu3obpM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pje. Tasso 2617, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Patricia Venditti",
+          "texto": "Hace años me atiendo en el consultorio. Lucas es muy cordial y esta atento a cada necesidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Zulaicajorgeoscar@yahoo.com Jorge",
+          "texto": "Hace como veinte años que me atienden y en ningún momento me abandonaron siempre me siguieron cuando tuve alguna emergencia",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Thiago Grimberg",
+          "texto": "Me atendí con Mica y pienso seguir, una genia total. Todo muy bien desde la recepción hasta el trabajo. Recomiendo totalmente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stefano Pellegrini",
+          "texto": "Me atiendo con Mica y es lo más. Es la mejor dentista que tuve en mi vida. Te explica todo, siempre tiene la mejor de las ondas y labura de 10! Una profesional…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Maribel Virgillito | Odontologia UBA",
@@ -74,7 +206,29 @@
       "whatsapp": "https://wa.me/5491125446279",
       "link_maps": "https://www.google.com/maps/place/Maribel+Virgillito+%7C+Odontologia+UBA/data=!4m7!3m6!1s0x95bcb7b8951fd103:0x7ff0adc37b4bfd57!8m2!3d-34.5947248!4d-58.5116388!16s%2Fg%2F11nvmgm3jp!19sChIJA9Eflbi3vJURV_1Le8Ot8H8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Vallejos 3730, C1419GKB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Indio",
+          "texto": "Excelente profesional y, sobre todo, excelente persona. Desde el primer momento me atendió con muchísima amabilidad, paciencia y dedicación. Me explicó todo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diana Caviezel",
+          "texto": "Excelente profesional y persona! Es muy prolija y explica todo paso a paso. Ayuda a que el paciente se sienta más tranquilo. Me la recomendó mi médico y yo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia De La Iglesia",
+          "texto": "Excelente profesional. Le dió solución a quienes decían extracción. Muy bien trato personal. Super recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura De Pasqua",
+          "texto": "Excelente profesional. Es sumamente detallista y observadora, detecta cosas que otros pasan por alto. Me encanta su enfoque integral: no solo se preocupa por…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Park Dental",
@@ -84,7 +238,29 @@
       "whatsapp": "https://wa.me/5491147015493",
       "link_maps": "https://www.google.com/maps/place/Park+Dental/data=!4m7!3m6!1s0x95bcc989c5207a99:0xacbe13482d4721a5!8m2!3d-34.6276487!4d-58.4638139!16s%2Fg%2F1tdh0h14!19sChIJmXogxYnJvJURpSFHLUgTvqw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Yerbal 2441, C1406 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Pedro Lee",
+          "texto": "Excelente servicio y atención desde el primer momento. El dentista es muy profesional y el resultado del tratamiento fue impecable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuela Ko",
+          "texto": "Exelente la atencion del Dr Andres. Me hizo la limpieza y tratamiento de caries y quedaron perfectas. Mi familia se atiende con el Dr Andres hace varios años y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Graciela Martinez",
+          "texto": "Para mi es el mejor odontologo hace 16 años",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro De las carreras",
+          "texto": "Hace años me hice tratamiento y la verdad jamas me tocó un dentista tan profesional y paciente te explica todo el proceso y destaco a diferencia de otros…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ODONTOURQUIZA / Odontología general/ Ortodoncia/ Coronas/ Limpiezas/ Extracciones",
@@ -94,7 +270,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/ODONTOURQUIZA+%2F+Odontolog%C3%ADa+general%2F+Ortodoncia%2F+Coronas%2F+Limpiezas%2F+Extracciones/data=!4m7!3m6!1s0x95bcb72e5b9f58e1:0xc3733a9e34fc54a2!8m2!3d-34.5709953!4d-58.4881669!16s%2Fg%2F11f62_9nht!19sChIJ4VifWy63vJURolT8NJ46c8M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nahuel Huapi 5028, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista cosmético"
+      "categoria": "Dentista cosmético",
+      "reseñas_texto": [
+        {
+          "nombre": "Pauli Costa Cocalle",
+          "texto": "La Dra. Natalia es una genia! Se toma el tiempo de explicar cada cosa, y hace un muy buen trabajo! La recomiendo muchísimo. Súper humana y profesional…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Anahí Peruggini Pérez",
+          "texto": "Tuve que ir a sacarme una muela de juicio (después de años de no ir al dentista porque me da terror) la doc Natalia me acompaño antes , durante y después del…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Valeria Rivas",
+          "texto": "Naty es mi odontóloga desde hace 4 años y la recomiendo, ya que es muy dedicada y pedagógica. Te explica absolutamente todo lo que ve, lo que va hacer y te da…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Iara Baschman",
+          "texto": "Es excelente la doctora como profesional! Es amable, te explica todo los procedimientos que te va a hacer y te da tranquilidad. Siempre fue flexible con el…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "DentalOffice",
@@ -104,7 +302,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/DentalOffice/data=!4m7!3m6!1s0x95bcb537555507dd:0x2e32d0b17cb190b9!8m2!3d-34.6121284!4d-58.4810425!16s%2Fg%2F11ty6xf7t9!19sChIJ3QdVVTe1vJURuZCxfLHQMi4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Nazca 1938, C1416ASV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Lucia",
+          "texto": "Excelente atención desde el primer momento. Las doctoras son muy profesionales, cálidas y detallistas. El consultorio está impecable y muy bien equipado. Me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "laura orsetti",
+          "texto": "Atenderte con las Dras. Lara y Flor es lo mejor que te puede pasar. Son excelentes profesionales, brindan opciones con claridad, explican todo, pero…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Rosso",
+          "texto": "Lara y Florencia son excelentes profesionales! Me atendieron varias veces por distintos motivos y siempre me fui muy satisfecha, ya que pudieron brindarme…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Victoria Spagnuolo",
+          "texto": "Excelente calidad en la atención. Desde el primer momento se nota el profesionalismo y la calidez humana. Odontología al detalle y de primer nivel. Muy…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dra. Silvana Ferrando. Consultorio Odontológico Plan Dental",
@@ -114,7 +334,29 @@
       "whatsapp": "https://wa.me/5491160354555",
       "link_maps": "https://www.google.com/maps/place/Dra.+Silvana+Ferrando.+Consultorio+Odontol%C3%B3gico+Plan+Dental/data=!4m7!3m6!1s0x95bcc98e21b4dee9:0xb517c0d6a4561548!8m2!3d-34.6342057!4d-58.5240679!16s%2Fg%2F11vqp5b_qc!19sChIJ6d60IY7JvJURSBVWpNbAF7U?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 9497, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Milene Salgado",
+          "texto": "Me atendí por primera vez esta semana con la doctora y no puede más de dulce! Yo soy una persona bastante miedosa a los artefactos de odontología y Silvana…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Axel Demian",
+          "texto": "Totalmente feliz con ella , es una genia, manos de seda, ni cuenta te das que te puso anestesia, soluciona todo, te explica , te aconseja, se preocupa por cada…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "patri callico",
+          "texto": "Hola! Fui por una emergencia, sin referencia previa. La dra. es un encanto y una excelente profesional. Me solucionó el problema y fue muy amable. Lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juliana Vincente",
+          "texto": "La conocí cuando atendia en la Casa de Auxilio de Ramos Mejía, desde ese momento es mi dentista y la de mi hijo, lejos la mejor, excelente profesional…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "🧑‍⚕️Odontología a Domicilio 🦷CaBa Gba",
@@ -124,7 +366,29 @@
       "whatsapp": "https://wa.me/5491157247504",
       "link_maps": "https://www.google.com/maps/place/%F0%9F%A7%91%E2%80%8D%E2%9A%95%EF%B8%8FOdontolog%C3%ADa+a+Domicilio+%F0%9F%A6%B7CaBa+Gba/data=!4m7!3m6!1s0x95bcb7a5e276f415:0x50b1c329be36a29e!8m2!3d-34.5755005!4d-58.497682!16s%2Fg%2F11y0_kxq85!19sChIJFfR24qW3vJURnqI2vinDsVA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Aizpurúa 2858, C1638 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Water Ruiz",
+          "texto": "Excelente profesional, super recomendable. Muy atento y amable Santiago. Gracias!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stella Maris Pietropaolo",
+          "texto": "Le agradezco un montón a Santiago por su atención. Excelente profesional y todo lo que se necesita para atender en domicilio él lo tiene. Lo recomiendo!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Belen Pittaro",
+          "texto": "Muy buena atención. Super profesional. Más que recomendable para personas que por algún motivo no puedan trasladarse o por elección atenderse a domicilio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Soledad Garcia",
+          "texto": "Excelente profesional gracias por devolverme la sonrisa,",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Dra. Mónica Amarilla",
@@ -134,7 +398,29 @@
       "whatsapp": "https://wa.me/5491162984687",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Dra.+M%C3%B3nica+Amarilla/data=!4m7!3m6!1s0x95bcb722c1309235:0x5aa6b36f9833f96!8m2!3d-34.5788265!4d-58.4915557!16s%2Fg%2F11x6ctyvyx!19sChIJNZIwwSK3vJURlj-D-TZrqgU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Blanco Encalada 5540, Blanco Encalada 5534, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Silvina Tevez",
+          "texto": "La Dra es muy amable y me explicó todo! El tratamiento de blanqueamiento fue una maravilla, de ahora en más no la cambio por nadaaaa 🫶🏻🫶🏻🫶🏻🙌🏼🙌🏼❤️❤️❤️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "federico natale",
+          "texto": "Atención de primera. Desde que llegás, Mónica te hace sentir muy cómodo. Es súper clara para explicar, muy profesional y atenta en todo momento. El consultorio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vanesa Leonti",
+          "texto": "Excelente atención de la dra. Monica. Fui con muchos nervios y miedo y ella es super profesional, sumamente recomendable su labor. 👌",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Guillermina Pastoriza",
+          "texto": "A ver conocido a Moni y su paciencia ante mi trauma al dentista fue reparador! Agradezco su laburo y recuperar mis dientes! Recomiendo siempre a la mejor!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Laboratorio Cromo Cobalto .Jorge Mónaco",
@@ -144,7 +430,29 @@
       "whatsapp": "https://wa.me/5491130269108",
       "link_maps": "https://www.google.com/maps/place/Laboratorio+Cromo+Cobalto+.Jorge+M%C3%B3naco/data=!4m7!3m6!1s0x95bcc98a95f31ff3:0x4cc84fb69b164860!8m2!3d-34.6108148!4d-58.476371!16s%2Fg%2F11mcw90gx0!19sChIJ8x_zlYrJvJURYEgWm7ZPyEw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Est. Plurinacional de Bolivia 1855, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Laboratorio dental"
+      "categoria": "Laboratorio dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Cinthia Balm",
+          "texto": "Envío trabajos desde el interior. Siempre llegan impecables. Este laboratorio brinda Calidad compromiso y confianza! Más que recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sol",
+          "texto": "Excelente atención y trabajos !!!! Muy gentiles en su servicio 🥰😘",
+          "estrellas": 5
+        },
+        {
+          "nombre": "TPD Guillermo Bonoris",
+          "texto": "Un gran profesional y amigo. Siempre te va a dar una solución y nunca te va a dejar tirado. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juli Toba",
+          "texto": "Excelente servicio!! Muchos años en la zona, Calidad y trabajos impecables. Gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio dental León",
@@ -154,7 +462,29 @@
       "whatsapp": "https://wa.me/5491133209229",
       "link_maps": "https://www.google.com/maps/place/Consultorio+dental+Le%C3%B3n/data=!4m7!3m6!1s0x95bcc8155b826abf:0xc2a4ad704782a16d!8m2!3d-34.6397299!4d-58.5320616!16s%2Fg%2F11gdk_hdn3!19sChIJv2qCWxXIvJURbaGCR3CtpMI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 11892, B1702 Ciudadela, Provincia de Buenos Aires, Argentina",
-      "categoria": "Oficina médica"
+      "categoria": "Oficina médica",
+      "reseñas_texto": [
+        {
+          "nombre": "christian david",
+          "texto": "Fui para una extracción de muela de juicio. Atención inmediata. Un consultorio lindo. La atención muy cordial y profesional. Fui a primera hora de un sábado, y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "amelia portillo",
+          "texto": "Excelente atención y un gran profesional y su asistente lo recomiendo mucho.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "joselin bolivar",
+          "texto": "Excelente atención y muy profecional. Lo recomiendo 👍🏻",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jhoselin Quiza",
+          "texto": "Excelente atención y un gran profesional! Recomendadisimo!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Laboratorio mecánico dental Mastroieni",
@@ -164,7 +494,29 @@
       "whatsapp": "https://wa.me/5491141432893",
       "link_maps": "https://www.google.com/maps/place/Laboratorio+mec%C3%A1nico+dental+Mastroieni/data=!4m7!3m6!1s0x95bcc9002c5eac9b:0x48306853145c4ac9!8m2!3d-34.6139162!4d-58.4895812!16s%2Fg%2F11zyjb3_zy!19sChIJm6xeLADJvJURyUpcFFNoMEg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Comuna 11, Teodoro Vilardebó 1925, C1407DUC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Flor Pittella",
+          "texto": "Excelente Laboratorio, los trabajos impecables y a tiempo ..hace más de 15 años trabajo con él. Gabriel una persona responsable y profesional.No lo cambio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "DANIEL",
+          "texto": "Un profesional excelente, hace muchos años que lo conozco, impecable, lo recomiendo sin dudar!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "dolce brava",
+          "texto": "El mejor de todos Puntualidad Precio y una Calidad Artesanal en los trabajos Más de 13 años trabajando juntos No lo cambio por ninguno Lejos el MESSI de los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea Music",
+          "texto": "Excelentes trabajos y muy buena predisposición. Trabajo con Gabriel y es un genio!!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontologia Molina Silva",
@@ -174,7 +526,29 @@
       "whatsapp": "https://wa.me/5491172877737",
       "link_maps": "https://www.google.com/maps/place/Odontologia+Molina+Silva/data=!4m7!3m6!1s0x95bcc93fac944315:0xe3936b61533e1b23!8m2!3d-34.6033302!4d-58.4650916!16s%2Fg%2F11h71v6w2t!19sChIJFUOUrD_JvJURIxs-U2Frk-M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "San Blas 1607, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Maria Soledad Sanchez",
+          "texto": "Excelente atención! Súper cariñosa con mi hijo de 3 años. Toda la paciencia y amor!! No dudo en volver. Gracias dra. Paola.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aníbal Diego Fisichella Pelliza",
+          "texto": "Excelente!!! Llevé a mi hijo de 2 años y medio que obviamente no quería saber nada y en segundos quedó encantado, ni lloró le arreglaron una caries y le…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sebastian Camilo Ali",
+          "texto": "Muy buena atención de la Dra, tiene buena mano , buena relación precio calidad y atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriel Bassallo",
+          "texto": "Primera vez que voy,excelente atención,limpio en cuanto a precios muy accesibles,lo recomiendo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Dr. Juan José Bianchi",
@@ -184,7 +558,29 @@
       "whatsapp": "https://wa.me/5491146830889",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Dr.+Juan+Jos%C3%A9+Bianchi/data=!4m7!3m6!1s0x95bcc9b0c267d14b:0xde5fe5d172993948!8m2!3d-34.6375537!4d-58.4989186!16s%2Fg%2F1tp1z_s9!19sChIJS9FnwrDJvJURSDmZctHlX94?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 9582, C1407DZR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Sofía Marquevich",
+          "texto": "excelentes profesionales y muy buena atención, recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eduardo",
+          "texto": "Excelentes profesionales con la mejor atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Melanie Pereyra",
+          "texto": "Muy amable! Me atendieron de 10. Mucha paciencia y buen trato",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Hiriart",
+          "texto": "Un gran profesional.Excelente atencion.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Mecánico Dental Urgencias",
@@ -194,7 +590,29 @@
       "whatsapp": "https://wa.me/5491159292480",
       "link_maps": "https://www.google.com/maps/place/Mec%C3%A1nico+Dental+Urgencias/data=!4m7!3m6!1s0x95bcb600f258a8e7:0x146efa3ebadb481!8m2!3d-34.5983472!4d-58.4645914!16s%2Fg%2F11flt2p2k4!19sChIJ56hY8gC2vJURgbSt66PvRgE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Juan Agustín García 1233, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de urgencias dentales"
+      "categoria": "Servicio de urgencias dentales",
+      "reseñas_texto": [
+        {
+          "nombre": "Misionera De Alma",
+          "texto": "EXCELENTE!!!!!UN GRAN PROFESIONAL QUE DEMUESTRA SUS AÑOS DE EXPERIENCIA. ALTAMENTE RECOMENDABLE",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Myriam Abadi",
+          "texto": "Excelente atención ,me solucionó un problema en el momento ya que tenía que viajar y no tenía como arreglarlo ,lo conocí por g Google y sus comentarios lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Viviana Pinus",
+          "texto": "Excelente atención, eficiente, en menos de una hora arregló mi prótesis partida en dos, precios accesibles, muy conforme",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Torres",
+          "texto": "Excelente trabajo, te soluciona todo rápido y precios accesibles..",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Dres. Castiglione",
@@ -204,7 +622,29 @@
       "whatsapp": "https://wa.me/5491146714299",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Dres.+Castiglione/data=!4m7!3m6!1s0x95bcc9d754ccd585:0x9754877106a1d182!8m2!3d-34.6406106!4d-58.4778621!16s%2Fg%2F11rfq17t_1!19sChIJhdXMVNfJvJURgtGhBnGHVJc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Tandil 3863 PB, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Asesor médico"
+      "categoria": "Asesor médico",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Daniel Ibañez Ben",
+          "texto": "Excelente profesional. Claro, concreto y sumamente responsable, comprometido con el paciente y la solución. Ampliamente recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Matías Morales",
+          "texto": "exelente atencion y servicio, me dejaron los dientes perfectos 😊",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana María Vázquez Albamonte",
+          "texto": "Excelente profesional. Se dedica especialmente a Ortodoncia.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Real",
+          "texto": "Exelente profecional lo recomoendo a todos mis contactos",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Corral Odontología Y Panorámicas 3D",
@@ -214,7 +654,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Corral+Odontolog%C3%ADa+Y+Panor%C3%A1micas+3D/data=!4m7!3m6!1s0x95bcb63099c8b7a5:0x25a95cd7d5498bdf!8m2!3d-34.5974484!4d-58.497882!16s%2Fg%2F11hbqkj5yg!19sChIJpbfImTC2vJUR34tJ1ddcqSU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Francisco Beiró 3194, C1419HYS Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Florencia Moyano",
+          "texto": "Me atiendo en Dr. Sebastián Corral hace ya 10 años y no puedo más que recomendarlo. A lo largo de todo este tiempo me acompañaron en tratamientos de distinta…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia López",
+          "texto": "Debo reconocer que es verdad que el doctor Sebastian Corral es un muy buen profesional, con una calidad humana excepcional y muy sincero. A pesar de no poder…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pri Selener",
+          "texto": "No podría ser mejor atención! Yo me atiendo con Sebastián Corral hace más de un año, me hago los controles y el tratamiento de alineadores Invisibles…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniel A. Brindo",
+          "texto": "Excelente atención. Siempre son muy amables conmigo, me atienden rápido y se toman el tiempo de explicar todo lo que hay que hacer, lo cual da mucha…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Jorgelina Bet",
@@ -224,7 +686,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Jorgelina+Bet/data=!4m7!3m6!1s0x95bcb75056843197:0xa2291752f5b5a383!8m2!3d-34.6113914!4d-58.5226165!16s%2Fg%2F11nm_hcl4s!19sChIJlzGEVlC3vJURg6O19VIXKaI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "9FQG+CW Consultorio Odontológico Jorgelina Bet, Cervantes 3301, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Fernanda Rojas",
+          "texto": "Mi familia se atendió toda la vida con ella y yo también desde pequeña a la actualidad e incluso se atiende mi hermano que es un señor jajaja pero le da pánico…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Antonio Santiago Carannante",
+          "texto": "Muy buena atención de la Dra. Solo fui a una consulta, en el cual satisfizo mí diagnóstico. Volveré a ir en la necesidad que lo necesite sin dudar. Su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquin Benavidez",
+          "texto": "Super buena onda y confiable. Nunca tuve un solo problema, la atención es barbara 😊",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricio Jesus Cordero Giovagnola",
+          "texto": "Gran atención y profesionalismo, la forma con la que tratan a los pacientes genera seguridad. Recomendado 100%",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "OdontoBeiro",
@@ -234,7 +718,29 @@
       "whatsapp": "https://wa.me/5491159495142",
       "link_maps": "https://www.google.com/maps/place/OdontoBeiro/data=!4m7!3m6!1s0x95bcb79e33f9bb4f:0x10a68de504b7fe01!8m2!3d-34.6100005!4d-58.5190976!16s%2Fg%2F11ynfzqrzd!19sChIJT7v5M563vJURAf63BOWNphA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Francisco Beiró 4849, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Pilar Bordon",
+          "texto": "Excelente profesional, muy dedicada y con muchísimo conocimiento. Se nota la experiencia y la seguridad con la que trabaja, siempre explicando todo con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Myriam Szmiruk",
+          "texto": "Excelente atención profesional. Calidez y empatia. Hace varios años soy paciente.Altamente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Calvino",
+          "texto": "Excelente experiencia en Odontobeiro. Desde el primer momento se nota la atención cuidada y el buen trato de todo el equipo. La higiene del consultorio es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Federico Irumberri",
+          "texto": "Me atiendo con Agus hace muchos años ya y aunque me mude de barrio lejos, sigo volviendo!! Es muy delicada, detallista y hasta que no estas impecable con la…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Lugones",
@@ -244,7 +750,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Lugones/data=!4m7!3m6!1s0x95bcb745ec5d3623:0x6db40f2dd5792df3!8m2!3d-34.5719552!4d-58.4790354!16s%2Fg%2F11n108cw1t!19sChIJIzZd7EW3vJUR8y151S0PtG0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Lugones 2330 1A, C1430EBN Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Pamela Gugliotta",
+          "texto": "Me atiendo hace muchos años en el consultorio. Comencé con la dra. Luciana, y hace algunos años continúo con la dra. Camila, que me genera la misma confianza…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Mónaco",
+          "texto": "Excelente experiencia. Me hice una limpieza dental y quedé realmente sorprendido con la calidad del trabajo. Fue súper cuidadosa, profesional y, por primera…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paul Gonzalez",
+          "texto": "Egresadas UBA atentas a cada detalle. Respondieron todas mis inquietudes y me atendieron con el mismo profesionalismo que en cualquier clínica de renombre…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Virginia Gomez",
+          "texto": "Elijo Odontología Lugones desde hace años por la excelencia en la atención, por el conocimiento de la especialidad y la contención en todo momento. Gracias…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Gustavo A Vich",
@@ -254,7 +782,29 @@
       "whatsapp": "https://wa.me/5491146744379",
       "link_maps": "https://www.google.com/maps/place/Gustavo+A+Vich/data=!4m7!3m6!1s0x95bcc9bd7219823b:0x902da8a6809bc9c2!8m2!3d-34.6357685!4d-58.4868074!16s%2Fg%2F1vy7hs70!19sChIJO4IZcr3JvJURwsmbgKaoLZA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lacarra 52, C1407JQB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Silvina Perea",
+          "texto": "Excelente atencion con la Dr. Paula",
+          "estrellas": 5
+        },
+        {
+          "nombre": "dubeysa ayala",
+          "texto": "excelente profesional, muy pero muy contenta de atenderme con el Dr. Gustavo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniela Valeria",
+          "texto": "El Dr es un excelente profesional. Más que conforme con todo lo que realizó",
+          "estrellas": 5
+        },
+        {
+          "nombre": "gustavo gonzalez",
+          "texto": "Excelente atención, Dra.Paula",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Clínica Dental D. Coccorullo y Equipo/ T.D. Juan Carlos Coccorullo",
@@ -264,7 +814,24 @@
       "whatsapp": "https://wa.me/5491165720248",
       "link_maps": "https://www.google.com/maps/place/Cl%C3%ADnica+Dental+D.+Coccorullo+y+Equipo%2F+T.D.+Juan+Carlos+Coccorullo/data=!4m7!3m6!1s0x95bcc974006d783f:0x2ded5636bfc88a71!8m2!3d-34.6516612!4d-58.4811696!16s%2Fg%2F11bcf2m_j6!19sChIJP3htAHTJvJURcYrIvzZW7S0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Francisco Bilbao 4562, C1407HPF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Daniela Moschetto",
+          "texto": "Excelente trabajo del Dr Coccorullo, gran profesional. Muchas gracias a Clara por toda la gestión y por tu excelente atención siempre. Definitivamente voy a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sabrina Gallo",
+          "texto": "Diego es un excelente profesional su trabajo es un lujo yo estoy agradecida de sentirme tan cómoda las veces que voy y clara su asistente es una genia y está…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mascarones de proa11",
+          "texto": "Excelente profesional",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Almendras Bernal",
@@ -274,7 +841,29 @@
       "whatsapp": "https://wa.me/5491176540062",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Almendras+Bernal/data=!4m7!3m6!1s0x95bcc910927033bd:0xaf57e8efda28f095!8m2!3d-34.6571397!4d-58.4781946!16s%2Fg%2F11nv150pj6!19sChIJvTNwkhDJvJURlfAo2u_oV68?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Eva Perón 4841 Pb, C1407HUM Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Cami Leiva",
+          "texto": "Muy buena atención! Te explica todo en detalle! Una genia la doc 😉",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ananquel JuareZ",
+          "texto": "Excelente atención y la doc una genia",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leonel Mamani",
+          "texto": "Muy buena experiencia y muy comprensivos ambos profesionales unos genios!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lidia Alarcón",
+          "texto": "Excelentes profesionales recomendadisimo!!!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dr. Damián L. De Moliner Odontologia Rehabilitadora",
@@ -284,7 +873,8 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dr.+Dami%C3%A1n+L.+De+Moliner+Odontologia+Rehabilitadora/data=!4m7!3m6!1s0x95bcc9bdafc38495:0x4813b0a435973f62!8m2!3d-34.6354124!4d-58.4844467!16s%2Fg%2F11b6xbmg5d!19sChIJlYTDr73JvJURYj-XNaSwE0g?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bolaños 70, C1407AUB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": []
     },
     {
       "nombre": "CV Centro Odontológico Integral",
@@ -294,7 +884,14 @@
       "whatsapp": "https://wa.me/5491121134019",
       "link_maps": "https://www.google.com/maps/place/CV+Centro+Odontol%C3%B3gico+Integral/data=!4m7!3m6!1s0x95bcc9bd73e9cc39:0x7cb8e95a59dfb9d1!8m2!3d-34.6357652!4d-58.4868073!16s%2Fg%2F11b6jjs4l6!19sChIJOczpc73JvJUR0bnfWVrpuHw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lacarra 52, C1407JQB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Надежда Савичева",
+          "texto": "Me quedé muy satisfecha de mi visita a la clínica . La doctora Paula Racsov, atenta y amable, realizó el trabajo con calidad y el día de mi visita. La…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Dentario",
@@ -304,7 +901,14 @@
       "whatsapp": "https://wa.me/5491122919795",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Dentario/data=!4m7!3m6!1s0x95bcc99951cfd35b:0x281c89d497f93adf!8m2!3d-34.6404637!4d-58.4808571!16s%2Fg%2F11b6z6bjwq!19sChIJW9PPUZnJvJUR3zr5l9SJHCg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lacarra 608, C1407JQN Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Ruht Velazquez",
+          "texto": "La atención de la Dra es espectacular!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontologia Especializada",
@@ -314,7 +918,8 @@
       "whatsapp": "https://wa.me/5491168090117",
       "link_maps": "https://www.google.com/maps/place/Odontologia+Especializada/data=!4m7!3m6!1s0x95bcc91fb4f3c465:0x91e432e40b549a80!8m2!3d-34.65716!4d-58.4792253!16s%2Fg%2F11h1ycgyz4!19sChIJZcTztB_JvJURgJpUC-Qy5JE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Olivera 1561 1 F, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": []
     },
     {
       "nombre": "Strati-Cucchi Odontologiadigital",
@@ -324,7 +929,19 @@
       "whatsapp": "https://wa.me/5491154025792",
       "link_maps": "https://www.google.com/maps/place/Strati-Cucchi+Odontologiadigital/data=!4m7!3m6!1s0x95bcc919b6f0c63f:0xb09b85f352933419!8m2!3d-34.6247844!4d-58.5041702!16s%2Fg%2F11qn0bm3gx!19sChIJP8bwthnJvJURGTSTUvOFm7A?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Prostodoncista"
+      "categoria": "Prostodoncista",
+      "reseñas_texto": [
+        {
+          "nombre": "viviana uniformarc",
+          "texto": "los mejores !!!! gracias por la paciencia y el amor con el que atienden .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolás Adrian Ballarino",
+          "texto": "No hay mejores profesionales que elloss",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dr Roberto Martino Odontologo",
@@ -334,7 +951,14 @@
       "whatsapp": "https://wa.me/5491145676864",
       "link_maps": "https://www.google.com/maps/place/Dr+Roberto+Martino+Odontologo/data=!4m7!3m6!1s0x95bcc82a2ecd2191:0x86416a78b9d6f9e!8m2!3d-34.6175921!4d-58.5138446!16s%2Fg%2F1tfwfpgg!19sChIJkSHNLirIvJURnm-di6cWZAg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Baigorria 5080, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Alberto Tavitian",
+          "texto": "Excelente persona",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ORIS DENTAL BA",
@@ -344,7 +968,14 @@
       "whatsapp": "https://wa.me/5491170024597",
       "link_maps": "https://www.google.com/maps/place/ORIS+DENTAL+BA/data=!4m7!3m6!1s0x95bcb7a7c3163d7f:0xf08b3f365199d897!8m2!3d-34.5874877!4d-58.4853053!16s%2Fg%2F11z2jfcr17!19sChIJfz0Ww6e3vJURl9iZUTY_i_A?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bucarest 1437, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Laura Folco",
+          "texto": "Una atención amorosa y con todos los cuidados profesionales y tecnológicos, maravillosa",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "BUDAI Odontología",
@@ -354,7 +985,19 @@
       "whatsapp": "https://wa.me/5491159319187",
       "link_maps": "https://www.google.com/maps/place/BUDAI+Odontolog%C3%ADa/data=!4m7!3m6!1s0x95bcb7002b1a3c5d:0x41f7478acbe7a77f!8m2!3d-34.5934311!4d-58.4938196!16s%2Fg%2F11n3kg7stv!19sChIJXTwaKwC3vJURf6fny4pH90E?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Terrada 3601, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista infantil"
+      "categoria": "Dentista infantil",
+      "reseñas_texto": [
+        {
+          "nombre": "Anahi Paniagua",
+          "texto": "Excelente profesional. Su trato amoroso a los chicos es único. Veníamos de muchas experiencias traumaticas con mi hijo, que llegar a las manos de Denise fue un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yamila Agustina Alvarez Coll",
+          "texto": "Maravillosa atención! Denise es una gran profesional, la mejor odontopediatra para mis hijas! Super recomiendo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Roth Graciela",
@@ -364,7 +1007,14 @@
       "whatsapp": "https://wa.me/5491146743079",
       "link_maps": "https://www.google.com/maps/place/Roth+Graciela/data=!4m7!3m6!1s0x95bcc9bcdbffffc3:0x8e0ebb63bb735d00!8m2!3d-34.6373514!4d-58.4891263!16s%2Fg%2F1tgcz7fr!19sChIJw___27zJvJURAF1zu2O7Do4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Santiago de las Carreras 127, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Evelyn Moya",
+          "texto": "La mejor odontologa que conocí ! sin dudas.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Ondontologia Floresta",
@@ -374,7 +1024,14 @@
       "whatsapp": "https://wa.me/5491121134019",
       "link_maps": "https://www.google.com/maps/place/Ondontologia+Floresta/data=!4m7!3m6!1s0x95bcc9e8d68dc3fb:0x3c6e5e33395e188e!8m2!3d-34.6357685!4d-58.4868074!16s%2Fg%2F11vb9nv16g!19sChIJ-8ON1ujJvJURjhheOTNebjw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lacarra 52, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcela Yahdjian",
+          "texto": "Excelente atención la Dra. Paula!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico",
@@ -384,7 +1041,8 @@
       "whatsapp": "https://wa.me/5491145676475",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico/data=!4m7!3m6!1s0x95bcc9d19feecb1b:0xd9008ee04f71901!8m2!3d-34.6196833!4d-58.5016485!16s%2Fg%2F1wzt3kf3!19sChIJG8vun9HJvJURARn3BO4IkA0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bernaldes 1866, C1407CTP Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": []
     },
     {
       "nombre": "Dr.torrellas Hijo",
@@ -394,7 +1052,14 @@
       "whatsapp": "https://wa.me/5491145721471",
       "link_maps": "https://www.google.com/maps/place/Dr.torrellas+Hijo/data=!4m7!3m6!1s0x95bcb6481a1be841:0x3169bd1aabbb161c!8m2!3d-34.5904729!4d-58.498247!16s%2Fg%2F1td_zsq_!19sChIJQegbGki2vJURHBa7qxq9aTE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nazca 4121, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Ivan Torrellas",
+          "texto": "Yo se que es mi viejo … pero es un fenómeno, además cobra barato",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ODONTOFAST",
@@ -404,7 +1069,14 @@
       "whatsapp": "https://wa.me/5491155808706",
       "link_maps": "https://www.google.com/maps/place/ODONTOFAST/data=!4m7!3m6!1s0x95bcb786d8eabc53:0xdeebacd831fba673!8m2!3d-34.6167613!4d-58.521677!16s%2Fg%2F11rtsxfjjz!19sChIJU7zq2Ia3vJURc6b7Mdis694?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lope de Vega 2772, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "gonzalo ariel Romeo",
+          "texto": "La verdad la doc una genia, me encantó, súper recomendable para niños, muy sincera",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico",
@@ -414,7 +1086,8 @@
       "whatsapp": "https://wa.me/5491145032176",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico/data=!4m7!3m6!1s0x95bcb6341eebee17:0xbe8815a5438aeb6d!8m2!3d-34.5964188!4d-58.5032011!16s%2Fg%2F11f126sf0y!19sChIJF-7rHjS2vJURbeuKQ6UViL4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Llavallol 3863 C1419, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Médico"
+      "categoria": "Médico",
+      "reseñas_texto": []
     },
     {
       "nombre": "ODONTOLOGIA PRIVADA INTEGRAL OPAT",
@@ -424,7 +1097,29 @@
       "whatsapp": "https://wa.me/5491122658734",
       "link_maps": "https://www.google.com/maps/place/ODONTOLOGIA+PRIVADA+INTEGRAL+OPAT/data=!4m7!3m6!1s0x95bccf2374fe6ee9:0x7ebf1efc28541849!8m2!3d-34.6016244!4d-58.4578943!16s%2Fg%2F11b6dr9yff!19sChIJ6W7-dCPPvJURSRhUKPwev34?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cucha Cucha 2123 depto 1, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Agus Usinger",
+          "texto": "Me lo ha recomendado mi familia. El Doctor explica todo muy amablemente. La atención es muy personalizada. Muy buenos precios para que los que no tenemos obra…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "josue yupanqui",
+          "texto": "la atención es excelente, son súper profesionales, cuidadosos y te explican cada detalle del tratamiento para que vayas con total tranquilidad. El consultorio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "carla romero",
+          "texto": "Super recomendable! atención personalizada ,estan en cada detalle y necesidad.El doctor Martin muy amable y profesional como todo su equipo.Nos atendemos con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eli Mostaza",
+          "texto": "Excelente atención. Serios y responsables. La cirujana de primera línea. No sentí la anestesia. Una suavidad excepcional. Recomiendo atenderse",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ODONTOLOGIA GRAL DEVOTO",
@@ -434,7 +1129,29 @@
       "whatsapp": "https://wa.me/5491160195633",
       "link_maps": "https://www.google.com/maps/place/ODONTOLOGIA+GRAL+DEVOTO/data=!4m7!3m6!1s0x95bcb7d86a596f83:0x5ee160ee1244d902!8m2!3d-34.6168962!4d-58.5213614!16s%2Fg%2F1hc6sqnvz!19sChIJg29Zati3vJURAtlEEu5g4V4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lope de Vega 2700- 2800, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Pedro La bella",
+          "texto": "Hola! Recomiendo 100% la atencion de Gisela. De trato respetuoso y profesional. Sabe mucho y te da opciones pero se nota que son opciones pensadas y analizadas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniela OrtiZ",
+          "texto": "Me canse de buscar lugares, encontré este y fui por los comentarios. Y la verdad que es poco lo que expresan los comentarios a lo que realmente es. Desde que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natalia Barrios",
+          "texto": "⭐⭐⭐⭐⭐ ¡Excelente profesional! Gisela me atendió en el día por una urgencia y me salvó de una pieza rota. Además, planificó mi tratamiento de una manera…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Frank Yarit",
+          "texto": "El lugar excelente. Fui por extracción de muela del juicio, trámite bastante ágil con la Dra Gisela. Y muy buena atención y predisposición de parte de Lionel y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "NDental Servicios Odontológicos",
@@ -444,7 +1161,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/NDental+Servicios+Odontol%C3%B3gicos/data=!4m7!3m6!1s0x95bcb71cd738c04b:0xbbd2b4e76f40aa6b!8m2!3d-34.6023055!4d-58.4928244!16s%2Fg%2F11y3dbwyz2!19sChIJS8A41xy3vJURa6pAb-e00rs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Helguera 2890, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcelo Krekcza",
+          "texto": "Excelente el tratamiento que me hicieron ,muy profesional ,Marlon. Cumpliendo en todo y en tiempo, la restauracion dental.Asi tambien como la atención para…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "melanie pelontri",
+          "texto": "Ayer fui por la mañana al consultorio con dolor y nervios, y me atendieron de maravilla. Me explicaron todo con claridad, resolvieron mis dudas y me hicieron…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tania Burdukova",
+          "texto": "En la clínica Zabala yo fui atendida por la dra Catalina Bolona. Hace mucho q yo no me sentía tan bien atendida por un medico. Me fascinó su paciencia y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Delfina Lasa",
+          "texto": "Estoy haciendo un tratamiento de ortodoncia y me siento súper cómoda. Te tratan muy bien y responden a cualquier pregunta. Súper recomendado",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Mosca",
@@ -454,7 +1193,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Mosca/data=!4m7!3m6!1s0x95bcc9bc0580d2f7:0x8b352ee76952ebc5!8m2!3d-34.6344198!4d-58.4908945!16s%2Fg%2F11g6xsqlsb!19sChIJ99KABbzJvJURxetSaecuNYs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. Venancio Flores 4567, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Agustin Bergoglio",
+          "texto": "Mi mamá se atiende en este consultorio y siempre destaca el profesionalismo de todo el equipo, incluyendo a las secretarias. Los implantes se los realizó el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paulino enrique sanchez",
+          "texto": "Muy buena atención ,especializado , y Mirta un amor",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica Gallo Calderon",
+          "texto": "Pedro es excelente dentista , hace unos trabajos excelentes, impecables. Pase por varios después q mi dentista se jubilara. Ahora ya me quedo con Pedro . Muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Pavon",
+          "texto": "Una atencion extremadamente profesional y huamana!!! Estuve un fin de semana con un terrible dolor de muela, y luego de ir a dos guardias de mi obra social…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dra. Verónica Vacis Odontologa",
@@ -464,7 +1225,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dra.+Ver%C3%B3nica+Vacis+Odontologa/data=!4m7!3m6!1s0x95bcc960e5c29cb1:0x6cf93b1ab9402c49!8m2!3d-34.6309969!4d-58.4864122!16s%2Fg%2F11zdth0n86!19sChIJsZzC5WDJvJURSSxAuRo7-Ww?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Segurola 320, C1407ANF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "adilnec Peraza",
+          "texto": "Excelente profesional. Estoy muy contenta con el trabajo que realizó, se nota el cuidado, la dedicación y el amor por su profesión. Desde el primer momento nos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricio Soto",
+          "texto": "Excelente profesional la Dra. Verónica, siempre buena onda y resolutiva en cualquier caso. Valoro mucho su capacidad y buena atención, incluyendo a todo su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "cande argenti",
+          "texto": "Excelente atención y muy buena experiencia en el consultorio. Se nota el profesionalismo y el cuidado con el que atienden a cada paciente, súper recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Federico Blanco",
+          "texto": "Muy buena profesional! Excelente atención y calidad humana👏🏻👏🏻",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontologia Integral SJ",
@@ -474,7 +1257,29 @@
       "whatsapp": "https://wa.me/5491132615176",
       "link_maps": "https://www.google.com/maps/place/Odontologia+Integral+SJ/data=!4m7!3m6!1s0x95bcc971bab73e37:0xce26503b3e754a85!8m2!3d-34.6355542!4d-58.4844099!16s%2Fg%2F11x7679ty3!19sChIJNz63unHJvJURhUp1PjtQJs4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bolaños 86, C1407JPB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Antonella Sinopoli",
+          "texto": "​¡10/10! La mejor atención para niños/as, y sin dudas lo es para adultos. Empatia, paciencia y un cariño único que hace de la visita al dentista un momento de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ignacio Videla",
+          "texto": "Después de andar pasando por muchos consultorios odontológicos durante años sin obtener soluciones concretas sobre lo que me afectaba, encontré a la doctora…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mirta Pacella",
+          "texto": "Son 5 estrellas por que no hay mas para poner. Lugar maravilloso . Cómodo Integro . Doctora lo mas de lo mas y lo dice alguien que toda la vida le tuvo miedo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hernan Cesar Abrego",
+          "texto": "Excelente atención. Yami resolvió mí problema que se me partió un diente y quedó perfecto, me asesoró con precios de ortodoncia, una genia, ya conseguí mí…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dr. Guido F. Santagada",
@@ -484,7 +1289,29 @@
       "whatsapp": "https://wa.me/5491166573488",
       "link_maps": "https://www.google.com/maps/place/Dr.+Guido+F.+Santagada/data=!4m7!3m6!1s0x95bcc9b120dbc8cb:0xf8793eb688d98b7d!8m2!3d-34.6373835!4d-58.5002554!16s%2Fg%2F1v44rlz7!19sChIJy8jbILHJvJURfYvZiLY-efg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 9655, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista cosmético"
+      "categoria": "Dentista cosmético",
+      "reseñas_texto": [
+        {
+          "nombre": "VELEZ SARSFIELD 1988",
+          "texto": "Vengo de realizarme un conducto. Super atento guido , venia de malas experiencias y la verdad no senti nada de dolor . Un genio lo recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fla Witruk",
+          "texto": "Excelente profesional , me atendió de urgencia y se tomó todo su tiempo para explicarme el procedimiento ya que tenía mucho miedo . Empatico y amable ! Gracias…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Monteverai",
+          "texto": "Estuve en el consultorio odontológico del Dr..Santagada en 2025 y el trato fué de primer nivel. Excelente profesional y absolutamente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Florencia Del valle",
+          "texto": "Guido me realizó unos implantes y estoy muy agradecida de su atención y su trato. Excelente profesional, lo recomiendo!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontólogico Familiar San Lucas",
@@ -494,7 +1321,29 @@
       "whatsapp": "https://wa.me/5491138261660",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odont%C3%B3logico+Familiar+San+Lucas/data=!4m7!3m6!1s0x95bcc97e84eb577d:0xabba07b20ddc3ed2!8m2!3d-34.6463785!4d-58.4664573!16s%2Fg%2F11byp697xb!19sChIJfVfrhH7JvJUR0j7cDbIHuqs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Mariano Acosta 1446, C1407KCD KCD, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Blanca Estigarribia",
+          "texto": "Exelente atención. La recepcionista muy amable en todo momento y el doctor Henry es un exelente profesional, fuí por una extracción y no me dolió en ningún…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aracely belen Meguillanes",
+          "texto": "Más de 20 años de servicio, excelente atención de parte de Henry y equipo. Saludos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Giovanna Meguillanes",
+          "texto": "Muy buen trabajo Dr Henry Dios lo siga bendiciendo 🙌",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Betty Beltrán C.",
+          "texto": "Muy buena atención, el Dr. Muy profesional,realizan todo tipo de tratamientos, se los recomiendo!!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Dra. Stella M Maturana",
@@ -504,7 +1353,29 @@
       "whatsapp": "https://wa.me/5491154629306",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Dra.+Stella+M+Maturana/data=!4m7!3m6!1s0x95bcb7f36475589b:0xa4dbe83800023d4a!8m2!3d-34.6036352!4d-58.4988881!16s%2Fg%2F1tjfj0qg!19sChIJm1h1ZPO3vJURSj0CADjo26Q?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pedro Lozano 3554, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Andrea Morales",
+          "texto": "La doctora Stella fue muy amable y receptiva viaje desde otro país porque me gustaron mucho sus redes, muy acuciosa, y explica todo al detalle. Fui con mucho…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Milagros Bernia",
+          "texto": "Excelente atención! Recomiendo a la doctora. Ademas me escribieron al otro día de mi intervención con láser para ver como estaba! Todo de 10 y sin dolor en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Noemi Cordoba",
+          "texto": "Muy buena atencion a mi niño estan arreglando caries no siente dolor la atencion d la doctora Silvia es excelente super profesional amorosa y paciente cn mi…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Graciela Sraer",
+          "texto": "Me estoy atendiendo con la Dra Stella Maturana y estoy muy conforme, me trata con el láser, por una enfermedad bucal que tengo. Es excelente profesional!! Me…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "CONSULTORIOS DENTALES VERSALLES",
@@ -514,7 +1385,29 @@
       "whatsapp": "https://wa.me/5491146440440",
       "link_maps": "https://www.google.com/maps/place/CONSULTORIOS+DENTALES+VERSALLES/data=!4m7!3m6!1s0x95bcc83b32da52fd:0x88d0255cc339cdca!8m2!3d-34.6285006!4d-58.5238462!16s%2Fg%2F1tr9pl_2!19sChIJ_VLaMjvIvJURys05w1wl0Ig?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Arregui 6372, C1408AVV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "jessica Aguilar",
+          "texto": "Excelente atención! Fui por una extracción de dos muelas y la verdad es que me fue de lujo. Te dan una tranquilidad enorme, son súper profesionales y delicados…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Guido Ariel",
+          "texto": "Me atendí con Mabel para un tratamiento de ortodoncia y la atención fue excelente . Muy profesional, amable y cuidadosa durante todo el tratamiento.El…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gladys Marchese",
+          "texto": "Me trate con el odontolo Diego y la experiencia fue excelente. Destacó su profesionalismo. Me realizo una limpieza y un tratamiento de conducto. 5 estrellas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabiana Mellino",
+          "texto": "Quería agradecer y destacar el trabajo de la doctora Mabel, te explica perfectamente todo, dedica el tiempo ,te escucha y comprende. La chica de la recepción…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontólogico Luis Rodriguez",
@@ -524,7 +1417,29 @@
       "whatsapp": "https://wa.me/5491132539277",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odont%C3%B3logico+Luis+Rodriguez/data=!4m7!3m6!1s0x95bcc9ca4131bc6b:0x46799d5f4e309372!8m2!3d-34.6451648!4d-58.4651263!16s%2Fg%2F11gjty5dgp!19sChIJa7wxQcrJvJURcpMwTl-deUY?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Eva Perón 3544, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Sandra Lopez",
+          "texto": "Hoy fuí a una consulta a pesar de tener cobertura particular, pero quería una segunda opinión y la Dra Natalia me despejó todas mis dudas. También se atendió…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ezequiel ciuffo",
+          "texto": "La verdad que traban con total responsabilidad, súper profesionales y el dr rodriguez increíble como explica todo y es tal cual lo que dice. La verdad super…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jonathan Burgos",
+          "texto": "Excelente atención y ambiente. El lugar está muy cuidado, limpio y moderno. Los doctores son realmente buenos, se nota que tienen experiencia y trabajan con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rosalia Ares",
+          "texto": "Excelente la Doctora Noelia ! Mi nieta no le tendrá nunca miedo al odontólogo porque ella la atendió como se debe atender a un niño....gracias doc!Una genia! Y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Juan B Justo",
@@ -534,7 +1449,29 @@
       "whatsapp": "https://wa.me/5491157827028",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Juan+B+Justo/data=!4m7!3m6!1s0x95bcc9c0d02a0da5:0x33244cc8ce7abf47!8m2!3d-34.6270267!4d-58.4907715!16s%2Fg%2F1tt8dg2p!19sChIJpQ0q0MDJvJURR796zshMJDM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 7094 C1407, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "NARUTO 250",
+          "texto": "Gracias Dra Lorena me la recomendó un conocido y la verdad no se equivoco. Agradezco su paciencia, amabilidad y la solución que me dio, seguiré yendo. Se lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aldana Moriconi",
+          "texto": "Lorena es una genia. Desde que empecé a atenderme con ella, siempre me sentí súper cómoda. Tiene una paciencia increíble y una manera de tratarte que te hace…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ale Contreras",
+          "texto": "La atención de todo el equipo es espectacular. Traje a mi sobrina con un cuadro complejo y urgente: (ortodoncia, implante e infecciones) no solo nos explicaron…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adriano Pesce Li",
+          "texto": "Me atiendo desde chico, y toda mi familia siempre se atendió acá. Muy muy buena la atención, y lo profesional que es la doctora Lorena. También me atendí con…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "CONSULTORIO DR BAZERQUE Y EQUIPO",
@@ -544,7 +1481,29 @@
       "whatsapp": "https://wa.me/5491159338231",
       "link_maps": "https://www.google.com/maps/place/CONSULTORIO+DR+BAZERQUE+Y+EQUIPO/data=!4m7!3m6!1s0x95bcb7cf678acb21:0xb0730677caaf34c2!8m2!3d-34.5773639!4d-58.4818727!16s%2Fg%2F11vdsb1dhq!19sChIJIcuKZ8-3vJURwjSvyncGc7A?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Triunvirato 4320, C1430 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "María Noel Casella",
+          "texto": "Voy desde hace más de 12 años y sigue siendo el mejor equipo de de odontólogos del mundo. La primera vez fui por una urgencia, me atendió Eduardo y me fui sin…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Brizuela Perez",
+          "texto": "Excelente equipo de trabajo! Desde las recepcionistas, destaco a Milagros, muy amable, simpática y atenta, brinda turnos a corto plazo y siempre predispuesta…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariana Gaia",
+          "texto": "Excelente atención, desde las chicas en la recepción, hasta las doc. Mis hijas se atienden con Lucia (odontopediatra) que es un amor de persona y súper…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Areal",
+          "texto": "Me atendió una chica, me vio muy superficial. La limpieza no creo que haya sido tal en comparación con otras que me hice en otros lados. Tuve que volver por…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "RoiD Odontologia. Dra. Romina Paola D' Elia",
@@ -554,7 +1513,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/RoiD+Odontologia.+Dra.+Romina+Paola+D%27+Elia/data=!4m7!3m6!1s0x95bcc852bdd097f7:0x3915ccfc7c007045!8m2!3d-34.6394073!4d-58.515458!16s%2Fg%2F11b6j5j550!19sChIJ95fQvVLIvJURRXAAfPzMFTk?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 10772, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Milu Pereda",
+          "texto": "Hace años me atiendo con Romina y nunca tuve ningún inconveniente , es EXCELENTE en todo su trabajo , súper recomendable .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ignacio Latorre",
+          "texto": "Excelente profesional y buena persona Muy detallista en sus trabajos tanto ella como su equipo de trabajo Recomiendo absolutamente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriela Viano",
+          "texto": "Romina es una profesional impecable!!! La súper recomiendo, sin dudas. Los turnos de espera son razonables y rápidos. Trabaja con mucha paciencia, compromiso y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriela Rodriguez",
+          "texto": "En septiembre del 2023 llegue a Roid Odontología con grandes problemas que resolver y debo decir que Romima es la mejor odontologa, hizo un trabajo increíble…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico Garritano",
@@ -564,7 +1545,29 @@
       "whatsapp": "https://wa.me/5491145042302",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico+Garritano/data=!4m7!3m6!1s0x95bcb62096d40209:0xf8fcd6f3e48e465e!8m2!3d-34.6077414!4d-58.4895768!16s%2Fg%2F1q6295kw9!19sChIJCQLUliC2vJURXkaO5PPW_Pg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Arregui 3194, C1417GMR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "tomas dsc",
+          "texto": "Muy buena atención, tanto Juan como Martin me trataron excelente desde el primer momento, me fueron diciendo que iban haciendo paso a paso, me sentí muy cómodo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ale Piana",
+          "texto": "Hace años soy paciente y estoy muy conforme. Grandes profesionales y mejores personas",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Samuel",
+          "texto": "Excelente la atencion de los doctores, tanto Seba, como Raul y Martin, el mejor consultorio al que fui, atienden rapido, eficaz y el trabajo perfecto, cuidando…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paola Tognetti",
+          "texto": "El mejor dentista del mundo, haciendo su trabajo con un equipo de lujo. Calidos, de buen trato y con mucho humor. Personas para querer de corazón.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Tula Odontología",
@@ -574,7 +1577,29 @@
       "whatsapp": "https://wa.me/5491138522773",
       "link_maps": "https://www.google.com/maps/place/Tula+Odontolog%C3%ADa/data=!4m7!3m6!1s0x95bcc9d9969bf4f7:0x45a09216d585fb20!8m2!3d-34.6533947!4d-58.4735688!16s%2Fg%2F11tjs96gyp!19sChIJ9_SbltnJvJURIPuF1RaSoEU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Tomás Alvarez de Acevedo 1805 1B, C1407KIA Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Rosana Lopez",
+          "texto": "Super profesional ☺️ Sin dudas la mejor. Te atiende muy bien súper amorosa, te explica todo bien detallado Todos los trabajos que me realizó los hizo perfectos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ornella marina zoppi",
+          "texto": "La mejor lejos. Me atendio de urgencia resolvio al instante para q yo pueda irme de vacaciones. T explica todo super entendible y lo mas importante tieme mano…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elena Escandarani",
+          "texto": "Quiero destacar la excelente profesional que es Karla, quien realizo prácticamente toda mi boca, me hizo varios implantes, agrego que nunca tomé ni un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Kevin Larocca",
+          "texto": "Quiero compartir mi experiencia con Karla: Llegué a ella por recomendación de mi padre, luego de un tiempo buscando en el barrio a alguien que me brindara la…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio odontológico Dr. Héctor Naso",
@@ -584,7 +1609,29 @@
       "whatsapp": "https://wa.me/5491151475125",
       "link_maps": "https://www.google.com/maps/place/Consultorio+odontol%C3%B3gico+Dr.+H%C3%A9ctor+Naso/data=!4m7!3m6!1s0x95bcc9ca266a0071:0xa937c07ba5a36139!8m2!3d-34.6266955!4d-58.4997822!16s%2Fg%2F11bbrpk11s!19sChIJcQBqJsrJvJUROWGjpXvAN6k?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bermúdez 1173 Dto 1, C1407BDK Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Silvia Carballo",
+          "texto": "Excelente profesional, paciencia, dedicación y calidez humana. Tengo el umbral del dolor muy bajo, y siempre que fue necesario, agregó un poco mas de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Teresa Nuñez",
+          "texto": "Excelente persona y profesional, con gran calidez humana, siendo su consultorio moderno y su atencion destacada. Se convirtió con el pasar del tiempo, en el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "EDGARDO PEREIRO",
+          "texto": "Excelente profesional, super dedicado a sus pacientes, sin lugar a dudas el mejor.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvina Mazzitelli Romanelli",
+          "texto": "Atención profesional, personalizada y cordial. Hace años que nos atendemos en familia con el dr.Naso.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "odontologia versalles",
@@ -594,7 +1641,29 @@
       "whatsapp": "https://wa.me/5491136305871",
       "link_maps": "https://www.google.com/maps/place/odontologia+versalles/data=!4m7!3m6!1s0x95bcc9ad5704a65b:0x61b8ec6213c750ca!8m2!3d-34.6248647!4d-58.5261074!16s%2Fg%2F11k39d_bj3!19sChIJW6YEV63JvJURylDHE2LsuGE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nogoyá 6043, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Mariano Quintana",
+          "texto": "Llegue con un dolor de muela terrible. Muy profesional. Destaco la atencion, calidez, y explicacion de todo el tratamiento, de principio a fin, incluso post…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "denuu conci",
+          "texto": "Excelente profesional, muy dedicado y atento. Lo recomiendo totalmente !",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Speranza",
+          "texto": "Muy contenta! Es un excelente profesional, te asesora en todo momento y te explica paso a paso todo el procedimiento. lo súper recomiendo. Gracias por la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Camila Rodriguez",
+          "texto": "Excelente profesional, atento, dedicado a su labor y cuida muy bien de sus pacientes postoperatorio. El lugar muy limpio y comodo tambien. Recomiendo 10/10 😷👍🏼",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Clínica Dental Patrón",
@@ -604,7 +1673,29 @@
       "whatsapp": "https://wa.me/5491120089282",
       "link_maps": "https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Patr%C3%B3n/data=!4m7!3m6!1s0x95bcc97a9dc00c67:0x41862dc4f2727285!8m2!3d-34.6440144!4d-58.5110817!16s%2Fg%2F11gynnz6ht!19sChIJZwzAnXrJvJURhXJy8sQthkE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "patrón 5995, caba, C1408 C1408FAM, Argentina",
-      "categoria": "Clínica ambulatoria"
+      "categoria": "Clínica ambulatoria",
+      "reseñas_texto": [
+        {
+          "nombre": "Valeria Montoto",
+          "texto": "Muy recomendable. Nos atendemos la familia completa. Muy profesionales y siempre a disposición.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sergio Blangiardi",
+          "texto": "Que puedo decir de los profesionales? Simplemente Maravilloso, les tenia panico como muchos sin embargo la Dra Julieta tiene unas manos magicas, la pulcritud…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Girgenti",
+          "texto": "Excelente atención de la Dra Julieta Cerigliano y su secretaria. Muy buena profesional, ofrece contención y calidez en la consulta. La recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Emilia Sahonero",
+          "texto": "Excelentes profesionales,tecnología moderna, productos de muy buena calidad y trabajo acorde a todas las normas de bioseguridad . Es muy fácil de llegar y se…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Pueyrredón",
@@ -614,7 +1705,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Pueyrred%C3%B3n/data=!4m7!3m6!1s0x95bcb7a366cd27ed:0xb2dc3463cae200bc!8m2!3d-34.5794085!4d-58.4998225!16s%2Fg%2F11f6d7zmsv!19sChIJ7SfNZqO3vJURvADiymM03LI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "José León Cabezón 2405, C1419FBE Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Gabriela Castro",
+          "texto": "Excelente profesional, llevo a mis hijos desde los 3 años y siempre es paciente y dedicada con ellos. Muy detallista en el control y muy clara a la hora de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sandra Go",
+          "texto": "Gracias Dra. Gabriela! Sos super profesional, me diste mucha confianza y salí tranquila y contenta! La recomiendo 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristina Carballeda",
+          "texto": "Excelente atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gonza Alvarez",
+          "texto": "Excelente profesional. Súper amable. Te explica absolutamente cada paso que da y el motivo. Transmite seguridad y tranquilidad. Recomiendo muchísimo.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odonto.meilan",
@@ -624,7 +1737,29 @@
       "whatsapp": "https://wa.me/5491162916931",
       "link_maps": "https://www.google.com/maps/place/Odonto.meilan/data=!4m7!3m6!1s0x95bca5a7e36d3b35:0xac484b3bac962f4!8m2!3d-34.6205771!4d-58.4956311!16s%2Fg%2F11y97__snm!19sChIJNTtt46elvJUR9GLJurOExAo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gualeguaychú 1626 PB. Dpto A, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Florencia A. Chiaramonte",
+          "texto": "La atención en este consultorio es excelente. Siempre me explican con claridad qué está pasando y cuáles son las opciones disponibles. Incluso las dudas más…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daiana Yael Q.",
+          "texto": "La Excelencia... Soy muy miedosa con respeto a los dentistas, pero en éste caso me atendieron con mucho cuidado y respeto me senti segura y el resultado fue…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martin Ignacio",
+          "texto": "Hola, buenas noches, queria agradecer a la recepcionista que me atendio de forma amable, entendio mi urgencia y no dudo en ubicarme para una consulta. Tambien…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Doerschlag",
+          "texto": "Me atiendo desde siempre con el odontólogo Ramón, excelente profesional. Sincero, trabajador, minucioso. Siempre quedo muy conforme con su atención.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico Artigas",
@@ -634,7 +1769,29 @@
       "whatsapp": "https://wa.me/5491123419668",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico+Artigas/data=!4m7!3m6!1s0x95bcc9e3ee4846b1:0x95b67bf920789e82!8m2!3d-34.6149108!4d-58.4716338!16s%2Fg%2F11h_1qv02q!19sChIJsUZI7uPJvJURgp54IPl7tpU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. José Gervasio Artigas 1398, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Ortodoncista"
+      "categoria": "Ortodoncista",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudia Gabriel",
+          "texto": "Eva la mejor!! Con mi familia nos atendemos con ella desde el 2018, impecable siempre, excelente profesional🩷.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Micaela Cabral",
+          "texto": "Excelente profesional, la verdad que tengo muchísimo miedo al dentista y ella me lo sacó. Se tomó todo el tiempo del mundo de explicarme cada cosita que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sam",
+          "texto": "Llevo más de un 1 año de tratamiento de ortodoncia con la Dra Eva, realmente ha sido espectacular. Excelente servicio, precios acordes a la calidad, y sobre…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juliana Zabaleta",
+          "texto": "Muy buena profesional la dra y la cirujana también, excelente calidad humana! Precios acordes y siempre buena predisposición, sin lugar a dudas no me…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Dental Pleno",
@@ -644,7 +1801,29 @@
       "whatsapp": "https://wa.me/5491135309106",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Dental+Pleno/data=!4m7!3m6!1s0x95bcb6ff6e87f4d5:0x74c9071634e7c5d4!8m2!3d-34.572139!4d-58.504933!16s%2Fg%2F11b6qfs398!19sChIJ1fSHbv-2vJUR1MXnNBYHyXQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. de los Constituyentes 5993, C1431 EZK, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista cosmético"
+      "categoria": "Dentista cosmético",
+      "reseñas_texto": [
+        {
+          "nombre": "Carmen Albornoz",
+          "texto": "Excelente experiencia en el Centro Odontológico Dental Pleno. Desde el primer momento, la atención en recepción fue muy cordial y organizada, lo que ya genera…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gladys Santellán",
+          "texto": "El Dr Vaccaro excelente profesional y calidad de persona, me está haciendo un tratamiento súper complicado y la verdad agradecida a Dios de haberlo conocido en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Uriel Adrian Rojo",
+          "texto": "Excelentes profesionales y muy amables !! siempre me solucionaron todo! atendiendo urgencias y precios accesibles!! MUY RECOMENDABLES !! SIGAN ASI !",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maximilano Rojas",
+          "texto": "Excelente lugar, atendido x excelentes profesionales, la Dra. Alba y el Dr. Bacaro. Unos genios trabajando! Mil gracias x todo su trabajo, hoy sonrío a…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Olazábal Odontología Integral",
@@ -654,7 +1833,29 @@
       "whatsapp": "https://wa.me/5491122861416",
       "link_maps": "https://www.google.com/maps/place/Olaz%C3%A1bal+Odontolog%C3%ADa+Integral/data=!4m7!3m6!1s0x95bcb7571f124cc9:0x5fc6f79d46efca09!8m2!3d-34.5722512!4d-58.4788424!16s%2Fg%2F11nbn1qhf3!19sChIJyUwSH1e3vJURCcrvRp33xl8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Olazábal 4417 7A, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Andrea Paola Diaz",
+          "texto": "Buena Atención!!! Fui por primera vez. Me revise y limpieza. Excelente, super RECOMIENDO! Atendida por la Dra.Ailen. Super recomendable 👌 🦷",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luciana Pinciroli",
+          "texto": "Excelente!! Muy profesionales y super cómodo el lugar. Me atiendo con la Dra Scavo y estoy muy contenta.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yamila Leiva",
+          "texto": "Me atendí con Ailén Scavo. Le informe del miedo que tenía y me explicó con paciencia el procedimiento. La secretaria divina ❤️ gracias chicas. Muy puntual",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Micaela Laura Bulgarella",
+          "texto": "Excelente atención.Me dejaron re bien los diente",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Irigoyen",
@@ -664,7 +1865,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Irigoyen/data=!4m7!3m6!1s0x95bcb71eafb4bc2f:0x1dcf2ef3959ee411!8m2!3d-34.6183055!4d-58.5294016!16s%2Fg%2F11z154ssh8!19sChIJL7y0rx63vJUREeSelfMuzx0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Irigoyen 2551, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Ortodoncista"
+      "categoria": "Ortodoncista",
+      "reseñas_texto": [
+        {
+          "nombre": "Florencia Damato",
+          "texto": "Excelente profesional. Desde el primer momento me hizo sentir muy cómoda y tranquila. Se nota su dedicación, paciencia y compromiso con cada paciente. Estoy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina Mont",
+          "texto": "Excelente consultorio. Super profesional. Muy cuidado el trato. El espacio es impecable como su atención. Me fui feliz con cómo quedó el tratamiento. Lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "martin",
+          "texto": "Me gustaría destacar lo bien que trabajan en este lugar, se nota el compromiso por hacer bien las cosas. La buena atención y el buen trato hacen la diferencia…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nai Gallardo",
+          "texto": "El mejor lugar! Gracias Marce por atenderme siempre de 10, muy amable y excelente profesional",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Integral",
@@ -674,7 +1897,29 @@
       "whatsapp": "https://wa.me/5491146442966",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Integral/data=!4m7!3m6!1s0x95bcc847db61c1dd:0x156568df8e258346!8m2!3d-34.6388069!4d-58.5205523!16s%2Fg%2F1tdqjnxt!19sChIJ3cFh20fIvJURRoMljt9oZRU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 11093, C1408 AAK, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Adrián Vernazza",
+          "texto": "Excelente profesional! Acudí por un tratamiento y extracción; todo impecable, sin dolor ni molestias. 100% recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adrian Marcelo Alvarez Alonso",
+          "texto": "Excelente El Dr Sergio me hizo una limpieza nunca se habían tomado tanto tiempo ( por obra social) , los honorarios no son abusivos, es más me doy cuenta que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Cuesta",
+          "texto": "Todo el equipo es perfecto! Sobre todo Angie, ortodoncista, hace un estupendo trabajo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Facundo Soto",
+          "texto": "Una genia la dentista que atiende, suelen tener los turnos ocupados pero es porque vale la pena esperar al 100%",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico Dra Noelia Curra",
@@ -684,7 +1929,29 @@
       "whatsapp": "https://wa.me/5491130094347",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico+Dra+Noelia+Curra/data=!4m7!3m6!1s0x95bcc971f09b858d:0xd962f12deff6d102!8m2!3d-34.6308197!4d-58.4905618!16s%2Fg%2F11jj7qm3jn!19sChIJjYWb8HHJvJURAtH27y3xYtk?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Dr. Juan Felipe Aranguren 4452, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejo Pereyra",
+          "texto": "Espectacular la atención! Todo muy limpio y super cuidadoso. Recomiendo!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Anfuso",
+          "texto": "Excelente odontóloga Noelia Curra!!! Muy buena atención, super recomendable…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gerardo Traise",
+          "texto": "Muy buena atencion. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mirta",
+          "texto": "MUY BUENA Y EXCELENTE PROFECIONAL",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Velez Sarsfield",
@@ -694,7 +1961,8 @@
       "whatsapp": "https://wa.me/5491146411821",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Velez+Sarsfield/data=!4m7!3m6!1s0x95bcc824ad2624dd:0xf891f7ac38d3f59!8m2!3d-34.6287801!4d-58.5251552!16s%2Fg%2F1vc82_mz!19sChIJ3SQmrSTIvJURWT-Nw3ofiQ8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Arregui 6548, C1408 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Médico"
+      "categoria": "Médico",
+      "reseñas_texto": []
     },
     {
       "nombre": "Consultorio Odontologico Dra. Rogel",
@@ -704,7 +1972,29 @@
       "whatsapp": "https://wa.me/5491145814146",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico+Dra.+Rogel/data=!4m7!3m6!1s0x95bcca7fc440c603:0xa43feba001c4fe13!8m2!3d-34.5840867!4d-58.4670791!16s%2Fg%2F11g9vm20d6!19sChIJA8ZAxH_KvJURE_7EAaDrP6Q?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Triunvirato 3176 Dpto 304, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Belén Ingrao",
+          "texto": "Excelente profesional! Ya hace dos años soy paciente, el trato es espectacular y súper prolija con su trabajo. Recomiendo 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Balbo",
+          "texto": "Impecable la atención de la Dra. Rogel. Es muy profesional y atiende siempre puntual. El consultorio siempre está prolijo. Entre varias otras cosas, me hizo un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Roncero",
+          "texto": "Verdaderamente la Dra. Paola Rogel es una excelente profesional junto a Ros su asistente. Yo tenía terror a los dentistas y con ella se me fue el miedo, cero…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Michel Lulay",
+          "texto": "La Dra. Rogel es la mejor odontologa que alguien puede conocer en todo el mundo. Por su trato, su paciencia, su profesionalidad, lo bien que hace las cosas, y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Clinical Dent",
@@ -714,7 +2004,29 @@
       "whatsapp": "https://wa.me/5491145842791",
       "link_maps": "https://www.google.com/maps/place/Clinical+Dent/data=!4m7!3m6!1s0x95bcc9e6bcf87115:0x6de4a74255cd5a87!8m2!3d-34.6121284!4d-58.4810425!16s%2Fg%2F11c2psqhf2!19sChIJFXH4vObJvJURh1rNVUKn5G0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Nazca 1938, C1416ASV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Margarita Beraza",
+          "texto": "El mejor consultorio odontologico que fui en mi vida, voy muy seguido al dentista xq tengo muchos problemas y sin dudas nunca recibí mejor atención que acá. Me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudia G",
+          "texto": "Los 2 profesionales que me tocaron a mí son espectaculares: el Dr Juan Manuel un cirujano delicado que sabe lo que hace! y la Dra Sol realmente brilla! Los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ALEXIS SOTO",
+          "texto": "Juan, Fer y Sol son sin dudas lo mejor que le pasó a mi salud bucal",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alexis Soto",
+          "texto": "Me atendieron 10 pts. Juan, Fer y Sol 👏🙌",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontológico Cardona",
@@ -724,7 +2036,29 @@
       "whatsapp": "https://wa.me/5491135954915",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Cardona/data=!4m7!3m6!1s0x95bcc9343d3d2e75:0x1f9367e6803c695d!8m2!3d-34.6175608!4d-58.4683361!16s%2Fg%2F11h22s8ywm!19sChIJdS49PTTJvJURXWk8gOZnkx8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Gaona 3026, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Gonzalo martinez",
+          "texto": "Muy bueno super recomendable! Hace dos años me saque la muela y hasta ahora sin ningúna complicaciones 🫶🏻",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Santo",
+          "texto": "Excelente servicio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "jorge David zayas",
+          "texto": "Sinnceramente en determinado momento necesitaba hacerme perno y corona... empecé a buscar en Google diferentes prestadores odontológicos ... llame a varios…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisel Cardozo",
+          "texto": "Profesional de excelencia!!!super recomwndable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Demarchi Nora",
@@ -734,7 +2068,29 @@
       "whatsapp": "https://wa.me/5491158359043",
       "link_maps": "https://www.google.com/maps/place/Demarchi+Nora/data=!4m7!3m6!1s0x95bcb63108848ff3:0xbfff4cd5b1699b55!8m2!3d-34.5991904!4d-58.5006153!16s%2Fg%2F1tg4mkmb!19sChIJ84-ECDG2vJURVZtpsdVM_78?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Francisco Beiró 3400, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Maria Eugenia Fiorenza",
+          "texto": "Gracias a Nora Demarchi puedo volver a sonreir!! Me coloco dos implantes removibles que fueron la solución a mi inseguridad de ya no contar con mis muelas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ailen Quintas",
+          "texto": "Excelente profesional. En otros lugares me indicaban extracción sí o sí para mis muelas de juicio, pero ella evaluó alternativas y logró salvarlas con arreglos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luciana Flores",
+          "texto": "Muy buena la atencion, por parte de la Dra, me hizo un arreglo de caries y no semti dolor para nada. Con respecto a un implante que tengo me explico como…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcela Domenica",
+          "texto": "Excelente atención desde la recepcionista hasta la atención profesional. Otorgan turnos en tiempo y contemplan la situación del paciente. Muy recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Clinica Odontologica San Miguel",
@@ -744,7 +2100,29 @@
       "whatsapp": "https://wa.me/5491165931604",
       "link_maps": "https://www.google.com/maps/place/Clinica+Odontologica+San+Miguel/data=!4m7!3m6!1s0x95bcca037cad4111:0x2228c80f9d37011e!8m2!3d-34.6073743!4d-58.4577765!16s%2Fg%2F1v_ndpmf!19sChIJEUGtfAPKvJURHgE3nQ_IKCI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Tres Arroyos 1279, C1416DCO Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Osvaldo Formoso",
+          "texto": "Excelente trato y atención. Especialmente de la Dra. Vanina Franco.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabiana Onesti",
+          "texto": "Excelente clínica odontológica en el barrio. Recomiendo especialmente a Emanuel: además de ser una persona sumamente amable, es un profesional impecable. Como…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina Viana",
+          "texto": "Excelente atención de los profesionales, tanto para adultos como pediátricos. El lugar impecable. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karina Tettamanti",
+          "texto": "Excelente profesionales!! Gracias por siempre brindar confianza",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Especialistas en Endodoncia. Consultorio odontológico -",
@@ -754,7 +2132,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Especialistas+en+Endodoncia.+Consultorio+odontol%C3%B3gico+-/data=!4m7!3m6!1s0x95bcb5da9898e989:0x46bfee1d552fb600!8m2!3d-34.5687462!4d-58.4531652!16s%2Fg%2F11cmsjcttz!19sChIJiemYmNq1vJURALYvVR3uv0Y?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C1426AJZ, Amenábar 1492 8 A, C1426AJZ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Carolina Da Veiga",
+          "texto": "Excelente profesional, el Dr. Horacio Núñez Irigoyen, muy amable y dedicado. Se nota su enorme experiencia, vocación y compromiso con cada paciente. Además, su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agustina Dos Santos",
+          "texto": "Me atendí con el Dr. Horacio Nuñez, el mejor odontólogo que me cruce en la vida. Fui muy nerviosa y nunca había recibido anestesia y me trató increíblemente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agus Barbieri",
+          "texto": "Muy buena la atención del doctor Nuñez y de su asistente Sofia. Siempre me da nervios ir al odontólogo pero en este caso no me dolió ni la anestesia, el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lito Galeano",
+          "texto": "Tengo que compartir mi experiencia con el dr. Nuñez Irigoyen... Luego de 5/6 anestesias , ninguna me agarró, me envió a mi domicilio asegurándome que me daría…",
+          "estrellas": 2
+        }
+      ]
     },
     {
       "nombre": "Liebe Odontologia",
@@ -764,7 +2164,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Liebe+Odontologia/data=!4m7!3m6!1s0x95bcc9d6c6c03af3:0xd349b55774c85117!8m2!3d-34.6161223!4d-58.5013714!16s%2Fg%2F11f0kr0vq9!19sChIJ8zrAxtbJvJURF1HIdFe1SdM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Lascano 4340 5A, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista cosmético"
+      "categoria": "Dentista cosmético",
+      "reseñas_texto": [
+        {
+          "nombre": "Sofia Gomez",
+          "texto": "Desde el 2019 soy paciente del doctor Poloni. Un doctor que se toma el tiempo de revisarte y darte el mejor diagnóstico siempre cuidando tu salud bucal y la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cecilia Prado",
+          "texto": "Después de dar vueltas por muchos lugares y llegar a tener pánico al dentista, encontré a este equipo del bien con los que me atiendo hace más de un año…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego broens",
+          "texto": "Excelente atencion. Tanto por whatsapp como personalmente. La mejor limpieza de mi vida. Nunca mas me sangraron los dientes al cepillarme. Ya arranque con los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ivone Parodi",
+          "texto": "El 20-9 con turno me atendieron, quedaron en pasarme presupuesto, el 1/10 la secretaria me respondió que aun no tenía respuesta, hoy 20/10 nadie me llamó y…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Dental Care - Consultorio de Odontología Especializada",
@@ -774,7 +2196,29 @@
       "whatsapp": "https://wa.me/5491132679637",
       "link_maps": "https://www.google.com/maps/place/Dental+Care+-+Consultorio+de+Odontolog%C3%ADa+Especializada/data=!4m7!3m6!1s0x95bcc97aecb9ee25:0x785e36fb87fa30c9!8m2!3d-34.6299681!4d-58.4651258!16s%2Fg%2F11jdn3j4vf!19sChIJJe657HrJvJURyTD6h_s2Xng?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Varela 30, C1406 C1406EKB, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Key Zambrana",
+          "texto": "Excelente experiencia en Dental Care. Fue como mi segundo hogar durante casi 5 años y la verdad que estoy muy conforme con todo el tratamiento. Los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Amorina Rey",
+          "texto": "Súper recomendable!!! Excelente la atención, desde la secretaría hasta los profesionales. Tuve la experiencia de atenderme con varios y todos muy amables y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Evert Romero",
+          "texto": "Excelente profesional, me atendió el Dr Jesus y desde el primer momento fue muy amable y claro al explicar cada procedimiento, lo que me dio mucha confianza…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Oscar Cattorini",
+          "texto": "Excelente atención. Muy profesional. Y en mi caso que soy una persona que es sensible al dolor fueron comprensivos y realizaron el trabajo sin que sintiera…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Zoccola Reynaldo C",
@@ -784,7 +2228,29 @@
       "whatsapp": "https://wa.me/5491145514790",
       "link_maps": "https://www.google.com/maps/place/Zoccola+Reynaldo+C/data=!4m7!3m6!1s0x95bcb5de28b89595:0x42c9e199f3f26330!8m2!3d-34.5797824!4d-58.4596161!16s%2Fg%2F1vlzck9y!19sChIJlZW4KN61vJURMGPy85nhyUI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Giribone 1240, C1427CAR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Jorge Claudio Bouvier",
+          "texto": "Nos enteramos hoy. Excelente profesional y persona. Que triste noticia. QEPD",
+          "estrellas": 5
+        },
+        {
+          "nombre": "carlos gutierrez",
+          "texto": "Excelencia en atencion Mariamo atendió a mi hija del 2005 se nota su ausencia, aunque en el consultorio siguen trabajando buenos profecionales.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Nicolás Finvarb",
+          "texto": "Te vamos a extrañar mucho Mariano. Gran profesional y mejor tipo!!! Toda la familia se atendía.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Susana Marturet",
+          "texto": "Querido Mariano. Te despedimos con mucho dolor y el enorme afecto que te tenemos. Abrazo y fuerza a la flia. Flia Fernández M",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Sonrisas de Mi Barrio",
@@ -794,7 +2260,29 @@
       "whatsapp": "https://wa.me/5491175200515",
       "link_maps": "https://www.google.com/maps/place/Sonrisas+de+Mi+Barrio/data=!4m7!3m6!1s0x95bcc9d7060e1395:0x2509daa268ce7160!8m2!3d-34.6025288!4d-58.4653355!16s%2Fg%2F11pccqtjwr!19sChIJlRMOBtfJvJURYHHOaKLaCSU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. S. Martín 2803, 1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Endodoncista"
+      "categoria": "Endodoncista",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo bottarlini",
+          "texto": "Excelente Calidad de Profesionales!!! Ivana, Marina y Agustín. Dónde en otro lugar (Muy reconocido) solo veían la opción de retirar la pieza dental; en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victoria Frau",
+          "texto": "ME ENCANTOO!! Atienden muy bien. El trato increíble, fue el mejor que tuve en años. Super recomendado, El jefe Agustín atiende increíble busquenlo!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucas Parsiale",
+          "texto": "Excelente consultorío. Agustín un crack. Me hice un implante dental y una extracción de muela de juicio. Todo de 10 y sin dolor. Honestidad y experiencia. Los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriela Perera",
+          "texto": "Excelente experiencia en el consultorio. Implantes, tratamiento de conducto. Todo realizado con seriedad y respeto. Humana y profesionalmente un 10. Gracias!!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Cro Dental",
@@ -804,7 +2292,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Cro+Dental/data=!4m7!3m6!1s0x95bcca046b57a5e3:0xf8f818f12a6e3e0a!8m2!3d-34.6033232!4d-58.4570556!16s%2Fg%2F11ks4qk0vh!19sChIJ46VXawTKvJURCj5uKvEY-Pg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 3845, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Daniel Hernández",
+          "texto": "Una maravilla la atención. Verdaderos profesionales tanto en la especialidad como en el trato con el paciente. Calidad humana por sobre todas las cosas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Liliana Brogno",
+          "texto": "Sencillamente excelentes!! Desde la primera vez que puse un pie en el consultorio, me sentí cuidada y con muchísima calidez. Gracias!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Honda Sato Martina",
+          "texto": "excelente experiencia. Quiero destacar la atención de la doctora Rita, que me realizo un tratamiento de conducto con muchisimo cuidado. Ademas, valoro mucho…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ariel Iannotti",
+          "texto": "Todo el equipo, desde la recepción hasta los dentistas, son increíblemente amables y atentos, lo que ayuda a reducir cualquier ansiedad que uno pueda sentir al…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "OIM ODONTOLOGÍA INTEGRAL MODERNA",
@@ -814,7 +2324,24 @@
       "whatsapp": "https://wa.me/5491164673069",
       "link_maps": "https://www.google.com/maps/place/OIM+ODONTOLOG%C3%8DA+INTEGRAL+MODERNA/data=!4m7!3m6!1s0x95bcc82bad0db509:0xd65eeab9d10a6e55!8m2!3d-34.6176274!4d-58.5121161!16s%2Fg%2F11b77kvkzm!19sChIJCbUNrSvIvJURVW4K0bnqXtY?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bermúdez 2302, C1417BWJ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Magali D’Elia",
+          "texto": "Me saqué una muela con el Dr. Diaz, tuvo mucha paciencia, me hizo sentir cómoda y tranquila. Realmente excelente profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monica Perez (Nikita)",
+          "texto": "El Dr. Díaz es el mejor dentista del barrio Precios y servicios de excelencia brindados en forma accesible Altamente recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Camigliano",
+          "texto": "Un genio Fernando!!!!",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Parque Dr. Juan B.Terán",
@@ -824,7 +2351,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Parque+Dr.+Juan+B.Ter%C3%A1n/data=!4m7!3m6!1s0x95bcc82898f1a5e9:0x8cc45b2e87ef0408!8m2!3d-34.6206652!4d-58.5195502!16s%2Fg%2F11c7wcbjbq!19sChIJ6aXxmCjIvJURCATvhy5bxIw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Melincué 5402, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Parque"
+      "categoria": "Parque",
+      "reseñas_texto": [
+        {
+          "nombre": "alejandro silvestre",
+          "texto": "Muy lindo parque cuidado. Se llena de gente los domingos. esta bueno para ir con los chicos o a tomar mate. Además tenes la feria de artesanos y emprendedores…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Kilómetro Cero",
+          "texto": "Una maravilla de plaza me gustaría que sus veredas fueran mas anchas asi uno puede correr por las noches pero entiendo que sea para disfrutar un buen momento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "J",
+          "texto": "Hermosa plaza para ir a descansar o tomar unos mates. Tiene una cancha de bochas a un costado (no se si es un centro de jubilados o que), mucho verde y un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "alejandro gimenez",
+          "texto": "La Plaza Terán, en Villa Real, es un espacio verde que evoca la historia del barrio. Su origen se remonta a los primeros años del siglo XX, cuando Villa Real…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "COA odontontología",
@@ -834,7 +2383,29 @@
       "whatsapp": "https://wa.me/5491146746130",
       "link_maps": "https://www.google.com/maps/place/COA+odontontolog%C3%ADa/data=!4m7!3m6!1s0x95bcc9964d29aa65:0xb8d33d8433d8d474!8m2!3d-34.6341704!4d-58.4839399!16s%2Fg%2F11b6h_4zc2!19sChIJZaopTZbJvJURdNTYM4Q907g?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 8541, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Eliana Perez",
+          "texto": "RECOMENDABLE 100%. Hace años que me atiendo con Mariano y siempre de 10. Me saco muelas de juicio, me hizo un conducto con perno y corona, y varios arreglos y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pilar Sabrina",
+          "texto": "Mariano es EL MEJOR, atiende 10 puntos, super tranquilo y meticuloso con su trabajo, no te hace pasar dolor innecesario y muuy amable en todo momento. Tenia…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Florencia Deussot",
+          "texto": "Llegué por recomendación! Mariano es un excelente profesional cero comerciante comprometido con el paciente, meticuloso con cada trabajo que realiza y su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Deborah Roux",
+          "texto": "Excelente atención, llamé por una cirugía de extracción que venía evitando hacía meses. Me dijeron que vaya en una hora. Higiene perfecta. Personalmente le…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Morás Odontología",
@@ -844,7 +2415,29 @@
       "whatsapp": "https://wa.me/5491145731432",
       "link_maps": "https://www.google.com/maps/place/Mor%C3%A1s+Odontolog%C3%ADa/data=!4m7!3m6!1s0x95bcb6540461f731:0xca529042cd346877!8m2!3d-34.5770642!4d-58.5032826!16s%2Fg%2F1tf7c8nn!19sChIJMfdhBFS2vJURd2g0zUKQUso?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. José Gervasio Artigas 5491, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "shadia karim",
+          "texto": "Excelente lugar! Hace años me atiendo con distintos odontologos de forma particular porque no solía sentirme a gusto con los que me ofrecia la obra social…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Margarucci",
+          "texto": "La atencion de los profesionales de este lugar es de primera. Cai en este lugar de casualidad y encontre una joya. Siempre la atencion es super puntual y el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Valeria Carreira",
+          "texto": "La Dra. Alarcón es una excelente profesional y, además, un amor de persona. Explica todo lo que hace falta saber (y más) con completa amorosidad, calma y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lu",
+          "texto": "Me parece una TOTAL y completa FALTA DE RESPETO que la secretaria, la primer imagen que uno ve del lugar tenga siempre mal puesto el barbijo(con la nariz…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Basualdo Moreno Abel A",
@@ -854,7 +2447,8 @@
       "whatsapp": "https://wa.me/5491145215058",
       "link_maps": "https://www.google.com/maps/place/Basualdo+Moreno+Abel+A/data=!4m7!3m6!1s0x95bcb671be7886af:0xe3334176239aad65!8m2!3d-34.5774154!4d-58.472669!16s%2Fg%2F1tks7hc0!19sChIJr4Z4vnG2vJURZa2aI3ZBM-M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Mariano Acha 1684, C1430DUH Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": []
     },
     {
       "nombre": "Dr Carlos Corral Consultorios Odontológicos",
@@ -864,7 +2458,29 @@
       "whatsapp": "https://wa.me/5491145020872",
       "link_maps": "https://www.google.com/maps/place/Dr+Carlos+Corral+Consultorios+Odontol%C3%B3gicos/data=!4m7!3m6!1s0x95bcb79c3de69a13:0xfc4c0ed5a73585a8!8m2!3d-34.5977554!4d-58.4984421!16s%2Fg%2F11mwrnqjj1!19sChIJE5rmPZy3vJURqIU1p9UOTPw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Francisco Beiró 3222, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista cosmético"
+      "categoria": "Dentista cosmético",
+      "reseñas_texto": [
+        {
+          "nombre": "Violeta Orena",
+          "texto": "Fui por primera vez, porque se me salió un arreglo en un diente. Me atendió el Dr. German. Excelente todo. La recepcionista, el Dr.y su asistente me atendieron…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veruska Noseda",
+          "texto": "Me atiendo con el Doctor Corral me hizo carillas y varios implantes.Es excelente.No solo no sentís nada en la cirugía sino que la dentadura que me ha dejado es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elisa Guerrero",
+          "texto": "Mi experiencia fue muy mala. Después de un largo tiempo de tratamiento con la Dra. Leila Giraudo, el avance fue muy poco, por lo que nos vimos obligados a…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Jorge Emir Viegas Calçada",
+          "texto": "Si bien la atencion es buena y profesional, sugiero que pregunten bien como aplican los coseguros segun su OS y lo cotejen con la misma, ya que no te cobran…",
+          "estrellas": 3
+        }
+      ]
     },
     {
       "nombre": "Centro Dr. Miranda Marcelo",
@@ -874,7 +2490,29 @@
       "whatsapp": "https://wa.me/5491175661865",
       "link_maps": "https://www.google.com/maps/place/Centro+Dr.+Miranda+Marcelo/data=!4m7!3m6!1s0x95bcb66559ac8f99:0xcb78a3692017009a!8m2!3d-34.5746578!4d-58.4787791!16s%2Fg%2F1tg_h788!19sChIJmY-sWWW2vJURmgAXIGmjeMs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Álvarez Thomas 2733, C1431FOE Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Teresa Flores",
+          "texto": "El Centro es impecable por donde se lo mire.La atención del Doctor Miranda es exhaustiva y meticulosa. Siempre me ha causado temor e incertidumbre ir al…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "agustin espinola",
+          "texto": "Excelente la atención, muy amables todos, las chicas de la recepción unas genias, muy buena predisposición, el doctor franco hizo un excelente trabajo, muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maca Iaria",
+          "texto": "Realmente un lugar donde te hacen sentir muy cómoda, me atendió el Dr Miranda y me explicó perfecto lo que debía realizarme, cosa que te deja mucho mas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "camila sanchez",
+          "texto": "Impecable! Muy profesionales y atentos desde el momento cero. Fui a sacarme las 2 muelas de arriba con bastante miedo porque nunca me gustó el dentista y el dr…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Centro De Orientacion Odontológico \"La Paz\"",
@@ -884,7 +2522,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Centro+De+Orientacion+Odontol%C3%B3gico+%22La+Paz%22/data=!4m7!3m6!1s0x95bcc91b7db1aa37:0xfb052c1b3bd28648!8m2!3d-34.6571996!4d-58.4750254!16s%2Fg%2F11gk_1zclp!19sChIJN6qxfRvJvJURSIbSOxssBfs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "White 2093, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Carlos",
+          "texto": "Aun siguen atendiendo? Veo opiniones de hace años y quiero saber si siguen atendiendo",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Serena Paredes",
+          "texto": "Atienden muy bien",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Bruno Gimenez",
+          "texto": "Hacen extracciones???",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Miguel",
+          "texto": "Para hacerse atender hay que sacar turno o tengo que ir directo?",
+          "estrellas": 3
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico",
@@ -894,7 +2554,29 @@
       "whatsapp": "https://wa.me/5491145816119",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico/data=!4m7!3m6!1s0x95bccbbb43088355:0x6d16a728b8bfcd09!8m2!3d-34.6048528!4d-58.4539066!16s%2Fg%2F11gm983mz2!19sChIJVYMIQ7vLvJURCc2_uCinFm0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cucha Cucha 1545, C1416CJI C1416CJI, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Médico"
+      "categoria": "Médico",
+      "reseñas_texto": [
+        {
+          "nombre": "fabian narvaja",
+          "texto": "La verdad es que tenía una relación conflictiva con los dentistas, hasta que llegué a este lugar, buenísima atención, también la recepcionista",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sebastian Godoy",
+          "texto": "Clínica odontologica fundada por padre e hijo. Dotada de excelentes profesionales y equipamiento de última tecnología. Aceptan tarjetas de débito!! Fantástico…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Matias",
+          "texto": "Destaco la puntualidad. Jamás me dejaron más de 10 minutos esperando. Consultorio de padre e hijo, muy atentos, amables y excelente atención médica.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Harry Tester",
+          "texto": "nunca te hagas una protesis aca, me coloco una pieza mas chica , se vecwue la saco de otro paciente, obvio se salio y dijo que era mi culpa por tener huesos…",
+          "estrellas": 2
+        }
+      ]
     },
     {
       "nombre": "Plaza Dr. Roque Sáenz Peña",
@@ -904,7 +2586,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Plaza+Dr.+Roque+S%C3%A1enz+Pe%C3%B1a/data=!4m7!3m6!1s0x95bcc9f996629f1f:0x4b29dbeec65d67f0!8m2!3d-34.6104516!4d-58.4675541!16s%2Fg%2F11b6t1smc0!19sChIJH59ilvnJvJUR8Gddxu7bKUs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Parque"
+      "categoria": "Parque",
+      "reseñas_texto": [
+        {
+          "nombre": "Gus Bond",
+          "texto": "Tiene un sector de juegos para chicos rodeada de árboles que dan buena sombra desde temprano, y con rejas para tranquilidad de los padres. Hay también una…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisol Rolón",
+          "texto": "Hace poco que soy vecina y hace unos 4/5 meses estoy corriendo en este parque. Es muy transitada, el mejor horario para ir a entrenar es por la mañana temprano…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabian Zeballos",
+          "texto": "En Paternal se encuentra la plaza Saenz Peña un lindo pulmón verde que cuenta con árboles casi centenarios, una fuente en centro. un área de juegos para los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucía Moreno",
+          "texto": "Buena plaza para disfrutar en La paternal. Está bastante cuidada y cuenta con zona de juegos para los infantes y zona de ejercicio como se pueden ver en muchas…",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "CENTRO ODONTOLOGICO Dr. Osvaldo Paoletta",
@@ -914,7 +2618,29 @@
       "whatsapp": "https://wa.me/5491145687522",
       "link_maps": "https://www.google.com/maps/place/CENTRO+ODONTOLOGICO+Dr.+Osvaldo+Paoletta/data=!4m7!3m6!1s0x95bcb7d9404628f7:0xa3849639f933ef3c!8m2!3d-34.6146386!4d-58.5245365!16s%2Fg%2F11b77hs2t4!19sChIJ9yhGQNm3vJURPO8z-TmWhKM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "GFU, Cnel. Ramón Lista 5311, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Gladys Goncalvez",
+          "texto": "Excelente la atención de todos en el consultorio. Siempre bien predispuesto.Me hice implantes ,con Osvaldo Paoleta ,tratamiento de conducto y limpieza!! Todos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Garcia Rivoir",
+          "texto": "Excelente profesional. muy buena atención. El doctor Pauleta capo total.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "roxana criscola",
+          "texto": "Siempre pendiente del proceso. Profesionalismo. Dr Paoletta super conforme con los resultados y el seguimiento",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Garcia",
+          "texto": "No me gustó la atención me saco el sarro de una no me enjuague ni una sola vez y no me cepillo con la pasta que avitualmente se pone después de sacar el sarro…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Odontologia Catz",
@@ -924,7 +2650,29 @@
       "whatsapp": "https://wa.me/5491145671827",
       "link_maps": "https://www.google.com/maps/place/Odontologia+Catz/data=!4m7!3m6!1s0x95bcc82be739d589:0x960610ad96939c96!8m2!3d-34.6195257!4d-58.5139848!16s%2Fg%2F1pyd1vv0q!19sChIJidU55yvIvJURlpyTlq0QBpY?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Marcos Sastre 5154, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejandro Boverio",
+          "texto": "De lo mejor en odontología, nunca había ido a un odontólogo que no me hiciera doler. No sentí nada y quedó impresionante el arreglo. Estética y un precio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudia Mabel",
+          "texto": "Muy buen profesional, muy atento, me aportó mucha confianza e hizo un trabajo excelente con mis implantes. Altamente recomendable. Felicitaciones David y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victoria Mova",
+          "texto": "Excelente atención! Super atento y meticuloso para trabajar. Además de llevar a cabo su trabajo, se fija en la estetica para que todo quede impecable. SUPER…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marina Areal Velez",
+          "texto": "Excelente odontologo, me cambié de mi antiguo dentista a Catz y ahora no cambio más. Trabajos perfectos.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Centro Odontologico Segurola",
@@ -934,7 +2682,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Centro+Odontologico+Segurola/data=!4m7!3m6!1s0x95bcc9c0cfd803e7:0xec645111b8298660!8m2!3d-34.6270267!4d-58.4907716!16s%2Fg%2F1hc3sm2_s!19sChIJ5wPYz8DJvJURYIYpuBFRZOw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 7094, C1407FAV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Gabriel Herrero",
+          "texto": "Felices 50años Paula Lorena Elvira Sismonda Saita . Me encantaría verte . Felicidades",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcela Vazquez",
+          "texto": "Super recomendable! Agradezco a la Dra Lorena por su trabajo ,paciencia y amabilidad para conmigo, gracias Doctora!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ignacio Acevedo",
+          "texto": "Exclente atención odontologica.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Viviana Mazzella",
+          "texto": "Muy buena atencion",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ABICOL dental",
@@ -944,7 +2714,29 @@
       "whatsapp": "https://wa.me/5491170632983",
       "link_maps": "https://www.google.com/maps/place/ABICOL+dental/data=!4m7!3m6!1s0x95bcb79a5a4e762d:0x4d2d9ecb6e0b0ba!8m2!3d-34.6084391!4d-58.516357!16s%2Fg%2F11r97prsnh!19sChIJLXZOWpq3vJURurDgtuzZ0gQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Francisco Beiró 4653 Piso 6 dpto 10, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Valeria Duarte",
+          "texto": "Las doctoras son muy amables muy atentas, me hicieron sentir cómoda desde el primer momento. La dra. Que me atendió muy cálida y paciente en su trato (yo soy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karen Silva Verón",
+          "texto": "Se encuentra en un edificio donde tenés que pedir que te comuniquen con el consultorio, no vayan acompañados porque el espacio es reducido, a no ser que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Curiantun",
+          "texto": "Excelente la atención. La doctora es muy amable, cuidadosa y paciente. Te explica todo y se toma el tiempo con cada paciente. Sumamente recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julia Vega Coronel",
+          "texto": "Excelente atención. Los chicos de recepción super amables. La Dra. Abiricha muy cálida, te atiende sin prisa dedicándote el tiempo que sea necesario y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "SCATENA CENTRO ODONTOLOGICO LINIERS",
@@ -954,7 +2746,29 @@
       "whatsapp": "https://wa.me/5491160795282",
       "link_maps": "https://www.google.com/maps/place/SCATENA+CENTRO+ODONTOLOGICO+LINIERS/data=!4m7!3m6!1s0x95bccd868ea60fcf:0x2af274524227a22c!8m2!3d-34.6401068!4d-58.5228659!16s%2Fg%2F11rrpc92sy!19sChIJzw-mjobNvJURLKInQlJ08io?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cnel. Ramón L. Falcón 6847, C1408DSC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Julieta Scolari",
+          "texto": "Me encanta la atencion, los turnos son super rápidos y las chicas de recepción son muy amables! La dra. Camila Papo me atendió con una calidez y una paciencia…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Alejandra Martinez",
+          "texto": "Excelente experiencia. La atención de todo el personal fue muy amable y cordial. El doctor se mostró muy profesional, atento y explicó todo con mucha claridad…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "María Guillén",
+          "texto": "Solo agradecer a Dios, la impecable y excelente atención recibida durante tantos años. Además de inigualable profesional, el Dr. Scatena es un hombre humilde…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Deborah Micaela Altamirano",
+          "texto": "Excelente atención, las chicas de recepción son muy resolutivas si se presentan inconvenientes con los tiempos y la atención del profesional es completa y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Odontológicos Avellaneda",
@@ -964,7 +2778,29 @@
       "whatsapp": "https://wa.me/5491142013263",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Odontol%C3%B3gicos+Avellaneda/data=!4m7!3m6!1s0x95a3335242c9eedf:0xd98de4a541f23a3c!8m2!3d-34.6620355!4d-58.3682009!16s%2Fg%2F1v9lczdf!19sChIJ3-7JQlIzo5URPDryQaXkjdk?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Manuel Belgrano 457, B1870ARC Avellaneda, Provincia de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Luciana Romero",
+          "texto": "Angie Rolando y Carolina Grillo son lo más, no sólo en su atención y conocimiento sino que valoro también la amorosidad en el trato!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fiona Guallan",
+          "texto": "Excelente atención de la doctora Angie !!! Primera vez que fui y lo recomiendo!!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carla Barrena",
+          "texto": "Me atiendo hace años con la Dra Grillo, tuve extracciones con el Dr Solari e hice tratamiento de brackets con Mariana. Todos excelentes, tuve siempre muy buena…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "SOLEDAD ROMANO",
+          "texto": "Excelente atención, desde la solicitud de turno, la recepción, no esperé nada y me atendieron muy bien. La Dra. Grillo es buenísima. Profesional de calidad!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Integral Dr. J. Carlos Ameghino",
@@ -974,7 +2810,29 @@
       "whatsapp": "https://wa.me/5491145842807",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Integral+Dr.+J.+Carlos+Ameghino/data=!4m7!3m6!1s0x95bcc9f66d28ca0b:0x56cfaed9bcad44ea!8m2!3d-34.615535!4d-58.464466!16s%2Fg%2F11b6_g7fkj!19sChIJC8oobfbJvJUR6kStvNmuz1Y?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Boyacá 1117, C1416AAA Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Lic. Ana Laura Svartz",
+          "texto": "Excelente profesional. Brinda tranquilidad, excelencia, y sosiengo profesional. Agradecida eternamente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "viviana straface",
+          "texto": "Recomiendo muchísimo. Me atendió súper bien, no sentí dolor y me soluciono el problema",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fiamma",
+          "texto": "Excelente atención y calidad humana. Super recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victoria Urbini",
+          "texto": "20 años estuvo mi tía atendiéndose con él. Ya con los años le sugirió ponerse dentadura y ahí comenzó su calvario. Ya habiéndole pagado todo el tratamiento de…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Centro Odontológico",
@@ -984,7 +2842,29 @@
       "whatsapp": "https://wa.me/5491137065577",
       "link_maps": "https://www.google.com/maps/place/Centro+Odontol%C3%B3gico/data=!4m7!3m6!1s0x95bcc9d39af5701b:0xaf8ef5c926e67dd3!8m2!3d-34.6187987!4d-58.5050408!16s%2Fg%2F11b6v81bx8!19sChIJG3D1mtPJvJUR033mJsn1jq8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Benito Juárez 2247, C1417BLA Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Daniel g Trama",
+          "texto": "Excelente profesional. Tecnología de excelencia. Altamente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudia Irrera",
+          "texto": "Excelente calidez humana y profesional. Responsable y afectuosa. Mil puntos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Caro Bianchini",
+          "texto": "Excelente atención excepcional!! Súper atenta siempre atiende bien!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dulces Regalos",
+          "texto": "Me atiendo hace más de 10 años! Es la mejor dentista que fui en mi vida. Verónica es lo más, muy calida y tiene muy buena mano.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Odontológicos Arilla",
@@ -994,7 +2874,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Odontol%C3%B3gicos+Arilla/data=!4m7!3m6!1s0x95bcc82cb43cdd99:0x3cebf795efbfc6b4!8m2!3d-34.6201132!4d-58.5091279!16s%2Fg%2F1tdcy8bp!19sChIJmd08tCzIvJURtMa_75X36zw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Lascano 5011, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Mary",
+          "texto": "Fui con algo de miedo por primera vez, tenía turno con el Dr. Arilla. Me atendió superbien, tranquilo,me escuchó y me explicó todo. Un genio, sin dudas ya es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karen Silva Verón",
+          "texto": "ME ENCANTÓ, fui recomendada por un profesional odontólogo para endodoncia, la Dra Erica Gómez se pasa en profesional, resuelve en el acto, es meticulosa y muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernanda Tarche",
+          "texto": "Fue para mi beba de 16 meses (odontopediatria) x Osde El lugar supee limpio. Conseguí turno rapido. El Doctor es serio, pero explica todo, da lugar a preguntas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victoria M",
+          "texto": "Excelente profesional. Tuve que sacarme una muela y no tuve problemas. Súper recomendable.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Luro",
@@ -1004,7 +2906,29 @@
       "whatsapp": "https://wa.me/5491146711784",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Luro/data=!4m7!3m6!1s0x95bcc9b8756ae6b7:0x58dcc48ff8272baa!8m2!3d-34.630359!4d-58.4958401!16s%2Fg%2F11b6jgzllt!19sChIJt-ZqdbjJvJURqisn-I_E3Fg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 7580, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mecánico protésico dental"
+      "categoria": "Mecánico protésico dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Virtue Spa & Nails",
+          "texto": "Impecable los doctores. Dtr. Julio Villaverde me arreglo una caries y todo espectacular. Dct. Edgardo me hizo un tratamiento conducto y todo espectacular…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karina Baylet",
+          "texto": "Hace añose atiendo ahí. Esta vez le atendió el doctor Manuel Malena . Quiero destacarlo porque fue súper prolijo. Busco hasta el mínimo detalle para la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luciano Fernandez",
+          "texto": "Me atiendo desde hace casi 30 años en este Centro Odontólogico. He recomendado a toda mi familia y amigos. Nunca una queja. Me atendía con Germán durante mucho…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisa Pipiu",
+          "texto": "Consulte siempre de urgencia y me atendieron excelente!!! Todos los profesionales son excelentes! Mil gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dental Plus Centro odontológico",
@@ -1014,7 +2938,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dental+Plus+Centro+odontol%C3%B3gico/data=!4m7!3m6!1s0x95bcc9dc68a2647b:0xd8c7a9b5f84fcea6!8m2!3d-34.6171748!4d-58.4672981!16s%2Fg%2F11t52rfxb9!19sChIJe2SiaNzJvJURps5P-LWpx9g?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Gaona 2960, C1416DSR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudia Presta",
+          "texto": "Soy de Swiss medical. Hace mas de 2 años me atiendo allí Los chicos de recepción son un divinos y la dRA Shirly es muy amorosa. Y todo lo que voy a hacerme…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Florencia Cianchetta",
+          "texto": "Excelente atención. Desde los chicos de recepción hasta los médicos. Un genio Dami. Realmente si vas con miedo te contienen un montón. Recomiendo 🙂👏🏼",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina Cossi",
+          "texto": "Excelente atención!. Me otorgaron turno rápido. Volveré",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Teresa Lopez",
+          "texto": "No recomiendo Me atendieron por galeno El relleno.de un molar salio.300.000$ y se cayó.a los pocos días Me dijo la odontología.que tenía bien el resto de.los…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Renová tu Sonrisa",
@@ -1024,7 +2970,29 @@
       "whatsapp": "https://wa.me/5491153682202",
       "link_maps": "https://www.google.com/maps/place/Renov%C3%A1+tu+Sonrisa/data=!4m7!3m6!1s0x95bcb7d170c0f56d:0x77897ca5518c8d4c!8m2!3d-34.5942542!4d-58.507472!16s%2Fg%2F11g9q8wq97!19sChIJbfXAcNG3vJURTI2MUaV8iXc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Concordia 4300, 1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Pablo Alfaro",
+          "texto": "Excelente atención. Un plantel súper profesional y con seguimiento cuidado del paciente. El resultado de las intervenciones fue excelente. Renové mi sonrisa…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana Vargas",
+          "texto": "Muy conforme! Me senti muy contenida por la secretaria ,que es re amable y tiene una pacienvia unica. Al igual la la Dra. Victoria que me explico todo,y muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dora Fer",
+          "texto": "Excelente equipo de profesionales. Destaco la atención de la secretaria que fue súper amable y resolutiva a mis demandas horarias!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alexander Armua",
+          "texto": "Excelente atención. Me dieron un turno en menos de dos semanas, y en 30 minutos me examinaron la boca y explicaron todo lo que necesito hacer y lo recomendado…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Integral Avellaneda",
@@ -1034,7 +3002,29 @@
       "whatsapp": "https://wa.me/5491142017195",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Integral+Avellaneda/data=!4m7!3m6!1s0x95a3335363b9a6ab:0xe48457f54e7241bd!8m2!3d-34.6641835!4d-58.3623046!16s%2Fg%2F1tqp_f51!19sChIJq6a5Y1Mzo5URvUFyTvVXhOQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Bartolomé Mitre 1027, B1870AAK Avellaneda, Provincia de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Julieta Scarpino.",
+          "texto": "Excelente experiencia. Desde que entré, me sentí muy cómoda y bien atendida. El lugar es impecable y transmite mucha confianza. Quiero destacar especialmente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marilyn Galvan",
+          "texto": "Tenía mucho miedo de ir a un odontólogo. Hablo en pasado, porque poco a poco se fue yendo y todo fue gracias a Adrián. Una muy buena experiencia desde la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Noelia Espinola",
+          "texto": "Desde que entras muy buena atención la recepcionista María, muy simpática y amable ... Fui hoy lunes feriado no había gente , me atendió el dr Adrián y también…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Matias Sanchez",
+          "texto": "Impresionante la atencion , el doc un maestro, me fui muy conforme con todo mil gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "CENTRO DE REHABILITACIÓN ORAL",
@@ -1044,7 +3034,29 @@
       "whatsapp": "https://wa.me/5491144475689",
       "link_maps": "https://www.google.com/maps/place/CENTRO+DE+REHABILITACI%C3%93N+ORAL/data=!4m7!3m6!1s0x95bcca046b3ba29f:0xf7de006136169e71!8m2!3d-34.6033232!4d-58.4570556!16s%2Fg%2F11cnkjw4dj!19sChIJn6I7awTKvJURcZ4WNmEA3vc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Justo 3845, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Agata Maibach",
+          "texto": "Super amable y dedicada la atención de la secretaria y la doctora, se esmero en su trabajo con precios acordes.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Honda Sato Martina",
+          "texto": "excelente experiencia. Quiero destacar la atención de la doctora Rita, que me realizo un tratamiento de conducto con muchisimo cuidado. Ademas, valoro mucho…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Verónica Melia",
+          "texto": "Me encantó la atención, súper profesionales y cordiales con los pacientes. Recomiendo 100 %",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maby Lujan",
+          "texto": "Hoy termino el tratamiento con Diego ! que duró 2años y algo... fue un proceso lento pero seguro...pero con la certeza de la profesionalidad, paciencia…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Hospital General de Agudos D. Vélez Sarsfield",
@@ -1054,7 +3066,29 @@
       "whatsapp": "https://wa.me/5491146398700",
       "link_maps": "https://www.google.com/maps/place/Hospital+General+de+Agudos+D.+V%C3%A9lez+Sarsfield/data=!4m7!3m6!1s0x95bcc9cd3b89f181:0x7e7f4a04b0500fbd!8m2!3d-34.6253367!4d-58.5076151!16s%2Fg%2F11j5tnls93!19sChIJgfGJO83JvJURvQ9QsARKf34?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pedro Calderón de la Barca 1550, C1407KQF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Hospital general"
+      "categoria": "Hospital general",
+      "reseñas_texto": [
+        {
+          "nombre": "Aylin Perez Tedeschi",
+          "texto": "Excelente atencion de Silvana y Alejandro, profesionales de la guardia. Ambos fueron muy amables, me senti bien atendida por ellos! Lo unico malo es que es…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "nahuelstagnaro",
+          "texto": "Lo único que recrimino es la atención en guardia, fui dos veces con un problema grave y como no hicieron estudios, no detectaron nada hasta la tercera vez que…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Silvia Bermúdez",
+          "texto": "Fuimos a la guardia a las 21hs con mi esposo tenía dolor de pecho y la presión alta. Avisamos a la persona de seguridad y ella aviso a la médica. A pesar de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adriana Patricia",
+          "texto": "Es un buen hospital. Aunque la atención decayó un poco. Desde hace 30 años me atendi en el consultorio de FLEBOLOGIA, que no se porque motivo lo sacaron. La…",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Centro de Diagnóstico y Tratamiento Odontológico",
@@ -1064,7 +3098,29 @@
       "whatsapp": "https://wa.me/5491149230860",
       "link_maps": "https://www.google.com/maps/place/Centro+de+Diagn%C3%B3stico+y+Tratamiento+Odontol%C3%B3gico/data=!4m7!3m6!1s0x95bcca355e6d45c1:0x5cf30ba3840f4096!8m2!3d-34.6330929!4d-58.4403272!16s%2Fg%2F1tf82sy9!19sChIJwUVtXjXKvJURlkAPhKML81w?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Emilio Mitre 1060, C1424AYV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Carla García",
+          "texto": "Me atendí con el Dr. Milton Nervegna, porque tenía que extraer las dos muelas de juicio superiores que estaban cariadas. Fue todo super rápido, sin dolor, me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sergio Rodriguez",
+          "texto": "Mí esposa hace un año inicio en este lugar el cambio de 8 piezas dentales superiores , desde que empezó hasta hoy que le colocaron la definitiva, se aprecia la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Cheskis",
+          "texto": "Amparo una genia como te atiende. Súper recomendable !! 👏🏻",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Raquel Díaz",
+          "texto": "Muy buen lugar de profesionales comprometidos con su labor. La atención es cordial.",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Consultorio Odontologico Dra Bruzzone",
@@ -1074,7 +3130,29 @@
       "whatsapp": "https://wa.me/5491125916193",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontologico+Dra+Bruzzone/data=!4m7!3m6!1s0x95bcb628006a6a75:0x6a9b2927913c0f6e!8m2!3d-34.6046946!4d-58.4951082!16s%2Fg%2F1tfs27rb!19sChIJdWpqACi2vJURbg88kScpm2o?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nogoyá 3325, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Maria Jose Ghiberti",
+          "texto": "Fui atenderme con la Dra Bruzzone por la ATM fue una atencion que no la recibí en otros consultorios ya que utilizan electrodos de relajación para después…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "jacqueline rubin",
+          "texto": "Estaba con muchísimo dolor en la ATM. recorrí varios consultorios y en ninguno obtuve solución, sólo perdia el tiempo., Hasta que me recomendaron a la Dra…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carla Romanelli",
+          "texto": "Me atiendo desde los 10 años super conforme con todos los resultados de los tratamientos que necesite y me realizaron. Sigo a la Dra donde este por que sé que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juliana Franchini",
+          "texto": "Excelentes profesionales! Tengo terror al odontólogo y la Dra Barr siempre me atiende con mucha paciencia y empatía. Lo super recomiendo!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Moreno Olga L M de",
@@ -1084,7 +3162,29 @@
       "whatsapp": "https://wa.me/5491146831367",
       "link_maps": "https://www.google.com/maps/place/Moreno+Olga+L+M+de/data=!4m7!3m6!1s0x95bcc9a0054bb60d:0x9a4d54f648d27402!8m2!3d-34.646719!4d-58.4865351!16s%2Fg%2F1tlc97nr!19sChIJDbZLBaDJvJURAnTSSPZUTZo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Directorio 4535, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Yesica Gregorio",
+          "texto": "Exelente doctora ,amable ,encantadora persona yo la conozco hace años .Y por mudanzas y otras cosas perdi el contacto y direccion y ahora la encontre gracias a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rudy Soler",
+          "texto": "A mí me atendió espectacularmente. Muy buena profesiónal. NO DA TURNOS, ES POR ORDEN DE LLEGADA. Espero que le quede bien claro a esa señora que no quiere…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lourdes Espinoza",
+          "texto": "La mejor siempre una genia y muy amorosa No da turnos es por orden de llegada",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro yañez",
+          "texto": "Es una genia trabaja muy bien tiene mucha experiencia yo y mi papá nos atendemos con ella y siempre todo muy correcto",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "ECO-CARE",
@@ -1094,7 +3194,29 @@
       "whatsapp": "https://wa.me/5491168451843",
       "link_maps": "https://www.google.com/maps/place/ECO-CARE/data=!4m7!3m6!1s0x95bccb2491241f63:0x438eff6389dd92a7!8m2!3d-34.6042657!4d-58.4604142!16s%2Fg%2F11rgfkhhvn!19sChIJYx8kkSTLvJURp5LdiWP_jkM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Alejandro Magariños Cervantes 1308, C1416DYB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Ricardo Streiff",
+          "texto": "La atenciòn fue inmejorable. Las señoritas todas muy amables y me atendieton enseguida. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nati Guevara",
+          "texto": "Las recepcionistas siempre ayudan dentro de lo posible, tienen muy buena predisposición. Los turnos los dan rápido, con las rx te envían en la imagen…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martukiss",
+          "texto": "menos ganas de laburar, en cualquier otro lado te cobran mas barato y la atencion es buena, aca te cobran todo el triple y encima te atienden 1 hora despues y…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Carolina Gutierrez",
+          "texto": "Desastre total. Nunca cumplen con los horarios. Cada vez que fui fue igual. Más de 1 hora esperando para que nos atiendan. Mucha falta de respeto. Los…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Centro Odontológico Villa del Parque",
@@ -1104,7 +3226,29 @@
       "whatsapp": "https://wa.me/5491148253323",
       "link_maps": "https://www.google.com/maps/place/Centro+Odontol%C3%B3gico+Villa+del+Parque/data=!4m7!3m6!1s0x95bcb623554129f3:0x8e80c57d629f4cb6!8m2!3d-34.5971717!4d-58.4933554!16s%2Fg%2F1tzl_496!19sChIJ8ylBVSO2vJURtkyfYn3FgI4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "DTN, Av. S. Martín 5346, C1417 C1417CVB, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Miguel Angel Iamundo",
+          "texto": "La verdad es que es la primera vez que me atiendo y tanto la recepcionista, como la Dra Nadia, me atendieron excelentemente bien. Fui con dudas, dado que los…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "ana laura braderman",
+          "texto": "Había en recepción una chica rubia. Muy buen trato. Ahora está una de pelo oscuro que no es muy amable. Reconozco que dos veces llegué tarde, no implica que me…",
+          "estrellas": 2
+        },
+        {
+          "nombre": "Abel Espil",
+          "texto": "Tengo trece años de atención con el Dr.Nicolas Perillo. Por lo tanto ,me permito opinar sobre lo conocido y no supuesto. Es el Dr.Nicolas Perillo un excelente…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "MIGUEL ANGEL YOUNG",
+          "texto": "Desastre, la recepcionista y la Dra. Yakemin, se creen dueños de la verdad, soberbias, mala atención, no atienden a nadie y te atienden sin interés. No vayan…",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }

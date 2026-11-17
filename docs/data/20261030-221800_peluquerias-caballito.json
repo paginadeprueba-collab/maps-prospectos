@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491151070971",
       "link_maps": "https://www.google.com/maps/place/Marche+un+Corte+Peluqueria/data=!4m7!3m6!1s0x95bcca1a40029e8f:0xfce0bc6e749faab0!8m2!3d-34.6116858!4d-58.4531806!16s%2Fg%2F11b76txdqy!19sChIJj54CQBrKvJURsKqfdG684Pw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Paysandú 1063, C1405ANM Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Tami Toneatti",
+          "texto": "Hoy fui por primera vez a la paluquería \"Marche un Corte\" y la experiencia fue muy linda. Reserve turno por wpp y hoy me atendieron excelente. Dalila y Carina…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Toth",
+          "texto": "Dalila es la mejor. Acorde un turno MUY puntual, tuvieron una atención súper personalizada y extensa. Fue un servicio MUY integral, lleno de calidez humana…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marita Rousseau",
+          "texto": "Y me encantó estar en Marche un Corte! Dalila Es una Bella Persona y Excelente Profesional Que te orienta, Te cambía La Energía y ademas siempre se está…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "CLAUDIA RODRIGUEZ",
+          "texto": "Sigo a Dali hace mas de 6 años. Desde entonces es la unica persona que hace mi corte de pelo y el de mi hija. Te aconseja en base a tus necesidades. Siempre…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Peluquería Marcelo Nicolini",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491126399493",
       "link_maps": "https://www.google.com/maps/place/Peluquer%C3%ADa+Marcelo+Nicolini/data=!4m7!3m6!1s0x95bcca4136074221:0x50296790b5389942!8m2!3d-34.6177469!4d-58.4358951!16s%2Fg%2F11c55vjqzw!19sChIJIUIHNkHKvJURQpk4tZBnKVA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 4975 Loc 76, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Mari Gabarini",
+          "texto": "Excelente atención! Los dos unos genios totales, padre e hija, muy buena atención, una calidez humana q refleja el trabajo que hacen, es un servicio sumamente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Antonella Varsi",
+          "texto": "Con Marcelo me corto, un genio!! y Flor como colorista un 20/10. Aparte súper suave!! Me dejó un rojo hermoso! Mil gracias a ambos!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "roxana cofre",
+          "texto": "Un genio!!! Llevo más de 10 años viniendo; no importa dónde me mude, es el mejor. Lo estoy convenciendo de abrir una sucursal en Gral. Rodríguez. ¡Gracias por…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Kevin Sper",
+          "texto": "Excelente servicio, excelente trato. Voy desde que era chico y sigo yendo hasta ahora. Lugar limpio y ordenado.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Peluquería Masculina Quiquito's",
@@ -34,7 +78,29 @@
       "whatsapp": "https://wa.me/5491140550219",
       "link_maps": "https://www.google.com/maps/place/Peluquer%C3%ADa+Masculina+Quiquito%27s/data=!4m7!3m6!1s0x95bcca4066039c99:0xa6734254a0f15684!8m2!3d-34.6157728!4d-58.4390132!16s%2Fg%2F1tczrjyt!19sChIJmZwDZkDKvJURhFbxoFRCc6Y?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Hidalgo 307, C1405 BCC, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Diego",
+          "texto": "Excelente peluquero y una persona increíble. Siempre con una sonrisa. Precios más que accesibles, regalados para la calidad del corte y lo mejor de todo, podes…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ricardo y Antonia",
+          "texto": "Quiquito el peluquero es muy profesional, atento, cordial y uno se siente cómodo, y los precios son excelentes",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Pablo Parente",
+          "texto": "Excelente atención! Con adultos y niños. A Nico le encanta ir a lo de Quique. Siempre con buena onda!! Excelentes charlas de deporte, anécdotas. Súper…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gaston Ferraris",
+          "texto": "Quiquito es un excelente peluquero y como persona ni hablar, un tipazo. Siempre con buena onda y alguna historia que contar. Vale la pena cruzar toda la ciudad…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Tendencias Urbanas",
@@ -44,7 +110,29 @@
       "whatsapp": "https://wa.me/5491155965815",
       "link_maps": "https://www.google.com/maps/place/Tendencias+Urbanas/data=!4m7!3m6!1s0x95bccbf5f31de6cb:0x3934a00f411e361d!8m2!3d-34.6236311!4d-58.4444061!16s%2Fg%2F11kmnnr5gc!19sChIJy-Yd8_XLvJURHTYeQQ-gNDk?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Alberdi 1172, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejandra Torqui",
+          "texto": "Excelente peluquera! Siempre te recibe con mucha calidez💖",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Valeria Garcia",
+          "texto": "Fui a la peluquería y la verdad me encantó. Son súper amables desde el primer momento, te hacen sentir cómoda y se nota que les importa que quedes conforme. Me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Shirly Romero",
+          "texto": "Excelente atención. La verdad soy muy exigente. Alejandro me recomendó un corte que va muy bien con mis ondas y mientras esperaba el tiempo de hidratación de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "maria gabriela rinaldi",
+          "texto": "Siempre bien atendida Son cálidos y amables y te vas feliz",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Estilo Buenos Aires",
@@ -54,7 +142,29 @@
       "whatsapp": "https://wa.me/5491147461793",
       "link_maps": "https://www.google.com/maps/place/Estilo+Buenos+Aires/data=!4m7!3m6!1s0x95bcca24e1d6aa7d:0xc0e22fe09badd332!8m2!3d-34.6254945!4d-58.4533339!16s%2Fg%2F11b6mj81gk!19sChIJfarW4STKvJURMtOtm-Av4sA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 6166, C1406GLR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudia Soria",
+          "texto": "Excelente atención en la sede de Rivadavia y Curapaligue. Super profesionales los coloristas Pao, Mariana y Ale, te asesoran en todo y te cuidan el pelo con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natalia Baudy",
+          "texto": "Excelente atención, súper cálida y amable. Me atendí con Mariana y me hice un balayage. Me encantó su trabajo! Quedé feliz con el resultado, amé cómo quedó. ❤️…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Abigail Sandoval",
+          "texto": "Pedí un corte Wolf cut, mostre referencias. Un Wolf cut Se basa en hacer 3 capas una más corta que la otra. Estaba feliz porque me quedo bonito de adelante…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Flor Becerra",
+          "texto": "Malísima atención, la peluquera cero predisposición. Me cortó el pelo con mala gana y en menos de 2 minutos me despachó. Ni siquiera se tomó el tiempo de…",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }

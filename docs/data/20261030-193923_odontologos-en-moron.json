@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491169561865",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Odontol%C3%B3gico+Bravo+-+Bastos/data=!4m7!3m6!1s0x95bcc70c1c2c5371:0x35eb9afa22df397b!8m2!3d-34.6518202!4d-58.6108627!16s%2Fg%2F11qh8cghh7!19sChIJcVMsHAzHvJUReznfIvqa6zU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Domingo French 322, B1708 Morón, Provincia de Buenos Aires",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Veronica Perissinotto",
+          "texto": "El nombre coincide con su personalidad. La Dra Sol es un sol literal. Excelente profesional y súper empática.Magicamente escuchas el torno y ni miedo da…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Irazoqui",
+          "texto": "Desde que empecé a atenderme en el consultorio de Mónica y Sol, no solo encontré profesionales increíbles, sino también un equipo humano impecable que hace que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana",
+          "texto": "Excelente atención ! Desde que solicité el turno súper amables!! La doctora me explicó todo lo que nunca me habían dicho. Muy buena profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Turati",
+          "texto": "Hace años mis hijos y yo nos atendemos en el consultorio. Primero con la doctora Bravo y yo, desde hace años con la doctora Bastos y solo tengo palabras de…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio odontológico Echepare",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491144209173",
       "link_maps": "https://www.google.com/maps/place/Consultorio+odontol%C3%B3gico+Echepare/data=!4m7!3m6!1s0x95bcc712474ad881:0x12bb83fd7e1704cc!8m2!3d-34.6678343!4d-58.612787!16s%2Fg%2F1tdlwgbd!19sChIJgdhKRxLHvJURzAQXfv2DuxI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Ing. Sagasta 1094, B1708CJL Morón, Provincia de Buenos Aires",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Roberto Pascual",
+          "texto": "Muy buena atención, Gabriela E. está en todos los detalles!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stella Maris Pombo",
+          "texto": "Excelencia odontológica! El Dr. está jubilado, atiende su hija.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Astrea Tv",
+          "texto": "Me pareció excelente . Muy buena mano. Y muy profesional. Amable en atención. Ella y su secretaria muy educadas. Recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Florencia Medina",
+          "texto": "Excelente atencion por parte de todo el equipo, especialmente los Drs Echepare y Carnicero",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Centro Odomn",
@@ -34,7 +78,14 @@
       "whatsapp": "https://wa.me/5491137223460",
       "link_maps": "https://www.google.com/maps/place/Centro+Odomn/data=!4m7!3m6!1s0x95bcc700551d708d:0xd35bbcb583f776ab!8m2!3d-34.6485118!4d-58.6200426!16s%2Fg%2F11zd4dv3wk!19sChIJjXAdVQDHvJURq3b3g7W8W9M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "25 de Mayo 23 Piso 5 dto a, B1708JAA Morón, Provincia de Buenos Aires",
-      "categoria": "Dentista"
+      "categoria": "Dentista",
+      "reseñas_texto": [
+        {
+          "nombre": "Nicole De La Cruz",
+          "texto": "Muy amable el personal, siempre predispuestos. El edificio en si no es tan lindo pero el consultorio esta bueno",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Odontología Integral Dr. Sola",
@@ -44,7 +95,29 @@
       "whatsapp": "https://wa.me/5491157385992",
       "link_maps": "https://www.google.com/maps/place/Odontolog%C3%ADa+Integral+Dr.+Sola/data=!4m7!3m6!1s0x95bcc7f69d59eadb:0x8b6f58444e934473!8m2!3d-34.6865033!4d-58.6348727!16s%2Fg%2F11svk89pcq!19sChIJ2-pZnfbHvJURc0STTkRYb4s?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "AQA, Adolfo Sourdeaux 1295, B1708 Morón, Provincia de Buenos Aires",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Estefy Ponce",
+          "texto": "Muy buena atención del doctor. Venía de otro lugar donde me habían dado un diagnóstico totalmente errado y el se tomó el tiempo de explicarme todo con mucha…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Kimey Agustina Bazán",
+          "texto": "Espectacular la atención del doctor. Me explico todo y me contuvo porque tenia mucho miedo. Un genio y super profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alexis Nogueira",
+          "texto": "Muy buena atención,siempre al tanto de todo,personas que de verdad se preocupan por la salud bucal de uno!!🙌🏻",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rubí Duarte Huircan",
+          "texto": "El Dr. Martin Sosa es muy amable y con muchísima paciencia.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio",
@@ -54,7 +127,29 @@
       "whatsapp": "https://wa.me/5491152564344",
       "link_maps": "https://www.google.com/maps/place/Consultorio/data=!4m7!3m6!1s0x95bcc7a4565f0aeb:0xc6fd0bd2f203fcf!8m2!3d-34.6465389!4d-58.6195273!16s%2Fg%2F11s1w7ldd_!19sChIJ6wpfVqTHvJURzz8gL73Qbww?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. Machado 792 1 piso, B1708EOC Morón, Provincia de Buenos Aires",
-      "categoria": "Centro de salud y bienestar"
+      "categoria": "Centro de salud y bienestar",
+      "reseñas_texto": [
+        {
+          "nombre": "FLORENCIA",
+          "texto": "¡Excelente consultorio de ortodoncia! La calidad del trabajo y los resultados son realmente increíbles y se notan. Quiero destacar especialmente la atención de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alisia Zaracho",
+          "texto": "Hola! Quiero compartir mi experiencia con la Dra. García. Fueron 2años de usar brackerts y la atención de la Dra. García en todo este tiempo fue excelente. Una…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariela Ledesma",
+          "texto": "Prestan un servicio excelente! Lleve a mi hijo y estoy muy conforme con el tratamiento que llevo a cabo. Pasamos por todos los profesionales por cuestiones…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Micaela Perez",
+          "texto": "les dejo mi experiencia del día de hoy, me presenté por primera vez con mi cuñada y al momento de hacerme la radiografía dental me pidieron dejar mis…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "L' ALTRA Salud Morón",
@@ -64,7 +159,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/L%27+ALTRA+Salud+Mor%C3%B3n/data=!4m7!3m6!1s0x95bcc76014462187:0x7ae433407ac0f3e1!8m2!3d-34.6470727!4d-58.6217605!16s%2Fg%2F1tf08vr1!19sChIJhyFGFGDHvJUR4fPAekAz5Ho?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Crisólogo Larralde 945, B1708EMI Gran Buenos Aires, Provincia de Buenos Aires",
-      "categoria": "Clínica dental"
+      "categoria": "Clínica dental",
+      "reseñas_texto": [
+        {
+          "nombre": "Maggie Romano",
+          "texto": "La primera vez fui por guardia , la ayuda fue excelente y rápida. La verdad que super cómoda, las siguientes consultas por el estado del tratamiento que tuve…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "noelia antezana",
+          "texto": "Fui con miedo x tanta reseña negativa. Me llevé una grata sorpresa al ver qué mí experiencia era todo lo contrario a lo que decían. El odontólogo que me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvia Ferreira",
+          "texto": "Sábado 8 de octubre 2026, fui porque en la cartilla de Galeno figura guardia 24 Hs. Resulta que la guardia comienza a las 18:00 hs. La recepcionista me dice…",
+          "estrellas": 2
+        },
+        {
+          "nombre": "Sofia Reynaga",
+          "texto": "Si van a la guardia y los atiende la Dra Vanero, corran. Es un horror , el trato, la higiene y la atención . No te da ni pelota y hace todo por encima tuyo, se…",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }

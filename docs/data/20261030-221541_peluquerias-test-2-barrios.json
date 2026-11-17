@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491164658701",
       "link_maps": "https://www.google.com/maps/place/Michelangelo+Peluquer%C3%ADa+Barber%C3%ADa/data=!4m7!3m6!1s0x95bcb55935098af7:0x7ed59dbecf55c521!8m2!3d-34.5646953!4d-58.4562099!16s%2Fg%2F11qm3v9smf!19sChIJ94oJNVm1vJURIcVVz76d1X4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Mcal. Antonio José de Sucre 2518, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Ima",
+          "texto": "Hace unos dias dejé una review negativa, a los minutos el dueño me habló para disculparse y hacer un nuevo corte libre de costo. Son super resolutivos. Con el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisa Jannet",
+          "texto": "Miguel, es excelente como persona y profesional. Hace más de 15 años solo me atendió en Michelangelo👌👏",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Qusisami :]",
+          "texto": "Amé el trato en la peluquería, son muy atentos! Lo único que no me gustó es que al final tuve que peinarme sola (después de un corte y secado), entiendo que el…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Agustín Andrada",
+          "texto": "Mientras espero el corte me sirven un cortadito, excelente atención y corte un genio nacho. La recomiendo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Salon de Belleza Andrea Vannucci (En Palermo Beauty Salon - Peluqueria)",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491163704170",
       "link_maps": "https://www.google.com/maps/place/Salon+de+Belleza+Andrea+Vannucci+%28En+Palermo+Beauty+Salon+-+Peluqueria%29/data=!4m7!3m6!1s0x95bcca8071b88ab1:0x1cf6bb6867bd7400!8m2!3d-34.5891494!4d-58.4168526!16s%2Fg%2F11b6z3yxyv!19sChIJsYq4cYDKvJURAHS9Z2i79hw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Medrano 1920, C1425GDH Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Karen Pardo",
+          "texto": "Quedé muy contenta con mi experiencia. Desde que llegué me atendieron con muchísima amabilidad y me hicieron sentir muy cómoda. El lugar tiene un ambiente muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Flor De Luz Olveira",
+          "texto": "Mi mejor versión, mi mejor experiencia!! Sin dudas es el Salón de Andrea Vannucci!! Excelente profesional!! Teniendo un equipo de excelencia con Eduardo!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "veronica ruggirello",
+          "texto": "Hermosa experiencia! Todos muy gentiles y profesionales, reserva po WhatsApp súper rápida y flexible. Fui por un alisado y ahora después de ya haberlo lavado…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pato Gallardo",
+          "texto": "Amable y muy profesional, los años de experiencia de Andrea se ven en las propuestas y cortes a la hora de cambiar de look. He pasado por varios y siempre…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Millån peluqueria",
@@ -34,7 +78,29 @@
       "whatsapp": "https://wa.me/5491163357478",
       "link_maps": "https://www.google.com/maps/place/Mill%C3%A5n+peluqueria/data=!4m7!3m6!1s0x95bcb5a6a7f53a21:0xa2934dd3d006a86f!8m2!3d-34.5564576!4d-58.457367!16s%2Fg%2F11h0zfh4m3!19sChIJITr1p6a1vJURb6gG0NNNk6I?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Arcos 2514, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Camila Torini",
+          "texto": "Fausto es un genio. Lo que le pedis, el lo hace. Es super especifico con tus indicaciones. No te corta un pelo de mas si no queres. Tintura y reflejos tambien…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Marquez",
+          "texto": "Fausto no sólo sabe lo que hace, sabe respetar el gusto de cada uno y logra el resultado más apropiado. Además de la calidez con que trata a sus clientes…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Petra Valentina Laguillon",
+          "texto": "Excelente atención, recibida, de Fausto, te asesora, de acuerdo a lo que vas a realizarte ejerce su profesion, siendo competente. El entorno es muy organizado…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquín García",
+          "texto": "Espectacular fausto! La mejor peluquería de todo belgrano. Excelente profesional. Mucha experiencia y un trato impecable.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "DREXI",
@@ -44,7 +110,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/DREXI/data=!4m7!3m6!1s0x95bcb5ba4773483f:0x4f5488b86421ee99!8m2!3d-34.5542655!4d-58.4463768!16s%2Fg%2F11g19q341n!19sChIJP0hzR7q1vJURme4hZLiIVE8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Miñones 2209, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Alicia Bordon",
+          "texto": "Excelente peluqueria, Andrea una genia, precios super en relación a la calidad del servicio, voy hace 5 años, ambiente cálido, te hacen sentir muy comoda.Los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Kayla Glaser",
+          "texto": "Me hicieron buen corte, secado y planchado. Buen servicio ✨",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Analia ACH",
+          "texto": "Me atendió Ernestina. Es un 10. Hizo un milagro con mi pelo. Gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victoria Estrada",
+          "texto": "Desde el trato, el lavado, el ambiente hasta el resultado, 10 puntos. Tuve una excelente primera experiencia que me dejó con ganas de volver!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "LOOK&ARTE Espacio Creativo Peluqueria Hair & Nails",
@@ -54,7 +142,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/LOOK%26ARTE+Espacio+Creativo+Peluqueria+Hair+%26+Nails/data=!4m7!3m6!1s0x95bcb5d2e1b162fb:0x8028a7cf54ece6e9!8m2!3d-34.5600913!4d-58.4543694!16s%2Fg%2F11b6s31f_b!19sChIJ-2Kx4dK1vJUR6ebsVM-nKIA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Arcos 2140, C1428AFH Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "Dolores de la Torre",
+          "texto": "Hola: Me atendi esta vez con Patricia, es la segunda vez que voy y la verdad el trato muy bueno, muy cálidos y con gran conocimiento.💇‍♂️ Aunque resulte obvio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carla Guarrera",
+          "texto": "Hermosa experiencia desde que entrás, hasta que salís! Divina la atención de todas! Quedé feliz con el color y el corte que me hizo Susy! Además, cuenta con el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "NADIA FERNANDEZ",
+          "texto": "Me fui a cortar el pelo y hacer color, me gustó la atención, como me aconsejaron en funcion de mi necesidad y deseo. Elegi el lugar porque reciben donaciones…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristina Roca",
+          "texto": "Excelente este lugar! Atienden muy bien y se nota en el cabello cuando usan productos de calidad, quiero destacar a Virginia con quien me atiendo que es super…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "V H Peluquería",
@@ -64,7 +174,29 @@
       "whatsapp": "https://wa.me/5491147818194",
       "link_maps": "https://www.google.com/maps/place/V+H+Peluquer%C3%ADa/data=!4m7!3m6!1s0x95bcb43300f2f967:0x3195addb6d1d2f08!8m2!3d-34.5631698!4d-58.4631472!16s%2Fg%2F11f0wlqmc_!19sChIJZ_nyADO0vJURCC8dbdutlTE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Olazábal 2912, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "GRACE",
+          "texto": "MI PELUQUERÍA, NO SÓLO EN BELGRANO, EN EL MUNDO. TODOS SON SUPER AMABLES Y CORDIALES EMPEZANDO POR LA DUEÑA, VALE, ES UNA COLORISTA DE LAS QUE YA NO EXISTEN…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nayla Jalil",
+          "texto": "Me encantó la atención de Susana! Me hizo Botox y justo el corte que quería, no me hizo doler al peinarme y fue muy amable siempre. Súper profesional!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pía",
+          "texto": "Unas genias las chicas, re amorosas y super profesionales en lo que hacen. Excelente servicio, cafecito, música super ambientada y los looks hermosos. ♥",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Estudio Caro Naum",
+          "texto": "Hace años que voy y siempre me atienden de 10. Lo super recomiendo !!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "LA PELU BUENOS AIRES",
@@ -74,7 +206,29 @@
       "whatsapp": "https://wa.me/5491133032283",
       "link_maps": "https://www.google.com/maps/place/LA+PELU+BUENOS+AIRES/data=!4m7!3m6!1s0x95bcb590dd9c17ad:0x20455b9d64ab48bc!8m2!3d-34.5780448!4d-58.4310034!16s%2Fg%2F11gzm15g4!19sChIJrRec3ZC1vJURvEirZJ1bRSA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bonpland 2391, C1425 FWE, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Peluquería"
+      "categoria": "Peluquería",
+      "reseñas_texto": [
+        {
+          "nombre": "J P",
+          "texto": "La verdad, un crack. Muy buena onda, te atiende de diez y te deja el corte tal cual se lo pedís. Se nota que le pone ganas a lo que hace",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agostina Leone",
+          "texto": "Leo un genio! Me corto y me tiño, todo excelente, super recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "katja tyczynska",
+          "texto": "Hace años que me corto con Leo, es un copado, y siempre te hace un corte con mucha onda. La pelu tiene su encanto y la buena música no falta. No quería dejar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Alejos",
+          "texto": "Me corte con Leo. Excelente!!! Hermoso corte, super dedicado. Mejoró lo que yo había llevado como propuesta. Bonus track: fui con mi hija de 18 años, que le…",
+          "estrellas": 5
+        }
+      ]
     }
   ]
 }

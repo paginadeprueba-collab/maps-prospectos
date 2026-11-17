@@ -14,7 +14,29 @@
       "whatsapp": "https://wa.me/5491159960476",
       "link_maps": "https://www.google.com/maps/place/Bennasar+propiedades/data=!4m7!3m6!1s0x95bcb7a66e22f761:0x5152fea392452f1f!8m2!3d-34.5890911!4d-58.4766872!16s%2Fg%2F11gnj7pxgc!19sChIJYfcibqa3vJURHy9FkqP-UlE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bucarelli 1070, C1427BDD Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Empresa de administración de propiedades"
+      "categoria": "Empresa de administración de propiedades",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Pablo Pampin Picasso",
+          "texto": "Todo perfecto! Marcelo estuvo muy atento a todo lo necesario para que pueda concretar el alquiler de mi departamento.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Susana Ines Frieyro",
+          "texto": "Excelente atención y acompañamiento en el proceso de venta de un inmueble familiar. Con el mejor valor posible. Muy recomendable esta empresa de servicios…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Floriana Diaz",
+          "texto": "Siempre atentos y amables, buena predisposición para resolver cualquier consulta.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Graciela Maceiras",
+          "texto": "Excelente atención! Muy confiable! Super recomendable!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Sofia Gonzalez Agente Inmobiliario",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491123191553",
       "link_maps": "https://www.google.com/maps/place/Sofia+Gonzalez+Agente+Inmobiliario/data=!4m7!3m6!1s0x95bccb1fccc0ac8f:0x3b3740731563b50e!8m2!3d-34.635!4d-58.3754379!16s%2Fg%2F11nyv_20q_!19sChIJj6zAzB_LvJURDrVjFXNANzs?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Montes de Oca 581, C1140 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Flavia De Luca",
+          "texto": "Realmente Sofia y su equipo son excelentes, y recomiendo mucho poner en sus manos tanto la venta como la busqueda de tu hogar. Tienen todas las herramientas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Laura Forciniti",
+          "texto": "Mi experiencia con Sofía fue excelente! Me acompañó en todo el proceso con profesionalidad y cercanía. Fue resolutiva y ayudó activamente a que se concrete la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Fernandes",
+          "texto": "Qué lindo haber contado con vos, Sofi, para comprar nuestro departamento! Gracias por estar siempre atenta y por la paciencia con todas nuestras preguntas y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuela Echelini",
+          "texto": "Excelente profesional. Atenta, dedicada y apasionada en su labor. Nos acompañó en el camino para lograr nuestro objetivo con mucha responsabilidad y calidez…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Laura Wizenberg Agente Inmobiliario",
@@ -34,7 +78,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Laura+Wizenberg+Agente+Inmobiliario/data=!4m7!3m6!1s0x95bcc9c58942792d:0x6f717ee37fd36050!8m2!3d-34.604092!4d-58.4661089!16s%2Fg%2F11v09ly7v1!19sChIJLXlCicXJvJURUGDTf-N-cW8?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Manuel R. Trelles 2098, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "maria cecilia silva",
+          "texto": "Laura,una agente super recomendable, siempre atenta en el acompañamiento del proceso de compra. Seriedad , cordialidad y eficacia. Gracias!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina Anzalone",
+          "texto": "Las mejores operaciones son las que se construyen con trabajo en equipo, compromiso y confianza.Gracias, Laura, por tu excelente predisposición, la buena onda…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Grunstein",
+          "texto": "Excelente gestión. Seriedad y responsabilidad sumado a trato cordial y humano. Muy conforme con todo pudimos resolver nuestra compra en el escaso tiempo que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rita Sofía",
+          "texto": "Laura nos acompañó en varias operaciones inmobiliarias, desde vender un teatro, alquileres, y resolver ventas y compras tanto para nosotros como para que…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "MN Propiedades Marbian Natalia",
@@ -44,7 +110,29 @@
       "whatsapp": "https://wa.me/5491138801206",
       "link_maps": "https://www.google.com/maps/place/MN+Propiedades+Marbian+Natalia/data=!4m7!3m6!1s0x95bcb71cf2458f1f:0xac2f4846423e4bbe!8m2!3d-34.5801258!4d-58.4829682!16s%2Fg%2F11p1kq5f15!19sChIJH49F8hy3vJURvks-QkZIL6w?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bauness 1900, C1431AAA Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Agustin Kassis",
+          "texto": "Excelente atención y profesionalismo. Un placer trabajar con personas tan serias y comprometidas.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "gustavo marbian",
+          "texto": "Gracias Natalia,un gusto haberte confiado mi propiedad. Seriedad, confianza y honestidad. Mil gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karen Rodriguez",
+          "texto": "Muy buena atención, siempre amable y predispuesta a ayudar. ¡La recomiendo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Faravelli",
+          "texto": "Impecable por dónde se lo mire. Quiero agradecer especialmente a Natalia por la venta de mi departamento. Desde el primer momento se mostró súper profesional y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "BGI Propiedades",
@@ -54,7 +142,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/BGI+Propiedades/data=!4m7!3m6!1s0x95bcb702d221911d:0x30806f9cc3821fa5!8m2!3d-34.5833121!4d-58.4944385!16s%2Fg%2F11mzf11t9_!19sChIJHZEh0gK3vJURpR-Cw5xvgDA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Caracas 4554, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Valentina Ayala",
+          "texto": "Recomiendo 100% la atención de Daniela!! súper profesional, atenta, detallista… Y lo más importante: predispuesta, disponible en todo momento, muy cálida y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nazareno Daniel Lugones",
+          "texto": "Calidad, profesionalismo, soy testigo de la rapidez en ventas y alquileres.... Daniela es la mejor!!!!! Excelente servicio!!!! 😎",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Javier Slongo",
+          "texto": "Quiero destacar especialmente la excelente atención recibida. Se trata de una inmobiliaria con un alto nivel de profesionalismo, gran conocimiento del rubro y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mirta Aguirre",
+          "texto": "Estamos totalmente agradecidos a Sabrina, de BGI ya que nos a acompañado de manera excelente en el tiempo que nos llevó vender nuestro departamento. Siempre…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Técnico en Aires Acondicionados Emiliano Vila",
@@ -64,7 +174,29 @@
       "whatsapp": "https://wa.me/5491138604554",
       "link_maps": "https://www.google.com/maps/place/T%C3%A9cnico+en+Aires+Acondicionados+Emiliano+Vila/data=!4m7!3m6!1s0x95bcb7f05bbf060f:0x46d4cd5320ef1612!8m2!3d-34.5800315!4d-58.509706!16s%2Fg%2F11z_2s0hrs!19sChIJDwa_W_C3vJUREhbvIFPN1EY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Argerich 5581, C1419 Villa Pueyrredon, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Mantenimiento de propiedades"
+      "categoria": "Mantenimiento de propiedades",
+      "reseñas_texto": [
+        {
+          "nombre": "Mati Fonseca",
+          "texto": "Excelente trabajo y muy buena predisposición, cuando alguien quiere hacer las cosas bien se nota y acá hay un ejemplo claro.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "esteban cardozo",
+          "texto": "Muy buen servicio y la atención, laburo rápido y seguro muy recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ignacio Acciarito",
+          "texto": "El mejor de la zona!! Dejo todo prolijo y en perfecto funcionamiento, además de una atención impecable! Crack total y recomendado!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabian Spampinato",
+          "texto": "Excelente su trabajo ..muy buena atención ..muy recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Karina Mazzitelli - Agente Inmobiliario Remax Tango",
@@ -74,7 +206,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Karina+Mazzitelli+-+Agente+Inmobiliario+Remax+Tango/data=!4m7!3m6!1s0x95bccb003ebe2f13:0xe704f8899f8f1f94!8m2!3d-34.6342255!4d-58.3756086!16s%2Fg%2F11z4cv61fr!19sChIJEy--PgDLvJURlB-Pn4n4BOc?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Montes de Oca 499, C1270 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Quimey Echaide",
+          "texto": "Tuve una excelente experiencia con Karina. Súper atenta, siempre disponible y con la mejor onda para acompañar todo el proceso. Gracias a ella pude encontrar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ivanic",
+          "texto": "Súper atenta Karina. Siempre predispuesta a ayudar y contestar dudas. Recontra recomendable. Gracias genia!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vanesa Vargas",
+          "texto": "Kari, la mejor vendedora del mundo mundial!! Excelente atención y resolución ante cualquier inconveniente. Super recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "H B",
+          "texto": "Hemos recibido un excelente asesoramiento, un trato muy profesional. Entendió nuestras necesidades siempre y siempre estuvo disponible para todas las consultas…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Normal Inmobiliaria",
@@ -84,7 +238,29 @@
       "whatsapp": "https://wa.me/5491135863467",
       "link_maps": "https://www.google.com/maps/place/Normal+Inmobiliaria/data=!4m7!3m6!1s0x95bccb6ff0eb9e4d:0x85356660ce064aab!8m2!3d-34.6536438!4d-58.4050841!16s%2Fg%2F11fmz1v7m7!19sChIJTZ7r8G_LvJURq0oGzmBmNYU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Oscar Natalio Bonavena 1400, C1437EOH Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Norberto Victor Di Paola",
+          "texto": "muy buena atención, gente con experiencia....",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudio Gomez",
+          "texto": "Excelente trato y atencion, muy buena gente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yamila Uriarti",
+          "texto": "Muy buena atención! Recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Flavia Vargas",
+          "texto": "Muy buena atención siempre .Norma y Georgina unas genias, siempre con buena predisposición",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "TORRISI BOEDO",
@@ -94,7 +270,8 @@
       "whatsapp": "https://wa.me/5491143991234",
       "link_maps": "https://www.google.com/maps/place/TORRISI+BOEDO/data=!4m7!3m6!1s0x95bccb5c84f2c12d:0xd6d5eb7863ae3718!8m2!3d-34.6255727!4d-58.4196025!16s%2Fg%2F11md1470s8!19sChIJLcHyhFzLvJURGDeuY3jr1dY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. San Juan 3851, C1233 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": []
     },
     {
       "nombre": "Parada",
@@ -104,7 +281,24 @@
       "whatsapp": "https://wa.me/5491149113865",
       "link_maps": "https://www.google.com/maps/place/Parada/data=!4m7!3m6!1s0x95bccb0a19bb24cb:0x14183ef8caccfadc!8m2!3d-34.6429468!4d-58.4163072!16s%2Fg%2F1tks7hkt!19sChIJyyS7GQrLvJUR3PrMyvg-GBQ?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Sáenz 303, C1437 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Fernando Guerreiro",
+          "texto": "Santa fe 1234 Un lugar perfecto para desayunar",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Shir FerPar",
+          "texto": "Golpea un poco el sol en verano...",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Federico C",
+          "texto": "Bueeena",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Oreiro",
@@ -114,7 +308,8 @@
       "whatsapp": "https://wa.me/5491149253080",
       "link_maps": "https://www.google.com/maps/place/Oreiro/data=!4m7!3m6!1s0x95bccb0836984035:0xb0399a0063ffff44!8m2!3d-34.6395196!4d-58.4162815!16s%2Fg%2F1hc0vg30q!19sChIJNUCYNgjLvJURRP__YwCaObA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Sáenz 33, C1437 DNA, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": []
     },
     {
       "nombre": "Matias Hernandez Propiedades",
@@ -124,7 +319,24 @@
       "whatsapp": "https://wa.me/5491144626300",
       "link_maps": "https://www.google.com/maps/place/Matias+Hernandez+Propiedades/data=!4m7!3m6!1s0x95bccf5c55c8efc9:0xd0cac2df38f46de4!8m2!3d-34.6918926!4d-58.4798041!16s%2Fg%2F11z_2ysr8m!19sChIJye_IVVzPvJUR5G30ON_CytA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Gral. Paz 16289, C1772 Villa Celina, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "natalia escudero",
+          "texto": "Muy agradecida con el trato y el seguimiento. Me ayudaron con una venta, proceso impecable. Los recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Admin Los Verdes",
+          "texto": "Gracias Matias y Miguel por la atención y, a pesar de las vueltas, lograr encontrar el depto. que buscaba. Los recomiendo 100% por el acompañamiento siempre.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mara Corzo",
+          "texto": "Excelente trato, impecable la atencion y seguimiento que tuvo Matias con mi propiedad. Lo recomiendo a todos mis conocidos! Gracias!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Entregar",
@@ -134,7 +346,24 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Entregar/data=!4m7!3m6!1s0x95bccb006f5e6d55:0x4545c4764388010e!8m2!3d-34.6460455!4d-58.4031946!16s%2Fg%2F11vzfmr89f!19sChIJVW1ebwDLvJURDgGIQ3bERUU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Masantonio, Herminio 2957, C1437HVA C1437HVA, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Adrián Redondas",
+          "texto": "rapidez en las entregas y buenas tencion, recomendables.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Garcia Ayzaguer",
+          "texto": "Rápida atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aida Susana Beatriz Paez de Souza",
+          "texto": "Mi envio, a Pilar de Buenos Aires, lleva 10 dias de demora. Tres veces anunciaron entrega \"en las proximas horas\" pero no sucedio. El robot que responde…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "RAMOS FERRERO Y ASOC.",
@@ -144,7 +373,14 @@
       "whatsapp": "https://wa.me/5491149271153",
       "link_maps": "https://www.google.com/maps/place/RAMOS+FERRERO+Y+ASOC./data=!4m7!3m6!1s0x95bcc9ff728aa07f:0x65d55bec90bd5e21!8m2!3d-34.6113625!4d-58.4673059!16s%2Fg%2F11bzv4fwz0!19sChIJf6CKcv_JvJURIV69kOxb1WU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Andrés Lamas 1623 1 PISO \"7, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Consultor inmobiliario"
+      "categoria": "Consultor inmobiliario",
+      "reseñas_texto": [
+        {
+          "nombre": "Matias Chuliver",
+          "texto": "Muy buena atencion y predisposición. Muy recomendable.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Ferreiros Propiedades",
@@ -154,7 +390,14 @@
       "whatsapp": "https://wa.me/5491163703459",
       "link_maps": "https://www.google.com/maps/place/Ferreiros+Propiedades/data=!4m7!3m6!1s0x95bcb568c5a6899f:0xc3e0e934432af69c!8m2!3d-34.5846915!4d-58.4883067!16s%2Fg%2F11nrwk10fq!19sChIJn4mmxWi1vJURnPYqQzTp4MM?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "La Pampa 5980 PB A, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Julieta.",
+          "texto": "Fui a visitar un departamento que tenían publicado, la atención fue muy buena. La persona que lo mostró fue muy amable. Transparencia y profesionismo. Hoy en…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Pasaje i 387",
@@ -164,7 +407,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Pasaje+i+387/data=!4m7!3m6!1s0x95bccbcd56a452a7:0x9286577a3fd73788!8m2!3d-34.6574369!4d-58.4565219!16s%2Fg%2F11tj_cqm37!19sChIJp1KkVs3LvJURiDfXP3pXhpI?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pje. I 387, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Sociedad de viviendas"
+      "categoria": "Sociedad de viviendas",
+      "reseñas_texto": [
+        {
+          "nombre": "Leo Marin",
+          "texto": "Bien",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Martillero Público",
@@ -174,7 +424,8 @@
       "whatsapp": "https://wa.me/5491154555533",
       "link_maps": "https://www.google.com/maps/place/Martillero+P%C3%BAblico/data=!4m7!3m6!1s0x95bcb71427ebbb0f:0xc13bc03b39126efd!8m2!3d-34.5622677!4d-58.5258846!16s%2Fg%2F11d_yw7vlq!19sChIJD7vrJxS3vJUR_W4SOTvAO8E?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Luis María Saavedra 2394, B1650 Villa Maipú, Provincia de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": []
     },
     {
       "nombre": "GRACIELA ALONSO propiedades",
@@ -184,7 +435,8 @@
       "whatsapp": "https://wa.me/5491145822699",
       "link_maps": "https://www.google.com/maps/place/GRACIELA+ALONSO+propiedades/data=!4m7!3m6!1s0x95bcc9f888f52819:0x7e4d1397cafa965b!8m2!3d-34.6084288!4d-58.4638861!16s%2Fg%2F11b6y12gq6!19sChIJGSj1iPjJvJURW5b6ypcTTX4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Manuel R. Trelles 1694, C1416BRL Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": []
     },
     {
       "nombre": "Tobias Dib",
@@ -194,7 +446,19 @@
       "whatsapp": "https://wa.me/5491128542612",
       "link_maps": "https://www.google.com/maps/place/Tobias+Dib/data=!4m7!3m6!1s0x95bcb744dcb25cfb:0x791de916aa417a97!8m2!3d-34.5800638!4d-58.4727863!16s%2Fg%2F11w3z53j6q!19sChIJ-1yy3ES3vJURl3pBqhbpHXk?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. de los Incas 4335, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Consultor inmobiliario"
+      "categoria": "Consultor inmobiliario",
+      "reseñas_texto": [
+        {
+          "nombre": "Martina Levy",
+          "texto": "Excelente servicio! Me ayudaron a conseguir el departamento que soñaba!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Esther guillermina Souza mariñas",
+          "texto": "NOatienden ,para que ponen teléfono y horarios de atención ????. Gracias.",
+          "estrellas": 2
+        }
+      ]
     },
     {
       "nombre": "RB Propiedades",
@@ -204,7 +468,14 @@
       "whatsapp": "https://wa.me/5491143077441",
       "link_maps": "https://www.google.com/maps/place/RB+Propiedades/data=!4m7!3m6!1s0x95a334caeab84ad3:0x68038d5988943d57!8m2!3d-34.6327622!4d-58.3701703!16s%2Fg%2F11b6xdm7yj!19sChIJ00q46so0o5URVz2UiFmNA2g?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Regimiento de Patricios 1195, C1265AEE Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Natalia Benitez Ullo",
+          "texto": "Gracias por tanto, por darme la vida, por llenarme de valores, fuerza para lo que toca vivir, por tu presencia, por ser incondicional, por llenarme de orgullo…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "RF Roberto Filgueira Broker Inmobiliario",
@@ -214,7 +485,29 @@
       "whatsapp": "https://wa.me/5491138709999",
       "link_maps": "https://www.google.com/maps/place/RF+Roberto+Filgueira+Broker+Inmobiliario/data=!4m7!3m6!1s0x95a335051ad0c099:0x55a2fe9076de1cf5!8m2!3d-34.6223905!4d-58.3650414!16s%2Fg%2F11z_32k2pz!19sChIJmcDQGgU1o5UR9RzedpD-olU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Alicia Moreau de Justo 2030, C1107AFP Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Sergio F",
+          "texto": "Excelente broker inmobiliario lo recomiendo impresionante la atención de Gabriela Marabete, su profesionalismo y como ser humano. Gracias! Siempre con ustedes",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariela Stratta",
+          "texto": "Marcela Vittar, Muy recomendable!, fue todo muy claro rápido y efectivo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karlenis Useche",
+          "texto": "Excelente asesoramiento y acompañamiento en todo el proceso, súper recomendado!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Cevey",
+          "texto": "Elizabeth Salomón un amor me ayudo y asesoró en todo momento. Gracias ♥️",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Casay",
@@ -224,7 +517,8 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Casay/data=!4m7!3m6!1s0x95bccb0010ab6751:0x55fa78d0f00876f2!8m2!3d-34.6601621!4d-58.4557027!16s%2Fg%2F11z2wjfzlp!19sChIJUWerEADLvJUR8nYI8NB4-lU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lacarra 2800, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Complejo de viviendas"
+      "categoria": "Complejo de viviendas",
+      "reseñas_texto": []
     },
     {
       "nombre": "Constructora Inmobiliaria Rh Sa",
@@ -234,7 +528,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Constructora+Inmobiliaria+Rh+Sa/data=!4m7!3m6!1s0x95bccb9259a67261:0x1d8cbf3807f9ddf7!8m2!3d-34.661514!4d-58.4370955!16s%2Fg%2F11j8lnh4tq!19sChIJYXKmWZLLvJUR9935Bzi_jB0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Tabaré 2866, C1437 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": ""
+      "categoria": "",
+      "reseñas_texto": [
+        {
+          "nombre": "Pamela Althenofer",
+          "texto": "Hola me interesa comunicarme con usted",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lacasa de mati",
@@ -244,7 +545,8 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lacasa+de+mati/data=!4m7!3m6!1s0x95bccb2cfbe44fe3:0x6097b2f3c76bd53f!8m2!3d-34.6559526!4d-58.4581327!16s%2Fg%2F11rw7fr2ry!19sChIJ40_k-yzLvJURP9Vrx_Oyl2A?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pje. B, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Sociedad de viviendas"
+      "categoria": "Sociedad de viviendas",
+      "reseñas_texto": []
     },
     {
       "nombre": "Dandy Broker",
@@ -254,7 +556,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dandy+Broker/data=!4m7!3m6!1s0x95bcc979a25e8781:0x8d635af0ea20c2ba!8m2!3d-34.6239711!4d-58.4714897!16s%2Fg%2F11cnpkvw20!19sChIJgYdeonnJvJURusIg6vBaY40?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Morón 2826, C1406 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Consultor inmobiliario"
+      "categoria": "Consultor inmobiliario",
+      "reseñas_texto": [
+        {
+          "nombre": "Brian Vicuña",
+          "texto": "Excelente experiencia. Como constructor, valoro muchísimo la confianza y la cantidad de trabajos que nos brindan. Siempre hemos tenido muy buena predisposición…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia",
+          "texto": "Encontrar un hogar no es solamente encontrar una propiedad, es encontrar ese lugar donde uno pueda comenzar una nueva etapa, y estoy muy agradecida de haber…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Haydée Malnero",
+          "texto": "Muy atentas las chicas y el Sr Raul.. desde el primer momento, fuimos atendidos de una manera excepcional. Nos ayudaron con la Hipoteca de nuestra nueva casa…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "MAIRY GUERRERO",
+          "texto": "Muy amables las chicas son muy atentas, nos explicaron todo y la verdad a fluido todo de la mejor manera sin dudas los recomiendo. Las personas que nos…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Altos de Achala - Emprendimiento Inmobiliario en Distrito Tecnológico",
@@ -264,7 +588,29 @@
       "whatsapp": "https://wa.me/5491170005050",
       "link_maps": "https://www.google.com/maps/place/Altos+de+Achala+-+Emprendimiento+Inmobiliario+en+Distrito+Tecnol%C3%B3gico/data=!4m7!3m6!1s0x95bccbbf3934fa77:0xcafd60d459f1e4b!8m2!3d-34.6424938!4d-58.414103!16s%2Fg%2F11n0dv0shk!19sChIJd_o0Ob_LvJURSx6fRQ3Wrww?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Achala 3547, C1437 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Edificio de apartamentos"
+      "categoria": "Edificio de apartamentos",
+      "reseñas_texto": [
+        {
+          "nombre": "DEN",
+          "texto": "Vi la construcción y es muy buena. Excelentes detalles. Una obra de calidad que revaloriza la zona que está en pleno crecimiento en lo que es el Distrito…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Estudio Nesnech & Asoc",
+          "texto": "Excelente Emprendimiento Inmobiliario en el Distrito Tecnológico. Edificio de Categoría full amenities. Zona de importante crecimiento. Ideal para inversión.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Clau SLg",
+          "texto": "Proyecto ambicioso en Parque Patricios. 17 pisos",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Rodrigo Herrera",
+          "texto": "Excelente emprendimiento!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Villamil y Cía.",
@@ -274,7 +620,29 @@
       "whatsapp": "https://wa.me/5491145818938",
       "link_maps": "https://www.google.com/maps/place/Villamil+y+C%C3%ADa./data=!4m7!3m6!1s0x95bcc9fad73038e5:0x852b61c8dd9eb6b8!8m2!3d-34.6117921!4d-58.4737392!16s%2Fg%2F1q62bdfk0!19sChIJ5Tgw1_rJvJURuLae3chhK4U?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. José Gervasio Artigas 1693, C1416AKM Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Liria Giovanna Rodriguez Huaman",
+          "texto": "Una inmobiliaria diferente, comprende la situacion actual , proactivos ,buena atención, profesionales, digno de recomendar ...",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Alberto Gonzalez",
+          "texto": "Excelentes profesionales, para recomendar.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernanda Ugarte",
+          "texto": "Buena atención!!!",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Sergio Damian",
+          "texto": "11 puntos",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "NUEVO SIGLO PROPIEDADES Inmobiliarias en Barracas Tasaciones Departamentos en Venta y Alquiler",
@@ -284,7 +652,29 @@
       "whatsapp": "https://wa.me/5491169240551",
       "link_maps": "https://www.google.com/maps/place/NUEVO+SIGLO+PROPIEDADES+Inmobiliarias+en+Barracas+Tasaciones+Departamentos+en+Venta+y+Alquiler/data=!4m7!3m6!1s0x95bccb34cea334c1:0xc05297053ad0b14!8m2!3d-34.6312091!4d-58.3720705!16s%2Fg%2F11b6dwznhl!19sChIJwTSjzjTLvJURFAutU3ApBQw?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Martín García 560, C1268ABO Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Matias Borracine",
+          "texto": "Gracias a Ale, toda la operación salió de maravilla. Recibí muchas visitas por el departamento y en menos de dos semanas ya lo habían reservado. Todo super…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Francisco Aprea",
+          "texto": "Primera y muy buena experiencia con esta inmobiliaria. De las tres integrantes del equipo de la empresa recibimos un trato tan cordial como profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monica de la Fuente",
+          "texto": "Quiero agradecer la atención de Laura quien se preocupó por buscar la propiedad que yo necesitaba y acompañarme en el proceso de alquiler hasta dejarme…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandra Espinoza",
+          "texto": "La verdad muy buena la atención, siempre me contestaron los mjes amablemente, me aclararon mis dudas y sobretodo no me llevo mucho tiempo terminar la operación…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Inmobiliaria Marga",
@@ -294,7 +684,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Inmobiliaria+Marga/data=!4m7!3m6!1s0x95bcc9fd87194389:0xcdda942ab8c17592!8m2!3d-34.6033037!4d-58.4710648!16s%2Fg%2F11b6jjsyy_!19sChIJiUMZh_3JvJURknXBuCqU2s0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Álvarez Jonte 1943, C1416 EXE, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcelo Valiente",
+          "texto": "Una inmobiliaria sería y confiable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cecilia Trueba",
+          "texto": "Excelente atencion! Super recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "nelida barrientos",
+          "texto": "Excelente atencion",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ricardo miranda",
+          "texto": "Muy buena gente",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Parque Avellaneda",
@@ -304,7 +716,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Parque+Avellaneda/data=!4m7!3m6!1s0x95bcc967dd24aa9d:0x7c6f516f8430f83c!8m2!3d-34.6442292!4d-58.4803198!16s%2Fg%2F11thjqt55r!19sChIJnaok3WfJvJURPPgwhG9Rb3w?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Lacarra 1945, C1407JRM C1407JRM, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Parque"
+      "categoria": "Parque",
+      "reseñas_texto": [
+        {
+          "nombre": "Juli",
+          "texto": "Es un parque enorme, con espacio para todo tipo de actividades. Tiene sectores muy lindos para sentarse en el pasto o en banquitos y disfrutar del entorno, por…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Pasquet",
+          "texto": "Excelente espacio recuperado. El mantenimiento general es impecable y se nota el cuidado en todas las áreas comunes. Lo que realmente hace único a este lugar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nico De Moreno",
+          "texto": "Muy lindo parque, tranquilo, mucha arboleda, excelente para caminar y despejarte un rato. Ojalá hubiera mas de estos extensos espacios verdes, que no…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jimena Micaela",
+          "texto": "Muy lindo y tranquilo, hay demasiados espacios para estar y los perros pueden andar libremente por todo el parque",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "INMOBILIARIA MOURIÑO",
@@ -314,7 +748,19 @@
       "whatsapp": "https://wa.me/5491154789534",
       "link_maps": "https://www.google.com/maps/place/INMOBILIARIA+MOURI%C3%91O/data=!4m7!3m6!1s0x95bcc98264869645:0xc5701fab33cc7bb9!8m2!3d-34.6423184!4d-58.471167!16s%2Fg%2F11bymtztct!19sChIJRZaGZILJvJURuXvMM6sfcMU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Francisco Bilbao 3569, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Martha",
+          "texto": "Excelente atención, gente muy honesta que sabe trabajar para lograr los mejores resultados. Sin dudarlo, los recomiendo para comprar una propiedad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "fabian cid",
+          "texto": "Muy buena atención y explicación de lsondeposi contratos",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Novoa",
@@ -324,7 +770,19 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Novoa/data=!4m7!3m6!1s0x95bcc951f6216c87:0xb12452745135c031!8m2!3d-34.6786777!4d-58.4733006!16s%2Fg%2F11fx7vhh16!19sChIJh2wh9lHJvJURMcA1UXRSJLE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Murguiondo 4402, C1439 FTH, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Dylan Centellas",
+          "texto": "Excelente Inmobiliaria, el dueño que atiende el lugar muy buena persona y muy humano, explica todo lo que hay que saber y te ayuda bastante con respecto al…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mauro Juarez",
+          "texto": "Juega",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Sampedro Inmuebles",
@@ -334,7 +792,29 @@
       "whatsapp": "https://wa.me/5491127154934",
       "link_maps": "https://www.google.com/maps/place/Sampedro+Inmuebles/data=!4m7!3m6!1s0x95bcb64ebc98d29d:0x8de6ebb6df0fd16c!8m2!3d-34.586021!4d-58.5022148!16s%2Fg%2F1tm2bw58!19sChIJndKYvE62vJURbNEP37br5o0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Nazca 4701, C1419DFL Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Manuel Vazquez",
+          "texto": "Tuve un contrato de alquiler a través de Sampedro Inmuebles, también solicité tasaciones, y en todo momento la atención fue excelente. Óptimo servicio es el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Guada",
+          "texto": "Buenas tardes. Quería destacar la atención, por cierto, muy buena. Sin hablar del dueño, la verdad es que me encanta. Muy amable y predispuesto. Saludos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Borelli",
+          "texto": "Excelente atención!! Conocidos y recomendables desde mis abuelos y hoy seguimos nosotros!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rodrigo Mangeaud",
+          "texto": "Hace años que trato una relación comercial con ellos y siempre transparentes, expeditos y por demás cordiales. Un placer. Gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Fouri Propiedades",
@@ -344,7 +824,29 @@
       "whatsapp": "https://wa.me/5491162347707",
       "link_maps": "https://www.google.com/maps/place/Fouri+Propiedades/data=!4m7!3m6!1s0x95bcc9e4cee15513:0x9368e05892e28af!8m2!3d-34.610982!4d-58.474932!16s%2Fg%2F11hz_sdwz3!19sChIJE1XhzuTJvJURryguiQWONgk?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Alejandro Magariños Cervantes 2530, C1416DYZ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "ramses simurro",
+          "texto": "Alquilé un departamento a través de esta inmobiliaria y la experiencia fue excelente. Todo el proceso fue claro, ágil y profesional. Natalia fue muy atenta y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcela Rivas",
+          "texto": "Quiero destacar la atención de Laura. Es excelente! Muy buena profesional!. Un 10/10",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yamila",
+          "texto": "Estoy muy Feliz de haber contado con el Apoyo de esta inmobiliaria para comprar mi primer vivienda, me ayudaron durante todo el proceso y me dio mucha…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pat Shin",
+          "texto": "La mejor atención que recibí de todas las inmobiliarias que averigüé. Le describí qué es lo que estaba buscando y me lo encontró. La recomiendo al 100 %, por…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "F M Grupo Inmobiliario",
@@ -354,7 +856,29 @@
       "whatsapp": "https://wa.me/5491144707737",
       "link_maps": "https://www.google.com/maps/place/F+M+Grupo+Inmobiliario/data=!4m7!3m6!1s0x95bcc9410cfb4e45:0xedfb1b1c1fed426b!8m2!3d-34.6689348!4d-58.4816759!16s%2Fg%2F1v_0kyf9!19sChIJRU77DEHJvJURa0LtHxwb--0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Larrazábal 3184, C1439ECS Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Ester Pitton",
+          "texto": "Los contratamos para gestionar inquilino y administrar y todo excelente, diligencia, disposición para explicar, acompañar y gestionar, gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ester Pitton",
+          "texto": "Excelente servicio, gestión, administración y disposición",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Soledad Schampier",
+          "texto": "Alquilo dos propiedades con esta inmobiliaria y debo destacar la excelente atención de Fabian . Una persona super gentil, resolutiva , educada ,siempre atento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "marina curra",
+          "texto": "Les alquilo un galpón hace 6 años. Quiero resaltar la calidad humana que tienen. Los recomiendo en todos los aspectos. Muy responsables.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Diaz Propiedades",
@@ -364,7 +888,29 @@
       "whatsapp": "https://wa.me/5491146875284",
       "link_maps": "https://www.google.com/maps/place/Diaz+Propiedades/data=!4m7!3m6!1s0x95bcc9143ada9d89:0x283af926896348d4!8m2!3d-34.6654531!4d-58.4906429!16s%2Fg%2F11bbrn9g6g!19sChIJiZ3aOhTJvJUR1EhjiSb5Oig?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Murguiondo 2920, C1439FQB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Maryta Tavarone",
+          "texto": "Muchísimos años que los conocemos, a su papá primero. Son chicos muy buenos, trabajadores y correctos y su trabajo es cien por ciento de confianza, siempre a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniel Pappatella",
+          "texto": "Muy buena la atención 👌👌, buena actitud , hace muchos años que los trato",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Hernan Pepe",
+          "texto": "Muy amables y buena atención",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Blankito motor sport",
+          "texto": "Buena atención y excelente trato , muy recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Grupo Mega Pedace Artigas",
@@ -374,7 +920,29 @@
       "whatsapp": "https://wa.me/5491145831616",
       "link_maps": "https://www.google.com/maps/place/Grupo+Mega+Pedace+Artigas/data=!4m7!3m6!1s0x95bcc9e4b7387ff1:0x3a22ec74a8885b89!8m2!3d-34.6103705!4d-58.4751446!16s%2Fg%2F1td1l5bn!19sChIJ8X84t-TJvJURiVuIqHTsIjo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Gral. José Gervasio Artigas 1840, C1416 AKR, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Fabito Mail",
+          "texto": "Excelente trato y gran cantidad de ofertas.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "José Luis Sanz",
+          "texto": "Respeto, buena atención siempre alertas",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Ruben Notar",
+          "texto": "Excelente atención.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Claudia U",
+          "texto": "Excelente!!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "LA LLAVE INMOBILIARIA",
@@ -384,7 +952,29 @@
       "whatsapp": "https://wa.me/5491146422991",
       "link_maps": "https://www.google.com/maps/place/LA+LLAVE+INMOBILIARIA/data=!4m7!3m6!1s0x95a334b4be7dd8f5:0xcfac6be52c731d66!8m2!3d-34.6299021!4d-58.3705124!16s%2Fg%2F1w97wkcx!19sChIJ9dh9vrQ0o5URZh1zLOVrrM8?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Regimiento de Patricios 34, C1265ADN Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcelo Carlos Cotelo",
+          "texto": "EXCELENTE!!! Esa es la palabra que define la Atención, Acompañamiento y Resultado en la Operación que les solicite. Tanto Christian como Florencia demuestran…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Shirley T",
+          "texto": "Mis padres compraron un depto mediante esta inmobiliaria hace como 26 años, según ellos todo excelente! Me gusta mucho su nombre y logo, muy creativo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rocío Magalí Espina",
+          "texto": "Recomiendo mucho. Atienden con velocidad y dedicación, escuchan necesidades y resuelven cualquier inconveniente. Flor siempre está dispuesta a ayudar.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lautaro Riveiro",
+          "texto": "Agradezco la predisposición y paciencia, me armaron una visita para el mismo día por pedido mío. Muchas gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Francisco Maquieira",
@@ -394,7 +984,29 @@
       "whatsapp": "https://wa.me/5491146026178",
       "link_maps": "https://www.google.com/maps/place/Francisco+Maquieira/data=!4m7!3m6!1s0x95bcc94534b9ad4b:0x7a281f3a893e03b0!8m2!3d-34.6723959!4d-58.4741494!16s%2Fg%2F1v5k46d_!19sChIJS625NEXJvJURsAM-iTofKHo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Aquino 5388, C1439ADR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Fabiana Russo",
+          "texto": "Muy buena atencion y calidad humana",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvia Laila Ghani Omar",
+          "texto": "Excelente Inmobiliaria, muy buena y calidad atención totalmente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolás Arbé",
+          "texto": "Mucho profesionalismo y muy buena gente 👏👏",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Axel Emiliano Iglesias",
+          "texto": "Excelente atención",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Capelletti Negocios Inmobiliarios",
@@ -404,7 +1016,29 @@
       "whatsapp": "https://wa.me/5491146350515",
       "link_maps": "https://www.google.com/maps/place/Capelletti+Negocios+Inmobiliarios/data=!4m7!3m6!1s0x95bcc90b19e21e67:0x463177ea787e40ae!8m2!3d-34.65063!4d-58.4875231!16s%2Fg%2F1th5drt7!19sChIJZx7iGQvJvJURrkB-eOp3MUY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Escalada 1488, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Marian",
+          "texto": "Muy buena atención.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "hector vivar",
+          "texto": "Muy buen servicio y atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "lucia gonzalez",
+          "texto": "Muy buena gente, excelente atención, recomendable 100×100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandra Vivar",
+          "texto": "Excelente atención! Respuesta rápida y efectiva. Los recomiendo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "IRON NEXO",
@@ -414,7 +1048,29 @@
       "whatsapp": "https://wa.me/5491121289800",
       "link_maps": "https://www.google.com/maps/place/IRON+NEXO/data=!4m7!3m6!1s0x95bccbd7c52a2213:0xb62a72d8d0a95c6a!8m2!3d-34.602273!4d-58.4683298!16s%2Fg%2F11pv290kkt!19sChIJEyIqxdfLvJURalyp0NhyKrY?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. S. Martín 3130, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Jonathan Useche",
+          "texto": "Excelente atención. Muy profesional, prolija y siempre disponible para responder cualquier duda. ¡Muchas gracias, Lorena!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Nanzer",
+          "texto": "Excelente experiencia con REMAX IRON. Especial agradecimiento a Sonia Cuesta por su profesionalismo y por su dedicación en todo el proceso. ¡Gracias por todo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Viviana Labella",
+          "texto": "Sonia, una genia! Experiencia, valores, respeto, contención, paciencia... Todo para llegar al objetivo acompañando el proceso con mucha calidez y excelencia…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea Ianni",
+          "texto": "Responsabilidad, constancia y esmero. gracias infinitas por tu trabajo Sonia Cuesta.!!! agente de REMAX.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "A. Zaccardi Propiedades",
@@ -424,7 +1080,29 @@
       "whatsapp": "https://wa.me/5491141763849",
       "link_maps": "https://www.google.com/maps/place/A.+Zaccardi+Propiedades/data=!4m7!3m6!1s0x95bcb648c968538b:0x87e49ee7697a264b!8m2!3d-34.5865552!4d-58.49895!16s%2Fg%2F11bbrmhbts!19sChIJi1NoyUi2vJURSyZ6aeee5Ic?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Vallejos 2735, C1419GIO Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Jimena Olmedo",
+          "texto": "Excelente Atención. Gente de absoluta confianza. Seriedad. Eficacia en resolución de todo tipo de operaciones inmobiliarias. Agilidad absoluta.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvana Z",
+          "texto": "Atención personalizada, acompaña al cliente en todo momento. La responsabilidad y el respeto que brinda, dan absoluta confianza!! Siempre ayudando al cliente 👍👍",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dietética Mi Tierra",
+          "texto": "La atención de Adriana es impecable! Siempre muy amable! Es un lugar de confianza!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "micaela burgos rossi",
+          "texto": "Trabajan muy bien!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "REMAX STAR",
@@ -434,7 +1112,29 @@
       "whatsapp": "https://wa.me/5491156412103",
       "link_maps": "https://www.google.com/maps/place/REMAX+STAR/data=!4m7!3m6!1s0x95bcb777c0be80fb:0xaab39f1209b3a53e!8m2!3d-34.5847964!4d-58.4786455!16s%2Fg%2F11yghg81r5!19sChIJ-4C-wHe3vJURPqWzCRKfs6o?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. de los Incas 4896, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "ana",
+          "texto": "Realicé la operación inmobiliaria con Silvia Vargas, todo perfecto. Silvia súper cálida y disponible para solucionar dudas, lo que permitió que todo se…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lorena Pereira",
+          "texto": "Tuve una buena experiencia con la inmobiliaria. La atención fue cordial, respondieron mis consultas y me acompañaron durante el proceso. Destaco la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luigi Rinaldi",
+          "texto": "Muy buena atención, siempre dan un servicio muy personal y te acompañan. Muy recomendado",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Abril Toledo",
+          "texto": "muy buena atención, te ayudan a despejar dudas y te acompañan en el proceso!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Sáenz Inmobiliaria",
@@ -444,7 +1144,29 @@
       "whatsapp": "https://wa.me/5491149118400",
       "link_maps": "https://www.google.com/maps/place/S%C3%A1enz+Inmobiliaria/data=!4m7!3m6!1s0x95bccbe71f733d61:0xf20f33f3a027fb8d!8m2!3d-34.6475891!4d-58.4160451!16s%2Fg%2F11j0h98f5b!19sChIJYT1zH-fLvJURjfsnoPMzD_I?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Sáenz 688, C1437 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Rita Sabrina Caradonna",
+          "texto": "Excelente servicio y calidad humana. A través de ellos alquilo y estoy super agradecida",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mario Ariel Trotta",
+          "texto": "Exlente lugar muy confiables ,El señor ALEX muy cordial recomendable 100x100",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Isabel Miguez",
+          "texto": "Excelente atención y amabilidad !! Muy recomendable !!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jose Oshiro",
+          "texto": "Excelente trato personalizado!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Luci",
@@ -454,7 +1176,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Luci/data=!4m7!3m6!1s0x95bcc94db0392dcf:0xef61bea4cf2110ce!8m2!3d-34.6812993!4d-58.4766705!16s%2Fg%2F11dxl9jqx8!19sChIJzy05sE3JvJURzhAhz6S-Ye8?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Jose Pablo Torcuato Batlle y Ordoñez 6051-6099, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Adrian C",
+          "texto": "Excelente atención y resuelven todo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Erick Johnatan Maidana Carvajal",
+          "texto": "Excelente atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sandra Nora Fleureau",
+          "texto": "Excelente trato, muy buena predisposicion",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Graciela Agosta",
+          "texto": "Buena presencia, cordialidad, óptimo trabajo!! visitenla!!",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Ing. BERNETTI Propiedades",
@@ -464,7 +1208,29 @@
       "whatsapp": "https://wa.me/5491145741144",
       "link_maps": "https://www.google.com/maps/place/Ing.+BERNETTI+Propiedades/data=!4m7!3m6!1s0x95bcb654d4c1ad19:0x78ffad0ec3272d6c!8m2!3d-34.5766728!4d-58.5086164!16s%2Fg%2F12hl9lr7b!19sChIJGa3B1FS2vJURbC0nww6t_3g?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Albarellos 2777, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Andrea Bolzani",
+          "texto": "Excelente acompañamiento me dio mucha tranquilidad realizar mí operación con ellos Muchísimas gracias !!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Giunti",
+          "texto": "Hicimos nuestra venta con Bernetti y estamos muy satisfechos. Siempre mostraron muy buena predisposición para acompañarnos durante todo el proceso, que fue…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cecilia Mannucci",
+          "texto": "Todo excelente, buena comunicación y predisposición. Hicimos ya dos operaciones con ellos y sin problemas. Los recomiendo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisa Rodeiro",
+          "texto": "Muy recomendable! Alquilamos un departamento. Nos orientaron y acompañaron en todo el proceso. Excelente atención de Pablo, Flor y Carolina.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Calviño Tabuada Propiedades S.R.L",
@@ -474,7 +1240,29 @@
       "whatsapp": "https://wa.me/5491145713005",
       "link_maps": "https://www.google.com/maps/place/Calvi%C3%B1o+Tabuada+Propiedades+S.R.L/data=!4m7!3m6!1s0x95bcb64ec267c0e5:0xba5e8afffb2a6f5e!8m2!3d-34.5857887!4d-58.5010742!16s%2Fg%2F11b6j8zn8t!19sChIJ5cBnwk62vJURXm8q-_-KXro?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Gral. Mosconi 2804, C1419EQU Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejandro Imperiale",
+          "texto": "Excelente inmobiliaria, lo mejor de la zona. Grandes profesionales y destacada atencion por parte de todos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Enrique Prieto",
+          "texto": "Excelente atención y muy buena disposición para solucionar los problemas. Muy recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paola Pascual",
+          "texto": "Excelente atención Vendimos y compramos dos veces. Empáticos , buscan soluciones La experiencia de años, la demuestran en cada operación. Súper recomendables.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ana maria mlekov",
+          "texto": "Excelente atención de la asesora Vanessa y Jorge el dueño, tiene toda la paciencia para sentarse escuchar y conciliar, muy buena combinación de calidez y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ASOCIACIÓN DE MARTILLEROS Y CORREDORES INMOBILIARIOS DE AVELLANEDA",
@@ -484,7 +1272,29 @@
       "whatsapp": "https://wa.me/5491142226841",
       "link_maps": "https://www.google.com/maps/place/ASOCIACI%C3%93N+DE+MARTILLEROS+Y+CORREDORES+INMOBILIARIOS+DE+AVELLANEDA/data=!4m7!3m6!1s0x95a3335272654e8f:0x154aa4ed04f740c5!8m2!3d-34.6625779!4d-58.3674672!16s%2Fg%2F1tdb0wdt!19sChIJj05lclIzo5URxUD3BO2kShU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Manuel Belgrano 522, B1870ARQ Gran Buenos Aires, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Asociación u organización"
+      "categoria": "Asociación u organización",
+      "reseñas_texto": [
+        {
+          "nombre": "Sandra Paula Masini",
+          "texto": "Excelente atención y cordialidad",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stella Vázquez",
+          "texto": "Muy buena atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "dres Venturin",
+          "texto": "Exelente atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "leonardo Romero",
+          "texto": "excelente atención",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "Zerillo Propiedades",
@@ -494,7 +1304,29 @@
       "whatsapp": "https://wa.me/5491163071516",
       "link_maps": "https://www.google.com/maps/place/Zerillo+Propiedades/data=!4m7!3m6!1s0x95bcc97e8b344fef:0x9df798b6a0602899!8m2!3d-34.6453108!4d-58.4664094!16s%2Fg%2F1vlqrd4l!19sChIJ7080i37JvJURmShgoLaY950?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Eva Perón 3609, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Sebastian Acevedo",
+          "texto": "Jose Luis Zerrillo (Bocha) excelente persona y atención hace unos años le compre un departamento a estrenar, muy buena construccion. Volvería a comprar un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Herr",
+          "texto": "Zerillo un caballero, buena gente, hace años colaboró en la construcción de mi casa, cero rollo y todo clarito, como debe ser.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvia Cámera",
+          "texto": "Responsabilidad , buena atención y excelente servicio. Los recomiendo !",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcela Diaz",
+          "texto": "Hola hay algún teléfono alternativo para donde atiendan? Llamo a el teléfono del local y al de Google y nunca me atienden,si alguien lo tiene me lo pasan x…",
+          "estrellas": 2
+        }
+      ]
     },
     {
       "nombre": "General Savio",
@@ -504,7 +1336,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/General+Savio/data=!4m7!3m6!1s0x95bcceaa06a2bd3d:0x50a32e7991673456!8m2!3d-34.6876192!4d-58.4646859!16s%2Fg%2F1234zqjb!19sChIJPb2iBqrOvJURVjRnkXkuo1A?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Cafayate 5290, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Complejo de apartamentos"
+      "categoria": "Complejo de apartamentos",
+      "reseñas_texto": [
+        {
+          "nombre": "Lea Igounet",
+          "texto": "Imponente barrio donde viven 50.000 personas y se compone de casi 130 edificios. Conocido popularmente como Lugano 1 y 2, aunque el barrio se llama Barrio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eduardo Marco Valcoff",
+          "texto": "El Barrio Gral Savio , es un sitio agradable de estar , con muchos rubros diferentes de comercios al alcanse de las necesidades de sus habitantes.Sus…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Doncor",
+          "texto": "Los atardeceres son los más lindos de la ciudad desde este hermoso barrio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stella Maris Lorenzo",
+          "texto": "Hermoso mi barrio pero hay momentos en los que los ruidos son muchos, compradores de puertas, ventanas, muebles aturden con los parlantes a cualquier hora, el…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Re/Max Nativo",
@@ -514,7 +1368,29 @@
       "whatsapp": "https://wa.me/5491121421071",
       "link_maps": "https://www.google.com/maps/place/Re%2FMax+Nativo/data=!4m7!3m6!1s0x95bcca546395fba3:0x7a640044f3661781!8m2!3d-34.6262159!4d-58.4225598!16s%2Fg%2F11flt321xt!19sChIJo_uVY1TKvJURgRdm80QAZHo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. San Juan 4081, C1233ABX Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Micaela Cantero",
+          "texto": "Nuestra experiencia con Lucas Torterola fue espectacular. Siempre dando los mejores consejos y preocupándose por la familia. Hizo que nuestro proceso de compra…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Federico Bergantiños",
+          "texto": "Lucas Torterola me vendió el departamento en poco más de dos meses: empezamos a principios de agosto y a principios de octubre ya teníamos la seña. Fue muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "martin izuel",
+          "texto": "Excelente mi experiencia. Vendí mi casa con Hernán Terán. Un fuera de serie, un ser excepcional. Desde el primer dia fue claro y preciso, super profesional…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agustin Sureda",
+          "texto": "Excelente servicio por parte de Jonathan de Remax Nativo. Tuve un caso algo particular donde al final no se pudo concretar la operación por una cuestión…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lenoci Francisco",
@@ -524,7 +1400,29 @@
       "whatsapp": "https://wa.me/5491145842523",
       "link_maps": "https://www.google.com/maps/place/Lenoci+Francisco/data=!4m7!3m6!1s0x95bcc9fea03b4fd7:0xef6ba0c9c1384884!8m2!3d-34.6062508!4d-58.4686761!16s%2Fg%2F1tdcn4h_!19sChIJ1087oP7JvJURhEg4wcmga-8?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Camarones 1935, C1416 ECK, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Sabri Luna",
+          "texto": "Tuve mi primer alquiler con ellos y me acompañaron y asesoraron con todos los papeles y procedimientos, antes durante y después de mi contrato. Atendido por…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vanesa Raña",
+          "texto": "Hace años que trabajo con ellos y su gestion siempre fue muy buena. Todos los problemas que tuve me los han resuelto y son muy confiables.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Alberto Soriano",
+          "texto": "Esta \"inmobiliaria\", administrada por un tal Gilio debe ranquear como la peor y menos responsable de La Paternal. Cero profesionalismo. Se lavan las manos ni…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "victor Camelo",
+          "texto": "en este lugar, me entregaron un departamento cochino, lo pinté, pagué cumplido, y me hicieron esperar dos meses para que me dieran el depósito, se cumplieron…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Grupo Mega Op Villa Pueyrredon",
@@ -534,7 +1432,29 @@
       "whatsapp": "https://wa.me/5491145721104",
       "link_maps": "https://www.google.com/maps/place/Grupo+Mega+Op+Villa+Pueyrredon/data=!4m7!3m6!1s0x95bcb6457a4ba77d:0x40e01a73315f2525!8m2!3d-34.5827243!4d-58.4967521!16s%2Fg%2F11b6j98p11!19sChIJfadLekW2vJURJSVfMXMa4EA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Gral. Mosconi 2403, C1419 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "verónica Czarnecki",
+          "texto": "Gente excelente! Son muy profesionales. Realice una operación con ellos, todo fue mejor de lo que esperaba en cuanto a los tiempos, comisión y precio, quedé…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agostina Rodríguez",
+          "texto": "Soy inquilina desde hace casi dos años y siempre me sentí acompañada. Beti, Martín y Yesi unos genios, siempre re bien predispuestos para ayudarte y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Czarnecki",
+          "texto": "Gracias Grupo Omega por vender mi departamento a pesar de que no tenía gas y tan rápido. Todo claro y muy profesional. Sin duda la proxima iperacion será con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Kniznik",
+          "texto": "Para recomendar. Muy atentos y pendientes de todo, acompañando el proceso y cada situación que fue surgiendo. Tanto Martín con su experiencia como Jesica super…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Complejo Villa Soldati",
@@ -544,7 +1464,8 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Complejo+Villa+Soldati/@-34.6670348,-58.4443796,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccbee00c94313:0xe39d9ddb142f1c1d!8m2!3d-34.6670348!4d-58.4443796!16s%2Fg%2F11hckh_wp0?hl=es&entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D",
       "direccion": "Corrales 3400, C1437 Cdad. Autónoma de Buenos Aires, Provincia de Buenos Aires, Argentina",
-      "categoria": "Condominio"
+      "categoria": "Condominio",
+      "reseñas_texto": []
     },
     {
       "nombre": "TASSINARI INMOBILIARIA",
@@ -554,7 +1475,29 @@
       "whatsapp": "https://wa.me/5491144322079",
       "link_maps": "https://www.google.com/maps/place/TASSINARI+INMOBILIARIA/data=!4m7!3m6!1s0x95bcca345adf3f65:0x8dc82a69fb2f67!8m2!3d-34.6321626!4d-58.4438864!16s%2Fg%2F11b72fk81k!19sChIJZT_fWjTKvJURZy_7aSrIjQA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Eva Perón 1321, C1406HMB Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "balthazar rodriguez",
+          "texto": "quiero destacar especialmente la excelente atención y el compromiso de la Sra. Ana María, quien siempre se mostró muy atenta, responsable y predispuesta a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "marcela morelli",
+          "texto": "Comenzaron a administrar nuestro edificio de 15 departamentos a fines de mayo, con siete propietarios con deudas elevadas para agosto gracias a sus gestiones…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lautaro Bisman",
+          "texto": "La gestion es excelente. Cumplen en tiempo y forma con lo acordado. Siempre que tuve alguna duda o consulta me la resolvieron al instante. La señora Ana es muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Meta Suela",
+          "texto": "Quiero destacar el excelente trabajo de la administración del consorcio Tassinari. Desde que están a cargo se nota un cambio total: son súper responsables…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "ESTILO PROPIEDADES",
@@ -564,7 +1507,29 @@
       "whatsapp": "https://wa.me/5491144336339",
       "link_maps": "https://www.google.com/maps/place/ESTILO+PROPIEDADES/data=!4m7!3m6!1s0x95bcca34387e1af5:0xc572f48cb36d644d!8m2!3d-34.6320683!4d-58.4448712!16s%2Fg%2F11b6qy46bm!19sChIJ9Rp-ODTKvJURTWRts4z0csU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Baldomero Fernández Moreno 1292, C1406 C1406HHC, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Esteban Bogani",
+          "texto": "Mi experiencia con el equipo de la empresa fue muy buena y logramos resolver satisfactoriamente una operación de compra venta.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Ximena Pereyra",
+          "texto": "Agradezco a Luciano la empatía, buena onda, predisposición, profesionalismo, compromiso y excelente atención que nos brindo en una operación inmobiliaria. No…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis XXX",
+          "texto": "Cuando se habla el mismo idioma se hace todo muy sencillo. Cuando prima la seriedad, el sentido común, la buena predisposición y la cordialidad la operación a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Facundo Vidal",
+          "texto": "Deberían reveer sus formas de gestión. El último contrato que realicé con ellos terminó en juicio de desalojo porque el inquilino no respetó el plazo…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Malito hnos. Suc. Laguna",
@@ -574,7 +1539,29 @@
       "whatsapp": "https://wa.me/5491146728601",
       "link_maps": "https://www.google.com/maps/place/Malito+hnos.+Suc.+Laguna/data=!4m7!3m6!1s0x95bcc97969b247ef:0x7d71ce4c23bc2809!8m2!3d-34.6471552!4d-58.4701619!16s%2Fg%2F11b7q6q1mb!19sChIJ70eyaXnJvJURCSi8I0zOcX0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Laguna 1390, C1407JVV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "candela fernández",
+          "texto": "Compramos nuestra casa con el asesoramiento de Orlando y no podemos estar más felices del lugar donde estamos. Además, siempre se mostraron muy responsables…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Salinardi",
+          "texto": "Sergio,Orlando,Graciela,queria agradecerles por la paciencia, dedicacion y profesionalismo al intervenir en la venta de la casa de mis padres, poniendo por…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ariel Martinez",
+          "texto": "Muy profesional y buena atención.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Diego Sanmartín",
+          "texto": "Mi pareja les dió en alquiler su departamento. Cero revisión trimestral o semestral del uso de las instalaciones. La historia terminó con inquilinos salvajes…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "COSTABILE Marketing Inmobiliario",
@@ -584,7 +1571,29 @@
       "whatsapp": "https://wa.me/5491142226222",
       "link_maps": "https://www.google.com/maps/place/COSTABILE+Marketing+Inmobiliario/data=!4m7!3m6!1s0x95a3334f70b60e7f:0x4e4ccaebc1d034b8!8m2!3d-34.6640336!4d-58.3607543!16s%2Fg%2F1tjz4k9d!19sChIJfw62cE8zo5URuDTQwevKTE4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "CUB, 12 de Octubre 55, B1870 Avellaneda, Provincia de Buenos Aires, Argentina",
-      "categoria": "Planificador financiero"
+      "categoria": "Planificador financiero",
+      "reseñas_texto": [
+        {
+          "nombre": "Guillee Gondar",
+          "texto": "excelente atención y paciencia para ayudarme a encontrar lo que buscaba.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniel Roberto Díaz",
+          "texto": "excelente atención, tanto Carlos cisnero que me tuvo la amabilidad de mostrarme los 4 departamentos y contarme en detalle de cada una de las expensas, los…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Damian Buriano",
+          "texto": "Los dos asesores de venta unos genios tanto Ricardo y Carlos Cisnero que ayudaron en todas mi pregunta siendo la primera vez que alquiló, mis felicitaciones…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "SPIQyP PRENSA",
+          "texto": "La verdad un trato muy cordial y una atencion tan porfesional, que pudimos concretar con la venta",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "INMOBILIARIA SALVADOR DENGRA",
@@ -594,7 +1603,29 @@
       "whatsapp": "https://wa.me/5491146042563",
       "link_maps": "https://www.google.com/maps/place/INMOBILIARIA+SALVADOR+DENGRA/data=!4m7!3m6!1s0x95bcceafa080655f:0x35b45d93fd36658a!8m2!3d-34.6916396!4d-58.4714532!16s%2Fg%2F1tqtz1sx!19sChIJX2WAoK_OvJURimU2_ZNdtDU?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Guaminí 5380, C1439CWP Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Cuenta",
+          "texto": "Me atendieron de manera excelente. Pude comprar mi casa nueva. Gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carina ale",
+          "texto": "Buenas tardes, consultas y hay abogados también,y yo recuerdo q a mí mamá, le hicieron la jubilación y se q había algo más de inmobiliaria...puede ser? Y quedó…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Samsung",
+          "texto": "Excelente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandra Fernández",
+          "texto": "Tengan cuidado. Este flaco no tiene reparo en meterte en tremendo problema con tal de cobrar su comisión (por mas que vos despues te quede una miseria)…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Lorenzo Propiedades",
@@ -604,7 +1635,29 @@
       "whatsapp": "https://wa.me/5491146001186",
       "link_maps": "https://www.google.com/maps/place/Lorenzo+Propiedades/data=!4m7!3m6!1s0x95bccb07e922691d:0xec7f97446e3c836!8m2!3d-34.6364182!4d-58.4160448!16s%2Fg%2F1q62gd27t!19sChIJHWki6QfLvJURNsjjRnT5xw4?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Boedo 1924, C1239 AAW, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Tati Bogado",
+          "texto": "Es muy buena la atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nahuel Campanario",
+          "texto": "Excelente atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Szaingurten",
+          "texto": "Excelente lugar para pagar expensas... 😂😂😂",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Norberto Lorenzo",
+          "texto": "Excelente atención, verdaderos profesionales",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Mariano Acosta y Ana María Janer",
@@ -614,7 +1667,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Mariano+Acosta+y+Ana+Mar%C3%ADa+Janer/data=!4m7!3m6!1s0x95bccb44dbb85edd:0x6aa1e0fdf3c396df!8m2!3d-34.6597295!4d-58.4498134!16s%2Fg%2F11jt8f53ft!19sChIJ3V6420TLvJUR35bD8_3goWo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Avenida Mariano Acosta, C. Ana Maria Janer &, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Villa"
+      "categoria": "Villa",
+      "reseñas_texto": [
+        {
+          "nombre": "Omar Gómez",
+          "texto": "Lugar con mucho espacio ,predio con canchas de futbol varios, conocido como predio de la armada, acompaño a mis hijos al entrenamiento con DEPORTIVO RIESTRA.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "raul jorge",
+          "texto": "Janner tengria q ser mano unica",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Abraham Orellana acosta",
+          "texto": "Tranki el barrio PERO COCODRILO QUE DUERME CARTERA SERA !!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcela Cabrera",
+          "texto": "Inseguro,muy difícil estacionar y si lo lográs es con altas chances de encontrarte el auto chocado ya que circulan a mucha velocidad.No hay presencia policial.",
+          "estrellas": 3
+        }
+      ]
     },
     {
       "nombre": "MC Propiedades",
@@ -624,7 +1699,29 @@
       "whatsapp": "https://wa.me/5491170151932",
       "link_maps": "https://www.google.com/maps/place/MC+Propiedades/data=!4m7!3m6!1s0x95bccb080ac5f8fb:0x6563167fd6529c21!8m2!3d-34.63713!4d-58.415948!16s%2Fg%2F11bbrld3g8!19sChIJ-_jFCgjLvJURIZxS1n8WY2U?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Chiclana 3691, C1262 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Santiago Ascúa",
+          "texto": "Super conforme, alquilamos a traves de su gestion y siempre nos sentimos muy comodos. Gente muy amable que hacen mas ameno estos tramites que suelen ser…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Marcelo Lage",
+          "texto": "Excelente inmobiliaria me vendieron el depto en 3 meses y sobretodo Daniel Marquez no solo una excelente persona tanto en lo profesional sino sobretodo en lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Jose Cesare",
+          "texto": "Pactamos un Dia y horario para la visita de un depto. y nunca aparecio nadie, cuando llamamos nos dijo que era otro el precio del publicado y que si queriamos…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "logistica01 liberal",
+          "texto": "Visite el 03/01/2026 un depto.en calle colombres al1700 en alquiler.me solicitaron si o si respaldar(lo cual me condociono)Teniendo garantía más que…",
+          "estrellas": 3
+        }
+      ]
     },
     {
       "nombre": "PROVILAR Inmobiliaria",
@@ -634,7 +1731,29 @@
       "whatsapp": "https://wa.me/5491149240392",
       "link_maps": "https://www.google.com/maps/place/PROVILAR+Inmobiliaria/data=!4m7!3m6!1s0x95bccbb5403d430f:0x6fcb33e1bba21876!8m2!3d-34.6350763!4d-58.4388168!16s%2Fg%2F11b6ywqphz!19sChIJD0M9QLXLvJURdhiiu-Ezy28?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Asamblea 999, C1424COK Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Ema Gonzalez",
+          "texto": "Uno se siente en un lugar familiar x la forma de atender del personal",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo A. NUBLE operaciones inmobiliarias",
+          "texto": "Excelencia en el rubro inmobiliario...calidad y servicio al 100 %",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ague Camino",
+          "texto": "Excelente atención!!!!",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Fernando BOND",
+          "texto": "Tengan cuidado que a veces alquilan cosas que no les corresponden y no se hacen cargo!!! Un desastre esta inmobiliaria, se nota que no está más el creador de…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Complejo Habitacional Soldati",
@@ -644,7 +1763,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Complejo+Habitacional+Soldati/data=!4m7!3m6!1s0x95bccb004fefea4d:0xbde3caddeb3fbf5a!8m2!3d-34.6632101!4d-58.4428908!16s%2Fg%2F11yp47hgw3!19sChIJTervTwDLvJURWr8_693K470?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Rodrigo de Triana 3700, C1437GBF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Complejo de apartamentos"
+      "categoria": "Complejo de apartamentos",
+      "reseñas_texto": [
+        {
+          "nombre": "LALITO",
+          "texto": "LOS PIBES SON LO MEJOR",
+          "estrellas": 4
+        }
+      ]
     },
     {
       "nombre": "SORIANO Propiedades",
@@ -654,7 +1780,29 @@
       "whatsapp": "https://wa.me/5491144319150",
       "link_maps": "https://www.google.com/maps/place/SORIANO+Propiedades/data=!4m7!3m6!1s0x95bcca31a3e8f991:0xea89da7e882bee9c!8m2!3d-34.6303591!4d-58.4491553!16s%2Fg%2F11b732g4t4!19sChIJkfnoozHKvJURnO4riH7aieo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Directorio 1600, C1406GZR Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Santiago Ñañez",
+          "texto": "muy buena inmobiliaria, la verdad un olacer hacer negocios con una persona tan amable y gentil como miguel",
+          "estrellas": 5
+        },
+        {
+          "nombre": "diego piangerelli",
+          "texto": "Muy buena atencion",
+          "estrellas": 5
+        },
+        {
+          "nombre": "emiliano lucero",
+          "texto": "Muy buen servicio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mica Fernandez",
+          "texto": "En esta inmobiliaria estafan gente, tengan cuidado, los atiende \"miguel soriano\" que no es matriculado y la matriculada jamás aparece, no cumplen con la ley de…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Noya",
@@ -664,7 +1812,29 @@
       "whatsapp": "https://wa.me/5491146010508",
       "link_maps": "https://www.google.com/maps/place/Noya/data=!4m7!3m6!1s0x95bcceb296a559a7:0xf934688a5f0fefe0!8m2!3d-34.6857483!4d-58.4755946!16s%2Fg%2F11b6sy002r!19sChIJp1mllrLOvJUR4O8PX4poNPk?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Coronel Martiniano Chilavert 6379, C1439CLW Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Consultor inmobiliario"
+      "categoria": "Consultor inmobiliario",
+      "reseñas_texto": [
+        {
+          "nombre": "laura del mar",
+          "texto": "Es una estafa!!! Nos destruyeron el dto y la inmobiliaria nunca intervino en nada, tampoco informaron las deudas .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Guanca",
+          "texto": "Buena atención x parte de los dueños",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mirta Ghiso",
+          "texto": "Me consiguió alquiler de inmediato",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura del mar",
+          "texto": "Estoy espetando que la inmoviliaria Noya Hnos responda a todos los inconvenientes que me trajo el inquilino.",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "HIMALAYA Propiedades",
@@ -674,7 +1844,29 @@
       "whatsapp": "https://wa.me/5491133384211",
       "link_maps": "https://www.google.com/maps/place/HIMALAYA+Propiedades/data=!4m7!3m6!1s0x95bccbb54c075eb1:0x8a5cdc008d5b689e!8m2!3d-34.6342923!4d-58.4391358!16s%2Fg%2F1tdbgmlc!19sChIJsV4HTLXLvJURnmhbjQDcXIo?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Salas 876, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Berta Beatriz Perez",
+          "texto": "Muy conforme con la atencion honestidad y acesoramiento de Silvia y de Pochi son muy profecionales ,estan en cada detalle les recomiendo HIMALAYA",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Franco Eiriz",
+          "texto": "Acudí acá porque un amigo había alquilado con ellos y la verdad que me trataron muy bien desde el primer momento. Recomiendo 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sebastian Rodriguez",
+          "texto": "Excelente experiencia. Muy dispuestos, serios y correctos. Me ayudaron en todo el proceso, que salió maravillosamente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariano Monteagudo",
+          "texto": "La peor experiencia, alquilamos la casa por medio de esta inmobiliaria, al retirarse los inquilinos nos habían destruido la casa, la inmobiliaria se lavó las…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Conjunto Soldati",
@@ -684,7 +1876,29 @@
       "whatsapp": "https://wa.me/5491141658998",
       "link_maps": "https://www.google.com/maps/place/Conjunto+Soldati/data=!4m7!3m6!1s0x95bccbf21631f66d:0x7f39e7bfc2e88b0a!8m2!3d-34.6661888!4d-58.44516!16s%2Fg%2F1q5bn9y7w!19sChIJbfYxFvLLvJURCovowr_nOX8?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMi4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Corrales 3420, C1437 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Urbanización"
+      "categoria": "Urbanización",
+      "reseñas_texto": [
+        {
+          "nombre": "Cristian Blanco",
+          "texto": "Me encanta como iluminan de azul la torre del Parque de la Ciudad!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marce",
+          "texto": "El mejor parque que teníamos en la zona sur de la capital . Lástima que se los dieron a los dueños de los recitales para que hagan lo que quieran !. Hay tanto…",
+          "estrellas": 2
+        },
+        {
+          "nombre": "PATRICIO Acuña",
+          "texto": "Es un barrio de edificios una mini ciudad en sí misma poca seguridad mucho abandono no recomendable ir sin conocer y mucho menos de noche",
+          "estrellas": 2
+        },
+        {
+          "nombre": "Mauro R.",
+          "texto": "Hace años vivo acá, reconozco que ha mejorado bastante: es más seguro, han pintado las fachadas de los edificios y han hecho espacios verdes para las familias…",
+          "estrellas": 3
+        }
+      ]
     },
     {
       "nombre": "Inmobiliarios Piñeiro & Puy",
@@ -694,7 +1908,29 @@
       "whatsapp": "https://wa.me/5491145218308",
       "link_maps": "https://www.google.com/maps/place/Inmobiliarios+Pi%C3%B1eiro+%26+Puy/data=!4m7!3m6!1s0x95bcb6732fe7a1db:0xb83c4ee2cc36caa4!8m2!3d-34.5827345!4d-58.4710042!16s%2Fg%2F1tdbxyt_!19sChIJ26HnL3O2vJURpMo2zOJOPLg?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Triunvirato 3502, C1427 AAW, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Lian Simean",
+          "texto": "En mi experiencia como inquilino solo tengo buenos comentarios. Siempre que me comuniqué con Mabel por consultas sobre el contrato me respondió de manera clara.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leandro Borre",
+          "texto": "Pésima experiencia y atención. Nos alquilaron un PH que,a pesar de la lavada de cara con pintura que tenía, enseguida se notó la falta de mantenimiento y…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Y M",
+          "texto": "Totalmente nefasta, no la recomiendo para nada, los llamaría estafadores en todo su esplendor, te hacen contratos prácticamente falsos, alquile un depto…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Diego Martin Paladino Madonna",
+          "texto": "La peor inmobiliaria que puede existir, mala gente la que atiende y peor los propietarios con los que trabajan, te alquilan algo que saben que tienen un…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Bentancur Inmobiliara",
@@ -704,7 +1940,29 @@
       "whatsapp": "https://wa.me/5491146721510",
       "link_maps": "https://www.google.com/maps/place/Bentancur+Inmobiliara/data=!4m7!3m6!1s0x95bcc99b8658c7cd:0x1e88402660c6fef!8m2!3d-34.6398324!4d-58.4778262!16s%2Fg%2F11gccfckqz!19sChIJzcdYhpvJvJUR728MZgKE6AE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Directorio 3823, C1407HFF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Bedrossian",
+          "texto": "Excelente atención muy buena gente sensible y educada.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hector Reyna",
+          "texto": "Muy atentos, puntualidad muy profesional",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Paladini",
+          "texto": "Pésima, la peor inmobiliaria de Buenos Aires, la Sra Silvia no sabe mediar entre vendedor y comprador con tal de ganarse la comisión. Además de dejar que…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Greta Lopez",
+          "texto": "Terroríficos. Muy mala experiencia",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Diego Vaudagna Propiedades",
@@ -714,7 +1972,29 @@
       "whatsapp": "https://wa.me/5491141971146",
       "link_maps": "https://www.google.com/maps/place/Diego+Vaudagna+Propiedades/data=!4m7!3m6!1s0x95a334b9d36efca9:0xd324520c4a64fdb1!8m2!3d-34.6340848!4d-58.360708!16s%2Fg%2F1hc7_gxj1!19sChIJqfxu07k0o5URsf1kSgxSJNM?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Pinzón 460, C1161ACJ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Empresa de administración de propiedades"
+      "categoria": "Empresa de administración de propiedades",
+      "reseñas_texto": [
+        {
+          "nombre": "Leonel Sivila",
+          "texto": "La verdad muy conforme recomendable trabajos serios con garantías siempre pensando en lo mejores servicio a prestar, disponibilidad absoluta exelente desempeño",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Chuny",
+          "texto": "Muy buena disposición ante los problemas, se intenta siempre la mejora del edificio. También linda atención en la oficina.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mario Ramos",
+          "texto": "Excelente atención y solución de problemas. Hay una gran disposición e interés en el consorcio mio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leonardo Berdullas",
+          "texto": "Muy dedicado a su trabajo, super responsable y excelente persona.Muy recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "MIB Propiedades",
@@ -724,7 +2004,29 @@
       "whatsapp": "https://wa.me/5491143004580",
       "link_maps": "https://www.google.com/maps/place/MIB+Propiedades/data=!4m7!3m6!1s0x95bccb336e2a75c1:0xf0454a27523eedaa!8m2!3d-34.6293147!4d-58.3738119!16s%2Fg%2F11b6d08fjg!19sChIJwXUqbjPLvJURqu0-UidKRfA?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Piedras 1772, C1140ABL Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Nicolas Rotmistrovsky",
+          "texto": "Excelente experiencia con la inmobiliaria. Me asesoraron muy bien durante todo el proceso, siempre con una atención cálida, profesional y de confianza. Se nota…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eduardo Gil",
+          "texto": "Personal amable y dedicado a resolver tus necesidades inmobiliarias. Una familia con muchísima experiencia en el rubro qué te puedo sugerir al momento de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Xian Paz",
+          "texto": "Son muy serios y ecuanimes para con los propietarios e inquilinos. Conocen a fondo las responsabilidades de los consorcios o administradores y las leyes que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hernan Ñanco",
+          "texto": "La atención de la Se. Isabel deja mucho que desear. Me perdió la documentación antes de la firma del contrato y la tuve que llevar dos veces. PORQUE ELLA LA…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "PINTOS Hnos.",
@@ -734,7 +2036,29 @@
       "whatsapp": "https://wa.me/5491149113740",
       "link_maps": "https://www.google.com/maps/place/PINTOS+Hnos./data=!4m7!3m6!1s0x95bccb0b1d51a599:0x5b5853f6d6fa4c5d!8m2!3d-34.6450353!4d-58.414342!16s%2Fg%2F11b75hzt7z!19sChIJmaVRHQvLvJURXUz61vZTWFs?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Almafuerte 637, C1437JLG Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "Ivana Bosanova",
+          "texto": "Muy buena atención y compromiso , impecable!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jesús Marques",
+          "texto": "Muy! Amables al momento de brindarte la información!! Que buscas!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica Leyes",
+          "texto": "Nunca atienden el teléfono",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Hugo Héctor Cipriotti",
+          "texto": "No atiende no contesta",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "BARLOTTI",
@@ -744,7 +2068,29 @@
       "whatsapp": "https://wa.me/5491146836695",
       "link_maps": "https://www.google.com/maps/place/BARLOTTI/data=!4m7!3m6!1s0x95bcc9a5d7ea5631:0x51c18241bf4e63e6!8m2!3d-34.6449133!4d-58.4944824!16s%2Fg%2F1tfxhwl7!19sChIJMVbq16XJvJUR5mNOv0GCwVE?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Bruix 4889, C1407ILA Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Gladys Cristina Campo",
+          "texto": "Muy buena atención y compromiso con su trabajo. Son confiables !!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tino Montanaro",
+          "texto": "Buena atención. Y esmero ..",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natalia Ayala",
+          "texto": "Un desastre, es increíble el destrato con los inquilinos. Tenes que perseguirlos para que te cobren, todo en negro. Vas a pagar y te miran con asco, como si te…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Penelope Parada",
+          "texto": "Tengo un conocido que alquilo una habitación en la calle remedios. Que la alquilan ellos. TODO ILEGAL. Te hacen pagar unicamente en efectivo, aumentan cada 2…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Ingratta Propiedades",
@@ -754,7 +2100,29 @@
       "whatsapp": "https://wa.me/5491146722222",
       "link_maps": "https://www.google.com/maps/place/Ingratta+Propiedades/data=!4m7!3m6!1s0x95bcc9959cc3035b:0x54e4092037e58c08!8m2!3d-34.630009!4d-58.485058!16s%2Fg%2F1xn_pl17!19sChIJWwPDnJXJvJURCIzlNyAJ5FQ?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Avellaneda 4010, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agencia inmobiliaria"
+      "categoria": "Agencia inmobiliaria",
+      "reseñas_texto": [
+        {
+          "nombre": "Gisela Bartolome",
+          "texto": "Para nada recomendable . Cero seguimiento ? Comisión engañosa y además un trato totalmente fuera de lugar . Lamento mucho que el vendedor y nosotros hayamos…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Eva Avila",
+          "texto": "Me comunique el viernes por una visita el día sábado 1/6, quedo el Sr José Luis comunicarse y nunca lo hizo. Deje mensaje el lunes y hoy vuelvo a llamar…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Miranda Batto",
+          "texto": "Pesima atencion, muy desubicado. Jose mi familia compro una casa con tu inmobiliaria y te comportaste de forma complemante inadecuada, sin ningun tipo de…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Gabriel Castaño",
+          "texto": "Nos gustaba el departamento y lo reservamos. A la hora de firmar el contrato estuvimos en desacuerdo en muchas de las cláusulas, con muchas condiciones…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "CARAL PROPIEDADES",
@@ -764,7 +2132,29 @@
       "whatsapp": "https://wa.me/5491145219707",
       "link_maps": "https://www.google.com/maps/place/CARAL+PROPIEDADES/data=!4m7!3m6!1s0x95bcb66d755bfd85:0xc270e21f4bf61fde!8m2!3d-34.582131!4d-58.4757476!16s%2Fg%2F11b6sykj3c!19sChIJhf1bdW22vJUR3h_2Sx_icMI?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. de los Incas 4613, C1427DNL Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "miilu smiile",
+          "texto": "Buena atención. De las inmobiliarias de la zona, me dieron una mano enorme. Alejandro y las empleadas me ayudaron a encontrar lo que necesitaba",
+          "estrellas": 5
+        },
+        {
+          "nombre": "melanie sanchez",
+          "texto": "Estafadores, te entregan un depto en pésimas condiciones y pretenden que se lo arregles al entrégarlo. Me tuve que mudar porque se me llenó de humedad a los 6…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Chufla Cachuna",
+          "texto": "Te atienden mal, no te informan adecuadamente, te tratan todo el tiempo peor que si te estuvieran haciendo un favor, cuando son sólo intermediarios. No aceptan…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Sebastian Mallo",
+          "texto": "Me ofrecieron una cochera en alquiler y me tuvieron 10 días dando vueltas que no sabían cuál era el piso y el número de la cochera. Empezó el mes y aún no me…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "CL",
@@ -774,7 +2164,29 @@
       "whatsapp": "https://wa.me/5491146389000",
       "link_maps": "https://www.google.com/maps/place/CL/data=!4m7!3m6!1s0x95bcc94e319a5dc1:0xa3aa7b98f9b16f98!8m2!3d-34.6770285!4d-58.4752943!16s%2Fg%2F11b6xch3hy!19sChIJwV2aMU7JvJURmG-x-Zh7qqM?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Riestra 5699, C1439 BYH, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "María Candela Guzmán",
+          "texto": "UN DESASTRE, no contestan, no responden, y cuando logré que me atiendan UN TRATO PÉSIMO, esta gente NO TRABAJA DE ESTO, lo que dicen las demás reseñas malas es…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "NasserS Simanca",
+          "texto": "Son unos estafadores dejas todo bien a la hora de retirarte y después te dan mil vueltas para no darte tu deposito casi 3 meses para devolver el deposito y lo…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Laura Camila Galindo Forero",
+          "texto": "Son unos estafadores! No alquilen con ellos. No regresan el dinero del depósito aún así dejes el dpto impecable. Que lastima que no se puede dar 0 estrella",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Pamela Aguirrez",
+          "texto": "No me puedo comunicar, fui varias veces personalemnt pero parec q no atienden... pondria las estrellas q corresponda ni bien puede tener su asesoramiento…",
+          "estrellas": 1
+        }
+      ]
     },
     {
       "nombre": "Acción",
@@ -784,7 +2196,29 @@
       "whatsapp": "https://wa.me/5491130087881",
       "link_maps": "https://www.google.com/maps/place/Acci%C3%B3n/data=!4m7!3m6!1s0x95bcceafae31c929:0x4d1dbb57d6ffec81!8m2!3d-34.6912851!4d-58.4722856!16s%2Fg%2F1hc388n66!19sChIJKckxrq_OvJURgez_1le7HU0?authuser=0&hl=es&g_ep=EgoyMDI2MTEwMS4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Guaminí 5325, C1439HAQ Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Agentes inmobiliarios"
+      "categoria": "Agentes inmobiliarios",
+      "reseñas_texto": [
+        {
+          "nombre": "florencia perez",
+          "texto": "Pésima atención al inquilino. Te tratan como si te estuvieran haciendo un favor. No informan con anterioridad montos a abonar/aumentos, tenes que escribirle…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "German Blanco",
+          "texto": "No recomendable, para nada.",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Sebastian Diaz",
+          "texto": "Pésima atención, trata al aquilino como si no fuera un ser humano. Solo lo ve como a alguien sin derechos al que solo se le tiene que sacar más y más dinero…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Micaela Marmol",
+          "texto": "¡NO RECOMIENDO! Malos tratos. Faltan el respeto",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }

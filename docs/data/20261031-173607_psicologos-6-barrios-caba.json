@@ -14,7 +14,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lic.+en+Psicolog%C3%ADa+Camila+Paula+Nachman/data=!4m7!3m6!1s0x95bccb785b1fcd67:0x44d1804d3f48c8d4!8m2!3d-34.5970267!4d-58.3783283!16s%2Fg%2F11krgypzx7!19sChIJZ80fW3jLvJUR1MhIP02A0UQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Esmeralda 961, C1007 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de salud mental"
+      "categoria": "Servicio de salud mental",
+      "reseñas_texto": [
+        {
+          "nombre": "Majo Echeverría G",
+          "texto": "Camila es una persona muy amable y atenta que realmente escucha y comprende. Me siento muy cómoda hablando con ella y siento que me entiende de verdad. En…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sebas Perez",
+          "texto": "La atención de Camila es excelente, hice terapia con ella por más de un año y de verdad que me ayudo muchísimo, pude tener herramientas que al día de hoy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Iliana Tognola",
+          "texto": "Excelente profesional Camila! Fue de mucha ayuda para mi. Gracias por tu dedicación, se nota lo mucho que amas tu profesión.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pilar Livorzi",
+          "texto": "Muy buena profesional, confío mucho en su trabajo. Mas allá del tratamiento, logra mantener un vinculo lindo de empatia psicologo-paciente, en mi opinión…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Psicológico",
@@ -24,7 +46,29 @@
       "whatsapp": "https://wa.me/5491153489107",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Psicol%C3%B3gico/data=!4m7!3m6!1s0x95bccb2621e9027b:0xece1efa623fec24b!8m2!3d-34.6146922!4d-58.4160926!16s%2Fg%2F11pwctwhp0!19sChIJewLpISbLvJURS8L-I6bv4ew?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Maza 317, C1206 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Mariana Ruffalo",
+          "texto": "Desde el primer encuentro me hizo sentir muy cómoda. Muy profesional y muy cercana a la vez. Tiene una forma muy cálida de acompañar, gracias a este espacio…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Junta Interna Fuerza Aérea ATE",
+          "texto": "Gran profesional, nunca había hecho terapia y gracias a Valeria supe q es un gran complemento en la vida diaria Su parte humana inigualable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Liliana Barbudez",
+          "texto": "Un espacio cálido y sobre todo profesional y buen trato!! Excelente atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Damian Cipollino",
+          "texto": "Me siento muy cómodo en la terapia, Valeria sabe puntualmente lo que necesito para mí tratamiento.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. en Psicología Nicolas Ochi",
@@ -34,7 +78,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lic.+en+Psicolog%C3%ADa+Nicolas+Ochi/data=!4m7!3m6!1s0x95bccbc7eb24590b:0x87984ed0f944b474!8m2!3d-34.5981706!4d-58.4069293!16s%2Fg%2F11xgqzrngg!19sChIJC1kk68fLvJURdLRE-dBOmIc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Córdoba 2812, C1187 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Giuliana Mailen Perlini",
+          "texto": "Tengo la fortuna de haber coincidido con este gran profesional. Nico es sensible, atento y escucha desde el amor al otro. Apasionado por su profesión, está…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica Negreira",
+          "texto": "Algo en su mirada te hace sentirte comodo y seguro de querer abrirle tu mundo. Leyendo las reseñas me doy cuenta de que somos muchos los que pensamos lo mismo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Cores",
+          "texto": "No hay reseña que alcance para describir lo importante y valioso que es el espacio de terapia, que es propio y subjetivo de cada uno. Empezar a trabajar con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sofia VILLELLA",
+          "texto": "Nico es un increible terapeuta. Comprometido con su formacion profesional como personal. Es capaz de transmitir paz con su presencia y con pocas palabras…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicólogo UBA - Clínico y comunitario",
@@ -44,7 +110,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3logo+UBA+-+Cl%C3%ADnico+y+comunitario/data=!4m7!3m6!1s0x95bccb620e8a8dab:0xd3bbddb573bfb941!8m2!3d-34.6077532!4d-58.4401219!16s%2Fg%2F11x1_v8_ws!19sChIJq42KDmLLvJURQbm_c7Xdu9M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Avenida Acoyte, Franklin &, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Consultor médico"
+      "categoria": "Consultor médico",
+      "reseñas_texto": [
+        {
+          "nombre": "Marisa Orihuela",
+          "texto": "Sos el mejor Gaby! Gracias por entenderme y acompañarme, nunca te voy a dejar! Hiciste que vuelva a mi eje :D",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gisela Pablo",
+          "texto": "Un excelente profesional, estoy muy conforme con la atención. Recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Federico Fiorini",
+          "texto": "Un profesional excelente y muy muy comprometido. Lo recomiendo sin dudas!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Abregu",
+          "texto": "Excelente profesional que integra el saber técnico, académico y la experiencia, en la singularidad de la problemática y padecer de cada persona. Por lo tanto…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicólogo | Lic. Gonzalo Mansour | Cognitiva posracionalista",
@@ -54,7 +142,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3logo+%7C+Lic.+Gonzalo+Mansour+%7C+Cognitiva+posracionalista/data=!4m7!3m6!1s0x95bccb921b1ef15d:0x1a45f06f9c48591d!8m2!3d-34.5944714!4d-58.403909!16s%2Fg%2F11t85pdt4p!19sChIJXfEeG5LLvJURHVlInG_wRRo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Ecuador 1376, C1425ABI Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Jean Pierre",
+          "texto": "Asistí más de un año a este espacio, y fue un pilar clave en mi bienestar actual. La forma en que me acompañó realmente me salvó. Todavía recuerdo su \"vamos a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ailen Acosta",
+          "texto": "Excelente profesional Gonza, me sentí mega acompañada desde el inicio. Quiero agradecer por la atención y dedicación.Sin duda, lo recomiendo. Calidad y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Magali Bolivar",
+          "texto": "Quería tomarme un tiempito para agradecer a un profesional del nivel de Gonzalo, me ayudo muchísimo. Pase por varios psicólogos y experiencias feas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yasmin Castro",
+          "texto": "Como dijeron por ahí abajo en otros comentarios, excelente Psicólogo y no es el típico psicólogo que solo te escucha y anota. En el poco tiempo que fui a…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Psicológicos Del Bajo",
@@ -64,7 +174,29 @@
       "whatsapp": "https://wa.me/5491132628312",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Psicol%C3%B3gicos+Del+Bajo/data=!4m7!3m6!1s0x95a3352a65d332cd:0xe9fc5da4650bccaf!8m2!3d-34.6126671!4d-58.3683648!16s%2Fg%2F11f5502rgj!19sChIJzTLTZSo1o5URr8wLZaRd_Ok?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Belgrano 148, C1092AAO Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de salud mental"
+      "categoria": "Servicio de salud mental",
+      "reseñas_texto": [
+        {
+          "nombre": "Sabrina Cartular",
+          "texto": "Definitivamente, el mejor lugar y equipo de profesionales para confiar lo mas importante de uno: la salud mental. La metódología de trabajo es excelente, se…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ornella Berardone",
+          "texto": "Hermoso lugar con grandes profesionales y calidad humana. Muy buena atención!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rosalia Sanchez",
+          "texto": "Excelente lugar, muy bien acondicionado. La atención es muy buena y profesional. Lo recomiendo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Bárbara Castellano",
+          "texto": "Hermoso ambiente y excelentes profesionales!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicólogo Juan Pino (Caballito)",
@@ -74,7 +206,29 @@
       "whatsapp": "https://wa.me/5491158918625",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3logo+Juan+Pino+%28Caballito%29/data=!4m7!3m6!1s0x95bccbc80ee9f65b:0x70d32aa90f4fd783!8m2!3d-34.6163928!4d-58.4317429!16s%2Fg%2F11mcy2w8v9!19sChIJW_bpDsjLvJURg9dPD6kq03A?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 4704, C1405 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcela Marzi",
+          "texto": "Excelente!!! Me sentí comprendida desde el primer momento, lo que hizo el proceso más fácil. Muy empático y atento. Lo súper recomiendo 💯",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Teffy Hibarrola",
+          "texto": "Excelente profesional! Sin duda mi cambio ha sido a base de su ayuda! Gran persona 👏🏾",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tomas Honrado",
+          "texto": "Excelente profesional , me senti muy comodo en la consulta y el espácio muy lindo y agradable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Caggiano",
+          "texto": "Excelente profesional ! Agradezco su acompañamiento y compartir cada sesión ...",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Dra Tania Borda - TOC | Argentina",
@@ -84,7 +238,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Dra+Tania+Borda+-+TOC+%7C+Argentina/data=!4m7!3m6!1s0x95bccb399ab66ecb:0x844312b25056b6d4!8m2!3d-34.5870316!4d-58.3854399!16s%2Fg%2F11vk1gbpkv!19sChIJy262mjnLvJUR1LZWULISQ4Q?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. del Libertador 930, C1001 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Alex Binda",
+          "texto": "Excelentes profesionales, estan a disposicion en todo momento y estan actualizados dia a dia. Los recomiendo siempre y eso hoy en dia es mucho. Somos muchos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tomas Landau",
+          "texto": "Agradezco notablemente como me han ayudado. Estuve en tratamiento con Agustina durante un año, aunque ahora tenemos sesiones espaciadas, he recuperado mi vida…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Shirli Caren Caballero",
+          "texto": "Ella es tan única! La quiero mucho, me ayudo en mi peor momento con el toc y lo sigue haciendo! Gracias por nuestras sesiones de las que salgo empoderada jaja!…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "abril mazzeo",
+          "texto": "Me cambió la vida conocer a Tania, imposible poner en palabras cuanto me ayudó y ayuda al día de hoy. Excelente profesional!!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicologa | Lic. en Psicologia Jessica Negreira",
@@ -94,7 +270,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psicologa+%7C+Lic.+en+Psicologia+Jessica+Negreira/data=!4m7!3m6!1s0x95bccb4474208b25:0x6a84a061c3f18597!8m2!3d-34.597915!4d-58.4096403!16s%2Fg%2F11z9pggvhj!19sChIJJYsgdETLvJURl4Xxw2GghGo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Córdoba 3011, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Federico Raminy",
+          "texto": "Agradable ambiente y excelente profesional. Sin ir muy lejos, le agradezco profundamente haberme dado las herramientas necesarias para encontrar las respuestas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nayla L.",
+          "texto": "Jess es una excelente profesional! Sabe escuchar y acompañar de una forma muy linda, trasmite una energía hermosa! Saber dar en el punto correcto y hace que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquin Pellanda",
+          "texto": "Excelente profesional y, sobre todo, una gran persona. Se destaca por su calidez, su empatía y su capacidad de escucha. Genera un espacio de confianza desde el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucía Menegotto",
+          "texto": "Por lejos es de las mejores profesionales y seres humanos del planeta, taaaaan cálida, te adoro Jessica 🥹❤️‍🩹",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Atención Psicologica Individual. Parejas. Familias. Grupos",
@@ -104,7 +302,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Atenci%C3%B3n+Psicologica+Individual.+Parejas.+Familias.+Grupos/data=!4m7!3m6!1s0x95bccb7af0dc609f:0x43efcd4c2b956923!8m2!3d-34.6042194!4d-58.3721021!16s%2Fg%2F11g0z6k1s_!19sChIJn2Dc8HrLvJURI2mVK0zN70M?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "30 Microcentro, Sarmiento 385 Piso 2 Oficina, C1401 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Ana Paz",
+          "texto": "Llevo cerca de 2 años asistiendo a terapia con Nicolás. Comencé con él luego de leer opiniones aca, asi que dejo la mia. Recuerdo que cuando comencé tenía la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ALEJANDRA",
+          "texto": "Comencé el tratamiento psicológico aquí hace dos años. En lo personal acudí a varios profesionales a lo largo de 14 años y es la primera vez que veo lo efectos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Karina Martinez",
+          "texto": "Hace casi 6 años, el Lic Nicolás Rosas..es mi Terapeuta...y no sólo en lo PERSONAL, lo considero \" el mejor\", ( haciendo terapias hace años, con diferentes…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tlxst1o",
+          "texto": "Nico me ayudo a crecer como persona, ya había hecho terapia pero no conecte con el profesional, con el es distinto y las charlas fluyen ... pase por todos los…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Franco Petraglia Psicólogo",
@@ -114,7 +334,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lic.+Franco+Petraglia+Psic%C3%B3logo/data=!4m7!3m6!1s0x95bccbb05ccf60a3:0xcfa78cf2a08f5657!8m2!3d-34.6008051!4d-58.40684!16s%2Fg%2F11zxyf8bhk!19sChIJo2DPXLDLvJURV1aPoPKMp88?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Viamonte 2906, C1213ACF Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Nicole Santos",
+          "texto": "Es un excelente profesional. Yo me atendí con él y pudo escuchar , acompañar y brindarme las herramientas necesarias para que yo pueda salir adelante…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rodrigo Muñoz",
+          "texto": "Excelente trato y profesionalismo, es muy ameno, arranque hace poco por recomendación de otro amigo psicólogo y la verdad estoy conforme",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Andrea Lavin",
+          "texto": "Excelente profesional y mejor personal. Sabe escuchar y acompañar, es empatico.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Giuliano Cernada",
+          "texto": "Franco es un gran profesional, tiene un trato muy humano y te hace sentir escuchado. Tuve varias experiencias agridulces y acá he logrado sentirme cómodo y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. en Psicología Sebastián Gutierrez - Psicólogo presencial y Online",
@@ -124,7 +366,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lic.+en+Psicolog%C3%ADa+Sebasti%C3%A1n+Gutierrez+-+Psic%C3%B3logo+presencial+y+Online/data=!4m7!3m6!1s0x95bccb9b5bc13b29:0x338be1d4545d39cb!8m2!3d-34.5979776!4d-58.4410517!16s%2Fg%2F11fn5sgnt4!19sChIJKTvBW5vLvJURyzldVNThizM?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Acevedo, Av. Corrientes &, Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Mario Alberto Gallardo",
+          "texto": "Muy buen profesional, destaco tbn su calidad humana.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paola Dirito",
+          "texto": "Excelente profesional!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gaston zito",
+          "texto": "Gran profesional, muy agradecido por todo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniela Belen",
+          "texto": "Excelente profesional! Supo acompañarme en mi proceso!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicologa en Villa Crespo, Lic. Susana Szpiro",
@@ -134,7 +398,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psicologa+en+Villa+Crespo,+Lic.+Susana+Szpiro/data=!4m7!3m6!1s0x95bccbb1d147f5d3:0xedd246b2140ff546!8m2!3d-34.5980175!4d-58.4403834!16s%2Fg%2F11g0tl4pyc!19sChIJ0_VH0bHLvJURRvUPFLJG0u0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Acevedo 421, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Carmen Piccirili",
+          "texto": "La Licenciada Susana Zpiro es una persona Empatica, perceptiva y amorosa , lo que la convierte en una maravillosa profesional, gracias a ella pude salir del…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dora Dugo",
+          "texto": "Hace unos años, Yo estaba pasando un momento emocional muy difícil ,gracias a mí hijo q me pasó el tel de la Lic Susana Szpiro, comenzó una etapa ,( al…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luciana Godoy",
+          "texto": "Susana fue una persona importantísima en mi vida! Excelente profesional de verdad, y una persona muy humana, muy cálida. Me ayudo un montón! Gracias Su!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lila Rosemblit",
+          "texto": "Susana es una persona que se toma su trabajo con gran vocación. Es empática, directa, utiliza mucho el humor y es cálida...,pero no se guarda nada. Sin dudas…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicología (adolescencia y adultez)",
@@ -144,7 +430,19 @@
       "whatsapp": "https://wa.me/5491166950047",
       "link_maps": "https://www.google.com/maps/place/Psicolog%C3%ADa+%28adolescencia+y+adultez%29/data=!4m7!3m6!1s0x95bcb50008d6031d:0x117ebd319d4c6f2f!8m2!3d-34.5799185!4d-58.4520505!16s%2Fg%2F11x163mfr4!19sChIJHQPWCAC1vJURL29MnTG9fhE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Teodoro García 3487, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Celeste Cabrera",
+          "texto": "excelente profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucia Mansilla",
+          "texto": "Excelentes profesionales",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Juan Cruz Perez - Psicólogo en San Telmo",
@@ -154,7 +452,29 @@
       "whatsapp": "https://wa.me/5491137320916",
       "link_maps": "https://www.google.com/maps/place/Lic.+Juan+Cruz+Perez+-+Psic%C3%B3logo+en+San+Telmo/data=!4m7!3m6!1s0x95bccbd0c70a9f57:0xe2f40503971fc7b9!8m2!3d-34.6282079!4d-58.3731089!16s%2Fg%2F11zf5ndy0l!19sChIJV58Kx9DLvJURuccflwMF9OI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Dr. Enrique Finochietto 570, C1143 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "alejandra tasca",
+          "texto": "Muy buen profesional. Empático. Siempre predispuesto. Con mucha experiencia. Recomendable 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Camila Sassone",
+          "texto": "Excelente profesional. Recomiendo por su calidez y capacidad para acompañar cada proceso desde una escucha empática.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yair Cybel",
+          "texto": "Excelente profesional. Acompañamiento respetuoso, me sirvió para resolver muchas situaciones.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolás Baccaro",
+          "texto": "Gran profesional. No me animaba a empezar terapia, por la recomendación de un amigo llegué a Juan y por suerte me animé. Hoy me resulta un espacio muy…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Alquiler de Consultorios Psicológicos, Salud Mental y Afines - Psico Espacio B&F",
@@ -164,7 +484,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Alquiler+de+Consultorios+Psicol%C3%B3gicos,+Salud+Mental+y+Afines+-+Psico+Espacio+B%26F/data=!4m7!3m6!1s0x95bccb3c91dc7493:0xd7aad233fec44b2!8m2!3d-34.6088753!4d-58.3747358!16s%2Fg%2F11ss9r0jbl!19sChIJk3TckTzLvJURskTsPyOteg0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Perú 84, C1067 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Denise Seelhofer",
+          "texto": "Estupendo lugar!! Lindo para atender, cómodo, prolijo, moderno. Me encanto pasar por allí, el trato con Esteban de diez siempre. Súper recomendable colegas!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vero Fernandez",
+          "texto": "Me sentí muy cómoda. Espacios cómodos, cálidos. Están hasta en el mínimo detalle, decoración destacable. Super recomendables!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Evelyn Bergero",
+          "texto": "Muy buen lugar para alquilar consultorios. El espacio siempre está limpio y ordenado. Los consultorios son cómodos y tranquilos. Super recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natalia Lorena Oliver",
+          "texto": "Utilicé el espacio para atender pacientes y me he sentido muy a gusto. Muy recomendado.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Lic.Sandra Teti. Psicóloga Clínica y Psicoanalista.",
@@ -174,7 +516,29 @@
       "whatsapp": "https://wa.me/5491157308757",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Lic.Sandra+Teti.+Psic%C3%B3loga+Cl%C3%ADnica+y+Psicoanalista./data=!4m7!3m6!1s0x95bccbde6fba8de1:0xe0aa74f8ac4fb567!8m2!3d-34.6102394!4d-58.4093233!16s%2Fg%2F11gnpnqv7r!19sChIJ4Y26b97LvJURZ7VPrPh0quA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 3033, C1225 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Centro de rehabilitación"
+      "categoria": "Centro de rehabilitación",
+      "reseñas_texto": [
+        {
+          "nombre": "Teresa Miranda",
+          "texto": "Cuando me mude a buenos Aires me encontré con un torbellino en la ciudad, envuelta en la locura de los excesos y relaciones violentas encontrarme con Sandra…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Graciela Gallardo",
+          "texto": "En mi caso y experiencia , ya estaba en una problematica grave , que no le encontraba solucion desorientado y con la cabeza abrumada de cosas sin entender…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Milan",
+          "texto": "Mi expariencia con sandra teti fue la mejor gracias a su apollo y el de su equipo de profecionales yo deje de consumir cocahina despues de 16 años de consumo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ricardo Benit",
+          "texto": "Excelente profesional ,hace casi 20 años que me atiendo y pude dar el primer paso y de eso se trata ,es abrir una puerta y encontrarse con otro mundo a lo cual…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicóloga Perinatal Lic. Noelia Kasperavicius en Villa Crespo",
@@ -184,7 +548,29 @@
       "whatsapp": "https://wa.me/5491122472581",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3loga+Perinatal+Lic.+Noelia+Kasperavicius+en+Villa+Crespo/data=!4m7!3m6!1s0x95bccb3eb8e18757:0x958a35a13c8842a3!8m2!3d-34.5954207!4d-58.4344272!16s%2Fg%2F11rglsnt07!19sChIJV4fhuD7LvJURo0KIPKE1ipU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Castillo 500, 1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Nohelia Benitez Mereles",
+          "texto": "Noe es una profesional excelente. El tiempo que hice terapia con ella, fue excelente, da mucho amor con cada detalle de las palabras.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Ali",
+          "texto": "Noe es una gran profesional, hace más de un año que soy su consultante y me ayuda un montón día a día. Es super cálida y atenta! 💓",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yani PlayStation",
+          "texto": "Tuve una excelente experiencia con la Lic. Noelia. Es muy amorosa y comprensiva y me supo guiar en los momentos que lo necesite. Recomiendo !",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Malena Mayán",
+          "texto": "Es una gran profesional! Me hace sentir muy cómoda y contenida en cada sesión 💖",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios ESPACIO CAMINOS. Alquiler de consultorios para psicólogos/as y profesionales psi.",
@@ -194,7 +580,29 @@
       "whatsapp": "https://wa.me/5491158120154",
       "link_maps": "https://www.google.com/maps/place/Consultorios+ESPACIO+CAMINOS.+Alquiler+de+consultorios+para+psic%C3%B3logos%2Fas+y+profesionales+psi./data=!4m7!3m6!1s0x95bccb40ef38d52d:0x5826a1b6fe6e80d3!8m2!3d-34.6163812!4d-58.4317477!16s%2Fg%2F11j219mghd!19sChIJLdU470DLvJUR04Bu_rahJlg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Rivadavia 4704, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Norma Susana Alcántara",
+          "texto": "Excelente ubicación,Seguridad en el edificio,dato importante,se puede abrir la puerta de P.B.desde el consultorio. Rapidez en la información sobre horas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "RUBEN CASTRO",
+          "texto": "Excelente atencion!!! En un ambiente calido y de confort!!! Recomendable 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Celeste Martino",
+          "texto": "Excelente servicio y atención super cálida. Recomiendo mucho este espacio 🙏",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Otero",
+          "texto": "muy buena atención y me sentí muy cómodo gracias! el lugar muy lindo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "IHAP",
@@ -204,7 +612,29 @@
       "whatsapp": "https://wa.me/5491148990337",
       "link_maps": "https://www.google.com/maps/place/IHAP/data=!4m7!3m6!1s0x95bcb50e2d2ae029:0xfa713b66b15332e1!8m2!3d-34.587213!4d-58.4422078!16s%2Fg%2F11hdvqz5gn!19sChIJKeAqLQ61vJUR4TJTsWY7cfo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Bonpland 1230, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Ricardo Righi",
+          "texto": "Por mi actividad periodística trato con muchos Veteranos de Guerra, que hablan maravillas de el doctor. En alguna oportunidad lleve a una persona para que lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ricardo Quintela",
+          "texto": "El mejor psicologo de estrés postraumático que he conocido, una persona humana con una capacidad para expresar amor como ninguna otra. Su comprensión del ser…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "diego molina",
+          "texto": "Excelente profesional y ser humano junto a su equipo. Enriquecedora experiencia en terapia individual y grupal",
+          "estrellas": 5
+        },
+        {
+          "nombre": "David Iglesias",
+          "texto": "Excelente terapeuta. A mí me ayudó muchísimo como a muchos. Muy recomendable!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorio Psicológico Buenos Aires",
@@ -214,7 +644,29 @@
       "whatsapp": "https://wa.me/5491170343051",
       "link_maps": "https://www.google.com/maps/place/Consultorio+Psicol%C3%B3gico+Buenos+Aires/data=!4m7!3m6!1s0x95bccb78e16f96a5:0xa4b695e40af5e0b7!8m2!3d-34.6202298!4d-58.3908739!16s%2Fg%2F11n51vqj8_!19sChIJpZZv4XjLvJURt-D1CuSVtqQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Carlos Calvo 1754, C1102 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de salud mental"
+      "categoria": "Servicio de salud mental",
+      "reseñas_texto": [
+        {
+          "nombre": "Lic. Jesica Perret Venzzani",
+          "texto": "Excelente atención profesional. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dolores Garcia",
+          "texto": "Excelente atención profesional, super recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Celeste Villacorta",
+          "texto": "Excelente profesionales, con muy cálida atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Candelaria Kelly",
+          "texto": "Gran equipo de profesionales. Muy recomendable",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicologa infanto juvenil y adultos",
@@ -224,7 +676,29 @@
       "whatsapp": "https://wa.me/5491160480785",
       "link_maps": "https://www.google.com/maps/place/Psicologa+infanto+juvenil+y+adultos/data=!4m7!3m6!1s0x95bcb5bdf97594d3:0xb73dfd610da2a938!8m2!3d-34.5924834!4d-58.4439694!16s%2Fg%2F11t29qm0kc!19sChIJ05R1-b21vJUROKmiDWH9Pbc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Vera 1248, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Gabriela Murgana",
+          "texto": "Excelente profesional. Se destaca por su calidez, empatía y escucha. Me brindó un espacio seguro y de confianza para trabajar distintas cuestiones…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Delfina Aguirre Almada",
+          "texto": "Aye es una excelente profesional. Es un espacio terapéutico seguro, acogedor, donde unx puede sentirse acompañadx. Y siempre predispuesta y atenta a sus…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriela Presman",
+          "texto": "Excelente profesional! Me atendí con muchos especialistas hasta llegar a ella. Al fin encontré quien me ayude de verdad! Super recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natalia",
+          "texto": "Excelente profesional! Es muy cálida y profesional me ayudo muchisimo",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicologo Matias Gomez - Psicoterapia&Arteterapia",
@@ -234,7 +708,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psicologo+Matias+Gomez+-+Psicoterapia%26Arteterapia/data=!4m7!3m6!1s0x95bccb7841ad7111:0xf299fee4d3f25700!8m2!3d-34.6084509!4d-58.3828051!16s%2Fg%2F11vhr64t7p!19sChIJEXGtQXjLvJURAFfy0-T-mfI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Rivadavia 1157, C1033AAC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Florencia Brook",
+          "texto": "Matias es un gran Psicólogo. Es notable su experiencia y formación con cada terapéutica que implementa. Su consultorio es como sentirse en casa. Siempre…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Virshy Calderón",
+          "texto": "Profesional, cálido y amoroso.Lo recomendaré siempre.Gracias Matías por tu ética y solidez, tu amor por las infancias y tu manera de trabajar tan única.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sofia Schuttemberger",
+          "texto": "Excelente profesional , con una amplia trayectoria y una gran formación.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lour García Vallejo",
+          "texto": "Excelente profesional, excelente atención y contención, me ayudó mucho!.Con un gran recorrido clínico y experiencia en su especialidad!! Lo recomiendo…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicologa Carla Cucco",
@@ -244,7 +740,29 @@
       "whatsapp": "https://wa.me/5491123746760",
       "link_maps": "https://www.google.com/maps/place/Psicologa+Carla+Cucco/data=!4m7!3m6!1s0x95bccb32a25d0a2d:0x79c17a32b8de4f47!8m2!3d-34.6147989!4d-58.392091!16s%2Fg%2F11zfg_pb0p!19sChIJLQpdojLLvJURR0_euDJ6wXk?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Venezuela 1813, C1096ABE Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Juliana Cucci",
+          "texto": "Excelente profesional, es muy cálida y amable. Realmente la recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "María Barrientos",
+          "texto": "Excelente profesional, siempre que puedo la recomiendo. Sin dudas la mejor!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alina Claverie",
+          "texto": "Excelente profesional. Muy cálida, atenta y empática. Me siento muy acompañada en cada sesión ! ¡La recomiendo muchísimo! ❤️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Milagros Figueroa",
+          "texto": "La mejor Psicóloga!! Super recomendable. Hace años!! Es la mejor.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicólogo en Plaza San Martín / Retiro. Lic. Adrián Augspach",
@@ -254,7 +772,19 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3logo+en+Plaza+San+Mart%C3%ADn+%2F+Retiro.+Lic.+Adri%C3%A1n+Augspach/data=!4m7!3m6!1s0x95bccb07f9e3d203:0x1f31fb7388e0e815!8m2!3d-34.5980209!4d-58.3767776!16s%2Fg%2F11ft4h2dys!19sChIJA9Lj-QfLvJURFejgiHP7MR8?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Maipú 863, C1006 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Jacqueline Pons",
+          "texto": "Excelente profesional",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Catalina Crespo",
+          "texto": "Excelente",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Laura Alfaro - Psicóloga",
@@ -264,7 +794,19 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lic.+Laura+Alfaro+-+Psic%C3%B3loga/data=!4m7!3m6!1s0x95bccb594993f92d:0x8b542758e079ded3!8m2!3d-34.5988285!4d-58.4325994!16s%2Fg%2F11fmbx3msy!19sChIJLfmTSVnLvJUR09554FgnVIs?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Loyola 163 3A, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Paula Errasti",
+          "texto": "Exelente profesional",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucila Magnoli",
+          "texto": "Buena profesional",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicóloga. Lic. Luciana Samsó",
@@ -274,7 +816,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3loga.+Lic.+Luciana+Sams%C3%B3/data=!4m7!3m6!1s0x95bccb74f962d3ab:0x155caecfa3bf252f!8m2!3d-34.6003867!4d-58.398776!16s%2Fg%2F11jzr1hz1m!19sChIJq9Ni-XTLvJURLyW_o8-uXBU?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Pres. Jose E. Uriburu 754, C1027 AAP, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Emiliano Castañeda",
+          "texto": "Desde nuestra primera sesión me siento cómodo con Luciana, y su compañía en mis procesos en cada una de ellas me ayuda mucho, y como le dije, es un lugar que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Anastasia Ferreiro",
+          "texto": "Mi camino terapéutico con Luciana lleva ya dos años y el progreso que experimenté en mi salud mental fue enorme. Empecé sin dimensionar cuánto necesitaba este…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Isabella Pinilla Ramírez",
+          "texto": "Es una excelente profesional, muy cálida, carismática y respetuosa. Tenerla como psicóloga ha significado un cambio increíble en mi calidad de vida. 100%…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gonzalo Portanova",
+          "texto": "Puedo recomendar ciegamente a Luciana Samsó para realizar terapia. Ir con ella es sentirse totalmente escuchado y acompañado.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicóloga en Caballito | atención psicológica",
@@ -284,7 +848,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3loga+en+Caballito+%7C+atenci%C3%B3n+psicol%C3%B3gica/data=!4m7!3m6!1s0x95bccb6e2bcf5b87:0x9b020108e5acc908!8m2!3d-34.6145969!4d-58.4339161!16s%2Fg%2F11zxv796jk!19sChIJh1vPK27LvJURCMms5QgBAps?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Campichuelo 216, C1424CES Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Federico Seratti",
+          "texto": "Excelente profesional. Desde el primer momento me sentí muy cómodo y escuchado. Se nota la dedicación, la empatía y el compromiso en cada sesión. Recomiendo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nahime Campos",
+          "texto": "Excelente profesional, me sentí muy cómoda desde el principio, si estás buscando una buena psicóloga la super recomiendo. Tiene modalidad virtual y presencial.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natali Jana",
+          "texto": "Empecé con Micaela hace 8 meses y sentí muchos cambios! Es muy paciente, y me ayudó y ayuda muchísimo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Guadalupe Barrena",
+          "texto": "Cuando fui derivada a este espacio se fueron acomodando muchas cosas que traía en en desorden por lo que es un espacio que me colaboró muchísimo en mis…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicóloga María Campiteli",
@@ -294,7 +880,24 @@
       "whatsapp": "https://wa.me/5491150472536",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3loga+Mar%C3%ADa+Campiteli/data=!4m7!3m6!1s0x95bccb007a328675:0x275eb6baed160b42!8m2!3d-34.5971458!4d-58.4390134!16s%2Fg%2F11wtkzct62!19sChIJdYYyegDLvJURQgsW7bq2Xic?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Acevedo 537, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Tiziano Onorato",
+          "texto": "gracias memi por toda esa pasion que me impulsa a seguir y a querer volver a las sesiones todo el tiempo🩷",
+          "estrellas": 5
+        },
+        {
+          "nombre": "mejores amigos",
+          "texto": "Es la psicología que necesitaba y que tanto busque. Me escucha, me comprende. Gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Score Boy",
+          "texto": "Muy buena profesional me ayudó y me sigue ayudando",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultora Psicológica - Ayuda en Crisis.",
@@ -304,7 +907,14 @@
       "whatsapp": "https://wa.me/5491150960705",
       "link_maps": "https://www.google.com/maps/place/Consultora+Psicol%C3%B3gica+-+Ayuda+en+Crisis./data=!4m7!3m6!1s0x95bcb5ee27e6a56b:0xb845137bc01b1a8f!8m2!3d-34.5849647!4d-58.4543425!16s%2Fg%2F11fmwtjb30!19sChIJa6XmJ-61vJURjxobwHsTRbg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Forest 626, 1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de salud mental"
+      "categoria": "Servicio de salud mental",
+      "reseñas_texto": [
+        {
+          "nombre": "German Yo soy argermarey",
+          "texto": "Me ayudó mucho ;muy recomendable gracias",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Fernanda Minardi",
@@ -314,7 +924,19 @@
       "whatsapp": "https://wa.me/5491122825943",
       "link_maps": "https://www.google.com/maps/place/Fernanda+Minardi/data=!4m7!3m6!1s0x95bcb5afbe974487:0x84732759c216d223!8m2!3d-34.5797219!4d-58.4610135!16s%2Fg%2F11mm5j45m6!19sChIJh0SXvq-1vJURI9IWwlknc4Q?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Giribone 1314, C1417 Villa Ortuzar, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Mariana Suppa",
+          "texto": "Excelente profesional,precisa en sus devoluciones.Un constante aprender de la psicología y sus distintos aspectos.Acompaña,escucha y ayuda a transitar el día a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Esteban Klock",
+          "texto": "Excelente Profesional, la super recomiendo.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Lorena Pérez. Psicóloga UBA. Presencial- Online",
@@ -324,7 +946,14 @@
       "whatsapp": "https://wa.me/5491155238594",
       "link_maps": "https://www.google.com/maps/place/Lic.+Lorena+P%C3%A9rez.+Psic%C3%B3loga+UBA.+Presencial-+Online/data=!4m7!3m6!1s0x95bcb7004cbfc875:0x98d48866d5a35d62!8m2!3d-34.5811617!4d-58.4698674!16s%2Fg%2F11mkgxdn0m!19sChIJdci_TAC3vJURYl2j1WaI1Jg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Chorroarín 1334, C1427CXX Villa Ortuzar, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Santiago Castro Ramirez",
+          "texto": "Excelente profesional",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Romina Nusch. Psicóloga.",
@@ -334,7 +963,24 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Lic.+Romina+Nusch.+Psic%C3%B3loga./data=!4m7!3m6!1s0x28ebbfd34e77fecd:0x61690023bb7a81b9!8m2!3d-34.6041591!4d-58.4073775!16s%2Fg%2F11n4104m3p!19sChIJzf53TtO_6ygRuYF6uyMAaWE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Ciudad Autónoma de Buenos Aires AR, Av. Corrientes 2963, C1193 Abasto, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Maria Szymborski",
+          "texto": "Excelente profesional. Super comprometida. Recomiendo al 100%.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Irene Fischer",
+          "texto": "Gran profesional. Solo palabras de agradecimiento.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "María Belén Mon",
+          "texto": "Excelente profesional",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicologa San Telmo",
@@ -344,7 +990,19 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psicologa+San+Telmo/data=!4m7!3m6!1s0x95bccb005f0e49d1:0x327625c43f1ed4f3!8m2!3d-34.6255403!4d-58.3749353!16s%2Fg%2F11x81dqc3j!19sChIJ0UkOXwDLvJUR89QeP8QldjI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Brasil 693, C1154AAI C1154AAI, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Camila Genise",
+          "texto": "Muy buena profesional, me ayudó un montón, super recomendable🥰",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernanda Gonzalez",
+          "texto": "Una genia, siempre con la palabra justa. Super cálida.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Dante Cima - Psicólogo UBA",
@@ -354,7 +1012,8 @@
       "whatsapp": "https://wa.me/5491161207777",
       "link_maps": "https://www.google.com/maps/place/Lic.+Dante+Cima+-+Psic%C3%B3logo+UBA/data=!4m7!3m6!1s0x95bcb5e8b8bf695f:0x1e70c8b6f4ae347c!8m2!3d-34.5814309!4d-58.4502399!16s%2Fg%2F11dyzfrvf9!19sChIJX2m_uOi1vJURfDSu9LbIcB4?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Olleros 3540, C1427 EEB, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Consultorio psicológico",
@@ -364,7 +1023,19 @@
       "whatsapp": "https://wa.me/5491149171419",
       "link_maps": "https://www.google.com/maps/place/Consultorio+psicol%C3%B3gico/data=!4m7!3m6!1s0x95bcb56c823ab6df:0xa7cce2feb016f8f5!8m2!3d-34.584657!4d-58.4622374!16s%2Fg%2F11zzv___my!19sChIJ37Y6gmy1vJUR9fgWsP7izKc?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "14 de Julio 756, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Dai Diaz",
+          "texto": "Excelentes profesionales! Los súper recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariano Ariel Casoy",
+          "texto": "Muy buenos profesionales, lo recomiendo !",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios Villa Crespo",
@@ -374,7 +1045,8 @@
       "whatsapp": "https://wa.me/5491167017426",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Villa+Crespo/data=!4m7!3m6!1s0x95bcb543d1e94af1:0x9dc2dea5179967b9!8m2!3d-34.5946531!4d-58.443237!16s%2Fg%2F11sx0v5bp0!19sChIJ8Urp0UO1vJURuWeZF6Xewp0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Villarroel 1062, C1414AQV Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Consultorios Psicológicos",
@@ -384,7 +1056,8 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Consultorios+Psicol%C3%B3gicos/data=!4m7!3m6!1s0x95bcca705890d993:0xe4921ba0c7c73e04!8m2!3d-34.5991649!4d-58.4306408!16s%2Fg%2F11fz3zrtjr!19sChIJk9mQWHDKvJURBD7Hx6AbkuQ?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Castillo 73, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Psicojuridico",
@@ -394,7 +1067,8 @@
       "whatsapp": "https://wa.me/5491173645735",
       "link_maps": "https://www.google.com/maps/place/Psicojuridico/data=!4m7!3m6!1s0x95a3351f33a38fc1:0xebd265c71821c351!8m2!3d-34.6112092!4d-58.3661291!16s%2Fg%2F11rcy4gqdq!19sChIJwY-jMx81o5URUcMhGMdl0us?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Avda.Alicia Moreau de Justo 1150 tercer piso, C1107AAX Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Mónica B. Peisajovich",
@@ -404,7 +1078,8 @@
       "whatsapp": "https://wa.me/5491161598475",
       "link_maps": "https://www.google.com/maps/place/M%C3%B3nica+B.+Peisajovich/data=!4m7!3m6!1s0x95bcb5e1b20cb84d:0x9295019b07e6f6d3!8m2!3d-34.5830286!4d-58.4609423!16s%2Fg%2F11b6v6mhrh!19sChIJTbgMsuG1vJUR0_bmB5sBlZI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Fraga 1228, C1427 BTZ, Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Psicologa Niños y Adolescentes. Lic Silvia Romano",
@@ -414,7 +1089,8 @@
       "whatsapp": "https://wa.me/5491130584115",
       "link_maps": "https://www.google.com/maps/place/Psicologa+Ni%C3%B1os+y+Adolescentes.+Lic+Silvia+Romano/data=!4m7!3m6!1s0x95bcb514d525bfcf:0x18920a15b2a26a10!8m2!3d-34.572179!4d-58.445903!16s%2Fg%2F11gmcyfb3k!19sChIJz78l1RS1vJUREGqishUKkhg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Federico Lacroze 2542, C1426CPX Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo infantil"
+      "categoria": "Psicólogo infantil",
+      "reseñas_texto": []
     },
     {
       "nombre": "Consultorio de Psicología Bienestar",
@@ -424,7 +1100,14 @@
       "whatsapp": "https://wa.me/5491159013577",
       "link_maps": "https://www.google.com/maps/place/Consultorio+de+Psicolog%C3%ADa+Bienestar/data=!4m7!3m6!1s0x95bcca41a5b87c39:0x98c33db81bdd0c2f!8m2!3d-34.615346!4d-58.4364745!16s%2Fg%2F1q62mng_m!19sChIJOXy4pUHKvJURLwzdG7g9w5g?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Juan B. Ambrosetti 216, C1424 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Clínica ambulatoria"
+      "categoria": "Clínica ambulatoria",
+      "reseñas_texto": [
+        {
+          "nombre": "Franco",
+          "texto": "Good.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Consultorios psicologicos Integrar Salud (Servicios de urgencias psicológica)",
@@ -434,7 +1117,8 @@
       "whatsapp": "https://wa.me/5491157107926",
       "link_maps": "https://www.google.com/maps/place/Consultorios+psicologicos+Integrar+Salud+%28Servicios+de+urgencias+psicol%C3%B3gica%29/data=!4m7!3m6!1s0x95bccb62700c3e17:0x7c6c74c87190f0ac!8m2!3d-34.6148776!4d-58.4429774!16s%2Fg%2F11zfk6kcbw!19sChIJFz4McGLLvJURrPCQcch0bHw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Dr. Juan Felipe Aranguren 746, C1405 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Psicologa",
@@ -444,7 +1128,8 @@
       "whatsapp": "https://wa.me/5491164818090",
       "link_maps": "https://www.google.com/maps/place/Psicologa/data=!4m7!3m6!1s0x95bccb00126f6561:0xa2c09932c3b2854d!8m2!3d-34.6141911!4d-58.3921956!16s%2Fg%2F11y8v_lz17!19sChIJYWVvEgDLvJURTYWywzKZwKI?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Belgrano 1828, C1079 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de salud mental"
+      "categoria": "Servicio de salud mental",
+      "reseñas_texto": []
     },
     {
       "nombre": "Psicóloga Malena Caticha - Consultorio Psicológico",
@@ -454,7 +1139,8 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3loga+Malena+Caticha+-+Consultorio+Psicol%C3%B3gico/data=!4m7!3m6!1s0x95bccbf888d25eb3:0xe10502c8ceceb701!8m2!3d-34.5965905!4d-58.4072196!16s%2Fg%2F11nw1rch9t!19sChIJs17SiPjLvJURAbfOzsgCBeE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Dr. Tomás Manuel de Anchorena 1103, C1425BRD Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": []
     },
     {
       "nombre": "Psicóloga Candela Dorsa",
@@ -464,7 +1150,14 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3loga+Candela+Dorsa/data=!4m7!3m6!1s0x95bccbcc54a856df:0x8c888f81d9173574!8m2!3d-34.6191156!4d-58.4056045!16s%2Fg%2F11p1j_n8s2!19sChIJ31aoVMzLvJURdDUX2YGPiIw?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Independencia 2841, C1225AAK Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "RODRIGO LOPEZ PARDO",
+          "texto": "Excelente profesional.",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Atención Psicológica Caballito - Niños, Adolescentes, Adultos, Parejas, Orientación Vocacional - Psicología, Psicopedagogía",
@@ -474,7 +1167,29 @@
       "whatsapp": "https://wa.me/5491160490302",
       "link_maps": "https://www.google.com/maps/place/Atenci%C3%B3n+Psicol%C3%B3gica+Caballito+-+Ni%C3%B1os,+Adolescentes,+Adultos,+Parejas,+Orientaci%C3%B3n+Vocacional+-+Psicolog%C3%ADa,+Psicopedagog%C3%ADa/data=!4m7!3m6!1s0x95bccbee781a0f1d:0xb891349bc0f1ce!8m2!3d-34.6149872!4d-58.4393557!16s%2Fg%2F11qbfr6jqz!19sChIJHQ8aeO7LvJURzvHAmzSRuAA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Hidalgo 375 PB \"E, C1405BCC Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Servicio de salud mental"
+      "categoria": "Servicio de salud mental",
+      "reseñas_texto": [
+        {
+          "nombre": "Giuliana Galeano",
+          "texto": "Muy buenos profesionales, excelente espacio y buenisima calidad. Nadia te amo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vanina Roman",
+          "texto": "Los encontré por este medio y fue lo mejor que me pudo pasar. Necesitaba un profesional que pudiera acompañarme en un proceso muy delicado de tratamiento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aleksandra",
+          "texto": "Estuvimos muy contentos con la atención de Soledad. Fue muy amable y profesional, nos hizo sentir cómodos desde el primer momento. Sin duda volveremos cuando…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eugenia dv",
+          "texto": "Estamos muy conformes con la atención hacia mi hija de la Licenciada Sol. Muy profesional y atenta. Y también de la coordinadora Daniela. Impecable como…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Gabriela Fernández Ortiz -Psicóloga cognitivo Especialista en ansiedad",
@@ -484,7 +1199,29 @@
       "whatsapp": "https://wa.me/5491158480480",
       "link_maps": "https://www.google.com/maps/place/Lic.+Gabriela+Fern%C3%A1ndez+Ortiz+-Psic%C3%B3loga+cognitivo+Especialista+en+ansiedad/data=!4m7!3m6!1s0x95bccb98ecf32161:0xfa6cd7e15bccf1bd!8m2!3d-34.6227469!4d-58.4330199!16s%2Fg%2F11mw6q50jv!19sChIJYSHz7JjLvJURvfHMW-HXbPo?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Juan Bautista Alberdi 367, C1964 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Nathalí Mejía",
+          "texto": "Mi experiencia en Mindset fue muy buena. Me asignaron a la profesional Agostina Gioiosa, con la cual estoy muy agradecida por su empatía y calidez con la que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea",
+          "texto": "Muy buena experiencia. Ya tengo dos años con el profesional Alberto Urdaneta y estoy conforme con la atención recibida. Recomiendo 100%.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "juan lopez",
+          "texto": "Agradecido por el tratamiento y la calidez con el que me atendio Gabriela durante todo el proceso terapeutico, siempre empatica, escucha activa, muy resolutiva…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Bachmann",
+          "texto": "“Excelente profesional. Muy cálida, atenta y comprometida con sus pacientes. Genera un espacio de confianza desde el primer momento y realmente me ayudó mucho…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicólogos en Villa Crespo Johanna Pereda",
@@ -494,7 +1231,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3logos+en+Villa+Crespo+Johanna+Pereda/data=!4m7!3m6!1s0x95bccb1ae736208b:0x7149e41817ef0943!8m2!3d-34.5990955!4d-58.4484383!16s%2Fg%2F11h3jjhskz!19sChIJiyA25xrLvJURQwnvFxjkSXE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Thames 500, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Tamara Moraiz",
+          "texto": "Encontrar a johanna para mí, ha sido una parte importante en mi vida y una gran suerte. Había probado con varios psicólogos y ninguno de ellos me hizo sentir…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Facundo Agustin Martínez",
+          "texto": "Es una persona muy profesional y de trato cálido. Crea un ambiente seguro y tranquilo. Es una genia por primera vez obtuve cambios positivos en mi vida con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rocío Forti",
+          "texto": "La verdad que muy buena atención, excelente profesional, me ayudó mucho a adquirir herramientas para sobrellevar mis problemas que afectaban mi vida cotidiana…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Richard Reales",
+          "texto": "Johanna, es una excelente profesional, comprometida con su trabajo y de gran integridad y sensibilidad como ser humano. Tanto para niños o adultos la llegada y…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicólogo Alejandro Segura Chávez",
@@ -504,7 +1263,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Psic%C3%B3logo+Alejandro+Segura+Ch%C3%A1vez/data=!4m7!3m6!1s0x95bcb7005dc3a0d5:0xd0de9639bdccd021!8m2!3d-34.5838994!4d-58.4741513!16s%2Fg%2F11y2fm727n!19sChIJ1aDDXQC3vJURIdDMvTmW3tA?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Comuna 15, Torrent 1234, C1427 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicoterapeuta"
+      "categoria": "Psicoterapeuta",
+      "reseñas_texto": [
+        {
+          "nombre": "Un Segundo Javier",
+          "texto": "Alejandro es todo un profesional. Destaco esa capacidad para escuchar orientar y apoyar, pero sobre todo la empatía que posee, cualidad que me hace sentirme…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Raul Ruiz",
+          "texto": "Alejandro es un terapeuta muy profesional, sin prejuicios, sabe escuchar y cuestionar. Culto en su ámbito, te habla con referencias, eso a mí me dio mucha más…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paola Ortiz",
+          "texto": "Alex es el mejor terapeuta que conozco, me siento cómoda :) y lo más importante que he avanzado muchísimo con cada terapia y pienso seguir asistiendo ya que me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vany Eduardo Galván",
+          "texto": "Alejandro es un profesional en el tema, fue de muchísima ayuda en un momento de mi vida en el que me estaba perdiendo. Las conversaciones con él siempre…",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Fundación Causa Clínica",
@@ -514,7 +1295,29 @@
       "whatsapp": "https://wa.me/5491148625478",
       "link_maps": "https://www.google.com/maps/place/Fundaci%C3%B3n+Causa+Cl%C3%ADnica/data=!4m7!3m6!1s0x95bcca8adf0e1f5d:0x816071111c61c295!8m2!3d-34.6058415!4d-58.4144991!16s%2Fg%2F11cm432j9r!19sChIJXR8O34rKvJURlcJhHBFxYIE?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Sarmiento 3475, C1196 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Brenda Witting",
+          "texto": "Como estudiante de Psicología, haber realizado mis prácticas en esta Fundación fue una experiencia muy valiosa.No me quedan más que palabras de agradecimiento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dani Huanca",
+          "texto": "Muy amables tanto en la recepción como en la admisión, la entrevista resulta agradable gracias al profesionalismo. El lugar es muy lindo y cómodo también",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monica ines Romero cueba",
+          "texto": "Ayer tuve la entrevista de admisión y en realidad fue excelente. El profesional que me atendio, Julian Viasic, muy atento . Estoy muy conforme con la atención…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "ornella calise",
+          "texto": "Me sentí muy cómoda con la entrevista. Me preguntó si podía pasar una chica a presenciar y accedí. Muy respetuosas las dos y me alivió muchísimo. Gracias!",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Flor Cereseto Psicología",
@@ -524,7 +1327,29 @@
       "whatsapp": "",
       "link_maps": "https://www.google.com/maps/place/Flor+Cereseto+Psicolog%C3%ADa/data=!4m7!3m6!1s0x95bccb489de8a589:0xbde56f106e14fd49!8m2!3d-34.6022523!4d-58.4457469!16s%2Fg%2F11pxlhj1_h!19sChIJiaXonUjLvJURSf0UbhBv5b0?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Galicia 200, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Victoria Gouin",
+          "texto": "Excelente profesional pero sobre todo EXCELENTE SER HUMANO!! Agradecida eternamente por sus sesiones. Acudí a Flor en un momento en el que me había dejado…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jennifer Hermosilla",
+          "texto": "Flor ha sido de enorme ayuda para mi a la distancia. Cuando más pérdida estaba ella me dio las herramientas para darme cuenta que somos capaces de salir…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Moira Di Carlo",
+          "texto": "Estoy haciendo sesiones con Flor hace poquito y realmente ha sido de gran ayuda. Un lujo que me acompañe en el proceso de crecimiento de mi negocio, me ayuda a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ayelen Franco",
+          "texto": "Encontrarme con Flor fue mi salvación. Gracias por tu trabajo tan humano y amoroso! Siempre tan cálida, con la palabra justa. Te quiero Flor, sos la 1 ❤",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Psicología San Telmo - Atención Psicológica",
@@ -534,7 +1359,29 @@
       "whatsapp": "https://wa.me/5491168776742",
       "link_maps": "https://www.google.com/maps/place/Psicolog%C3%ADa+San+Telmo+-+Atenci%C3%B3n+Psicol%C3%B3gica/data=!4m7!3m6!1s0x95bccb27c22f6b8d:0xe92c84dde7f029ca!8m2!3d-34.61707!4d-58.3736989!16s%2Fg%2F11qsp3814m!19sChIJjWsvwifLvJURyinw592ELOk?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "Av. Independencia 531, C1070 Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Efrain Mereles",
+          "texto": "Muy buena experiencia. La Lic. Fabiana me atendió super bien siempre, atenta y profesional. Tuve que dejar de ir por tener otras prioridades momentáneamente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victoria Caballo",
+          "texto": "Excelente el tratamiento de la Lic. Fabiana la super recomiendo la mejor! Pronto voy a volver con las sesiones, muy buena profesional y atenta! Saludos 🤍🙌🏽",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Florencia Vera",
+          "texto": "Encantada de haber empezado sesiones de terapia en este centro. Tuve la suerte de encontrar a Ines como primera psico que me derivo a Victoria para mi…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "nachiluz salinas",
+          "texto": "Buenas... Mi psicóloga es Victoria una excelente profesional mi terapia con ella lo vengo llevando muy bien la elegiría mil veces más!♥️",
+          "estrellas": 5
+        }
+      ]
     },
     {
       "nombre": "Lic. Husni Paula C",
@@ -544,7 +1391,29 @@
       "whatsapp": "https://wa.me/5491145546841",
       "link_maps": "https://www.google.com/maps/place/Lic.+Husni+Paula+C/data=!4m7!3m6!1s0x95bcb5efa636a0b5:0x484dc3d5347cd4fa!8m2!3d-34.5847322!4d-58.4493802!16s%2Fg%2F11bbrmdgs5!19sChIJtaA2pu-1vJUR-tR8NNXDTUg?authuser=0&hl=es&g_ep=EgoyMDI2MTAyOC4wIJJjKgBIAVAD&rclk=1",
       "direccion": "C. Jorge Newbery 3688, C1427EGP Cdad. Autónoma de Buenos Aires, Argentina",
-      "categoria": "Psicólogo"
+      "categoria": "Psicólogo",
+      "reseñas_texto": [
+        {
+          "nombre": "Sebastián Muñoz",
+          "texto": "Excelente profesional.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge",
+          "texto": "Excelente profesional",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carla dubois",
+          "texto": "Excelente profesional",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daniel Marongiu",
+          "texto": "Fui paciente de ella muchos años atrás en un centro de salud mental estatal ubicado en calle Manuela Pedraza. Yo era adolescente, mis padres se estaban…",
+          "estrellas": 1
+        }
+      ]
     }
   ]
 }
