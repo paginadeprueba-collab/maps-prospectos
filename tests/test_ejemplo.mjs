@@ -11,9 +11,14 @@ const sandbox = {
   btoa,
   atob,
   URL,
+  URLSearchParams,
   Blob,
   Response,
   Uint8Array,
+  AbortController,
+  setTimeout,
+  clearTimeout,
+  fetch: async () => { throw new Error("fetch no configurado"); },
 };
 sandbox.window = sandbox;
 sandbox.globalThis = sandbox;
@@ -69,20 +74,21 @@ assert.equal(pConde.s, 5);
 assert.equal(pConde.v, 4);
 assert.ok(pConde.a.includes("CABA"));
 assert.ok(!pConde.a.includes("Argentina"));
-assert.equal(pConde.e, undefined, "no inventa reseñas");
+assert.equal(pConde.e.length, 4, "usa las reseñas guardadas de la búsqueda");
+assert.equal(pConde.e[0][0], "Victoria Valle");
 assert.equal(pConde.h, undefined);
 assert.ok(typeof pConde.y === "number" && typeof pConde.x === "number");
 
 const pGonzalo = hogar.payload(gonzalo, ctx("gasistas", gasista.barrios));
 assert.equal(pGonzalo.k, "gas");
 assert.ok(pGonzalo.h.includes("lun"));
-assert.equal(pGonzalo.e, undefined);
+assert.equal(pGonzalo.e.length, 4, "usa las reseñas guardadas de la búsqueda");
 assert.equal(pGonzalo.b, undefined, "no asigna un barrio de una búsqueda de 19");
 
 const pSoler = hogar.payload(soler, ctx("electricistas"));
 assert.equal(pSoler.k, "ele");
 assert.equal(pSoler.v, 310);
-assert.equal(pSoler.e, undefined);
+assert.equal(pSoler.e.length, 4, "usa las reseñas guardadas de la búsqueda");
 
 const pSin = hogar.payload(sinDatos, ctx("gasistas", ["Flores"]));
 assert.equal(pSin.k, "gas");
@@ -136,7 +142,9 @@ const hashLargo = await EjemploCodec.pack(largo);
 const vuelta = await EjemploCodec.unpack(hashLargo);
 assert.equal(vuelta.e.length, 3);
 assert.ok(hashLargo.startsWith("2."), "un hash largo se comprime: " + hashLargo.length);
-const hashCorto = await EjemploCodec.pack(pConde);
+const pCondeSinResenas = { ...pConde };
+delete pCondeSinResenas.e;
+const hashCorto = await EjemploCodec.pack(pCondeSinResenas);
 assert.ok(hashCorto.startsWith("1."), "el caso común queda sin gzip");
 assert.ok(hashCorto.length < 500, "link corto, largo " + hashCorto.length);
 
@@ -200,6 +208,44 @@ assert.ok(parsed[1][1].length <= 161);
 assert.equal(parsed[2][0], "Luis");
 assert.equal(parsed.some((r) => r[1].includes("Sin nombre")), false);
 assert.equal(EjemploResenas.parse("no es json").length, 0);
+
+sandbox.fetch = async (url, opts) => {
+  const u = new URL(url, "https://ejemplo.test");
+  if (opts && opts.method === "POST" && u.pathname === "/w") {
+    const body = JSON.parse(opts.body);
+    if (!body || !body.k) return { ok: false, json: async () => ({ error: "k" }) };
+    return { ok: true, json: async () => ({ ok: true, id: "k7x9q2" }) };
+  }
+  if (u.pathname === "/w/abcdef") {
+    return { ok: true, json: async () => pConde };
+  }
+  return { ok: false, status: 404, json: async () => ({ error: "not_found" }) };
+};
+
+assert.equal(EjemploCodec.idCorto("k7x9q2"), "k7x9q2");
+assert.equal(EjemploCodec.idCorto("K7X9Q2"), "k7x9q2");
+assert.equal(EjemploCodec.idCorto("no"), "");
+assert.equal(EjemploCodec.idCorto("../x"), "");
+
+const idGuardado = await EjemploCodec.guardarCorto(pConde, { worker: "https://ejemplo.test" });
+assert.equal(idGuardado, "k7x9q2");
+
+const leido = await EjemploCodec.leerCorto("abcdef", { worker: "https://ejemplo.test" });
+assert.equal(leido.n, "Plomeria Conde");
+
+const locCorto = new URL("https://paginadeprueba-collab.github.io/maps-prospectos/ejemplo/hogar-2.html?w=abcdef");
+const desdeCorto = await EjemploCodec.cargar(locCorto, { worker: "https://ejemplo.test" });
+assert.equal(desdeCorto.n, "Plomeria Conde");
+
+const locFalla = new URL("https://paginadeprueba-collab.github.io/maps-prospectos/ejemplo/hogar-2.html?w=zzzzzz");
+locFalla.hash = hashCorto;
+const desdeFalla = await EjemploCodec.cargar(locFalla, { worker: "https://ejemplo.test" });
+assert.equal(desdeFalla.n, "Plomeria Conde", "si el Worker falla, se usa el hash");
+
+const locHash = new URL("https://paginadeprueba-collab.github.io/maps-prospectos/ejemplo/hogar-2.html");
+locHash.hash = hashCorto;
+const desdeHash = await EjemploCodec.cargar(locHash, { worker: "https://ejemplo.test" });
+assert.equal(desdeHash.n, "Plomeria Conde", "el link largo viejo sigue funcionando");
 
 console.log("links", Object.fromEntries(Object.entries(links).map(([k, v]) => [k, v.length])));
 console.log("ok");

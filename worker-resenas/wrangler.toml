@@ -1,8 +1,13 @@
-# Worker aparte: solo lee reseñas públicas de Google Maps.
-# No comparte KV ni secretos con el Worker de la Fábrica.
+# Worker aparte: reseñas públicas de Google Maps y links cortos de la web de ejemplo.
+# No comparte secretos con el Worker de la Fábrica.
+# NO desplegar a producción (name = resenas-maps) sin OK de Carlos.
 
 name = "resenas-maps"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
 account_id = "541fb3ccecd98c7d2867451ce5334ce1"
 workers_dev = true
+
+[[kv_namespaces]]
+binding = "WEB_IDS"
+id = "4e62426c5c6f4a4da9edb976155ec939"

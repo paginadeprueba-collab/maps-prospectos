@@ -339,8 +339,8 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
 </div>
 <noscript><p style="padding:24px">Esta página se arma en el navegador con los datos del link.</p></noscript>
 
-<script src="codec.js?v=20261116b"></script>
-<script src="hogar.js?v=20261116b"></script>
+<script src="codec.js?v=20261118a"></script>
+<script src="hogar.js?v=20261118a"></script>
 <script>
 (function () {
   var timers = [];
@@ -734,7 +734,7 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
   async function arrancar() {
     var id = ++seq;
     var data = null;
-    try { data = await EjemploCodec.unpack(location.hash); }
+    try { data = await EjemploCodec.cargar(location); }
     catch (e) { data = null; }
     if (id !== seq) return;
     var grupo = window.EjemploGrupos && EjemploGrupos.hogar;

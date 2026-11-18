@@ -1,0 +1,12 @@
+# Worker de prueba. Se puede desplegar para validar links cortos.
+# No toca el Worker de producción resenas-maps.
+
+name = "resenas-maps-dev"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+account_id = "541fb3ccecd98c7d2867451ce5334ce1"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "WEB_IDS"
+id = "4e62426c5c6f4a4da9edb976155ec939"

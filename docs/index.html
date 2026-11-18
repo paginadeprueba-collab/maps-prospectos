@@ -859,8 +859,8 @@
     </div>
   </div>
 
-  <script src="ejemplo/codec.js?v=20261116b"></script>
-  <script src="ejemplo/hogar.js?v=20261116b"></script>
+  <script src="ejemplo/codec.js?v=20261118a"></script>
+  <script src="ejemplo/hogar.js?v=20261118a"></script>
   <script src="ejemplo/resenas.js?v=20261116d"></script>
   <script>
     /* ========== CONFIG ========== */
@@ -1782,10 +1782,13 @@
       return path + "/";
     }
 
-    function urlEjemplo(pagina, hash) {
+    function urlEjemplo(pagina, hash, idCorto) {
       const u = new URL(dirDePagina() + String(pagina || "").replace(/^\//, ""), window.location.origin);
       u.search = "";
-      u.hash = hash;
+      u.hash = "";
+      const id = window.EjemploCodec && EjemploCodec.idCorto ? EjemploCodec.idCorto(idCorto) : "";
+      if (id) u.searchParams.set("w", id);
+      else if (hash) u.hash = hash;
       return u.toString();
     }
 
@@ -1866,9 +1869,15 @@
         if (reseñas.length) payload.e = reseñas;
         else if (!payload.e) aviso = aviso || "La web queda solo con las estrellas.";
         const hash = await EjemploCodec.pack(payload);
+        let idCorto = "";
+        try {
+          idCorto = await EjemploCodec.guardarCorto(payload, { worker: RESENAS_URL, timeout: 8000 });
+        } catch (err) {
+          console.warn(err);
+        }
         const pagina2 = listo.grupo.pagina2 || "ejemplo/hogar-2.html";
-        const url1 = urlEjemplo(listo.grupo.pagina, hash);
-        const url2 = urlEjemplo(pagina2, hash);
+        const url1 = urlEjemplo(listo.grupo.pagina, hash, idCorto);
+        const url2 = urlEjemplo(pagina2, hash, idCorto);
         if (win) {
           win.location.replace(url1);
           win.opener = null;
