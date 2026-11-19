@@ -1792,9 +1792,19 @@
       return u.toString();
     }
 
+    function waTextoEjemplo(url) {
+      return (
+        "Hola, ¿cómo estás?\n" +
+        "Te encontré en Google Maps y estuve buscando información sobre tu negocio, pero no encontré un sitio donde pueda ver tus trabajos, servicios, reseñas o calcular fácilmente cuánto les puede costar un trabajo.\n\n" +
+        "Me gustaría ayudarte a mejorar tu servicio. Por eso preparé una muestra de sitio web para tu negocio con una calculadora de presupuestos que envía las solicitudes directo a tu WhatsApp:\n" +
+        String(url || "") + "\n\n" +
+        "¿Qué te parece la web?\n" +
+        "Si te interesa, podemos ponerla online con 2 años de mantenimiento."
+      );
+    }
+
     function waEjemplo(r, url) {
-      const nombre = r && r.nombre ? r.nombre : "";
-      const texto = "Hola" + (nombre ? " " + nombre : "") + ", te armo una web de ejemplo para que veas cómo podría verse tu negocio:\n" + url;
+      const texto = waTextoEjemplo(url);
       const base = String((r && r.whatsapp) || "");
       const m = base.match(/https:\/\/wa\.me\/\d+/);
       return (m ? m[0] : "https://wa.me/") + "?text=" + encodeURIComponent(texto);
