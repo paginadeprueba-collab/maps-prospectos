@@ -491,6 +491,14 @@
     titulo: "Mantenimiento del hogar",
     pagina: "ejemplo/hogar.html",
     pagina2: "ejemplo/hogar-2.html",
+    paginas: [
+      "ejemplo/hogar.html",
+      "ejemplo/hogar-2.html",
+      "ejemplo/hogar-3.html",
+      "ejemplo/hogar-4.html",
+      "ejemplo/hogar-5.html",
+      "ejemplo/hogar-6.html"
+    ],
     rubros: RUBROS,
     porId: function (id) { return porId[id] || null; },
     resolver: resolver,

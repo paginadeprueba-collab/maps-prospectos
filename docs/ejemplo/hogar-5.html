@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b4054">
+<meta name="description" content="Web de ejemplo armada con los datos públicos del negocio. Los precios son orientativos.">
+<title>Web de ejemplo</title>
+<style>
+:root{--navy:#083d52;--blue:#167da0;--mint:#6bd6bd;--ink:#102f3b;--muted:#617783;--paper:#f5faf9;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+header{position:absolute;top:0;left:0;right:0;z-index:5;color:white;padding:20px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-weight:800;letter-spacing:.2px;display:flex;align-items:center;gap:10px}.brand-mark{width:38px;height:38px;border:1px solid #ffffff70;border-radius:13px;display:grid;place-items:center;background:#ffffff18}
+.nav-link{font-size:14px;font-weight:650;border:1px solid #ffffff70;border-radius:999px;padding:10px 15px}
+.hero{min-height:0;padding:135px 0 82px;color:white;overflow:hidden;position:relative;background:radial-gradient(circle at 80% 20%,#50c6ad 0,transparent 35%),linear-gradient(125deg,#70b9d9 0%,#177ca5 48%,#073d56 100%)}
+.hero:before{content:"";position:absolute;width:500px;height:500px;border:1px solid #ffffff22;border-radius:50%;right:-160px;top:80px;box-shadow:0 0 0 45px #ffffff09,0 0 0 90px #ffffff07}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:0;align-items:center;max-width:900px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800;color:#d9fff4;background:#ffffff1c;border:1px solid #ffffff42;padding:9px 13px;border-radius:999px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin:22px 0 18px;max-width:680px}
+.hero p{font-size:18px;line-height:1.65;color:#e6f6fb;max-width:570px;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:15px 21px;font-weight:800;font-size:14px;transition:.2s}.btn-primary{background:#fff;color:var(--navy);box-shadow:0 10px 30px #002c3b35}.btn-outline{border:1px solid #ffffff80;color:white;background:#ffffff10}.btn:hover{transform:translateY(-2px)}
+.trustline{display:flex;flex-wrap:wrap;gap:18px;margin-top:32px;color:#e8f8fa;font-size:13px}.trustline span{display:flex;align-items:center;gap:7px}
+.visual{position:relative;min-height:480px;display:grid;place-items:center}
+.glow{position:absolute;width:330px;height:330px;border-radius:50%;background:#8ce9d1;filter:blur(70px);opacity:.25}
+.service-card{position:relative;width:min(100%,390px);padding:27px;border-radius:30px;background:linear-gradient(150deg,#ffffffed,#e8f8f6);color:var(--ink);box-shadow:0 30px 80px #00334755;transform:rotate(2deg)}
+.card-top{display:flex;justify-content:space-between;align-items:center}.round-icon{width:48px;height:48px;border-radius:16px;background:#d9f4ee;display:grid;place-items:center;color:#087c77}
+.card-label{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#66808a;font-weight:800}
+.service-card h2{font-size:27px;line-height:1.1;margin:22px 0 8px;letter-spacing:-.7px}.service-card p{font-size:14px;line-height:1.55;color:#617783;margin:0}
+.mini-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.mini{border-radius:14px;background:white;padding:12px;font-size:12px;font-weight:750;display:flex;gap:8px;align-items:center;box-shadow:0 5px 15px #0a465010}
+.card-foot{border-top:1px solid #d9e9e8;margin-top:22px;padding-top:17px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#5d747d}
+section{padding:84px 0}.section-kicker{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:#178c8b;font-weight:850}h2.section-title{font-size:clamp(30px,4vw,46px);letter-spacing:-1.4px;line-height:1.08;margin:12px 0 14px}.section-intro{color:var(--muted);font-size:16px;line-height:1.7;max-width:650px;margin:0}
+.services{display:block;margin-top:0}
+.service{padding:24px;border-radius:22px;background:#fff;border:1px solid #e2eeed;box-shadow:0 10px 35px #16485b08}
+.service .icon{width:46px;height:46px;border-radius:15px;background:#e4f7f2;color:#087b79;display:grid;place-items:center;margin-bottom:18px}
+.service h3{font-size:18px;margin:0 0 8px}.service p{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
+.rating-band{background:#e7f5f3;padding:35px 0}.rating-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.rating-big{font-size:42px;font-weight:850;letter-spacing:-2px;color:var(--navy)}.stars{color:#e4a52d;letter-spacing:3px;font-size:18px}.rating-copy{color:var(--muted);font-size:13px;margin-top:4px}.rating-note{max-width:460px;color:#47616a;line-height:1.65;font-size:14px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:32px}.review{background:white;border:1px solid #e2eeed;border-radius:20px;padding:22px}.review .stars{font-size:14px}.review p{color:#48616b;line-height:1.65;font-size:14px;margin:12px 0 0}
+.contact{background:linear-gradient(120deg,#0a4358,#087c83);color:white}.contact .section-kicker{color:#9af0d8}.contact .section-intro{color:#d5edf0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.contact-card{background:#ffffff12;border:1px solid #ffffff38;border-radius:24px;padding:25px}
+.info-row{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid #ffffff25}.info-row:last-child{border:0}.info-row b{display:block;font-size:14px}.info-row small{display:block;color:#d2e9ed;margin-top:4px;font-size:13px}
+footer{background:#062f40;color:#b9d1d8;padding:25px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+
+
+.hero-review{display:flex;align-items:center;gap:18px;margin-top:25px;padding:15px 17px;max-width:560px;border:1px solid #ffffff50;border-radius:20px;background:#ffffff18;backdrop-filter:blur(8px)}
+.hero-review-score{min-width:118px;display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.hero-stars{color:#ffe09a;letter-spacing:2px;font-size:14px}
+.hero-review-score strong{font-size:27px;line-height:1.1}
+.hero-review-score small{font-size:11px;color:#e2f4f5}
+.hero-review-copy{display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:1.45;color:#e8f7f7}
+.hero-review-copy b{font-size:13px;color:#fff}
+.hero-review-copy a{font-weight:800;color:#fff;text-decoration:underline;text-underline-offset:3px;margin-top:2px}
+.services-carousel{max-width:650px;margin:34px auto 42px}
+.services-track{position:relative;min-height:260px}
+.services-track .service{display:none;min-height:260px;padding:30px;animation:serviceFade .35s ease}
+.services-track .service.is-active{display:block}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:18px}
+.carousel-arrow{width:38px;height:38px;border:1px solid #cfe2df;background:#fff;color:#0a5262;border-radius:50%;font-size:25px;line-height:1;cursor:pointer}
+.carousel-dots{display:flex;align-items:center;gap:8px}
+.carousel-dot{width:8px;height:8px;border:0;border-radius:50%;background:#b8d2cf;padding:0;cursor:pointer}
+.carousel-dot[aria-current="true"]{width:23px;border-radius:20px;background:#087c83}
+.calculator-block{padding-top:8px;border-top:1px solid #dcebe8}
+.calculator-block>.section-kicker{display:block;margin-top:30px}
+@keyframes serviceFade{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){.hero-review{max-width:100%}}
+@media(max-width:520px){.hero-review{gap:12px;padding:13px}.hero-review-score{min-width:98px}.hero-review-score strong{font-size:24px}.hero-review-copy{font-size:11px}.services-carousel{margin:27px auto 35px}.services-track,.services-track .service{min-height:245px}.services-track .service{padding:24px}.calculator-block{padding-top:2px}}
+
+
+/* Hero: reseñas y calificación como prueba social principal */
+.hero-review{display:flex;align-items:center;gap:24px;margin-top:30px;padding:22px 25px;max-width:720px;border:1px solid #ffffff70;border-radius:22px;background:#ffffffed;color:#123c4b;box-shadow:0 16px 42px #0033472b;text-decoration:none}
+.hero-review-main{min-width:170px;display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.hero-stars{display:block;color:#e5a526;letter-spacing:4px;font-size:23px;line-height:1.2}
+.hero-rating-line{display:flex;align-items:baseline;gap:7px}
+.hero-rating-line strong{font-size:42px;line-height:1;font-weight:900;letter-spacing:-1.5px;color:#083d52}
+.hero-rating-line span{font-size:13px;font-weight:750;color:#526d77}
+.hero-review-count{font-size:13px;color:#087c83}
+.hero-review-copy{display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.5;color:#607680;border-left:1px solid #dce9e7;padding-left:22px}
+.hero-review-copy b{font-size:15px;color:#123c4b}
+.hero-review-copy strong{font-size:13px;color:#087c83}
+.services-carousel{max-width:650px;margin:34px auto 42px}
+.services-track{position:relative;min-height:430px}
+.services-track .service{display:none;min-height:430px;padding:0;overflow:hidden;border-radius:24px;background:#fff;border:1px solid #e2eeed;box-shadow:0 10px 35px #16485b10;animation:serviceFade .35s ease}
+.services-track .service.is-active{display:block}
+.services-track .service.is-active{display:block}\n.service-photo{display:block;width:100%;height:245px;object-fit:cover;object-position:center}
+.services-track .service .icon{display:none}
+.services-track .service h3{font-size:21px;margin:22px 25px 8px}
+.services-track .service p{font-size:15px;line-height:1.6;margin:0 25px 25px}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:18px}
+.carousel-arrow{width:38px;height:38px;border:1px solid #cfe2df;background:#fff;color:#0a5262;border-radius:50%;font-size:25px;line-height:1;cursor:pointer}
+.carousel-dots{display:flex;align-items:center;gap:8px}
+.carousel-dot{width:8px;height:8px;border:0;border-radius:50%;background:#b8d2cf;padding:0;cursor:pointer}
+.carousel-dot[aria-current="true"]{width:23px;border-radius:20px;background:#087c83}
+@media(max-width:800px){.hero-review{max-width:100%}}
+@media(max-width:520px){
+ .hero{padding:112px 0 58px}
+ .hero-review{gap:14px;padding:17px 16px;margin-top:24px;align-items:center}
+ .hero-review-main{min-width:112px}
+ .hero-stars{font-size:19px;letter-spacing:2px}
+ .hero-rating-line strong{font-size:35px}
+ .hero-rating-line span{font-size:11px}
+ .hero-review-count{font-size:11px}
+ .hero-review-copy{font-size:11px;padding-left:14px}
+ .hero-review-copy b{font-size:12px}
+ .hero-review-copy strong{font-size:12px}
+ .services-carousel{margin:27px auto 35px}
+ .services-track,.services-track .service{min-height:360px}
+ .service-photo{height:205px}
+ .services-track .service h3{font-size:19px;margin:19px 20px 7px}
+ .services-track .service p{font-size:14px;margin:0 20px 22px}
+}
+
+svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:800px){.hero{min-height:auto;padding:115px 0 54px}.hero-grid{grid-template-columns:1fr;gap:22px}.visual{min-height:390px}.service-card{max-width:370px}.services{display:block}.reviews{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.rating-inner{align-items:flex-start;flex-direction:column}section{padding:65px 0}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}header{padding:14px 0}.nav-link{font-size:12px;padding:9px 12px}.hero{padding-top:105px}h1{font-size:43px;letter-spacing:-1.7px}.hero p{font-size:16px}.visual{min-height:360px}.service-card{padding:22px;border-radius:25px}.service-card h2{font-size:24px}.mini-list{gap:8px}.mini{font-size:11px;padding:10px}.services{display:block}.rating-big{font-size:38px}footer{padding-bottom:25px}}
+
+/* App-inspired redesign: every key element is grouped inside a clear card */
+body{background:#f2f7fa;color:#122f40}
+header{position:absolute;color:#fff}
+.hero{padding:112px 0 52px;background:linear-gradient(135deg,#d9efff 0%,#eef7ff 48%,#d9f5ee 100%);color:#12364c}
+.hero:before{width:420px;height:420px;right:-170px;top:20px;border-color:#1380b51c;box-shadow:0 0 0 42px #1685b00a,0 0 0 84px #1685b008}
+.hero-grid{max-width:900px}
+.hero-panel{position:relative;background:#fff;border:1px solid #dceaf2;border-radius:30px;padding:clamp(24px,5vw,48px);box-shadow:0 20px 55px #164e6b16;overflow:hidden}
+.hero-panel:after{content:"";position:absolute;right:-80px;top:-100px;width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#e0f4ff,#e2faf1);z-index:0}
+.hero-panel>*{position:relative;z-index:1}
+.eyebrow{color:#087b91;background:#e9f7f8;border:1px solid #d5eeee}
+.hero h1{color:#12364c;max-width:740px;font-size:clamp(36px,5.4vw,62px);letter-spacing:-2px}
+.hero p{color:#5d7481;max-width:660px}
+.hero .btn-primary{background:#087fa6;color:#fff;box-shadow:0 8px 20px #087fa633}
+.hero .btn-outline{border:1px solid #c9dfe9;color:#15546b;background:#f7fbfd}
+.hero-review{display:grid;grid-template-columns:minmax(140px,.72fr) 1.28fr;align-items:center;gap:22px;max-width:100%;margin:26px 0 0;padding:22px 24px;border:1px solid #cfe5f0;border-radius:22px;background:linear-gradient(115deg,#f1f9ff,#f0fbf8);color:#173c50;box-shadow:0 8px 24px #0b52710b;text-decoration:none}
+.hero-review-main{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.hero-stars{font-size:23px;letter-spacing:3px;color:#f3ad24;line-height:1.2}
+.hero-rating-line{display:flex;align-items:baseline;gap:7px}
+.hero-rating-line strong{font-size:42px;line-height:1;color:#0d4059;letter-spacing:-1.5px}
+.hero-rating-line span{font-size:13px;color:#617b87;font-weight:650}
+.hero-review-count{font-size:15px;color:#174b61}
+.hero-review-copy{border-left:1px solid #d6e8ed;padding-left:22px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.55;color:#617783}
+.hero-review-copy b{font-size:15px;color:#173c50}
+.hero-review-copy strong{color:#087d98;font-size:13px;margin-top:3px}
+.trustline{margin-top:18px;color:#527080}
+.trustline span{background:#eef6f8;border:1px solid #deebef;border-radius:999px;padding:9px 12px;font-weight:700}
+#servicios{padding:54px 0 70px;background:linear-gradient(180deg,#f2f7fa,#eaf4f8)}
+.services-shell{background:#fff;border:1px solid #dceaf0;border-radius:30px;padding:clamp(22px,4vw,42px);box-shadow:0 18px 50px #174a620d}
+#servicios>.wrap>.section-kicker,#servicios>.wrap>.section-title,#servicios>.wrap>.section-intro{max-width:720px}
+#servicios .section-title{color:#15394d}
+#servicios .section-intro{color:#647b87}
+.services-carousel{max-width:720px;margin:28px auto 38px;padding:10px;border:1px solid #e2edf1;border-radius:25px;background:#f7fbfc;box-shadow:0 10px 28px #16485b0a}
+.services-track{min-height:0}
+.services-track .service{min-height:0;border-radius:19px;border:1px solid #e0ebef;box-shadow:0 6px 18px #16485b0a;overflow:hidden}
+.service-photo{height:clamp(190px,35vw,290px);object-fit:cover}
+.services-track .service h3{font-size:22px;margin:21px 23px 8px;color:#143b50}
+.services-track .service p{font-size:15px;line-height:1.65;margin:0 23px 24px;color:#617783}
+.carousel-controls{padding:0 8px 4px}
+.carousel-arrow{background:#fff;border-color:#d7e6ec;color:#087fa0}
+.carousel-dot[aria-current="true"]{background:#087fa0}
+.calculator-block{max-width:850px;margin:0 auto;padding:28px;border:1px solid #dceaf0;border-radius:24px;background:#f7fbfd;box-shadow:0 10px 28px #16485b0a}
+.calculator-block>.section-kicker{margin-top:0}
+.calculator{grid-template-columns:1.1fr .9fr;gap:14px;margin-top:22px}
+.calc-form,.calc-result{border-radius:18px;box-shadow:none}
+.calc-form{border-color:#e0ebef}
+.calc-result{background:linear-gradient(145deg,#0d6590,#087d83)}
+.calc-disclaimer{background:#edf5f8;border-radius:12px;padding:12px 14px}
+.contact{background:linear-gradient(120deg,#0b4863,#087d83)}
+@media(max-width:700px){
+ .hero{padding:100px 0 34px}
+ .hero-panel{border-radius:24px;padding:23px 19px}
+ .hero-review{grid-template-columns:1fr;gap:13px;padding:18px}
+ .hero-review-copy{border-left:0;border-top:1px solid #d6e8ed;padding:12px 0 0}
+ .hero-rating-line strong{font-size:38px}
+ #servicios{padding:30px 0 48px}
+ .services-shell{border-radius:23px;padding:21px 15px}
+ .services-carousel{margin:23px auto 29px;padding:7px}
+ .service-photo{height:205px}
+ .services-track .service h3{font-size:19px;margin:18px 17px 7px}
+ .services-track .service p{font-size:14px;margin:0 17px 20px}
+ .calculator-block{padding:20px 14px;border-radius:19px}
+ .calculator{grid-template-columns:1fr}
+}
+
+
+/* App UI inspired by the supplied two-screen reference */
+body{margin:0;background:#f2f5f8;color:#172b3a;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.app-page{padding:18px 12px 42px}
+.app-shell{width:min(100%,780px);margin:0 auto;background:#fff;border:1px solid #e8edf1;border-radius:30px;overflow:hidden;box-shadow:0 18px 60px #173d5814}
+.app-top{padding:25px 22px 24px;background:linear-gradient(180deg,#d9edff 0%,#f7fbff 48%,#fff 100%)}
+.app-topbar{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.app-brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:#152f43}
+.app-logo{width:43px;height:43px;border-radius:15px;background:#087fe2;color:#fff;display:grid;place-items:center;font-weight:900;letter-spacing:-1px;box-shadow:0 7px 18px #087fe233}
+.app-brand b{display:block;font-size:15px}.app-brand small{display:block;color:#72818c;font-size:11px;margin-top:3px}
+.app-icon-button{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#087bd4;font-size:22px;box-shadow:0 5px 16px #2e79aa18}
+.app-location{display:flex;align-items:center;gap:10px;margin:22px 0 17px;padding-left:3px;color:#1b587d}
+.location-pin{width:30px;height:30px;border-radius:10px;background:#e6f3ff;display:grid;place-items:center;font-size:20px}
+.app-location small{display:block;color:#82919b;font-size:10px}.app-location b{display:block;font-size:12px;margin-top:2px}
+.app-search{height:51px;border-radius:15px;background:#fff;border:1px solid #e5edf3;box-shadow:0 5px 18px #2a658510;display:flex;align-items:center;gap:10px;padding:0 14px;color:#7b8b96}
+.app-search>span:first-child{font-size:25px;line-height:1}
+.app-search input{border:0;outline:0;min-width:0;flex:1;font:inherit;font-size:13px;color:#253c4a;background:transparent}
+.app-search input::placeholder{color:#9aa8b1}
+.search-filter{background:#087fe2;color:#fff;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font-size:18px}
+.app-chips{display:flex;gap:8px;overflow-x:auto;padding:16px 0 6px;scrollbar-width:none}
+.app-chips::-webkit-scrollbar{display:none}
+.app-chip{white-space:nowrap;padding:9px 14px;border-radius:999px;background:#fff;border:1px solid #e6edf2;color:#62717b;font-size:11px;font-weight:750;text-decoration:none}
+.app-chip.active,.app-chip:focus{background:#087fe2;color:#fff;border-color:#087fe2}
+.app-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:24px 0 13px}
+.app-section-head small{display:block;color:#8796a0;font-size:10px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;margin-bottom:5px}
+.app-section-head h1,.app-section-head h2{font-size:21px;letter-spacing:-.6px;line-height:1.16;margin:0;color:#162f43}
+.app-section-head>a{font-size:11px;font-weight:800;color:#0878c8;text-decoration:none;white-space:nowrap}
+.featured-review{display:block;padding:19px;border-radius:22px;background:linear-gradient(125deg,#0879e8,#159cf5);color:#fff;text-decoration:none;box-shadow:0 13px 28px #087fe233;position:relative;overflow:hidden}
+.featured-review:after{content:"";position:absolute;width:190px;height:190px;right:-65px;bottom:-120px;border-radius:50%;border:1px solid #ffffff35;box-shadow:0 0 0 24px #ffffff0d,0 0 0 48px #ffffff0a}
+.review-card-top{display:flex;align-items:center;gap:8px;color:#dceeff;font-size:11px;font-weight:700}
+.google-mark{width:25px;height:25px;border-radius:8px;background:#fff;color:#4285f4;display:grid;place-items:center;font-size:16px;font-weight:900}
+.review-arrow{margin-left:auto;font-size:17px}
+.review-score-line{display:flex;align-items:center;gap:13px;margin:13px 0 8px}
+.review-score-line strong{font-size:43px;line-height:1;letter-spacing:-1.8px}
+.review-stars{font-size:22px;letter-spacing:3px;color:#ffdf72}
+.review-bottom{display:flex;flex-direction:column;gap:4px}
+.review-bottom b{font-size:13px}.review-bottom span{font-size:11px;line-height:1.45;color:#e2f2ff;max-width:390px}
+.review-cta{margin-top:15px;display:flex;justify-content:space-between;align-items:center;background:#fff;color:#0875c9;border-radius:12px;padding:11px 14px;font-size:11px;font-weight:850;position:relative;z-index:1}
+.app-trust-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.app-trust-pills span{border:1px solid #e2edf4;border-radius:999px;background:#fff;padding:7px 10px;color:#617583;font-size:10px;font-weight:750}
+.app-content{padding:22px 22px 27px}
+.service-heading{margin:0 0 9px}
+.service-count{font-size:10px;color:#087bd3;font-weight:800;background:#eaf5ff;border-radius:999px;padding:7px 10px}
+.app-description{font-size:12px;line-height:1.55;color:#81909a;margin:0}
+.services-carousel{max-width:100%;margin:17px 0 27px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.services-track{min-height:0}
+.services-track .service{min-height:0;padding:0;border:1px solid #e6edf2;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 7px 20px #173d580b}
+.service-photo{display:block;width:100%;height:clamp(180px,38vw,270px);object-fit:cover}
+.services-track .service .icon{display:none}
+.services-track .service h3{font-size:17px;margin:15px 16px 5px;color:#162f43}
+.services-track .service p{font-size:12px;line-height:1.55;margin:0 16px 17px;color:#7b8992}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:15px;margin-top:12px}
+.carousel-arrow{width:32px;height:32px;border:1px solid #e3ebf0;background:#fff;color:#087bd3;border-radius:50%;font-size:21px;line-height:1;cursor:pointer}
+.carousel-dots{display:flex;align-items:center;gap:6px}
+.carousel-dot{width:6px;height:6px;border:0;border-radius:50%;background:#cbd7df;padding:0;cursor:pointer}
+.carousel-dot[aria-current="true"]{width:19px;border-radius:20px;background:#087fe2}
+.calculator-wrap{margin-top:6px}
+.calculator-block{max-width:100%;padding:18px;border:1px solid #e5edf2;border-radius:21px;background:#f8fbfd;box-shadow:0 6px 20px #173d5808}
+.calculator-block>.section-kicker{display:block;margin:0 0 6px;color:#087bd3}
+.calculator-block .section-title{font-size:20px;margin:0 0 7px;color:#162f43}
+.calculator-block .section-intro{font-size:12px;line-height:1.5;color:#7a8992}
+.calculator{display:grid;grid-template-columns:1fr;gap:11px;margin-top:15px}
+.calc-form,.calc-result{padding:16px;border-radius:16px;box-shadow:none}
+.calc-form{border-color:#e5edf2}
+.calc-form label{font-size:11px}
+.calc-form select,.calc-form textarea{font-size:12px;padding:11px;border-radius:10px;margin-bottom:12px}
+.calc-button{background:#087fe2;border-radius:11px}
+.calc-result{min-height:0;background:linear-gradient(125deg,#0879e8,#159cf5)}
+.calc-result-label{font-size:10px}
+.calc-price{font-size:26px;margin:10px 0 7px}
+.calc-result p{font-size:11px;margin-bottom:14px}
+.btn-whatsapp{font-size:11px;padding:11px 15px;border-radius:11px}
+.calc-disclaimer{font-size:10px;line-height:1.5;margin:12px 0 0;padding:10px;background:#edf4f8;border-radius:10px}
+.contact{padding:25px 22px;background:#f6f9fb;color:#17384b}
+.contact .section-kicker{color:#087bd3}
+.contact .section-title{font-size:21px;color:#17384b}
+.contact .section-intro{font-size:12px;color:#788a95}
+.contact .btn-primary{background:#087fe2}
+.contact .btn-outline{border-color:#d9e5ec;color:#17617d}
+.contact-card{background:#fff;border:1px solid #e5edf2;color:#17384b;border-radius:18px}
+.contact-card .info-row{border-color:#eaf0f4}
+.contact-card .info-row small{color:#748691}
+.contact-card .info-row b{color:#19394c}
+footer{width:min(100%,780px);margin:0 auto 25px;border-radius:0 0 24px 24px;background:#17394e;color:#d5e2e9;padding:18px 22px}
+@media(min-width:700px){
+ .app-page{padding:35px 20px}
+ .app-shell{display:grid;grid-template-columns:1fr}
+ .app-top{padding:28px 34px}
+ .app-content{padding:28px 34px}
+ .featured-review{padding:23px}
+ .review-bottom span{font-size:12px}
+ .services-track .service.is-active{display:grid;grid-template-columns:42% 1fr;align-items:center}
+ .service-photo{grid-row:span 3;height:220px}
+ .services-track .service h3{margin:20px 20px 5px}
+ .services-track .service p{margin:0 20px 20px}
+ .contact{padding:32px 34px}
+ .contact-grid{grid-template-columns:1fr 1fr;gap:24px}
+ .calculator{grid-template-columns:1fr 1fr}
+}
+@media(max-width:420px){
+ .app-page{padding:0}
+ .app-shell{border-radius:0;border:0}
+ .app-top{padding:22px 17px}
+ .app-content{padding:21px 17px}
+ .app-section-head h1,.app-section-head h2{font-size:19px}
+ .review-score-line strong{font-size:39px}
+ .review-stars{font-size:19px}
+ .calculator-block{padding:15px}
+ .contact{padding:24px 17px}
+ footer{border-radius:0}
+}
+
+
+#vacio{max-width:560px;margin:16vh auto;padding:24px;text-align:center;font-family:inherit;color:inherit}
+#vacio h1{font-size:1.6rem;margin:0 0 10px}
+#vacio p{opacity:.8;line-height:1.5}
+
+.reviews-live{margin:18px 0 8px;display:grid;gap:10px}
+.reviews-live .review-item{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:16px;background:#fff;border:1px solid #e2eeed;color:inherit}
+.reviews-live .review-copy{display:flex;flex-direction:column;gap:2px;min-width:0}
+.reviews-live .review-copy small{opacity:.85;line-height:1.4}
+</style>
+</head>
+<body>
+<div id="vacio" hidden>
+  <h1>Web de ejemplo</h1>
+  <p>Este link no trae los datos de un negocio. En la Fábrica, abrí un prospecto de mantenimiento del hogar y tocá «Crear web de ejemplo».</p>
+</div>
+<div id="sitio" hidden>
+
+
+<main class="app-page" id="inicio">
+  <div class="app-shell">
+    <section class="app-top">
+      <div class="app-topbar">
+        <a class="app-brand" href="#inicio">
+          <span class="app-logo"><span data-iniciales>EB</span></span>
+          <span><b><span data-nombre>Emmanuel Büttiner</span></b><small data-profesion>Plomería · Gas matriculado</small></span>
+        </a>
+        <a class="app-icon-button" href="#" data-wa target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">↗</a>
+      </div>
+      <div class="app-location"><span class="location-pin">⌖</span><span><small>Zona de atención</small><b><span data-zona>Avellaneda · Buenos Aires</span></b></span></div>
+      <div class="app-search">
+        <span>⌕</span>
+        <input id="service-search" type="search" placeholder="Buscar un servicio o reparación" aria-label="Buscar un servicio">
+        <span class="search-filter">☷</span>
+      </div>
+      <div class="app-chips" aria-label="Categorías de servicios">
+        <a class="app-chip active" href="#servicios">Todos</a>
+        <a class="app-chip" href="#servicios" data-service="plomeria">Plomería</a>
+        <a class="app-chip" href="#servicios" data-service="griferia">Grifería</a>
+        <a class="app-chip" href="#servicios" data-service="termotanque">Termotanques</a>
+        <a class="app-chip" href="#servicios" data-service="calefon">Calefones</a>
+        <a class="app-chip" href="#servicios" data-service="gas">Gas</a>
+      </div>
+      <div class="app-section-head">
+        <div><small>Opiniones verificables</small><h1><span data-titulo>La confianza de nuestros clientes</span></h1></div>
+        <a href="#" data-maps target="_blank" rel="noopener">Ver todas ›</a>
+      </div>
+      <a class="featured-review" href="#" data-maps target="_blank" rel="noopener" aria-label="Ver reseñas en Google">
+        <div class="review-card-top"><span class="google-mark">G</span><span>Reseñas de Google</span><span class="review-arrow">↗</span></div>
+        <div class="review-score-line"><strong><span data-rating>5,0</span></strong><span class="review-stars"><span data-stars>★★★★★</span></span></div>
+        <div class="review-bottom"><b><span data-reviews-count>18</span> opiniones de clientes</b><span>Valoraciones que destacan la puntualidad, la comunicación y la prolijidad.</span></div>
+        <div class="review-cta">Leer opiniones en Google <span>→</span></div>
+      </a>
+      <div class="app-trust-pills"><span>✓ Gasista matriculado</span><span>✓ Atención personalizada</span></div>
+<div data-reviews-list data-hide-if="reviews-text" class="reviews-live"></div>
+
+    </section>
+
+    <section id="servicios" class="app-content">
+      <div class="app-section-head service-heading">
+        <div><small>Soluciones para tu hogar</small><h2>Servicios disponibles</h2></div>
+        <span class="service-count"><span data-stat-servicios>6</span> servicios</span>
+      </div>
+      <p class="app-description">Elegí el trabajo que necesitás y conocé las opciones de reparación e instalación.</p>
+      <div class="services-carousel" aria-label="Carrusel de servicios">
+    <div class="services-track">
+    <article class="service is-active"><img class="service-photo" src="https://images.pexels.com/photos/32588548/pexels-photo-32588548/free-photo-of-plumber-repairing-pipe-with-wrench-indoors.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plomero reparando una conexión de cañería debajo de una pileta" loading="lazy" decoding="async">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3s7 7.2 7 12a7 7 0 0 1-14 0c0-4.8 7-12 7-12Z"/><path d="M9 16a3 3 0 0 0 3 3"/></svg></div><h3>Plomería sanitaria</h3><p>Reparación de pérdidas y filtraciones, lavatorios, baños y conexiones de agua.</p></article>
+    <article class="service"><img class="service-photo" src="https://images.pexels.com/photos/4494662/pexels-photo-4494662.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Detalle de una grifería y conexión de agua" loading="lazy" decoding="async">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 12h16M7 12V7a5 5 0 0 1 10 0v5M9 12v8m6-8v8M7 20h10"/></svg></div><h3>Grifería y sanitarios</h3><p>Cambio de griferías y reparación de componentes de lavatorios y baños.</p></article>
+    <article class="service"><img class="service-photo" src="https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termotanque instalado en un espacio doméstico" loading="lazy" decoding="async">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 21V8h12v13M9 8V4h6v4M9 12h6M9 16h6"/></svg></div><h3>Termotanques</h3><p>Recambio de termotanque y adecuación de conexiones de entrada de agua.</p></article>
+    <article class="service"><img class="service-photo" src="https://images.pexels.com/photos/34938442/pexels-photo-34938442/free-photo-of-technician-maintaining-heating-system-in-workshop.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Técnico revisando un sistema de calefacción y agua caliente" loading="lazy" decoding="async">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 21V8a7 7 0 0 1 14 0v13M8 12h8M9 16h6"/></svg></div><h3>Calefones</h3><p>Revisión y diagnóstico de problemas en calefones y sus componentes.</p></article>
+    <article class="service"><img class="service-photo" src="https://images.pexels.com/photos/39885416/pexels-photo-39885416/free-photo-of-close-up-of-plumber-working-with-copper-pipe.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plomero trabajando con tuberías de cobre y herramientas" loading="lazy" decoding="async">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3c3 3 5 5 5 9a5 5 0 0 1-10 0c0-2 1-4 3-6 0 3 2 3 2 3s1-3 0-6Z"/></svg></div><h3>Instalaciones de gas</h3><p>Consultas y trabajos vinculados al servicio de gasista matriculado.</p></article>
+    <article class="service"><img class="service-photo" src="https://images.pexels.com/photos/7641869/pexels-photo-7641869.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cliente conversando con un profesional sobre un servicio para el hogar" loading="lazy" decoding="async">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 12h16M12 4v16M7 7l10 10M17 7 7 17"/></svg></div><h3>Asesoramiento</h3><p>Orientación sobre repuestos y materiales necesarios para instalaciones y arreglos.</p></article>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-arrow" type="button" id="service-prev" aria-label="Servicio anterior">‹</button>
+      <div class="carousel-dots" id="service-dots" aria-label="Elegir servicio"></div>
+      <button class="carousel-arrow" type="button" id="service-next" aria-label="Servicio siguiente">›</button>
+    </div>
+  </div>
+      <div class="calculator-wrap">
+        <div class="calculator-block">
+    <span class="section-kicker">Presupuesto orientativo</span>
+    <h2 class="section-title">Calculá cuánto podría costar tu trabajo.</h2>
+    <p class="section-intro">Elegí el servicio y contanos qué necesitás. El valor es una referencia inicial; el presupuesto definitivo se confirma luego de revisar el trabajo.</p>
+    <div class="calculator">
+      <div class="calc-form">
+        <label for="calc-service">¿Qué trabajo necesitás?</label>
+        <select id="calc-service">
+          <option value="plomeria">Plomería / pérdida de agua</option>
+          <option value="griferia">Cambio de grifería o sanitario</option>
+          <option value="termotanque">Instalación de termotanque</option>
+          <option value="calefon">Revisión de calefón</option>
+          <option value="gas">Trabajo de gas</option>
+        </select>
+        <label for="calc-type">Tipo de trabajo</label>
+        <select id="calc-type">
+          <option value="reparacion">Reparación</option>
+          <option value="instalacion">Instalación / colocación</option>
+          <option value="cambio">Cambio de artefacto o pieza</option>
+        </select>
+        <label for="calc-detail">Contanos un poco más (opcional)</label>
+        <textarea id="calc-detail" rows="3" placeholder="Ej.: pierde agua debajo de la pileta..."></textarea>
+        <button class="btn btn-primary calc-button" id="calc-button" type="button">Calcular estimación</button>
+      </div>
+      <div class="calc-result" aria-live="polite">
+        <div class="calc-result-label">Estimación orientativa</div>
+        <div class="calc-price" id="calc-price">Seleccioná tu trabajo</div>
+        <p id="calc-note">El cálculo es aproximado y no reemplaza la revisión del profesional.</p>
+        <a class="btn btn-whatsapp" id="calc-whatsapp" href="#" data-wa target="_blank" rel="noopener">Enviar consulta por WhatsApp</a>
+      </div>
+    </div>
+    <p class="calc-disclaimer">Importes de referencia ilustrativos en pesos argentinos (ARS), no son una tarifa del negocio. Pueden variar según materiales, estado de la instalación, complejidad, ubicación y disponibilidad. Los trabajos de gas requieren evaluación y presupuesto profesional; no se confirma un precio sin inspección.</p>
+  </div>
+      </div>
+    </section>
+    <section class="contact" id="contacto"><div class="wrap contact-grid">
+  <div><span class="section-kicker">Contacto</span><h2 class="section-title">Contame qué necesitás solucionar.</h2><p class="section-intro">Podés escribir por WhatsApp, llamar o consultar la ubicación del servicio. Si podés, enviá una foto o un video del problema para orientar la consulta.</p>
+    <div class="actions" style="margin-top:25px"><a class="btn btn-primary" href="#" data-wa target="_blank" rel="noopener">Escribir por WhatsApp</a><a class="btn btn-outline" href="tel:" data-hide-if="tel">Llamar</a></div>
+  </div>
+  <div class="contact-card">
+    <div class="info-row"><span>⌖</span><div><b>Dirección</b><small><span data-dir>Gral. Heredia 2455, B1872 Avellaneda, Buenos Aires</span></small></div></div>
+    <div class="info-row"><span>☎</span><div><b>Teléfono</b><small><span data-tel>+54 <span data-tel>11 5867-2956</span></span></small></div></div>
+    <div class="info-row"><span>◷</span><div><b>Horarios publicados</b><small>Lunes a viernes: 09:00 a 18:00<br>Sábados: 09:00 a 13:00<br>Domingos: cerrado</small></div></div>
+    <div class="info-row"><span>★</span><div><b>Google</b><small><span data-rating>5,0</span> de calificación · <span data-reviews-count>18</span> reseñas</small></div></div>
+    <a class="btn btn-primary" style="width:100%;margin-top:18px" href="#" data-maps target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+  </div>
+</div></section>
+  </div>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> <span data-nombre>Emmanuel Büttiner</span> · <span data-rubro>Plomería y gas</span></span><span><span data-zona>Avellaneda, Provincia de Buenos Aires</span></span><span>Fotografías ilustrativas: <a href="https://www.pexels.com/" target="_blank" rel="noopener">Pexels</a></span></div></footer>
+
+<section class="contact" id="contacto"><div class="wrap contact-grid">
+  <div><span class="section-kicker">Contacto</span><h2 class="section-title">Contame qué necesitás solucionar.</h2><p class="section-intro">Podés escribir por WhatsApp, llamar o consultar la ubicación del servicio. Si podés, enviá una foto o un video del problema para orientar la consulta.</p>
+    <div class="actions" style="margin-top:25px"><a class="btn btn-primary" href="#" data-wa target="_blank" rel="noopener">Escribir por WhatsApp</a><a class="btn btn-outline" href="tel:" data-hide-if="tel">Llamar</a></div>
+  </div>
+  <div class="contact-card">
+    <div class="info-row"><span>⌖</span><div><b>Dirección</b><small><span data-dir>Gral. Heredia 2455, B1872 Avellaneda, Buenos Aires</span></small></div></div>
+    <div class="info-row"><span>☎</span><div><b>Teléfono</b><small><span data-tel>+54 <span data-tel>11 5867-2956</span></span></small></div></div>
+    <div class="info-row"><span>◷</span><div><b>Horarios publicados</b><small>Lunes a viernes: 09:00 a 18:00<br>Sábados: 09:00 a 13:00<br>Domingos: cerrado</small></div></div>
+    <div class="info-row"><span>★</span><div><b>Google</b><small><span data-rating>5,0</span> de calificación · <span data-reviews-count>18</span> reseñas</small></div></div>
+    <a class="btn btn-primary" style="width:100%;margin-top:18px" href="#" data-maps target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> <span data-nombre>Emmanuel Büttiner</span> · <span data-rubro>Plomería y gas</span></span><span><span data-zona>Avellaneda, Provincia de Buenos Aires</span></span><span>Fotografías ilustrativas: <a href="https://www.pexels.com/" target="_blank" rel="noopener">Pexels</a></span></div></footer>
+</div>
+
+<script src="codec.js?v=20261118b"></script>
+<script src="hogar.js?v=20261118b"></script>
+<script src="aplicar.js?v=20261118b"></script>
+</body></html>

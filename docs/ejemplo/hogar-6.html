@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#073d78">
+<meta name="description" content="Web de ejemplo armada con los datos públicos del negocio. Los precios son orientativos.">
+<title>Web de ejemplo</title>
+<style>
+:root{--navy:#083b75;--blue:#087fe5;--green:#168b55;--green2:#20a568;--pale:#edf7f2;--ink:#17324f;--muted:#718397;--line:#e6edf3;--bg:#f4f8fb;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.wrap{max-width:980px;margin:auto;padding:0 18px}
+.hero{background-color:#07376c;background-image:linear-gradient(90deg,rgba(4,34,70,.94) 0%,rgba(5,55,101,.83) 48%,rgba(5,83,133,.50) 100%),url("https://images.pexels.com/photos/32588548/pexels-photo-32588548.jpeg?cs=srgb&dl=pexels-bulat843-1243575272-32588548.jpg&fm=jpg");background-size:cover;background-position:center 42%;color:#fff;padding:34px 0 28px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-130px;top:-190px;border:1px solid #ffffff32;box-shadow:0 0 0 28px #ffffff0b,0 0 0 58px #ffffff09;z-index:0}
+.brandline{display:flex;align-items:center;gap:11px;position:relative;z-index:1}
+.brandmark{width:43px;height:43px;border-radius:14px;background:#fff;color:var(--navy);display:grid;place-items:center;font-size:14px;font-weight:950}
+.brandline strong{display:block;font-size:14px}.brandline small{display:block;color:#cde5fa;font-size:11px;margin-top:3px}
+.hero h1{font-size:clamp(29px,5vw,48px);line-height:1.04;letter-spacing:-1.3px;max-width:720px;margin:28px 0 9px;position:relative;z-index:1}
+.hero p{font-size:14px;color:#d9eafb;line-height:1.55;margin:0;max-width:620px;position:relative;z-index:1}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;position:relative;z-index:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 19px;font-size:12px;font-weight:850;cursor:pointer}
+.btn-white{background:#fff;color:#07549a}.btn-outline{border:1px solid #ffffffa6;color:#fff;background:#ffffff12}
+main{padding:22px 0 0}
+.review-section{margin-top:-1px}
+.review-card{background:#fff;border:1px solid #e3eee8;border-radius:23px;padding:21px 22px;box-shadow:0 12px 35px #173c5b0b}
+.review-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.google-label{display:inline-flex;align-items:center;gap:8px;color:#16834f;background:#e8f6ee;padding:8px 12px;border-radius:999px;font-size:11px;font-weight:900}
+.google-g{width:22px;height:22px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:15px;font-weight:950;color:#4285f4}
+.rating-line{display:flex;align-items:center;gap:13px;margin:15px 0 5px;flex-wrap:wrap}
+.rating-number{font-size:48px;line-height:1;font-weight:900;letter-spacing:-2px;color:#153754}
+.stars{color:#f2b323;font-size:25px;letter-spacing:3px;white-space:nowrap}
+.rating-copy{font-size:12px;color:#73869a}
+.review-intro{font-size:14px;line-height:1.5;color:#4c6378;margin:9px 0 15px}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.review-quote{background:#f5faf7;border:1px solid #e5f0e9;border-radius:15px;padding:14px}
+.review-quote .stars-small{color:#e8ac1d;letter-spacing:1.5px;font-size:13px}
+.review-quote p{font-size:12px;line-height:1.5;color:#29465f;margin:8px 0 0;font-weight:650}
+.review-quote small{display:block;color:#829487;font-size:10px;margin-top:8px}
+.review-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:15px;padding-top:14px;border-top:1px solid #edf2ee}
+.review-bottom span{font-size:11px;color:#7b8b9b}
+.review-bottom a{font-size:11px;color:#16834f;font-weight:900}
+.section{padding:31px 0 0}
+.eyebrow{color:#168b55;font-size:10px;font-weight:950;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:8px}
+.section h2{font-size:clamp(24px,4vw,34px);letter-spacing:-.8px;line-height:1.1;margin:0;color:#163653}
+.section-lead{font-size:13px;line-height:1.6;color:#708296;margin:9px 0 17px;max-width:660px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.service-card{display:block;background:#fff;border:1px solid #e5ebf1;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px #183c5c0a;transition:transform .18s,box-shadow .18s}
+.service-card:focus-visible,.service-card:hover{outline:2px solid #81c6f7;transform:translateY(-3px);box-shadow:0 12px 26px #183c5c14}
+.service-card img{display:block;width:100%;height:150px;object-fit:cover;background:#e9f1f7}
+.service-content{padding:13px 14px 14px}
+.service-content h3{font-size:14px;margin:0 0 5px;color:#1c3b59}
+.service-content p{font-size:11px;line-height:1.45;color:#7c8c9c;margin:0 0 12px;min-height:32px}
+.service-link{display:flex;justify-content:space-between;align-items:center;color:#0875cf;font-size:11px;font-weight:900}
+.calculator{background:linear-gradient(135deg,#073a70,#07569b 68%,#087fe5);color:#fff;border-radius:24px;padding:22px;margin-top:30px;box-shadow:0 15px 34px #0a477a22}
+.calculator .eyebrow{color:#a9e7ca}
+.calculator h2{color:#fff;font-size:27px}
+.calculator .section-lead{color:#d6e8f7;margin-bottom:18px}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:block}
+.field label{display:block;font-size:11px;color:#e3f2ff;font-weight:800;margin:0 0 6px}
+.field input,.field select,.field textarea{width:100%;border:1px solid #ffffff70;background:#fff;color:#25425e;border-radius:11px;padding:13px 12px;font-size:12px;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{box-shadow:0 0 0 3px #76c8ff66}
+.field.full{grid-column:1/-1}
+.estimate-box{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#ffffffed;color:#173b61;border-radius:14px;padding:13px 15px;margin-top:14px}
+.estimate-box span{font-size:11px;font-weight:800}.estimate-box strong{font-size:22px;letter-spacing:-.5px}
+.calc-note{font-size:10px;line-height:1.5;color:#d5e8f7;margin:10px 0 15px}
+.btn-whatsapp{width:100%;background:#20b96f;color:#fff;font-size:13px;padding:15px}
+.map-section{padding:34px 0 0}
+.map-card{background:#fff;border:1px solid #e4ebf1;border-radius:22px;overflow:hidden;box-shadow:0 8px 25px #173c5b0b}
+.map-head{padding:19px 20px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.map-head h2{font-size:22px;margin:0}.map-head p{font-size:11px;color:#7c8b9b;margin:5px 0 0}
+.map-head a{font-size:11px;color:#0875cf;font-weight:900;white-space:nowrap}
+.map-frame{width:100%;height:310px;border:0;display:block;background:#e9f0f5}
+.contact-row{display:flex;flex-wrap:wrap;gap:12px 24px;padding:15px 20px;color:#60768b;font-size:11px}
+.contact-row strong{color:#1b3d5b}
+footer{margin-top:28px;background:#082f5a;color:#d4e6f6;padding:23px 0;text-align:center;font-size:11px}
+footer strong{display:block;font-size:13px;letter-spacing:1.5px;color:#fff;margin-bottom:5px}
+@media(max-width:720px){
+ .wrap{padding-left:14px;padding-right:14px}
+ .hero{padding:26px 0 24px;background-position:58% center;background-image:linear-gradient(90deg,rgba(4,34,70,.93) 0%,rgba(5,55,101,.78) 58%,rgba(5,83,133,.48) 100%),url("https://images.pexels.com/photos/32588548/pexels-photo-32588548.jpeg?cs=srgb&dl=pexels-bulat843-1243575272-32588548.jpg&fm=jpg")}
+ .hero h1{font-size:32px;margin-top:24px}
+ .review-card{padding:17px 15px;border-radius:19px}
+ .rating-number{font-size:43px}.stars{font-size:22px}
+ .review-grid{grid-template-columns:1fr;gap:8px}
+ .review-quote{padding:12px 13px}
+ .review-quote p{margin-top:5px}
+ .services-grid{grid-template-columns:1fr 1fr;gap:10px}
+ .service-card img{height:118px}
+ .service-content{padding:11px}
+ .service-content h3{font-size:12px}
+ .service-content p{font-size:10px;min-height:43px}
+ .calculator{padding:19px 15px;border-radius:20px}
+ .calc-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .estimate-box strong{font-size:19px}
+ .map-frame{height:270px}
+ .map-head{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:360px){.services-grid{grid-template-columns:1fr}.service-card img{height:155px}}
+
+#vacio{max-width:560px;margin:16vh auto;padding:24px;text-align:center;font-family:inherit;color:inherit}
+#vacio h1{font-size:1.6rem;margin:0 0 10px}
+#vacio p{opacity:.8;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="vacio" hidden>
+  <h1>Web de ejemplo</h1>
+  <p>Este link no trae los datos de un negocio. En la Fábrica, abrí un prospecto de mantenimiento del hogar y tocá «Crear web de ejemplo».</p>
+</div>
+<div id="sitio" hidden>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="brandline"><span class="brandmark"><span data-iniciales>EB</span></span><span><strong><span data-nombre>Emmanuel Büttiner</span></strong><small><span data-profesion>Gasista matriculado · Plomería sanitaria</span></small></span></div>
+  <h1><span data-titulo><span data-rubro>Plomería y gas</span> en Avellaneda</span></h1>
+  <p>Soluciones para instalaciones, artefactos y reparaciones del hogar. Contame qué necesitás y coordinamos una consulta.</p>
+  <div class="hero-actions"><a class="btn btn-white" href="#calculadora">Calcular presupuesto →</a><a class="btn btn-outline" href="#" data-wa target="_blank" rel="noopener">Consultar por WhatsApp</a></div>
+  <div style="position:relative;z-index:1;margin-top:13px;color:#d3e6f5;font-size:9px;opacity:.85">Fotografía ilustrativa · <a href="https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/" target="_blank" rel="noopener" style="text-decoration:underline">Pexels</a></div>
+ </div>
+</header>
+<main class="wrap">
+ <section class="review-section" data-hide-if="reviews" aria-label="Reseñas de Google">
+  <div class="review-card">
+   <div class="review-top"><span class="google-label"><span class="google-g">G</span> Opiniones verificables en Google</span><span class="rating-copy">Perfil de <span data-nombre>Emmanuel Büttiner</span></span></div>
+   <div class="rating-line"><strong class="rating-number"><span data-rating>5,0</span></strong><span class="stars" aria-label="5 de 5 estrellas"><span data-stars>★★★★★</span></span></div>
+   <div class="rating-copy"><strong><span data-rating>5,0</span> de 5</strong> · <span data-reviews-count>18</span> reseñas en Google</div>
+   <p class="review-intro">La experiencia de sus clientes destaca la puntualidad, la comunicación clara y la calidad del trabajo.</p>
+   <div class="review-grid" data-reviews data-review-item="review-quote" data-hide-if="reviews-text">
+    <article class="review-quote"><div class="stars-small">★★★★★</div><p>“Vino a la hora pactada y solucionó por demás el problema.”</p><small>Reseña publicada en Google</small></article>
+    <article class="review-quote"><div class="stars-small">★★★★★</div><p>“Comunicación continua y rápida, asesoramiento.”</p><small>Reseña publicada en Google</small></article>
+    <article class="review-quote"><div class="stars-small">★★★★★</div><p>“Espectacular cambio de grifo, todo perfecto en tiempo y forma.”</p><small>Reseña publicada en Google</small></article>
+   </div>
+   <div class="review-bottom"><span><span data-reviews-count>18</span> opiniones de clientes</span><a href="#" data-maps target="_blank" rel="noopener">Leer reseñas en Google ↗</a></div>
+  </div>
+ </section>
+
+ <section class="section" id="servicios">
+  <div class="eyebrow">Servicios</div>
+  <h2>¿Qué necesitás reparar?</h2>
+  <p class="section-lead">Elegí el servicio: cada tarjeta te lleva directamente a la calculadora con el trabajo seleccionado para que puedas consultar por WhatsApp.</p>
+  <div class="services-grid">
+   <a class="service-card" href="#calculadora" data-service="plomeria">
+    <img src="https://images.pexels.com/photos/32588548/pexels-photo-32588548/free-photo-of-plumber-repairing-pipe-with-wrench-indoors.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plomero reparando conexiones debajo de una pileta" loading="lazy">
+    <div class="service-content"><h3>Plomería sanitaria</h3><p>Pérdidas de agua, filtraciones, lavatorios y conexiones.</p><span class="service-link">Consultar servicio <b>→</b></span></div>
+   </a>
+   <a class="service-card" href="#calculadora" data-service="griferia">
+    <img src="https://images.pexels.com/photos/4494662/pexels-photo-4494662.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Técnico instalando una grifería en un lavabo" loading="lazy">
+    <div class="service-content"><h3>Grifería y sanitarios</h3><p>Cambio de grifos y reparación de componentes de baño y cocina.</p><span class="service-link">Consultar servicio <b>→</b></span></div>
+   </a>
+   <a class="service-card" href="#calculadora" data-service="termotanque">
+    <img src="https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Instalación de termotanque con conexiones de agua" loading="lazy">
+    <div class="service-content"><h3>Termotanques</h3><p>Instalación, recambio y revisión de conexiones.</p><span class="service-link">Consultar servicio <b>→</b></span></div>
+   </a>
+   <a class="service-card" href="#calculadora" data-service="calefon">
+    <img src="https://images.pexels.com/photos/34938442/pexels-photo-34938442/free-photo-of-technician-maintaining-heating-system-in-workshop.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Técnico revisando un calefón a gas" loading="lazy">
+    <div class="service-content"><h3>Calefones</h3><p>Diagnóstico, reparación y revisión de artefactos.</p><span class="service-link">Consultar servicio <b>→</b></span></div>
+   </a>
+   <a class="service-card" href="#calculadora" data-service="gas">
+    <img src="https://images.pexels.com/photos/39885416/pexels-photo-39885416/free-photo-of-close-up-of-plumber-working-with-copper-pipe.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Profesional inspeccionando una instalación de gas y calefacción" loading="lazy">
+    <div class="service-content"><h3>Trabajos de gas</h3><p>Evaluación de instalaciones y artefactos por gasista matriculado.</p><span class="service-link">Consultar servicio <b>→</b></span></div>
+   </a>
+   <a class="service-card" href="#calculadora" data-service="instalaciones">
+    <img src="https://images.pexels.com/photos/7641869/pexels-photo-7641869.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plomero trabajando sobre cañerías y conexiones" loading="lazy">
+    <div class="service-content"><h3>Instalaciones y conexiones</h3><p>Conexiones de agua y adecuaciones para el hogar.</p><span class="service-link">Consultar servicio <b>→</b></span></div>
+   </a>
+  </div>
+ </section>
+
+ <section class="calculator" id="calculadora">
+  <div class="eyebrow">Presupuesto rápido</div>
+  <h2>Calculá una referencia</h2>
+  <p class="section-lead">Seleccioná el trabajo, indicá tu zona y enviá la consulta directo al WhatsApp del negocio.</p>
+  <div class="calc-grid">
+   <div class="field"><label for="calc-service">¿Qué servicio necesitás?</label><select id="calc-service">
+    <option value="plomeria">Plomería sanitaria</option><option value="griferia">Grifería y sanitarios</option><option value="termotanque">Termotanque</option><option value="calefon">Calefón</option><option value="gas">Trabajos de gas</option><option value="instalaciones">Instalaciones y conexiones</option>
+   </select></div>
+   <div class="field"><label for="calc-type">Tipo de trabajo</label><select id="calc-type"><option value="reparacion">Reparación</option><option value="instalacion">Instalación / colocación</option><option value="cambio">Cambio de artefacto o pieza</option></select></div>
+   <div class="field"><label for="calc-zone">¿En qué localidad o barrio estás?</label><input id="calc-zone" type="text" placeholder="Barrio o localidad" required></div>
+   <div class="field"><label for="calc-name">Tu nombre</label><input id="calc-name" type="text" placeholder="Nombre" autocomplete="name"></div>
+   <div class="field full"><label for="calc-detail">Contanos qué sucede (opcional)</label><textarea id="calc-detail" rows="3" placeholder="Describí el problema, medidas o detalles que ayuden a evaluar el trabajo." style="resize:vertical"></textarea></div>
+  </div>
+  <div class="estimate-box"><span>Estimación orientativa</span><strong id="estimate">$45.000 – $85.000</strong></div>
+  <p class="calc-note" id="calc-note">Los valores son orientativos y no constituyen un presupuesto definitivo. El precio final depende de la visita, el estado de la instalación, los materiales y la complejidad. Los trabajos de gas requieren evaluación profesional.</p>
+  <button class="btn btn-whatsapp" id="send-whatsapp" type="button">Enviar consulta y zona por WhatsApp →</button>
+ </section>
+
+ <section class="map-section" id="ubicacion">
+  <div class="map-card">
+   <div class="map-head"><div><div class="eyebrow">Ubicación</div><h2>Zona del servicio</h2><p><span data-dir>Gral. Heredia 2455, Avellaneda, Buenos Aires.</span></p></div><a href="#" data-maps target="_blank" rel="noopener">Abrir Google Maps ↗</a></div>
+   <iframe class="map-frame" title="Mapa de ubicación de este negocio en" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Gral.%20Heredia%202455%2C%20Avellaneda%2C%20Buenos%20Aires%2C%20Argentina&output=embed"></iframe>
+   <div class="contact-row"><span><strong>WhatsApp:</strong> <span data-tel>+54 <span data-tel>11 5867-2956</span></span></span><span><strong>Atención:</strong> <span data-hora data-hide-if="hora">Lun–Vie 09:00–18:00 · Sáb 09:00–13:00</span></span></div>
+  </div>
+ </section>
+</main>
+<footer><div class="wrap"><strong><span data-nombre>EMMANUEL BÜTTINER</span></strong><span data-profesion>Gasista matriculado · Plomería sanitaria</span></div></footer>
+</div>
+
+<script src="codec.js?v=20261118b"></script>
+<script src="hogar.js?v=20261118b"></script>
+<script src="aplicar.js?v=20261118b"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b2e63">
+<meta name="description" content="Web de ejemplo armada con los datos públicos del negocio. Los precios son orientativos.">
+<title>Web de ejemplo</title>
+<style>
+:root{--navy:#0b326b;--blue:#087fe5;--pale:#eef4ff;--ink:#142d49;--muted:#8190a2;--line:#e9edf3;--bg:#f5f6f8;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.page{min-height:100vh;position:relative;overflow:hidden;padding:52px 20px 40px;display:flex;align-items:center;justify-content:center}
+.backdrop-circle{position:absolute;width:min(78vw,900px);height:min(78vw,900px);min-width:570px;min-height:570px;border-radius:50%;background:linear-gradient(145deg,#0b326b 8%,#204f89 55%,#c5d2e2 100%);left:50%;top:50%;transform:translate(-50%,-53%);z-index:0}
+.dot{position:absolute;width:58px;height:58px;border-radius:50%;background:#0b326b;z-index:0}
+.dot.one{top:12%;left:10%}.dot.two{right:9%;bottom:12%;width:42px;height:42px}
+.app-layout{position:relative;z-index:1;width:min(100%,1060px);display:grid;grid-template-columns:minmax(0,420px) minmax(0,420px);gap:42px;align-items:center;justify-content:center}
+.phone{background:#fff;border:8px solid #fff;border-radius:38px;overflow:hidden;box-shadow:0 25px 70px #1d2f481f,0 2px 8px #1d2f4812;min-height:740px;position:relative}
+.phone-inner{height:100%;min-height:724px;overflow:hidden;background:#fff}
+.phone-head{padding:23px 23px 15px;background:linear-gradient(180deg,#d9ecff 0%,#f3f8ff 72%,#fff 100%)}
+.topbar{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:38px;height:38px;border-radius:13px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:900;letter-spacing:-.5px}
+.brand-name b{display:block;font-size:13px;color:#18334f}
+.brand-name small{display:block;color:#8795a5;font-size:10px;margin-top:3px}
+.circle-action{width:37px;height:37px;border-radius:50%;background:#fff;display:grid;place-items:center;color:#0b64b8;box-shadow:0 4px 12px #235a9218;font-size:17px}
+.greeting{margin:22px 0 14px}
+.greeting h1{font-size:24px;line-height:1.12;letter-spacing:-.7px;margin:0;color:#18334f}
+.greeting p{margin:5px 0 0;color:#94a0ae;font-size:11px}
+.searchbar{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid #edf1f6;border-radius:14px;padding:0 12px;height:45px;box-shadow:0 5px 15px #23476b0b;color:#8998a8}
+.searchbar span{font-size:20px}
+.searchbar input{border:0;outline:0;min-width:0;flex:1;font-size:11px;color:#263e56}
+.searchbar input::placeholder{color:#a2adba}
+.search-settings{width:29px;height:29px;border-radius:10px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:15px}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:13px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;border:1px solid #e9eff5;background:#fff;color:#738297;border-radius:999px;padding:7px 11px;font-size:9px;font-weight:750}
+.chip.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.section-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:16px 22px 10px}
+.section-row h2{font-size:14px;line-height:1.2;margin:0;color:#18334f}
+.section-row small{display:block;color:#95a1ad;font-size:9px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+.section-row a{font-size:9px;color:#087bd9;font-weight:800;white-space:nowrap}
+.feature-card{margin:0 22px;border-radius:19px;overflow:hidden;background:linear-gradient(125deg,#0878e0,#1499f4);color:#fff;box-shadow:0 9px 22px #087fe32b;position:relative}
+.feature-photo{width:100%;height:126px;object-fit:cover;display:block;opacity:.92}
+.feature-info{padding:13px 15px 14px}
+.feature-tag{font-size:9px;color:#d8edff;font-weight:750;letter-spacing:.4px;text-transform:uppercase}
+.feature-info h3{font-size:17px;margin:5px 0 4px;letter-spacing:-.3px}
+.feature-info p{font-size:10px;line-height:1.45;color:#e4f3ff;margin:0 0 10px}
+.feature-cta{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0875ce;padding:8px 12px;border-radius:10px;font-size:10px;font-weight:850}
+.services-preview{margin:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.service-mini{display:none;border:1px solid #edf1f5;border-radius:13px;overflow:hidden;background:#fff;box-shadow:0 4px 12px #1b3d5b08}
+.service-mini.is-visible{display:block}\n.service-mini img{width:100%;height:68px;object-fit:cover;display:block}
+.service-mini b{display:block;padding:7px 8px 8px;font-size:9px;color:#314b64}
+.calc-mini{margin:15px 22px 20px;border:1px solid #e7edf5;background:#f7faff;border-radius:16px;padding:13px}
+.calc-mini-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.calc-mini-head b{font-size:12px;color:#193956}
+.calc-mini-head span{font-size:9px;color:#0a7fdc;font-weight:800}
+.calc-mini select{width:100%;border:1px solid #e3eaf2;background:#fff;border-radius:9px;padding:9px 10px;font-size:10px;color:#53677e;margin-bottom:8px;outline:none}
+.calc-mini button{width:100%;border:0;border-radius:9px;background:var(--navy);color:#fff;padding:10px;font-size:10px;font-weight:850;cursor:pointer}
+.calc-output{font-size:10px;color:#49627c;margin:8px 0 0;line-height:1.4;display:none}
+.phone-bottom{position:absolute;bottom:0;left:0;right:0;height:57px;background:#ffffffed;border-top:1px solid #edf1f4;display:flex;align-items:center;justify-content:space-around;backdrop-filter:blur(10px)}
+.nav-item{font-size:8px;color:#8b99a7;display:flex;flex-direction:column;align-items:center;gap:3px;font-weight:700}
+.nav-item i{font-style:normal;font-size:16px}
+.nav-item.active{color:#087fe5}
+.nav-plus{width:49px;height:49px;margin-top:-23px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 7px 18px #087fe34a;border:4px solid #fff}
+/* second screen */
+.profile-screen{padding:16px 17px 22px;background:#fff}
+.profile-card{background:linear-gradient(145deg,#0b326b,#174b91);color:#fff;border-radius:23px;padding:24px 18px 21px;text-align:center;box-shadow:0 10px 24px #0b326b22}
+.profile-avatar{width:68px;height:68px;border-radius:50%;margin:0 auto 11px;background:#fff;color:var(--navy);display:grid;place-items:center;font-size:21px;font-weight:900;border:4px solid #ffffff55}
+.profile-card h2{font-size:17px;margin:0 0 4px}
+.profile-card .profession{font-size:10px;color:#c9ddf6;margin:0}
+.profile-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:24px}
+.profile-stat strong{display:block;font-size:20px;line-height:1.1}
+.profile-stat span{display:block;font-size:9px;color:#d1e1f5;margin-top:4px}
+.rating-highlight{margin:15px 0 0;background:#fff;border-radius:15px;padding:12px;color:#1a3857;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.rating-left strong{display:block;font-size:25px;line-height:1}
+.rating-left small{display:block;font-size:9px;color:#8593a1;margin-top:4px}
+.rating-stars{color:#f4b323;letter-spacing:2px;font-size:16px;white-space:nowrap}
+.profile-section{margin-top:17px}
+.profile-section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
+.profile-section-title h3{font-size:13px;margin:0;color:#193a57}
+.profile-section-title a{font-size:9px;color:#087bd9;font-weight:800}
+.specialty-row{display:flex;align-items:center;gap:11px;background:#f1f5ff;border-radius:13px;padding:10px 11px;margin-bottom:7px}
+.specialty-icon{width:33px;height:33px;border-radius:10px;background:#fff;color:#0b5fae;display:grid;place-items:center;font-size:15px;flex:none}
+.specialty-copy b{display:block;font-size:10px;color:#2a435b}
+.specialty-copy small{display:block;font-size:9px;color:#8794a3;margin-top:3px}
+.review-item{display:flex;align-items:center;gap:10px;padding:10px 2px;border-bottom:1px solid #edf1f4}
+.review-icon{width:32px;height:32px;border-radius:50%;background:#edf5ff;color:#087fe5;display:grid;place-items:center;font-size:14px;flex:none}
+.review-copy{flex:1;min-width:0}
+.review-copy b{display:block;font-size:10px;color:#29445d}
+.review-copy small{display:block;font-size:9px;color:#8a97a5;margin-top:3px;line-height:1.35}
+.review-stars-small{font-size:10px;color:#f1ae20;white-space:nowrap;letter-spacing:1px}
+.contact-panel{margin-top:15px;padding:13px;border:1px solid #e9eef4;border-radius:15px;background:#fbfcfe}
+.contact-line{display:flex;align-items:center;gap:9px;margin:8px 0;font-size:10px;color:#61748a}
+.contact-line span{width:25px;height:25px;border-radius:8px;background:#edf5ff;color:#087bd9;display:grid;place-items:center;flex:none}
+.profile-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.profile-buttons a{border-radius:10px;text-align:center;padding:11px 6px;font-size:10px;font-weight:850}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-light{background:#edf5ff;color:#0a5da7}
+.footnote{position:relative;z-index:2;text-align:center;color:#748399;font-size:12px;letter-spacing:2px;font-weight:850;margin:23px 0 0}
+.footnote:after{content:"";display:block;width:130px;height:4px;border-radius:8px;background:#0b326b;margin:12px auto 0}
+@media(max-width:900px){
+ .app-layout{grid-template-columns:minmax(0,390px) minmax(0,390px);gap:20px}
+ .phone{min-height:710px}
+ .phone-inner{min-height:694px}
+}
+@media(max-width:700px){
+ .page{padding:22px 12px 30px;display:block}
+ .backdrop-circle{width:550px;height:550px;min-width:0;min-height:0;top:330px;left:50%;transform:translateX(-50%)}
+ .dot.one{top:35px;left:20px;width:35px;height:35px}
+ .dot.two{right:22px;bottom:80px;width:28px;height:28px}
+ .app-layout{grid-template-columns:minmax(0,420px);gap:25px}
+ .phone{min-height:0;border-width:6px;border-radius:32px}
+ .phone-inner{min-height:0}
+ .phone-bottom{position:relative;height:53px}
+ .profile-screen{padding:14px 14px 18px}
+ .profile-card{padding:22px 16px 19px}
+ .footnote{margin-top:22px}
+}
+@media(max-width:390px){
+ .phone-head{padding:18px 16px 13px}
+ .section-row{margin-left:16px;margin-right:16px}
+ .feature-card,.services-preview,.calc-mini{margin-left:16px;margin-right:16px}
+ .greeting h1{font-size:22px}
+ .profile-stats strong{font-size:18px}
+}
+
+/* Single mobile-first profile: first screen starts with the professional and reviews */
+.app-layout-single{display:block;width:min(100%,470px);margin:0 auto}
+.app-layout-single .phone{width:100%;min-height:0;border:0;border-radius:30px;box-shadow:0 20px 55px #1d2f4818}
+.app-layout-single .phone-inner{min-height:0;overflow:visible}
+.app-layout-single .profile-screen{padding:26px 22px 25px}
+.app-layout-single .profile-card{padding:27px 20px 22px}
+.app-layout-single .profile-avatar{width:78px;height:78px;font-size:24px}
+.app-layout-single .profile-card h2{font-size:20px}
+.app-layout-single .profile-stats{margin-top:27px}
+.app-layout-single .profile-stat strong{font-size:25px}
+.app-layout-single .profile-stat span{font-size:11px}
+.app-layout-single .rating-highlight{padding:15px 17px}
+.app-layout-single .rating-left strong{font-size:31px}
+.app-layout-single .rating-stars{font-size:19px}
+.app-layout-single .profile-section{margin-top:22px}
+.app-layout-single .profile-section-title h3{font-size:16px}
+.app-layout-single .specialty-row{padding:13px 14px;border-radius:16px;margin-bottom:9px}
+.app-layout-single .specialty-icon{width:40px;height:40px;border-radius:12px;font-size:17px}
+.app-layout-single .specialty-copy b{font-size:12px}
+.app-layout-single .specialty-copy small{font-size:11px}
+.app-layout-single .review-item{padding:13px 3px}
+.app-layout-single .review-copy b{font-size:12px}
+.app-layout-single .review-copy small{font-size:11px}
+.app-layout-single .review-stars-small{font-size:12px}
+.app-layout-single .contact-panel{margin-top:20px;padding:16px}
+.quote-panel{background:#f1f5ff;border-radius:15px;padding:14px}
+.quote-panel select{display:block;width:100%;border:1px solid #e1e9f2;background:#fff;border-radius:10px;padding:12px;margin-bottom:9px;color:#52677d;font-size:12px}
+.quote-panel button{width:100%;border:0;border-radius:10px;padding:13px;background:#087fe5;color:#fff;font-size:12px;font-weight:850}
+.quote-panel .calc-output{font-size:11px;line-height:1.5;color:#536a80;margin:10px 0 0}
+.quote-panel #calc-wa{display:inline-flex;margin-top:10px;background:#0b326b;color:#fff;padding:10px 13px;border-radius:9px;font-size:11px;font-weight:800}
+@media(max-width:700px){
+ .page{padding:18px 12px 28px;display:block}
+ .backdrop-circle{width:530px;height:530px;min-width:0;min-height:0;top:260px;left:50%;transform:translateX(-50%);opacity:.22}
+ .dot.one{top:25px;left:15px;width:30px;height:30px}
+ .dot.two{right:15px;bottom:65px;width:24px;height:24px}
+ .app-layout-single{width:100%;max-width:470px}
+ .app-layout-single .phone{border-radius:28px}
+ .app-layout-single .profile-screen{padding:20px 17px 22px}
+}
+
+
+#vacio{max-width:560px;margin:16vh auto;padding:24px;text-align:center;font-family:inherit;color:inherit}
+#vacio h1{font-size:1.6rem;margin:0 0 10px}
+#vacio p{opacity:.8;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="vacio" hidden>
+  <h1>Web de ejemplo</h1>
+  <p>Este link no trae los datos de un negocio. En la Fábrica, abrí un prospecto de mantenimiento del hogar y tocá «Crear web de ejemplo».</p>
+</div>
+<div id="sitio" hidden>
+
+<main class="page">
+ <div class="backdrop-circle"></div><span class="dot one"></span><span class="dot two"></span>
+ <div class="app-layout">
+  <!-- Perfil profesional, servicios y opiniones: contenido principal al inicio -->
+  <div class="app-layout app-layout-single">
+  <!-- Screen 2: Professional profile / reviews / services -->
+  <section class="phone" id="perfil" aria-label="Perfil profesional y reseñas">
+   <div class="phone-inner profile-screen">
+    <div class="profile-card">
+     <div class="profile-avatar"><span data-iniciales>EB</span></div>
+     <h2><span data-nombre>Emmanuel Büttiner</span></h2>
+     <p class="profession"><span data-profesion>Gasista matriculado · Plomería sanitaria</span></p>
+     <div class="profile-stats" data-hide-if="rating">
+      <div class="profile-stat"><strong><span data-rating>5,0</span></strong><span>Google</span></div>
+      <div class="profile-stat"><strong><span data-reviews-count>18</span></strong><span>Reseñas</span></div>
+      <div class="profile-stat"><strong><span data-stat-servicios>6</span></strong><span>Servicios</span></div>
+     </div>
+     <div class="rating-highlight" data-hide-if="rating">
+      <div class="rating-left"><strong><span data-rating>5,0</span> / 5</strong><small>Calificación publicada en Google</small></div>
+      <div class="rating-stars"><span data-stars>★★★★★</span></div>
+     </div>
+    </div>
+    <div class="profile-section" id="detalle-servicios">
+     <div class="profile-section-title"><h3>Servicios y especialidades</h3><a href="#cotizador">Cotizar</a></div>
+     <div class="specialty-row"><span class="specialty-icon">⌁</span><span class="specialty-copy"><b>Plomería sanitaria</b><small>Pérdidas, filtraciones y conexiones de agua</small></span></div>
+     <div class="specialty-row"><span class="specialty-icon">♧</span><span class="specialty-copy"><b>Grifería y sanitarios</b><small>Cambios y reparaciones de baño y cocina</small></span></div>
+     <div class="specialty-row"><span class="specialty-icon">▤</span><span class="specialty-copy"><b>Termotanques y calefones</b><small>Instalación, recambio y revisión</small></span></div>
+     <div class="specialty-row"><span class="specialty-icon">♨</span><span class="specialty-copy"><b>Trabajos de gas</b><small>Evaluación por gasista matriculado</small></span></div>
+     <div class="specialty-row"><span class="specialty-icon">⌕</span><span class="specialty-copy"><b>Instalaciones y conexiones</b><small>Evaluación de conexiones de agua y gas</small></span></div>
+     <div class="specialty-row"><span class="specialty-icon">✦</span><span class="specialty-copy"><b>Asesoramiento</b><small>Orientación sobre materiales y reparaciones</small></span></div>
+    </div>
+    <div class="profile-section">
+     <div class="profile-section-title"><h3>Opiniones de clientes</h3><a href="#" data-maps target="_blank" rel="noopener">Ver todas ›</a></div><div data-reviews-list data-hide-if="reviews-text"><div class="review-item"><span class="review-icon">✓</span><span class="review-copy"><b>Puntualidad y cumplimiento</b><small>Aspectos destacados en las reseñas publicadas.</small></span><span class="review-stars-small">★★★★★</span></div>
+     <div class="review-item"><span class="review-icon">✦</span><span class="review-copy"><b>Comunicación clara</b><small>Los clientes valoran el asesoramiento y las explicaciones.</small></span><span class="review-stars-small">★★★★★</span></div>
+     <div class="review-item"><span class="review-icon">✓</span><span class="review-copy"><b>Prolijidad en el trabajo</b><small>Otro aspecto mencionado en las opiniones.</small></span><span class="review-stars-small">★★★★★</span></div>
+    </div>
+    </div><div class="profile-section quote-section" id="cotizador">
+     <div class="profile-section-title"><h3>Calculadora de presupuesto</h3><a href="#cotizador">Estimación</a></div>
+     <div class="quote-panel">
+      <select id="calc-service" aria-label="Elegir servicio">
+       <option value="plomeria">Plomería / pérdida de agua</option><option value="griferia">Grifería o sanitario</option><option value="termotanque">Termotanque</option><option value="calefon">Calefón</option><option value="gas">Trabajo de gas</option>
+      </select>
+      <select id="calc-type" aria-label="Tipo de trabajo"><option value="reparacion">Reparación</option><option value="instalacion">Instalación / colocación</option><option value="cambio">Cambio de artefacto o pieza</option></select>
+      <button id="calc-button" type="button">Calcular estimación</button>
+      <p class="calc-output" id="calc-output" aria-live="polite"></p>
+     </div>
+    </div>
+    <div class="contact-panel">
+     <div class="profile-section-title"><h3>Contacto y ubicación</h3><a href="#" data-maps target="_blank" rel="noopener">Mapa ›</a></div>
+     <div class="contact-line"><span>⌖</span><span data-dir>Gral. Heredia 2455, Avellaneda</span></div>
+     <div class="contact-line"><span>☎</span><span data-tel>+54 <span data-tel>11 5867-2956</span></span></div>
+     <div class="contact-line"><span>◷</span><span data-hora data-hide-if="hora">Lun–Vie 09:00–18:00 · Sáb 09:00–13:00</span></div>
+     <div class="profile-buttons"><a class="btn-blue" href="#" data-wa target="_blank" rel="noopener">WhatsApp</a><a class="btn-light" href="#" data-maps target="_blank" rel="noopener">Cómo llegar</a></div>
+    </div>
+   </div>
+  </section>
+  </div>
+ </div>
+ <div class="footnote"><span data-nombre>EMMANUEL BÜTTINER</span></div>
+</main>
+</div>
+
+<script src="codec.js?v=20261118b"></script>
+<script src="hogar.js?v=20261118b"></script>
+<script src="aplicar.js?v=20261118b"></script>
+</body>
+</html>

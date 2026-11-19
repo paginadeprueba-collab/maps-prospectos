@@ -836,31 +836,14 @@
       <h3 id="ejemploSheetTitle">Web de ejemplo</h3>
       <p class="hint" id="ejemploSheetNombre"></p>
       <p class="hint" id="ejemploSheetMsg">Buscando reseñas en Google Maps…</p>
-      <div class="ejemplo-diseno">
-        <h4>Diseño 1</h4>
-        <input id="ejemploUrl1" class="field" readonly aria-label="Link del diseño 1" />
-        <div class="ejemplo-actions">
-          <button type="button" class="btn btn-primary" data-copy="ejemploUrl1">Copiar link</button>
-          <a class="btn btn-ghost" id="ejemploAbrir1" href="#" target="_blank" rel="noopener">Abrir</a>
-          <a class="btn btn-wa" id="ejemploWa1" href="#" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-      </div>
-      <div class="ejemplo-diseno">
-        <h4>Diseño 2</h4>
-        <input id="ejemploUrl2" class="field" readonly aria-label="Link del diseño 2" />
-        <div class="ejemplo-actions">
-          <button type="button" class="btn btn-primary" data-copy="ejemploUrl2">Copiar link</button>
-          <a class="btn btn-ghost" id="ejemploAbrir2" href="#" target="_blank" rel="noopener">Abrir</a>
-          <a class="btn btn-wa" id="ejemploWa2" href="#" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-      </div>
+      <div id="ejemploDisenos"></div>
       <p class="hint">WhatsApp abre el mensaje listo y no lo envía solo.</p>
       <button type="button" class="btn btn-ghost btn-block" id="ejemploCerrar">Cerrar</button>
     </div>
   </div>
 
   <script src="ejemplo/codec.js?v=20261118a"></script>
-  <script src="ejemplo/hogar.js?v=20261118a"></script>
+  <script src="ejemplo/hogar.js?v=20261118b"></script>
   <script src="ejemplo/resenas.js?v=20261116d"></script>
   <script>
     /* ========== CONFIG ========== */
@@ -1817,26 +1800,36 @@
       sheet.hidden = true;
     }
 
-    function pintarLinkEjemplo(n, url, r) {
-      const input = el("ejemploUrl" + n);
-      const abrir = el("ejemploAbrir" + n);
-      const wa = el("ejemploWa" + n);
-      input.value = url || "";
-      abrir.href = url || "#";
-      abrir.classList.toggle("hidden", !url);
-      if (url) {
-        wa.href = waEjemplo(r, url);
-        wa.classList.remove("hidden");
-      } else wa.classList.add("hidden");
+    function paginasDe(grupo) {
+      if (grupo && Array.isArray(grupo.paginas) && grupo.paginas.length) return grupo.paginas;
+      return [grupo && grupo.pagina, grupo && grupo.pagina2].filter(Boolean);
     }
 
-    function mostrarEjemploSheet(url1, url2, r, aviso) {
+    function pintarDisenosEjemplo(urls, r) {
+      const box = el("ejemploDisenos");
+      if (!box) return;
+      box.innerHTML = (urls || []).map((url, i) => {
+        const n = i + 1;
+        const id = "ejemploUrl" + n;
+        return (
+          '<div class="ejemplo-diseno">' +
+          "<h4>Diseño " + n + "</h4>" +
+          '<input id="' + id + '" class="field" readonly aria-label="Link del diseño ' + n + '" value="' + esc(url || "") + '" />' +
+          '<div class="ejemplo-actions">' +
+          '<button type="button" class="btn btn-primary" data-copy="' + id + '">Copiar link</button>' +
+          '<a class="btn btn-ghost' + (url ? "" : " hidden") + '" id="ejemploAbrir' + n + '" href="' + esc(url || "#") + '" target="_blank" rel="noopener">Abrir</a>' +
+          '<a class="btn btn-wa' + (url ? "" : " hidden") + '" id="ejemploWa' + n + '" href="' + (url ? esc(waEjemplo(r, url)) : "#") + '" target="_blank" rel="noopener">WhatsApp</a>' +
+          "</div></div>"
+        );
+      }).join("");
+    }
+
+    function mostrarEjemploSheet(urls, r, aviso) {
       const sheet = el("ejemploSheet");
       sheet.classList.remove("hidden");
       sheet.hidden = false;
       el("ejemploSheetNombre").textContent = (r && r.nombre) || "";
-      pintarLinkEjemplo(1, url1, r);
-      pintarLinkEjemplo(2, url2, r);
+      pintarDisenosEjemplo(Array.isArray(urls) ? urls : [urls].filter(Boolean), r);
       el("ejemploSheetMsg").textContent = aviso || "";
     }
 
@@ -1859,7 +1852,7 @@
         deBusqueda = true;
         aviso = "Usé " + reseñas.length + " reseñas guardadas de la búsqueda. El diseño 1 se abrió en otra pestaña.";
       } else {
-        mostrarEjemploSheet("", "", r, "Buscando reseñas en Google Maps…");
+        mostrarEjemploSheet([], r, "Buscando reseñas en Google Maps…");
         try {
           const leidas = window.EjemploResenas
             ? await EjemploResenas.leer(r.link_maps, { worker: RESENAS_URL, timeout: 10000 })
@@ -1885,19 +1878,18 @@
         } catch (err) {
           console.warn(err);
         }
-        const pagina2 = listo.grupo.pagina2 || "ejemplo/hogar-2.html";
-        const url1 = urlEjemplo(listo.grupo.pagina, hash, idCorto);
-        const url2 = urlEjemplo(pagina2, hash, idCorto);
-        if (win) {
-          win.location.replace(url1);
+        const paginas = paginasDe(listo.grupo);
+        const urls = paginas.map((pag) => urlEjemplo(pag, hash, idCorto));
+        if (win && urls[0]) {
+          win.location.replace(urls[0]);
           win.opener = null;
         }
         if (reseñas.length && !deBusqueda) aviso = "Sumé " + reseñas.length + " reseñas de Google Maps. El diseño 1 se abrió en otra pestaña.";
-        mostrarEjemploSheet(url1, url2, r, aviso);
+        mostrarEjemploSheet(urls, r, aviso);
       } catch (e) {
         console.warn(e);
         if (win) win.close();
-        mostrarEjemploSheet("", "", r, "No se pudo armar el link.");
+        mostrarEjemploSheet([], r, "No se pudo armar el link.");
       } finally {
         if (btn) btn.disabled = false;
       }
