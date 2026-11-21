@@ -1,3 +1,7 @@
 {
-  "status": "idle"
+  "status": "in_progress",
+  "query": "plomeros · 9 barrios CABA",
+  "started_at": "2026-11-20T21:19:03-03:00",
+  "started_at_label": "2026-11-20 21:19 (America/Buenos_Aires)",
+  "started_at_epoch": 1795220343
 }
