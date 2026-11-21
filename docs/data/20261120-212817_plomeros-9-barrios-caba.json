@@ -1,0 +1,2036 @@
+{
+  "id": "20261120-212817_plomeros-9-barrios-caba",
+  "query": "plomeros · 9 barrios CABA",
+  "date": "20261120-212817",
+  "date_label": "2026-11-20 21:28 (America/Buenos_Aires)",
+  "n_raw": 679,
+  "n_limpio": 61,
+  "rubro": "plomeros",
+  "barrios": [
+    "Boedo",
+    "Parque Patricios",
+    "Barracas",
+    "La Boca",
+    "Nueva Pompeya",
+    "Villa Soldati",
+    "Parque Chacabuco",
+    "Villa Lugano",
+    "Villa Riachuelo"
+  ],
+  "lugares": [],
+  "prospects": [
+    {
+      "nombre": "Casa Sosa Sanitarios",
+      "reseñas": "1252",
+      "rating": "4.5",
+      "telefono": "1149258762",
+      "whatsapp": "https://wa.me/5491149258762",
+      "link_maps": "https://www.google.com/maps/place/Casa+Sosa+Sanitarios/data=!4m7!3m6!1s0x95bccbc9a7718b11:0x99728448aa8f65a8!8m2!3d-34.6417798!4d-58.4428871!16s%2Fg%2F1tq4s84g!19sChIJEYtxp8nLvJURqGWPqkiEcpk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Castañares 1898, C1406 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8 a.m.–5 p.m. · sáb 8 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Monica Schvartz",
+          "texto": "Todo lo que busques, lo vas a encontrar. No pierdas tiempo ellos tienen lo que necesitas. Puede que los precios sean un poco elevados, Pero te aseguras de no…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Víctor Gabriel",
+          "texto": "Muy buena atención, precios razonables y gran variedad de productos . Seguro que en este lugar encuentras lo que necesitas en instalaciones sanitarias o de gas…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Loquillo Preta",
+          "texto": "Muy bueno y tienen de todo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paula Sosa",
+          "texto": "EXCELENTE ATENCION TODOS LOS CHICOS Y LOS DUEÑOS!! MUY AMABLES Y ATENTOS!! RECOMIENDO!!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Javier Plomero Gasista Matriculado",
+      "reseñas": "613",
+      "rating": "4.8",
+      "telefono": "91153175500",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Javier+Plomero+Gasista+Matriculado/data=!4m7!3m6!1s0x95bcb72647a26f1f:0xba9ec7f39708d717!8m2!3d-34.5727334!4d-58.4972261!16s%2Fg%2F11bbrjrbpg!19sChIJH2-iRya3vJURF9cIl_PHnro?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ceretti 3051, C1431 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 8:30 a.m.–7:30 p.m. · sáb 8:30 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Jacqueline Gomez",
+          "texto": "Un genio Javier. Muy claro en explicar lo que hay que hacer, vino de un día para el otro y me dejó todo impecable. Me perdía la conexión del lavarropas, me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Anezin",
+          "texto": "Muy bueno el servicio de Javier. Vino muy rápido, trabajó de manera prolija y profesional. Realizó el cambio de un artefacto de cocina, brindando información…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gisele Calvo",
+          "texto": "Excelente servicio de Javier. Fue súper puntual y vino rapidísimo, así que no tuve que esperar con el problema. Me explicó todo muy claramente, me indicó qué…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Franco Stohr",
+          "texto": "Excelente servicio. Javier fue muy puntual, trabajó de manera prolija, explicó claramente cuál era el problema del calefón y lo solucionó de forma rápida y…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Flavio Electricista Domiciliario, Urgencias 24hs.",
+      "reseñas": "567",
+      "rating": "5.0",
+      "telefono": "1169294009",
+      "whatsapp": "https://wa.me/5491169294009",
+      "link_maps": "https://www.google.com/maps/place/Flavio+Electricista+Domiciliario,+Urgencias+24hs./data=!4m7!3m6!1s0x95a333b7f1e27caf:0x4efde0ae9805d7ed!8m2!3d-34.6341978!4d-58.371056!16s%2Fg%2F11f651wsxn!19sChIJr3zi8bczo5UR7dcFmK7g_U4?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ruy Díaz de Guzmán 336, C1267ADM Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Electricista",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Jonathan Ferreyros",
+          "texto": "Me crucé con una excelente persona de esas que demuestran que todavía hay gente con buenos valores. Encontró mi moto en la calle con las llaves puesta y se…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vanesa Listek",
+          "texto": "Excepcional. Nadie pudo resolver el problema, sinceramente ya lo daba por perdido. Tenía cables anulados y conexiones difíciles de entender. Sin embargo, él…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lou Mtb",
+          "texto": "⭐⭐⭐⭐⭐ I highly recommend Flavio! I had an electrical emergency at my apartment in Buenos Aires in the evening, and although he was too far away to come in…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nico Levin",
+          "texto": "Excelente experiencia. Después de casi un año intentando resolver la conexión eléctrica y poder avanzar con el pedido del medidor, finalmente pudimos…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Eolo Construcciones Plomeros/Gasistas/Electric",
+      "reseñas": "472",
+      "rating": "4.9",
+      "telefono": "1154909749",
+      "whatsapp": "https://wa.me/5491154909749",
+      "link_maps": "https://www.google.com/maps/place/Eolo+Construcciones+Plomeros%2FGasistas%2FElectric/data=!4m7!3m6!1s0x95bcb12cdcf0a781:0x29557aa51608cb7c!8m2!3d-34.5011403!4d-58.4809131!16s%2Fg%2F11fhlcl9rh!19sChIJgafw3CyxvJURfMsIFqV6VSk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "1636, Tomás Espora 3074, B1636 Cdad. Autónoma de Buenos Aires, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun 7:30 a.m.–7:30 p.m. · mar a vie 8 a.m.–7:30 p.m. · sáb 8 a.m.–5 p.m. · dom 8 a.m.–12 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Maia la más pro",
+          "texto": "Gran equipo de trabajo. Muy ordenados, traen sus herramientas, trabajan limpios y te dejan todo funcionando. Hicieron gas, agua y luz en mi obra sin ningún…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina Aldrovandi",
+          "texto": "Súper recomendable. Me dieron un servicio de excelencia. Ulises atendió mi consulta de forma rápida, eficiente y resolvió el problema de mi calefón sin…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Tajes Albani",
+          "texto": "Los mejores. Fue una experiencia hermosa con Eolo construcciones. Tenia una perdida de gas y un problema en el tablero electrico. vinieron y lo arreglaron…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo F",
+          "texto": "Muy buen servicio. Hace excelente el trabajo. Puntual, responsable, respetuoso. Lo llamé en dos oportunidades, por plomería, y en ambos casos trabajó…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "gasista matriculado",
+      "reseñas": "398",
+      "rating": "4.8",
+      "telefono": "1134772401",
+      "whatsapp": "https://wa.me/5491134772401",
+      "link_maps": "https://www.google.com/maps/place/gasista+matriculado/data=!4m7!3m6!1s0x95bccb59efff2c63:0xa51580a6f5509f5f!8m2!3d-34.5900018!4d-58.4221736!16s%2Fg%2F11s1rr276r!19sChIJYyz_71nLvJURX59Q9aaAFaU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gascón 1701, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Christian Doval",
+          "texto": "La instalación de la cocina fue excelente, muy prolija y profesional. Además, me ayudó a mover la cocina anterior y se tomó el tiempo de explicarme cómo cuidar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sergio De Luca",
+          "texto": "Excelente profesional. Dejo mi experiencia por si le sirve a alguien mas. Lo llamé por un tema con el aire y con la llave del gas, y uno esta acostumbrado a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Jose Montes De Oca",
+          "texto": "Un Capo Nico, excelente laburo la verdad. Me instaló una cocina y me cambio los cueritos de la canilla. Muy buena disposición y precio. Otros que consulté me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Deborah Corral",
+          "texto": "MUY RECOMENDABLE. Me llegó por una publicidad de instagram. Evaluaron el calefón viejo que tenía por fotos, aconsejaron el cambio y me asesoraron con la…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria Mpm",
+      "reseñas": "363",
+      "rating": "4.6",
+      "telefono": "1131129067",
+      "whatsapp": "https://wa.me/5491131129067",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+Mpm/data=!4m7!3m6!1s0x95bccbb4cc3547af:0xefc905ee528f8690!8m2!3d-34.6336035!4d-58.4362873!16s%2Fg%2F11c30rm82v!19sChIJr0c1zLTLvJURkIaPUu4Fye8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Del Barco Centenera 1238, C1424AMZ C1424AMZ, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–7 p.m. · sáb 10 a.m.–4 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Javier Arena",
+          "texto": "Muy bueno tiene de todo y te asesoran cuando tenés dudas aveces la espera es bastante",
+          "estrellas": 5
+        },
+        {
+          "nombre": "AIDA IRESAM",
+          "texto": "El asesoramiento es excelente, buenos precios .... por eso siempre hay que hacer cola.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Daniel Sainato",
+          "texto": "La atención es excelente!!! Tienen de todo, pero cuando digo de todo, es de todo!!!! Los precios, algunos baratos, otros como en todos lados y otros un poquito…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "oskr Amurado a Estribor",
+          "texto": "Lejos la mejor ferretería de la zona, son los más completos con precios muy acomodados, todo el personal muy amable y tratan todo el tiempo de darte la…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Os-car",
+      "reseñas": "363",
+      "rating": "4.5",
+      "telefono": "1149120300",
+      "whatsapp": "https://wa.me/5491149120300",
+      "link_maps": "https://www.google.com/maps/place/Os-car/data=!4m7!3m6!1s0x95bccb77ad60ab87:0xa9418d8f5baca8fc!8m2!3d-34.6545354!4d-58.4151743!16s%2Fg%2F11byd4mm0h!19sChIJh6tgrXfLvJUR_KisW4-NQak?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Beazley 3930, C1437 HQJ, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de equipos de baños",
+      "horarios": "lun a vie 9 a.m.–5 p.m. · sáb 9 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Caribdis1980",
+          "texto": "Excelente atención y buenos precios.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lorena Ramos",
+          "texto": "Excelente atención, tenía lo que necesitaba sin problemas",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Crespo",
+          "texto": "Muy buena atencion, recomendable totalmente.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Georgina Pardo",
+          "texto": "No transfieran. Soy cliente de toda la vida me hicieron transferir y me dijeron que como no impactaba la transferencia no podía llevarme la mercadería (dos…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Aquino - Gasista Matriculado/ Plomero Matriculado",
+      "reseñas": "332",
+      "rating": "4.8",
+      "telefono": "1140969911",
+      "whatsapp": "https://wa.me/5491140969911",
+      "link_maps": "https://www.google.com/maps/place/Aquino+-+Gasista+Matriculado%2F+Plomero+Matriculado/data=!4m7!3m6!1s0x95bcc70d379586c9:0xd58921c94a2f4e30!8m2!3d-34.6633505!4d-58.6101507!16s%2Fg%2F1tdc1v2v!19sChIJyYaVNw3HvJURME4vSskhidU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Monseñor Benoit A. Haefreingue 968, B1708CQF Morón, Provincia de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 8 a.m.–8 p.m. · sáb 8 a.m.–4:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Gustavo Perez",
+          "texto": "Un Profesional de los que ya no hay. Sin conocerlo lo moleste un domingo para un trabajo, lunes a primera hora en mí domicilio. Soluciono el problema reemplazo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Analía Torlasco",
+          "texto": "Muy recomendable. Trabajo muy prolijo. Presupuesto adecuado. Luego del corte de la empresa, colocaron los caños por el exterior de la vivienda, nos hicieron el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "natalia jesica morandeyra",
+          "texto": "Excelente profesional lo recomiendo.. Antes de que viniera a casa, otro gasista me habían dicho que tenía que cambiar todas las cañerías. Por suerte Javier…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tomás Pais",
+          "texto": "Aquino vino a mi casa para cambiarme el termotanque. Antes de él, habían venido unas personas que me habían querido estafar. Venía con experiencias super…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Santa Lucia Agua Gas Incendio SRL.",
+      "reseñas": "285",
+      "rating": "4.6",
+      "telefono": "1143032826",
+      "whatsapp": "https://wa.me/5491143032826",
+      "link_maps": "https://www.google.com/maps/place/Santa+Lucia+Agua+Gas+Incendio+SRL./data=!4m7!3m6!1s0x95bccb4a65dbeead:0xcd6c6179f099713a!8m2!3d-34.6365279!4d-58.3752466!16s%2Fg%2F11b6xgmk1g!19sChIJre7bZUrLvJUROnGZ8HlhbM0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Montes de Oca 719, C1270AAH Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 8:30 a.m.–6:30 p.m. · sáb 9 a.m.–1:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Nadir Elizalde",
+          "texto": "Muy buena atención, conocimiento y predisposición. Lo que no tenian, me daban opciones para solucionarlo, algo que otros lugares no hicieron. Y que no te…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Frisari",
+          "texto": "Excelente atencion!!! Me solucionaron 3 cerraduras, con cambio incluido en menos de 1 hora. Destaco atencion de David!!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tomas Salerno",
+          "texto": "Todo excelente, buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Virginia Flammini",
+          "texto": "Me contacte porque tenia problemas con la cerradura de mi puerta, vinieron en el dia a cambiarla. Muy buena atención, muy amables, rápidos y prolijos. Lo…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero gasista ROMA en mataderos",
+      "reseñas": "230",
+      "rating": "4.9",
+      "telefono": "1130346996",
+      "whatsapp": "https://wa.me/5491130346996",
+      "link_maps": "https://www.google.com/maps/place/Plomero+gasista+ROMA+en+mataderos/data=!4m7!3m6!1s0x95bcc9abb99dc9ed:0xb23987db937b5c62!8m2!3d-34.6519905!4d-58.5008476!16s%2Fg%2F11c70cfq6j!19sChIJ7cmduavJvJURYlx7k9uHObI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Bragado, Av. Larrazábal y, C1440 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 8 a.m.–1:30 p.m., 2–7 p.m. · sáb 9 a.m.–3 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ruth Portugal",
+          "texto": "Excelente servicio. Lo contacté ayer y hoy mismo vino a resolver el problema. Muy puntual, amable y profesional. Cambió la termocupla rápidamente y dejó todo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "tomas winnykamien",
+          "texto": "En un par de horas resolvió todos los problemas de mi baño y quedo todo impecable. Super profesional y atento.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ezequiel Tolosa",
+          "texto": "Ya lo tenía recomendado de antemano y sabía que había hecho un buen trabajo y con precio acorde. Llegó en tiempo y forma y me resolvió un problema de plomería…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Berre",
+          "texto": "Conocí a Mauro en la necesidad de instalar una nueva cocina en mí domicilio. Con su profesionalismo, empatía, honestidad y respeto, resolvió todo…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomeria Rodrigo CABA",
+      "reseñas": "182",
+      "rating": "4.9",
+      "telefono": "91155060555",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Plomeria+Rodrigo+CABA/data=!4m7!3m6!1s0xa610b9bfe9858683:0x2bde4b94980c62b!8m2!3d-34.6158238!4d-58.4332985!16s%2Fg%2F11l1kx2g84!19sChIJg4aF6b-5EKYRK8aASbnkvQI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "{\"borough\":\"\",\"street\":\"\",\"city\":\"\",\"postal_code\":\"\",\"state\":\"\",\"country\":\"\"}",
+      "categoria": "Fontanero",
+      "horarios": "",
+      "reseñas_texto": [
+        {
+          "nombre": "Karin M. S.",
+          "texto": "Excelente trabajo de plomería y pintura, puntual, ordenado. Muy contenta con el trabajo. Excelente precio. (Palermo).",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariana Chayle",
+          "texto": "Excelente trabajo! Me colocó una grifería nueva y también pegó una bacha de la cocina que estaba mal pegada. Rodrigo muy amable y prolijo. Muy recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "sofia lockhart",
+          "texto": "Muy buena atención, súper rápido y muy buena predisposición. 100% recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Daily Sandoval",
+          "texto": "Excelente profesional, muy confiable y rápido. Nos ayudó mucho con la instalación de una mochila, siempre estuvo abierto a nuestras dudas y a nuestra…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Maximiliano gasista matriculado Plomero",
+      "reseñas": "170",
+      "rating": "4.9",
+      "telefono": "1164977997",
+      "whatsapp": "https://wa.me/5491164977997",
+      "link_maps": "https://www.google.com/maps/place/Maximiliano+gasista+matriculado+Plomero/data=!4m7!3m6!1s0x95bcc9383e6df8cb:0xd84dc971835e1f48!8m2!3d-34.606887!4d-58.4769258!16s%2Fg%2F11j38k4p60!19sChIJy_htPjjJvJURSB9eg3HJTdg?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Pje. Diego Fernandez Espiro 2300, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 9 a.m.–7 p.m. · sáb 9 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Jos Gili",
+          "texto": "Muy recomendable! Buena onda y logró arreglarle una canilla difícil donde otros habían fallado antes! Para tener el número a mano siempre para lo que se…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Beatriz Digital",
+          "texto": "Hola Maximiliano hoy me reparo en el día el horno de mi cocina desarmandola para encontrar la falla un excelente trabajo con un costo razonable y también la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Pablo Orero",
+          "texto": "Cumplió con el horario estipulado, y me arregló la estufa enseguida y bien. Quedé muy conforme. Totalmente recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Chenaut",
+          "texto": "Muchas gracias Maxi por la instalación de la cocina. Quedo impecable!!! También me dio tiempo a que pudiera limpiar el espacio donde se encontraba la cocina…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "R.A. Sanitarios",
+      "reseñas": "170",
+      "rating": "4.6",
+      "telefono": "1146415811",
+      "whatsapp": "https://wa.me/5491146415811",
+      "link_maps": "https://www.google.com/maps/place/R.A.+Sanitarios/data=!4m7!3m6!1s0x95bcc850b090800b:0xddea51c3d1a53819!8m2!3d-34.651337!4d-58.5192544!16s%2Fg%2F11hck22cm8!19sChIJC4CQsFDIvJURGTil0cNR6t0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Patrón 7005, C1408FBI C1408FBI, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de artículos de fontanería",
+      "horarios": "lun a vie 8 a.m.–5 p.m. · sáb 8 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ariel H Quintana.",
+          "texto": "Te Atienden como un Rey ! No tienen Clientela al Paso , dan lo Mejor por qué dependen de las Referencias del barrio , a mí me solucionaron Todo !",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adrian Monetto",
+          "texto": "Muy buena atención y muy buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvi",
+          "texto": "Muy buena atención, conseguí el repuesto para el inodoro que buscaba, y la persona que atiende me indicó como cambiarlo. A pesar de no ser un local muy grande…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Abel di Lello",
+          "texto": "Excelente atendido por sus dueños y poe Mingo la mejor atención",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Del Rey",
+      "reseñas": "169",
+      "rating": "4.7",
+      "telefono": "1130871945",
+      "whatsapp": "https://wa.me/5491130871945",
+      "link_maps": "https://www.google.com/maps/place/Del+Rey/data=!4m7!3m6!1s0x95bcc94db020fe65:0xe3e56e4ffa73ea4b!8m2!3d-34.6814436!4d-58.4765083!16s%2Fg%2F1q63cksb_!19sChIJZf4gsE3JvJURS-pz-k9u5eM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "B. y Ordónez 6100, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–4 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Carlos Gonzalez",
+          "texto": "Muy buena atención y gran variedad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro Bustos",
+          "texto": "Muy buena atención ,voy a esa ferretería Desde que era niño, esa ferretería tiene más de cien años , llegue a conocer a su dueño que lamentablemente falleció…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "manuel alberto Fernandez",
+          "texto": "Excelente atención y te dejan los zapatos, zapatillas, Mochilas como si fueran nuevas",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Omar Federico",
+          "texto": "Muy buena atención. Conocen del tema, tienen mucha experiencia. Hay de todo. Precios accesibles.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Ulises Repara Tu Casa",
+      "reseñas": "131",
+      "rating": "4.7",
+      "telefono": "1130111784",
+      "whatsapp": "https://wa.me/5491130111784",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Ulises+Repara+Tu+Casa/data=!4m7!3m6!1s0x95bccbd9ef93f417:0x72608ff7842d42e6!8m2!3d-34.6168866!4d-58.421474!16s%2Fg%2F11n19q5hbm!19sChIJF_ST79nLvJUR5kIthPePYHI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Yapeyú 410, C1202 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 8 a.m.–7 p.m. · sáb 8 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Norberto",
+          "texto": "Encontré a Ulises buscando plomeros por internet. Un verdadero profesional. Responde los mensajes, envía un presupuesto, es puntual, eficiente, prolijo y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leonardo Gabriel",
+          "texto": "Sin palabras... Le escribo a Ulises... y me responde de manera cordial y respetuosa... (ya superó al 60% de la competencia), me pide fotos del trabajo a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "christian herrera",
+          "texto": "Le escribi un Whatsapp, por una perdida de agua de la base de un inodoro, me paso un precio, acordamos tal dia y cumplio. Trabaja bien, el problema quedo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rocío C",
+          "texto": "Agradecidos de haber encontrado a Ulises después de tantas dificultades para resolver un problema muy serio de agua. Es muy prolijo, se nota que sabe mucho y…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Sanitarios Los Primos",
+      "reseñas": "117",
+      "rating": "4.5",
+      "telefono": "1149416192",
+      "whatsapp": "https://wa.me/5491149416192",
+      "link_maps": "https://www.google.com/maps/place/Sanitarios+Los+Primos/data=!4m7!3m6!1s0x95bccb16ca336135:0x4b6dd6b9b2e50cb4!8m2!3d-34.6362943!4d-58.3999176!16s%2Fg%2F11c57m3tty!19sChIJNWEzyhbLvJURtAzlsrnWbUs?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Caseros 2674, C1264 AAT, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de materiales para la construcción",
+      "horarios": "lun a vie 8 a.m.–6 p.m. · sáb 8:30 a.m.–1:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Valería Valeria",
+          "texto": "Muy buena atención y asesoramiento 👍👍👍👍",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joel Peñafiel",
+          "texto": "Excelente atención, surtido de materiales y precios. Gente apasionada por ofrecer soluciones, ayuda a los clientes y una esmerada atención. Destaco la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriel De Chiara",
+          "texto": "Excelente atención. Conseguí el repuesto que necesitaba. Les mandé por Whatsapp una foto del reparto y todo solucionado. Muy recomendable.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "adrian milne",
+          "texto": "Exelente lugar Mariana y Gustavo los mejores,buen precio y asesoramiento.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "FERRETERÍA PUAN",
+      "reseñas": "112",
+      "rating": "4.5",
+      "telefono": "1144327343",
+      "whatsapp": "https://wa.me/5491144327343",
+      "link_maps": "https://www.google.com/maps/place/FERRETER%C3%8DA+PUAN/data=!4m7!3m6!1s0x95bcca314c7bceab:0x1dc4c0bd5f25ca72!8m2!3d-34.630167!4d-58.4460434!16s%2Fg%2F11b6_jhthb!19sChIJq857TDHKvJURcsolX73AxB0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Puán 625, C1406 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ignacio Martín Gómez Florenciano",
+          "texto": "Atienden TAN BIEN que me dan ganas de ir aunque no tenga que comprar nada. Excelente todo. Ojo que se forman filas porque todos quieren ir ahí. Sigan así por…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Bibiana esba",
+          "texto": "Buen asesoramiento, tienen de todo y a muy buen precio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Endy",
+          "texto": "Más lento q una tortuga con 2 patas, muy pajueranos todos. Si tenes algún problema de ansiedad mínimo. Ni vayas, 3 personas atendiendo estuvieron UNA hora para…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Matias Carol",
+          "texto": "UN DESASTRE PRIMERA Y ULTIMA VEZ,ME VENDIERON GATO POR LIEBRE,LE PEDI ADESIVO DE MONTAJE PARA PEGAR UNA MADERITA LE MOSTRE LA FOTO Y TODO Y ME VENDIO \"EL…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Casa Barros",
+      "reseñas": "111",
+      "rating": "4.6",
+      "telefono": "1172390123",
+      "whatsapp": "https://wa.me/5491172390123",
+      "link_maps": "https://www.google.com/maps/place/Casa+Barros/data=!4m7!3m6!1s0x95bccb4d02b25971:0xe738d01e98c91827!8m2!3d-34.642803!4d-58.3740411!16s%2Fg%2F1q62gcy15!19sChIJcVmyAk3LvJURJxjJmB7QOOc?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Montes de Oca 1261, C1270AAM Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de equipos de baños",
+      "horarios": "lun a vie 8 a.m.–5 p.m. · sáb 8 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ariel Rocca",
+          "texto": "Excelente atención y precios bajos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Graciela Perez",
+          "texto": "Excelente el Sr Mario de profesion plomero y gasista que trabaja ahi vino a mi casa a realizar un trabajo excelente muy recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Lovagnini",
+          "texto": "Muy buena atención y buenos precios.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "jorge bucceri",
+          "texto": "El señor mayor, mencionado en otro comentario, es un MAESTRO. Conoce todo lo que vende de punta a punta y si no sos del gremio, te explica la mejor manera de…",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria Boedo",
+      "reseñas": "104",
+      "rating": "4.6",
+      "telefono": "1149249943",
+      "whatsapp": "https://wa.me/5491149249943",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+Boedo/data=!4m7!3m6!1s0x95bccb00b5becad1:0xaa8c280a094213ee!8m2!3d-34.6320916!4d-58.4162815!16s%2Fg%2F11b6b3pl4y!19sChIJ0cq-tQDLvJUR7hNCCQoojKo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Boedo 1553, C1239 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–2 p.m., 3–7 p.m. · sáb 8:30 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudia Nuñez Souza",
+          "texto": "Excelente atención y buen precio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sebastian Mora",
+          "texto": "Buena atención y variedad de productos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elida Bernaschina",
+          "texto": "EXCELENTE ATENCIÓN!!! Son lo MÁS DE LO MÁS, SUPER AMANLES, TE EXPLICAN REBIEN, SON UN AMOR!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monica Yamada",
+          "texto": "Este negocio está en el barrio desde hace muchos años. Tiene gran variedad de productos de ferretería, y variedad de precios. Además varias herramientas y…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Hasein agua & gas",
+      "reseñas": "103",
+      "rating": "4.7",
+      "telefono": "1167097879",
+      "whatsapp": "https://wa.me/5491167097879",
+      "link_maps": "https://www.google.com/maps/place/Hasein+agua+%26+gas/data=!4m7!3m6!1s0x95bccbb40234d52d:0x37ec0aaa09f36b5!8m2!3d-34.6358666!4d-58.4411077!16s%2Fg%2F11rscyhxf6!19sChIJLdU0ArTLvJURtTafoKrAfgM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Asamblea 1150, C1406 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 8 a.m.–9:30 p.m. · sáb 8 a.m.–12 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Franco Antonelli",
+          "texto": "Un genio Carlos, me solucionó dos problemas que hace tiempo no podía arreglar y además vino de inmediato en ambas ocasiones. Responsable, honesto y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Virginia Alicia",
+          "texto": "Vino a domicilio Sr. Carlos excelente \"persona\" honesto responsable y cumplidor. Quede muy conforme c/el trabajo realizado ajusto y sello mangueras ( fuelle )…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "josefina pintos",
+          "texto": "Carlos, muy amable, muy atento, responsable. Lamentablemente, nos habian realizado un trabajo previo desastrozo y el fue honesto con el trabajo y el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Carlos Alvarez",
+          "texto": "Excelente gacista, nos puso un nuevo calefon que funciona muy bien y como persona muy amable y agradable, siendo muy recomendable. Lo tendremos como nuestro…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "ELECTRICISTA Y TÉCNICO EN REFRIGERACIÓN MATRICULADO PLOMERO GASISTA",
+      "reseñas": "101",
+      "rating": "4.9",
+      "telefono": "1166962257",
+      "whatsapp": "https://wa.me/5491166962257",
+      "link_maps": "https://www.google.com/maps/place/ELECTRICISTA+Y+T%C3%89CNICO+EN+REFRIGERACI%C3%93N+MATRICULADO+PLOMERO+GASISTA/data=!4m7!3m6!1s0x95bcc77b9620d4f7:0x6620ab61718c328f!8m2!3d-34.6684743!4d-58.5754307!16s%2Fg%2F11l73wyrd4!19sChIJ99QglnvHvJURjzKMcWGrIGY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Monseñor José Francisco Marcón 1824, B1754 San Justo, Provincia de Buenos Aires, Argentina",
+      "categoria": "Mantenimiento de propiedades",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Florencia Salvatierra",
+          "texto": "Excelente trabajo!! Seba muy amable y te explica todo. Laburo muy prolijo y me dejaron todo limpio. Vino con un ayudante y también muy amable. Súper…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Monsieur Alexandre",
+          "texto": "Excelente servicio. Me atendió de manera muy amable y profesional desde el primer momento. Instaló la cocina a gas rápidamente, con mucha prolijidad y se tomó…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jessica Aguirre",
+          "texto": "Excelente profesional!! Es muy amable y resolvió nuestros inconvenientes súper rápido y con gran predisposición. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ezequiel Belvedere",
+          "texto": "Quiero agradecer a Sebastián , ya que como muy pocos en el oficio , cumple con el horario pactado , es puntual y responsable. Al contactarlo vino rápido vio el…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero,gasista matriculado Leandro Sola reparaciones",
+      "reseñas": "94",
+      "rating": "4.9",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Plomero,gasista+matriculado+Leandro+Sola+reparaciones/data=!4m7!3m6!1s0x95bcc99676dcd929:0x18118d000cec36e0!8m2!3d-34.6185952!4d-58.5129264!16s%2Fg%2F11mm6lwbgp!19sChIJKdncdpbJvJUR4DbsDACNERg?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Marcos Sastre 5082, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun 9 a.m.–7 p.m. · mar a vie 9 a.m.–5 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ramon Enrique Lablona",
+          "texto": "EXCELENTE!!! SIEMPRE REALIZA BUEN TRABAJO. LO RECOMIENDO. EN POCO TIEMPO SE SOLUCIONA UN PROBLEMA.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Susana Fernandez",
+          "texto": "Me llamo Susana, hoy estuvo Leandro y la verdad 10 puntos el servicio. Lo recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Giovi Rocha",
+          "texto": "Excelente atención . Me respondió rápido y vino a los días . Muy recomendable . Hizo todo rápido y le pedí que me haga un arreglo más en una estufa que estaba…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "natalia sfeir",
+          "texto": "Excelente atención!! Respondió enseguida y llegó en menos de 15 minutos. Me explicó todo con paciencia y muy buena predisposición. Súper recomendable, no duden…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero & Gasista",
+      "reseñas": "93",
+      "rating": "4.9",
+      "telefono": "1150535301",
+      "whatsapp": "https://wa.me/5491150535301",
+      "link_maps": "https://www.google.com/maps/place/Plomero+%26+Gasista/data=!4m7!3m6!1s0x95bcb037181144bf:0xb445d776a64f1c11!8m2!3d-34.4734477!4d-58.5186086!16s%2Fg%2F1tjt33k9!19sChIJv0QRGDewvJURERxPpnbXRbQ?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Alsina 249, B1642 San Isidro, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 9 a.m.–6:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Marcelo Bujeiro",
+          "texto": "Lo contacte para colocar el termotanque en la casa de mi novia, en un lugar bastante complicado de acceder y quedo impecable. La segunda vez fue para…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elizabeth Casado",
+          "texto": "Buenas tardes. La verdad Guillermo muy buena persona. Muy atento y enseguida me soluciono el problema q tenia. Lo recomiendo al 100% por la rapidez, atención…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gianluca Corti",
+          "texto": "Muy conforme con el servicio. Respondió rápido cuando lo contacté, explicó bien qué había que hacer y cuánto iba a salir antes de empezar. Se nota que sabe lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luna Stosic",
+          "texto": "Excelente servicio, super agradable. Me instaló mi cocina industrial y reguló las válvulas de la misma y luego volvio a asegurarse que quede todo en…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero en san Miguel",
+      "reseñas": "92",
+      "rating": "4.4",
+      "telefono": "1161609403",
+      "whatsapp": "https://wa.me/5491161609403",
+      "link_maps": "https://www.google.com/maps/place/Plomero+en+san+Miguel/data=!4m7!3m6!1s0x95bcbd47afe9b56d:0x7dd2d2261112cda!8m2!3d-34.5237249!4d-58.7179145!16s%2Fg%2F11h3n3g1hj!19sChIJbbXpr0e9vJUR2iwRYSIt3Qc?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Salerno 198, B1663 San Miguel, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 8 a.m.–6 p.m. · sáb 9 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Roberto Girabel",
+          "texto": "Muy buen profesional ! Capacitado, responsable, trabajador, creativo, puntual, honesto. Te resuelve el problema con la mejor solución. y además tiene el Don de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristian Toranzo",
+          "texto": "Francisco es un gran profesional. Desde el primer minuto me atendió con mucha amabilidad y buena predisposición. Fue muy puntal y realizó un trabajo impecable…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Melvin Kucuk",
+          "texto": "Lo contrate para limpiar el tanque de agua y todo espectacular, me acomodo el flotante que estaba muy bajo y habia unos cables pelados que empalmo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabian Brito",
+          "texto": "Super recomendable .Francisco .me guío y pude cambiar la válvula de retención de mi bomba elevadora de agua . muchísimas gracias",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "An-Veplast",
+      "reseñas": "83",
+      "rating": "4.6",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/An-Veplast/data=!4m7!3m6!1s0x95bcceac4a8b116f:0xb07b25aed42367c3!8m2!3d-34.6917207!4d-58.4747253!16s%2Fg%2F1tj97ly6!19sChIJbxGLSqzOvJURw2cj1K4le7A?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "José León Suárez 5440, C1439 HIP, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Proveedor de tuberías",
+      "horarios": "lun a vie 8:30 a.m.–5 p.m. · sáb 8:30 a.m.–12 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Woorlok Adolfo",
+          "texto": "Muy buena atención y tienen de todo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Elizabeth Lucas",
+          "texto": "Excelente atención, siempre predispuestos, precios accesibles .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gabriel Fuentes",
+          "texto": "Excelente lugar! gente muy amable y agradable. Mucha disponibilidad de productos, siempre encontré lo que buscaba. Precios acorde. Lo mejor de la zona!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Ferrara",
+          "texto": "Muy buena atencion y encontras todo lo q buscas",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero gasista matriculado",
+      "reseñas": "79",
+      "rating": "4.1",
+      "telefono": "91144192044",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Plomero+gasista+matriculado/data=!4m7!3m6!1s0x95a32d12c35616b7:0xba1c5fc8f2f96412!8m2!3d-34.755643!4d-58.369217!16s%2Fg%2F11fl7dhpr0!19sChIJtxZWwxIto5UREmT58shfHLo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ezequiel Paz 278, B1834 Temperley, Provincia de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Raul Alejandro Sosa",
+          "texto": "Gracias Diego por llegarte hasta Longchamps, Excelente servicio, muy profesional, reparo una estufa que no funcionaba desde hace 2 años, e hizo el servis de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Damián Vogel",
+          "texto": "Diego es un profesional siempre dispuesto ayudar y sincero al momento de informar que se debe hacer y como. En mi casa tuve diversos problemas y siempre nos…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Johanna Acosta",
+          "texto": "No lo contraten, te estafa. A mí me tenía que instalar cocina y calefon. Vino hizo todo rápido, cuando probé la cocina tenía perdida de gas el horno. Le dije…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Leonel Ruiz",
+          "texto": "Mala experiencia. No volvería a contratarlo. Me hizo un mantenimiento a un tiro balanceado, me quería dejar la estufa sin piloto. Me cobró una fortuna y la…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Vanari",
+      "reseñas": "71",
+      "rating": "4.6",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Vanari/data=!4m7!3m6!1s0x95bcc95c4982ffb3:0xbf8e830b2afec9fe!8m2!3d-34.665639!4d-58.4702075!16s%2Fg%2F11cs3wwz26!19sChIJs_-CSVzJvJUR_sn-KguDjr8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Guardia Nacional 3150, C1439FGR Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun a sáb 8:30 a.m.–1 p.m., 3:30–8 p.m. · dom 10 a.m.–12:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Karamanìa Show",
+          "texto": "Excelente atención!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Caterina Galarza",
+          "texto": "Muy buena atención, excelente servicio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ezequiel Zoccoli",
+          "texto": "Excelente atención. Variedad y muy buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "adriana barruti",
+          "texto": "Excelente la atención y además tienen de todo",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Pintor Plomero Mauro",
+      "reseñas": "70",
+      "rating": "4.9",
+      "telefono": "1127072347",
+      "whatsapp": "https://wa.me/5491127072347",
+      "link_maps": "https://www.google.com/maps/place/Pintor+Plomero+Mauro/data=!4m7!3m6!1s0x95bccb21379980f9:0xdf22902c9355fdc!8m2!3d-34.5903216!4d-58.4176981!16s%2Fg%2F11ssxb11zy!19sChIJ-YCZNyHLvJUR3F81yQIp8g0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Del Signo 4039, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Pintor",
+      "horarios": "lun a sáb 7 a.m.–7 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Lucero Marenales",
+          "texto": "Tuve la suerte de encontrarlo por Maps y vino a hacer un arreglo a casa, todo impecable y buen precio! Todas las reseñas eran buenas y entiendo porque. Como…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sol Casajus",
+          "texto": "Excelente trabajo! Le hablé y a los 30 min ya estaba en mi casa. Fue rápido, barato y eficiente, me salvó de luchar con la mochila del baño por el fin de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "MELANIE ALEKSANDER",
+          "texto": "Muy contenta con el servicio de Mauro. Lo contacte para limpiar el termotanque, llego a horario y fue muy prolijo con su trabajo. Lo volvería a contactar. Mas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Kelly Uribe",
+          "texto": "Ubiqué a Mauro desde Google maps dado que esta por el barrio y me guíe por las reseñas positivas. Tenía una fuga de agua en el lavabo del baño la cual…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomeria Lucho",
+      "reseñas": "68",
+      "rating": "4.9",
+      "telefono": "1130395009",
+      "whatsapp": "https://wa.me/5491130395009",
+      "link_maps": "https://www.google.com/maps/place/Plomeria+Lucho/data=!4m7!3m6!1s0x95bccbc2030fb29d:0xe4c069cc30f313d1!8m2!3d-34.6287888!4d-58.4039389!16s%2Fg%2F11y405wdcp!19sChIJnbIPA8LLvJUR0RPzMMxpwOQ?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Juan de Garay 2821, C1256AAU Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a sáb 9 a.m.–5 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ivan c",
+          "texto": "Lo contacté a Luciano para el cambio de la barra de ánodo del termotanque. Desde el primer contacto hasta finalizar el arreglo, fue muy profesional, metódico…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marce Gutierrez",
+          "texto": "Muy responsable y cumplidor. Quedo la canilla que instalo 10 puntos. Lo recomiendo Gracias!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "natalia damele",
+          "texto": "Le escribí a Lucho un sábado y como no había urgencia se acercó en la semana a resolver un problema que tenia en el inodoro, fue puntual y super profesional…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Plomeria adri",
+          "texto": "⭐⭐⭐⭐⭐ Llamé por una pérdida y vino el mismo día. Laburó prolijo, me explicó todo y me pasó precio antes de empezar. 100% recomendable. Cumple y da garantía.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Sanitarios Cipriano",
+      "reseñas": "67",
+      "rating": "4.4",
+      "telefono": "1141944352",
+      "whatsapp": "https://wa.me/5491141944352",
+      "link_maps": "https://www.google.com/maps/place/Sanitarios+Cipriano/data=!4m7!3m6!1s0x95bccaffb1048eb1:0xd447388781a88250!8m2!3d-34.6254993!4d-58.4150701!16s%2Fg%2F1tglp2b1!19sChIJsY4Esf_KvJURUIKogYc4R9Q?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. San Juan 3524, C1233ABS Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de artículos de fontanería",
+      "horarios": "lun a vie 8 a.m.–5:30 p.m. · sáb 8 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Noelia Alcaraz",
+          "texto": "La mejor predisposición, atención y buena onda a la hora de atender. Fui a comprar un repuesto de mochila, y sin saber NADA, me asesoraron de 10. Pude cambiar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Optica Center Bs As",
+          "texto": "Exelente atención, siempre con la mejor predisposición. De todo lo que necesites de agua, gas, baños entre otras cosas. Gracias! Recomendadisimo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gaston Valdez",
+          "texto": "Muy buena atención, lleve todo el vástago del lavatorio porque no lo podía desenroscar y me dieron una mano además de venderle el repuesto que no había…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Victoria Sanchez Dauria",
+          "texto": "La mejor atención y asesoramiento.Los recomiendo!!!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Hugo Navarro",
+      "reseñas": "61",
+      "rating": "4.4",
+      "telefono": "1133335437",
+      "whatsapp": "https://wa.me/5491133335437",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Hugo+Navarro/data=!4m7!3m6!1s0x95bccbba102eb6d7:0xead543ec9c1e454e!8m2!3d-34.6023681!4d-58.4452681!16s%2Fg%2F11j66_1tff!19sChIJ17YuELrLvJURTkUenOxD1eo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Hidalgo 1655, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "mar a sáb 9 a.m.–7 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Manuel E.",
+          "texto": "Muy buen servicio! El Sr. Hugo fue muy profesional y eficiente desde el primer contacto. Resolvió el problema de plomería en mi hogar de manera rápida y dejó…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Hache",
+          "texto": "Resolvio el problema de una perdida de agua. Hizo rapido el trabajo. Costo razonable, puntual, excelente trato y dejo todo prolijo. Lo recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "nati ayala",
+          "texto": "Buscando plomeros por mi barrio... encontré al señor Hugo. es uno de los mejores puntuados en la zona y ya se porque... Me pudo solucionar el problema que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Olmedo",
+          "texto": "Vino en el mismo día, apenas un par de horas después de que lo llamé; el trabajo fue arreglar un flexible que había quedado roto dentro de la rosca en la pared…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasista Plomero Matri.-Enrique Santana",
+      "reseñas": "59",
+      "rating": "4.8",
+      "telefono": "1138525636",
+      "whatsapp": "https://wa.me/5491138525636",
+      "link_maps": "https://www.google.com/maps/place/Gasista+Plomero+Matri.-Enrique+Santana/data=!4m7!3m6!1s0x95bcca0fb22c8ea5:0xe62c7b01fa71607e!8m2!3d-34.6050885!4d-58.4490502!16s%2Fg%2F11bbrhmf3n!19sChIJpY4ssg_KvJURfmBx-gF7LOY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Rojas 1423, C1416CPI Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Servicio de instalación de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "maria mabel hadad",
+          "texto": "Excelente trabajo de Enrique y Brandon. Precisos y detallistas. Cambiaron griferia de baño y cocina y solucionaron situaciones que surgieron en el momento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Miguel Angel Sarena",
+          "texto": "Lo llame porque tenia un problema con el funcionamiento del calefon. Vino inmediatamente y durante la tarde lo soluciono. Precio acorde al servicio realizado…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolás Paskvalic",
+          "texto": "Enrique y Brando son súper recomendables. Los llamé un domingo por una urgencia con mi calefón y vinieron enseguida. No solo solucionaron el problema, sino que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nahuel Cáceres",
+          "texto": "Hablé con Enrique por el cambio de un calefón Orvis (de viejo al nuevo) un martes al medio día...vino ese mismo día a las 18hs, miro todo y me dijo las cosas…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "DR GAS. Gasista Matriculado / Plomeria",
+      "reseñas": "57",
+      "rating": "4.6",
+      "telefono": "91169278789",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/DR+GAS.+Gasista+Matriculado+%2F+Plomeria/data=!4m7!3m6!1s0x95a3332ae50f43c3:0xea0cb2269f45277b!8m2!3d-34.6999489!4d-58.3221894!16s%2Fg%2F11pdy5ggm0!19sChIJw0MP5Sozo5UReydFnyayDOo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Bartolomé Mitre 5840, B1875 Wilde, Provincia de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie Abierto las 24 horas · sáb 9 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Viviana Andrea",
+          "texto": "Excelente Profesional y muy respetuoso, me instaló una cocina nueva ,semi industrial , la cual vino con los mecheros muy ajustados apenas salía el gas, sobre…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gisela Varela",
+          "texto": "Excelente servicio. Vinieron a casa puntuales, trabajaron de manera prolija y se tomaron el tiempo de revisar todo en detalle para detectar las fugas. Me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hernán Girardi",
+          "texto": "Excelente y rápida atención, muy amables y eficientes. Excelente relación precio/calidad. Recomendable 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julio Pimentel",
+          "texto": "Dr Gas (Rubén) recomendable 100%, cumple hasta con el horario que se coordinó cumplió y del trabajo en mi caso quedó excelente!!!!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "JFQ- Gasista Matriculado - Plomero - Refrigeración- Aires acondicionados",
+      "reseñas": "54",
+      "rating": "4.9",
+      "telefono": "1120207608",
+      "whatsapp": "https://wa.me/5491120207608",
+      "link_maps": "https://www.google.com/maps/place/JFQ-+Gasista+Matriculado+-+Plomero+-+Refrigeraci%C3%B3n-+Aires+acondicionados/data=!4m7!3m6!1s0x95a328a1acf82d17:0x2a8b6bee98dbc581!8m2!3d-34.7797107!4d-58.1920183!16s%2Fg%2F11c6_vv5d7!19sChIJFy34rKEoo5URgcXbmO5riyo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "149A, C. 33 B y, B1885 Berazategui, Provincia de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Francisco Arturo Suarez",
+          "texto": "Recomendadisimo!! Excelente trabajo, realmente muy recomendable. Realizó toda la instalación revisando cada detalle, sin apurarse y explicando las cosas cuando…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Ezequiel Gonzalez",
+          "texto": "Súper recomendable. Nos hizo la instalación del tanque de agua y cañerías. Muy prolijo, no hace nada a las apuradas, pero el trabajo lo terminó en los tiempos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Talía Mangiaracina",
+          "texto": "Excelente servicio. Ya varias veces lo llamamos y en todas vino pronto e hizo un gran trabajo. Arregló nuestra estufa y reparó una fuga de gas que no sabíamos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Susana Buono",
+          "texto": "Sigo en la misma línea de opiniones positivas sobre Facundo. Aunque no se hizo el trabajo por cuestión de logística, recibí un asesoramiento serio y confiable…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasista Matriculado Plomero Julián Lumbrera",
+      "reseñas": "53",
+      "rating": "4.2",
+      "telefono": "1166337988",
+      "whatsapp": "https://wa.me/5491166337988",
+      "link_maps": "https://www.google.com/maps/place/Gasista+Matriculado+Plomero+Juli%C3%A1n+Lumbrera/data=!4m7!3m6!1s0x95bcc99f86f475b1:0xedf8e90158f3c00a!8m2!3d-34.645231!4d-58.4855866!16s%2Fg%2F11f4v57v3q!19sChIJsXX0hp_JvJURCsDzWAHp-O0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Moreto 846, C1406 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a jue 9 a.m.–6 p.m. · vie 8 a.m.–5 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Agus O.",
+          "texto": "Lo felicito por la buena predisposición a ayudar y brindar una respuesta rápida. Muy macanudo. Lo llame y se hizo tiempo para ayudarme con mí pedido. Amable…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cintia Fariña",
+          "texto": "Excelente. Lo llame para instalar una cocina. Respondió rápido e hizo el trabajo súper bien y prolijo. Muy responsable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jory Nacho",
+          "texto": "Un genio total quedó todo perfecto el cambio de termo tanque excelente recomendado 😁😁😁🔥",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Proto",
+          "texto": "Excelente servicio. Lo llame hoy porque se me había quemado la bomba de agua del tanque y a la hora ya estaba en mi negocio. Fue a comprarla y la coloco. Todo…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Destapaciones SyL",
+      "reseñas": "52",
+      "rating": "5.0",
+      "telefono": "1155617221",
+      "whatsapp": "https://wa.me/5491155617221",
+      "link_maps": "https://www.google.com/maps/place/Destapaciones+SyL/data=!4m7!3m6!1s0x8d1bc8d934232a2f:0xd891ad586aa74c6d!8m2!3d-34.6541117!4d-58.5358882!16s%2Fg%2F11n9b6y9gw!19sChIJLyojNNnIG40RbUynalitkdg?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Eva Perón 731, B1752 Ramos Mejía, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "L MT",
+          "texto": "Buena atención. Vinieron rápido Tenia la cloaca completamente tapada y lo solucionaron muy bien Explican todo y trabajan muy prolijo. Gente honesta muchas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Torres",
+          "texto": "Me solucionaron de manera inmediata el problema que tenia desde hace mucho tiempo la atención fue excelente, muy amables y muy buen precio.. la verdad super…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mar Puri",
+          "texto": "Excelente servicio ! Super recomendable. Solucionaron el problema, buscaron resolver a pesar d presentarse difícil el trabajo. Excelente precio y vinieron en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Patitucci",
+          "texto": "Excelente servicio, vinieron rápido, lo solucionaron rápido y dejaron todo limpio. Más que conforme con el servicio brindado. Lo súper recomiendo. Relación…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Gasista Matriculado en Almagro Villa Crespo Palermo Caballito y alrededores.",
+      "reseñas": "51",
+      "rating": "4.7",
+      "telefono": "2215643394",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Gasista+Matriculado+en+Almagro+Villa+Crespo+Palermo+Caballito+y+alrededores./data=!4m7!3m6!1s0x83cea89ff979b4c1:0x8128f5b7f0f75100!8m2!3d-34.6040051!4d-58.4320628!16s%2Fg%2F11khcqs2rx!19sChIJwbR5-Z-ozoMRAFH38Lf1KIE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Sarmiento 4696, C1219ABA Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Elsa Catan",
+          "texto": "Super recomendable. Solucionó un problema con el calefón y quedó como nuevo (destaco su responsabilidad y compromiso, vino al día siguiente, re puntual y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ada Smith",
+          "texto": "Recomiendo a Justo! Lo encontré en un apuro por maps y decidí confiar en las reseñas, que bueno que lo hice! El calefon perdía agua y tenía un tema con la…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adriana Frascone",
+          "texto": "Muy conforme con el trabajo. Hablé con Claudio y Vinieron rapidísimo . Walter realizó una reparación integral de mi calefón, cambiando las piezas desgastadas…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mauricio Icardi",
+          "texto": "Un tipazo, amable y súper correcto para trabajar. Me arregló la estufa y de yapa solucionó una pérdida de mi cocina. Lo súper recomiendo y lo voy a volver a…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios \"PEG\" (Plomero, Electricista y Gasista)",
+      "reseñas": "46",
+      "rating": "4.9",
+      "telefono": "1165916920",
+      "whatsapp": "https://wa.me/5491165916920",
+      "link_maps": "https://www.google.com/maps/place/Servicios+%22PEG%22+%28Plomero,+Electricista+y+Gasista%29/data=!4m7!3m6!1s0x95bcc9d44f9da131:0x74c7815ced0647a1!8m2!3d-34.6245146!4d-58.500998!16s%2Fg%2F11r6sbn6jw!19sChIJMaGdT9TJvJURoUcG7VyBx3Q?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Marcos Paz 1652, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Electricista",
+      "horarios": "lun a vie 8 a.m.–6:30 p.m. · sáb 8 a.m.–12 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Barbara Terry",
+          "texto": "Unos genios, puntuales, detallistas, prolijos y lo mas importante, resolvieron el problema. Ah y me dijo que la garantía es de por vida. SUPER RECOMENDABLE!!…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fer Roldan",
+          "texto": "¡Excelente!!! La seriedad, eficiencia, buena predisposición y profesionalismo de este equipo de trabajo es increíble. Gonzalo, gasista matriculado, vino con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agustin Cirilo",
+          "texto": "despues de renegar con plomeros que no vienen y trabajan mal, alfin gente responsable y con excelente desempeño! impecable servicio! con garantia y todo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Rios",
+          "texto": "Super rápidos y honestos, solucionaron el problema que nos afectaba y nos entregaron un detalle con todo lo realizado por PDF",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "MAXIMILIANO GASISTA MATRICULADO PLOMERO",
+      "reseñas": "46",
+      "rating": "4.7",
+      "telefono": "1164977997",
+      "whatsapp": "https://wa.me/5491164977997",
+      "link_maps": "https://www.google.com/maps/place/MAXIMILIANO+GASISTA+MATRICULADO+PLOMERO/data=!4m7!3m6!1s0x95bcc92ce9e43699:0xd6a99cf150793d0b!8m2!3d-34.625704!4d-58.4881328!16s%2Fg%2F11k6zg4n2d!19sChIJmTbk6SzJvJURCz15UPGcqdY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Pje. Pehuajo 900, C1407 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 9 a.m.–8 p.m. · sáb 9 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Sebas",
+          "texto": "Lo llamé vino a la hora convenida, colocó el repuesto nuevo y dejó el calefón funcionando. Un trabajo prolijo y rápido. Recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aye Annese",
+          "texto": "Un genio, lo llamé y coordinamos a los 2 días, llegó puntual. Arregló una pérdida grande del tanque. Cómo no conseguía el repuesto en la zona, tomó su auto y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Oscar Pancho Perrone",
+          "texto": "Un verdadero genio, cumplió con el horario, cumplió con el presupuesto a pesar de encontrarse con problemas mayores a los que le describí al momento de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lo Lo",
+          "texto": "Un genio, se me había pinchado el termotanque eléctrico y le consulte si hacia esos arreglos y me dijo que si y me paso un presupuesto y además me oriento para…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero/valvulista y gasista | plomería familiar CABA",
+      "reseñas": "42",
+      "rating": "5.0",
+      "telefono": "1138972204",
+      "whatsapp": "https://wa.me/5491138972204",
+      "link_maps": "https://www.google.com/maps/place/Plomero%2Fvalvulista+y+gasista+%7C+plomer%C3%ADa+familiar+CABA/data=!4m7!3m6!1s0x95bccb002bec52e7:0x300f8aeffc6b0106!8m2!3d-34.594209!4d-58.4035965!16s%2Fg%2F11yr30_tmc!19sChIJ51LsKwDLvJURBgFr_O-KDzA?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Avenida Santa Fe, Av. Pueyrredón &, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Club de trabajadores",
+      "horarios": "lun a vie 10 a.m.–4 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Rosario María Valladares",
+          "texto": "Muy buen servicio. Le pedí ayuda de urgencia porque un plomero anterior estafador me había hecho cualquier cosa, un desastre (primer video de mi baño…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Steban Rasmussen",
+          "texto": "Excelente experiencia de principio a fin. Tuve varios problemas en distintos momentos: un inconveniente con un fuelle, problemas con 2 válvulas de los 2 baños…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fran Appella",
+          "texto": "Genial! Contacté a Joaquín y vino enseguida, fue puntual y muy educado. Me explicó bien cuál era el problema y qué había que hacer para solucionarlo. Hizo un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martina Mattig",
+          "texto": "Excelente servicio. Cumplió con todo lo acordado, llegó en horario, trabajó de manera prolija y resolvió el problema de forma rápida y eficiente. Muy amable y…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Duran",
+      "reseñas": "41",
+      "rating": "4.6",
+      "telefono": "1123901051",
+      "whatsapp": "https://wa.me/5491123901051",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Duran/data=!4m7!3m6!1s0x95bcc93ede6f4b67:0x7aecd1088690b8d1!8m2!3d-34.6720269!4d-58.488955!16s%2Fg%2F11gf9p1rgc!19sChIJZ0tv3j7JvJUR0biQhgjR7Ho?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "C. Luis Alberto de Herrera 3424, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun 9 a.m.–1 p.m. · mar a vie 9 a.m.–1 p.m., 3–7:30 p.m. · sáb 9 a.m.–5 p.m. · dom 9 a.m.–2:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Cielo Cielo",
+          "texto": "Muy buena atención,muy amables los vendedores",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Yamil Duran",
+          "texto": "Excelente atención 10/10",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fedra Medina Troche",
+          "texto": "Excelente la atención 🙋🏾‍♀️‼️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ulises Ko",
+          "texto": "Excelente la ferretería, tiene de todo y la gente que atiende sabe asesorar. Todo lujo",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasista Matriculado (de 1° Categoria) Plomeria En General. Marcos Reynoso",
+      "reseñas": "40",
+      "rating": "4.8",
+      "telefono": "1161504663",
+      "whatsapp": "https://wa.me/5491161504663",
+      "link_maps": "https://www.google.com/maps/place/Gasista+Matriculado+%28de+1%C2%B0+Categoria%29+Plomeria+En+General.+Marcos+Reynoso/data=!4m7!3m6!1s0x95bcb01004a66023:0x30e6cfc67196bc67!8m2!3d-34.474368!4d-58.5427326!16s%2Fg%2F1tyz_542!19sChIJI2CmBBCwvJURZ7yWccbP5jA?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Jorge Newbery 1336, B1643BHB Beccar, Provincia de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a mié 8 a.m.–6 p.m. · jue 8 a.m.–5 p.m. · vie 8 a.m.–6 p.m. · sáb 9 a.m.–12 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Malena Mosgidis",
+          "texto": "Necesitaba un gasista matriculado para que me cambié un termotanque y me corra la garantía del producto. Llamé y vinieron en el día. Trabajaron muy bien y muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pato",
+          "texto": "Más que conforme. Muy recomendable. Lo llamé el sábado por la mañana y al rato ya estaba solucionando el problema de mi calefón orbis a botonera. Tenía todo lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hernan Laperuta",
+          "texto": "Excelente! Le dejé un mensaje a marcos en su whatsaap a las 11 de la noche y me contestó enseguida. A la mañana siguiente y en dos horas ya me había arreglado…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Pita",
+          "texto": "Lo contacté por una urgencia con mi termotanque; me atendió rápido y pudo venir pronto y solucionar el problema. A un costo razonable pudiendo abonar tanto por…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Carlos Nuñez Gasista Matriculado-plomero",
+      "reseñas": "39",
+      "rating": "4.2",
+      "telefono": "1165010445",
+      "whatsapp": "https://wa.me/5491165010445",
+      "link_maps": "https://www.google.com/maps/place/Carlos+Nu%C3%B1ez+Gasista+Matriculado-plomero/data=!4m7!3m6!1s0x95bcb7d5acfe7b25:0x7463d6c916794867!8m2!3d-34.6127518!4d-58.5120168!16s%2Fg%2F1th5857j!19sChIJJXv-rNW3vJURZ0h5FsnWY3Q?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Nazarre 4728, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Servicio de instalación de gas",
+      "horarios": "lun a vie 9 a.m.–11 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Fernanda Mendonça",
+          "texto": "El Sr Carlos y su ayudante Marito pudieron soluciona una perdida de agua en el baño. Muy Recomendable! Muchas gracias.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ariel Correa",
+          "texto": "Buenas quisiera saber un presupuesto se me tapo el bajo mesada muchas gracias soy de devoto",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Rodrigues",
+          "texto": "Me reparó mi cocina. Fue eficiente y vino rápido. Sus honorarios son justos y acordes al trabajo realizado. Para recomendar. Gracias Carlos por todo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Alejandro Delgado",
+          "texto": "Excelente atención y servicio. Solucionando el problema y aportando tiempo y conocimiento. Muchas gracias por la atención",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería FC",
+      "reseñas": "38",
+      "rating": "4.5",
+      "telefono": "1127782940",
+      "whatsapp": "https://wa.me/5491127782940",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+FC/data=!4m7!3m6!1s0x95a335259a2c5411:0x13854fcb45116ddb!8m2!3d-34.6289465!4d-58.3617541!16s%2Fg%2F11fn51dpr3!19sChIJEVQsmiU1o5UR220RRctPhRM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "20 de Septiembre 212, C1155 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–6 p.m. · sáb 9 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Natalia Diez",
+          "texto": "Muy buena atención y tienen muchísimos productos. Encontré todo lo que necesitaba. ❤️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Veronica Castillo",
+          "texto": "Excelente atención, la ferretería es súper completa y tiene muy buenos precios, recomiendo ☺️",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabio Pesoa",
+          "texto": "Tienen de todo y a buen precio, la atención excelente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura Otero",
+          "texto": "Excelente atención! Siempre tienen de todo y a re buenos precios! Genial!!!!!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Ferrosan",
+      "reseñas": "34",
+      "rating": "5.0",
+      "telefono": "1173711179",
+      "whatsapp": "https://wa.me/5491173711179",
+      "link_maps": "https://www.google.com/maps/place/Grupo+Ferrosan/data=!4m7!3m6!1s0x95bccb3dc6f79af5:0x715e706e4d778f05!8m2!3d-34.63556!4d-58.3963123!16s%2Fg%2F11z3zc0bd8!19sChIJ9Zr3xj3LvJURBY93TW5wXnE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Caseros 2412, C1264AAE Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 8:30 a.m.–6 p.m. · sáb 10 a.m.–6 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "gaston gulyas",
+          "texto": "Muy Buena la atención y además lo tengo en frente, sin duda compraría de vuelta, solución instantánea para mi canilla de Lavaplatos y a buen precio. Gracias.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agus Puli",
+          "texto": "Muy buena atención, el personal fue súper amable y me ayudó a encontrar lo que necesitaba.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Hurst",
+          "texto": "Excelente atencion,articulos variados y de calidad! Ya hace unos meses estan el barrio y se convirtió en la ferreteria amiga. El trato es super buena onda…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Facundo Silva",
+          "texto": "Excelente atención y precios muy buenos. Súper recomendable",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomería Fama",
+      "reseñas": "34",
+      "rating": "4.2",
+      "telefono": "1153102819",
+      "whatsapp": "https://wa.me/5491153102819",
+      "link_maps": "https://www.google.com/maps/place/Plomer%C3%ADa+Fama/data=!4m7!3m6!1s0x95bcc904966f7393:0xa63695227213145e!8m2!3d-34.6566221!4d-58.5325393!16s%2Fg%2F11pzy7m2ml!19sChIJk3NvlgTJvJURXhQTciKVNqY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gral. Guido 2230, B1752 Lomas del Mirador, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Ezequiel Facio",
+          "texto": "Maxi Fama es un genio. Hoy vino a reparar mi tanque de agua y la verdad excelente todo. Muy buen servicio a un precio que no existe. No lo dude... además de un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Ezcurra",
+          "texto": "Maxi excelente desde que llegó hasta que se fue. Revisó, explicó y solucionó. Excelente predisposición, tenía el calefón sucio y lo limpió todo. Recomendable…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Federico Medrano",
+          "texto": "Una lastima que tenga que poner esta calificacion! Busque un plomero cerca de la zona y por los comentarios llegue aca. Me contacte con el, me llamo le comente…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Edgardo Lopez",
+          "texto": "Les comparto mi experiencia lamentable para que no le pase a nadie más: me contacte con el hace 5 meses, vino a pasar un presupuesto yo en ese momento estaba…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "PLOMERO GASISTA ORBIS",
+      "reseñas": "33",
+      "rating": "4.6",
+      "telefono": "1165228024",
+      "whatsapp": "https://wa.me/5491165228024",
+      "link_maps": "https://www.google.com/maps/place/PLOMERO+GASISTA+ORBIS/data=!4m7!3m6!1s0x95bccbecd662d9e1:0xbbc2733e0bd61e8b!8m2!3d-34.5931196!4d-58.4014982!16s%2Fg%2F11vs2f3_6g!19sChIJ4dli1uzLvJURix7WCz5zwrs?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Pueyrredón, C1119AAB Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Orlando Ramon",
+          "texto": "Excelente atención. Lo llamé por una pérdida en la bacha y terminó cambiándome el sifón que estaba para atrás. Pablo es un tipo que sabe lo que hace y no te da…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvia Valente",
+          "texto": "Excelente servicio! Rapido, prolijo y eficiente. En el día me solucionaron el problema y quedó funcionando. Gracias!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rocío Molina",
+          "texto": "Muy buen profesional. Llegó a horario, trabajó con mucha prolijidad y dejó todo funcionando perfecto. Se nota que sabe lo que hace y además es muy respetuoso…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sool Llanos",
+          "texto": "Impecable la atención del Sr. Pablo. Le comenté que tenía una urgencia y apareció casi al instante. Me cambió el sifón y arregló una pérdida que me tenía loca…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Gasista Matriculado",
+      "reseñas": "32",
+      "rating": "4.5",
+      "telefono": "1145386697",
+      "whatsapp": "https://wa.me/5491145386697",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Gasista+Matriculado/data=!4m7!3m6!1s0x95bcb7d49ee7b3f5:0x55af3e31cfc3a097!8m2!3d-34.6096849!4d-58.5103435!16s%2Fg%2F1hc30t_kk!19sChIJ9bPnntS3vJURl6DDzzE-r1U?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "EGA, Pje. Juan M. Coghlan 4519, C1417 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom 8 a.m.–9 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Ezequiel damian Baez",
+          "texto": "Un genio con todas las letras como estaba lejos me explico cómo podía repararlo armó un audio explicando en detalle como hacerlo yo mismo,un genio total sabe…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernanda Mendonça",
+          "texto": "Estuvo mi marido mientras Antonio realizaba el trabajo. Es muy profesional, se nota los años de experiencia. Gracias por su ayuda. Muy Recomendable,.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Francisco Doldán",
+          "texto": "Antonio es un fenómeno, gran profesional y gran persona. No duden en llamarlo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rodrigo F. Lopez",
+          "texto": "Excelente la atención y predisposición de Antonio. Rompí un caño dentro de la pared por error. Y mediante llamada luego de explicarme las posibles soluciones y…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Sebastian Plomería",
+      "reseñas": "30",
+      "rating": "4.7",
+      "telefono": "91155292386",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Sebastian+Plomer%C3%ADa/data=!4m7!3m6!1s0x95bcc9a6f4a94873:0xf25a40fcfff53d44!8m2!3d-34.6175423!4d-58.4800426!16s%2Fg%2F11vpqw7df_!19sChIJc0ip9KbJvJURRD31__xAWvI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Helguera 1307, C1416 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "",
+      "reseñas_texto": [
+        {
+          "nombre": "María Felicitas Marafioti",
+          "texto": "El servicio fue excelente! Me asesoraron y fue un servicio completo. Muy profesional y trabajo eficaz. Definitivamente volvería a llamarlo. Totalmente de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "CECi PENA",
+          "texto": "Sebastián nos asesoró genial. Nos solucionó varios problemas rápida y económicamente. Los trabajos quedaron genial. Super recomendable. Es muy detallista y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marina Noel Miguel",
+          "texto": "Muy responsable y profesional. Re prolijo. Sabe exactamente que materiales comprar. Muy bien 10",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquín Bravo",
+          "texto": "Amable, puntual, eficaz. Lo contactamos un domingo y al día siguiente vino en el horario pactado, solucionó unos problemas que tenía en el baño y fue cordial…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Sanitarios Martini",
+      "reseñas": "29",
+      "rating": "4.5",
+      "telefono": "1143022218",
+      "whatsapp": "https://wa.me/5491143022218",
+      "link_maps": "https://www.google.com/maps/place/Sanitarios+Martini/data=!4m7!3m6!1s0x95bccb4b56f074c9:0xb5d89716463d63d7!8m2!3d-34.6394562!4d-58.3720168!16s%2Fg%2F1v3_3wnw!19sChIJyXTwVkvLvJUR12M9RhaX2LU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Olavarría 1496, C1267AEF Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de artículos de fontanería",
+      "horarios": "lun a vie 8:30 a.m.–4:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Pedro Villegas",
+          "texto": "Siempre resulta confiable si tenes que resolver problemas con instalaciones sanitarias , muy bueno por eso es recomendable siempre .",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Alvaro Ojeda",
+          "texto": "Lugar excelente con muy buena atención y asesoramiento.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romi Mariel",
+          "texto": "Excelente atención y variedad de productos. Lo único malo es que cierran temprano! Pero siempre me salvan! (Salvo cuando llegue tarde jaja)",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquin Eguiagaray",
+          "texto": "Bien,trato amable y profesional , precios lógicos lo único que se podría mejorar es el horario cierra a las 15 hs.",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "BD Plomería y Gas",
+      "reseñas": "28",
+      "rating": "4.9",
+      "telefono": "1133311953",
+      "whatsapp": "https://wa.me/5491133311953",
+      "link_maps": "https://www.google.com/maps/place/BD+Plomer%C3%ADa+y+Gas/data=!4m7!3m6!1s0x95bccb778aebfb33:0x30b95f7d1f4ebab!8m2!3d-34.6542226!4d-58.4199537!16s%2Fg%2F11s2q_g3f7!19sChIJM_vrinfLvJURq-v00feVCwM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Comuna 4, Tilcara 3309, C1437CYK Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a sáb 8 a.m.–8 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Valeria Varela",
+          "texto": "Lo contacté a Brian porque el termotanque se apagaba ni bien lo prendía. Coordinamos la visita y fue súper puntual. Había contactado a otro gasista y no solo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maribell Clau",
+          "texto": "Hola Brian el sábado realizó unos arreglos de plomería.Muy profesional,quedó todo impecable Puntual y honesto. Gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariana Lucia Monserrat",
+          "texto": "Encontré a Brian por casualidad, le escribí para pedirle un presupuesto y me respondió enseguida. Necesitaba retirar un vanitory y sanitarios viejos que tenían…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Ruben Ciccia",
+          "texto": "Estaba buscando un gasista y googleando lo encontré a Brian estaba a 2 cuadras de mi casa. Excelente atención y puntualidad, me asesoró en todo. Totalmente…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gabriel Leyes Plomero Gasista",
+      "reseñas": "28",
+      "rating": "4.4",
+      "telefono": "1123752196",
+      "whatsapp": "https://wa.me/5491123752196",
+      "link_maps": "https://www.google.com/maps/place/Gabriel+Leyes+Plomero+Gasista/data=!4m7!3m6!1s0x95bccb249c5e89f3:0x531b1a4c17e424c1!8m2!3d-34.6168413!4d-58.3871104!16s%2Fg%2F11qmm0xxcd!19sChIJ84lenCTLvJURwSTkF0waG1M?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Chile 1482, C1098 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Alice Benitezz",
+          "texto": "Excelente trabajo, le escribí un día antes para que realice varios trabajos y al día siguiente me conecto el duchador y realizo otros trabajos. Excelente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Emily Delgado",
+          "texto": "Excelente trabajo colocación de cerámica pulida + cambio de ducha 😍❤️ súper prolijo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "JOSÉ FARIAS",
+          "texto": "Gabriel, excelente trabajo que realizó, total cordialidad y respeto, 100% recomendado, el hombre es totalmente seguro. No duden en solicitar un servicio con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariano Armada",
+          "texto": "Lo contacté y a la media hora estaba en el depto. Me presupuestó via whatsapp, dejando todo claro de antemano. Al llegar también arregló de cortesía la mochila…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Gasista Matriculado",
+      "reseñas": "28",
+      "rating": "4.1",
+      "telefono": "1128744654",
+      "whatsapp": "https://wa.me/5491128744654",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Gasista+Matriculado/data=!4m7!3m6!1s0x95bcd31949742b59:0x2f6e772c39155df0!8m2!3d-34.58717!4d-58.4182734!16s%2Fg%2F11fnwd55qk!19sChIJWSt0SRnTvJUR8F0VOSx3bi8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Charcas 3877, C1425BNA Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 8 a.m.–8 p.m. · sáb 9 a.m.–6 p.m. · dom 9 a.m.–4 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Tamara Nicole Colombo",
+          "texto": "Hasta el momento lo llamamos x 4/5 cosas distintas y todas quedaron 100% solucionadas. Además te suele explicar todo lo cual es muy bueno. Lo re contra…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Propygmantenimiento",
+          "texto": "Excelente servicio y muy buena atención, Gran trabajo a realizado y a buen precio. Lo recomiendo, para trabajos que uno cree que tiene solicion.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "osvaldo sorbara",
+          "texto": "Excelente Luis. Rápido. Amable y buena predisposición. Honorarios accesibles. Osvaldo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sd D'Amico",
+          "texto": "Muy buen servicio",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Gasista Electricista",
+      "reseñas": "27",
+      "rating": "4.9",
+      "telefono": "1127022543",
+      "whatsapp": "https://wa.me/5491127022543",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Gasista+Electricista/data=!4m7!3m6!1s0x95bccb0051b9f93d:0xb73855f0b5f7b2d2!8m2!3d-34.61043!4d-58.3773616!16s%2Fg%2F11y07yjwbd!19sChIJPfm5UQDLvJUR0rL3tfBVOLc?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Adolfo Alsina 785, C1087AAK C1087AAK, Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Sebastian Colotto",
+          "texto": "Excelente servicio de Martín. Vino rápido. Lo soluciono al instante el tema del gas y además sabe de herrería, plomeria, construcción, destapes y hasta poda…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariela Notargiovanni",
+          "texto": "Excelente atención de Martín. Me arregló el calefón súper rápido, me explicó todo, vino en el único horario que yo podía y el precio fue accesible. Lo tendré…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Agustina Forcatto",
+          "texto": "Martín me respondió super rápido un domingo en la mañana y en tiempo récord ya estaba en casa. Me iba explicando cada paso que iba haciendo, arregló otras…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ignacio Allende",
+          "texto": "Me respondió en el día, a las horas realizó el trabajo y realizó el trabajo de la mejor manera posible, a mi juicio. Comunicativo, respetuoso y amable…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomeria oeste",
+      "reseñas": "26",
+      "rating": "4.8",
+      "telefono": "1154861023",
+      "whatsapp": "https://wa.me/5491154861023",
+      "link_maps": "https://www.google.com/maps/place/Plomeria+oeste/data=!4m7!3m6!1s0x95bcb97d26c386eb:0x6f44ae82525db5bb!8m2!3d-34.6238224!4d-58.5723369!16s%2Fg%2F11jsymww5r!19sChIJ64bDJn25vJURu7VdUoKuRG8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Olavarría 4375 2A, B1678 Caseros, Provincia de Buenos Aires, Argentina",
+      "categoria": "Constructor",
+      "horarios": "lun a vie 8 a.m.–8 p.m. · sáb 8 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "DARIO Valled",
+          "texto": "Luis es un excelente profesional, responsable, conoce muy bien el rubro, te aconseja, podes confiar y quedarte tranquilo que el trabajo te va a quedar prolijo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nick",
+          "texto": "Recomendado 10/10. Necesitaba hacer un cambio de inodoro y ademas anular la descarga de agua a pared. Impecable trabajo, honesto, transparente (te explica con…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariana Touzon",
+          "texto": "Muy buen profesional y cobra lo justo. Totalmente recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "John Breto",
+          "texto": "Luis es un plomero de absoluta confianza. Se destaca por su prolijidad en cada detalle y por la responsabilidad con la que encara los trabajos. Cumple con los…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasista matriculado -plomeria R.L",
+      "reseñas": "26",
+      "rating": "4.8",
+      "telefono": "1153426858",
+      "whatsapp": "https://wa.me/5491153426858",
+      "link_maps": "https://www.google.com/maps/place/Gasista+matriculado+-plomeria+R.L/data=!4m7!3m6!1s0x95bcc92fbc1e1f6f:0x8ccb2adaaedbe6fe!8m2!3d-34.6668968!4d-58.4820288!16s%2Fg%2F11rbyhgmvj!19sChIJbx8evC_JvJUR_ubbrtoqy4w?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Larraya 3061, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 7 a.m.–6:30 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "María Fernanda Graziadío",
+          "texto": "Ruben instaló un termotanque en mi domicilio de manera muy eficiente y prolija. Cumplió con el horario estipulado y se mantuvo en contacto con el cliente. Es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dra. An Leu",
+          "texto": "Buena atención y respuesta rápida muy bien hecho el trabajo . Súper recomendable. Ya encontramos plomero y gasista. No se van a arrepentir contactenlo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ma Florencia Mancuso",
+          "texto": "Me arreglaron 2 estufas y 1 calefón que no encendían. Los chicos lo solucionaron rapidísimo, muy correctos. Muchas gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martín Vergara",
+          "texto": "Un capo. Me pasó presupuesto por wpp, vino la mañana siguiente. Cambió un calefón y arregló una estufa en un toque. Buen precio y servicio",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomeria Morales Plomero",
+      "reseñas": "26",
+      "rating": "4.7",
+      "telefono": "1151559254",
+      "whatsapp": "https://wa.me/5491151559254",
+      "link_maps": "https://www.google.com/maps/place/Plomeria+Morales+Plomero/data=!4m7!3m6!1s0x95bccb7e594f720b:0xd2b2c796e27bf1e3!8m2!3d-34.6001138!4d-58.4163368!16s%2Fg%2F11qmqmtyd6!19sChIJC3JPWX7LvJUR4_F74pbHstI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Mario Bravo 828, C1175 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 9 a.m.–6 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Néstor Quinteros",
+          "texto": "Excelente trabajo! Tenía un problema de perdida de agua por caños en el tanque de agua y fue solucionado rápidamente. Muy eficiente en su trabajo. Una persona…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristopher Martinez",
+          "texto": "Excelente servicio y muy amable. Vino el día que se pactó. La manija tenía un tornillo oxidado por lo que era difícil sacarlo y me había dicho que posiblemente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julia Bryla",
+          "texto": "Excelente trabajo! Gustavo pasa un presupuesto acorde al trabajo, cumple con los horarios, trabaja bien. Pude solucionar varias perdidas que tenia el baño. Lo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alexandra Mazzei",
+          "texto": "Si buscan un profesional con palabra, que labure bien y no te arranque la cabeza, Gustavo es lo que estan necesitando. Despues de 4 plomeros que me dejaron…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasista Matriculado dmg",
+      "reseñas": "25",
+      "rating": "5.0",
+      "telefono": "1133396316",
+      "whatsapp": "https://wa.me/5491133396316",
+      "link_maps": "https://www.google.com/maps/place/Gasista+Matriculado+dmg/data=!4m7!3m6!1s0x95bcc9f904c007e3:0xcd30ffeeadee89c3!8m2!3d-34.6620408!4d-58.4817216!16s%2Fg%2F11yb3l9c58!19sChIJ4wfABPnJvJURw4nure7_MM0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Albariño 2657, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 8 a.m.–9 p.m. · sáb 8 a.m.–2 p.m. · dom 9 a.m.–2 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejandro Ferrone",
+          "texto": "Excelente trabajo ! Muy responsable, sacó y colocó un nuevo Calefon,con cañería tanto de agua como de Zingueria! Todo prolijo en tiempo y forma! Precios…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Vazquez",
+          "texto": "Excelente. Precio, calidad y Responsabilidad. En casa hizo una obra maestra, cambiando un termotanque por una caldera a gas.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Antonella Laruffa",
+          "texto": "Miguel es un genio, no solo que me solucionó el problema, sino que se tomó el tiempo de explicarme todo y dejarme todo impecable. Tuve muy malas experiencias…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "lore star",
+          "texto": "Muy conforme con su trabajo, excelente profesional. Muy buen precio, responsable y cumplidor. Hizo la instalación del gas para poner un calefon caldera.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería/Sanitarios . CASA LOYACONO.",
+      "reseñas": "25",
+      "rating": "4.6",
+      "telefono": "1149116819",
+      "whatsapp": "https://wa.me/5491149116819",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa%2FSanitarios+.+CASA+LOYACONO./data=!4m7!3m6!1s0x95bccbd0f23379fb:0x486e6b3b27c8c180!8m2!3d-34.6528439!4d-58.4053624!16s%2Fg%2F11h1mj0f9_!19sChIJ-3kz8tDLvJURgMHIJztrbkg?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Oscar Natalio Bonavena 1318, C1437 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 9 a.m.–1 p.m., 3–6 p.m. · sáb 9 a.m.–1 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Mauricio Seminari",
+          "texto": "Excelente la atención!! Marcos un genio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabricio Arian Diaz",
+          "texto": "Tienen de todo, encima el chavón te atiende con la mejor de las ondas, súper recomendado",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juanpix Alzogaray",
+          "texto": "Muy buena atencion, recomiendo muchisimo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yamila Uriarti",
+          "texto": "Excelente atención! Buena predisposición para atender y muy buen asesoramiento. Recomiendo !",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "NICOLAS ELECTRICIDAD / DESTAPACIONES CABA",
+      "reseñas": "22",
+      "rating": "4.9",
+      "telefono": "1170956903",
+      "whatsapp": "https://wa.me/5491170956903",
+      "link_maps": "https://www.google.com/maps/place/NICOLAS+ELECTRICIDAD+%2F+DESTAPACIONES+CABA/data=!4m7!3m6!1s0x95bccb9c34a8c0b3:0x49d13f567eacfe6d!8m2!3d-34.6234009!4d-58.4070976!16s%2Fg%2F11zf61b1pj!19sChIJs8CoNJzLvJURbf6sflY_0Uk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "La Rioja 1110, C1221ACN Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Electricista",
+      "horarios": "lun a sáb 9 a.m.–5 p.m.",
+      "reseñas_texto": [
+        {
+          "nombre": "Samanta",
+          "texto": "Lo súper recomiendo. Muy buena predisposición y ganas para trabajar. Rapidez y eficiencia. Muchas gracias Nico, seguimos en contacto",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea Matera",
+          "texto": "Excelente servicio, rápida respuesta y buen precio. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "claudio vallejos",
+          "texto": "Rápida respuesta ..prolijo educado y buen trabajo ...me solucionó una emergencia recomendable !!?",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Bryan Morotte ramirez “brathXD”",
+          "texto": "Solucionó todas las instalaciones eléctricas que necesitaba y me dió opciones para que quede mejor, y sobre todo que me respondieron rápido,muy confiable y…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasistas y Plomeros Demetrio y Vicente",
+      "reseñas": "20",
+      "rating": "4.4",
+      "telefono": "1164993539",
+      "whatsapp": "https://wa.me/5491164993539",
+      "link_maps": "https://www.google.com/maps/place/Gasistas+y+Plomeros+Demetrio+y+Vicente/data=!4m7!3m6!1s0x95bcc97afa39fc0f:0x3258c414793649df!8m2!3d-34.6726717!4d-58.4831618!16s%2Fg%2F11sh0c30yc!19sChIJD_w5-nrJvJUR30k2eRTEWDI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Martiniano Leguizamón 3629, C1439 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Empresa de calefacción",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "reseñas_texto": [
+        {
+          "nombre": "Walter Levin",
+          "texto": "Después de bastantes malas experiencias al fin encontré dos personas que saben de verdad el oficio. Profesionales 100%, responsables,honestos buen carácter. Si…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "marisol ana avila",
+          "texto": "Muy responsable y dedicado en su trabajo. Predispuestos y prolijos. Trabajaron con mucha dedicación! Súper recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Navarro",
+          "texto": "Por mi departamento pasaron a ver 2 Plomeros Gasista mi calefon, me hicieron gastar plata en repuestos y no pudieron repararlo, el primero no sabia nada de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuel Falcon",
+          "texto": "Pésimo. Al menos dese mí experiencia no es para nada recomendable. Acordamos una visita a las 18hs. (Pidió que le recuerde la noche anterior, lo hice) Habiendo…",
+          "estrellas": 1
+        }
+      ]
+    }
+  ]
+}

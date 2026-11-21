@@ -1,6 +1,28 @@
 {
   "searches": [
     {
+      "id": "20261120-212817_plomeros-9-barrios-caba",
+      "query": "plomeros · 9 barrios CABA",
+      "date": "20261120-212817",
+      "date_label": "2026-11-20 21:28 (America/Buenos_Aires)",
+      "n_raw": 679,
+      "n_limpio": 61,
+      "rubro": "plomeros",
+      "barrios": [
+        "Boedo",
+        "Parque Patricios",
+        "Barracas",
+        "La Boca",
+        "Nueva Pompeya",
+        "Villa Soldati",
+        "Parque Chacabuco",
+        "Villa Lugano",
+        "Villa Riachuelo"
+      ],
+      "lugares": [],
+      "file": "20261120-212817_plomeros-9-barrios-caba.json"
+    },
+    {
       "id": "20261114-210555_gasistas-19-barrios-caba",
       "query": "gasistas · 19 barrios CABA",
       "date": "20261114-210555",
