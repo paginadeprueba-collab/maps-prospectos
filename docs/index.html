@@ -722,6 +722,16 @@
           </div>
         </div>
 
+        <div id="minResenasWrap" style="margin:16px 0 8px">
+        <label class="label-sm" for="minResenasBox">Mínimo de reseñas</label>
+        <select id="minResenasBox" class="field" aria-label="Mínimo de reseñas">
+          <option value="10">10 o más</option>
+          <option value="20" selected>20 o más</option>
+          <option value="30">30 o más</option>
+        </select>
+        <p class="hint">Siempre sin sitio web. Cuantas más reseñas, mejor: después se ordenan de mayor a menor.</p>
+        </div>
+
         <button type="button" class="btn btn-primary btn-block" id="btnBuscar">Buscar</button>
 
         <div id="progressWrap" class="progress-wrap hidden">
@@ -767,9 +777,14 @@
         <input type="search" id="filterBox" class="field" style="min-height:44px;padding:10px 14px;font-size:.95rem" placeholder="Filtrar por nombre o barrio…" autocomplete="off" />
       </div>
       <div class="toolbar">
+        <select id="minResenasFiltro" class="field" style="min-height:44px;padding:10px 14px;font-size:.9rem;flex:1" aria-label="Mínimo de reseñas">
+          <option value="10">10 o más reseñas</option>
+          <option value="20" selected>20 o más reseñas</option>
+          <option value="30">30 o más reseñas</option>
+        </select>
         <select id="sortBox" class="field" style="min-height:44px;padding:10px 14px;font-size:.9rem;flex:1" aria-label="Ordenar">
+          <option value="reviews" selected>Más reseñas</option>
           <option value="rating">Mejor rating</option>
-          <option value="reviews">Más reseñas</option>
           <option value="nombre">Nombre A–Z</option>
         </select>
         <label class="toggle" title="Oculta negocios que ya salieron en otras búsquedas">
@@ -782,7 +797,7 @@
       <div id="cards"></div>
       <div id="detailEmpty" class="empty hidden">
         <strong>Nada por acá</strong>
-        Probá otra pestaña o desactivá «Ocultar ya vistos».
+        Probá otra pestaña, bajá el mínimo de reseñas o desactivá «Ocultar ya vistos».
       </div>
     </section>
 
@@ -1433,12 +1448,19 @@
       }
     }
 
+    function minResenasDe(id, fallback) {
+      const n = parseInt((el(id) && el(id).value) || String(fallback), 10);
+      if (n === 10 || n === 20 || n === 30) return n;
+      return fallback;
+    }
+
     async function launchSearch() {
       let payload = {};
       let label = "";
       let fallbackQ = "";
       const profunda = !!(el("chkProfunda") && el("chkProfunda").checked);
       const depth = profunda ? DEPTH_PROFUNDA : DEPTH_RAPIDA;
+      const minResenas = String(minResenasDe("minResenasBox", 20));
 
       if (searchMode === "caba") {
         const rubro = (el("rubroBox").value || "").trim();
@@ -1467,6 +1489,7 @@
           queries,
           expandir: false,
           profundidad: depth,
+          min_resenas: minResenas,
         };
         searchEtaMs = estimateMinutes(queries.length * nVar, profunda) * 60 * 1000;
       } else {
@@ -1477,7 +1500,7 @@
         }
         label = q + (profunda ? " · profunda" : "");
         fallbackQ = q;
-        payload = { query: q, expandir: true, profundidad: depth };
+        payload = { query: q, expandir: true, profundidad: depth, min_resenas: minResenas };
         searchEtaMs = (profunda ? 4 : 2) * 60 * 1000;
       }
 
@@ -1686,7 +1709,7 @@
         (current.n_limpio ?? (current.prospects || []).length) +
         " limpios";
       el("filterBox").value = "";
-      el("sortBox").value = "rating";
+      el("sortBox").value = "reviews";
       renderCards();
     }
 
@@ -1702,6 +1725,7 @@
       if (!current) return [];
       const q = (el("filterBox").value || "").trim().toLowerCase();
       const hideSeen = el("hideSeen").checked;
+      const minRes = minResenasDe("minResenasFiltro", 20);
       let rows = (current.prospects || []).slice();
 
       rows = rows.filter((r) => {
@@ -1709,6 +1733,7 @@
         if (statusFilter === "nuevos" && st !== "pendiente") return false;
         if (statusFilter === "contactados" && st !== "contactado") return false;
         if (hideSeen && isSeenElsewhere(r)) return false;
+        if ((parseInt(r.reseñas, 10) || 0) < minRes) return false;
         if (q) {
           const blob = [r.nombre, r.direccion, r.categoria, r.telefono].join(" ").toLowerCase();
           if (!blob.includes(q)) return false;
@@ -2001,6 +2026,7 @@
     });
     el("filterBox").addEventListener("input", renderCards);
     el("sortBox").addEventListener("change", renderCards);
+    el("minResenasFiltro").addEventListener("change", renderCards);
     el("hideSeen").addEventListener("change", renderCards);
     el("btnCsv").addEventListener("click", downloadCsv);
     el("ejemploCerrar").addEventListener("click", cerrarEjemploSheet);

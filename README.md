@@ -5,7 +5,7 @@ El scraper corre en GitHub Actions (gratis). La página vive en GitHub Pages.
 Opcional: un **Cloudflare Worker** (free tier) para disparar búsquedas y guardar “contactado / no interesa” sin tocar la UI de GitHub.
 
 Scraper: [`gosom/google-maps-scraper`](https://github.com/gosom/google-maps-scraper).  
-Filtro local: solo **sin website**, buenas reseñas, WhatsApp si el tel es área **11**, dedupe.
+Filtro local: solo **sin website**, rating ≥ 4.0 **y** un mínimo de reseñas (por defecto 20, configurable), WhatsApp si el tel es área **11**, dedupe.
 
 ## Sitio
 

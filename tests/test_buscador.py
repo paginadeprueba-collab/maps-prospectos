@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from filtrar import format_open_hours  # noqa: E402
+from filtrar import format_open_hours, pasa_umbral  # noqa: E402
 from seleccion import parse_queries  # noqa: E402
 from variantes import CATALOGO, norm, variants_for_rubro  # noqa: E402
 
@@ -134,7 +134,7 @@ class HorariosTest(unittest.TestCase):
                         "phone": "+54 11 4444-5555",
                         "website": "",
                         "review_rating": "4.8",
-                        "review_count": "12",
+                        "review_count": "25",
                         "link": "https://maps.example/a",
                         "address": "Calle 1",
                         "category": "Abogado",
@@ -201,6 +201,91 @@ class SeleccionTest(unittest.TestCase):
         for c in combos:
             if c.get("id"):
                 self.assertIn(c["id"], ids)
+
+
+class FiltroResenasTest(unittest.TestCase):
+    def test_umbral_and_exige_rating_y_resenas(self):
+        # Causa del problema: con modo "or", un 5.0 y 1 reseña pasaba.
+        self.assertFalse(pasa_umbral(5.0, 1, 4.0, 20, "and"))
+        self.assertFalse(pasa_umbral(5.0, 10, 4.0, 20, "and"))
+        self.assertTrue(pasa_umbral(4.8, 20, 4.0, 20, "and"))
+        self.assertTrue(pasa_umbral(4.5, 50, 4.0, 20, "and"))
+        self.assertFalse(pasa_umbral(3.5, 40, 4.0, 20, "and"))
+        self.assertFalse(pasa_umbral(4.8, None, 4.0, 20, "and"))
+        self.assertTrue(pasa_umbral(4.8, 12, 4.0, 10, "and"))
+        self.assertFalse(pasa_umbral(4.8, 9, 4.0, 10, "and"))
+
+    def _run(self, rows, extra_args=None):
+        with tempfile.TemporaryDirectory() as tmp:
+            src = Path(tmp) / "raw.csv"
+            dst = Path(tmp) / "limpio.csv"
+            fields = [
+                "title", "phone", "website", "review_rating", "review_count",
+                "link", "address", "category", "place_id",
+            ]
+            with src.open("w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=fields)
+                w.writeheader()
+                for i, row in enumerate(rows):
+                    w.writerow({
+                        "title": row["title"],
+                        "phone": "+54 11 4444-0000",
+                        "website": row.get("website", ""),
+                        "review_rating": row["rating"],
+                        "review_count": row["reviews"],
+                        "link": f"https://maps.example/{i}",
+                        "address": "Calle 1",
+                        "category": "Rubro",
+                        "place_id": f"p{i}",
+                    })
+            cmd = [sys.executable, str(ROOT / "filtrar.py"), str(src), str(dst)]
+            if extra_args:
+                cmd.extend(extra_args)
+            subprocess.check_call(cmd, cwd=ROOT)
+            with dst.open(encoding="utf-8") as f:
+                return list(csv.DictReader(f))
+
+    def test_default_saca_al_de_1_resena_y_al_que_tiene_web(self):
+        out = self._run([
+            {"title": "Uno", "rating": "5.0", "reviews": "1"},
+            {"title": "Con Web", "rating": "5.0", "reviews": "80", "website": "https://ejemplo.com"},
+            {"title": "Diez", "rating": "4.9", "reviews": "10"},
+            {"title": "Cincuenta", "rating": "4.6", "reviews": "50"},
+            {"title": "Cuarenta", "rating": "4.8", "reviews": "40"},
+            {"title": "Veinte", "rating": "4.7", "reviews": "20"},
+        ])
+        nombres = [r["nombre"] for r in out]
+        self.assertEqual(nombres, ["Cincuenta", "Cuarenta", "Veinte"])
+        self.assertNotIn("Uno", nombres)
+        self.assertNotIn("Diez", nombres)
+        self.assertNotIn("Con Web", nombres)
+
+    def test_minimo_10_deja_pasar_al_de_10(self):
+        out = self._run(
+            [
+                {"title": "Uno", "rating": "5.0", "reviews": "1"},
+                {"title": "Diez", "rating": "4.9", "reviews": "10"},
+                {"title": "Cincuenta", "rating": "4.6", "reviews": "50"},
+            ],
+            extra_args=["--min-reviews", "10", "--modo", "and"],
+        )
+        self.assertEqual([r["nombre"] for r in out], ["Cincuenta", "Diez"])
+
+    def test_fabrica_tiene_selector_sin_cero_y_ordena_por_resenas(self):
+        html = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+        yml = (ROOT / ".github" / "workflows" / "buscar.yml").read_text(encoding="utf-8")
+        self.assertIn('id="minResenasBox"', html)
+        self.assertIn('id="minResenasFiltro"', html)
+        self.assertIn("min_resenas: minResenas", html)
+        self.assertNotIn('<option value="0">', html)
+        self.assertIn('<option value="10">', html)
+        self.assertIn('<option value="20" selected>', html)
+        self.assertIn('<option value="30">', html)
+        self.assertIn('<option value="reviews" selected>', html)
+        self.assertIn('--modo and', yml)
+        self.assertIn('default: "20"', yml)
+
+
 
 
 if __name__ == "__main__":

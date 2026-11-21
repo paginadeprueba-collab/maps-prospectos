@@ -138,6 +138,16 @@ def format_open_hours(raw: str) -> str:
     return " · ".join(partes)[:300]
 
 
+
+def pasa_umbral(rating, reviews, min_rating: float, min_reviews: int, modo: str = "and") -> bool:
+    """True si cumple el umbral. El 'sin website' se aplica aparte y siempre."""
+    ok_rating = rating is not None and rating >= min_rating
+    ok_reviews = reviews is not None and reviews >= min_reviews
+    if modo == "and":
+        return ok_rating and ok_reviews
+    return ok_rating or ok_reviews
+
+
 def website_empty(row: dict) -> bool:
     w = _get(row, "website", "Website", "web", "site")
     if not w:
@@ -168,12 +178,12 @@ def main() -> int:
     ap.add_argument("input_csv", help="CSV crudo del scraper")
     ap.add_argument("output_csv", help="CSV limpio de salida")
     ap.add_argument("--min-rating", type=float, default=4.0)
-    ap.add_argument("--min-reviews", type=int, default=10)
+    ap.add_argument("--min-reviews", type=int, default=20)
     ap.add_argument(
         "--modo",
         choices=("and", "or"),
-        default="or",
-        help="and = rating Y reseñas; or = rating O reseñas (default)",
+        default="and",
+        help="and = rating Y reseñas (default); or = rating O reseñas",
     )
     args = ap.parse_args()
 
@@ -209,21 +219,16 @@ def main() -> int:
             continue
         rating = parse_float(_get(row, "review_rating", "rating", "Review Rating"))
         reviews = parse_int(_get(row, "review_count", "reviews", "Review Count"))
-        ok_rating = rating is not None and rating >= args.min_rating
-        ok_reviews = reviews is not None and reviews >= args.min_reviews
-        if args.modo == "and":
-            if not (ok_rating and ok_reviews):
-                continue
-        else:
-            if not (ok_rating or ok_reviews):
-                continue
+        if not pasa_umbral(rating, reviews, args.min_rating, args.min_reviews, args.modo):
+            continue
         sin_web.append((row, rating, reviews))
 
     def sort_key(item):
         row, rating, reviews = item
+        # Más reseñas primero (40, 50+ arriba); a igual cantidad, mejor rating.
         return (
-            rating if rating is not None else -1.0,
             reviews if reviews is not None else -1,
+            rating if rating is not None else -1.0,
         )
 
     sin_web.sort(key=sort_key, reverse=True)
