@@ -457,6 +457,123 @@
     return out;
   }
 
+
+  function esGoogle(data) {
+    return !data || (data.g !== 0 && data.g !== "0" && data.g !== false);
+  }
+
+  function textoSello(data) {
+    return esGoogle(data) ? "Reseñas verificadas de Google" : "Opiniones de clientes";
+  }
+
+  function pintarSello(data) {
+    if (typeof document === "undefined") return;
+    var google = esGoogle(data);
+    var txt = textoSello(data);
+    var nodos = document.querySelectorAll(".sello-resenas-google");
+    for (var i = 0; i < nodos.length; i++) {
+      var el = nodos[i];
+      var g = el.querySelector(".google-g");
+      if (g) g = g.cloneNode(true);
+      if (google) {
+        el.textContent = "";
+        if (g) {
+          el.appendChild(g);
+          el.appendChild(document.createTextNode(" " + txt));
+        } else {
+          el.textContent = txt;
+        }
+        el.style.background = "";
+        el.style.color = "";
+      } else {
+        el.textContent = txt;
+        el.style.background = "#eef2f4";
+        el.style.color = "#123c4b";
+      }
+    }
+  }
+
+  function itemServicio(item) {
+    var h = "", p = "";
+    if (typeof item === "string") h = item.trim();
+    else if (Array.isArray(item)) {
+      h = String(item[0] || "").trim();
+      p = String(item[1] || "").trim();
+    } else if (item && typeof item === "object") {
+      h = String(item.h || item.n || item.tag || "").trim();
+      p = String(item.p || item.d || "").trim();
+    }
+    if (!h) return null;
+    return p ? [h, p] : [h];
+  }
+
+  function serviciosDe(rubro, data) {
+    var base = (rubro && rubro.servicios) || [];
+    if (!data || !Array.isArray(data.u) || !data.u.length) return base;
+    var out = [];
+    for (var i = 0; i < data.u.length; i++) {
+      var par = itemServicio(data.u[i]);
+      if (!par) continue;
+      var orig = base[out.length] || base[0] || {};
+      out.push({ ic: orig.ic || "wrench", tag: par[0], h: par[0], p: par[1] || "", l: orig.l || [] });
+    }
+    return out.length ? out : base;
+  }
+
+  function payloadSitio(campos) {
+    campos = campos || {};
+    var rubro = porId[campos.k || campos.rubroId] || null;
+    if (!rubro && campos.rubro) rubro = resolver({ categoria: campos.rubro, nombre: campos.nombre }, {});
+    if (!rubro) return null;
+    var waDigits = normTel(campos.whatsapp || campos.telefono || "");
+    var revs = Array.isArray(campos.reseñas) ? campos.reseñas : [];
+    var prospect = {
+      nombre: campos.nombre || "",
+      categoria: rubro.nombre,
+      direccion: campos.zona || campos.direccion || "",
+      telefono: waDigits,
+      whatsapp: waDigits ? ("https://wa.me/" + (waDigits.length === 10 ? "549" + waDigits : waDigits)) : "",
+      rating: campos.rating,
+      reseñas: campos.cantidad,
+      reseñas_texto: revs
+    };
+    var o = payload(prospect, { rubro: rubro.nombre });
+    if (!o) return null;
+    if (campos.zona) o.b = String(campos.zona).trim().slice(0, 40);
+    var e = [];
+    for (var i = 0; i < revs.length && e.length < 6; i++) {
+      var item = revs[i];
+      if (!item) continue;
+      var texto = "", nombre = "", estrellas = 0;
+      if (Array.isArray(item)) {
+        nombre = String(item[0] || "").trim();
+        texto = String(item[1] || "").trim();
+        estrellas = Number(item[2] || 0);
+      } else if (typeof item === "object") {
+        texto = String(item.texto || item.t || item.text || item.comentario || "").trim();
+        nombre = String(item.nombre || item.n || item.autor || item.author || "").trim();
+        estrellas = Number(item.estrellas || item.rating || item.stars || 0);
+      }
+      if (!texto) continue;
+      var fila = [nombre.slice(0, 40), texto.slice(0, 220)];
+      if (estrellas >= 1 && estrellas <= 5) fila.push(Math.round(estrellas));
+      e.push(fila);
+    }
+    if (e.length) o.e = e;
+    else delete o.e;
+    if (campos.deGoogle === false || campos.deGoogle === 0 || campos.deGoogle === "0") o.g = 0;
+    else if (o.g !== undefined) delete o.g;
+    if (Array.isArray(campos.servicios) && campos.servicios.length) {
+      var u = [];
+      for (var j = 0; j < campos.servicios.length; j++) {
+        var par = itemServicio(campos.servicios[j]);
+        if (par) u.push(par.length === 1 ? par[0] : par);
+      }
+      if (u.length) o.u = u;
+    }
+    return o;
+  }
+
   function payload(prospect, ctx) {
     const rubro = resolver(prospect, ctx || {});
     if (!rubro) return null;
@@ -502,6 +619,11 @@
     rubros: RUBROS,
     porId: function (id) { return porId[id] || null; },
     resolver: resolver,
-    payload: payload
+    payload: payload,
+    payloadSitio: payloadSitio,
+    esGoogle: esGoogle,
+    textoSello: textoSello,
+    pintarSello: pintarSello,
+    serviciosDe: serviciosDe
   };
 })(typeof window !== "undefined" ? window : globalThis);

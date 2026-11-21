@@ -419,7 +419,7 @@ section{scroll-margin-top:78px}
     pintarHeroResenas(data);
     q("svcTitle").innerHTML = esc(rubro.serviciosTitulo || rubro.nombre);
     q("svcLead").textContent = conZona(rubro.serviciosLead || "", data);
-    pintarServicios(rubro.servicios || []);
+    pintarServicios((window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.serviciosDe) ? EjemploGrupos.hogar.serviciosDe(rubro, data) : (rubro.servicios || []));
     pintarCalc(data, rubro, nombre);
     pintarResenas(data);
     pintarMapa(data, nombre);
@@ -455,7 +455,7 @@ section{scroll-margin-top:78px}
     cards.forEach(function (r, i) {
       var st = r && r[2] ? estrellas(r[2]) : estrellas(data.s);
       var cuerpo = r
-        ? '<q>' + esc(r[1]) + '</q></div><div class="who"><span class="av">' + esc(String(r[0]).charAt(0).toUpperCase()) + '</span><div><b>' + esc(r[0]) + '</b><small>Reseña de Google</small></div></div>'
+        ? '<q>' + esc(r[1]) + '</q></div><div class="who"><span class="av">' + esc(String(r[0]).charAt(0).toUpperCase()) + '</span><div><b>' + esc(r[0]) + '</b><small>' + ((window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.esGoogle && !EjemploGrupos.hogar.esGoogle(data)) ? "Cliente" : "Reseña de Google") + '</small></div></div>'
         : '<p class="sub" style="color:var(--ink);font-weight:700;margin-top:12px">' + esc(data.v ? fmtNum(data.v) + " reseñas en Google Maps" : "Calificación en Google Maps") + "</p></div>";
       stack.insertAdjacentHTML("beforeend", '<article class="rcard' + (i === 0 ? " on" : "") + '"><div><div class="rc-top"><div class="rc-score"><b>' + esc(data.s ? fmtRating(data.s) : (r && r[2] ? String(r[2]).replace(".", ",") : "")) + '</b><span>en Google' + (data.v ? " · " + esc(fmtNum(data.v)) + " reseñas" : "") + '</span></div><span class="st">' + st + "</span></div>" + cuerpo + "</article>");
       dots.insertAdjacentHTML("beforeend", '<i' + (i === 0 ? ' class="on"' : "") + "></i>");
@@ -499,25 +499,27 @@ section{scroll-margin-top:78px}
   }
 
   function pintarResenas(data) {
+    if (window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.pintarSello) EjemploGrupos.hogar.pintarSello(data);
     var textos = (data.e || []).filter(function (r) { return r && r[1] && r[0]; });
+    var deGoogle = !(window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.esGoogle) || EjemploGrupos.hogar.esGoogle(data);
     var hay = textos.length || data.s || data.v;
     show("resenas", !!hay);
     show("navResenas", !!hay);
     if (!hay) return;
     q("revTitle").innerHTML = textos.length ? 'Lo que dicen <span class="hl">sus clientes</span>' : "En Google Maps";
-    q("revLead").textContent = textos.length ? "Opiniones de Google Maps." : "";
+    q("revLead").textContent = textos.length ? (deGoogle ? "Opiniones de Google Maps." : "Opiniones de clientes.") : "";
     var big = q("scoreBig");
     if (data.s || data.v) {
       q("scoreNum").textContent = data.s ? fmtRating(data.s) : fmtNum(data.v);
       q("scoreStars").textContent = data.s ? estrellas(data.s) : "";
-      q("scoreSub").textContent = data.v ? fmtNum(data.v) + " reseñas en Google" : "en Google";
+      q("scoreSub").textContent = deGoogle ? (data.v ? fmtNum(data.v) + " reseñas en Google" : "en Google") : (data.v ? fmtNum(data.v) + " opiniones de clientes" : "opiniones de clientes");
       big.hidden = false;
     } else big.hidden = true;
     var g = q("revGrid");
     g.innerHTML = "";
     textos.forEach(function (r) {
       var st = r[2] ? estrellas(r[2]) : estrellas(data.s);
-      g.insertAdjacentHTML("beforeend", '<article class="rg"><span class="st">' + st + "</span><q>" + esc(r[1]) + '</q><div class="who"><span class="av">' + esc(String(r[0]).charAt(0).toUpperCase()) + "</span><div><b>" + esc(r[0]) + "</b><small>Reseña de Google</small></div></div></article>");
+      g.insertAdjacentHTML("beforeend", '<article class="rg"><span class="st">' + st + "</span><q>" + esc(r[1]) + '</q><div class="who"><span class="av">' + esc(String(r[0]).charAt(0).toUpperCase()) + "</span><div><b>" + esc(r[0]) + "</b><small>" + (deGoogle ? "Reseña de Google" : "Cliente") + "</small></div></div></article>");
     });
   }
 
@@ -602,7 +604,10 @@ section{scroll-margin-top:78px}
 
   async function arrancar() {
     var data = null;
-    try { data = await EjemploCodec.cargar(location); } catch (e) { data = null; }
+    if (window.__EJEMPLO_DATA__) data = window.__EJEMPLO_DATA__;
+    else {
+      try { data = await EjemploCodec.cargar(location); } catch (e) { data = null; }
+    }
     var grupo = window.EjemploGrupos && EjemploGrupos.hogar;
     var rubro = data && grupo && grupo.porId(data.k);
     if (!data || !rubro) {

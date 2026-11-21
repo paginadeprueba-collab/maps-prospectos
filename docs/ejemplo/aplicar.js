@@ -105,8 +105,9 @@
     });
   }
 
-  function pintarServicios(rubro) {
-    var servicios = (rubro && rubro.servicios) || [];
+  function pintarServicios(rubro, data) {
+    var grupo = root.EjemploGrupos && EjemploGrupos.hogar;
+    var servicios = (grupo && grupo.serviciosDe) ? grupo.serviciosDe(rubro, data) : ((rubro && rubro.servicios) || []);
     var track = q(".services-track");
     if (track) {
       var fotos = qq("img.service-photo", track).map(function (img) { return { src: img.getAttribute("src"), alt: img.getAttribute("alt") || "" }; });
@@ -153,18 +154,20 @@
   }
 
   function pintarResenas(data) {
+    if (root.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.pintarSello) EjemploGrupos.hogar.pintarSello(data);
     var lista = Array.isArray(data.e) ? data.e : [];
     var bloques = qq("[data-reviews]");
     if (bloques.length) {
       bloques.forEach(function (box) {
         if (!lista.length) { box.innerHTML = ""; show(box, false); return; }
         var itemCls = box.getAttribute("data-review-item") || "review-quote";
-        box.innerHTML = lista.slice(0, 4).map(function (r) {
+        box.innerHTML = lista.slice(0, 6).map(function (r) {
           var nom = r && r[0] ? r[0] : "";
           var txt = r && r[1] ? r[1] : "";
           var st = r && r[2] ? stars(r[2]) : stars(data.s || 5);
+          var fallback = (root.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.esGoogle && !EjemploGrupos.hogar.esGoogle(data)) ? "Cliente" : "Reseña publicada en Google";
           return '<article class="' + esc(itemCls) + '"><div class="stars-small">' + st + "</div><p>“" + esc(txt) +
-            "”</p><small>" + esc(nom || "Reseña publicada en Google") + "</small></article>";
+            "”</p><small>" + esc(nom || fallback) + "</small></article>";
         }).join("");
         show(box, true);
       });
@@ -173,7 +176,7 @@
     if (listado) {
       if (!lista.length) { listado.innerHTML = ""; show(listado, false); }
       else {
-        listado.innerHTML = lista.slice(0, 4).map(function (r) {
+        listado.innerHTML = lista.slice(0, 6).map(function (r) {
           var nom = r && r[0] ? r[0] : "Cliente";
           var txt = r && r[1] ? r[1] : "";
           var st = r && r[2] ? stars(r[2]) : stars(data.s || 5);
@@ -375,8 +378,10 @@
   }
 
   async function arrancar() {
-    var data = null;
-    try { data = await EjemploCodec.cargar(location); } catch (e) { data = null; }
+    var data = root.__EJEMPLO_DATA__ || null;
+    if (!data) {
+      try { data = await EjemploCodec.cargar(location); } catch (e) { data = null; }
+    }
     var grupo = root.EjemploGrupos && EjemploGrupos.hogar;
     var rubro = data && grupo && grupo.porId(data.k);
     var vacio = q("#vacio");
@@ -391,7 +396,7 @@
     show(sitio, true);
     pintarTextos(data, rubro);
     pintarConfianza(rubro);
-    pintarServicios(rubro);
+    pintarServicios(rubro, data);
     pintarResenas(data);
     pintarMapa(data);
     pintarWhatsapp(data);

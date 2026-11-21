@@ -456,7 +456,7 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
     }).join("");
 
     var grid = q("tradeGrid");
-    var svcs = rubro.servicios || [];
+    var svcs = (window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.serviciosDe) ? EjemploGrupos.hogar.serviciosDe(rubro, data) : (rubro.servicios || []);
     grid.style.gridTemplateColumns = svcs.length >= 4 ? "repeat(2,1fr)" : "repeat(" + Math.max(svcs.length, 1) + ",1fr)";
     grid.innerHTML = svcs.slice(0, 4).map(function (s) {
       return '<div class="trade"><i><svg><use href="#' + esc(s.ic) + '"/></svg></i>' + esc(s.h) + "</div>";
@@ -495,7 +495,9 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
   }
 
   function pintarResenas(data) {
+    if (window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.pintarSello) EjemploGrupos.hogar.pintarSello(data);
     var textos = Array.isArray(data.e) ? data.e.filter(function (r) { return r && r[1]; }) : [];
+    var deGoogle = !(window.EjemploGrupos && EjemploGrupos.hogar && EjemploGrupos.hogar.esGoogle) || EjemploGrupos.hogar.esGoogle(data);
     var hay = textos.length || data.s || data.v;
     show("resenas", !!hay);
     show("navResenas", !!hay);
@@ -508,7 +510,7 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
     var score = q("revScore");
     if (data.s || data.v) {
       var t = "";
-      if (data.s) t += '<span class="st">★</span> ' + esc(fmtRating(data.s)) + " en Google";
+      if (data.s) t += '<span class="st">★</span> ' + esc(fmtRating(data.s)) + (deGoogle ? " en Google" : "");
       if (data.v) t += (data.s ? " · " : "") + esc(fmtNum(data.v)) + " reseñas";
       score.innerHTML = t;
       score.hidden = false;
@@ -517,7 +519,9 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
     if (!textos.length) {
       q("revTitle").textContent = "En Google Maps";
       var big = data.s ? fmtRating(data.s) : fmtNum(data.v);
-      var sub = data.s && data.v ? fmtNum(data.v) + " reseñas en Google Maps" : (data.v && !data.s ? "reseñas en Google Maps" : "Calificación en Google Maps");
+      var sub = deGoogle
+        ? (data.s && data.v ? fmtNum(data.v) + " reseñas en Google Maps" : (data.v && !data.s ? "reseñas en Google Maps" : "Calificación en Google Maps"))
+        : (data.s && data.v ? fmtNum(data.v) + " opiniones de clientes" : (data.v && !data.s ? "opiniones de clientes" : "Calificación de clientes"));
       track.innerHTML = '<div class="rev"><article class="rev-card rev-generica"><div>' +
         (data.s ? '<div class="st">' + estrellas(data.s) + "</div>" : "") +
         '<div class="big">' + esc(big) + '</div><p class="sub">' + esc(sub) + "</p></div></article></div>";
@@ -531,7 +535,7 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
       var nombre = String(r[0] || "").trim();
       var stRev = r[2] ? estrellas(r[2]) : (data.s ? estrellas(data.s) : "");
       var who = nombre
-        ? '<div class="rev-who"><span class="av">' + esc(nombre.charAt(0).toUpperCase()) + "</span><div><b>" + esc(nombre) + "</b><small>Reseña de Google</small></div></div>"
+        ? '<div class="rev-who"><span class="av">' + esc(nombre.charAt(0).toUpperCase()) + "</span><div><b>" + esc(nombre) + "</b><small>" + (deGoogle ? "Reseña de Google" : "Cliente") + "</small></div></div>"
         : "";
       track.insertAdjacentHTML("beforeend", '<div class="rev"><article class="rev-card"><div>' +
         (stRev ? '<div class="st">' + stRev + "</div>" : "") +
@@ -737,8 +741,11 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
   async function arrancar() {
     var id = ++seq;
     var data = null;
-    try { data = await EjemploCodec.cargar(location); }
-    catch (e) { data = null; }
+    if (window.__EJEMPLO_DATA__) data = window.__EJEMPLO_DATA__;
+    else {
+      try { data = await EjemploCodec.cargar(location); }
+      catch (e) { data = null; }
+    }
     if (id !== seq) return;
     var grupo = window.EjemploGrupos && EjemploGrupos.hogar;
     var rubro = data && grupo && grupo.porId(data.k);
