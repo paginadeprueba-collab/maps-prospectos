@@ -1,0 +1,13 @@
+{
+  "objeciones": [
+    {"id":"caro","objecion":"Es caro / no tengo presupuesto ahora","aplica":["general"],"respuesta":"Te entiendo. Por eso arrancamos solo por lo que más te urge, {servicioPrincipal}, sin sumar cosas que no necesitás. La idea es que lo recuperes con pocos {unidad} nuevos."},
+    {"id":"recomendacion","objecion":"Ya trabajo con recomendaciones, no me hace falta","aplica":["web","meta_ads"],"respuesta":"Buenísimo que te recomienden, es la mejor señal. Lo que proponemos es que quien te recomienda tenga dónde mandar a la gente, y que no dependas solo de eso en los meses flojos."},
+    {"id":"lo_pienso","objecion":"Lo pienso y te aviso","aplica":["general"],"respuesta":"Dale, sin problema. ¿Hay algo puntual que te genere duda? Si querés te paso un ejemplo concreto para tu rubro así lo decidís con más información."},
+    {"id":"ya_tengo_web","objecion":"Ya tengo web / ya tuve una y no sirvió","aplica":["web"],"respuesta":"Tiene sentido la duda. La diferencia está en que la web esté hecha para que te consulten: WhatsApp a mano, tus trabajos, reseñas y precios orientativos. Y el mantenimiento por 2 años ya está incluido."},
+    {"id":"publicidad_no_sirve","objecion":"Probé publicidad y no funcionó","aplica":["meta_ads"],"respuesta":"Pasa seguido cuando la campaña no tiene un destino claro o no se mide. Acá arrancamos con un monto que elegís vos, medimos consultas reales y ajustamos cada semana."},
+    {"id":"inversion_ads","objecion":"¿Cuánto tengo que poner en publicidad?","aplica":["meta_ads"],"respuesta":"Eso lo decidís vos y se lo pagás directo a Meta; no está incluido en nuestro honorario. Podemos arrancar con un monto chico, medir y después decidir si conviene subirlo."},
+    {"id":"robot","objecion":"No quiero que me atienda un robot","aplica":["empleado_virtual"],"respuesta":"Lo entiendo. El empleado virtual responde lo básico al instante (horarios, precios orientativos, datos) y te pasa la conversación cuando hace falta que respondas vos. Nadie queda sin respuesta."},
+    {"id":"no_tengo_tiempo","objecion":"No tengo tiempo para ocuparme de esto","aplica":["general"],"respuesta":"Justamente, de eso nos encargamos nosotros. De tu lado necesitamos una charla corta y algunas fotos; el resto lo armamos y te lo mostramos antes de publicar."},
+    {"id":"mucho_trabajo","objecion":"Ya tengo mucho trabajo","aplica":["meta_ads","empleado_virtual"],"respuesta":"Genial. Entonces el foco no es traer más volumen sino ordenar: responder rápido, filtrar y quedarte con los trabajos que más te convienen."}
+  ]
+}

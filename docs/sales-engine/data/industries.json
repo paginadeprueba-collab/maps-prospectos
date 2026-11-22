@@ -1,0 +1,104 @@
+{
+  "industrias": [
+    {
+      "id": "salud", "nombre": "Salud y medicina",
+      "palabras": ["salud","medic","odont","dentist","clinica","consultorio","kinesio","psicolog","nutricion","estetica","veterinar","fonoaudio","oftalm","pediatr","laboratorio"],
+      "unidad": "turnos", "unidadSing": "turno",
+      "problemas": ["Turnos que se pierden por no responder a tiempo","Ausencias sin aviso que dejan huecos en la agenda","Pacientes que preguntan precios u obras sociales y no vuelven","Poca confianza online por falta de reseñas o información clara"],
+      "preguntas": ["¿Cuántos turnos libres te quedan por semana?","¿Qué porcentaje de pacientes falta sin avisar?","¿Trabajás con obras sociales o solo particular?"],
+      "indicadores": ["Turnos agendados por mes","Tasa de ausentismo","Tiempo de respuesta a consultas","Reseñas nuevas por mes"],
+      "soluciones": ["Recordatorio automático de turnos por WhatsApp","Respuestas inmediatas a preguntas frecuentes (precios, obras sociales, horarios)","Web con especialidades, profesionales y reseñas"],
+      "argumento": "En salud la confianza decide: el paciente elige a quien responde rápido y se ve serio online."
+    },
+    {
+      "id": "inmobiliaria", "nombre": "Inmobiliarias",
+      "palabras": ["inmobil","propiedad","bienes raices","alquiler","corredor","martillero","desarrollo inmobiliario"],
+      "unidad": "operaciones", "unidadSing": "operación",
+      "problemas": ["Consultas de portales que se enfrían por demora en responder","Pocas captaciones de propiedades propias","Seguimiento desordenado de interesados","Dependencia de portales pagos"],
+      "preguntas": ["¿Cuántas propiedades tenés en cartera hoy?","¿De dónde vienen la mayoría de las consultas (portales, redes, carteles)?","¿Cuánto tarda en promedio una operación?"],
+      "indicadores": ["Consultas por propiedad","Visitas concretadas","Captaciones nuevas por mes","Operaciones cerradas"],
+      "soluciones": ["Respuesta automática con ficha de la propiedad y agenda de visitas","Campañas para captar propietarios que quieren vender o alquilar","Web propia con buscador de propiedades"],
+      "argumento": "En inmobiliarias gana quien responde primero y hace seguimiento hasta la visita."
+    },
+    {
+      "id": "servicios_profesionales", "nombre": "Servicios profesionales",
+      "palabras": ["abogad","contador","contable","estudio","consultor","arquitect","escriban","asesor","seguro","marketing","diseñ","disen","fotograf","ingenier"],
+      "unidad": "clientes nuevos", "unidadSing": "servicio",
+      "problemas": ["Clientes que llegan solo por recomendación","Dificultad para mostrar experiencia y casos","Consultas que piden precio y no avanzan","Tiempo perdido en reuniones con gente que no califica"],
+      "preguntas": ["¿Qué tipo de cliente te deja más margen?","¿Cobrás por hora, por proyecto o abono?","¿Cuántas reuniones necesitás para cerrar un cliente?"],
+      "indicadores": ["Consultas calificadas por mes","Reuniones agendadas","Propuestas enviadas vs. aceptadas","Clientes con abono"],
+      "soluciones": ["Web con servicios, casos y forma de trabajo","Formulario o asistente que filtra consultas antes de la reunión","Seguimiento de propuestas enviadas"],
+      "argumento": "Un profesional vende confianza: mostrar experiencia y responder ordenado lo diferencia."
+    },
+    {
+      "id": "hogar", "nombre": "Plomeros, gasistas y electricistas",
+      "palabras": ["plomer","gasist","electricist","electric","gas","cloac","destap","calefac","aire acondicionado","refrigeracion","mantenimiento","albañil","albanil","pintor","cerrajer","techista","hogar"],
+      "unidad": "trabajos", "unidadSing": "trabajo",
+      "problemas": ["Consultas que llegan cuando estás trabajando y no podés responder","Gente que pide presupuesto por WhatsApp y desaparece","Dependencia del boca en boca","Clientes que no encuentran tu trabajo ni reseñas en Google"],
+      "preguntas": ["¿Hacés urgencias o solo trabajos programados?","¿Qué zona cubrís?","¿Qué trabajos te dejan más ganancia?"],
+      "indicadores": ["Pedidos de presupuesto por mes","Presupuestos aceptados","Tiempo de respuesta","Reseñas en Google"],
+      "soluciones": ["Web con calculadora de presupuesto que manda la consulta al WhatsApp","Perfil de Google Maps completo con fotos de trabajos","Respuesta automática mientras estás en una obra"],
+      "argumento": "El que tiene una urgencia llama al primero que aparece y responde; estar visible y contestar rápido es clave."
+    },
+    {
+      "id": "comercio", "nombre": "Comercios",
+      "palabras": ["comercio","tienda","local","negocio de ropa","ropa","indumentaria","kiosco","almacen","ferreteria","libreria","jugueteria","optica","perfumeria","bazar","regaleria","venta"],
+      "unidad": "ventas", "unidadSing": "venta",
+      "problemas": ["Dependencia del paso de gente por el local","Preguntas de precio y stock que consumen tiempo","Clientes que compran una vez y no vuelven","Poca venta online o por WhatsApp"],
+      "preguntas": ["¿Vendés solo en el local o también por WhatsApp o envío?","¿Tenés base de clientes con contacto?","¿Qué productos te dejan más margen?"],
+      "indicadores": ["Ventas por canal","Clientes que vuelven a comprar","Consultas por WhatsApp","Ticket promedio"],
+      "soluciones": ["Catálogo online con pedido por WhatsApp","Respuestas automáticas de precio, stock y horarios","Campañas para clientes de la zona"],
+      "argumento": "Un comercio que vende también por WhatsApp no depende solo de quien pasa por la puerta."
+    },
+    {
+      "id": "gastronomia", "nombre": "Gastronomía",
+      "palabras": ["restaurant","resto","bar","cafe","cafeteria","pizzeria","rotiseria","comida","delivery","heladeria","panaderia","pasteleria","catering","hamburgues","parrilla","gastronom","cocina"],
+      "unidad": "pedidos o reservas", "unidadSing": "pedido",
+      "problemas": ["Pedidos y reservas que se pierden en horas pico","Dependencia de apps de delivery con comisiones altas","Mesas vacías en días flojos","Menú desactualizado online"],
+      "preguntas": ["¿Qué porcentaje de tus pedidos entra por apps de delivery?","¿Qué días y horarios son los más flojos?","¿Tomás reservas? ¿Por dónde?"],
+      "indicadores": ["Pedidos directos por semana","Reservas por semana","Ventas en días flojos","Pedidos por app vs. directos"],
+      "soluciones": ["Menú online con pedido directo por WhatsApp","Respuesta automática de pedidos y reservas","Promociones dirigidas a la zona en días flojos"],
+      "argumento": "Cada pedido directo es un pedido sin comisión de app."
+    },
+    {
+      "id": "industria", "nombre": "Industria",
+      "palabras": ["industri","fabrica","fabricacion","metalurg","taller","manufactur","produccion","mayorista","distribuid","imprenta","carpinter","herreri","plastico","textil"],
+      "unidad": "pedidos", "unidadSing": "pedido",
+      "problemas": ["Pocas consultas de clientes nuevos fuera de la cartera actual","Catálogo técnico difícil de mostrar","Cotizaciones que tardan y se pierden","Seguimiento comercial informal"],
+      "preguntas": ["¿Vendés a empresas, a revendedores o a consumidor final?","¿Cuánto tardás en enviar una cotización?","¿Quién se ocupa hoy de vender?"],
+      "indicadores": ["Pedidos de cotización por mes","Cotizaciones aceptadas","Tiempo de cotización","Clientes nuevos por trimestre"],
+      "soluciones": ["Web institucional con catálogo y pedido de cotización","Toma automática de datos para cotizar","Seguimiento de cotizaciones enviadas"],
+      "argumento": "Una industria que responde cotizaciones rápido y ordenado gana clientes que hoy ni la conocen."
+    },
+    {
+      "id": "educacion", "nombre": "Educación",
+      "palabras": ["educa","escuela","colegio","instituto","academia","curso","clases","profesor","idioma","ingles","jardin","capacitacion","apoyo escolar","musica","danza","gimnasio","yoga","entrenamiento"],
+      "unidad": "inscripciones", "unidadSing": "inscripción",
+      "problemas": ["Consultas que no terminan en inscripción","Picos de demanda en fechas puntuales y meses flojos","Bajas de alumnos sin aviso","Información de cursos y precios dispersa"],
+      "preguntas": ["¿Cuándo son tus picos de inscripción?","¿Cuántos alumnos activos tenés?","¿Cuántos se dan de baja por mes?"],
+      "indicadores": ["Consultas por curso","Inscripciones por mes","Bajas por mes","Alumnos activos"],
+      "soluciones": ["Web con cursos, horarios y precios claros","Respuesta automática con información y link de inscripción","Campañas antes de cada período de inscripción"],
+      "argumento": "La inscripción se decide rápido: quien responde con info clara en el momento se queda con el alumno."
+    },
+    {
+      "id": "transporte", "nombre": "Transporte",
+      "palabras": ["transport","flete","mudanza","logistic","envio","remis","taxi","traslado","combi","cadeteria","mensajeria","camion","grua","auxilio"],
+      "unidad": "viajes o envíos", "unidadSing": "viaje",
+      "problemas": ["Cotizaciones por WhatsApp que llevan mucho tiempo","Viajes de vuelta vacíos o días sin trabajo","Dependencia de pocos clientes grandes","Poca visibilidad para clientes nuevos"],
+      "preguntas": ["¿Trabajás con empresas, particulares o ambos?","¿Qué zonas cubrís?","¿Cuántos vehículos tenés disponibles?"],
+      "indicadores": ["Pedidos de cotización por semana","Viajes concretados","Ocupación de la flota","Clientes recurrentes"],
+      "soluciones": ["Cotizador simple en la web que manda los datos por WhatsApp","Toma automática de origen, destino y fecha","Perfil de Google Maps y campañas por zona"],
+      "argumento": "En transporte el cliente compara rápido: quien cotiza primero y claro suele ganar el viaje."
+    },
+    {
+      "id": "tecnologia", "nombre": "Tecnología",
+      "palabras": ["tecnolog","software","informatic","sistemas","desarrollo web","app","computacion","reparacion de celular","celulares","soporte tecnico","redes","seguridad electronica","camaras","domotica"],
+      "unidad": "proyectos", "unidadSing": "proyecto",
+      "problemas": ["Dificultad para explicar el servicio a clientes no técnicos","Ciclos de venta largos","Consultas poco calificadas","Falta de casos visibles"],
+      "preguntas": ["¿Vendés proyectos, abonos o ambos?","¿Cuál es tu cliente ideal?","¿Cuánto dura en promedio tu ciclo de venta?"],
+      "indicadores": ["Consultas calificadas","Demos o reuniones por mes","Propuestas aceptadas","Ingresos recurrentes"],
+      "soluciones": ["Web con casos y beneficios en lenguaje simple","Asistente que califica la consulta antes de la reunión","Seguimiento de propuestas y demos"],
+      "argumento": "En tecnología vende quien explica simple y muestra resultados concretos."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "moneda": "ARS",
+  "notaInversion": "La inversión en publicidad se paga directo a Meta, la define el cliente y no está incluida en los honorarios de gestión.",
+  "servicios": [
+    {
+      "id": "web",
+      "nombre": "Desarrollo web",
+      "tipo": "unico",
+      "precio": 350000,
+      "detalle": "Sitio profesional adaptado a celulares, con servicios, trabajos, reseñas y botón directo a WhatsApp. Incluye 2 años de mantenimiento.",
+      "plazo": "2 a 3 semanas"
+    },
+    {
+      "id": "meta_ads",
+      "nombre": "Gestión de Meta Ads",
+      "tipo": "mensual",
+      "precioPrimerMes": 80000,
+      "precioMensual": 50000,
+      "detalle": "Armado y gestión de campañas en Facebook e Instagram con destino a WhatsApp o a la web, con reporte mensual.",
+      "plazo": "primera campaña en 1 semana"
+    },
+    {
+      "id": "empleado_virtual",
+      "nombre": "Empleado virtual",
+      "tipo": "mensual",
+      "precioMensual": 90000,
+      "detalle": "Atiende WhatsApp al instante, responde preguntas frecuentes, toma datos, agenda y hace seguimiento a quien no contestó.",
+      "plazo": "2 semanas"
+    }
+  ]
+}

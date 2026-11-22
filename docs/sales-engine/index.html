@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>IMPULSA Sales Engine — Crecimiento Comercial</title>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>IMPULSA</b><span>— Crecimiento Comercial · Sales Engine</span></div>
+  <nav class="tabs" id="tabs">
+    <button data-view="nuevo" class="on">Nuevo análisis</button>
+    <button data-view="diagnosticos">Diagnósticos</button>
+    <button data-view="prospectos">Prospectos</button>
+    <button data-view="estrategias">Estrategias</button>
+    <button data-view="biblioteca">Biblioteca comercial</button>
+    <button data-view="config">Configuración</button>
+  </nav>
+</header>
+<main>
+  <div id="aviso"></div>
+
+  <!-- NUEVO ANÁLISIS -->
+  <section class="view on" id="v-nuevo">
+    <h1>Nuevo análisis</h1>
+    <div class="card">
+      <h3>1. Cargá los datos del prospecto</h3>
+      <div class="subtabs" id="modos">
+        <button data-pane="p-pegar" class="on">Pegar WhatsApp</button>
+        <button data-pane="p-importar">Importar JSON</button>
+        <button data-pane="p-manual">Carga manual</button>
+      </div>
+      <div class="pane on" id="p-pegar">
+        <label>Pegá el mensaje completo que llegó del formulario de diagnóstico
+          <textarea id="wa" placeholder="NOMBRE: …&#10;WHATSAPP: …&#10;TIPO DE NEGOCIO: …&#10;¿TENÉS PÁGINA WEB?: …"></textarea>
+        </label>
+        <div class="btns"><button class="b pri" id="btnLeer">Leer mensaje</button></div>
+      </div>
+      <div class="pane" id="p-importar">
+        <label>Archivo .json con los datos de un prospecto (exportado de acá o del formulario)
+          <input type="file" id="fileProspecto" accept=".json,application/json">
+        </label>
+        <p class="note">Para restaurar todo el historial usá Configuración → Importar copia.</p>
+      </div>
+      <div class="pane" id="p-manual">
+        <form id="f" autocomplete="off">
+          <div class="grid">
+            <label>Nombre del negocio<input name="negocio"></label>
+            <label>Nombre de contacto<input name="contacto"></label>
+            <label>WhatsApp<input name="whatsapp" inputmode="tel"></label>
+            <label>Rubro<input name="rubro" placeholder="Ej: plomería y gas"></label>
+            <label>Industria<select name="industria" id="selIndustria"></select></label>
+            <label>Zona<input name="zona" placeholder="Ej: Quilmes"></label>
+            <label>¿Tiene página web?<select name="web"><option value="">—</option><option value="si">Sí</option><option value="no">No</option><option value="sin_resultados">Tiene pero no le trae clientes</option></select></label>
+            <label>¿Perfil en Google Maps?<select name="maps"><option value="">—</option><option value="si">Sí</option><option value="no">No</option><option value="no_sabe">No sabe</option></select></label>
+            <label>¿Paga publicidad?<select name="publicidad"><option value="">—</option><option value="meta">Sí, en Meta</option><option value="google">Sí, en Google</option><option value="ambas">Meta y Google</option><option value="no">No</option></select></label>
+            <label>¿Atención automática?<select name="automatica"><option value="">—</option><option value="si">Sí</option><option value="no">No</option><option value="interes">Le interesa</option></select></label>
+            <label>¿Qué quiere mejorar primero?<select name="objetivo"><option value="">—</option><option value="clientes">Conseguir más clientes</option><option value="seguimiento">Ordenar consultas y seguimiento</option><option value="imagen">Mejorar la imagen online</option><option value="automatizar">Automatizar tareas</option></select></label>
+          </div>
+          <fieldset style="margin-top:12px"><legend>¿Cómo le llegan los clientes?</legend>
+            <label class="chk"><input type="checkbox" name="canales" value="recomendacion">Recomendación</label>
+            <label class="chk"><input type="checkbox" name="canales" value="redes">Redes sociales</label>
+            <label class="chk"><input type="checkbox" name="canales" value="google">Google</label>
+            <label class="chk"><input type="checkbox" name="canales" value="publicidad">Publicidad</label>
+            <label class="chk"><input type="checkbox" name="canales" value="local">Local físico</label>
+          </fieldset>
+          <fieldset style="margin-top:12px"><legend>Lo verifiqué yo (pasa de "hecho declarado" a "dato verificado")</legend>
+            <label class="chk"><input type="checkbox" name="ver_web">Web</label>
+            <label class="chk"><input type="checkbox" name="ver_maps">Google Maps</label>
+            <label class="chk"><input type="checkbox" name="ver_publicidad">Publicidad</label>
+          </fieldset>
+          <label style="margin-top:12px">Notas<textarea name="notas" style="min-height:70px"></textarea></label>
+        </form>
+      </div>
+      <div id="faltan"></div>
+      <div class="btns">
+        <button class="b pri" id="btnGenerar">Generar diagnóstico</button>
+        <button class="b" id="btnLimpiar">Nuevo prospecto</button>
+      </div>
+    </div>
+
+    <div class="card" id="cardGuiado" hidden>
+      <h3>2. Modo guiado: profundizá</h3>
+      <p class="note">Solo aparecen las preguntas que todavía no tienen respuesta.</p>
+      <div id="guiado"></div>
+      <div class="btns"><button class="b pri" id="btnGuiado">Guardar respuestas y recalcular</button></div>
+      <details><summary>Ya respondidas</summary><div id="respondidas"></div></details>
+    </div>
+
+    <div class="card" id="cardRapido" hidden>
+      <h3>Resultado</h3>
+      <div id="rapido"></div>
+      <div class="btns">
+        <button class="b" data-go="diagnosticos">Ver diagnóstico</button>
+        <button class="b" data-go="estrategias">Ver estrategia de venta</button>
+        <button class="b" id="btnImprimir">Informe PDF</button>
+        <button class="b" id="btnExportarUno">Exportar JSON</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-diagnosticos">
+    <h1>Diagnósticos</h1>
+    <div id="diagActual"></div>
+    <h2>Historial</h2>
+    <div class="card list" id="historial"></div>
+  </section>
+
+  <section class="view" id="v-prospectos">
+    <h1>Prospectos</h1>
+    <div class="card"><input id="buscar" placeholder="Buscar por nombre, rubro o zona"><div class="list" id="listaProspectos"></div></div>
+  </section>
+
+  <section class="view" id="v-estrategias">
+    <h1>Estrategias</h1>
+    <div id="estrategia"></div>
+  </section>
+
+  <section class="view" id="v-biblioteca">
+    <h1>Biblioteca comercial</h1>
+    <div id="biblio"></div>
+  </section>
+
+  <section class="view" id="v-config">
+    <h1>Configuración</h1>
+    <div class="card">
+      <h3>Precios (ARS)</h3>
+      <div class="grid" id="precios"></div>
+      <p class="note" id="notaInv"></p>
+      <h3>Firma de los mensajes</h3>
+      <div class="grid">
+        <label>Tu nombre<input id="cfgVendedor"></label>
+        <label>Empresa<input id="cfgEmpresa"></label>
+      </div>
+      <div class="btns"><button class="b pri" id="btnGuardarCfg">Guardar configuración</button><button class="b" id="btnResetCfg">Volver a precios iniciales</button></div>
+    </div>
+    <div class="card">
+      <h3>Copia de seguridad</h3>
+      <p class="note">Todo se guarda en este navegador (LocalStorage). Exportá una copia para pasarla a otro equipo.</p>
+      <div class="btns"><button class="b" id="btnExportarTodo">Exportar copia (JSON)</button>
+        <label class="b" style="display:inline-block;color:var(--blue);background:var(--blue-50);border-radius:10px;padding:10px 14px;cursor:pointer">Importar copia<input type="file" id="fileTodo" accept=".json,application/json" hidden></label></div>
+    </div>
+  </section>
+</main>
+<div id="informe"></div>
+
+<script src="engine.js?v=1"></script>
+<script>
+/* Interfaz del Sales Engine. Toda la lógica de diagnóstico está en engine.js. */
+(function () {
+  'use strict';
+  var SE = window.SalesEngine, KEY = 'impulsa_sales_engine_v1';
+  var D = null;                                   // datos (services, industries, rules, objections)
+  var S = { perfil: SE.perfilVacio(), diag: null, prospectoId: null };
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var FUENTE = { declarado: 'Hecho declarado', verificado: 'Dato verificado', hipotesis: 'Hipótesis', faltante: 'Información faltante' };
+
+  /* ---------- almacenamiento ---------- */
+  function leerStore() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
+  var store = leerStore();
+  store.prospectos = store.prospectos || []; store.historial = store.historial || [];
+  function guardarStore() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) { aviso('No se pudo guardar en este navegador: ' + e.message, 'warn'); } }
+  function config() { return store.config || SE.configPorDefecto(D); }
+  function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+  function aviso(t, tipo) { $('#aviso').innerHTML = t ? '<div class="alert ' + (tipo || 'ok') + '">' + esc(t) + '</div>' : ''; if (t) setTimeout(function () { $('#aviso').innerHTML = ''; }, 4000); }
+
+  /* ---------- navegación ---------- */
+  function ir(v) {
+    $$('#tabs button').forEach(function (b) { b.classList.toggle('on', b.dataset.view === v); });
+    $$('section.view').forEach(function (s) { s.classList.toggle('on', s.id === 'v-' + v); });
+    if (v === 'prospectos') renderProspectos();
+    if (v === 'diagnosticos') renderHistorial();
+    window.scrollTo(0, 0);
+  }
+  $('#tabs').addEventListener('click', function (e) { if (e.target.dataset.view) ir(e.target.dataset.view); });
+  document.addEventListener('click', function (e) { var g = e.target.closest('[data-go]'); if (g) ir(g.dataset.go); });
+  $('#modos').addEventListener('click', function (e) {
+    var p = e.target.dataset.pane; if (!p) return; mostrarPane(p);
+  });
+  function mostrarPane(p) {
+    $$('#modos button').forEach(function (b) { b.classList.toggle('on', b.dataset.pane === p); });
+    $$('#v-nuevo .pane').forEach(function (x) { x.classList.toggle('on', x.id === p); });
+  }
+
+  /* ---------- formulario ---------- */
+  var BASE = ['negocio', 'contacto', 'whatsapp', 'rubro', 'industria', 'zona', 'web', 'maps', 'publicidad', 'automatica', 'objetivo', 'notas'];
+  function escribirForm(p) {
+    var f = $('#f');
+    BASE.forEach(function (c) { f.elements[c].value = p[c] == null ? '' : p[c]; });
+    $$('input[name=canales]', f).forEach(function (i) { i.checked = (p.canales || []).indexOf(i.value) >= 0; });
+    ['web', 'maps', 'publicidad'].forEach(function (c) { f.elements['ver_' + c].checked = !!(p.verificado || {})[c]; });
+  }
+  function leerForm() {
+    var f = $('#f'), p = JSON.parse(JSON.stringify(S.perfil));
+    BASE.forEach(function (c) { var v = f.elements[c].value.trim(); p[c] = v || null; });
+    p.canales = $$('input[name=canales]:checked', f).map(function (i) { return i.value; });
+    p.verificado = {}; ['web', 'maps', 'publicidad'].forEach(function (c) { if (f.elements['ver_' + c].checked) p.verificado[c] = true; });
+    if (!p.industria && p.rubro) p.industria = SE.detectarIndustria(p.rubro, D);
+    return p;
+  }
+  $('#f').elements.rubro.addEventListener('change', function () {
+    var f = $('#f'); if (!f.elements.industria.value) f.elements.industria.value = SE.detectarIndustria(this.value, D) || '';
+  });
+  function mostrarFaltantes(p) {
+    var fl = SE.faltantes(p, D);
+    $('#faltan').innerHTML = fl.base.length ? '<div class="alert warn">Falta: ' + esc(fl.base.map(function (x) { return x.etiqueta; }).join(', ')) + '. Podés generar igual; lo marco como información faltante.</div>' : '<div class="alert ok">Datos básicos completos.</div>';
+  }
+
+  /* ---------- modo automático ---------- */
+  $('#btnLeer').addEventListener('click', function () {
+    var r = SE.parsearMensaje($('#wa').value, D);
+    if (!r.reconocidos.length) { aviso('No reconocí campos. Revisá que el texto tenga líneas "Campo: valor".', 'warn'); return; }
+    S.perfil = SE.combinar(SE.perfilVacio(), r.perfil); S.prospectoId = null; S.diag = null;
+    escribirForm(S.perfil); mostrarPane('p-manual'); mostrarFaltantes(S.perfil);
+    aviso('Reconocí ' + r.reconocidos.length + ' campos. Revisalos y generá el diagnóstico.');
+  });
+
+  function perfilDesdeObjeto(o) {
+    if (o.perfil) o = o.perfil;
+    var p = SE.perfilVacio();
+    var mapa = { nombre: 'contacto', mejorar: 'objetivo', clientes: 'canales' };   // formato del formulario IMPULSA
+    Object.keys(o).forEach(function (k) {
+      var c = mapa[k] || k; if (SE.CAMPOS.indexOf(c) < 0 && c !== 'verificado' && c !== 'respuestasRubro') return;
+      var v = o[k];
+      if (c === 'verificado' || c === 'respuestasRubro') p[c] = v || {};
+      else if (c === 'canales') p.canales = Array.isArray(v) ? SE.normalizar('canales', v.join(', ')) : SE.normalizar('canales', v);
+      else if (c === 'industria') p.industria = v || null;
+      else p[c] = typeof v === 'number' ? v : SE.normalizar(c, v);
+    });
+    if (!p.industria && p.rubro) p.industria = SE.detectarIndustria(p.rubro, D);
+    return p;
+  }
+  function leerArchivo(input, cb) {
+    var file = input.files[0]; if (!file) return;
+    var fr = new FileReader();
+    fr.onload = function () { try { cb(JSON.parse(fr.result)); } catch (e) { aviso('El archivo no es un JSON válido.', 'warn'); } input.value = ''; };
+    fr.readAsText(file);
+  }
+  $('#fileProspecto').addEventListener('change', function () {
+    leerArchivo(this, function (o) {
+      S.perfil = perfilDesdeObjeto(o); S.prospectoId = o.id && o.perfil ? o.id : null; S.diag = null;
+      escribirForm(S.perfil); mostrarPane('p-manual'); mostrarFaltantes(S.perfil); aviso('Datos importados. Revisalos y generá el diagnóstico.');
+    });
+  });
+
+  /* ---------- diagnóstico ---------- */
+  function generar(guardar) {
+    S.perfil = leerForm();
+    S.diag = SE.diagnosticar(S.perfil, D, config());
+    S.perfil = S.diag.perfil;
+    mostrarFaltantes(S.perfil);
+    if (guardar !== false) guardarProspecto();
+    renderTodo();
+  }
+  $('#btnGenerar').addEventListener('click', function () { generar(); aviso('Diagnóstico generado y guardado.'); });
+  $('#btnLimpiar').addEventListener('click', function () {
+    S = { perfil: SE.perfilVacio(), diag: null, prospectoId: null };
+    $('#wa').value = ''; escribirForm(S.perfil); $('#faltan').innerHTML = ''; renderTodo(); mostrarPane('p-pegar');
+  });
+
+  function guardarProspecto() {
+    var ahora = new Date().toISOString(), p = store.prospectos.filter(function (x) { return x.id === S.prospectoId; })[0];
+    if (!p) { p = { id: uid(), creado: ahora }; store.prospectos.unshift(p); S.prospectoId = p.id; }
+    p.perfil = S.perfil; p.actualizado = ahora;
+    store.historial.unshift({
+      id: uid(), prospectoId: p.id, fecha: ahora, nombre: S.perfil.negocio || S.perfil.contacto || 'Sin nombre', rubro: S.perfil.rubro || '',
+      prioridades: S.diag.prioridades.map(function (h) { return h.problema; }), servicios: S.diag.servicios.map(function (s) { return s.nombre; }),
+      total: S.diag.presupuesto.totalPrimerMes, perfil: S.perfil
+    });
+    store.historial = store.historial.slice(0, 300);
+    guardarStore();
+  }
+
+  /* ---------- modo guiado ---------- */
+  function renderGuiado() {
+    var card = $('#cardGuiado'); card.hidden = !S.diag; if (!S.diag) return;
+    var qs = SE.preguntasGuiadas(S.perfil, D);
+    $('#guiado').innerHTML = qs.length ? qs.map(function (q) {
+      var id = 'q_' + q.campo.replace(/\W/g, '_'), ctrl;
+      if (q.tipo === 'opcion') ctrl = '<select data-campo="' + esc(q.campo) + '"><option value="">—</option>' + Object.keys(q.opciones).map(function (k) { return '<option value="' + k + '">' + esc(q.opciones[k]) + '</option>'; }).join('') + '</select>';
+      else if (q.tipo === 'multi') ctrl = '<div data-campo="' + esc(q.campo) + '" data-multi="1">' + Object.keys(q.opciones).map(function (k) { return '<label class="chk"><input type="checkbox" value="' + k + '">' + esc(q.opciones[k]) + '</label>'; }).join('') + '</div>';
+      else ctrl = '<input data-campo="' + esc(q.campo) + '"' + (q.tipo === 'numero' ? ' inputmode="decimal"' : '') + '>';
+      return '<div class="q" id="' + id + '"><p>' + esc(q.pregunta) + (q.rubro ? ' <span class="tag baja">Rubro</span>' : '') + '</p>' + ctrl + '</div>';
+    }).join('') : '<p class="note">No quedan preguntas pendientes.</p>';
+    $('#btnGuiado').hidden = !qs.length;
+    var resp = D.rules.preguntas.filter(function (q) { var v = S.perfil[q.campo]; return !(v == null || v === '' || (Array.isArray(v) && !v.length)); });
+    var rr = S.perfil.respuestasRubro || {};
+    $('#respondidas').innerHTML = resp.map(function (q) {
+      return '<div class="item" style="display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line)"><span><small class="note">' + esc(q.pregunta.replace(/\{\w+\}/g, '…')) + '</small><br>' + esc(SE.mostrar(q.campo, S.perfil[q.campo])) + '</span><button class="b sm" data-borrar="' + q.campo + '">Cambiar</button></div>';
+    }).join('') + Object.keys(rr).map(function (k) { return '<div style="padding:6px 0;border-bottom:1px solid var(--line)"><small class="note">Pregunta del rubro</small><br>' + esc(rr[k]) + '</div>'; }).join('') || '<p class="note">Todavía no hay respuestas.</p>';
+  }
+  $('#respondidas').addEventListener('click', function (e) {
+    var c = e.target.dataset.borrar; if (!c) return;
+    S.perfil[c] = c === 'canales' ? [] : null; escribirForm(S.perfil); generar(false); renderGuiado();
+  });
+  $('#btnGuiado').addEventListener('click', function () {
+    var n = 0;
+    $$('#guiado [data-campo]').forEach(function (el) {
+      var c = el.dataset.campo, v;
+      if (el.dataset.multi) v = $$('input:checked', el).map(function (i) { return i.value; });
+      else v = el.value.trim();
+      if (!v || (Array.isArray(v) && !v.length)) return;
+      if (c.indexOf('rubro:') === 0) { S.perfil.respuestasRubro = S.perfil.respuestasRubro || {}; S.perfil.respuestasRubro[c.slice(6)] = v; n++; return; }
+      var val = Array.isArray(v) ? v : (SE.NUMERICOS.indexOf(c) >= 0 ? SE.numero(v) : (el.tagName === 'SELECT' ? v : SE.normalizar(c, v)));
+      if (val == null || val === '') return;
+      S.perfil[c] = val; n++;
+    });
+    if (!n) { aviso('Respondé al menos una pregunta.', 'warn'); return; }
+    escribirForm(S.perfil); generar(); aviso(n + (n === 1 ? ' respuesta guardada' : ' respuestas guardadas') + '. Diagnóstico actualizado.');
+  });
+
+  /* ---------- render del diagnóstico ---------- */
+  function tag(cls, txt) { return '<span class="tag ' + cls + '">' + esc(txt) + '</span>'; }
+  function lista(a) { return '<ul>' + a.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>'; }
+  function copiarBtn(k) { return '<button class="b sm" data-copiar="' + k + '">Copiar</button>'; }
+
+  function htmlDiagnostico(d) {
+    var t = d.textos, h = '';
+    h += '<div class="card"><h2 style="margin-top:0">1. Resumen del negocio</h2><p>' + esc(t.resumen) + '</p>' + (d.industria ? '<p class="note">Rubro analizado: ' + esc(d.industria.nombre) + '</p>' : '<p class="note">Rubro sin biblioteca específica: se aplican criterios generales.</p>') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">2. Diagnóstico comercial</h2><p>' + esc(t.diagnostico) + '</p>';
+    h += '<p class="note">' + Object.keys(FUENTE).map(function (k) { return tag(k, FUENTE[k]); }).join(' ') + '</p>';
+    if (d.mostrarGrafico) h += '<h3>Estado por área <small class="note">(índice orientativo según lo declarado)</small></h3><div class="bars">' + d.areas.map(function (a) { return '<div class="bar"><span>' + esc(a.nombre) + '</span><i><b style="width:' + a.puntaje + '%"></b></i><span>' + a.puntaje + '</span></div>'; }).join('') + '</div>';
+    if (d.embudo) h += '<h3>Consultas y cierres por mes (declarado)</h3><div class="bars"><div class="bar"><span>Consultas</span><i><b style="width:100%"></b></i><span>' + d.embudo.consultas + '</span></div><div class="bar"><span>' + esc(d.terminos.unidad) + '</span><i><b style="width:' + Math.min(100, d.embudo.tasa) + '%"></b></i><span>' + d.embudo.ventas + '</span></div></div><p class="note">Conversión: ' + d.embudo.tasa + '%</p>';
+    h += '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">4. Tres prioridades de mejora</h2>' + (d.prioridades.length ? '<ol class="prio">' + d.prioridades.map(function (x) { return '<li><b>' + esc(x.problema) + '</b> ' + tag(x.prioridad, x.prioridad) + tag(x.fuente, FUENTE[x.fuente]) + '<br><span class="note">' + esc(x.solucion) + '</span></li>'; }).join('') + '</ol>' : '<p class="note">Sin prioridades con los datos actuales.</p>') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">3. Problemas y oportunidades</h2>' + (d.hallazgos.length ? d.hallazgos.map(function (x) {
+      return '<div class="hall ' + x.prioridad + '"><b>' + esc(x.problema) + '</b><br>' + tag(x.prioridad, 'Prioridad ' + x.prioridad) + tag(x.fuente, FUENTE[x.fuente]) + '<span class="note">' + esc(x.areaNombre) + '</span>' +
+        '<dl><dt>Evidencia</dt><dd>' + esc(x.evidencia) + '</dd><dt>Impacto</dt><dd>' + esc(x.impacto) + '</dd><dt>Solución</dt><dd>' + esc(x.solucion) + '</dd><dt>Oportunidad</dt><dd>' + esc(x.oportunidad) + '</dd><dt>Acciones</dt><dd>' + esc(x.acciones.join(' · ')) + '</dd><dt>Indicadores</dt><dd>' + esc(x.indicadores.join(' · ')) + '</dd></dl></div>';
+    }).join('') : '<p class="note">No se detectaron problemas.</p>');
+    var fl = d.faltantes.base.concat(d.faltantes.guiado);
+    if (fl.length) h += '<h3>Información faltante</h3>' + lista(fl.map(function (f) { return f.etiqueta; }));
+    h += '</div>';
+    return h;
+  }
+
+  function htmlEstrategia(d, botones) {
+    var t = d.textos, p = d.presupuesto, h = '';
+    h += '<div class="card"><h2 style="margin-top:0">5. Plan de implementación</h2><table>' + d.plan.map(function (x) { return '<tr><th style="width:130px">' + esc(x.cuando) + '</th><td>' + esc(x.que) + '</td></tr>'; }).join('') + '</table></div>';
+    h += '<div class="card"><h2 style="margin-top:0">6. Servicios recomendados</h2>' + (d.servicios.length ? d.servicios.map(function (s) { return '<div class="hall baja"><b>' + esc(s.nombre) + '</b><br><span class="note">' + esc(s.detalle) + '</span><br>Resuelve: ' + esc(s.motivos.join(' · ')) + '</div>'; }).join('') : '<p class="note">Con lo declarado no corresponde recomendar un servicio todavía. Completá el modo guiado.</p>') + '</div>';
+    if (d.servicios.length) {
+      h += '<div class="card"><h2 style="margin-top:0">7. Presupuesto estimado</h2><table><tr><th>Servicio</th><th>Detalle</th><th class="n">Primer mes</th></tr>' + p.items.map(function (i) { return '<tr><td>' + esc(i.nombre) + '</td><td>' + esc(i.detalle) + '</td><td class="n">' + SE.pesos(i.monto) + '</td></tr>'; }).join('') +
+        '<tr><th colspan="2">Total primer mes</th><th class="n">' + SE.pesos(p.totalPrimerMes) + '</th></tr>' + (p.mensualSiguientes ? '<tr><td colspan="2">Desde el segundo mes</td><td class="n">' + SE.pesos(p.mensualSiguientes) + '/mes</td></tr>' : '') + '</table>' +
+        (p.notaInversion ? '<p class="alert warn">' + esc(p.notaInversion) + '</p>' : '') + '</div>';
+    }
+    h += '<div class="card"><h2 style="margin-top:0">8. Argumentos comerciales</h2>' + lista(t.argumentos) + '</div>';
+    var wa = (d.perfil.whatsapp || '').replace(/\D/g, ''); if (wa && wa.indexOf('54') !== 0) wa = '549' + wa.replace(/^0/, '');
+    h += '<div class="card"><h2 style="margin-top:0">9. Mensaje inicial de WhatsApp</h2><pre class="msg">' + esc(t.whatsapp) + '</pre>' + (botones ? '<div class="btns">' + copiarBtn('whatsapp') + (wa ? '<a class="b sm" style="text-decoration:none;display:inline-block;border-radius:10px;background:var(--green-50);color:var(--green);padding:6px 10px;font-weight:600" target="_blank" rel="noopener" href="https://wa.me/' + wa + '?text=' + encodeURIComponent(t.whatsapp) + '">Abrir en WhatsApp</a>' : '') + '</div>' : '') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">10. Respuestas a objeciones</h2>' + t.objeciones.map(function (o) { return '<h3>"' + esc(o.objecion) + '"</h3><p>' + esc(o.respuesta) + '</p>'; }).join('') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">11. Guion de llamada</h2><table>' + t.guion.map(function (g) { return '<tr><th style="width:110px">' + esc(g.paso) + '</th><td>' + esc(g.texto) + '</td></tr>'; }).join('') + '</table></div>';
+    h += '<div class="card"><h2 style="margin-top:0">12. Mensaje de seguimiento</h2><pre class="msg">' + esc(t.seguimiento) + '</pre>' + (botones ? '<div class="btns">' + copiarBtn('seguimiento') + '</div>' : '') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">13. Próximo paso para cerrar</h2><p><b>' + esc(t.proximoPaso) + '</b></p></div>';
+    return h;
+  }
+
+  function renderTodo() {
+    var d = S.diag;
+    $('#cardRapido').hidden = !d;
+    renderGuiado();
+    if (!d) { $('#diagActual').innerHTML = $('#estrategia').innerHTML = '<div class="card empty">Generá un diagnóstico en "Nuevo análisis".</div>'; return; }
+    $('#rapido').innerHTML = '<p><b>' + esc(d.perfil.negocio || d.perfil.contacto || 'Prospecto') + '</b>' + (d.industria ? ' · ' + esc(d.industria.nombre) : '') + '</p>' +
+      (d.prioridades.length ? '<ol class="prio">' + d.prioridades.map(function (x) { return '<li>' + esc(x.problema) + ' ' + tag(x.prioridad, x.prioridad) + '</li>'; }).join('') + '</ol>' : '<p class="note">Sin prioridades todavía.</p>') +
+      (d.servicios.length ? '<p>Servicios: ' + esc(d.servicios.map(function (s) { return s.nombre; }).join(', ')) + ' · Primer mes: <b>' + SE.pesos(d.presupuesto.totalPrimerMes) + '</b></p>' : '');
+    $('#diagActual').innerHTML = htmlDiagnostico(d);
+    $('#estrategia').innerHTML = htmlEstrategia(d, true);
+  }
+
+  document.addEventListener('click', function (e) {
+    var k = e.target.dataset && e.target.dataset.copiar; if (!k || !S.diag) return;
+    var txt = S.diag.textos[k];
+    var ok = function () { aviso('Copiado.'); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(txt).then(ok, fallback); else fallback();
+    function fallback() { var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); ok(); } catch (er) { aviso('No se pudo copiar.', 'warn'); } ta.remove(); }
+  });
+
+  /* ---------- informe imprimible ---------- */
+  $('#btnImprimir').addEventListener('click', function () {
+    var d = S.diag; if (!d) return;
+    var fecha = new Date(d.fecha).toLocaleDateString('es-AR');
+    $('#informe').innerHTML = '<div class="rep-head"><div><b>IMPULSA</b> — Crecimiento Comercial<br><small>Diagnóstico y propuesta comercial</small></div><div><b style="font-size:14pt">' + esc(d.perfil.negocio || d.perfil.contacto || 'Prospecto') + '</b><br><small>' + esc([d.perfil.rubro, d.perfil.zona].filter(Boolean).join(' · ')) + ' · ' + fecha + '</small></div></div>' + htmlDiagnostico(d) + htmlEstrategia(d, false);
+    window.print();
+  });
+  $('#btnExportarUno').addEventListener('click', function () {
+    if (!S.diag) return;
+    descargar({ id: S.prospectoId, perfil: S.perfil, diagnostico: S.diag }, 'prospecto-' + (S.perfil.negocio || S.perfil.contacto || 'impulsa').toLowerCase().replace(/[^a-z0-9]+/g, '-') + '.json');
+  });
+  function descargar(obj, nombre) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' }));
+    a.download = nombre; document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+
+  /* ---------- prospectos e historial ---------- */
+  function abrirPerfil(perfil, id) {
+    S.perfil = SE.combinar(SE.perfilVacio(), perfil); S.prospectoId = id || null;
+    escribirForm(S.perfil); generar(false); mostrarPane('p-manual'); ir('nuevo');
+  }
+  function renderProspectos() {
+    var q = $('#buscar').value.toLowerCase();
+    var items = store.prospectos.filter(function (p) { return !q || JSON.stringify([p.perfil.negocio, p.perfil.contacto, p.perfil.rubro, p.perfil.zona]).toLowerCase().indexOf(q) >= 0; });
+    $('#listaProspectos').innerHTML = items.length ? items.map(function (p) {
+      return '<div class="item"><span><b>' + esc(p.perfil.negocio || p.perfil.contacto || 'Sin nombre') + '</b><br><small>' + esc([p.perfil.rubro, p.perfil.zona].filter(Boolean).join(' · ')) + ' · ' + new Date(p.actualizado).toLocaleDateString('es-AR') + '</small></span><span><button class="b sm" data-abrir="' + p.id + '">Abrir</button> <button class="b sm danger" data-quitar="' + p.id + '">Quitar</button></span></div>';
+    }).join('') : '<div class="empty">Todavía no hay prospectos guardados.</div>';
+  }
+  $('#buscar').addEventListener('input', renderProspectos);
+  $('#listaProspectos').addEventListener('click', function (e) {
+    var id = e.target.dataset.abrir, qid = e.target.dataset.quitar;
+    if (id) { var p = store.prospectos.filter(function (x) { return x.id === id; })[0]; if (p) abrirPerfil(p.perfil, p.id); }
+    if (qid && confirm('¿Quitar este prospecto de la lista? El historial de diagnósticos se conserva.')) { store.prospectos = store.prospectos.filter(function (x) { return x.id !== qid; }); guardarStore(); renderProspectos(); }
+  });
+  function renderHistorial() {
+    $('#historial').innerHTML = store.historial.length ? store.historial.slice(0, 100).map(function (h) {
+      return '<div class="item"><span><b>' + esc(h.nombre) + '</b> <small>' + esc(h.rubro) + '</small><br><small>' + new Date(h.fecha).toLocaleString('es-AR') + ' · ' + esc(h.prioridades.join(' · ') || 'sin prioridades') + (h.total ? ' · ' + SE.pesos(h.total) : '') + '</small></span><button class="b sm" data-hist="' + h.id + '">Ver</button></div>';
+    }).join('') : '<div class="empty">Sin diagnósticos todavía.</div>';
+  }
+  $('#historial').addEventListener('click', function (e) {
+    var id = e.target.dataset.hist; if (!id) return;
+    var h = store.historial.filter(function (x) { return x.id === id; })[0]; if (h) abrirPerfil(h.perfil, h.prospectoId);
+  });
+
+  /* ---------- biblioteca ---------- */
+  function renderBiblioteca() {
+    var c = config(), h = '<div class="card"><h2 style="margin-top:0">Catálogo IMPULSA</h2>';
+    h += D.services.servicios.map(function (s) {
+      var pr = c.precios[s.id] || {};
+      var precio = s.tipo === 'unico' ? SE.pesos(pr.precio) + ' (pago único)' : (pr.precioPrimerMes && pr.precioPrimerMes !== pr.precioMensual ? SE.pesos(pr.precioPrimerMes) + ' el primer mes, después ' + SE.pesos(pr.precioMensual) + '/mes' : SE.pesos(pr.precioMensual) + '/mes');
+      return '<h3>' + esc(s.nombre) + ' — ' + precio + '</h3><p class="note">' + esc(s.detalle) + '</p>';
+    }).join('') + '<p class="alert warn">' + esc(D.services.notaInversion) + '</p></div>';
+    h += '<div class="card"><h2 style="margin-top:0">Rubros</h2>' + D.industries.industrias.map(function (i) {
+      return '<details><summary>' + esc(i.nombre) + '</summary><p><i>' + esc(i.argumento) + '</i></p><h3>Problemas frecuentes</h3>' + lista(i.problemas) + '<h3>Preguntas de diagnóstico</h3>' + lista(i.preguntas) + '<h3>Indicadores</h3>' + lista(i.indicadores) + '<h3>Soluciones posibles</h3>' + lista(i.soluciones) + '</details>';
+    }).join('') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">Objeciones frecuentes</h2>' + D.objections.objeciones.map(function (o) { return '<h3>"' + esc(o.objecion) + '"</h3><p>' + esc(o.respuesta.replace('{servicioPrincipal}', 'lo más urgente').replace('{unidad}', 'clientes')) + '</p>'; }).join('') + '</div>';
+    h += '<div class="card"><h2 style="margin-top:0">Reglas de diagnóstico</h2><p class="note">' + D.rules.reglas.length + ' reglas en 5 áreas.</p>' + Object.keys(D.rules.areas).map(function (a) {
+      return '<h3>' + esc(D.rules.areas[a]) + '</h3>' + lista(D.rules.reglas.filter(function (r) { return r.area === a; }).map(function (r) { return r.problema + ' (' + r.prioridad + ')'; }));
+    }).join('') + '</div>';
+    $('#biblio').innerHTML = h;
+  }
+
+  /* ---------- configuración ---------- */
+  var PRECIOS = [['web', 'precio', 'Desarrollo web (incluye 2 años de mantenimiento)'], ['meta_ads', 'precioPrimerMes', 'Meta Ads — primer mes'], ['meta_ads', 'precioMensual', 'Meta Ads — meses siguientes'], ['empleado_virtual', 'precioMensual', 'Empleado virtual — por mes']];
+  function renderConfig() {
+    var c = config();
+    $('#precios').innerHTML = PRECIOS.map(function (x) { return '<label>' + esc(x[2]) + '<input inputmode="numeric" data-s="' + x[0] + '" data-k="' + x[1] + '" value="' + (c.precios[x[0]] || {})[x[1]] + '"></label>'; }).join('');
+    $('#notaInv').textContent = D.services.notaInversion;
+    $('#cfgVendedor').value = c.vendedor || ''; $('#cfgEmpresa').value = c.empresa || '';
+  }
+  $('#btnGuardarCfg').addEventListener('click', function () {
+    var c = JSON.parse(JSON.stringify(config())), mal = false;
+    $$('#precios input').forEach(function (i) { var n = SE.numero(i.value); if (n == null || n < 0) mal = true; else c.precios[i.dataset.s][i.dataset.k] = n; });
+    if (mal) { aviso('Revisá los precios: tienen que ser números.', 'warn'); return; }
+    c.vendedor = $('#cfgVendedor').value.trim() || 'Carlos'; c.empresa = $('#cfgEmpresa').value.trim() || 'IMPULSA';
+    store.config = c; guardarStore(); renderConfig(); renderBiblioteca(); if (S.diag) generar(false); aviso('Configuración guardada.');
+  });
+  $('#btnResetCfg').addEventListener('click', function () { if (!confirm('¿Volver a los precios iniciales?')) return; delete store.config; guardarStore(); renderConfig(); renderBiblioteca(); if (S.diag) generar(false); });
+  $('#btnExportarTodo').addEventListener('click', function () {
+    descargar({ app: 'impulsa-sales-engine', version: SE.version, exportado: new Date().toISOString(), prospectos: store.prospectos, historial: store.historial, config: store.config || null }, 'impulsa-sales-engine-' + new Date().toISOString().slice(0, 10) + '.json');
+  });
+  $('#fileTodo').addEventListener('change', function () {
+    leerArchivo(this, function (o) {
+      if (!o || !Array.isArray(o.prospectos)) { aviso('Ese archivo no es una copia del Sales Engine.', 'warn'); return; }
+      var ids = store.prospectos.map(function (p) { return p.id; }), hids = store.historial.map(function (h) { return h.id; });
+      var np = o.prospectos.filter(function (p) { return ids.indexOf(p.id) < 0; }), nh = (o.historial || []).filter(function (h) { return hids.indexOf(h.id) < 0; });
+      store.prospectos = np.concat(store.prospectos); store.historial = nh.concat(store.historial).sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; });
+      if (o.config && !store.config) store.config = o.config;
+      guardarStore(); renderConfig(); aviso('Importados ' + np.length + ' prospectos y ' + nh.length + ' diagnósticos (no se borró nada).');
+    });
+  });
+
+  /* ---------- inicio ---------- */
+  window.addEventListener('error', function (e) { aviso('Error: ' + e.message, 'warn'); });
+  SE.cargarDatos('data/').then(function (datos) {
+    D = datos;
+    $('#selIndustria').innerHTML = '<option value="">Detectar por rubro</option>' + D.industries.industrias.map(function (i) { return '<option value="' + i.id + '">' + esc(i.nombre) + '</option>'; }).join('');
+    renderConfig(); renderBiblioteca(); renderTodo();
+    window.__SE_LISTO = true;
+  });
+})();
+</script>
+</body>
+</html>
