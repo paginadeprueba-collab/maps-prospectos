@@ -60,8 +60,8 @@ class RubrosTest(unittest.TestCase):
             self.assertIn(norm(nombre), nombres)
 
     def test_hay_45_rubros_nuevos(self):
-        self.assertEqual(len(_items()), 70)
-        self.assertEqual(len(_items()) - len(ANTERIORES), 45)
+        self.assertEqual(len(_items()), 95)
+        self.assertEqual(len(_items()) - len(ANTERIORES), 70)
 
     def test_abogados_sigue_buscando_estudio_juridico(self):
         variantes = variants_for_rubro("abogados")
