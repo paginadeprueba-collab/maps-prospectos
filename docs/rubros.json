@@ -326,6 +326,136 @@
           "variantes": ["aseguradora", "productor de seguros", "seguros"]
         }
       ]
+    },
+    {
+      "titulo": "Hogar y obras",
+      "items": [
+        {
+          "nombre": "destapaciones",
+          "variantes": ["destapaciones", "destapación de cloacas", "destapaciones 24 horas"]
+        },
+        {
+          "nombre": "impermeabilización",
+          "variantes": ["impermeabilización", "impermeabilización de techos", "membrana techos"]
+        },
+        {
+          "nombre": "vidrierías",
+          "variantes": ["vidriería", "vidrierías", "vidrios a medida"]
+        },
+        {
+          "nombre": "construcción en seco",
+          "variantes": ["construcción en seco", "durlock", "steel frame"]
+        },
+        {
+          "nombre": "piscinas",
+          "variantes": ["construcción de piscinas", "mantenimiento de piscinas", "piletas"]
+        },
+        {
+          "nombre": "reformas",
+          "variantes": ["empresa de reformas", "remodelaciones", "reformas de casas"]
+        }
+      ]
+    },
+    {
+      "titulo": "Seguridad y limpieza",
+      "items": [
+        {
+          "nombre": "cámaras y alarmas",
+          "variantes": ["instalación de cámaras de seguridad", "alarmas", "seguridad electrónica"]
+        },
+        {
+          "nombre": "matafuegos",
+          "variantes": ["matafuegos", "recarga de matafuegos", "protección contra incendios"]
+        },
+        {
+          "nombre": "empresas de limpieza",
+          "variantes": ["empresa de limpieza", "limpieza de oficinas", "limpieza final de obra"]
+        },
+        {
+          "nombre": "limpieza de tanques",
+          "variantes": ["limpieza de tanques", "limpieza de tanques de agua"]
+        },
+        {
+          "nombre": "limpieza de tapizados",
+          "variantes": ["limpieza de tapizados", "limpieza de alfombras", "limpieza de sillones"]
+        }
+      ]
+    },
+    {
+      "titulo": "Mascotas",
+      "items": [
+        {
+          "nombre": "peluquerías caninas",
+          "variantes": ["peluquería canina", "estética canina", "baño y corte perros"]
+        },
+        {
+          "nombre": "guarderías y hoteles de mascotas",
+          "variantes": ["guardería canina", "hotel para perros", "hotel para mascotas"]
+        }
+      ]
+    },
+    {
+      "titulo": "Salud y educación",
+      "items": [
+        {
+          "nombre": "geriátricos",
+          "variantes": ["geriátrico", "residencia geriátrica", "hogar de ancianos"]
+        },
+        {
+          "nombre": "diagnóstico por imágenes",
+          "variantes": ["diagnóstico por imágenes", "ecografías", "radiología"]
+        },
+        {
+          "nombre": "institutos de idiomas",
+          "variantes": ["instituto de idiomas", "clases de inglés", "academia de inglés"]
+        },
+        {
+          "nombre": "autoescuelas",
+          "variantes": ["autoescuela", "academia de conducción", "escuela de manejo"]
+        },
+        {
+          "nombre": "apoyo escolar",
+          "variantes": ["apoyo escolar", "clases particulares", "profesor particular"]
+        }
+      ]
+    },
+    {
+      "titulo": "Autos y eventos",
+      "items": [
+        {
+          "nombre": "chapa y pintura",
+          "variantes": ["chapa y pintura", "chapista", "pintura automotor"]
+        },
+        {
+          "nombre": "lavaderos de autos",
+          "variantes": ["lavadero de autos", "lavado de autos", "detailing"]
+        },
+        {
+          "nombre": "alquiler de autos",
+          "variantes": ["alquiler de autos", "rent a car", "alquiler de vehículos"]
+        },
+        {
+          "nombre": "catering",
+          "variantes": ["catering", "catering para eventos", "servicio de catering"]
+        },
+        {
+          "nombre": "fotografía de eventos",
+          "variantes": ["fotografía de eventos", "fotógrafo de bodas", "video para eventos"]
+        }
+      ]
+    },
+    {
+      "titulo": "Otros",
+      "items": [
+        {
+          "nombre": "paneles solares",
+          "variantes": ["paneles solares", "energía solar", "instalación de paneles solares"]
+        },
+        {
+          "nombre": "alquiler de herramientas",
+          "variantes": ["alquiler de herramientas", "alquiler de maquinaria", "alquiler de equipos"]
+        }
+      ]
     }
   ]
 }
