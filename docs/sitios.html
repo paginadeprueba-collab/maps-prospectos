@@ -48,6 +48,13 @@ textarea.f{min-height:72px;resize:vertical}
 <main class="wrap">
 <section class="panel">
   <h2>Diseño</h2>
+  <label class="l" for="plantilla">Rubro de plantilla</label>
+  <select class="f" id="plantilla">
+    <option value="hogar">Plomería / gas / electricidad</option>
+    <option value="psicologia">Psicología</option>
+    <option value="constructora">Constructora</option>
+  </select>
+  <p class="hint" id="cuantos"></p>
   <div class="disenos" id="disenos"></div>
 </section>
 
@@ -68,6 +75,7 @@ textarea.f{min-height:72px;resize:vertical}
   <h2>Servicios</h2>
   <div id="servicios"></div>
   <button type="button" class="btn btn-g btn-s" id="addServ">+ Agregar servicio</button>
+  <p class="hint">Si no cargás ninguno, el sitio usa los servicios típicos del rubro.</p>
   <p class="hint">Sugerencias del rubro (tocá para sumar):</p>
   <div class="chips" id="sugerencias"></div>
 </section>
@@ -103,6 +111,7 @@ textarea.f{min-height:72px;resize:vertical}
 
 <script src="ejemplo/codec.js?v=20261120s"></script>
 <script src="ejemplo/hogar.js?v=20261120s"></script>
+<script src="ejemplo/grupos-extra.js?v=20261122p"></script>
 <script>
 (function () {
   "use strict";
@@ -110,25 +119,56 @@ textarea.f{min-height:72px;resize:vertical}
   var WORKER = "https://resenas-maps.lagosscarlos44.workers.dev";
   var BASE = new URL("ejemplo/", location.href).href;
   var PUB = "https://paginadeprueba-collab.github.io/maps-prospectos/ejemplo/";
-  var grupo = window.EjemploGrupos.hogar;
-  var paginas = grupo.paginas.map(function (p) { return p.replace(/^ejemplo\//, ""); });
+  function sinCarpeta(p) { return p.replace(/^ejemplo\//, ""); }
+  // Rubro de plantilla -> grupo de datos + diseños. "hogar" mantiene los 6 de siempre (mismo orden,
+  // así los borradores viejos abren igual) y suma los 3 nuevos al final.
+  var PLANTILLAS = {
+    hogar: {
+      grupo: window.EjemploGrupos.hogar,
+      paginas: window.EjemploGrupos.hogar.paginas.map(sinCarpeta).concat(["hogar-7.html", "hogar-8.html", "hogar-9.html"]),
+      phNombre: "Ej: Lucas Plomería y Gas", phZona: "Ej: Palermo", phServicio: "Ej: Destapes"
+    },
+    psicologia: {
+      grupo: window.EjemploGrupos.psicologia,
+      paginas: window.EjemploGrupos.psicologia.paginas.map(sinCarpeta),
+      phNombre: "Ej: Lic. Ana Pérez", phZona: "Ej: Caballito", phServicio: "Ej: Terapia de pareja"
+    },
+    constructora: {
+      grupo: window.EjemploGrupos.constructora,
+      paginas: window.EjemploGrupos.constructora.paginas.map(sinCarpeta),
+      phNombre: "Ej: Constructora Del Sur", phZona: "Ej: Lomas de Zamora", phServicio: "Ej: Ampliaciones"
+    }
+  };
+  var plantilla = "hogar";
+  var grupo = PLANTILLAS.hogar.grupo;
+  var paginas = PLANTILLAS.hogar.paginas;
   function el(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
-  // Diseños
-  el("disenos").innerHTML = paginas.map(function (p, i) {
-    return '<label><input type="radio" name="diseno" value="' + i + '"' + (i === 0 ? " checked" : "") + "><span>Diseño " + (i + 1) + "</span></label>";
-  }).join("");
-
-  // Rubros
-  el("rubro").innerHTML = grupo.rubros.map(function (r) {
-    return '<option value="' + esc(r.id) + '">' + esc(r.nombre) + "</option>";
-  }).join("");
+  // Muestra solo los diseños y rubros de la plantilla elegida.
+  function usarPlantilla(id) {
+    var cfg = PLANTILLAS[id] || PLANTILLAS.hogar;
+    plantilla = PLANTILLAS[id] ? id : "hogar";
+    grupo = cfg.grupo;
+    paginas = cfg.paginas;
+    el("plantilla").value = plantilla;
+    el("disenos").innerHTML = paginas.map(function (p, i) {
+      return '<label><input type="radio" name="diseno" value="' + i + '"' + (i === 0 ? " checked" : "") + "><span>Diseño " + (i + 1) + "</span></label>";
+    }).join("");
+    el("cuantos").textContent = paginas.length + (paginas.length === 1 ? " diseño" : " diseños") + " para este rubro.";
+    el("rubro").innerHTML = grupo.rubros.map(function (r) {
+      return '<option value="' + esc(r.id) + '">' + esc(r.nombre) + "</option>";
+    }).join("");
+    el("nombre").placeholder = cfg.phNombre;
+    el("zona").placeholder = cfg.phZona;
+    Array.prototype.forEach.call(document.querySelectorAll("#servicios .s-h"), function (i) { i.placeholder = cfg.phServicio; });
+  }
+  usarPlantilla("hogar");
 
   function filaServicio(h, p) {
     var d = document.createElement("div");
     d.className = "item";
-    d.innerHTML = '<input class="f s-h" placeholder="Servicio" value="' + esc(h || "") + '">' +
+    d.innerHTML = '<input class="f s-h" placeholder="' + esc((PLANTILLAS[plantilla] || PLANTILLAS.hogar).phServicio) + '" value="' + esc(h || "") + '">' +
       '<div class="row"><input class="f s-p" placeholder="Detalle corto (opcional)" value="' + esc(p || "") + '">' +
       '<button type="button" class="btn btn-g btn-s" style="flex:0 0 auto" aria-label="Quitar">✕</button></div>';
     d.querySelector("button").addEventListener("click", function () { d.remove(); guardar(); });
@@ -162,6 +202,18 @@ textarea.f{min-height:72px;resize:vertical}
   el("addServ").addEventListener("click", function () { filaServicio("", "").querySelector("input").focus(); });
   el("addRes").addEventListener("click", function () { var d = filaResena("", "", 5); if (d) d.querySelector("input").focus(); else alert("Hasta 6 reseñas."); });
   el("rubro").addEventListener("change", function () { sugerencias(); guardar(); });
+  el("plantilla").addEventListener("change", function () {
+    // Saca los servicios sugeridos del rubro anterior (los escritos a mano quedan).
+    var viejos = {};
+    grupo.rubros.forEach(function (r) { (r.servicios || []).forEach(function (x) { viejos[x.h] = 1; }); });
+    Array.prototype.slice.call(el("servicios").children).forEach(function (d) {
+      if (viejos[d.querySelector(".s-h").value.trim()]) d.remove();
+    });
+    usarPlantilla(el("plantilla").value);
+    sugerencias();
+    el("resultado").classList.add("hidden");
+    guardar();
+  });
 
   function pintarSelloPrev() {
     var g = el("deGoogle").checked;
@@ -174,6 +226,7 @@ textarea.f{min-height:72px;resize:vertical}
   function leer() {
     var dis = document.querySelector('input[name="diseno"]:checked');
     return {
+      plantilla: plantilla,
       diseno: dis ? Number(dis.value) : 0,
       nombre: el("nombre").value.trim(),
       k: el("rubro").value,
@@ -201,6 +254,7 @@ textarea.f{min-height:72px;resize:vertical}
     var b = null;
     try { b = JSON.parse(localStorage.getItem(LS) || "null"); } catch (e) { b = null; }
     if (!b) { sugerencias(); return; }
+    usarPlantilla(b.plantilla || "hogar");
     var dis = document.querySelector('input[name="diseno"][value="' + (b.diseno || 0) + '"]');
     if (dis) dis.checked = true;
     el("nombre").value = b.nombre || "";

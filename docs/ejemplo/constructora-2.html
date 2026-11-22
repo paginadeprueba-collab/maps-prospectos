@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es" class="ej-cargando">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#20262c">
+<title>Constructora | Obras, reformas y albañilería</title>
+<meta name="description" content="Construcción, reformas, ampliaciones y trabajos de albañilería. Coordinación de equipos de trabajo y presupuestos personalizados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#20262c;--ink2:#303941;--muted:#687078;--paper:#f5f1e9;--white:#fffdfa;--sand:#e9dfd1;--orange:#f28a24;--orange2:#ffb15c;--line:#e7ded2;--shadow:0 20px 55px rgba(32,38,44,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.topbar{background:#1c2227;color:#d9d5cf;font-size:12px;letter-spacing:.04em}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding:10px 0}.topbar strong{color:#ffb15c}
+header{position:sticky;top:0;z-index:20;background:rgba(32,38,44,.96);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.06em}.brandmark{width:40px;height:40px;background:linear-gradient(145deg,var(--orange2),var(--orange));display:grid;place-items:center;color:#20262c;font-weight:900;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}.brand small{display:block;font:600 9px "DM Sans";letter-spacing:.22em;color:#c6c0b7;margin-top:2px}.navlinks{display:flex;align-items:center;gap:26px;font-size:13px;color:#e2dfda}.navlinks a:hover{color:var(--orange2)}.navcta{background:var(--orange);color:#20262c;padding:13px 18px;font-weight:800;font-size:12px;letter-spacing:.04em}
+.hero{position:relative;overflow:hidden;background:linear-gradient(110deg,rgba(24,30,35,.97) 0%,rgba(32,38,44,.91) 48%,rgba(32,38,44,.5) 100%),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=85') center/cover;color:white;min-height:650px;display:flex;align-items:center}.hero:after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:rgba(242,138,36,.13);filter:blur(80px);right:-100px;top:-180px}.hero-content{position:relative;z-index:1;padding:90px 0 100px;max-width:760px}.eyebrow{display:flex;align-items:center;gap:12px;color:#ffb15c;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.eyebrow:before{content:"";width:34px;height:2px;background:var(--orange)}h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(42px,6.4vw,78px);line-height:1.02;letter-spacing:-.055em;margin:24px 0 22px;max-width:760px}h1 span{color:var(--orange2)}.hero p{max-width:560px;color:#d8d8d5;font-size:17px;line-height:1.75;margin:0 0 32px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 21px;font-weight:800;font-size:12px;letter-spacing:.04em;border:1px solid transparent;cursor:pointer}.btn-primary{background:linear-gradient(110deg,var(--orange2),var(--orange));color:#242a30;box-shadow:0 12px 28px rgba(242,138,36,.2)}.btn-ghost{border-color:rgba(255,255,255,.42);color:#fff;background:rgba(255,255,255,.04)}.hero-note{display:flex;gap:22px;flex-wrap:wrap;margin-top:52px;color:#d1cec8;font-size:12px}.hero-note span{display:flex;align-items:center;gap:8px}.check{color:var(--orange2);font-weight:900}
+.trustbar{background:var(--orange);color:#252b30}.trustgrid{display:grid;grid-template-columns:repeat(4,1fr)}.trustitem{padding:23px 20px;border-right:1px solid rgba(32,38,44,.16)}.trustitem:last-child{border:0}.trustitem b{display:block;font:800 13px Manrope;letter-spacing:.02em}.trustitem small{display:block;margin-top:4px;font-size:11px;color:#493a2b}
+section{padding:94px 0}.section-head{max-width:700px;margin-bottom:42px}.label{font-size:11px;font-weight:800;letter-spacing:.2em;color:#d66e16;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,50px);line-height:1.08;letter-spacing:-.045em;margin:14px 0}.section-head p{color:var(--muted);line-height:1.75;margin:0;font-size:15px}
+.services{background:var(--white)}.servicegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:#f7f3ec;border:1px solid var(--line);padding:28px;min-height:230px;position:relative;overflow:hidden;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#edc49c}.service .num{font:800 12px Manrope;color:#d66e16;letter-spacing:.1em}.service h3{font-size:21px;margin:22px 0 10px;letter-spacing:-.03em}.service p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}.service .arrow{position:absolute;right:25px;bottom:22px;color:#d66e16;font-size:22px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.photo-stack{position:relative;min-height:490px}.photo-main{position:absolute;inset:0 55px 48px 0;background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=85') center/cover}.photo-small{position:absolute;width:48%;height:220px;right:0;bottom:0;background:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=85') center/cover;border:10px solid var(--paper)}.photo-tag{position:absolute;left:0;bottom:0;background:var(--orange);padding:18px 22px;font:800 12px Manrope;letter-spacing:.08em;transform:translateY(28px)}.copy h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.045em;margin:14px 0 20px}.copy>p{color:var(--muted);font-size:15px;line-height:1.8}.featurelist{display:grid;gap:16px;margin:28px 0}.feature{display:flex;gap:14px}.feature-icon{width:34px;height:34px;flex:none;display:grid;place-items:center;background:#f9e4cf;color:#c96516;font-weight:900}.feature b{font:800 14px Manrope;display:block;margin-bottom:4px}.feature small{font-size:12px;line-height:1.6;color:var(--muted)}
+.process{background:#252c32;color:#fff}.process .section-head p{color:#c5c7c7}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#4b5359;border:1px solid #4b5359}.step{background:#252c32;padding:27px 24px;min-height:190px}.step strong{font:800 12px Manrope;color:var(--orange2);letter-spacing:.15em}.step h3{font-size:19px;margin:20px 0 9px}.step p{color:#c4c8c9;font-size:12px;line-height:1.7;margin:0}
+.projects{background:#eee7dc}.projectgrid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px}.project{position:relative;min-height:310px;background:#b7b0a5;overflow:hidden}.project img{width:100%;height:100%;min-height:310px;object-fit:cover;display:block;transition:transform .5s}.project:hover img{transform:scale(1.04)}.project:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(20,25,29,.85))}.project-caption{position:absolute;z-index:1;left:22px;right:18px;bottom:20px;color:#fff}.project-caption small{color:#ffbf7b;font-size:10px;letter-spacing:.15em;text-transform:uppercase}.project-caption b{display:block;font:800 18px Manrope;margin-top:5px}.project-disclaimer{font-size:11px;color:#716e68;margin-top:15px}
+.team{background:var(--white)}.teamcard{display:grid;grid-template-columns:1fr 1fr;background:#f4eee5}.teamvisual{min-height:380px;background:url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=1200&q=85') center/cover}.teamtext{padding:48px;align-self:center}.teamtext h2{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:12px 0}.teamtext p{font-size:14px;color:var(--muted);line-height:1.8}.teamtext .mini{display:flex;gap:20px;flex-wrap:wrap;margin-top:25px}.mini span{font-size:12px;font-weight:800}.mini i{color:#d66e16;font-style:normal;margin-right:6px}
+.quote{background:#e9dfd1}.quotegrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}.quoteintro h2{font-size:clamp(34px,4vw,48px);line-height:1.05;letter-spacing:-.045em;margin:14px 0}.quoteintro p{color:var(--muted);line-height:1.75;font-size:14px}.quoteform{background:#fffdfa;padding:34px;box-shadow:var(--shadow)}.quoteform h3{font-size:22px;margin:0 0 6px}.quoteform>p{font-size:12px;color:var(--muted);margin:0 0 24px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px;margin-bottom:14px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#424950}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #ded8cf;background:#fff;color:#252b30;outline:none;border-radius:0;font-size:13px}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange)}.field textarea{min-height:95px;resize:vertical}.quoteform .btn{width:100%;border:0}.formnote{font-size:10px;color:#85817a;line-height:1.5;margin-top:12px}
+.coverage{background:#fffdfa}.coveragebox{display:flex;justify-content:space-between;gap:30px;align-items:center;padding:32px;background:#f5f1e9;border-left:4px solid var(--orange)}.coveragebox h3{margin:0 0 8px;font-size:21px}.coveragebox p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}
+footer{background:#1c2227;color:#fff;padding:55px 0 25px}.footgrid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:35px;padding-bottom:38px}.footgrid p,.footgrid a{font-size:12px;line-height:1.8;color:#c4c6c6}.footgrid h4{font:800 12px Manrope;letter-spacing:.1em;color:var(--orange2)}.footbottom{border-top:1px solid #41474c;padding-top:20px;color:#9da2a4;font-size:10px;display:flex;justify-content:space-between;gap:15px}
+.whatsapp{position:fixed;right:22px;bottom:22px;z-index:25;background:#20bf69;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:25px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+@media(max-width:850px){.navlinks{display:none}.hero{min-height:600px}.trustgrid{grid-template-columns:repeat(2,1fr)}.trustitem:nth-child(2){border-right:0}.trustitem:nth-child(-n+2){border-bottom:1px solid rgba(32,38,44,.16)}.servicegrid{grid-template-columns:repeat(2,1fr)}.split{gap:35px}.steps{grid-template-columns:repeat(2,1fr)}.projectgrid{grid-template-columns:1fr 1fr}.project:first-child{grid-column:1/-1}.quotegrid{grid-template-columns:1fr;gap:25px}}
+@media(max-width:600px){.wrap{width:min(100% - 32px,1160px)}.topbar .wrap{font-size:10px}.topbar .wrap span:last-child{display:none}.nav{height:66px}.navcta{padding:12px;font-size:10px}.hero{min-height:620px;background-position:58% center}.hero-content{padding:76px 0 78px}h1{font-size:45px}.hero p{font-size:15px}.hero-note{margin-top:35px;display:grid;gap:10px}.trustitem{padding:18px 12px}.trustitem b{font-size:11px}.trustitem small{font-size:10px}section{padding:68px 0}.section-head{margin-bottom:30px}.servicegrid{grid-template-columns:1fr;gap:10px}.service{min-height:190px;padding:24px}.split{grid-template-columns:1fr;gap:38px}.photo-stack{min-height:340px}.photo-main{inset:0 38px 38px 0}.photo-small{height:155px;border-width:7px}.photo-tag{font-size:10px;padding:14px 16px}.steps{grid-template-columns:1fr}.step{min-height:0;padding:23px}.projectgrid{grid-template-columns:1fr}.project:first-child{grid-column:auto}.project,.project img{min-height:260px}.teamcard{grid-template-columns:1fr}.teamvisual{min-height:250px}.teamtext{padding:30px 24px}.teamtext h2{font-size:30px}.quoteform{padding:24px 18px}.formgrid{grid-template-columns:1fr;gap:0}.field.full{grid-column:auto}.coveragebox{display:block;padding:25px}.coveragebox .btn{margin-top:20px}.footgrid{grid-template-columns:1fr;gap:18px}.footbottom{display:block;line-height:1.8}.whatsapp{width:54px;height:54px;right:15px;bottom:15px}}
+
+/* Fábrica de Sitios: sello de reseñas y carga */
+html.ej-cargando body{opacity:0}
+.sello-resenas-google.sello-resenas-google{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:#e8f8ee;color:#0b7a3b;font-weight:800;font-size:12px;letter-spacing:.01em;line-height:1.2;text-transform:none}
+.sello-resenas-google .google-g,.sello-resenas-google .g{background:#fff;color:#4285f4}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>CONSTRUCCIÓN · REFORMAS · ALBAÑILERÍA</span><span><strong>ATENCIÓN POR CONSULTA</strong> · Coordinación de trabajos y presupuestos</span></div></div>
+<header><div class="wrap nav">
+ <a class="brand" href="#inicio"><span class="brandmark" data-iniciales>C</span><span><span data-nombre-mayus>CONSTRUCTORA</span><small>OBRAS &amp; SERVICIOS</small></span></a>
+ <nav class="navlinks"><a href="#servicios">Servicios</a><a href="#empresa">La empresa</a><a href="#proyectos">Proyectos</a><a href="#proceso">Cómo trabajamos</a></nav>
+ <a class="navcta" href="#presupuesto">SOLICITAR PRESUPUESTO ↗</a>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap"><div class="hero-content">
+ <div class="eyebrow">Construcción con planificación y oficio · <span data-zona></span></div>
+ <h1>Hacemos realidad<br>tu próximo <span>proyecto.</span></h1>
+ <p>Construcción, ampliaciones y reformas. Coordinamos equipos de trabajo y acompañamos cada etapa de la obra, desde la evaluación inicial hasta las terminaciones.</p>
+ <div class="actions"><a class="btn btn-primary" href="#presupuesto">CONTANOS QUÉ NECESITÁS ↗</a><a class="btn btn-ghost" href="#servicios">CONOCÉ NUESTROS SERVICIOS</a></div>
+ <div class="hero-note"><span><i class="check">✓</i> Evaluación del proyecto</span><span><i class="check">✓</i> Coordinación de personal</span><span><i class="check">✓</i> Presupuesto según alcance</span></div>
+</div></div></section>
+<div class="trustbar"><div class="wrap trustgrid">
+ <div class="trustitem"><b>OBRA PLANIFICADA</b><small>Alcance y etapas definidos</small></div>
+ <div class="trustitem"><b>EQUIPOS DE TRABAJO</b><small>Coordinación de oficios</small></div>
+ <div class="trustitem"><b>PROPUESTA A MEDIDA</b><small>Según cada necesidad</small></div>
+ <div class="trustitem"><b>CONTACTO DIRECTO</b><small>Seguimiento de consultas</small></div>
+</div></div>
+<section class="services" id="servicios"><div class="wrap">
+ <div class="section-head"><div class="label">Qué hacemos</div><h2>Soluciones para cada etapa de tu obra.</h2><p>Desde trabajos puntuales de albañilería hasta proyectos de construcción y renovación. Definimos el equipo y el alcance de acuerdo con cada necesidad.</p></div>
+ <div class="servicegrid" data-servicios>
+  <article class="service"><span class="num" data-s-n="num-tag">01 / CONSTRUCCIÓN</span><h3>Obra nueva</h3><p>Construcción de espacios y viviendas. Organización de tareas, coordinación de personal y seguimiento de las distintas etapas.</p><span class="arrow">↗</span></article>
+  <article class="service"><span class="num">02 / AMPLIACIONES</span><h3>Ampliaciones</h3><p>Nuevos ambientes, ampliación de espacios existentes y trabajos para adaptar la propiedad a nuevas necesidades.</p><span class="arrow">↗</span></article>
+  <article class="service"><span class="num">03 / REFORMAS</span><h3>Reformas integrales</h3><p>Renovación de ambientes, redistribución de espacios y coordinación de los distintos rubros involucrados.</p><span class="arrow">↗</span></article>
+  <article class="service"><span class="num">04 / ALBAÑILERÍA</span><h3>Trabajos de albañilería</h3><p>Levantamiento de paredes, mampostería, revoques, contrapisos y tareas generales de obra.</p><span class="arrow">↗</span></article>
+  <article class="service"><span class="num">05 / TERMINACIONES</span><h3>Pisos y revestimientos</h3><p>Colocación de pisos, revestimientos y terminaciones para completar y renovar los espacios.</p><span class="arrow">↗</span></article>
+  <article class="service"><span class="num">06 / MANTENIMIENTO</span><h3>Trabajos complementarios</h3><p>Demoliciones, preparación de superficies, impermeabilización y otras tareas según evaluación.</p><span class="arrow">↗</span></article>
+ </div>
+</div></section>
+<section id="empresa"><div class="wrap split">
+ <div class="photo-stack"><div class="photo-main"></div><div class="photo-small"></div><div class="photo-tag">PLANIFICACIÓN · EQUIPO · EJECUCIÓN</div></div>
+ <div class="copy"><div class="label">Una forma organizada de construir</div><h2>Un equipo coordinado para llevar adelante tu obra.</h2><p>Una obra necesita más que mano de obra: requiere organización, definición de tareas y coordinación entre los distintos oficios. Trabajamos sobre cada proyecto para identificar qué se necesita y cómo ejecutarlo.</p>
+ <div class="featurelist">
+  <div class="feature"><span class="feature-icon">01</span><div><b>Evaluación inicial</b><small>Conocemos el proyecto, las necesidades y las condiciones del lugar.</small></div></div>
+  <div class="feature"><span class="feature-icon">02</span><div><b>Coordinación de personal</b><small>Organizamos los trabajos y los perfiles necesarios según el alcance.</small></div></div>
+  <div class="feature"><span class="feature-icon">03</span><div><b>Planificación de etapas</b><small>Definimos tareas, prioridades y una propuesta de ejecución.</small></div></div>
+ </div><a class="btn btn-primary" href="#presupuesto">CONSULTAR POR MI OBRA ↗</a></div>
+</div></section>
+<section class="process" id="proceso"><div class="wrap">
+ <div class="section-head"><div class="label">Cómo trabajamos</div><h2>Un proceso claro desde el primer contacto.</h2><p>Organizamos cada consulta para entender el proyecto antes de definir una propuesta.</p></div>
+ <div class="steps">
+  <article class="step"><strong>ETAPA 01</strong><h3>Nos contás</h3><p>Recibimos tu consulta, el tipo de trabajo y la ubicación de la obra.</p></article>
+  <article class="step"><strong>ETAPA 02</strong><h3>Evaluamos</h3><p>Analizamos medidas, estado actual, tareas y necesidades de materiales.</p></article>
+  <article class="step"><strong>ETAPA 03</strong><h3>Presupuestamos</h3><p>Preparamos una propuesta según el alcance y las condiciones del proyecto.</p></article>
+  <article class="step"><strong>ETAPA 04</strong><h3>Coordinamos</h3><p>Si avanzamos, organizamos el equipo y las etapas de ejecución acordadas.</p></article>
+ </div>
+</div></section>
+<section class="process" id="resenas" data-hide-if="reviews"><div class="wrap"><div class="section-head"><div class="label">Opiniones</div><h2>Lo que dicen nuestros clientes.</h2><p><span class="sello-resenas-google">Reseñas verificadas de Google</span><span data-hide-if="rating"> &nbsp;<strong data-rating></strong> <span data-stars></span> <span data-hide-if="rating-count">· <span data-reviews-count></span> reseñas</span></span></p></div><div class="steps" data-reviews><article class="step"><strong data-r-s>★★★★★</strong><p data-r-t></p><h3 data-r-n style="font-size:15px;margin-top:10px"></h3></article></div></div></section>
+<section class="projects" id="proyectos"><div class="wrap">
+ <div class="section-head"><div class="label">Trabajos y proyectos</div><h2>El trabajo se demuestra en cada detalle.</h2><p>Un espacio para mostrar obras reales, procesos y resultados del equipo.</p></div>
+ <div class="projectgrid">
+  <article class="project"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1100&q=85" alt="Vivienda de arquitectura contemporánea"><div class="project-caption"><small>Construcción residencial</small><b>Obra nueva y espacios habitables</b></div></article>
+  <article class="project"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Interior residencial renovado"><div class="project-caption"><small>Reformas</small><b>Renovación de ambientes</b></div></article>
+  <article class="project"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85" alt="Edificio en construcción"><div class="project-caption"><small>Obra y ejecución</small><b>Planificación de trabajos</b></div></article>
+ </div>
+ <p class="project-disclaimer">Imágenes ilustrativas de referencia.</p>
+</div></section>
+<section class="team"><div class="wrap"><div class="teamcard"><div class="teamvisual"></div><div class="teamtext"><div class="label">Personal y oficios</div><h2>Los equipos adecuados para cada trabajo.</h2><p>Coordinamos personal de albañilería y distintos oficios de acuerdo con las características de cada obra. La conformación del equipo se define luego de evaluar el proyecto.</p><div class="mini"><span><i>✓</i> Albañiles</span><span><i>✓</i> Oficiales</span><span><i>✓</i> Ayudantes</span><span><i>✓</i> Oficios complementarios</span></div></div></div></div></section>
+<section class="quote" id="presupuesto"><div class="wrap quotegrid">
+ <div class="quoteintro"><div class="label">Empezá tu proyecto</div><h2>Contanos qué necesitás construir.</h2><p>Completá los datos principales y recibiremos tu consulta por WhatsApp. Con esta información podremos entender mejor el trabajo y coordinar los próximos pasos.</p><p><b>Importante:</b> el presupuesto final se define después de evaluar el alcance, las medidas, los materiales y las condiciones de la obra.</p></div>
+ <form class="quoteform" id="quoteForm"><h3>Solicitar presupuesto</h3><p>Los campos marcados son necesarios para enviar la consulta.</p>
+  <div class="formgrid">
+   <div class="field"><label for="name">Nombre</label><input id="name" required placeholder="Tu nombre"></div>
+   <div class="field"><label for="phone">Teléfono</label><input id="phone" required placeholder="Tu número de contacto"></div>
+   <div class="field full"><label for="work">Tipo de trabajo</label><select id="work" required><option value="">Seleccionar</option><option>Construcción desde cero</option><option>Ampliación</option><option>Reforma integral</option><option>Albañilería</option><option>Revoques y contrapisos</option><option>Pisos y revestimientos</option><option>Techos e impermeabilización</option><option>Demolición y preparación</option><option>Terminaciones</option><option>Otro</option></select></div>
+   <div class="field"><label for="surface">Superficie aproximada</label><select id="surface"><option>No lo sé</option><option>Menos de 20 m²</option><option>20 a 50 m²</option><option>50 a 100 m²</option><option>100 a 200 m²</option><option>Más de 200 m²</option></select></div>
+   <div class="field"><label for="materials">Materiales</label><select id="materials"><option>A definir</option><option>Necesito materiales y mano de obra</option><option>Ya tengo los materiales</option><option>Solo mano de obra</option></select></div>
+   <div class="field full"><label for="location">Localidad / barrio de la obra</label><input id="location" required placeholder="Ej. Morón, Ramos Mejía, CABA..."></div>
+   <div class="field full"><label for="details">Contanos un poco más</label><textarea id="details" placeholder="Qué necesitás hacer, medidas aproximadas, estado actual..."></textarea></div>
+  </div>
+  <button class="btn btn-primary" type="submit">ENVIAR CONSULTA POR WHATSAPP ↗</button>
+  <div class="formnote">No se calcula un precio automático. La cotización se prepara de acuerdo con la información y evaluación de cada obra.</div>
+ </form>
+</div></section>
+<section class="coverage"><div class="wrap"><div class="coveragebox"><div><div class="label">Zona de trabajo</div><h3>Consultanos por la ubicación de tu obra.</h3><p>La cobertura y disponibilidad se confirman según la localidad, el tipo de trabajo y el tamaño del proyecto.</p></div><a class="btn btn-primary" href="#presupuesto">CONSULTAR COBERTURA ↗</a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footgrid">
+ <div><a class="brand" href="#inicio"><span class="brandmark" data-iniciales>C</span><span><span data-nombre-mayus>CONSTRUCTORA</span><small>OBRAS &amp; SERVICIOS</small></span></a><p>Construcción, reformas y coordinación de equipos de trabajo para proyectos particulares y comerciales.</p></div>
+ <div><h4>SECCIONES</h4><p><a href="#servicios">Servicios</a><br><a href="#empresa">La empresa</a><br><a href="#proyectos">Proyectos</a><br><a href="#proceso">Cómo trabajamos</a></p></div>
+ <div><h4>CONTACTO</h4><p>Solicitá una evaluación de tu proyecto.<br><a href="#presupuesto">Enviar consulta ↗</a><br><span data-hide-if="wa">WhatsApp: <a href="#" data-wa><span data-tel></span></a></span></p></div>
+ </div><div class="footbottom"><span>© <span id="year"></span> <span data-nombre>Constructora</span>. Todos los derechos reservados.</span><span>Construcción · Reformas · Albañilería</span></div></div></footer>
+<a class="whatsapp" href="#presupuesto" data-wa aria-label="Solicitar presupuesto por WhatsApp">↗</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+var WHATSAPP_NUMBER=''; // // Reemplazar por el número real, con código de país y área, sin + ni espacios.
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ if(!WHATSAPP_NUMBER){alert('Este sitio de ejemplo todavía no tiene WhatsApp cargado.');return;}
+ const v=id=>document.getElementById(id).value.trim();
+ const msg=[
+ 'Hola, quisiera solicitar un presupuesto para una obra.',
+ 'Nombre: '+v('name'),'Teléfono: '+v('phone'),'Trabajo: '+v('work'),
+ 'Superficie: '+v('surface'),'Materiales: '+v('materials'),
+ 'Ubicación: '+v('location'),'Detalles: '+(v('details')||'No especificados')
+ ].join('\n');
+ window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+<script src="codec.js?v=20261122p"></script>
+<script src="hogar.js?v=20261122p"></script>
+<script src="grupos-extra.js?v=20261122p"></script>
+<script src="llenar.js?v=20261122p"></script>
+</body></html>
