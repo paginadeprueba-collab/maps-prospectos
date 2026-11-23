@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inteligencia comercial · IMPULSA</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="styles.css?v=20261123a">
+</head>
+<body>
+<header class="top">
+  <div class="inner">
+    <h1>Inteligencia <span>comercial</span></h1>
+    <nav><a class="btn" href="../">← Fábrica</a><a class="btn" href="../sales-engine/">Sales Engine</a></nav>
+  </div>
+</header>
+<main>
+  <section class="card" id="fuente">
+    <p class="muted" id="fuenteTxt">Datos de este dispositivo.</p>
+    <div class="row">
+      <label class="btn">Ver un archivo exportado (.json)<input type="file" id="archivo" accept="application/json,.json" hidden></label>
+      <button type="button" class="btn hidden" id="volverLocal">Volver a los datos de este dispositivo</button>
+    </div>
+    <p class="hint">El archivo solo se muestra, no se guarda ni pisa nada. Para pasarlo a este dispositivo usá IMPULSA → Importar en la Fábrica.</p>
+  </section>
+
+  <section class="card"><h2>Resumen</h2><div class="kpis" id="kpis"></div><p class="hint" id="regla"></p></section>
+
+  <section class="card"><h2>Panel de inteligencia</h2><div id="panel"></div></section>
+
+  <section class="card"><h2>Experimentos: propuestas y argumentos</h2>
+    <div id="experimentos"></div>
+    <details><summary>Crear o ver propuestas</summary>
+      <div class="form">
+        <label for="propNombre">Nombre</label><input id="propNombre" placeholder="Ej.: A: web de ejemplo gratis">
+        <label for="propDesc">Descripción (opcional)</label><input id="propDesc" placeholder="Qué se ofrece o qué argumento se usa">
+        <button type="button" class="btn btn-p" id="propCrear">Crear propuesta</button>
+      </div>
+      <ul class="lista" id="propLista"></ul>
+    </details>
+  </section>
+
+  <section class="card"><h2>Estadísticas por</h2>
+    <select id="dim"></select>
+    <div id="tabla"></div>
+  </section>
+
+  <section class="card"><h2>Objeciones más repetidas</h2><div id="objeciones"></div></section>
+  <section class="card"><h2>Próximos seguimientos</h2><div id="seguimientos"></div></section>
+
+  <section class="card"><h2>Cómo se cuenta</h2>
+    <ul class="muted small">
+      <li><b>Contacto</b>: prospecto con fecha de contacto, un contacto o mensaje registrado, o un estado de CRM desde «Primer contacto».</li>
+      <li><b>Respuesta positiva</b>: resultado «Está interesado», «Solicita presupuesto» o «Contrató» (o, en registros viejos sin resultado, estado Interesado, Reunión pendiente, Negociación o Cliente ganado).</li>
+      <li><b>Reunión</b>: casilla de reunión, contacto por canal Reunión, o estado Reunión pendiente / Negociación.</li>
+      <li><b>Venta</b>: resultado «Contrató» o estado «Cliente ganado».</li>
+      <li><b>Rechazo</b>: No necesita, No reconoce el problema, Ya tiene una solución, No tiene presupuesto o No confía (o estado Cliente perdido). «No responde» se cuenta aparte.</li>
+      <li>Con menos de 10 contactos un grupo dice <b>datos insuficientes</b> y no entra en rankings. Los porcentajes son lo observado, no una probabilidad ni una garantía.</li>
+      <li>«Sin web» es un dato del negocio. No indica que quiera comprar.</li>
+    </ul>
+  </section>
+</main>
+<script src="core.js?v=20261123a"></script>
+<script src="panel.js?v=20261123a"></script>
+</body>
+</html>

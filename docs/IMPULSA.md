@@ -93,3 +93,10 @@ SOFTWARE.
 - Código: `docs/propuesta-pdf.js` (usa pdf-lib + fontkit desde unpkg). Posiciones y estilos de cada texto variable: `docs/propuesta/plantilla-slots.json`, generados con `docs/propuesta/construir_plantilla.py`.
 - Bloques fijos sin cambios: Carlos Serrano, caso y testimonio Contreras, fuentes institucionales, cierre por WhatsApp 5491168713479 (el mensaje preparado se adapta al rubro).
 - Sin web ni agenda verificadas: oferta base $350.000 por 2 años (web con agenda de turnos directo a WhatsApp). Si hay web o agenda: la oferta se adapta sin reemplazar lo que funciona, con la misma inversión de $350.000 por 2 años.
+
+## Inteligencia comercial (CRM ampliado + panel)
+
+- En la ficha, **Registrar contacto** ahora guarda servicio ofrecido, propuesta/argumento, tipo de empresa, resultado (9 opciones fijas), motivo de rechazo, objeciones, reunión y próximo seguimiento. Todo queda en el historial con fecha. Los estados viejos siguen iguales.
+- Botón **Inteligencia** en el menú → `inteligencia/`: estadísticas por rubro, tipo de empresa, servicio, propuesta, motivo de rechazo, resultado y sitio web; comparación de propuestas; mejores segmentos y más rechazos; seguimientos.
+- Grupos con menos de 10 contactos = «datos insuficientes» (fuera de rankings). «Sin web» no es intención de compra.
+- Detalle: `docs/inteligencia/README.md`. Esquema D1 futuro: `worker/d1/inteligencia.sql` (no aplicado).

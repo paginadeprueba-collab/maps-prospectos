@@ -564,7 +564,7 @@
     actual = k;
     const c = com(r);
     host.innerHTML = "<div class=\"panel\" id=\"imcPanel\"><p class=\"section-title\">INVESTIGACIÓN COMERCIAL</p>" +
-      "<p>Estado: <span class=\"imc-badge\">" + e(estadoLabel(c.estado)) + "</span>" + (c.proxima_accion ? " · Próxima acción: " + e(c.proxima_accion) + (c.proxima_fecha ? " (" + e(c.proxima_fecha) + ")" : "") : "") +
+      "<p>Estado: <span class=\"imc-badge\">" + e(estadoLabel(c.estado)) + "</span>" + (c.resultado && typeof window !== "undefined" && window.impulsaIntel ? " · Resultado: " + e(window.impulsaIntel.resultadoLabel(c.resultado)) : "") + (c.proxima_accion ? " · Próxima acción: " + e(c.proxima_accion) + (c.proxima_fecha ? " (" + e(c.proxima_fecha) + ")" : "") : "") +
       (c.doc ? " · Documento v" + e(c.doc.version) + (c.doc.revisado ? " revisado" : " sin revisar") : "") + "</p>" +
       "<div class=\"imc-grid\">" + BOTONES.map(([id, l], i) => "<button type=\"button\" class=\"btn " + (i === 1 || i === 2 ? "btn-primary " : "") + "btn-sm\" data-imc=\"" + id + "\">" + e(l) + "</button>").join("") +
       "</div><div id=\"imcBody\" class=\"imc-box\"></div></div>";
@@ -873,6 +873,8 @@
     body().innerHTML = "<p class=\"section-title\">Historial comercial</p>" + (c.historial.length ? "<ul class=\"imc-h\">" + c.historial.map((h) =>
       "<li><strong>" + e(tipos[h.tipo] || h.tipo) + "</strong> · " + e(ahoraAR(h.fecha)) + (h.canal ? " · " + e(h.canal) : "") + "<br>" + e(h.detalle || "") +
       (h.mensaje ? "<details><summary>Mensaje</summary>" + e(h.mensaje) + "</details>" : "") + (h.observaciones ? "<br><em>" + e(h.observaciones) + "</em>" : "") +
+      (h.servicio_ofrecido ? "<br>Servicio: " + e(h.servicio_ofrecido) : "") + (h.propuesta_nombre ? "<br>Propuesta: " + e(h.propuesta_nombre) : "") +
+      (h.motivo_rechazo ? "<br>Motivo: " + e(h.motivo_rechazo.replace(/_/g, " ")) : "") + (h.objeciones && h.objeciones.length ? "<br>Objeciones: " + e(h.objeciones.join("; ")) : "") +
       (h.proxima_accion ? "<br>Próxima acción: " + e(h.proxima_accion) + (h.proxima_fecha ? " (" + e(h.proxima_fecha) + ")" : "") : "") + "</li>").join("") + "</ul>" : "<p class=\"hint\">Todavía no hay movimientos.</p>") +
       "<p class=\"section-title\">Diagnósticos, propuestas y presupuestos guardados</p>" + (c.versiones.length ? "<ul>" + c.versiones.map((v, i) => "<li>" + e(v.tipo) + " v" + e(v.version) + " · " + e(ahoraAR(v.fecha)) + " · " +
         e(v.servicios.map((s) => s.nombre + (s.precio ? " $" + s.precio : "")).join(", ")) + (v.total != null ? " · total $ " + e(fmtNum(v.total)) : "") +
@@ -894,20 +896,49 @@
   }
   const opcionesEstado = (sel) => ESTADOS.map((x) => "<option value=\"" + x[0] + "\"" + (x[0] === sel ? " selected" : "") + ">" + e(x[1]) + "</option>").join("");
   function formContacto(k) {
+    const I = typeof window !== "undefined" ? window.impulsaIntel : null;
     const local = new Date(Date.now() - new Date().getTimezoneOffset() * 6e4).toISOString().slice(0, 16);
+    const c0 = com(getR(k));
+    const ops = (lista, sel, vacio) => "<option value=\"\">" + e(vacio) + "</option>" + lista.map((x) => "<option value=\"" + e(x[0]) + "\"" + (x[0] === sel ? " selected" : "") + ">" + e(x[1]) + "</option>").join("");
+    const props = I ? I.cargarPropuestas().filter((p) => p.activa !== false) : [];
+    const extra = I ? "<label>Servicio ofrecido</label><select id=\"imcServ\">" + ops(Object.keys(SERVICIOS).map((id) => [SERVICIOS[id].nombre, SERVICIOS[id].nombre]), c0.servicio_ofrecido || "", "Sin indicar") + "</select>" +
+      "<label>Propuesta / argumento usado</label><select id=\"imcProp\">" + ops(props.map((p) => [p.id, p.nombre]), c0.propuesta_id || "", "Sin indicar") + "<option value=\"__nueva\">+ Nueva propuesta…</option></select>" +
+      "<label>Tipo de empresa</label><select id=\"imcTipo\">" + ops(I.TIPOS_EMPRESA, c0.tipo_empresa || "", "Sin indicar") + "</select>" +
+      "<label>Resultado de la conversación</label><select id=\"imcRes\">" + ops(I.RESULTADOS, "", "Sin resultado todavía") + "</select>" +
+      "<label>Motivo de rechazo (si rechazó)</label><select id=\"imcMot\">" + ops(I.MOTIVOS, "", "—") + "</select>" +
+      "<label>Objeciones (una por línea)</label><textarea id=\"imcObj\" placeholder=\"Ej.: ya tengo Instagram\"></textarea>" +
+      "<label><input type=\"checkbox\" id=\"imcReu\">Se hizo o se agendó una reunión</label>" : "";
     body().innerHTML = "<p class=\"section-title\">Registrar contacto</p><label>Fecha y hora</label><input type=\"datetime-local\" id=\"imcF\" value=\"" + local + "\">" +
-      "<label>Canal</label><select id=\"imcCanal\"><option>WhatsApp</option><option>Llamada</option><option>Email</option><option>Reunión</option><option>Visita</option><option>Otro</option></select>" +
+      "<label>Canal</label><select id=\"imcCanal\"><option>WhatsApp</option><option>Llamada</option><option>Email</option><option>Reunión</option><option>Visita</option><option>Otro</option></select>" + extra +
       "<label>Mensaje utilizado / resumen</label><textarea id=\"imcMsg\"></textarea><label>Observaciones</label><textarea id=\"imcObs\"></textarea>" +
-      "<label>Próxima acción</label><input id=\"imcProx\" placeholder=\"Ej.: enviar propuesta\"><label>Fecha de la próxima acción</label><input type=\"date\" id=\"imcProxF\">" +
+      "<label>Próxima acción</label><input id=\"imcProx\" placeholder=\"Ej.: enviar propuesta\"><label>Próximo seguimiento</label><input type=\"date\" id=\"imcProxF\">" +
       "<label>Nuevo estado (opcional)</label><select id=\"imcEst\"><option value=\"\">Sin cambios</option>" + opcionesEstado("") + "</select>" +
       "<button type=\"button\" class=\"btn btn-primary btn-sm\" id=\"imcGuardar\">Guardar contacto</button>";
+    const selProp = document.getElementById("imcProp");
+    if (selProp) selProp.addEventListener("change", () => {
+      if (selProp.value !== "__nueva") return;
+      const n = prompt("Nombre de la propuesta (ej.: A: web de ejemplo gratis)");
+      if (!n || !n.trim()) { selProp.value = ""; return; }
+      const lista = I.cargarPropuestas(), p = I.crearPropuesta(lista, n);
+      I.guardarPropuestas(lista);
+      const o = document.createElement("option"); o.value = p.id; o.textContent = p.nombre;
+      selProp.insertBefore(o, selProp.lastElementChild); selProp.value = p.id;
+    });
     document.getElementById("imcGuardar").addEventListener("click", () => {
-      const g = (id) => document.getElementById(id).value.trim();
+      const g = (id) => { const el = document.getElementById(id); return el ? el.value.trim() : ""; };
       const rr = getR(k), c = com(rr);
       const fecha = g("imcF") ? new Date(g("imcF")).toISOString() : new Date().toISOString();
-      c.historial.unshift({ fecha, tipo: "contacto", canal: g("imcCanal"), mensaje: g("imcMsg"), observaciones: g("imcObs"), proxima_accion: g("imcProx"), proxima_fecha: g("imcProxF"), detalle: "Contacto por " + g("imcCanal") });
-      if (g("imcProx")) { c.proxima_accion = g("imcProx"); c.proxima_fecha = g("imcProxF"); }
-      if (g("imcEst")) c.estado = g("imcEst");
+      if (I) {
+        const pid = g("imcProp") === "__nueva" ? "" : g("imcProp");
+        const pp = I.cargarPropuestas().find((p) => p.id === pid);
+        I.registrarContacto(rr, { fecha, canal: g("imcCanal"), mensaje: g("imcMsg"), observaciones: g("imcObs"), resultado: g("imcRes"), motivo_rechazo: g("imcMot"),
+          objeciones: g("imcObj"), servicio_ofrecido: g("imcServ"), propuesta_id: pid, propuesta_nombre: pp ? pp.nombre : "", tipo_empresa: g("imcTipo"),
+          reunion: !!(document.getElementById("imcReu") || {}).checked, proxima_accion: g("imcProx"), proximo_seguimiento: g("imcProxF"), estado: g("imcEst") });
+      } else {
+        c.historial.unshift({ fecha, tipo: "contacto", canal: g("imcCanal"), mensaje: g("imcMsg"), observaciones: g("imcObs"), proxima_accion: g("imcProx"), proxima_fecha: g("imcProxF"), detalle: "Contacto por " + g("imcCanal") });
+        if (g("imcProx")) { c.proxima_accion = g("imcProx"); c.proxima_fecha = g("imcProxF"); }
+        if (g("imcEst")) c.estado = g("imcEst");
+      }
       save(k, rr); rerender(); verHist(k);
     });
   }
@@ -919,7 +950,7 @@
     document.getElementById("imcEstOk").addEventListener("click", () => {
       const g = (id) => document.getElementById(id).value.trim();
       const rr = getR(k), cc = com(rr), nuevo = g("imcEst2");
-      hist(rr, { tipo: "estado", detalle: estadoLabel(cc.estado) + " → " + estadoLabel(nuevo), observaciones: g("imcObs2"), proxima_accion: g("imcProx2"), proxima_fecha: g("imcProxF2") });
+      hist(rr, { tipo: "estado", detalle: estadoLabel(cc.estado) + " → " + estadoLabel(nuevo), estado_anterior: cc.estado, estado_nuevo: nuevo, observaciones: g("imcObs2"), proxima_accion: g("imcProx2"), proxima_fecha: g("imcProxF2") });
       cc.estado = nuevo; cc.proxima_accion = g("imcProx2"); cc.proxima_fecha = g("imcProxF2");
       save(k, rr); rerender();
     });
