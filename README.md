@@ -75,6 +75,7 @@ Tercer modo del buscador (además de **CABA por barrios** y **Otro lugar**):
 7. WhatsApp en Argentina: arma link con cualquier número de provincia, incluso escrito con `15` (`0351 15-412-3456` → `5493514123456`, `11 15-…` → `5411…`). Un `15-xxxx-xxxx` suelto solo se completa con `11` si la dirección es de CABA. Las búsquedas viejas sin link de WhatsApp lo arman al abrirse (`FabricaLatam.waDesdeTelefono`).
 8. Web de ejemplo fuera de CABA: la zona sale de la dirección («Rosario», «Montevideo», «Villa Lynch») en vez de «tu zona».
 9. Meta Ads: el link a la Biblioteca de anuncios usa el país del prospecto (el Worker trae `country=AR`; se corrige en el navegador).
+10. Barrios / zonas (como CABA): las ciudades grandes traen sus barrios, comunas, distritos, colonias o zonas con el nombre local (`barrios: {ciudad: [...]}` en cada región de `zonas-latam.json`; 1304 barrios en 66 ciudades, 847 ciudades en total). Al elegir la provincia, la ciudad con barrios aparece como «Montevideo ›» y abre su panel con «Todos los barrios» / «Limpiar» y «Toda la ciudad». Consulta: `rubro en Barrio, Ciudad, País`. Lo ya buscado se marca con «ya». Hasta 120 lugares por búsqueda; si (lugares × variantes del rubro) pasa de 200 avisa que conviene dividir. Los datos se generan con `latam-work/gen_barrios.py` (fuera del repo, en la compu compartida).
 
 Pruebas: `python3 tests/test_latam.py`, `node tests/test_latam.mjs` y `node tests/test_latam_flujo.mjs` (prospecto de Uruguay por investigar, diagnóstico, propuesta, PDF, mensajes y Inteligencia).
 

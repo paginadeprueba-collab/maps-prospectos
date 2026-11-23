@@ -44,7 +44,7 @@ t("todas las ciudades del archivo arman consultas válidas", () => {
     qs.forEach((q) => { assert.ok(q.endsWith(", " + p.nombre) || q.endsWith(" " + p.nombre), q); assert.ok(q.length < 300); });
     n += qs.length;
   }));
-  assert.ok(n > 450, "ciudades: " + n);
+  assert.ok(n > 800, "ciudades: " + n);
 });
 t("zonas: Argentina con 23 provincias (CABA aparte) y países con código", () => {
   const ar = pais("Argentina");
@@ -129,6 +129,85 @@ t("index.html: modo Provincias y Latinoamérica y CABA intacto", () => {
   assert.match(html, /fetch\("\.\/zonas-latam\.json/);
   assert.match(html, /return \[\.\.\.selectedBarrios\]\.map\(\(b\) => r \+ " en " \+ b \+ ", CABA"\);/);
   assert.match(html, /FabricaLatam\.buildQueries\(rubro, sel, pais\)/);
+});
+
+// Barrios / zonas por ciudad (como CABA).
+const norm = (x) => L.norm(x);
+t("barrios: sin duplicados por ciudad, ciudad existente y nombres limpios", () => {
+  let total = 0, ciudades = 0;
+  Z.paises.forEach((p) => p.regiones.forEach((r) => {
+    Object.entries(r.barrios || {}).forEach(([c, bs]) => {
+      assert.ok(r.ciudades.includes(c), p.id + " " + r.nombre + ": " + c + " no está en ciudades");
+      assert.ok(Array.isArray(bs) && bs.length >= 5, p.id + " " + c);
+      const vistos = new Set();
+      bs.forEach((b) => {
+        assert.ok(b && b.trim() === b && !/[;|,\n]/.test(b), p.id + " " + c + ": «" + b + "»");
+        assert.ok(!vistos.has(norm(b)), p.id + " " + c + ": repetido " + b);
+        assert.notEqual(norm(b), norm(c), p.id + " " + c + ": el barrio no puede llamarse como la ciudad");
+        vistos.add(norm(b));
+      });
+      total += bs.length; ciudades++;
+    });
+  }));
+  assert.ok(total >= 1200, "barrios: " + total);
+  assert.ok(ciudades >= 50, "ciudades con barrios: " + ciudades);
+});
+t("barrios: coberturas pedidas (Montevideo, Lima, Bogotá, CDMX, Santiago…)", () => {
+  const B = (pid, ciudad) => {
+    const p = Z.paises.find((x) => x.id === pid);
+    const r = p.regiones.find((x) => (x.barrios || {})[ciudad]);
+    assert.ok(r, pid + " " + ciudad);
+    return L.barriosDe(r, ciudad);
+  };
+  assert.ok(B("UY", "Montevideo").length >= 62);
+  ["Pocitos", "Carrasco", "Ciudad Vieja", "Malvín", "Cordón", "Prado"].forEach((b) => assert.ok(B("UY", "Montevideo").includes(b), b));
+  assert.equal(B("PE", "Lima").length, 43);
+  assert.ok(B("PE", "Callao").includes("Ventanilla"));
+  ["Usaquén", "Chapinero", "Suba", "Kennedy", "Sumapaz"].forEach((b) => assert.ok(B("CO", "Bogotá").includes(b), b));
+  assert.ok(B("CO", "Bogotá").length >= 20);
+  assert.ok(B("CO", "Medellín").includes("El Poblado"));
+  const cdmx = B("MX", "Ciudad de México");
+  ["Coyoacán", "Iztapalapa", "Xochimilco", "Milpa Alta", "Roma Norte", "Polanco"].forEach((b) => assert.ok(cdmx.includes(b), b));
+  assert.ok(B("CL", "Santiago").includes("Ñuñoa") && B("CL", "Santiago").length >= 34);
+  assert.ok(B("AR", "Córdoba").includes("Nueva Córdoba"));
+  assert.ok(B("AR", "Rosario").includes("Fisherton"));
+  assert.ok(B("PA", "Ciudad de Panamá").includes("Bella Vista"));
+  assert.ok(B("GT", "Ciudad de Guatemala").includes("Zona 10"));
+  assert.ok(B("PY", "Asunción").includes("Villa Morra"));
+  assert.ok(B("CU", "La Habana").includes("Vedado"));
+  assert.ok(!Z.paises.some((p) => p.id === "BR"));
+});
+t("barrios: arma 'rubro en Barrio, Ciudad, País' sin duplicar", () => {
+  const uy = pais("Uruguay");
+  assert.deepEqual(L.buildQueries("plomeros", [
+    { ciudad: "Montevideo", region: "Montevideo", barrio: "Pocitos" },
+    { ciudad: "Montevideo", region: "Montevideo", barrio: "pocitos" },
+    { ciudad: "Montevideo", region: "Montevideo" },
+  ], uy), ["plomeros en Pocitos, Montevideo, Uruguay", "plomeros en Montevideo, Uruguay"]);
+  assert.deepEqual(L.buildQueries("dentistas", [{ ciudad: "Córdoba", region: "Córdoba", barrio: "Nueva Córdoba" }], pais("AR")), ["dentistas en Nueva Córdoba, Córdoba, Argentina"]);
+  assert.deepEqual(L.buildQueries("plomeros", [{ ciudad: "San Juan", region: "Área metropolitana", barrio: "Condado" }], pais("PR")), ["plomeros en Condado, San Juan, Puerto Rico"]);
+  assert.notEqual(L.clave({ ciudad: "Montevideo", region: "Montevideo" }), L.clave({ ciudad: "Montevideo", region: "Montevideo", barrio: "Pocitos" }));
+  assert.equal(L.lugar("Montevideo", "Montevideo", uy, "Pocitos"), "Pocitos, Montevideo, Uruguay");
+});
+t("barrios: todos arman consultas válidas para el workflow (< 300, país al final)", () => {
+  let n = 0;
+  Z.paises.forEach((p) => p.regiones.forEach((r) => Object.entries(r.barrios || {}).forEach(([c, bs]) => {
+    const qs = L.buildQueries("instalaciones de gas", bs.map((b) => ({ ciudad: c, region: r.nombre, barrio: b })), p);
+    assert.equal(qs.length, bs.length, p.id + " " + c);
+    qs.forEach((q) => { assert.ok(q.endsWith(", " + p.nombre), q); assert.ok(q.length < 300 && !/[;|]/.test(q), q); });
+    n += qs.length;
+  })));
+  assert.ok(n >= 1200);
+  assert.ok(L.MAX_CIUDADES <= 200 && L.MAX_CIUDADES >= 80, "Montevideo entero entra en una búsqueda");
+  assert.equal(L.AVISO_BUSQUEDAS, 200);
+});
+t("index.html: panel de barrios con Todos/Limpiar, marca 'ya' y aviso de búsquedas", () => {
+  assert.match(html, /id="latBarriosPanel"/);
+  assert.match(html, /id="btnLatBarriosTodos">Todos los barrios</);
+  assert.match(html, /id="btnLatBarriosLimpiar">Limpiar</);
+  assert.match(html, /id="latAviso"/);
+  assert.match(html, /pintarYaLatam\(rubro\)/);
+  assert.match(html, /FabricaLatam\.lugar\(x\.ciudad, x\.region, pais, x\.barrio\)/);
 });
 
 console.log("\n" + ok + " pruebas OK");

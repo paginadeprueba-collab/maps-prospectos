@@ -70,6 +70,25 @@ class ZonasTest(unittest.TestCase):
         self.assertIn("Medellín", ciudades("CO"))
         self.assertIn("La Habana", ciudades("CU"))
 
+    def test_barrios_validos(self):
+        total = 0
+        for p in ZONAS["paises"]:
+            for r in p["regiones"]:
+                for c, bs in (r.get("barrios") or {}).items():
+                    self.assertIn(c, r["ciudades"], (p["id"], r["nombre"], c))
+                    claves = [paises.norm(b) for b in bs] if hasattr(paises, "norm") else [b.lower() for b in bs]
+                    self.assertEqual(len(claves), len(set(claves)), (p["id"], c))
+                    for b in bs:
+                        self.assertTrue(b and b.strip() == b, (p["id"], c, b))
+                        self.assertFalse(any(ch in b for ch in ";|,\n"), b)
+                    total += len(bs)
+        self.assertGreaterEqual(total, 1200)
+
+    def test_consulta_con_barrio_es_del_pais(self):
+        # El workflow detecta el país por el final de la consulta: con barrio sigue siendo Uruguay.
+        self.assertEqual(paises.pais_de_texto("plomeros en Pocitos, Montevideo, Uruguay")["id"], "UY")
+        self.assertEqual(paises.pais_de_texto("plomeros en Zona 10, Ciudad de Guatemala, Guatemala")["id"], "GT")
+
     def test_brasil_fuera(self):
         # Carlos: "Brasil aún no".
         self.assertNotIn("BR", P)
