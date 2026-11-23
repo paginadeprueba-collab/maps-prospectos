@@ -1,6 +1,21 @@
 {
   "searches": [
     {
+      "id": "20261123-153538_fumigadores-1-ciudad-uruguay",
+      "query": "fumigadores · 1 ciudad Uruguay",
+      "date": "20261123-153538",
+      "date_label": "2026-11-23 15:35 (America/Buenos_Aires)",
+      "n_raw": 59,
+      "n_limpio": 1,
+      "rubro": "fumigadores",
+      "barrios": [],
+      "lugares": [
+        "Montevideo, Uruguay"
+      ],
+      "pais": "Uruguay",
+      "file": "20261123-153538_fumigadores-1-ciudad-uruguay.json"
+    },
+    {
       "id": "20261120-212817_plomeros-9-barrios-caba",
       "query": "plomeros · 9 barrios CABA",
       "date": "20261120-212817",

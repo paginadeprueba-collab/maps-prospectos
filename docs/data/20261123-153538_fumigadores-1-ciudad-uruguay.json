@@ -1,0 +1,50 @@
+{
+  "id": "20261123-153538_fumigadores-1-ciudad-uruguay",
+  "query": "fumigadores · 1 ciudad Uruguay",
+  "date": "20261123-153538",
+  "date_label": "2026-11-23 15:35 (America/Buenos_Aires)",
+  "n_raw": 59,
+  "n_limpio": 1,
+  "rubro": "fumigadores",
+  "barrios": [],
+  "lugares": [
+    "Montevideo, Uruguay"
+  ],
+  "pais": "Uruguay",
+  "prospects": [
+    {
+      "nombre": "BASTA PLAGAS",
+      "reseñas": "184",
+      "rating": "4.9",
+      "telefono": "+59898097173",
+      "whatsapp": "https://wa.me/59898097173",
+      "link_maps": "https://www.google.com/maps/place/BASTA+PLAGAS/data=!4m7!3m6!1s0x959f816383f9d55f:0xdfb69eaa750bed2b!8m2!3d-34.8846428!4d-56.1086289!16s%2Fg%2F11fcpvp6b2!19sChIJX9X5g2OBn5URK-0Ldaqett8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Montevideo, 11400 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Empresa de fumigación y control de plagas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Cristina Sotomayor",
+          "texto": "Me los recomendó mi vecino, que igual a mi las hormigas le estaban devorando el iso panel. Me solucionaron el problema de Hormigas carpinteras en mi casa de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sandra Saratsola",
+          "texto": "Muy buen servicio. Amable. Respetuoso. Explicativo. Muy buen precio. El tiempo adecuado. Garantido. La verdad volvería a contratarlo en caso de ser necesario…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernando Pesce",
+          "texto": "Excelente servicio. Atención inmediata y muy gentil. Tratamiento super exitoso. Exterminio de hormigas de cimientos con 1 aplicación y en una semana ni rastros…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Blanco Souhilar",
+          "texto": "Excelente servicio. Teníamos una plaga de cucarachas en la cocina y lugares donde convivimos. No había producto que las eliminará. Hoy después de 6 meses no…",
+          "estrellas": 5
+        }
+      ]
+    }
+  ]
+}
