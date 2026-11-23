@@ -74,6 +74,8 @@
     if (!f) return renderProspectos();
     try { prospectos = ((await (await fetch("./data/" + f + "?t=" + Date.now())).json()).prospects) || []; }
     catch { prospectos = []; }
+    // Igual que la Fábrica: si falta el WhatsApp pero hay teléfono, se arma con el código correcto.
+    prospectos.forEach((p) => { if (p && !p.whatsapp && p.telefono && window.FabricaLatam) p.whatsapp = window.FabricaLatam.waDesdeTelefono(p.telefono, p.direccion); });
     renderProspectos();
   }
   function renderProspectos() {
@@ -145,6 +147,8 @@
           const p = lote.find((x) => keyDe(x) === r.key) || {};
           const previo = resultados[r.key];
           resultados[r.key] = { ...r, origen: { busqueda: $("impBusqueda").value, prospecto: p }, ...(previo && previo.comercial ? { comercial: previo.comercial } : {}) };
+          // El Worker arma Meta Ads Library con country=AR; para otro país se corrige acá.
+          if (p.pais && r.meta_ads && r.meta_ads.fuente && window.FabricaLatam) resultados[r.key].meta_ads = { ...r.meta_ads, fuente: window.FabricaLatam.adsLibraryPais(r.meta_ads.fuente, p.pais) };
           estado[r.key] = r.error ? "error" : "listo";
         });
         guardar();
@@ -231,6 +235,8 @@
         const d = await res.json();
         if (!res.ok) throw new Error(d.error || res.status);
         resultados[k] = { ...d.resultados[0], origen: { ...(r.origen || {}), prospecto: p }, comercial: r.comercial };
+        const ma = resultados[k].meta_ads;
+        if (p.pais && ma && ma.fuente && window.FabricaLatam) resultados[k].meta_ads = { ...ma, fuente: window.FabricaLatam.adsLibraryPais(ma.fuente, p.pais) };
         guardar(); renderFicha(k);
       } catch (err) { alert("Error: " + err.message); $("impReinv").disabled = false; }
     });

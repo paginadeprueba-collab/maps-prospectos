@@ -79,8 +79,24 @@ def clean_phone(raw: str) -> str:
         digits = digits[2:]
     if digits.startswith("0"):
         digits = digits[1:]
+    if len(digits) == 11 and digits.startswith("9") and digits[1] in "123":
+        digits = digits[1:]  # +54 9 <área> <número>: el 9 es de celular, no del área
     if len(digits) == 12 and digits.startswith("11") and digits[2:4] == "15":
         digits = digits[:2] + digits[4:]
+    elif len(digits) == 12 and digits[0] in "23":
+        digits = sacar_15_provincia(digits)
+    return digits
+
+
+def sacar_15_provincia(digits: str) -> str:
+    """Celular de provincia escrito con 15: área de 3 o 4 dígitos + 15 + número (12 dígitos).
+    Ej. 0351 15-412-3456 → 3514123456; 3541 15-123456 → 3541123456."""
+    if len(digits) != 12:
+        return digits
+    if digits[3:5] == "15":
+        return digits[:3] + digits[5:]
+    if digits[4:6] == "15":
+        return digits[:4] + digits[6:]
     return digits
 
 
@@ -91,7 +107,7 @@ def whatsapp_link(phone_digits: str) -> str:
     return whatsapp_ar(phone_digits)
 
 
-def telefono_y_whatsapp(raw: str, pais: dict | None) -> tuple[str, str]:
+def telefono_y_whatsapp(raw: str, pais: dict | None, direccion: str = "") -> tuple[str, str]:
     """(telefono, whatsapp) según el país del negocio.
     Argentina: igual que siempre (10 dígitos sin 0/15 y wa.me/549…).
     Otros países, o un número escrito con + de otro país: +<código><número>."""
@@ -104,6 +120,8 @@ def telefono_y_whatsapp(raw: str, pais: dict | None) -> tuple[str, str]:
             # Ya viene en formato internacional de otro país: queda como está.
             return normalizar_intl(texto, {"id": "XX", "codigo_tel": "", "largo_nacional": []})
         phone = clean_phone(texto)
+        if len(phone) == 10 and phone.startswith("15") and re.search(r"aut[oó]noma de buenos aires|\bcaba\b", direccion or "", re.I):
+            phone = "11" + phone[2:]  # celular porteño escrito sin el 11 (15-xxxx-xxxx)
         return phone, whatsapp_link(phone)
     return normalizar_intl(texto, pais)
 
@@ -273,7 +291,7 @@ def main() -> int:
         for row, rating, reviews in sin_web:
             direccion = _get(row, "address", "complete_address", "direccion", "Address")
             pais = pais_de_texto(direccion) or pais_default
-            phone, wa = telefono_y_whatsapp(_get(row, "phone", "Phone", "telefono"), pais)
+            phone, wa = telefono_y_whatsapp(_get(row, "phone", "Phone", "telefono"), pais, direccion)
             writer.writerow(
                 {
                     "nombre": _get(row, "title", "name", "nombre", "Title"),

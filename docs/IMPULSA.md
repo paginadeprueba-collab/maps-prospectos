@@ -105,4 +105,7 @@ SOFTWARE.
 - El buscador tiene el modo **Provincias y Latinoamérica** (ver README). Cada prospecto nuevo trae `pais` (de la dirección de Maps o del país elegido en la búsqueda).
 - WhatsApp con el código del país (+598, +52, etc.). Argentina sigue con `549` + 10 dígitos. Los números con `+` no se tocan.
 - Webs de ejemplo (`ejemplo/hogar.js`, `llenar.js`, `aplicar.js`): si el teléfono viene con `+` de otro país, no se le agrega 549.
+- Números de provincia con `15` y números de búsquedas viejas: ver README (WhatsApp en Argentina).
+- Investigar: el link de Meta Ads se pasa al país del prospecto (`FabricaLatam.adsLibraryPais`).
+- Pendiente de decisión: precios en ARS ($350.000 por 2 años, «Precio ARS», calculadoras de hogar-3/hogar-5 «en pesos argentinos») se muestran igual para cualquier país.
 - Inteligencia: dimensión **País**. Prospectos viejos sin país se leen de la dirección (`…, Argentina`); si no se puede, quedan como «Sin dato».

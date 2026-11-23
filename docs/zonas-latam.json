@@ -274,29 +274,16 @@
       {"nombre": "Sur", "ciudades": ["Ponce", "Guayama"]},
       {"nombre": "Este", "ciudades": ["Fajardo", "Humacao"]}
     ]},
-    {"id": "BR", "nombre": "Brasil", "codigo_tel": "55", "largo_nacional": [10, 11], "alias": ["Brazil"], "region_en_query": true, "regiones": [
-      {"nombre": "São Paulo", "ciudades": ["São Paulo", "Campinas", "Guarulhos", "Santos", "São Bernardo do Campo", "Santo André", "Osasco", "Ribeirão Preto", "Sorocaba", "São José dos Campos"]},
-      {"nombre": "Rio de Janeiro", "ciudades": ["Rio de Janeiro", "Niterói", "Duque de Caxias", "Nova Iguaçu", "Petrópolis", "Armação dos Búzios"]},
-      {"nombre": "Minas Gerais", "ciudades": ["Belo Horizonte", "Uberlândia", "Contagem", "Juiz de Fora"]},
-      {"nombre": "Paraná", "ciudades": ["Curitiba", "Londrina", "Maringá", "Foz do Iguaçu"]},
-      {"nombre": "Rio Grande do Sul", "ciudades": ["Porto Alegre", "Caxias do Sul", "Pelotas", "Canoas"]},
-      {"nombre": "Santa Catarina", "ciudades": ["Florianópolis", "Joinville", "Blumenau", "Balneário Camboriú"]},
-      {"nombre": "Bahia", "ciudades": ["Salvador", "Feira de Santana", "Porto Seguro"]},
-      {"nombre": "Distrito Federal", "ciudades": ["Brasília"]},
-      {"nombre": "Pernambuco", "ciudades": ["Recife", "Olinda", "Jaboatão dos Guararapes"]},
-      {"nombre": "Ceará", "ciudades": ["Fortaleza"]},
-      {"nombre": "Goiás", "ciudades": ["Goiânia", "Anápolis"]},
-      {"nombre": "Pará", "ciudades": ["Belém"]},
-      {"nombre": "Amazonas", "ciudades": ["Manaus"]},
-      {"nombre": "Espírito Santo", "ciudades": ["Vitória", "Vila Velha"]},
-      {"nombre": "Paraíba", "ciudades": ["João Pessoa", "Campina Grande"]},
-      {"nombre": "Rio Grande do Norte", "ciudades": ["Natal"]},
-      {"nombre": "Alagoas", "ciudades": ["Maceió"]},
-      {"nombre": "Mato Grosso", "ciudades": ["Cuiabá"]},
-      {"nombre": "Mato Grosso do Sul", "ciudades": ["Campo Grande"]},
-      {"nombre": "Maranhão", "ciudades": ["São Luís"]},
-      {"nombre": "Sergipe", "ciudades": ["Aracaju"]},
-      {"nombre": "Piauí", "ciudades": ["Teresina"]}
+    {"id": "CU", "nombre": "Cuba", "codigo_tel": "53", "largo_nacional": [8], "alias": [], "region_en_query": true, "regiones": [
+      {"nombre": "La Habana", "ciudades": ["La Habana"]},
+      {"nombre": "Santiago de Cuba", "ciudades": ["Santiago de Cuba"]},
+      {"nombre": "Camagüey", "ciudades": ["Camagüey"]},
+      {"nombre": "Holguín", "ciudades": ["Holguín"]},
+      {"nombre": "Matanzas", "ciudades": ["Matanzas", "Varadero"]},
+      {"nombre": "Villa Clara", "ciudades": ["Santa Clara"]},
+      {"nombre": "Cienfuegos", "ciudades": ["Cienfuegos"]},
+      {"nombre": "Pinar del Río", "ciudades": ["Pinar del Río"]},
+      {"nombre": "Sancti Spíritus", "ciudades": ["Sancti Spíritus", "Trinidad"]}
     ]}
   ]
 }

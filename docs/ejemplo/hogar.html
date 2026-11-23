@@ -380,7 +380,7 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
   }
   function waMe(num) {
     var d = String(num || "").replace(/\D/g, "");
-    if (!d) return "";
+    if (!d) return ""; if (/^\s*\+/.test(String(num))) return "https://wa.me/" + d;
     if (d.indexOf("54") === 0) return "https://wa.me/" + d;
     if (d.length === 10) return "https://wa.me/549" + d;
     return "https://wa.me/" + d;
@@ -404,7 +404,7 @@ footer .aviso{display:block;margin-top:8px;color:var(--ink);font-weight:700}
   }
   function telHref(num) {
     var d = String(num || "").replace(/\D/g, "");
-    if (!d) return "";
+    if (!d) return ""; if (/^\s*\+/.test(String(num))) return "tel:+" + d;
     if (d.indexOf("54") === 0) return "tel:+" + d;
     if (d.length === 10) return "tel:+54" + d;
     return "tel:+" + d;

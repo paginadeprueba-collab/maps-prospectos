@@ -71,7 +71,12 @@ Tercer modo del buscador (además de **CABA por barrios** y **Otro lugar**):
 4. El país se guarda en el historial (`pais` en `index.json`/búsqueda y en cada prospecto) y el Panel de Inteligencia tiene la dimensión **País** (misma regla: menos de 10 contactos = datos insuficientes).
 5. Sinónimos: en `docs/rubros.json`, el campo opcional `latam` (ej. fontanero, dentista, bufete) reemplaza a `variantes` solo cuando la búsqueda es de otro país. En Argentina se usan las variantes de siempre.
 
-Pruebas: `python3 tests/test_latam.py` y `node tests/test_latam.mjs`.
+6. Países: Argentina más 18 de habla hispana (Uruguay, Chile, Paraguay, Bolivia, Perú, Ecuador, Colombia, Venezuela, México, Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica, Panamá, Cuba, República Dominicana, Puerto Rico). Brasil no está (decisión de Carlos). España no está.
+7. WhatsApp en Argentina: arma link con cualquier número de provincia, incluso escrito con `15` (`0351 15-412-3456` → `5493514123456`, `11 15-…` → `5411…`). Un `15-xxxx-xxxx` suelto solo se completa con `11` si la dirección es de CABA. Las búsquedas viejas sin link de WhatsApp lo arman al abrirse (`FabricaLatam.waDesdeTelefono`).
+8. Web de ejemplo fuera de CABA: la zona sale de la dirección («Rosario», «Montevideo», «Villa Lynch») en vez de «tu zona».
+9. Meta Ads: el link a la Biblioteca de anuncios usa el país del prospecto (el Worker trae `country=AR`; se corrige en el navegador).
+
+Pruebas: `python3 tests/test_latam.py`, `node tests/test_latam.mjs` y `node tests/test_latam_flujo.mjs` (prospecto de Uruguay por investigar, diagnóstico, propuesta, PDF, mensajes y Inteligencia).
 
 ## Privacidad
 

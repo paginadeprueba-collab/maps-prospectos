@@ -44,7 +44,7 @@ t("todas las ciudades del archivo arman consultas válidas", () => {
     qs.forEach((q) => { assert.ok(q.endsWith(", " + p.nombre) || q.endsWith(" " + p.nombre), q); assert.ok(q.length < 300); });
     n += qs.length;
   }));
-  assert.ok(n > 500, "ciudades: " + n);
+  assert.ok(n > 450, "ciudades: " + n);
 });
 t("zonas: Argentina con 23 provincias (CABA aparte) y países con código", () => {
   const ar = pais("Argentina");
@@ -57,6 +57,22 @@ t("esInternacional: +598 sí, +54 y números locales no", () => {
   assert.equal(L.esInternacional("+59899123456"), true);
   assert.equal(L.esInternacional("+54 11 4444 5555"), false);
   assert.equal(L.esInternacional("1144445555"), false);
+});
+
+t("waDesdeTelefono: búsquedas viejas sin link también tienen WhatsApp", () => {
+  assert.equal(L.waDesdeTelefono("1144445555"), "https://wa.me/5491144445555");
+  assert.equal(L.waDesdeTelefono("91170965656"), "https://wa.me/5491170965656");
+  assert.equal(L.waDesdeTelefono("2966690168"), "https://wa.me/5492966690168");
+  assert.equal(L.waDesdeTelefono("351154123456"), "https://wa.me/5493514123456");
+  assert.equal(L.waDesdeTelefono("1544445555", "Maza 1, Cdad. Autónoma de Buenos Aires, Argentina"), "https://wa.me/5491144445555");
+  assert.equal(L.waDesdeTelefono("1544445555", "x, Córdoba, Argentina"), "");
+  assert.equal(L.waDesdeTelefono("+59899123456"), "https://wa.me/59899123456");
+  assert.equal(L.waDesdeTelefono("+5351234567"), "https://wa.me/5351234567");
+  assert.equal(L.waDesdeTelefono(""), "");
+});
+t("Brasil fuera, Cuba adentro", () => {
+  assert.equal(pais("Brasil"), null);
+  assert.equal(pais("Cuba").codigo_tel, "53");
 });
 
 // Webs de ejemplo: el número de otro país no recibe 549.

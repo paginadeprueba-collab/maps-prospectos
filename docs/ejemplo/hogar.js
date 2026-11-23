@@ -10,7 +10,7 @@
       nombre: "Plomero",
       icon: "pipe",
       color: "#2f6bff",
-      alias: ["plomeros", "plomero", "plomería", "plomeria", "fontanero", "fontanería", "fontaneria", "servicio de plomeria", "servicio de plomería"],
+      alias: ["plomeros", "plomero", "plomería", "plomeria", "fontanero", "fontanería", "fontaneria", "servicio de plomeria", "servicio de plomería", "gasfiter", "gasfitero", "gasfitería", "gasfiteria"],
       titulo: ["Tu casa,", "sin pérdidas."],
       lead: "Plomería a domicilio en {zona}. Destapes, cañerías y arreglos prolijos.",
       serviciosTitulo: "Plomería para el día a día",
@@ -34,7 +34,7 @@
       nombre: "Gasista",
       icon: "flame",
       color: "#e07a2f",
-      alias: ["gasistas", "gasista", "gasista matriculado", "instalador de gas", "instalación de gas", "instalacion de gas", "servicio de instalación de gas", "servicio de instalacion de gas"],
+      alias: ["gasistas", "gasista", "gasista matriculado", "instalador de gas", "instalación de gas", "instalacion de gas", "servicio de instalación de gas", "servicio de instalacion de gas", "instalaciones de gas", "técnico en gas", "tecnico en gas", "técnico de gas", "tecnico de gas"],
       titulo: ["Gas seguro,", "en tu casa."],
       lead: "Instalación y arreglos de gas en {zona}. Artefactos, fugas y revisión.",
       serviciosTitulo: "Gas en la casa",
@@ -130,7 +130,7 @@
       nombre: "Albañil",
       icon: "brick",
       color: "#c46a2b",
-      alias: ["albañiles", "albañil", "albañilería", "albanileria"],
+      alias: ["albañiles", "albañil", "albañilería", "albanileria", "maestro de obras"],
       titulo: ["Arreglos firmes,", "en tu casa."],
       lead: "Albañilería en {zona}. Humedad, revoques, cerámicos y muros.",
       serviciosTitulo: "Albañilería chica",
@@ -602,6 +602,12 @@
     if (nombre) o.n = nombre;
     if (dir) o.a = dir;
     if (barrio) o.b = barrio.slice(0, 40);
+    else if (dir && !/\bCABA\b/.test(dir)) {
+      // Provincias y otros países: la zona es la parte que sigue a la calle ("Rosario", "Pocitos"…), sin código postal.
+      const partes = dir.split(",").map((x) => x.trim()).filter(Boolean);
+      const zona = partes.length > 2 ? partes[1].split(/\s+/).filter((w) => !/\d/.test(w)).join(" ").trim() : "";
+      if (zona && zona.length >= 3) o.b = zona.slice(0, 40);
+    }
     if (tel.mostrar) o.p = tel.mostrar;
     if (tel.wa) o.w = tel.wa === tel.mostrar ? 1 : tel.wa;
     const horas = String(p.horarios || "").trim().slice(0, 140);

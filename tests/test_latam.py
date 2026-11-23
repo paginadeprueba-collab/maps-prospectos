@@ -36,14 +36,14 @@ class ZonasTest(unittest.TestCase):
         self.assertIn("Santiago del Estero", regiones)
 
     def test_paises_de_latinoamerica(self):
-        esperados = {"AR", "UY", "CL", "PY", "BO", "PE", "EC", "CO", "VE", "MX", "CR", "PA", "GT", "HN", "SV", "NI", "DO", "BR"}
+        esperados = {"AR", "UY", "CL", "PY", "BO", "PE", "EC", "CO", "VE", "MX", "CR", "PA", "GT", "HN", "SV", "NI", "DO", "PR", "CU"}
         self.assertTrue(esperados <= set(P), esperados - set(P))
         self.assertGreaterEqual(len(P), 19)
 
     def test_codigos_de_pais(self):
         codigos = {"AR": "54", "UY": "598", "CL": "56", "PY": "595", "BO": "591", "PE": "51", "EC": "593", "CO": "57",
                    "VE": "58", "MX": "52", "CR": "506", "PA": "507", "GT": "502", "HN": "504", "SV": "503", "NI": "505",
-                   "DO": "1", "PR": "1", "BR": "55"}
+                   "DO": "1", "PR": "1", "CU": "53"}
         for iso, cod in codigos.items():
             self.assertEqual(P[iso]["codigo_tel"], cod, iso)
 
@@ -68,7 +68,12 @@ class ZonasTest(unittest.TestCase):
         self.assertIn("Montevideo", ciudades("UY"))
         self.assertIn("Guadalajara", ciudades("MX"))
         self.assertIn("Medellín", ciudades("CO"))
-        self.assertIn("São Paulo", ciudades("BR"))
+        self.assertIn("La Habana", ciudades("CU"))
+
+    def test_brasil_fuera(self):
+        # Carlos: "Brasil aún no".
+        self.assertNotIn("BR", P)
+        self.assertIsNone(paises.pais_por_nombre("Brasil"))
 
 
 class PaisTest(unittest.TestCase):
@@ -96,6 +101,17 @@ class TelefonoTest(unittest.TestCase):
         self.assertEqual(telefono_y_whatsapp("+54 9 341 555-1234", paises.AR)[1], "https://wa.me/5493415551234")
         self.assertEqual(telefono_y_whatsapp("12345", paises.AR)[1], "")
 
+    def test_argentina_celulares_con_15(self):
+        AR = paises.AR
+        self.assertEqual(telefono_y_whatsapp("0351 15-412-3456", AR), ("3514123456", "https://wa.me/5493514123456"))
+        self.assertEqual(telefono_y_whatsapp("(03541) 15-123456", AR), ("3541123456", "https://wa.me/5493541123456"))
+        self.assertEqual(telefono_y_whatsapp("+54 351 15 412 3456", AR)[1], "https://wa.me/5493514123456")
+        self.assertEqual(telefono_y_whatsapp("+54 9 11 7096-5656", AR), ("1170965656", "https://wa.me/5491170965656"))
+        caba = "Maza 317, C1206 Cdad. Autónoma de Buenos Aires, Argentina"
+        self.assertEqual(telefono_y_whatsapp("15 4444-5555", AR, caba), ("1144445555", "https://wa.me/5491144445555"))
+        # Sin área y fuera de CABA no se adivina el área.
+        self.assertEqual(telefono_y_whatsapp("15 4444-5555", AR, "Calle 1, La Plata, Buenos Aires, Argentina")[1], "")
+
     def test_otros_paises(self):
         casos = [
             ("UY", "099 123 456", "+59899123456"),
@@ -116,7 +132,7 @@ class TelefonoTest(unittest.TestCase):
             ("NI", "8123 4567", "+50581234567"),
             ("DO", "(809) 555-1234", "+18095551234"),
             ("PR", "(787) 555-1234", "+17875551234"),
-            ("BR", "(11) 91234-5678", "+5511912345678"),
+            ("CU", "5 123 4567", "+5351234567"),
         ]
         for iso, raw, tel in casos:
             with self.subTest(iso=iso, raw=raw):

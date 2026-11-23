@@ -94,7 +94,7 @@ const pSin = hogar.payload(sinDatos, ctx("gasistas", ["Flores"]));
 assert.equal(pSin.k, "gas");
 assert.equal(pSin.p, undefined);
 assert.equal(pSin.w, undefined);
-assert.equal(pSin.b, undefined);
+assert.equal(pSin.b, "Villa Lynch", "fuera de CABA usa la localidad de la dirección");
 assert.ok(String(pSin.a).includes("Lamadrid"));
 
 const pJson = hogar.payload(jsonDir, ctx("plomeros", ["Palermo"]));

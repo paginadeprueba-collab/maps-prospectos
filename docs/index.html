@@ -871,9 +871,9 @@
   </div>
 
   <script src="ejemplo/codec.js?v=20261118a"></script>
-  <script src="ejemplo/hogar.js?v=20261123a"></script>
+  <script src="ejemplo/hogar.js?v=20261123b"></script>
   <script src="ejemplo/resenas.js?v=20261116d"></script>
-  <script src="latam.js?v=20261123a"></script>
+  <script src="latam.js?v=20261123b"></script>
   <script>
     /* ========== CONFIG ========== */
     // Pegá acá la URL del Worker cuando lo deploys (sin barra final).
@@ -1867,6 +1867,10 @@
         const res = await fetch(DATA_BASE + file + "?t=" + Date.now());
         if (!res.ok) throw new Error("search " + res.status);
         current = await res.json();
+        // Búsquedas viejas: si falta el WhatsApp pero hay teléfono, se arma acá (Argentina 549…, otros países +código).
+        (current.prospects || []).forEach((r) => {
+          if (r && !r.whatsapp && r.telefono && window.FabricaLatam) r.whatsapp = FabricaLatam.waDesdeTelefono(r.telefono, r.direccion);
+        });
       } catch (e) {
         current = {
           id,
@@ -2405,8 +2409,8 @@
       .then(route);
   </script>
   <script src="propuesta-pdf.js?v=20261112a"></script>
-  <script src="inteligencia/core.js?v=20261123b"></script>
+  <script src="inteligencia/core.js?v=20261123c"></script>
   <script src="impulsa-comercial.js?v=20261123b"></script>
-  <script src="impulsa.js?v=20261106d"></script>
+  <script src="impulsa.js?v=20261123a"></script>
 </body>
 </html>

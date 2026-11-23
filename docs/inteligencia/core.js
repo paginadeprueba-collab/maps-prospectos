@@ -74,9 +74,9 @@
   /* ---------- país del negocio (modo Provincias y Latinoamérica) ---------- */
   // Mismos países que docs/zonas-latam.json. Se lee del dato guardado o del final de la dirección de Maps.
   const PAISES = ["Argentina", "Uruguay", "Chile", "Paraguay", "Bolivia", "Perú", "Ecuador", "Colombia", "Venezuela", "México", "Costa Rica",
-    "Panamá", "Guatemala", "Honduras", "El Salvador", "Nicaragua", "República Dominicana", "Puerto Rico", "Brasil"];
+    "Panamá", "Guatemala", "Honduras", "El Salvador", "Nicaragua", "República Dominicana", "Puerto Rico", "Cuba"];
   const ALIAS_PAIS = { peru: "Perú", mexico: "México", panama: "Panamá", "republica dominicana": "República Dominicana", "rep dominicana": "República Dominicana",
-    "dominican republic": "República Dominicana", brazil: "Brasil" };
+    "dominican republic": "República Dominicana" };
   const nk = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
   function paisDeTexto(t) {
     const partes = String(t || "").split(",").map((x) => x.replace(/\d+/g, " ").trim()).filter(Boolean);

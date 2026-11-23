@@ -378,8 +378,8 @@ section{scroll-margin-top:78px}
   function fmtMoney(n) { return "$" + (Math.round(Number(n) / 1000) * 1000).toLocaleString("es-AR"); }
   function estrellas(n) { var k = Math.round(Number(n)); if (!isFinite(k) || k <= 0) return ""; k = Math.max(1, Math.min(5, k)); return "★★★★★".slice(0, k) + "☆☆☆☆☆".slice(0, 5 - k); }
   function formatoTel(d) { var p = String(d || "").replace(/\D/g, ""); if (p.length === 10) return p.slice(0, 2) + " " + p.slice(2, 6) + " " + p.slice(6); return p; }
-  function waMe(num) { var d = String(num || "").replace(/\D/g, ""); if (!d) return ""; if (d.indexOf("54") === 0) return "https://wa.me/" + d; if (d.length === 10) return "https://wa.me/549" + d; return "https://wa.me/" + d; }
-  function telHref(num) { var d = String(num || "").replace(/\D/g, ""); if (!d) return ""; if (d.indexOf("54") === 0) return "tel:+" + d; if (d.length === 10) return "tel:+54" + d; return "tel:+" + d; }
+  function waMe(num) { var d = String(num || "").replace(/\D/g, ""); if (!d) return ""; if (/^\s*\+/.test(String(num))) return "https://wa.me/" + d; if (d.indexOf("54") === 0) return "https://wa.me/" + d; if (d.length === 10) return "https://wa.me/549" + d; return "https://wa.me/" + d; }
+  function telHref(num) { var d = String(num || "").replace(/\D/g, ""); if (!d) return ""; if (/^\s*\+/.test(String(num))) return "tel:+" + d; if (d.indexOf("54") === 0) return "tel:+" + d; if (d.length === 10) return "tel:+54" + d; return "tel:+" + d; }
   function zonaVisible(data) { if (data.b) return data.b; var a = String(data.a || "").toLowerCase(); if (a.indexOf("caba") >= 0 || a.indexOf("autonoma") >= 0 || a.indexOf("autónoma") >= 0 || a.indexOf("cdad") >= 0) return "CABA"; return ""; }
   function zonaTexto(data) { var z = data.b || zonaVisible(data); if (!z) return "tu zona"; return z; }
   function conZona(t, data) { return String(t || "").replace(/\{zona\}/g, zonaTexto(data)); }

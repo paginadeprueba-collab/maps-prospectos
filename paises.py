@@ -60,12 +60,19 @@ def es_argentina(p: dict | None) -> bool:
 
 def whatsapp_ar(phone_digits: str) -> str:
     """Argentina: número nacional de 10 dígitos (área + abonado) → wa.me/549…
-    Antes solo se aceptaba el área 11; ahora cualquier área (provincias).
+    Antes solo se aceptaba el área 11; ahora cualquier área (provincias), también con 15.
     '9' + 10 dígitos (formato móvil internacional sin 54) también es móvil."""
     d = phone_digits or ""
     if len(d) == 11 and d.startswith("9") and d[1] in "123":
         d = d[1:]
-    if len(d) == 10 and d[0] in "123":
+    if len(d) == 12 and d.startswith("11") and d[2:4] == "15":
+        d = d[:2] + d[4:]
+    elif len(d) == 12 and d[0] in "23":
+        from filtrar import sacar_15_provincia
+
+        d = sacar_15_provincia(d)
+    # Áreas argentinas: 11 o empiezan con 2/3 (un "15…" sin área no alcanza).
+    if len(d) == 10 and (d.startswith("11") or d[0] in "23"):
         return f"https://wa.me/549{d}"
     return ""
 
