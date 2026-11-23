@@ -21,8 +21,9 @@ const { EjemploGrupos, EjemploLlenar } = ctx;
 
 const NUEVAS = {
   hogar: ["hogar-7.html", "hogar-8.html", "hogar-9.html"],
-  psicologia: ["psicologia.html", "psicologia-2.html"],
+  psicologia: ["psicologia.html", "psicologia-2.html", "psicologia-3.html"],
   constructora: ["constructora.html", "constructora-2.html", "constructora-3.html"],
+  juridico: ["juridico.html", "juridico-2.html"],
 };
 
 // Grupos y payload
@@ -127,7 +128,7 @@ assert.match(sh, /grupos-extra\.js/);
   assert.match(els.rubro.innerHTML, /value="plo"/);
   els.plantilla.value = "psicologia";
   els.plantilla._l.change();
-  assert.equal(cuenta(els.disenos.innerHTML), 2);
+  assert.equal(cuenta(els.disenos.innerHTML), 3);
   assert.match(els.rubro.innerHTML, /value="psi"/);
   assert.doesNotMatch(els.rubro.innerHTML, /value="plo"/);
   assert.match(els.nombre.placeholder, /Lic\./);
@@ -136,6 +137,10 @@ assert.match(sh, /grupos-extra\.js/);
   assert.equal(cuenta(els.disenos.innerHTML), 3);
   assert.match(els.rubro.innerHTML, /value="con"/);
   assert.match(els.nombre.placeholder, /Constructora/);
+  els.plantilla.value = "juridico";
+  els.plantilla._l.change();
+  assert.equal(cuenta(els.disenos.innerHTML), 2);
+  assert.match(els.rubro.innerHTML, /value="jur"/);
   void store;
 }
 {

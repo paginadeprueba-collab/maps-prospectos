@@ -53,6 +53,7 @@ textarea.f{min-height:72px;resize:vertical}
     <option value="hogar">Plomería / gas / electricidad</option>
     <option value="psicologia">Psicología</option>
     <option value="constructora">Constructora</option>
+    <option value="juridico">Estudio jurídico / abogados</option>
   </select>
   <p class="hint" id="cuantos"></p>
   <div class="disenos" id="disenos"></div>
@@ -111,7 +112,7 @@ textarea.f{min-height:72px;resize:vertical}
 
 <script src="ejemplo/codec.js?v=20261120s"></script>
 <script src="ejemplo/hogar.js?v=20261123b"></script>
-<script src="ejemplo/grupos-extra.js?v=20261122p"></script>
+<script src="ejemplo/grupos-extra.js?v=20261123t"></script>
 <script>
 (function () {
   "use strict";
@@ -137,6 +138,11 @@ textarea.f{min-height:72px;resize:vertical}
       grupo: window.EjemploGrupos.constructora,
       paginas: window.EjemploGrupos.constructora.paginas.map(sinCarpeta),
       phNombre: "Ej: Constructora Del Sur", phZona: "Ej: Lomas de Zamora", phServicio: "Ej: Ampliaciones"
+    },
+    juridico: {
+      grupo: window.EjemploGrupos.juridico,
+      paginas: window.EjemploGrupos.juridico.paginas.map(sinCarpeta),
+      phNombre: "Ej: Estudio Jurídico Gómez", phZona: "Ej: San Isidro", phServicio: "Ej: Derecho laboral"
     }
   };
   var plantilla = "hogar";
