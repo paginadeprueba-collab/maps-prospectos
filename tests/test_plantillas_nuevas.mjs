@@ -22,8 +22,9 @@ const { EjemploGrupos, EjemploLlenar } = ctx;
 const NUEVAS = {
   hogar: ["hogar-7.html", "hogar-8.html", "hogar-9.html"],
   psicologia: ["psicologia.html", "psicologia-2.html", "psicologia-3.html"],
-  constructora: ["constructora.html", "constructora-2.html", "constructora-3.html"],
-  juridico: ["juridico.html", "juridico-2.html"],
+  constructora: ["constructora.html", "constructora-2.html", "constructora-3.html", "interiores.html"],
+  juridico: ["juridico.html", "juridico-2.html", "juridico-3.html"],
+  odontologia: ["odontologia.html", "odontologia-2.html"],
 };
 
 // Grupos y payload
@@ -134,13 +135,17 @@ assert.match(sh, /grupos-extra\.js/);
   assert.match(els.nombre.placeholder, /Lic\./);
   els.plantilla.value = "constructora";
   els.plantilla._l.change();
-  assert.equal(cuenta(els.disenos.innerHTML), 3);
+  assert.equal(cuenta(els.disenos.innerHTML), 4);
   assert.match(els.rubro.innerHTML, /value="con"/);
   assert.match(els.nombre.placeholder, /Constructora/);
   els.plantilla.value = "juridico";
   els.plantilla._l.change();
-  assert.equal(cuenta(els.disenos.innerHTML), 2);
+  assert.equal(cuenta(els.disenos.innerHTML), 3);
   assert.match(els.rubro.innerHTML, /value="jur"/);
+  els.plantilla.value = "odontologia";
+  els.plantilla._l.change();
+  assert.equal(cuenta(els.disenos.innerHTML), 2);
+  assert.match(els.rubro.innerHTML, /value="odo"/);
   void store;
 }
 {
@@ -154,7 +159,7 @@ assert.match(sh, /grupos-extra\.js/);
 {
   const { els } = cargarSitios({ plantilla: "constructora", diseno: 2, nombre: "Obras Sur", k: "con" });
   assert.equal(els.plantilla.value, "constructora");
-  assert.equal(cuenta(els.disenos.innerHTML), 3);
+  assert.equal(cuenta(els.disenos.innerHTML), 4);
 }
 
 console.log("ok plantillas nuevas");

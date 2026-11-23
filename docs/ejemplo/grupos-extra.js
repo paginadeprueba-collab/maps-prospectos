@@ -88,8 +88,8 @@
   var constructora = crearGrupo({
     id: "constructora",
     titulo: "Constructora",
-    paginas: ["ejemplo/constructora.html", "ejemplo/constructora-2.html", "ejemplo/constructora-3.html"],
-    alias: ["constructora", "constructoras", "empresa constructora", "empresa de construccion", "construccion", "contratista", "contratista general", "arquitecto", "arquitectos", "estudio de arquitectura", "arquitectura", "reformas", "remodelaciones", "remodelacion", "refacciones", "empresa de reformas"],
+    paginas: ["ejemplo/constructora.html", "ejemplo/constructora-2.html", "ejemplo/constructora-3.html", "ejemplo/interiores.html"],
+    alias: ["constructora", "constructoras", "empresa constructora", "empresa de construccion", "construccion", "contratista", "contratista general", "arquitecto", "arquitectos", "estudio de arquitectura", "arquitectura", "reformas", "remodelaciones", "remodelacion", "refacciones", "empresa de reformas", "interiorismo", "interiorista", "disenador de interiores", "diseno de interiores", "decoracion de interiores", "decoradora", "decorador"],
     rubros: [{
       id: "con",
       nombre: "Constructora",
@@ -109,7 +109,7 @@
   var juridico = crearGrupo({
     id: "juridico",
     titulo: "Estudio jurídico",
-    paginas: ["ejemplo/juridico.html", "ejemplo/juridico-2.html"],
+    paginas: ["ejemplo/juridico.html", "ejemplo/juridico-2.html", "ejemplo/juridico-3.html"],
     alias: ["abogado", "abogados", "abogada", "abogadas", "estudio juridico", "estudio de abogados", "bufete", "bufete de abogados", "despacho de abogados", "asesoria legal", "asesoria juridica", "servicios legales", "abogado laboralista", "abogado penalista", "abogado de familia", "escribano", "escribania", "notario", "notaria"],
     rubros: [{
       id: "jur",
@@ -124,8 +124,28 @@
     }]
   });
 
+  var odontologia = crearGrupo({
+    id: "odontologia",
+    titulo: "Odontología",
+    paginas: ["ejemplo/odontologia.html", "ejemplo/odontologia-2.html"],
+    alias: ["odontologo", "odontologos", "odontologa", "odontologas", "odontologia", "dentista", "dentistas", "clinica dental", "clinicas dentales", "consultorio odontologico", "consultorio dental", "clinica odontologica", "centro odontologico", "ortodoncia", "ortodoncista", "implantes dentales", "estetica dental"],
+    rubros: [{
+      id: "odo",
+      nombre: "Odontología",
+      lead: "Atención odontológica integral en {zona}.",
+      confianza: ["Atención personalizada", "Prevención", "Turnos por WhatsApp"],
+      servicios: [
+        { h: "Odontología general", p: "Controles, limpiezas y tratamientos de caries." },
+        { h: "Estética dental", p: "Blanqueamiento y mejoras en la sonrisa." },
+        { h: "Ortodoncia", p: "Evaluación de la alineación dental y la mordida." },
+        { h: "Implantes", p: "Alternativas para reemplazar piezas ausentes." }
+      ]
+    }]
+  });
+
   root.EjemploGrupos = root.EjemploGrupos || {};
   root.EjemploGrupos.psicologia = psicologia;
   root.EjemploGrupos.constructora = constructora;
   root.EjemploGrupos.juridico = juridico;
+  root.EjemploGrupos.odontologia = odontologia;
 })(typeof window !== "undefined" ? window : globalThis);

@@ -92,7 +92,7 @@ assert.match(html, /paginas/);
 assert.match(html, /guardarCorto/);
 assert.match(html, /__EJEMPLO_DATA__/);
 assert.match(html, /fabricaSitios\.borrador/);
-assert.doesNotMatch(html, /dentista/i);
+assert.match(html, /value="odontologia"/); // Odontología / dentistas: plantillas propias (pedido de Carlos)
 assert.match(fs.readFileSync(path.join(ROOT, "docs/index.html"), "utf8"), /sitios\.html/);
 
 console.log("ok sitios");

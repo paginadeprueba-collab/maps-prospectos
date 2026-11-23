@@ -60,7 +60,7 @@
 
   function grupoDe(k) {
     var gs = root.EjemploGrupos || {};
-    var orden = ["hogar", "psicologia", "constructora", "juridico"];
+    var orden = ["hogar", "psicologia", "constructora", "juridico", "odontologia"];
     for (var key in gs) if (orden.indexOf(key) < 0) orden.push(key);
     for (var i = 0; i < orden.length; i++) {
       var g = gs[orden[i]];
