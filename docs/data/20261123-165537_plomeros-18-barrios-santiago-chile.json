@@ -1,0 +1,1733 @@
+{
+  "id": "20261123-165537_plomeros-18-barrios-santiago-chile",
+  "query": "plomeros · 18 barrios Santiago Chile",
+  "date": "20261123-165537",
+  "date_label": "2026-11-23 16:55 (America/Buenos_Aires)",
+  "n_raw": 2066,
+  "n_limpio": 50,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "Bellavista, Santiago, Chile",
+    "Providencia, Santiago, Chile",
+    "Vitacura, Santiago, Chile",
+    "Lo Barnechea, Santiago, Chile",
+    "Peñalolén, Santiago, Chile",
+    "Macul, Santiago, Chile",
+    "San Bernardo, Santiago, Chile",
+    "Puente Alto, Santiago, Chile",
+    "La Reina, Santiago, Chile",
+    "Las Condes, Santiago, Chile",
+    "Ñuñoa, Santiago, Chile",
+    "La Florida, Santiago, Chile",
+    "Maipú, Santiago, Chile",
+    "Cerrillos, Santiago, Chile",
+    "Estación Central, Santiago, Chile",
+    "Pudahuel, Santiago, Chile",
+    "Lo Prado, Santiago, Chile",
+    "Quinta Normal, Santiago, Chile"
+  ],
+  "pais": "Chile",
+  "prospects": [
+    {
+      "nombre": "Centro Ferretero",
+      "reseñas": "4161",
+      "rating": "4.4",
+      "telefono": "+56226825419",
+      "whatsapp": "https://wa.me/56226825419",
+      "link_maps": "https://www.google.com/maps/place/Centro+Ferretero/data=!4m7!3m6!1s0x9662c45716a70afd:0xec21358d92e855be!8m2!3d-33.4464093!4d-70.6791663!16s%2Fg%2F1tgc0zyg!19sChIJ_QqnFlfEYpYRvlXoko01Iew?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Centro Ferretero - Av. Matucana 61 C, 8350655 Santiago, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–6 p.m. · sáb 9 a.m.–1:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan Pinochet",
+          "texto": "Excelente...la primera vez fui por un dato que me paso un vecino. Compre mi orilladora electrica. Eso fue en 2024, luego volvi cada mes o 2 para comprar hilo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Dallape",
+          "texto": "Lejos el mejor mercado de herramientas por su variedad y buenos precios, profesionalismo, calidad y asesoramiento de primera, cuenta con estacionamiento…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tania Mabel Contreras Ruiz",
+          "texto": "Venden de todas las herramientas que necesites muy buen lugar para poder comprar a un precio justo y de calidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "alffonte",
+          "texto": "Un buen lugar para comprar lo mismo pero mas economico variedad de productos",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Persa Los Tamarindos",
+      "reseñas": "1157",
+      "rating": "4.2",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Persa+Los+Tamarindos/data=!4m7!3m6!1s0x9662c4769a496aa5:0x363355fd4cfd4663!8m2!3d-33.4404258!4d-70.712781!16s%2Fg%2F11g9svgph3!19sChIJpWpJmnbEYpYRY0b9TP1VMzY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Persa Los Tamarindos - Los Tamarindos 5652, Lo Prado, Región Metropolitana, Chile",
+      "categoria": "Centro comercial",
+      "horarios": "sáb a dom 5 a.m.–10 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Sergio Araya Peña",
+          "texto": "Buen lugar para compras variados productos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Barra",
+          "texto": "Puedes encontrar de todo , desde las 10 a 19 hrs. Jueves y viernes por cuarentena en segunda fase. Lo normal es sábados y domingos . Buen panorama por si…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Jennifer Venegas Soto",
+          "texto": "A mi pareja le encanta! Siempre vamos 💜",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marien Galindo",
+          "texto": "Siempre voy a conseguir casi todo lo que busco, algunos puestos ya puedes pagar con punto de venta! Excelente!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería el Metro",
+      "reseñas": "477",
+      "rating": "4.4",
+      "telefono": "+56225195600",
+      "whatsapp": "https://wa.me/56225195600",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+el+Metro/data=!4m7!3m6!1s0x9662c5aa6a40e84d:0xe9f1233f049f26b4!8m2!3d-33.446865!4d-70.6653692!16s%2Fg%2F1v5_bmss!19sChIJTehAaqrFYpYRtCafBD8j8ek?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería el Metro - 2121 Avda Liber Bernardo O`Higgins, Av. Alameda Libertador Bernardo O'Higgins, Santiago, Santiago, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a jue 9 a.m.–6:30 p.m. · vie 9 a.m.–5:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Pamela Rokov",
+          "texto": "Siempre me han atendido muy bien..no entiendo los malos comentarios de algunos clientes",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Manríquez Alé",
+          "texto": "El mejor servicio productos y atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Estrellas En Mi Cabello",
+          "texto": "Esta tarde pasé por allí y puedo decir que fui atendida con la mayor amabilidad y con un sentido de responsabilidad de primera por la satisfacción del cliente…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dunssb",
+          "texto": "Tuve que devolver un taladro porque estaba malo, sin embargo recibí una pésima atención y negación de mi derecho irrenunciable a garantía legal. Mientras…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Maipo",
+      "reseñas": "403",
+      "rating": "4.2",
+      "telefono": "+56222185655",
+      "whatsapp": "https://wa.me/56222185655",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Maipo/data=!4m7!3m6!1s0x9662c8d5bab34ec7:0xdfc6173814cf3cce!8m2!3d-33.3876103!4d-70.5762149!16s%2Fg%2F11g8wnwlh9!19sChIJx06zutXIYpYRzjzPFDgXxt8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Maipo - Av. Manquehue Nte. 1972, Vitacura, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–7 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Verónica Welkner Ballas",
+          "texto": "Buen precio, estacionamientos a la puerta y siempre encuentro lo que busco.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pierre Paul Romagnoli",
+          "texto": "Ferretería clásica ideal cuando uno quiere ayuda personal mayor experto y amable pero después uno mira el precio que pagó y en mercado libre es la mitad",
+          "estrellas": 3
+        },
+        {
+          "nombre": "Jonathan Toro Otarola",
+          "texto": "Mala variedad de productos específicos, solo pinturas y cosas para reparaciones básicas , si busca algo más especializado no pierda su tiempo y vaya directo a…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "graciela perez",
+          "texto": "En general muy lenta la atención, fui a las 12 pm y habían trabajadores comiendo y los otros dos conversando detrás de los mostradores, después de un rato de…",
+          "estrellas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Los Toros",
+      "reseñas": "389",
+      "rating": "4.4",
+      "telefono": "+56222883535",
+      "whatsapp": "https://wa.me/56222883535",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Los+Toros/data=!4m7!3m6!1s0x9662d761ac8eeb03:0xb98fcc8e51738c07!8m2!3d-33.5674473!4d-70.567473!16s%2Fg%2F11fct1ljk1!19sChIJA-uOrGHXYpYRB4xzUY7Mj7k?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Los Toros - Los Toros 1464, 8220580 Puente Alto, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:45 a.m.–2 p.m., 3–6:30 p.m. · sáb a dom 9:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Pro Vend",
+          "texto": "Buenísimos precios y productos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ramón Díaz Méndez",
+          "texto": "No soy cliente habitual, pero la vez que fui, me atendieron super bien, personal altamente calificado en la atención a público.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jaime Peters",
+          "texto": "Muy buena atencion",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Victor Melendez",
+          "texto": "Excelente disposición para atender a sus clientes, atención rápido y valor de productos más bajo que otros lados. Lo recomiendo al 1000%",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria Filodendro",
+      "reseñas": "372",
+      "rating": "4.3",
+      "telefono": "+56229069022",
+      "whatsapp": "https://wa.me/56229069022",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+Filodendro/data=!4m7!3m6!1s0x9662ddbc8634046b:0x9b2f326d3f3779c2!8m2!3d-33.5667861!4d-70.7827418!16s%2Fg%2F11c54dgf5d!19sChIJawQ0hrzdYpYRwnk3P20yL5s?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria Filodendro - El Filodendro, Maipú, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–6:30 p.m. · sáb 9 a.m.–3 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Gregorio Rodríguez",
+          "texto": "En Ferretería Filodendro podrá encontrar un amplio surtido de materiales para la construcción, remodelación y decoración del hogar, a precios accesibles, en un…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Antonio Mundaca",
+          "texto": "Buenos precios y variedad de productos, pero la persona contratada para atender tiene muy mala actitud, siempre con la cara larga, no te ofrece alternativas y…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Andres Fundora",
+          "texto": "Se encuentran bastantes cosas utiles",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Chave Jara",
+          "texto": "Buena opción, muchas veces los precios de las ferreterías de barrio son más convenientes que los de las grandes tiendas, y esta es un ejemplo. tienen casi de…",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Horizonte Limitada",
+      "reseñas": "362",
+      "rating": "4.2",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Horizonte+Limitada/data=!4m7!3m6!1s0x9662cf62ea5edfe5:0x9fac99e2ed111c8d!8m2!3d-33.4288635!4d-70.6206804!16s%2Fg%2F1tf61hbt!19sChIJ5d9e6mLPYpYRjRwR7eKZrJ8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Horizonte Limitada - Avda, Av. Providencia 1262, 7500571 Providencia, Región Metropolitana, Chile",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 9:30 a.m.–1:30 p.m., 3–7 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Victoria Sofia",
+          "texto": "Muy buena atención, me gusta que este tan ordenado, definitivamente volveré",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nibaldo Espinoza",
+          "texto": "Excelente atención, muy buena orientación y gran variedad de productos que sacan de apuro estando en providencia",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Paulo Xosé Prieto Nieto",
+          "texto": "Excelente atención y muy bien surtida",
+          "estrellas": 5
+        },
+        {
+          "nombre": "claudio gajardo",
+          "texto": "Tiene de todo pero es algo cara por el tipo de productos que vende",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Nina",
+      "reseñas": "343",
+      "rating": "4.7",
+      "telefono": "+56222954506",
+      "whatsapp": "https://wa.me/56222954506",
+      "link_maps": "https://www.google.com/maps/place/Nina/data=!4m7!3m6!1s0x9662d0d33baff64f:0xac0e1a8506114d3b!8m2!3d-33.563083!4d-70.5820489!16s%2Fg%2F1tc_s6jp!19sChIJT_avO9PQYpYRO00RBoUaDqw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Nina - Av. Diego Portales 264, 8301597 La Florida, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–2 p.m., 3:15–6 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Richard David Meneses Vergara",
+          "texto": "Buena ferretería encuentras todo lo necesario para arreglos del hogar y también si necesitas mesclas puedes comprar por kilos. Etc",
+          "estrellas": 5
+        },
+        {
+          "nombre": "angelica maria rivera perez",
+          "texto": "Es la mejor ferretería del barrio, tienen de todo y además te orientan en las soluciones. Además es mucho más barata que el retail.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cindy Lopez",
+          "texto": "Excelente servicio, siempre con la mejor amabilidad para atender. Y lo mejor que te dan opciones en tu compra. Confío 100% en sus productos, calidad y precio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sebastian Elizondo",
+          "texto": "Andaba haciendo una pega x el sector y esta fue la ultima ferreteria de todas mis opciones(distancia) y termino siendo la unica que tenia lo que buscaba",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria 2 Transversal",
+      "reseñas": "341",
+      "rating": "4.6",
+      "telefono": "+56227465552",
+      "whatsapp": "https://wa.me/56227465552",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+2+Transversal/data=!4m7!3m6!1s0x9662c3370ac41ffd:0x771ad17efb5dad5a!8m2!3d-33.4946343!4d-70.7438634!16s%2Fg%2F1thxxdxk!19sChIJ_R_ECjfDYpYRWq1d-37RGnc?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria 2 Transversal - Av. Segunda Transversal 3612, 9293035 Maipú, Región Metropolitana, Chile",
+      "categoria": "Tienda de materiales para la construcción",
+      "horarios": "lun a vie 9 a.m.–2:30 p.m., 3:30–7:30 p.m. · sáb 9 a.m.–6 p.m. · dom 9 a.m.–2:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "martin Parraguez",
+          "texto": "Encontre de todo, excelente atencion, y muy barato. muy recomendad, personalmente. mi opcion segura.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisol Elizabeth",
+          "texto": "Tienen siempre de todo. Y excelente atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis Guillermo Guti",
+          "texto": "Tienen de todo y barato. Siempre encuentro lo que necesito. 100% recomendable. Felicitaciones.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Christian Pedrero",
+          "texto": "Siempre uno encuentra de todo y es barato y muy surtido. Y precios buenos y excelente atención.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Catiel",
+      "reseñas": "325",
+      "rating": "4.6",
+      "telefono": "+56228803181",
+      "whatsapp": "https://wa.me/56228803181",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Catiel/data=!4m7!3m6!1s0x9662d0c790a09311:0xa73a043430b5e532!8m2!3d-33.5538843!4d-70.596732!16s%2Fg%2F11bwclxh29!19sChIJEZOgkMfQYpYRMuW1MDQEOqc?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Catiel - Av. San José de la Estrella 842, 8300666 La Florida, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–2 p.m., 3–6 p.m. · sáb 9 a.m.–5 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Jose Luis Muñoz",
+          "texto": "Muy buena atención y hay de todo.... 100% recomendable....",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucas Sandoval “Foryix”",
+          "texto": "Buen local surtido y precios normal los productos son de calidad y la atención de calidad y respetuoso y amables",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Angelo Toro",
+          "texto": "Buena atención, gran variedad de productos, casi siempre hay lo que uno busca, voy ahí a la segura. Recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natalia Peña Jimenez",
+          "texto": "Encontré mucho de lo que necesitaba y con buenos precios, buena atencion",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "La Casa del Gásfiter",
+      "reseñas": "300",
+      "rating": "4.5",
+      "telefono": "+56226338613",
+      "whatsapp": "https://wa.me/56226338613",
+      "link_maps": "https://www.google.com/maps/place/La+Casa+del+G%C3%A1sfiter/data=!4m7!3m6!1s0x9662c5a0487422c3:0x7c4bb6c7553bed41!8m2!3d-33.4432828!4d-70.6470697!16s%2Fg%2F11d_bgb64b!19sChIJwyJ0SKDFYpYRQe07Vce2S3w?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "La Casa del Gásfiter - San Francisco 6, 8330085 Santiago, Región Metropolitana, Chile",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 9:30 a.m.–6 p.m. · sáb 9:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "JOSE CERENDERO",
+          "texto": "Muy bueno, llevo más de 20 años comprando ahí y siempre tienen los repuestos y si no los tienen te indican en que local lo puedes encontrar. Excelente!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cami V",
+          "texto": "Arreglaron en un dia el calefont en mi domicilio, antes de encontrarlos estuve dos meses con agua helada y me estafaron tres personas. Agradezco mucho su…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Haydee Talavera",
+          "texto": "Divino lugar, buena atención, rápidos y muy profesionales. Volveré cada vez que necesite algo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Max Santos",
+          "texto": "Excelente disposición de la atención en el mesón, siempre dispuestos a ayudar y orientar para una compra bien realizada",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Marina",
+      "reseñas": "299",
+      "rating": "4.5",
+      "telefono": "+56974510318",
+      "whatsapp": "https://wa.me/56974510318",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Marina/data=!4m7!3m6!1s0x9662cfddeb25282b:0x487d5650f72733b2!8m2!3d-33.4737869!4d-70.596689!16s%2Fg%2F11fx8g77k0!19sChIJKygl693PYpYRsjMn91BWfUg?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Marina - Av. Rodrigo de Araya 3375, 7810033 Macul, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–7 p.m. · sáb 9:30 a.m.–4 p.m. · dom 10:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Leandro Montaño",
+          "texto": "Hay de todo, bien surtido, buena atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "*_",
+          "texto": "La verdad solo compre una cosa, y no me sirvió, pero weno ese es mi problema no el de ellos, un buen local, con buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Félix Riquelme",
+          "texto": "Para mi, excelente local, porque: (1) está abierto los fines de semana, (2) tiene un gran surtido de materiales, y (3) cierra tarde los días semana. El único…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis Eduardo Millanao Martinez",
+          "texto": "Muy buena atención y buenos precios! Fueron super rápidos para atender ya que uno siempre anda apurado, tienen de todo!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Manuel Montt",
+      "reseñas": "278",
+      "rating": "4.5",
+      "telefono": "+56227624484",
+      "whatsapp": "https://wa.me/56227624484",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Manuel+Montt/data=!4m7!3m6!1s0x9662cf78ad8c6cd7:0xa6a0c5a5b3b500cd!8m2!3d-33.4395772!4d-70.6153854!16s%2Fg%2F1tdl7b9m!19sChIJ12yMrXjPYpYRzQC1s6XFoKY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Manuel Montt - Manuel Montt 1284, 7501059 Providencia, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–6:30 p.m. · sáb 8:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Diego Daroch",
+          "texto": "Es muy buena. Siempre encuentro lo que necesito: uniones de tubos, brocas, tornillos especiales, sierras... Tienen más soluciones de ferretería que el Easy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "KATERINE RIVERA",
+          "texto": "Hoy fui con la simple intención de recortar un cuadro y, en realidad, solo necesitaba conseguir una herramienta para hacerlo. Sin embargo, la experiencia fue…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Silva R.",
+          "texto": "El vecino tiene de todo !!! Y si no lo tiene el lo trae en un par de días ... Es muy amable y rápido en la atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristian Vicuna",
+          "texto": "Excelente atención, a pesar de no tener uno de los productos que buscaba, el encargado me indicó el lugar más cercano para encontrarlo, ¡BRAVO!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria Llocasti",
+      "reseñas": "232",
+      "rating": "4.7",
+      "telefono": "+56972084945",
+      "whatsapp": "https://wa.me/56972084945",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+Llocasti/data=!4m7!3m6!1s0x9662d1b95c58a1a5:0x353edc017fb78b93!8m2!3d-33.54571!4d-70.58237!16s%2Fg%2F11h6qnqp5_!19sChIJpaFYXLnRYpYRk4u3fwHcPjU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria Llocasti - Perú 9722, 8300467 La Florida, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–7:30 p.m. · sáb 10 a.m.–7 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Sady Maureria Bulnes",
+          "texto": "En esta ferretería encuentras todo y lo mejor es la atención de sus dueños, quienes te buscan la mejor atención y alternativa para tu compra. Precios…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Italo",
+          "texto": "Siempre buena atención, buenos precios y siempre tiene de todo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "felix medina",
+          "texto": "Muy buena atención, buscaba unas piezas específicas para un sifón , y me ayudaron a armarlo con varias piezas, algo que en otras ferreterías no lo hacen.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "matias aguilar",
+          "texto": "Buen lugar para encontrar productos a precios convenientes. Atención buenisima",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "FERRETERIA EL HUGO",
+      "reseñas": "227",
+      "rating": "4.1",
+      "telefono": "+56228859588",
+      "whatsapp": "https://wa.me/56228859588",
+      "link_maps": "https://www.google.com/maps/place/FERRETERIA+EL+HUGO/data=!4m7!3m6!1s0x9662c320f44fdb23:0x4407f9f5a973c4d7!8m2!3d-33.4883279!4d-70.7627936!16s%2Fg%2F11cnb3b9hx!19sChIJI9tP9CDDYpYR18RzqfX5B0Q?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "FERRETERIA EL HUGO - Av. Pdte. Jorge Alessandri Rodríguez 442, 9300807 Maipú, Región Metropolitana, Chile",
+      "categoria": "Tienda de artículos para el hogar",
+      "horarios": "lun a vie 9 a.m.–6:30 p.m. · sáb a dom 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Daniel Hernández",
+          "texto": "Recomiendo esta ferretería, dado que hay de todo, además las orientaciones técnicas cuando tienes dudas de cómo realizar un trabajo son totalmente didácticas y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Viviana Lagos lopez",
+          "texto": "Excelente atencion y cooperacion con lo que yo necesitaba ,comprar Ademas precios mas baratos que otros lugares!! Gracias!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ruben Enrique Marcano Hernandez",
+          "texto": "Excelente atencion, tienen de todo y a muy buen precio. Gracias por atenderme.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dalia Mella",
+          "texto": "La ferretería está muy bien surtida y tiene una gran variedad de productos. Lamentablemente, la atención del dueño fue muy poco amable. Presencié cómo…",
+          "estrellas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería lo Gallo",
+      "reseñas": "220",
+      "rating": "4.6",
+      "telefono": "+56222433256",
+      "whatsapp": "https://wa.me/56222433256",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+lo+Gallo/data=!4m7!3m6!1s0x9662c9358311c49f:0xd3ab1493209cf6bf!8m2!3d-33.383348!4d-70.5508609!16s%2Fg%2F1tfkrzvf!19sChIJn8QRgzXJYpYRv_acIJMUq9M?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería lo Gallo - Av Vitacura 8946, 7640320 Vitacura, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "fetucho",
+          "texto": "Maxima calidad de atencion. Tienen prácticamente de todo o sino lo consiguen y lo despachan. Son rápidos y te facturan de inmediato con la maquinita que cobran…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Rodriguez",
+          "texto": "Es una ferretería que siempre tiene de todo lo que buscas lo encuentras y la atención es de otro nivel la gente muy amable y con ganas de ayudarte 100%…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Osorio",
+          "texto": "Buena atención bastante variedad 10/10",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Dr Gasfiter",
+          "texto": "Buen lugar, buenos precios, he ido un par de veces y he encontrado lo que he buscado, muy buena la atención",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Calefónista & Gasfiteria.",
+      "reseñas": "213",
+      "rating": "5.0",
+      "telefono": "+56965604481",
+      "whatsapp": "https://wa.me/56965604481",
+      "link_maps": "https://www.google.com/maps/place/Calef%C3%B3nista+%26+Gasfiteria./data=!4m7!3m6!1s0x9662dbadd1e34157:0x44d29aa8108b5576!8m2!3d-33.5723936!4d-70.6842022!16s%2Fg%2F11ftw9k4fw!19sChIJV0Hj0a3bYpYRdlWLEKia0kQ?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Calefónista & Gasfiteria. - Los Membrillos 12614, 8010698 El Bosque, Región Metropolitana, Chile",
+      "categoria": "Fontanero",
+      "horarios": "lun a vie 10:30 a.m.–6:30 p.m. · sáb 10:30 a.m.–3 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Felipe G.",
+          "texto": "Después de contactar a decenas de gásfiter, fue el único que desde el principio detectó el problema. Se hizo el tiempo para el día siguiente y reparó todo en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ruben Sanhueza",
+          "texto": "Excelente servicio. Un trabajo impecable en el hogar al identificar la fuga de agua, y de igual manera el arreglo. Muy buen trato, simpáticos y honestos en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yessi",
+          "texto": "Quiero recomendar totalmente el trabajo realizado. Fue muy profesional, responsable y de excelente calidad. Además, tuvo muy buena disposición para explicarme…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Stephanie Urzua",
+          "texto": "La verdad, llegué a Williams por recomendación y me compartieron este link para conocer su trabajo. La experiencia fue excelente. Le escribí un lunes por la…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Araucaria (MMR spa)",
+      "reseñas": "209",
+      "rating": "4.5",
+      "telefono": "+56222384476",
+      "whatsapp": "https://wa.me/56222384476",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Araucaria+%28MMR+spa%29/data=!4m7!3m6!1s0x9662cfe71dba0c45:0xe04f4902fa083013!8m2!3d-33.4793922!4d-70.6043094!16s%2Fg%2F1tfpwgvv!19sChIJRQy6HefPYpYREzAI-gJJT-A?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Araucaria (MMR spa) - Los Olmos 2701, 7810658 Macul, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–6 p.m. · sáb 10:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Sofía Borje",
+          "texto": "Excelente atención, muy amable y tenían venta de al por menor de productos. Se puede estacionar por la calle",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Christopher Amesty Perez",
+          "texto": "Super buena atención, el caballero en todo momento me brindó ayuda para poder seleccionar los insumos necesarios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Munrra Leonardo Gonzalez",
+          "texto": "Está buena, pequeña pero tiene de todo o casi, la verdad había pasado mil veces por ese lugar y jamás pensé q existiría una ferre en esta zona semi industrial",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Anyelina Andrea Herrera Sepúlveda",
+          "texto": "Muy buena atención, excelente los que atienden, siempre tienen buena disposición y se agradece ☺️",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Benaval",
+      "reseñas": "189",
+      "rating": "4.0",
+      "telefono": "+56229862696",
+      "whatsapp": "https://wa.me/56229862696",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Benaval/data=!4m7!3m6!1s0x9662d7443f22167b:0x8c2070646862fcc1!8m2!3d-33.5825525!4d-70.6049033!16s%2Fg%2F11bzsdt9sz!19sChIJexYiP0TXYpYRwfxiaGRwIIw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Benaval - Av. Gabriela Pte. 1948, parad.31, 8150215 Puente Alto, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a mar 9 a.m.–6:30 p.m. · mié a sáb 8 a.m.–6:30 p.m. · dom 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Fernando Hernandez",
+          "texto": "Buena Ferretería tienen muchas cosas , algunos precios son un poco elevado , buena atencion y disposición hacia el cliente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernanda",
+          "texto": "Me atendieron muy bien y amablemente me hicieron una cotización. Los perritos le daban el toque de ternura jajajjajs También me llevaron las cosas al auto…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alexander Beast",
+          "texto": "El chico que atiende no entiende cuando uno le pide algo, hoy le pedí algo y me explico algo que nada que ver con lo que pedí, no solo no me prestó atención a…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Felipe Bizarre",
+          "texto": "La verdad? Tuve una mala experiencia con este local hoy sábado 15 feb 2020, mí hermano fue a comprar una llave de vanitorio y le estaban pasando una más barata…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria F M Limitada",
+      "reseñas": "188",
+      "rating": "4.4",
+      "telefono": "+56922255846",
+      "whatsapp": "https://wa.me/56922255846",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+F+M+Limitada/data=!4m7!3m6!1s0x9662c23015fedc01:0x8f93d7491b3b69c8!8m2!3d-33.4345308!4d-70.7748213!16s%2Fg%2F11f1pgzkwj!19sChIJAdz-FTDCYpYRyGk7G0nXk48?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria F M Limitada - María Angélica 9609, Santiago, Pudahuel, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–2 p.m., 3:30–6:30 p.m. · sáb 9:30 a.m.–1:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Castro",
+          "texto": "Mucha variedad de productos, el personal un 7, com mucha paciencia atendiendo a los clientes que llegan preguntando por el coso del cosito",
+          "estrellas": 5
+        },
+        {
+          "nombre": "polita Pacheco",
+          "texto": "Excelente atención y encuentra de todo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Francisco Masman",
+          "texto": "Buenos precios tienen de todo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "karl brian alvizu torres",
+          "texto": "Excelente trato y buena atención mucha variedad",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Home Alvarado (Ferretería Alvarado)",
+      "reseñas": "184",
+      "rating": "4.2",
+      "telefono": "+56948523110",
+      "whatsapp": "https://wa.me/56948523110",
+      "link_maps": "https://www.google.com/maps/place/Home+Alvarado+%28Ferreter%C3%ADa+Alvarado%29/data=!4m7!3m6!1s0x9662c44f4d50eb21:0x7c5f8de16449768a!8m2!3d-33.4343752!4d-70.6799733!16s%2Fg%2F1tc_gg5s!19sChIJIetQTU_EYpYRinZJZOGNX3w?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Home Alvarado (Ferretería Alvarado) - Juan Martínez de Rozas 3261, 8350221 Santiago, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–6 p.m. · sáb 9:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Sergio solís",
+          "texto": "Hay de todo para la construcción y atienden muy bien",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Angelica Maulen",
+          "texto": "Excelente atencion muy buena calidad de productos ademas mucha variedad de estos respuestas rapidas en cotizacion felicitaciones",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Duran",
+          "texto": "Si usted quiere ser atendido este es el lugar indicado . Bien surtido . Buenos precios y la gente super super amable un 10 de 10",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Almendra Brizuela",
+          "texto": "Fuimos buscando alternativas para no acudir a los caros precios del retail y encontramos este lugar. Tiene todo en exhibición, precios marcados, lo agotado…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Siempre Stock",
+      "reseñas": "175",
+      "rating": "4.1",
+      "telefono": "+56228931284",
+      "whatsapp": "https://wa.me/56228931284",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Siempre+Stock/data=!4m7!3m6!1s0x9662d7eb6b5c7d11:0xa67b5bde59e8d803!8m2!3d-33.5973741!4d-70.5946514!16s%2Fg%2F11fkq2q36v!19sChIJEX1ca-vXYpYRA9joWd5be6Y?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Siempre Stock - Av. Ejército Libertador 1657, 8150215 Puente Alto, Región Metropolitana, Chile",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a sáb 9 a.m.–2 p.m., 3–6 p.m. · dom 10 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Roberto Gómez Salinas",
+          "texto": "Los productos que ofrecen son de muy buena calidad a precios razonables sumado a una muy buena orientación y que no te quieren vender algo más que lo que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andres Gallardo Espinoza",
+          "texto": "Buena variedad de articulos. Buena atencion.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lucas Astorga",
+          "texto": "Buena atención y literal como dice su nombre “Siempre stock”, siempre termino pillando lo que busco.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andres Omar Sepúlveda carrasco",
+          "texto": "Muy mala experiencis , a pesar de que he comprado en otras oportunidades y no he tenido problemas . Hoy fui a comprar números de bronce para el frontis de mi…",
+          "estrellas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Barraca de Fierros Bustos y Muñoz LTDA",
+      "reseñas": "161",
+      "rating": "4.5",
+      "telefono": "+56223188875",
+      "whatsapp": "https://wa.me/56223188875",
+      "link_maps": "https://www.google.com/maps/place/Barraca+de+Fierros+Bustos+y+Mu%C3%B1oz+LTDA/data=!4m7!3m6!1s0x9662ce2cb7805d69:0xaad000ac41bf1db6!8m2!3d-33.4700186!4d-70.5733851!16s%2Fg%2F1w8wc70g!19sChIJaV2AtyzOYpYRth2_QawA0Ko?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Barraca de Fierros Bustos y Muñoz LTDA - Av. Grecia 5961, 7750000 Santiago, Peñalolén, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–5 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "paulina morales baier",
+          "texto": "Espectacular atención y variedad de productos a buen precio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Carlos Toledo Fuentes",
+          "texto": "Muy buen stock y muy variados en las dimensiones",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan pablo La Torre “J.P”",
+          "texto": "Muy buen lugar para comprar rápido y barato, por años he sido atendido de la misma forma, con amabilidad y respeto. Excelentes personas, con disponibilidad…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "TOMAS RODRIGUEZ MOLLO",
+          "texto": "Buena atención, el personal es muy atento y dispuestos a asesorarte en tus requerimientos",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria San Sebastián",
+      "reseñas": "125",
+      "rating": "4.4",
+      "telefono": "+56222841775",
+      "whatsapp": "https://wa.me/56222841775",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+San+Sebasti%C3%A1n/data=!4m7!3m6!1s0x9662d1b2f52b23e7:0x1cb6a227b8c00102!8m2!3d-33.5070588!4d-70.5712947!16s%2Fg%2F1tdlwgxz!19sChIJ5yMr9bLRYpYRAgHAuCeithw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria San Sebastián - San Luis de Macúl 5984, 7930650 Peñalolén, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–1:30 p.m., 3:30–7 p.m. · sáb 9 a.m.–3 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Elena Alcayaga",
+          "texto": "Excelente atención, rápida y confiable. Al entrar se ve que tienen variedad de productos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "freddy cabezas",
+          "texto": "Excelente atención, variedad de productos y con marcas de prestigio mundial",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Eladio Jimenez",
+          "texto": "Tienen de todo, la atención es buena y rapida",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sergio Ramirez",
+          "texto": "Es una ferretería de esas que no quedan porque el dueño siempre te atiende con mucha alegría y te pregunta de todo y tiene muchas cosas siendo un frente chico…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Galvarino",
+      "reseñas": "117",
+      "rating": "4.6",
+      "telefono": "+56932276375",
+      "whatsapp": "https://wa.me/56932276375",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Galvarino/data=!4m7!3m6!1s0x9662ddb46e9b34d1:0x6a06c80ef4ca4639!8m2!3d-33.5395634!4d-70.7870945!16s%2Fg%2F11jb97_zwq!19sChIJ0TSbbrTdYpYROUbK9A7IBmo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Galvarino - Pdte. José Manuel Balmaceda 2636, 9273187 Maipú, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–5 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Marck Ale",
+          "texto": "Tienen precios competentes, tienen de todo y atienden muy bien.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Antonio Ramirez mendez",
+          "texto": "Muy buena atención muchas variedades y muy buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "gerard elgueta",
+          "texto": "Buena atención, rapidez y atienden el teléfono dentro de lo posible",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Carlitos",
+          "texto": "Excelente lugar para comprar, tienen mucha variedad de productos y la atención siempre es muy grata. Recomendado 100%.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasfiteria SECGAS",
+      "reseñas": "109",
+      "rating": "4.8",
+      "telefono": "+56990200270",
+      "whatsapp": "https://wa.me/56990200270",
+      "link_maps": "https://www.google.com/maps/place/Gasfiteria+SECGAS/data=!4m7!3m6!1s0x9662dd3bd6a46c85:0x8e30a66136d7b1ce!8m2!3d-33.5105866!4d-70.7572607!16s%2Fg%2F11k9p04d3n!19sChIJhWyk1jvdYpYRzrHXNmGmMI4?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Maipú, Región Metropolitana, Chile",
+      "categoria": "Tienda de artículos para el hogar",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Ibrahim Chaaban Medina",
+          "texto": "Excelente atención, llegó puntualmente, hizo un trabajo prolijo y fue clara con la información entregada. Muy contento con el servicio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcela Cubillos",
+          "texto": "Excelente servicio de Patricia, rápido y efectivo. Quedó todo revisado y funcionando perfectamente. Muy recomendado.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Katherine Hernandez",
+          "texto": "Servicio profesional, sus técnicos son certificados puedes ver sus credenciales en la SEC, además quienes han venido a nuestro domicilio son muy educados y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marisol Morales",
+          "texto": "Excelente atención de primera calidad Rápidos y muy cuidadosa la técnico profesional y los precios muy buenos accesibles para todos los recomiendo a todos mis…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria",
+      "reseñas": "91",
+      "rating": "4.7",
+      "telefono": "+56961188502",
+      "whatsapp": "https://wa.me/56961188502",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria/data=!4m7!3m6!1s0x9662d90a2925da67:0x12d2a3ababec723c!8m2!3d-33.6051585!4d-70.6716148!16s%2Fg%2F11c3v6_rjs!19sChIJZ9olKQrZYpYRPHLsq6uj0hI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria - La Divina Providencia 1760, 1000882 San Bernardo, Región Metropolitana, Chile",
+      "categoria": "Tienda de materiales para la construcción",
+      "horarios": "lun a sáb 9 a.m.–8 p.m. · dom 10 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Belen davila",
+          "texto": "Super bueno te atienden super rapido y muy amables",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandra Ortega",
+          "texto": "Buenos precios y la atención es excelente 🫰🏻",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricio Sepulveda",
+          "texto": "Excelente atención, tienen de todo, buenos precios, muy amables para explicar y atender.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge Villagrán Suárez",
+          "texto": "Negocio con gran variedad de productos, precios razonables. Recomendaciones. Horario de almuerzo 14:00 - 15:30. Horario de cierre 20:00 horas.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Las Naciones",
+      "reseñas": "80",
+      "rating": "4.3",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Las+Naciones/data=!4m7!3m6!1s0x9662c32b51f3f3b5:0x3371ee4eb8c3fa2!8m2!3d-33.5055741!4d-70.7831036!16s%2Fg%2F11hzn4lv4b!19sChIJtfPzUSvDYpYRoj-M6-QeNwM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Las Naciones - Las Naciones 2453, Maipú, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–1 p.m., 2–7 p.m. · sáb 10 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Gonzalo Vallejos",
+          "texto": "Tienen variedad de productos ferreteros, lo q he necesitado lo he encontrado ahí. Precios normales dentro del rubro... Recomiendo",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Facundo Tacacho",
+          "texto": "Buena atención y precios, única queja que el vendedor estaba celebrando la victoria del presidente maduro, muy chavistas en esa ferreteria.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "juan herrera",
+          "texto": "Buen surtido y atención expedita.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "ANGELICA ESCANILLA",
+          "texto": "Buena Ferreteria, mucha variedad de productos, atención rápida, mejoraría los sistemas de pago tienen solo redcompra y efectivo, no reciben transferencia ni…",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Kalani (La Vara)",
+      "reseñas": "78",
+      "rating": "4.3",
+      "telefono": "+56722693480",
+      "whatsapp": "https://wa.me/56722693480",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Kalani+%28La+Vara%29/data=!4m7!3m6!1s0x9662dbec23910605:0x611e54afdcc32d9d!8m2!3d-33.5665569!4d-70.7008482!16s%2Fg%2F11c1717bhg!19sChIJBQaRI-zbYpYRnS3D3K9UHmE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Kalani (La Vara) - Cam. La Vara 2215, San Bernardo, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–6:30 p.m. · sáb 9 a.m.–5 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "francisco espinoza",
+          "texto": "Excelente atención y encuentras lo que necesites",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cristian Rivas Armijo",
+          "texto": "Excelente experiencia en la compra que realice, la persona que me atendió fue muy amable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Luis Larrain Contreras",
+          "texto": "Muy surtida, ahí puedo encontrar de todo y a buen precio, hay otras ferreterías en el sector pero son para preguntas y respuestas. Observé encontrar productos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "hector gonzalez",
+          "texto": "Muy buena atención y los trabajadores conocen bien los productos y te ayudan si tienes dudas",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "clima fresh maipu",
+      "reseñas": "73",
+      "rating": "4.9",
+      "telefono": "+56927475005",
+      "whatsapp": "https://wa.me/56927475005",
+      "link_maps": "https://www.google.com/maps/place/clima+fresh+maipu/data=!4m7!3m6!1s0x9662dd0033068299:0x6de66e035a5e0ea8!8m2!3d-33.5048066!4d-70.794894!16s%2Fg%2F11y9tdff9m!19sChIJmYIGMwDdYpYRqA5eWgNu5m0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "clima fresh maipu - Williams Rebolledo Duran 2668, 9274388 Maipú, Región Metropolitana, Chile",
+      "categoria": "Servicio de reparación de aire acondicionado",
+      "horarios": "lun a vie 9:30 a.m.–6:30 p.m. · sáb 9:30 a.m.–4 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudio Rodrigo Lobos Ortiz",
+          "texto": "Excelente Servicio de instalación y soporte técnico. Muy bien explicado todos los detalles a considerar en la implementación de un equipo de Aire…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fuser Informática",
+          "texto": "Felicito a Manuel por su trabajo muy profesional y detallista. Me instaló Aire acondicionado mejor de como esperaba. Todo trasparente y responsable. Muy…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Khalil Joel",
+          "texto": "Me contacto para solicitar la instalación de un equipo, a lo que me ofrece la opción de la marca Clark (12mil BTU Inverter con wifi) la mejor opción en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Felipe Leiton Nuñez",
+          "texto": "Muy profesional Manuel, Adrian y Diego. Súper bueno el trabajo que realizaron en mi domicilio. Preocupados de los detalles, terminaciones y funcionamiento…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería",
+      "reseñas": "73",
+      "rating": "4.7",
+      "telefono": "+56229804178",
+      "whatsapp": "https://wa.me/56229804178",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa/data=!4m7!3m6!1s0x9662dd0122ca85cd:0x7310bec263ba8e32!8m2!3d-33.5477315!4d-70.7687991!16s%2Fg%2F11bx8h1wkq!19sChIJzYXKIgHdYpYRMo66Y8K-EHM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería - 4 Poniente 1010, 9280407 Maipú, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–2 p.m., 3–6:30 p.m. · sáb 9:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Rena Azul",
+          "texto": "Muy buena Ferré...arriendan escala telescopica?",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Aldo Morales A.",
+          "texto": "excelente ferreteria, una de las mas completas de la villa,. Es atendida por sus dueños de una excelente manera. Ofrece despacho a domicilio de sus productos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Richard piñones",
+          "texto": "Excelente la atención ...tiene de todo, los fletes son baratísimos y la gente tiene muy buena disposición totalmente recomendable un 7 para esta ferretería…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Teresa Salgado",
+          "texto": "Excelente atención, e información de los productos, recomendable 100%",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "La economica",
+      "reseñas": "72",
+      "rating": "4.5",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/La+economica/data=!4m7!3m6!1s0x9662dd2508fdd501:0x1aa644ba9c3168ea!8m2!3d-33.5215577!4d-70.7735124!16s%2Fg%2F1tkp65dv!19sChIJAdX9CCXdYpYR6mgxnLpEpho?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "La economica - Av. Sur 1236, 9274931 Maipú, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–2:30 p.m., 4–6:30 p.m. · sáb 9:30 a.m.–5 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Cristian Rojas",
+          "texto": "Buenos precios, me dijieron que pueden traer cosas por encargo...",
+          "estrellas": 5
+        },
+        {
+          "nombre": "daniela a.",
+          "texto": "Excelente ferreteria, precios economicos y muy buena atencion",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Oscar Michell L.",
+          "texto": "Buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rene",
+          "texto": "Surtido y buenos precios, mejor la atención del personal.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria Nogales",
+      "reseñas": "63",
+      "rating": "4.9",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+Nogales/data=!4m7!3m6!1s0x9662d106b3d077e3:0x3d973a84986dee6b!8m2!3d-33.5279249!4d-70.5623801!16s%2Fg%2F11t698v57w!19sChIJ43fQswbRYpYRa-5tmIQ6lz0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria Nogales - Los Nogales 3190, 8240000 La Florida, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a dom 9:30 a.m.–6 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Lorena Cortes",
+          "texto": "Muy buena atención, precios excelentes, precio calidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Erica Becar Deltransito",
+          "texto": "Muy recomendado, siempre salvando los domingos cuando nadie tiene abierto.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Valeska Andrea Aqueveque Curinao",
+          "texto": "Muy buena atención, siempre encuentro lo q necesito",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Badilla",
+          "texto": "Excelente atencion y gran variedad de productos a precios razonables",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria San Enrique",
+      "reseñas": "60",
+      "rating": "4.5",
+      "telefono": "+56227041796",
+      "whatsapp": "https://wa.me/56227041796",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+San+Enrique/data=!4m7!3m6!1s0x9662df27e57857ad:0x23ba358697a3d77!8m2!3d-33.6689418!4d-70.7458807!16s%2Fg%2F11fhrcvhhj!19sChIJrVd45SffYpYRdz16aVijOwI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria San Enrique - Eliodoro Yañez 105, 8577077 947367471, San Bernardo, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–2 p.m., 3–7 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Gregorio Rodríguez",
+          "texto": "Ferretería San Enrique (Olea y Olea Compañía Limitada) tiene un amplio surtido de mercancía y productos necesarios para la construcción, remodelación y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Samuel Aros",
+          "texto": "Super buena atención y precios bajos muy recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cercos Escudero",
+          "texto": "Personal muy agradable y simpático Los valores un poco altos, pero tomando en cuenta la emergencia es lo había",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudio Martinez Morales",
+          "texto": "Excelente atencion, y variedades de cosas que cubren las necesidades del cliente",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria Esteban",
+      "reseñas": "57",
+      "rating": "4.1",
+      "telefono": "+56225340536",
+      "whatsapp": "https://wa.me/56225340536",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+Esteban/data=!4m7!3m6!1s0x9662c2d45f89fb1d:0x91277a65384abb36!8m2!3d-33.5054147!4d-70.7690575!16s%2Fg%2F1trpr_qw!19sChIJHfuJX9TCYpYRNrtKOGV6J5E?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria Esteban - Av. de la Victoria 2310, 9251320 Maipú, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a sáb 9:45 a.m.–6:30 p.m. · dom 10 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "jose gans",
+          "texto": "Tiene de todo y atender bien",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jose Manuel Jara San Martín",
+          "texto": "Precios modicos, atiende el dueño, es una ferreteria de barrio pero tiene gran variedad de cosas, en general muy buena atencion",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Esteban Zuniga",
+          "texto": "Tienen de todo y medio desordenado pero te atienden como reyes",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Graciela Gonzalez Sierpe “Shiky”",
+          "texto": "muy buena la atención sino tienen para pagar con tarjeta y por suerte llevaba un poco de efectivo",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Agua Vida",
+      "reseñas": "55",
+      "rating": "4.3",
+      "telefono": "+56994420208",
+      "whatsapp": "https://wa.me/56994420208",
+      "link_maps": "https://www.google.com/maps/place/Grupo+Agua+Vida/data=!4m7!3m6!1s0x9662c4dbb8444dc3:0xa1d135fa4fc47204!8m2!3d-33.4792992!4d-70.6768615!16s%2Fg%2F11f01vhd1f!19sChIJw01EuNvEYpYRBHLET_o10aE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Grupo Agua Vida - Valenzuela Llanos 3119, 8480031 Pedro Aguirre Cerda, Región Metropolitana, Chile",
+      "categoria": "Fontanero",
+      "horarios": "lun a sáb 8 a.m.–9 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Joan Tapia",
+          "texto": "la mejor agua del mundo y chile si los aliens la conocieran conquistarian el planeta para llevarse esta maravillosa agua la mejor de todas",
+          "estrellas": 5
+        },
+        {
+          "nombre": "yeni yáñez",
+          "texto": "La mejor agua que e consumido a un precio conveniente., los envases vienen limpios y no me encontrado con sorpresas como me a pasado en otras distribuidoras",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joan Tapia",
+          "texto": "Agua Vida pura de verdad",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rossana Bravo Lobos",
+          "texto": "Rápida la atención con hora agendada muy amables",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Villota",
+      "reseñas": "54",
+      "rating": "4.6",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Villota/data=!4m7!3m6!1s0x9662d6d79c528ec5:0x59d2627b13616c6d!8m2!3d-33.5720885!4d-70.5714496!16s%2Fg%2F1tgdps0w!19sChIJxY5SnNfWYpYRbWxhE3ti0lk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Villota - Av. El Peral 1006, parad.28, 8221215 Puente Alto, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a sáb 9:30 a.m.–6 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "sergio antonio donoso olea",
+          "texto": "Excelente como las ferreterías antiguas atendida por su dueña nada que envidiarle al sodimac",
+          "estrellas": 5
+        },
+        {
+          "nombre": "andrea alejandra bravo beristain",
+          "texto": "Excelente atención, tiene de todo y mucho más barato que las tiendas grandes.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Martinez",
+          "texto": "Atención esmerada por sus propios dueños. Variedad de productos, precios módicos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Gajardo",
+          "texto": "Muy buena atención,una ferretería muy bien ordenada y limpia",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Multifitting",
+      "reseñas": "51",
+      "rating": "4.9",
+      "telefono": "+56936211648",
+      "whatsapp": "https://wa.me/56936211648",
+      "link_maps": "https://www.google.com/maps/place/Multifitting/data=!4m7!3m6!1s0x9662c51a5116e9c9:0x19ec16b6a7c2040d!8m2!3d-33.4450448!4d-70.6781287!16s%2Fg%2F11jmydss1x!19sChIJyekWURrFYpYRDQTCp7YW7Bk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Multifitting - Moneda 3176, 8350746 Santiago, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–5 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Ronald Reyes",
+          "texto": "Muy amables atienden muy bien precios justos",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Castro Vasquez",
+          "texto": "Un lugar espectacular para quienes buscan bombas, fittings y todo tipo de soluciones afines. Tienen una variedad impresionante, donde siempre encuentro…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Lenny Alejandra",
+          "texto": "Te atienden Excelente y muy comunicativos para ayudarte a elegir la mejor opción, totalmente recomendable este local,",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Esteban Efrain",
+          "texto": "Buena atención...simpática la señora...bien informada del producto que vendia. Compré una soldadora Hyundai...ha funcionado impecable.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "El Arbolito",
+      "reseñas": "51",
+      "rating": "4.5",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/El+Arbolito/data=!4m7!3m6!1s0x9662ce293c8799f9:0xb9535e26afd34a8a!8m2!3d-33.4709285!4d-70.5659833!16s%2Fg%2F1td_cwz_!19sChIJ-ZmHPCnOYpYRikrTryZeU7k?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "El Arbolito - Av. Grecia 6536, 7911004 Peñalolén, Región Metropolitana, Chile",
+      "categoria": "Tienda de materiales para la construcción",
+      "horarios": "lun a vie 9 a.m.–5 p.m. · sáb 9 a.m.–3 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Alejandro Estay",
+          "texto": "Llegué a El Arbolito buscando madera que no estuviera curvada o virada, y no me equivoqué. Es una empresa familiar que vende bajos volúmenes. Hay una pequeña…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Saavedra",
+          "texto": "Tenían lo que necesitaba, atención rápida y buena, recomendada",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina Carolina",
+          "texto": "Excelente servicio, cuenta con estacionamiento y rápida atención.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuel Flores Folch",
+          "texto": "Tiene de todo lo básico para los requerimientos de arreglos, maderas, tornillos, etc",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "FerreLink",
+      "reseñas": "47",
+      "rating": "4.3",
+      "telefono": "+56223146802",
+      "whatsapp": "https://wa.me/56223146802",
+      "link_maps": "https://www.google.com/maps/place/FerreLink/data=!4m7!3m6!1s0x9662d7429afe1613:0xc3e8ddf02124371a!8m2!3d-33.5853611!4d-70.5678743!16s%2Fg%2F11h3g3rhqk!19sChIJExb-mkLXYpYRGjckIfDd6MM?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "FerreLink - Luis Matte Larraín 1024, 8207571 Puente Alto, Región Metropolitana, Chile",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 10 a.m.–2:30 p.m., 3–6:50 p.m. · sáb 10 a.m.–3 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Gregorio Rodríguez",
+          "texto": "Ferre Express es una ferretería que cuenta con un amplio surtido de mercancía y productos necesarios para la construcción, remodelación y decoración del hogar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Marín",
+          "texto": "Buena ferreteria puedes encontrar de casi todo lo que busques, con precio razonables, y las personas que atienden siempre te ayudan con alguna duda u opinión…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Rene Mateluna",
+          "texto": "Un excelente lugar donde encontrar de todo...muy grata atención...",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Constanza Martínez",
+          "texto": "Excelente atención y buenos precios. Recomendado 👌",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Lobarnechea",
+      "reseñas": "42",
+      "rating": "4.3",
+      "telefono": "+56222162521",
+      "whatsapp": "https://wa.me/56222162521",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Lobarnechea/data=!4m7!3m6!1s0x9662cbc1961e1989:0x7d2dd26d1f9ad776!8m2!3d-33.3562088!4d-70.5073089!16s%2Fg%2F1tql5zx2!19sChIJiRkelsHLYpYRdteaH23SLX0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Lobarnechea - Lo Barnechea 1370, 7690228 Lo Barnechea, Región Metropolitana, Chile",
+      "categoria": "Tienda de materiales para la construcción",
+      "horarios": "lun a vie 8:30 a.m.–6 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "cristobal cid gana",
+          "texto": "Muy buenos precios, variedad de productos, limpio y bien atendido",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jose Luis Bucarey Zuñiga",
+          "texto": "Hay de casi todo ,reparan bicicletas venden los repuestos ,antigua ferretería de barrio.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Wiston Abreu",
+          "texto": "Malisima , muy caro , un codo de ppr en 1000 y en otras ferreterias vale 180 , 210 pesos",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Carlos Peirano",
+          "texto": "Tienen cosas de muy mala calidad a precios de oro con diamantes, ejemplo saco de cemento $6640 y en Sodimac $3887 acople rápido para mangueras $4590 radio…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Gasfiter Sotomayor",
+      "reseñas": "39",
+      "rating": "5.0",
+      "telefono": "+56982001623",
+      "whatsapp": "https://wa.me/56982001623",
+      "link_maps": "https://www.google.com/maps/place/Gasfiter+Sotomayor/data=!4m7!3m6!1s0x9662dba1eaa59a6f:0x7a60f493381e9ca2!8m2!3d-33.5609882!4d-70.7075608!16s%2Fg%2F11nvy0znqt!19sChIJb5ql6qHbYpYRopweOJP0YHo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gasfiter Sotomayor - Nicolás Gogol 02951, 8050000 San Bernardo, Región Metropolitana, Chile",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a jue 8 a.m.–8 p.m. · vie 8 a.m.–5 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Ivania Delosangeles",
+          "texto": "Excelente servicio. Muy profesional minucioso lo recomiendo 1000%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Nicolas Andres Ramirez Perez",
+          "texto": "Excelente servicio, y por sobre todo minucioso y puntual, 100% recomendado",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Esteban San Martin",
+          "texto": "Servicio muy profesional, recomendable totalmente, se nota que sabe su trabajo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jaime Roberto Diaz Diaz",
+          "texto": "Excelente servicio, profesional, responsable, honesto. Muy recomendable...",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería la casa",
+      "reseñas": "39",
+      "rating": "4.4",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+la+casa/data=!4m7!3m6!1s0x9662d1ced862d967:0x884c46280659fe0f!8m2!3d-33.4797904!4d-70.5661145!16s%2Fg%2F11rgbn9kwj!19sChIJZ9li2M7RYpYRD_5ZBihGTIg?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería la casa - Caracas 2390, Peñalolén, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun 9 a.m.–2 p.m., 3 p.m.–12 a.m. · mar 12–8:30 a.m., 9 a.m.–2 p.m., 3–8:30 p.m. · mié a jue 9 a.m.–2 p.m., 3–8:30 p.m. · vie 9 a.m.–2 p.m. · sáb 9:30 a.m.–8 p.m. · dom 10 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "carolina saldarriaga fernandez",
+          "texto": "Hola quisiera consultar si realizan servicio de cerrajería a domicilio, para cotizar cuánto cuesta sacar una llave rota dentro de la chapa por favor",
+          "estrellas": 5
+        },
+        {
+          "nombre": "RFE EC",
+          "texto": "Al parecer atiende un matrimonio y la madre de uno de ellos, los 3 son muy educados y simpáticos para atender, la atención es muy buena y los productos si bien…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Alejandro Verdugo",
+          "texto": "Muy buena atención, muy económica en relación a las grandes tiendas especializadas, exelente me encantó.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sandra Meza",
+          "texto": "Buen lugar, atienden muy bien, te ayudan en lo que estás buscando, también es barato así que a comprar a nuestros vecinos que siempre tuvieron muy buena…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Yory Providencia",
+      "reseñas": "33",
+      "rating": "4.5",
+      "telefono": "+56937395334",
+      "whatsapp": "https://wa.me/56937395334",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Yory+Providencia/data=!4m7!3m6!1s0x9662cfa3700d83e5:0xe14d915c5e4148f0!8m2!3d-33.4204691!4d-70.6070819!16s%2Fg%2F11wc5pt915!19sChIJ5YMNcKPPYpYR8EhBXlyRTeE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Yory Providencia - Av. Providencia 2349, 7500000 Providencia, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a jue 9:30 a.m.–6:30 p.m. · vie 9:30 a.m.–6 p.m. · sáb 9:30 a.m.–2 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Mantinred 360",
+          "texto": "Las chichas son muy amables , muy gentil en la atención y aplicadas en el trabajo , aún no podemos pillarlas con alguna herramienta las tienen todas , señora…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jeremias Grez",
+          "texto": "Excelente ferretería, con buena variedad, stock y precios. Nada que decir, ya frecuentemente me salva y ayuda, además de que el personal que atiende es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gonzalo Diaz",
+          "texto": "Excelente atención y muy buenos productos de gran calidad y buenos precios .. y lo mejor la atención 👌",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Garrido",
+          "texto": "Excelente atención. Abastecimiento constante de stock y harta paciencia con algunos clientes...",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Don Juan Gasfitería",
+      "reseñas": "32",
+      "rating": "5.0",
+      "telefono": "+56930855961",
+      "whatsapp": "https://wa.me/56930855961",
+      "link_maps": "https://www.google.com/maps/place/Don+Juan+Gasfiter%C3%ADa/data=!4m7!3m6!1s0x9662cf81284c0a5b:0xfcbd52820e792e37!8m2!3d-33.448097!4d-70.576338!16s%2Fg%2F11s0hj0fwx!19sChIJWwpMKIHPYpYRNy55DoJSvfw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Don Juan Gasfitería - Av. Simón Bolívar 5222, 7790311 Ñuñoa, Región Metropolitana, Chile",
+      "categoria": "Electricista",
+      "horarios": "lun a sáb 9 a.m.–7 p.m. · dom Abierto las 24 horas",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Andrés Gómez",
+          "texto": "Excelente servicio. Rapido, amable y puntual. Recomiendo a Don Juan 100%. Arreglo mi sifon de cocina muy rapido y fue muy limpio y puntual.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "IGNACIO VIVANCO SILVA",
+          "texto": "Recomendadisimo don Juan Carlos, llego muy puntual e identifico inmediatamente el problema de mi calefont. Anda con repuestos e insumos, así que lo reparo en…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricia Pinto",
+          "texto": "Excelente profesional, siempre puntual, muy educado, sus trabajos tienen garantía. Lo he recomendado a familiares y amigas, es un 10/10.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jorge English",
+          "texto": "Juan ha sido un gran descubrimiento. Cumple su labor con transparencia y profesionalismo, inspirando seguridad y honradez, y cobrando lo justo, no más ni…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Electrogas",
+      "reseñas": "24",
+      "rating": "4.0",
+      "telefono": "+56963862375",
+      "whatsapp": "https://wa.me/56963862375",
+      "link_maps": "https://www.google.com/maps/place/Electrogas/data=!4m7!3m6!1s0x9662d944eaa52d25:0xc66a03c65eeefb76!8m2!3d-33.5953586!4d-70.7004542!16s%2Fg%2F1vyxkmdp!19sChIJJS2l6kTZYpYRdvvuXsYDasY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Electrogas - José Joaquín Pérez 595, 8071160 San Bernardo, Región Metropolitana, Chile",
+      "categoria": "Proveedor de repuestos de carrocería de automóviles",
+      "horarios": "lun a vie 9 a.m.–8 p.m. · sáb 9 a.m.–6 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Jaqueline",
+          "texto": "Muy buena atención a los clientes lo primordial es la simpatía y amabilidad que otorgan a todos los clientes y lo mejor son los precios económicos y de buena…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yohana torres carrillo",
+          "texto": "Buen servicio por teléfono ayudan si te contestan Pero para los trabajadores servicio técnico buenos precios y servicio Para la gente normal alomejor…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "tamara hernandez",
+          "texto": "Vendieron un flexible como apto para gas sin certificación de la Superintendencia de Electricidad y Combustibles, lo que es peligroso. Fui a pedir devolución…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "marcela gonzalez",
+          "texto": "Pésima la atención cuando debes hacer devolución del producto, la señora no quería devolverme el dinero, insisto, me dice que me descontará el IVA , no…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Dr Plumber - Gasfiter / Servicios de Gasfitería Y Destapes",
+      "reseñas": "23",
+      "rating": "4.9",
+      "telefono": "+56976545616",
+      "whatsapp": "https://wa.me/56976545616",
+      "link_maps": "https://www.google.com/maps/place/Dr+Plumber+-+Gasfiter+%2F+Servicios+de+Gasfiter%C3%ADa+Y+Destapes/data=!4m7!3m6!1s0xa95ce0dcba7dc145:0x9ffa5914aa7dd090!8m2!3d-33.3988936!4d-70.5580679!16s%2Fg%2F11y341md11!19sChIJRcF9utzgXKkRkNB9qhRZ-p8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Dr Plumber - Gasfiter / Servicios de Gasfitería Y Destapes - Pje. Perseo 460, 7560335 Las Condes, Región Metropolitana, Chile",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Sebastián Muñoz",
+          "texto": "Excelente servicio, muy honesto, educado, amistoso y de buena voluntad. Lo recomiendo completamente! En mi caso me instaló una llave nueva para el lavaplatos y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "SwarsMax",
+          "texto": "Rápido , práctico y trasparente , me solucionó en 1 hora cambio de llave para regar , cambio de codo con soldadura impecable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cesar",
+          "texto": "8272277% RECOMENDABLE. Juan Pablo es una máquina. Realmente lo dio todo por encontrar nuestro problema y resolverlo. Además, es una persona muy educada…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ben Pin",
+          "texto": "Super professional y honesto Juan Pablo! Todo excelente con el trabajo que hizo. 100% recomendable!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "El kano",
+      "reseñas": "23",
+      "rating": "4.7",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/El+kano/data=!4m7!3m6!1s0x9662d1d2e9b97e33:0x4d136022ac52df95!8m2!3d-33.5170181!4d-70.5792927!16s%2Fg%2F11fl47w57_!19sChIJM3656dLRYpYRld9SrCJgE00?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "El kano - Las Calas 2008, 8270588 La Florida, Región Metropolitana, Chile",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 10 a.m.–7 p.m. · sáb 10 a.m.–5 p.m. · dom 11 a.m.–2:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Christian Eduardo Toledo Valenzuela",
+          "texto": "En el apuro por conseguir lo que necesitaba, me salvó. Snk.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Santiago Hernandez",
+          "texto": "Una ferreteria a la mano es una ferreteria de barrio tiene de todo para la mantencion del hogar",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ricardo Rodríguez",
+          "texto": "Buena ferretería, encontré los tornillos que buscaba, no tienen débito.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Hugo Castán Hidalgo Castán Hidalgo",
+          "texto": "Para ser ferretería de barrio cumple con muchas necesidades de los vecinos cuando está La con poco tiempo y con buenos precios.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferreteria la dehesa",
+      "reseñas": "22",
+      "rating": "4.6",
+      "telefono": "+56222458158",
+      "whatsapp": "https://wa.me/56222458158",
+      "link_maps": "https://www.google.com/maps/place/Ferreteria+la+dehesa/data=!4m7!3m6!1s0x9662cb9103758951:0xc513c03de0935f89!8m2!3d-33.3285242!4d-70.5201253!16s%2Fg%2F11vzrz8jpp!19sChIJUYl1A5HLYpYRiV-T4D3AE8U?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferreteria la dehesa - Av. La Dehesa 4580, Loc 3, 7590932 Lo Barnechea, Región Metropolitana, Chile",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 9 a.m.–5:45 p.m. · sáb 9 a.m.–1:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "Felipe Zelada Clavel",
+          "texto": "Llegué buscando herramientas de jardinería y encontré todo lo que necesitaba. Muy buen servicio del personal.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "andoni herrera",
+          "texto": "Llegue necesitan una pieza de grifería muy específica, la atención del personal fue excelente, encontramos la pieza y una solución alternativa a lo que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Álvaro Contreras",
+          "texto": "Tienen de todo para piscinas, tenia la piscina pasada a moco, quedo de pana .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Matías Ignacio Martínez Reyes",
+          "texto": "Excelente atención y tienen de todo!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Casa Total",
+      "reseñas": "21",
+      "rating": "5.0",
+      "telefono": "+56936340998",
+      "whatsapp": "https://wa.me/56936340998",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Casa+Total/data=!4m7!3m6!1s0x9662c59649955465:0x54e98b42a92ec53c!8m2!3d-33.4568425!4d-70.6296804!16s%2Fg%2F11zjyht6r7!19sChIJZVSVSZbFYpYRPMUuqUKL6VQ?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ferretería Casa Total - Av. Vicuña Mackenna 1201, 7780006 Santiago, Región Metropolitana, Chile",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a sáb 10 a.m.–9 p.m. · dom 10:30 a.m.–3:30 p.m.",
+      "pais": "Chile",
+      "reseñas_texto": [
+        {
+          "nombre": "cristina macarena galvez",
+          "texto": "Muy buena y amable atención!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Raul Salas",
+          "texto": "Excelente atención, recomendados",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ariannys Figueroa",
+          "texto": "Excelente atención, muy amables!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "alejojportiz1405 ortiz",
+          "texto": "Excelente atención y servicio",
+          "estrellas": 5
+        }
+      ]
+    }
+  ]
+}

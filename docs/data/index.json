@@ -1,6 +1,38 @@
 {
   "searches": [
     {
+      "id": "20261123-165537_plomeros-18-barrios-santiago-chile",
+      "query": "plomeros · 18 barrios Santiago Chile",
+      "date": "20261123-165537",
+      "date_label": "2026-11-23 16:55 (America/Buenos_Aires)",
+      "n_raw": 2066,
+      "n_limpio": 50,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Bellavista, Santiago, Chile",
+        "Providencia, Santiago, Chile",
+        "Vitacura, Santiago, Chile",
+        "Lo Barnechea, Santiago, Chile",
+        "Peñalolén, Santiago, Chile",
+        "Macul, Santiago, Chile",
+        "San Bernardo, Santiago, Chile",
+        "Puente Alto, Santiago, Chile",
+        "La Reina, Santiago, Chile",
+        "Las Condes, Santiago, Chile",
+        "Ñuñoa, Santiago, Chile",
+        "La Florida, Santiago, Chile",
+        "Maipú, Santiago, Chile",
+        "Cerrillos, Santiago, Chile",
+        "Estación Central, Santiago, Chile",
+        "Pudahuel, Santiago, Chile",
+        "Lo Prado, Santiago, Chile",
+        "Quinta Normal, Santiago, Chile"
+      ],
+      "pais": "Chile",
+      "file": "20261123-165537_plomeros-18-barrios-santiago-chile.json"
+    },
+    {
       "id": "20261123-162024_plomeros-4-barrios-montevideo-uruguay",
       "query": "plomeros · 4 barrios Montevideo Uruguay",
       "date": "20261123-162024",
