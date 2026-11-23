@@ -20,6 +20,7 @@ OUT_FIELDS = [
     "direccion",
     "categoria",
     "horarios",
+    "pais",
 ]
 
 # Días como los escribe el scraper (Maps en español).
@@ -84,10 +85,27 @@ def clean_phone(raw: str) -> str:
 
 
 def whatsapp_link(phone_digits: str) -> str:
-    """Solo AMBA móvil/fijo con área 11 (10 dígitos: 11 + 8)."""
-    if len(phone_digits) == 10 and phone_digits.startswith("11"):
-        return f"https://wa.me/549{phone_digits}"
-    return ""
+    """Argentina: 10 dígitos (área + número) → wa.me/549…; el área 11 sale igual que antes."""
+    from paises import whatsapp_ar
+
+    return whatsapp_ar(phone_digits)
+
+
+def telefono_y_whatsapp(raw: str, pais: dict | None) -> tuple[str, str]:
+    """(telefono, whatsapp) según el país del negocio.
+    Argentina: igual que siempre (10 dígitos sin 0/15 y wa.me/549…).
+    Otros países, o un número escrito con + de otro país: +<código><número>."""
+    from paises import es_argentina, normalizar_intl
+
+    texto = str(raw or "").strip()
+    if es_argentina(pais):
+        digits = re.sub(r"\D", "", texto)
+        if texto.startswith("+") and not digits.startswith("54"):
+            # Ya viene en formato internacional de otro país: queda como está.
+            return normalizar_intl(texto, {"id": "XX", "codigo_tel": "", "largo_nacional": []})
+        phone = clean_phone(texto)
+        return phone, whatsapp_link(phone)
+    return normalizar_intl(texto, pais)
 
 
 def format_open_hours(raw: str) -> str:
@@ -177,6 +195,11 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Filtrar prospectos sin website")
     ap.add_argument("input_csv", help="CSV crudo del scraper")
     ap.add_argument("output_csv", help="CSV limpio de salida")
+    ap.add_argument(
+        "--seleccion",
+        default="",
+        help="seleccion.json de la búsqueda (usa su 'pais' si la dirección no lo dice; default Argentina)",
+    )
     ap.add_argument("--min-rating", type=float, default=4.0)
     ap.add_argument("--min-reviews", type=int, default=20)
     ap.add_argument(
@@ -233,23 +256,36 @@ def main() -> int:
 
     sin_web.sort(key=sort_key, reverse=True)
 
+    from paises import AR, pais_de_texto, pais_por_nombre
+
+    pais_default = AR
+    if args.seleccion and Path(args.seleccion).is_file():
+        try:
+            sel = json.loads(Path(args.seleccion).read_text(encoding="utf-8") or "{}")
+            pais_default = pais_por_nombre(str((sel or {}).get("pais") or "")) or AR
+        except (json.JSONDecodeError, AttributeError):
+            pais_default = AR
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=OUT_FIELDS)
         writer.writeheader()
         for row, rating, reviews in sin_web:
-            phone = clean_phone(_get(row, "phone", "Phone", "telefono"))
+            direccion = _get(row, "address", "complete_address", "direccion", "Address")
+            pais = pais_de_texto(direccion) or pais_default
+            phone, wa = telefono_y_whatsapp(_get(row, "phone", "Phone", "telefono"), pais)
             writer.writerow(
                 {
                     "nombre": _get(row, "title", "name", "nombre", "Title"),
                     "reseñas": "" if reviews is None else str(reviews),
                     "rating": "" if rating is None else str(rating),
                     "telefono": phone,
-                    "whatsapp": whatsapp_link(phone),
+                    "whatsapp": wa,
                     "link_maps": _get(row, "link", "url", "maps_url", "Link"),
-                    "direccion": _get(row, "address", "complete_address", "direccion", "Address"),
+                    "direccion": direccion,
                     "categoria": _get(row, "category", "categoria", "Category"),
                     "horarios": format_open_hours(_get(row, "open_hours", "horarios", "Open Hours")),
+                    "pais": pais["nombre"],
                 }
             )
 

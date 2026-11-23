@@ -442,12 +442,14 @@ jobs:
           fi
 
           wc -l output/raw.csv
+          # seleccion.json antes de filtrar: trae el país de la búsqueda (WhatsApp con su código).
+          printf '%s\n' "${SELECCION_JSON:-}" > seleccion.json
           python3 filtrar.py output/raw.csv final/limpio.csv \
             --min-rating "${MIN_RATING:-4.0}" \
             --min-reviews "${MIN_RESENAS:-20}" \
-            --modo and
+            --modo and \
+            --seleccion seleccion.json
 
-          printf '%s\n' "${SELECCION_JSON:-}" > seleccion.json
           python3 resumen.py \
             --limpio final/limpio.csv \
             --raw output/raw.csv \

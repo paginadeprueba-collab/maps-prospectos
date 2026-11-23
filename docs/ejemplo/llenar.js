@@ -22,6 +22,7 @@
     var raw = data.w === 1 ? data.p : (typeof data.w === "string" && data.w ? data.w : data.p);
     var d = String(raw || "").replace(/\D/g, "");
     if (!d) return "";
+    if (/^\s*\+/.test(String(raw))) return d; // ya trae código de país (+598…, +52…)
     if (d.indexOf("54") === 0) return d;
     if (d.length === 10) return "549" + d;
     return d;
@@ -216,7 +217,7 @@
       a.rel = "noopener";
     });
     qq('a[href^="tel:"]').forEach(function (a) {
-      if (ctx.tel) a.href = "tel:" + ctx.tel.replace(/\D/g, "");
+      if (ctx.tel) a.href = "tel:" + (/^\s*\+/.test(ctx.tel) ? "+" : "") + ctx.tel.replace(/\D/g, "");
       else show(a, false);
     });
     qq("[data-hide-if=wa]").forEach(function (el) { show(el, !!ctx.wa); });

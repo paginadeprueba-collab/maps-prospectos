@@ -44,21 +44,57 @@ def _armar_variantes(data: dict) -> dict[str, list[str]]:
     return out
 
 
+def _armar_latam(data: dict) -> dict[str, list[str]]:
+    """Sinónimos para otros países de Latinoamérica ('latam' en rubros.json).
+    Se usan en vez de 'variantes' solo cuando la zona es de otro país."""
+    out: dict[str, list[str]] = {}
+    for grupo in data["grupos"]:
+        for item in grupo.get("items") or []:
+            latam = [str(v).strip() for v in (item.get("latam") or []) if str(v).strip()]
+            if not latam:
+                continue
+            claves = [str(item.get("nombre") or "").strip()]
+            claves += [str(a).strip() for a in (item.get("alias") or []) if str(a).strip()]
+            for clave in claves:
+                if clave:
+                    out[norm(clave)] = latam
+    return out
+
+
 CATALOGO = cargar_catalogo()
 VARIANTES: dict[str, list[str]] = _armar_variantes(CATALOGO)
+LATAM: dict[str, list[str]] = _armar_latam(CATALOGO)
 
 
-def variants_for_rubro(rubro: str) -> list[str]:
+def _es_otro_pais(zona: str) -> bool:
+    try:
+        from paises import es_argentina, pais_de_texto
+    except Exception:  # sin docs/zonas-latam.json: como antes
+        return False
+    p = pais_de_texto(zona)
+    return p is not None and not es_argentina(p)
+
+
+def variants_for_rubro(rubro: str, latam: bool = False) -> list[str]:
     r = rubro.strip()
     if not r:
         return []
     key = norm(r)
+    tabla = VARIANTES
+    if latam:
+        # Otro país: sinónimos latinoamericanos si el rubro los tiene; si no, los de siempre.
+        k_base = key if key in VARIANTES else next(
+            (k for k in VARIANTES if key == k or key.startswith(k) or k.startswith(key) or key in k or k in key), None
+        )
+        if k_base and k_base in LATAM:
+            tabla = {k_base: LATAM[k_base]}
+            key = k_base
     # match exact or startswith / contained
-    if key in VARIANTES:
-        out = list(VARIANTES[key])
+    if key in tabla:
+        out = list(tabla[key])
     else:
         out = None
-        for k, vals in VARIANTES.items():
+        for k, vals in tabla.items():
             if key == k or key.startswith(k) or k.startswith(key) or key in k or k in key:
                 out = list(vals)
                 break
@@ -97,7 +133,7 @@ def expand_query_variants(query: str) -> list[str]:
         # sin "en": expandir el texto entero como rubro
         return variants_for_rubro(query) or ([query] if query.strip() else [])
     rubro, zona = parts
-    return [f"{v} en {zona}" for v in variants_for_rubro(rubro)]
+    return [f"{v} en {zona}" for v in variants_for_rubro(rubro, latam=_es_otro_pais(zona))]
 
 
 def expand_lines(lines: list[str]) -> list[str]:

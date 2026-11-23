@@ -13,6 +13,7 @@
   function waMe(num) {
     var d = String(num || "").replace(/\D/g, "");
     if (!d) return "";
+    if (/^\s*\+/.test(String(num))) return "https://wa.me/" + d; // ya trae código de país
     if (d.indexOf("54") === 0) return "https://wa.me/" + d;
     if (d.length === 10) return "https://wa.me/549" + d;
     return "https://wa.me/" + d;
@@ -222,7 +223,7 @@
       show(a, true);
     });
     qq('a[href^="tel:"]').forEach(function (a) {
-      if (data.p) a.href = "tel:" + String(data.p).replace(/\D/g, "");
+      if (data.p) a.href = "tel:" + (/^\s*\+/.test(String(data.p)) ? "+" : "") + String(data.p).replace(/\D/g, "");
       else show(a, false);
     });
     qq("[data-hide-if=wa]").forEach(function (el) { show(el, !!base); });

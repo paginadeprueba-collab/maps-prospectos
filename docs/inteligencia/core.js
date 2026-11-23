@@ -71,6 +71,27 @@
     return ev;
   }
 
+  /* ---------- país del negocio (modo Provincias y Latinoamérica) ---------- */
+  // Mismos países que docs/zonas-latam.json. Se lee del dato guardado o del final de la dirección de Maps.
+  const PAISES = ["Argentina", "Uruguay", "Chile", "Paraguay", "Bolivia", "Perú", "Ecuador", "Colombia", "Venezuela", "México", "Costa Rica",
+    "Panamá", "Guatemala", "Honduras", "El Salvador", "Nicaragua", "República Dominicana", "Puerto Rico", "Brasil"];
+  const ALIAS_PAIS = { peru: "Perú", mexico: "México", panama: "Panamá", "republica dominicana": "República Dominicana", "rep dominicana": "República Dominicana",
+    "dominican republic": "República Dominicana", brazil: "Brasil" };
+  const nk = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
+  function paisDeTexto(t) {
+    const partes = String(t || "").split(",").map((x) => x.replace(/\d+/g, " ").trim()).filter(Boolean);
+    if (!partes.length) return "";
+    const k = nk(partes[partes.length - 1]);
+    return PAISES.find((p) => nk(p) === k) || ALIAS_PAIS[k] || "";
+  }
+  function paisDe(r) {
+    const c = (r && r.comercial) || {};
+    const pros = (r && r.origen && r.origen.prospecto) || {};
+    const directo = c.pais || val(r && r.pais) || pros.pais || "";
+    if (directo) return paisDeTexto("x, " + directo) || String(directo);
+    return paisDeTexto(val(r && r.direccion) || pros.direccion || "") || "sin_dato";
+  }
+
   /* ---------- normalización: un prospecto → una fila de análisis ---------- */
   function sitioWeb(r) {
     const ver = (r.comercial && r.comercial.verificacion) || {};
@@ -91,6 +112,7 @@
     return {
       key, nombre: val(r && r.nombre) || key, contactado, estado, resultado: res,
       rubro: String(val(r && r.categoria) || "Sin rubro").trim().toLowerCase() || "sin rubro",
+      pais: paisDe(r || {}),
       tipo_empresa: c.tipo_empresa || "sin_dato", servicio: c.servicio_ofrecido || "sin_dato",
       propuesta: prop || "sin_dato", propuesta_nombre: c.propuesta_nombre || (contactos.find((x) => x.propuesta_nombre) || {}).propuesta_nombre || "",
       motivo: c.motivo_rechazo || (RECHAZOS.indexOf(res) >= 0 ? res : ""), objeciones: Array.isArray(c.objeciones) ? c.objeciones : [],
@@ -124,9 +146,9 @@
     lista.forEach((x) => { const v = x[campo] || "sin_dato"; (g[v] = g[v] || []).push(x); });
     return Object.entries(g).map(([valor, items]) => Object.assign({ valor }, metricas(items))).sort((a, b) => b.contactos - a.contactos || String(a.valor).localeCompare(b.valor));
   }
-  const DIMENSIONES = [["rubro", "Rubro"], ["tipo_empresa", "Tipo de empresa"], ["servicio", "Servicio ofrecido"], ["propuesta", "Propuesta / argumento"],
+  const DIMENSIONES = [["rubro", "Rubro"], ["pais", "País"], ["tipo_empresa", "Tipo de empresa"], ["servicio", "Servicio ofrecido"], ["propuesta", "Propuesta / argumento"],
     ["motivo", "Motivo de rechazo"], ["resultado", "Resultado del contacto"], ["sitio_web", "Sitio web (dato del negocio, no intención de compra)"]];
-  const DIM_RANKING = ["rubro", "tipo_empresa", "servicio", "propuesta"];
+  const DIM_RANKING = ["rubro", "pais", "tipo_empresa", "servicio", "propuesta"];
 
   function analizar(resultados) {
     const todas = filas(resultados);
@@ -174,7 +196,7 @@
   }
 
   const pub = { LS_RES, LS_PROP, MIN_MUESTRA, RESULTADOS, POSITIVOS, RECHAZOS, MOTIVOS, TIPOS_EMPRESA, DIMENSIONES, resultadoLabel, label,
-    asegurar, registrarContacto, normalizar, filas, metricas, agrupar, analizar, tasa, pct, cargarPropuestas, guardarPropuestas, crearPropuesta, slug };
+    asegurar, registrarContacto, normalizar, paisDe, paisDeTexto, filas, metricas, agrupar, analizar, tasa, pct, cargarPropuestas, guardarPropuestas, crearPropuesta, slug };
   if (typeof module !== "undefined" && module.exports) module.exports = pub;
   root.impulsaIntel = pub;
 })(typeof window !== "undefined" ? window : globalThis);

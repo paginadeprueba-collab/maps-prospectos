@@ -100,3 +100,9 @@ SOFTWARE.
 - Botón **Inteligencia** en el menú → `inteligencia/`: estadísticas por rubro, tipo de empresa, servicio, propuesta, motivo de rechazo, resultado y sitio web; comparación de propuestas; mejores segmentos y más rechazos; seguimientos.
 - Grupos con menos de 10 contactos = «datos insuficientes» (fuera de rankings). «Sin web» no es intención de compra.
 - Detalle: `docs/inteligencia/README.md`. Esquema D1 futuro: `worker/d1/inteligencia.sql` (no aplicado).
+
+## Provincias y Latinoamérica (país del negocio)
+- El buscador tiene el modo **Provincias y Latinoamérica** (ver README). Cada prospecto nuevo trae `pais` (de la dirección de Maps o del país elegido en la búsqueda).
+- WhatsApp con el código del país (+598, +52, etc.). Argentina sigue con `549` + 10 dígitos. Los números con `+` no se tocan.
+- Webs de ejemplo (`ejemplo/hogar.js`, `llenar.js`, `aplicar.js`): si el teléfono viene con `+` de otro país, no se le agrega 549.
+- Inteligencia: dimensión **País**. Prospectos viejos sin país se leen de la dirección (`…, Argentina`); si no se puede, quedan como «Sin dato».

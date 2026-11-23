@@ -853,7 +853,7 @@
     body().querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => {
       let base;
       if (/^https?:/.test(wa)) base = String(wa).split("?")[0];
-      else { let num = String(wa).replace(/\D/g, ""); if (num.indexOf("54") !== 0) num = "54" + num; base = "https://wa.me/" + num; }
+      else { let num = String(wa).replace(/\D/g, ""); if (num.indexOf("54") !== 0 && !/^\s*\+/.test(String(wa))) num = "54" + num; base = "https://wa.me/" + num; }
       window.open(base + "?text=" + encodeURIComponent(campo(b.dataset.open).value), "_blank", "noopener");
     }));
     body().querySelectorAll("[data-used]").forEach((b) => b.addEventListener("click", () => {

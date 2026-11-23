@@ -55,9 +55,23 @@ Detalle completo: **[worker/README.md](worker/README.md)**.
 
 ## CSV limpio
 
-`nombre`, `reseñas`, `rating`, `telefono`, `whatsapp`, `link_maps`, `direccion`, `categoria`
+`nombre`, `reseñas`, `rating`, `telefono`, `whatsapp`, `link_maps`, `direccion`, `categoria`, `horarios`, `pais`
 
-WhatsApp: `https://wa.me/549` + 10 dígitos área 11. No se inventan datos.
+WhatsApp (Argentina): `https://wa.me/549` + 10 dígitos (área + número; el área 11 sale igual que antes, y ahora también las provincias).
+Otros países: `telefono` = `+<código><número>` y `https://wa.me/<código><número>`. Un número que ya viene con `+` queda como está.
+Si el largo no cierra para ese país, no se arma WhatsApp. No se inventan datos.
+
+## Provincias y Latinoamérica
+
+Tercer modo del buscador (además de **CABA por barrios** y **Otro lugar**):
+
+1. Elegís el rubro (el mismo de siempre), el **país**, la **provincia/estado** y marcás ciudades (como los barrios). Si falta una, la escribís y tocás **Agregar**. Máximo 40 ciudades por búsqueda.
+2. Arma una consulta por ciudad: `rubro en Ciudad, Provincia, País` (sin repetir si la ciudad se llama como la provincia). Se mandan como lista explícita, sin expandir.
+3. Datos: `docs/zonas-latam.json` (Argentina: 23 provincias sin CABA; 18 países más; código telefónico y largo del número de cada país). Lógica del navegador: `docs/latam.js`. En Python: `paises.py`.
+4. El país se guarda en el historial (`pais` en `index.json`/búsqueda y en cada prospecto) y el Panel de Inteligencia tiene la dimensión **País** (misma regla: menos de 10 contactos = datos insuficientes).
+5. Sinónimos: en `docs/rubros.json`, el campo opcional `latam` (ej. fontanero, dentista, bufete) reemplaza a `variantes` solo cuando la búsqueda es de otro país. En Argentina se usan las variantes de siempre.
+
+Pruebas: `python3 tests/test_latam.py` y `node tests/test_latam.mjs`.
 
 ## Privacidad
 

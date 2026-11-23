@@ -5,12 +5,14 @@
       "items": [
         {
           "nombre": "abogados",
-          "variantes": ["abogados", "abogado", "estudio jurídico", "abogado laboral", "abogado civil"]
+          "variantes": ["abogados", "abogado", "estudio jurídico", "abogado laboral", "abogado civil"],
+          "latam": ["abogado", "despacho de abogados", "bufete de abogados", "estudio jurídico"]
         },
         {
           "nombre": "odontólogos",
           "alias": ["dentistas"],
-          "variantes": ["odontólogos", "odontólogo", "dentista", "clínica dental", "consultorio odontológico"]
+          "variantes": ["odontólogos", "odontólogo", "dentista", "clínica dental", "consultorio odontológico"],
+          "latam": ["dentista", "odontólogo", "clínica dental", "consultorio dental"]
         },
         {
           "nombre": "cirugía estética",
@@ -23,11 +25,13 @@
         },
         {
           "nombre": "inmobiliarias",
-          "variantes": ["inmobiliaria", "inmobiliarias", "agente inmobiliario", "martillero"]
+          "variantes": ["inmobiliaria", "inmobiliarias", "agente inmobiliario", "martillero"],
+          "latam": ["inmobiliaria", "bienes raíces", "agente inmobiliario"]
         },
         {
           "nombre": "contadores",
-          "variantes": ["contador", "contadores", "estudio contable", "contador público"]
+          "variantes": ["contador", "contadores", "estudio contable", "contador público"],
+          "latam": ["contador", "contador público", "despacho contable", "asesoría contable"]
         },
         {
           "nombre": "arquitectos",
@@ -48,11 +52,13 @@
       "items": [
         {
           "nombre": "plomeros",
-          "variantes": ["plomero", "plomería", "gasista plomero"]
+          "variantes": ["plomero", "plomería", "gasista plomero"],
+          "latam": ["plomero", "plomería", "fontanero", "fontanería"]
         },
         {
           "nombre": "electricistas",
-          "variantes": ["electricista", "electricistas", "instalaciones eléctricas"]
+          "variantes": ["electricista", "electricistas", "instalaciones eléctricas"],
+          "latam": ["electricista", "instalaciones eléctricas", "técnico electricista"]
         },
         {
           "nombre": "cerrajeros",
@@ -60,7 +66,8 @@
         },
         {
           "nombre": "gasistas",
-          "variantes": ["gasista", "gasista matriculado", "plomero gasista"]
+          "variantes": ["gasista", "gasista matriculado", "plomero gasista"],
+          "latam": ["gasfiter", "instalaciones de gas", "técnico en gas"]
         },
         {
           "nombre": "mudanzas",
@@ -76,7 +83,8 @@
         },
         {
           "nombre": "mecánicos",
-          "variantes": ["mecánico", "taller mecánico", "mecánica automotor"]
+          "variantes": ["mecánico", "taller mecánico", "mecánica automotor"],
+          "latam": ["taller mecánico", "mecánico automotriz", "taller automotriz"]
         }
       ]
     },
@@ -85,7 +93,8 @@
       "items": [
         {
           "nombre": "peluquerías",
-          "variantes": ["peluquería", "peluquerías", "salon de belleza", "hair salon"]
+          "variantes": ["peluquería", "peluquerías", "salon de belleza", "hair salon"],
+          "latam": ["peluquería", "salón de belleza", "estilista"]
         },
         {
           "nombre": "barberías",
@@ -105,7 +114,8 @@
         },
         {
           "nombre": "kioscos",
-          "variantes": ["kiosco", "kioscos", "maxikiosco"]
+          "variantes": ["kiosco", "kioscos", "maxikiosco"],
+          "latam": ["minimarket", "tienda de abarrotes", "kiosco"]
         },
         {
           "nombre": "ferreterías",
@@ -122,7 +132,8 @@
       "items": [
         {
           "nombre": "kinesiólogos",
-          "variantes": ["kinesiólogo", "kinesiología", "kinesiólogo deportivo"]
+          "variantes": ["kinesiólogo", "kinesiología", "kinesiólogo deportivo"],
+          "latam": ["fisioterapeuta", "fisioterapia", "kinesiólogo"]
         },
         {
           "nombre": "nutricionistas",
@@ -192,7 +203,8 @@
       "items": [
         {
           "nombre": "escribanos",
-          "variantes": ["escribano", "escribanía", "escribano público"]
+          "variantes": ["escribano", "escribanía", "escribano público"],
+          "latam": ["notaría", "notario"]
         },
         {
           "nombre": "gestores",
@@ -266,7 +278,8 @@
         },
         {
           "nombre": "gomerías",
-          "variantes": ["gomería", "gomerías", "neumáticos"]
+          "variantes": ["gomería", "gomerías", "neumáticos"],
+          "latam": ["llantera", "vulcanizadora", "venta de llantas"]
         },
         {
           "nombre": "librerías",
@@ -278,7 +291,8 @@
         },
         {
           "nombre": "rotiserías",
-          "variantes": ["rotisería", "rotiserías", "comida para llevar"]
+          "variantes": ["rotisería", "rotiserías", "comida para llevar"],
+          "latam": ["comida para llevar", "rosticería"]
         },
         {
           "nombre": "pet shops",
@@ -290,7 +304,8 @@
         },
         {
           "nombre": "verdulerías",
-          "variantes": ["verdulería", "verdulerías"]
+          "variantes": ["verdulería", "verdulerías"],
+          "latam": ["frutería", "verdulería"]
         }
       ]
     },
@@ -303,7 +318,8 @@
         },
         {
           "nombre": "jardines de infantes",
-          "variantes": ["jardín de infantes", "jardín maternal", "guardería"]
+          "variantes": ["jardín de infantes", "jardín maternal", "guardería"],
+          "latam": ["guardería", "preescolar", "jardín de niños"]
         },
         {
           "nombre": "agencias de viajes",
@@ -332,7 +348,8 @@
       "items": [
         {
           "nombre": "destapaciones",
-          "variantes": ["destapaciones", "destapación de cloacas", "destapaciones 24 horas"]
+          "variantes": ["destapaciones", "destapación de cloacas", "destapaciones 24 horas"],
+          "latam": ["destape de cañerías", "desatascos", "limpieza de drenajes"]
         },
         {
           "nombre": "impermeabilización",
@@ -344,11 +361,13 @@
         },
         {
           "nombre": "construcción en seco",
-          "variantes": ["construcción en seco", "durlock", "steel frame"]
+          "variantes": ["construcción en seco", "durlock", "steel frame"],
+          "latam": ["drywall", "tablaroca", "construcción en seco"]
         },
         {
           "nombre": "piscinas",
-          "variantes": ["construcción de piscinas", "mantenimiento de piscinas", "piletas"]
+          "variantes": ["construcción de piscinas", "mantenimiento de piscinas", "piletas"],
+          "latam": ["construcción de piscinas", "mantenimiento de piscinas", "albercas"]
         },
         {
           "nombre": "reformas",
@@ -365,7 +384,8 @@
         },
         {
           "nombre": "matafuegos",
-          "variantes": ["matafuegos", "recarga de matafuegos", "protección contra incendios"]
+          "variantes": ["matafuegos", "recarga de matafuegos", "protección contra incendios"],
+          "latam": ["extintores", "recarga de extintores"]
         },
         {
           "nombre": "empresas de limpieza",
@@ -411,7 +431,8 @@
         },
         {
           "nombre": "autoescuelas",
-          "variantes": ["autoescuela", "academia de conducción", "escuela de manejo"]
+          "variantes": ["autoescuela", "academia de conducción", "escuela de manejo"],
+          "latam": ["escuela de manejo", "autoescuela", "escuela de conducción"]
         },
         {
           "nombre": "apoyo escolar",
@@ -424,7 +445,8 @@
       "items": [
         {
           "nombre": "chapa y pintura",
-          "variantes": ["chapa y pintura", "chapista", "pintura automotor"]
+          "variantes": ["chapa y pintura", "chapista", "pintura automotor"],
+          "latam": ["hojalatería y pintura", "taller de pintura automotriz", "chapa y pintura"]
         },
         {
           "nombre": "lavaderos de autos",

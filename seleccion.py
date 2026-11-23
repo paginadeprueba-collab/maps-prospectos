@@ -76,7 +76,18 @@ def parse_queries(lines: list[str]) -> dict:
             if counts[norm(r)] == mejor_n:
                 rubro_final = r.strip()
                 break
-    return {"rubro": rubro_final, "barrios": barrios, "lugares": lugares}
+    out = {"rubro": rubro_final, "barrios": barrios, "lugares": lugares}
+    # País de la búsqueda (modo Provincias y Latinoamérica: 'Ciudad, Provincia, País').
+    from paises import pais_de_texto
+
+    paises = []
+    for lugar in lugares:
+        p = pais_de_texto(lugar)
+        if p and p["nombre"] not in paises:
+            paises.append(p["nombre"])
+    if len(paises) == 1:
+        out["pais"] = paises[0]
+    return out
 
 
 def main() -> int:

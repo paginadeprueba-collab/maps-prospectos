@@ -119,7 +119,11 @@ def load_seleccion(raw: str) -> dict:
     rubro = str(data.get("rubro") or "").strip()
     barrios = [str(b).strip() for b in (data.get("barrios") or []) if str(b).strip()]
     lugares = [str(b).strip() for b in (data.get("lugares") or []) if str(b).strip()]
-    return {"rubro": rubro, "barrios": barrios, "lugares": lugares}
+    out = {"rubro": rubro, "barrios": barrios, "lugares": lugares}
+    pais = str(data.get("pais") or "").strip()
+    if pais:
+        out["pais"] = pais
+    return out
 
 
 def _prospecto_json(r: dict) -> dict:
@@ -134,6 +138,8 @@ def _prospecto_json(r: dict) -> dict:
         "categoria": r.get("categoria") or "",
         "horarios": r.get("horarios") or "",
     }
+    if r.get("pais"):
+        item["pais"] = r["pais"]
     texto = r.get("reseñas_texto")
     if isinstance(texto, list):
         item["reseñas_texto"] = texto
@@ -159,6 +165,7 @@ def build_json_payload(
         "rubro": sel.get("rubro") or "",
         "barrios": list(sel.get("barrios") or []),
         "lugares": list(sel.get("lugares") or []),
+        **({"pais": sel["pais"]} if sel.get("pais") else {}),
         "prospects": [_prospecto_json(r) for r in rows],
     }
 
@@ -188,6 +195,7 @@ def update_index(index_path: Path, entry: dict) -> None:
             "rubro": entry.get("rubro") or "",
             "barrios": list(entry.get("barrios") or []),
             "lugares": list(entry.get("lugares") or []),
+            **({"pais": entry["pais"]} if entry.get("pais") else {}),
             "file": f"{entry['id']}.json",
         },
     )

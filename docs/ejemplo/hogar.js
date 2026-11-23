@@ -421,7 +421,21 @@
     return x;
   }
 
+  // Negocio de otro país (modo Latinoamérica): el número viene como +<código><número>; no se toca.
+  function esIntl(p) {
+    const t = String(p.telefono || "").trim();
+    return (!!p.pais && String(p.pais) !== "Argentina") || (/^\+/.test(t) && !/^\+\s*54/.test(t));
+  }
+
   function telefonos(p) {
+    if (esIntl(p)) {
+      const tIntl = String(p.telefono || "").replace(/\D/g, "");
+      const mIntl = String(p.whatsapp || "").match(/wa\.me\/(\d+)/);
+      const waIntl = mIntl ? mIntl[1] : "";
+      const conMas = /^\s*\+/.test(String(p.telefono || ""));
+      const mostrarIntl = tIntl ? (conMas ? "+" : "") + tIntl : waIntl ? "+" + waIntl : "";
+      return { mostrar: mostrarIntl, wa: waIntl ? (mostrarIntl === "+" + waIntl ? mostrarIntl : "+" + waIntl) : "" };
+    }
     const tel = normTel(p.telefono);
     const m = String(p.whatsapp || "").match(/wa\.me\/(\d+)/);
     const wa = m ? normTel(m[1]) : "";

@@ -450,6 +450,11 @@
       background: var(--accent-soft);
       color: var(--accent-text);
     }
+    .latam-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 10px; }
+    .latam-row .field { margin: 0; }
+    .latam-add { display: flex; gap: 6px; align-items: stretch; margin-bottom: 6px; }
+    .latam-add .field { flex: 1; margin: 0; min-width: 0; }
+    @media (max-width: 420px) { .latam-row { grid-template-columns: 1fr; } }
     .chips-barrios {
       display: flex;
       flex-wrap: wrap;
@@ -658,6 +663,7 @@
 
         <div class="mode-tabs" role="tablist" aria-label="Modo de búsqueda">
           <button type="button" class="mode-tab active" data-mode="caba" id="modeCaba">CABA por barrios</button>
+          <button type="button" class="mode-tab" data-mode="latam" id="modeLatam">Provincias y Latinoamérica</button>
           <button type="button" class="mode-tab" data-mode="libre" id="modeLibre">Otro lugar</button>
         </div>
 
@@ -674,6 +680,7 @@
             <span class="hint" style="margin:0;font-size:.8rem" id="profundaHint">Rápida mira más resultados · Profunda mira hasta el máximo</span>
           </div>
 
+          <div id="cabaBarrios">
           <div class="quick-row" style="margin-top:4px">
             <button type="button" class="btn btn-ghost btn-tiny" id="btnAllBarrios">Todos los barrios</button>
             <button type="button" class="btn btn-ghost btn-tiny" id="btnClearBarrios">Limpiar</button>
@@ -685,6 +692,35 @@
           <div class="meta-row" id="barrioMeta">
             <span id="barrioCount">0 barrios</span>
             <span class="eta" id="barrioEta">Elegí al menos uno</span>
+          </div>
+          </div>
+
+          <div id="latamPanel" class="hidden">
+            <div class="latam-row">
+              <div>
+                <label class="label-sm" for="latPais">País</label>
+                <select id="latPais" class="field" aria-label="País"></select>
+              </div>
+              <div>
+                <label class="label-sm" for="latRegion">Provincia / estado</label>
+                <select id="latRegion" class="field" aria-label="Provincia o estado"></select>
+              </div>
+            </div>
+            <div class="quick-row" style="margin-top:4px">
+              <button type="button" class="btn btn-ghost btn-tiny" id="btnLatTodas">Todas las ciudades</button>
+              <button type="button" class="btn btn-ghost btn-tiny" id="btnLatLimpiar">Limpiar</button>
+            </div>
+            <div class="zona-block"><div class="chips-barrios" id="latCiudades"></div></div>
+            <label class="label-sm" for="latCiudadExtra">¿No está la ciudad?</label>
+            <div class="latam-add">
+              <input type="text" id="latCiudadExtra" class="field" placeholder="Escribí la ciudad" autocomplete="off" />
+              <button type="button" class="btn btn-ghost btn-sm" id="btnLatAgregar">Agregar</button>
+            </div>
+            <p class="hint" id="latElegidas" style="margin:6px 0 0"></p>
+            <div class="meta-row">
+              <span id="latCount">0 ciudades</span>
+              <span class="eta" id="latEta">Elegí al menos una</span>
+            </div>
           </div>
         </div>
 
@@ -835,8 +871,9 @@
   </div>
 
   <script src="ejemplo/codec.js?v=20261118a"></script>
-  <script src="ejemplo/hogar.js?v=20261118b"></script>
+  <script src="ejemplo/hogar.js?v=20261123a"></script>
   <script src="ejemplo/resenas.js?v=20261116d"></script>
+  <script src="latam.js?v=20261123a"></script>
   <script>
     /* ========== CONFIG ========== */
     // Pegá acá la URL del Worker cuando lo deploys (sin barra final).
@@ -859,7 +896,7 @@
       console.error("Barrios CABA incompletos", ALL_BARRIOS.length, new Set(ALL_BARRIOS).size);
     }
 
-    let searchMode = "caba"; // caba | libre
+    let searchMode = "caba"; // caba | latam | libre
     const selectedBarrios = new Set();
 
     // La misma lista que usa el workflow (docs/rubros.json).
@@ -964,12 +1001,21 @@
       return historial.filter((c) => canonicalRubro(c.rubro) === rk && ((c.barrios || []).length || (c.lugares || []).length || c.query));
     }
 
-    function recordarSeleccion(rubro, barrios) {
+    function hitsRubroLugar(rubro, lugar) {
+      const rk = canonicalRubro(rubro);
+      const lk = normKey(lugar);
+      if (!lk) return [];
+      return historial.filter((c) => canonicalRubro(c.rubro) === rk && (c.lugares || []).some((l) => normKey(l) === lk));
+    }
+
+    function recordarSeleccion(rubro, barrios, extra) {
+      const ex = extra || {};
       const item = {
         local: true,
         rubro: rubro,
         barrios: barrios.slice(),
-        lugares: [],
+        lugares: (ex.lugares || []).slice(),
+        ...(ex.pais ? { pais: ex.pais } : {}),
         fecha: new Date().toISOString().slice(0, 16).replace("T", " "),
         date: "",
         n_limpio: null,
@@ -1020,9 +1066,12 @@
       document.querySelectorAll(".chip-rubro").forEach((btn) => {
         pintarChipYa(btn, hitsRubro(btn.dataset.rubro || btn.childNodes[0].textContent || ""));
       });
-      document.querySelectorAll(".chip-barrio").forEach((btn) => {
+      document.querySelectorAll(".chip-barrio:not(.chip-ciudad)").forEach((btn) => {
         const barrio = btn.getAttribute("data-barrio");
         pintarChipYa(btn, rubro ? hitsRubroBarrio(rubro, barrio) : []);
+      });
+      document.querySelectorAll(".chip-ciudad").forEach((btn) => {
+        pintarChipYa(btn, rubro ? hitsRubroLugar(rubro, btn.getAttribute("data-lugar")) : []);
       });
       const box = el("yaResumen");
       if (!box) return;
@@ -1196,6 +1245,7 @@
         const allOn = list.length > 0 && list.every((b) => selectedBarrios.has(b));
         inp.checked = allOn;
       });
+      updateLatMeta();
     }
 
     function setBarrio(b, on) {
@@ -1250,9 +1300,128 @@
     function setSearchMode(mode) {
       searchMode = mode;
       el("modeCaba").classList.toggle("active", mode === "caba");
+      el("modeLatam").classList.toggle("active", mode === "latam");
       el("modeLibre").classList.toggle("active", mode === "libre");
-      el("modeCabaPanel").classList.toggle("hidden", mode !== "caba");
+      // El rubro y la profundidad se comparten entre CABA y Provincias/Latinoamérica.
+      el("modeCabaPanel").classList.toggle("hidden", mode === "libre");
+      el("cabaBarrios").classList.toggle("hidden", mode !== "caba");
+      el("latamPanel").classList.toggle("hidden", mode !== "latam");
       el("modeLibrePanel").classList.toggle("hidden", mode !== "libre");
+      if (mode === "latam") updateLatMeta();
+    }
+
+    /* ---------- Provincias y Latinoamérica (datos en zonas-latam.json, lógica en latam.js) ---------- */
+    let ZONAS_LATAM = [];
+    const latSel = new Map(); // clave → {ciudad, region}
+    const latExtras = {}; // "pais|region" → ciudades agregadas a mano
+
+    function latPais() {
+      return ZONAS_LATAM.find((p) => p.id === el("latPais").value) || null;
+    }
+    function latRegion() {
+      const p = latPais();
+      return p ? (p.regiones || []).find((r) => r.nombre === el("latRegion").value) || null : null;
+    }
+    function latCiudadesDe(p, r) {
+      if (!p || !r) return [];
+      const extra = latExtras[p.id + "|" + r.nombre] || [];
+      const out = [];
+      (r.ciudades || []).concat(extra).forEach((c) => {
+        if (!out.some((x) => normKey(x) === normKey(c))) out.push(c);
+      });
+      return out;
+    }
+    function renderLatPaises() {
+      const sel = el("latPais");
+      sel.innerHTML = ZONAS_LATAM.map((p) => '<option value="' + esc(p.id) + '">' + esc(p.nombre) + "</option>").join("");
+      sel.value = ZONAS_LATAM.some((p) => p.id === "AR") ? "AR" : (ZONAS_LATAM[0] || {}).id || "";
+      renderLatRegiones();
+    }
+    function renderLatRegiones() {
+      const p = latPais();
+      const sel = el("latRegion");
+      sel.innerHTML = p ? (p.regiones || []).map((r) => '<option value="' + esc(r.nombre) + '">' + esc(r.nombre) + "</option>").join("") : "";
+      renderLatCiudades();
+    }
+    function renderLatCiudades() {
+      const wrap = el("latCiudades");
+      const p = latPais();
+      const r = latRegion();
+      wrap.innerHTML = "";
+      latCiudadesDe(p, r).forEach((c) => {
+        const x = { ciudad: c, region: r.nombre };
+        const k = FabricaLatam.clave(x);
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "chip-barrio chip-ciudad" + (latSel.has(k) ? " active" : "");
+        btn.setAttribute("data-lugar", FabricaLatam.lugar(c, r.nombre, p));
+        btn.textContent = c;
+        btn.addEventListener("click", () => setCiudad(x, !latSel.has(k)));
+        wrap.appendChild(btn);
+      });
+      updateLatMeta();
+      pintarYa();
+    }
+    function setCiudad(x, on) {
+      const k = FabricaLatam.clave(x);
+      if (on && !latSel.has(k) && latSel.size >= FabricaLatam.MAX_CIUDADES) {
+        alert("Máximo " + FabricaLatam.MAX_CIUDADES + " ciudades por búsqueda.");
+        return;
+      }
+      if (on) latSel.set(k, x);
+      else latSel.delete(k);
+      document.querySelectorAll(".chip-ciudad").forEach((chip) => {
+        if (normKey(chip.textContent) === normKey(x.ciudad) && latRegion() && normKey(latRegion().nombre) === normKey(x.region)) {
+          chip.classList.toggle("active", on);
+        }
+      });
+      updateLatMeta();
+    }
+    function agregarCiudadLatam() {
+      const p = latPais();
+      const r = latRegion();
+      const c = String(el("latCiudadExtra").value || "").replace(/[;|]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 60);
+      if (!p || !r || !c) {
+        el("latCiudadExtra").focus();
+        return;
+      }
+      const kk = p.id + "|" + r.nombre;
+      latExtras[kk] = latExtras[kk] || [];
+      if (!latCiudadesDe(p, r).some((x) => normKey(x) === normKey(c))) latExtras[kk].push(c);
+      el("latCiudadExtra").value = "";
+      renderLatCiudades();
+      const existente = latCiudadesDe(p, r).find((x) => normKey(x) === normKey(c)) || c;
+      setCiudad({ ciudad: existente, region: r.nombre }, true);
+    }
+    function updateLatMeta() {
+      if (!el("latCount")) return;
+      const n = latSel.size;
+      const rubro = (el("rubroBox").value || "").trim();
+      const nVar = rubro ? variantsForRubro(rubro).length : 1;
+      const nQ = n * Math.max(1, nVar);
+      const profunda = el("chkProfunda") && el("chkProfunda").checked;
+      el("latCount").textContent = (n === 1 ? "1 ciudad" : n + " ciudades") + (rubro && n ? " · ~" + nQ + " búsquedas" : "");
+      if (n === 0) el("latEta").textContent = "Elegí al menos una";
+      else {
+        const m = estimateMinutes(nQ, profunda);
+        el("latEta").textContent = (profunda ? "Profunda · " : "Rápida · ") + (m <= 1 ? "~1–2 min" : "~" + m + " min");
+      }
+      const elegidas = [...latSel.values()];
+      el("latElegidas").textContent = elegidas.length
+        ? "Elegidas: " + elegidas.map((x) => x.ciudad + (normKey(x.ciudad) === normKey(x.region) ? "" : " (" + x.region + ")")).join(", ")
+        : "";
+    }
+    async function loadZonasLatam() {
+      try {
+        const res = await fetch("./zonas-latam.json?v=20261123");
+        if (!res.ok) throw new Error("zonas-latam " + res.status);
+        const data = await res.json();
+        ZONAS_LATAM = Array.isArray(data.paises) ? data.paises : [];
+      } catch (e) {
+        console.warn(e);
+        ZONAS_LATAM = [];
+      }
+      if (el("latPais")) renderLatPaises();
     }
 
     function buildCabaQueries(rubro) {
@@ -1461,6 +1630,40 @@
           (profunda ? " · profunda" : "");
         fallbackQ = queries.join("; ");
         recordarSeleccion(rubro, [...selectedBarrios]);
+        payload = {
+          query: label,
+          queries,
+          expandir: false,
+          profundidad: depth,
+          min_resenas: minResenas,
+        };
+        searchEtaMs = estimateMinutes(queries.length * nVar, profunda) * 60 * 1000;
+      } else if (searchMode === "latam") {
+        const rubro = (el("rubroBox").value || "").trim();
+        if (!rubro) {
+          el("rubroBox").focus();
+          return;
+        }
+        const pais = latPais();
+        if (!pais || latSel.size === 0) {
+          alert("Elegí al menos una ciudad.");
+          return;
+        }
+        const sel = [...latSel.values()];
+        const queries = FabricaLatam.buildQueries(rubro, sel, pais);
+        const nVar = variantsForRubro(rubro).length;
+        label =
+          rubro +
+          " · " +
+          sel.length +
+          (sel.length === 1 ? " ciudad " : " ciudades ") +
+          pais.nombre +
+          (profunda ? " · profunda" : "");
+        fallbackQ = queries.join("; ");
+        recordarSeleccion(rubro, [], {
+          lugares: sel.map((x) => FabricaLatam.lugar(x.ciudad, x.region, pais)),
+          pais: pais.nombre,
+        });
         payload = {
           query: label,
           queries,
@@ -2038,7 +2241,7 @@
     }
     el("btnTopBuscar").addEventListener("click", () => {
       location.hash = "#buscar";
-      if (searchMode === "caba") el("rubroBox").focus();
+      if (searchMode !== "libre") el("rubroBox").focus();
       else el("queryBox").focus();
     });
     el("rubroBox").addEventListener("keydown", (e) => {
@@ -2055,6 +2258,27 @@
     });
     el("modeCaba").addEventListener("click", () => setSearchMode("caba"));
     el("modeLibre").addEventListener("click", () => setSearchMode("libre"));
+    el("modeLatam").addEventListener("click", () => setSearchMode("latam"));
+    el("latPais").addEventListener("change", () => {
+      latSel.clear();
+      renderLatRegiones();
+    });
+    el("latRegion").addEventListener("change", renderLatCiudades);
+    el("btnLatTodas").addEventListener("click", () => {
+      const r = latRegion();
+      if (r) latCiudadesDe(latPais(), r).forEach((c) => setCiudad({ ciudad: c, region: r.nombre }, true));
+    });
+    el("btnLatLimpiar").addEventListener("click", () => {
+      latSel.clear();
+      renderLatCiudades();
+    });
+    el("btnLatAgregar").addEventListener("click", agregarCiudadLatam);
+    el("latCiudadExtra").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        agregarCiudadLatam();
+      }
+    });
     el("btnAllBarrios").addEventListener("click", () => {
       ALL_BARRIOS.forEach((b) => setBarrio(b, true));
     });
@@ -2127,6 +2351,7 @@
           date: s.date || "",
           n_limpio: s.n_limpio,
           query: s.query || "",
+          ...(s.pais ? { pais: s.pais } : {}),
         };
         if (!item.rubro) return;
         if (porId.has(s.id)) {
@@ -2175,13 +2400,13 @@
       pintarYa();
     }
 
-    Promise.all([loadIndex(false), loadCatalogo(), rebuildSeenLinks(), checkPagesEstado()])
+    Promise.all([loadIndex(false), loadCatalogo(), loadZonasLatam(), rebuildSeenLinks(), checkPagesEstado()])
       .then(() => loadHistorial())
       .then(route);
   </script>
   <script src="propuesta-pdf.js?v=20261112a"></script>
-  <script src="inteligencia/core.js?v=20261123a"></script>
-  <script src="impulsa-comercial.js?v=20261123a"></script>
+  <script src="inteligencia/core.js?v=20261123b"></script>
+  <script src="impulsa-comercial.js?v=20261123b"></script>
   <script src="impulsa.js?v=20261106d"></script>
 </body>
 </html>
