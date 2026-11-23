@@ -1,0 +1,495 @@
+{
+  "id": "20261123-162024_plomeros-4-barrios-montevideo-uruguay",
+  "query": "plomeros · 4 barrios Montevideo Uruguay",
+  "date": "20261123-162024",
+  "date_label": "2026-11-23 16:20 (America/Buenos_Aires)",
+  "n_raw": 129,
+  "n_limpio": 14,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "Barrio Sur, Montevideo, Uruguay",
+    "Cordón, Montevideo, Uruguay",
+    "Palermo, Montevideo, Uruguay",
+    "Parque Rodó, Montevideo, Uruguay"
+  ],
+  "pais": "Uruguay",
+  "prospects": [
+    {
+      "nombre": "Ferretería Palermo Color",
+      "reseñas": "406",
+      "rating": "4.5",
+      "telefono": "+59824118132",
+      "whatsapp": "https://wa.me/59824118132",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Palermo+Color/data=!4m7!3m6!1s0x959f81c7fe743aff:0x18865c63f3456ba!8m2!3d-34.912569!4d-56.1814498!16s%2Fg%2F1q6jd_634!19sChIJ_zp0_seBn5URulY0P8ZliAE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Gonzalo Ramírez 1552, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–5:45 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Maki",
+          "texto": "Excelente atención y servicio en el lugar, especialmente por parte de Valentina!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alvaro Vilardo",
+          "texto": "Buena atención y tienen de todo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcelo Barlocci",
+          "texto": "Excelente atención y mercadería variada",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pedro Iglesias",
+          "texto": "Muy bien atendido",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "gasista matriculado",
+      "reseñas": "398",
+      "rating": "4.8",
+      "telefono": "1134772401",
+      "whatsapp": "https://wa.me/5491134772401",
+      "link_maps": "https://www.google.com/maps/place/gasista+matriculado/data=!4m7!3m6!1s0x95bccb59efff2c63:0xa51580a6f5509f5f!8m2!3d-34.5900018!4d-58.4221736!16s%2Fg%2F11s1rr276r!19sChIJYyz_71nLvJURX59Q9aaAFaU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gascón 1701, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Christian Doval",
+          "texto": "La instalación de la cocina fue excelente, muy prolija y profesional. Además, me ayudó a mover la cocina anterior y se tomó el tiempo de explicarme cómo cuidar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sergio De Luca",
+          "texto": "Excelente profesional. Dejo mi experiencia por si le sirve a alguien mas. Lo llamé por un tema con el aire y con la llave del gas, y uno esta acostumbrado a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Jose Montes De Oca",
+          "texto": "Un Capo Nico, excelente laburo la verdad. Me instaló una cocina y me cambio los cueritos de la canilla. Muy buena disposición y precio. Otros que consulté me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Deborah Corral",
+          "texto": "MUY RECOMENDABLE. Me llegó por una publicidad de instagram. Evaluaron el calefón viejo que tenía por fotos, aconsejaron el cambio y me asesoraron con la…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Blanes",
+      "reseñas": "349",
+      "rating": "4.5",
+      "telefono": "+59824119779",
+      "whatsapp": "https://wa.me/59824119779",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Blanes/data=!4m7!3m6!1s0x959f81b9a7885461:0x15b6f3c5fa749e25!8m2!3d-34.911606!4d-56.1713915!16s%2Fg%2F11gszn0rg3!19sChIJYVSIp7mBn5URJZ50-sXzthU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Gonzalo Ramírez 2001, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–7:30 p.m. · sáb 9 a.m.–7 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Alicia Mariscurrena",
+          "texto": "Exelente atencion y muy buenos productos. 🥸😎besssssbuen martes",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Viviana Echevarria",
+          "texto": "Lo prometido es deuda, les comenté que les iba a dejar una opinión 🙌🏽 fueron super amables, muchas gracias por ayudarme.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Natanahel Rodriguez",
+          "texto": "Llegue cuando estaban cerrando y me atendieron si problema, unos genios.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jure",
+          "texto": "Bien! Ofrecen asesoramiento claro. Un poco caro, pero tienen de todo!",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería El Globo",
+      "reseñas": "167",
+      "rating": "4.7",
+      "telefono": "+59824102659",
+      "whatsapp": "https://wa.me/59824102659",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+El+Globo/data=!4m7!3m6!1s0x959f81b9e7225e0d:0xe7d3ce0625ed5a17!8m2!3d-34.9113018!4d-56.1769093!16s%2Fg%2F11clzj7dt1!19sChIJDV4i57mBn5URF1rtJQbO0-c?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "San Salvador 1751, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–5:30 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Braulio Martínez",
+          "texto": "Excelente ferretería de barrio, con un gran stock, sorprenden mucho como te traen lo que necesitas, una atención diferente a lo que estamos acostumbrados, son…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martin Gomez",
+          "texto": "Buenisima atencion sobre todo para los que precisan el cosito del cosito el rasta el mejor",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Emilio Magnone",
+          "texto": "Ferreteros de barrio, como los de antes, de la planta, buena onda y soluciona problemas. Muy completa y en precio, lo que no tienen, te lo consiguen o te dicen…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Susana Nuňez",
+          "texto": "Excelente!!! dónde tienes una atención personalizada y profesional.El trato excelente!! Calidad y precio excelente;! dónde quedas con ganas de volver!!…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferremundo",
+      "reseñas": "152",
+      "rating": "4.6",
+      "telefono": "+59824068612",
+      "whatsapp": "https://wa.me/59824068612",
+      "link_maps": "https://www.google.com/maps/place/Ferremundo/data=!4m7!3m6!1s0x959f81b33437fe1f:0xbbd8f5790cca469c!8m2!3d-34.9034336!4d-56.1753897!16s%2Fg%2F11fn0ttr28!19sChIJH_43NLOBn5URnEbKDHn12Ls?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Eduardo Acevedo 1422, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9:30 a.m.–6 p.m. · sáb 9:30 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Nelsi Negrín",
+          "texto": "Quien me atendió fue muy amable y claro en las explicaciones q solicité. Muy recomendable. Mañana voy a comprar la pintura para todo el interior del apto.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Lorena Malveder",
+          "texto": "Los conocí por su oferta de bolsas de escombro y la verdad es que tienen muchos productos a buen precio. La atención es excelente. Los recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ivonne Macedo",
+          "texto": "Fue la primera ves que compraba alli . La verdad que la atencion fue muy buena . Y por suerte tenian el producto q necesitaba",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jose Luis Colina bordones",
+          "texto": "Excelente atención y muchas cosas con el ramo ferretero.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "SEVIMAR",
+      "reseñas": "144",
+      "rating": "4.0",
+      "telefono": "+59824025571",
+      "whatsapp": "https://wa.me/59824025571",
+      "link_maps": "https://www.google.com/maps/place/SEVIMAR/data=!4m7!3m6!1s0x959f81b3d83f6fe3:0xc2c982228a44c321!8m2!3d-34.9054187!4d-56.1720585!16s%2Fg%2F11d_y5s6xc!19sChIJ428_2LOBn5URIcNEiiKCycI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Juan Manuel Blanes 1292, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–12:30 p.m., 1:30–5:30 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Alberto Gómez Cruz",
+          "texto": "Una excelente ferreteria de cercania. Con buen y actualizado stock, rápida entrega de pedidos web y efectivo mecanismo de preventa. A psrtir del 1 de enero, el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Angel Echeverria",
+          "texto": "Fuimos a comprar una manguera para garrafa con una medida, no solo nos dieron la manguera con una medida inferior a la que necesitábamos sino que se negaron a…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Diana Mariño",
+          "texto": "Fui a comprar una manguera para el gas ayer. Claramente le dije a la muchacha que me atendió que quería dos y medio de la manguera, me atendió y cuando llegué…",
+          "estrellas": 1
+        },
+        {
+          "nombre": "YISUS CRY",
+          "texto": "decayó muchísimo luego del cambio de firma, e ido más de 4 veces a buscar cosas tan simples y básicas como, alambre, llaves o adaptadores para las mismas…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Semar",
+      "reseñas": "90",
+      "rating": "4.3",
+      "telefono": "+59824126731",
+      "whatsapp": "https://wa.me/59824126731",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Semar/data=!4m7!3m6!1s0x959f81b5c28386dd:0x9d95b2f5f8daa7b6!8m2!3d-34.9063286!4d-56.1797823!16s%2Fg%2F11c1r7nr0y!19sChIJ3YaDwrWBn5URtqfa-PWylZ0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "3RVC+F38 Ferretería Semar, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 8:30 a.m.–6 p.m. · sáb 8:30 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "liliana neme",
+          "texto": "Muy amables y eficientes. Necesité una solución rápida y me la brindaron enseguida. Muy recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Marcos Sarraute",
+          "texto": "No avisan cuando cierran en feriados laborables mal ahí",
+          "estrellas": 3
+        },
+        {
+          "nombre": "Emmanuel Azor",
+          "texto": "Nada, poca cosa, fui 3 veces por 3 cosas distintas, nunca tenían,",
+          "estrellas": 1
+        },
+        {
+          "nombre": "Ismael Bitabares",
+          "texto": "Sopapa básica $290 pesos cuando en mercado libre o otra ferretería 90 pesos",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Patria",
+      "reseñas": "62",
+      "rating": "4.8",
+      "telefono": "+59827107288",
+      "whatsapp": "https://wa.me/59827107288",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Patria/data=!4m7!3m6!1s0x959f81a2a6326903:0x49836e882e410b72!8m2!3d-34.9184468!4d-56.1649074!16s%2Fg%2F11hdr1kj9f!19sChIJA2kypqKBn5URcgtBLohug0k?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Patria 555, 11300 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Edgardo Bertini",
+          "texto": "Muy buena atención.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mauri Sepulveda",
+          "texto": "Siempre tienen todo lo que preciso y la asesoría es EXCELENTE",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tiziano Castro",
+          "texto": "Buena atención, precios competentes y muy completa",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Gonzalez",
+          "texto": "Excelente atención..y todo lo que se precisa . Tienen buenos precios.totslmente ...y lo importante la atención y detalle de comprensión",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería Birriel",
+      "reseñas": "53",
+      "rating": "4.5",
+      "telefono": "+59892940336",
+      "whatsapp": "https://wa.me/59892940336",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+Birriel/data=!4m7!3m6!1s0x959f8035691d0efb:0x6526472506dd577b!8m2!3d-34.9014539!4d-56.1815482!16s%2Fg%2F11cs6dktyt!19sChIJ-w4daTWAn5URe1fdBiVHJmU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Minas 1586, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Ivana Luzardo",
+          "texto": "Excelente atención los chicos gracias 👏👏",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yami Alvez",
+          "texto": "Gran atención y variedad de productos, muy recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "luis marquez",
+          "texto": "Exelente atención me orientaron sobre lo que necesitaba con total conocimiento. Esto habla de que hay experiencia y buena voluntad en el lugar. Los recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Beatriz Betty",
+          "texto": "Excelente atención dispuestos sonrientes Lástima la competencia desleal que se instala pegado al comercio después de tanto sacrificio",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Electricista Palermo",
+      "reseñas": "47",
+      "rating": "4.9",
+      "telefono": "+59892925469",
+      "whatsapp": "https://wa.me/59892925469",
+      "link_maps": "https://www.google.com/maps/place/Electricista+Palermo/data=!4m7!3m6!1s0x959f8183b7a286ff:0xfede7517bfe7f971!8m2!3d-34.9089882!4d-56.1784284!16s%2Fg%2F11rpxxvnnd!19sChIJ_4ait4OBn5URcfnnvxd13v4?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Electricista",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Gonzalo Ayusto",
+          "texto": "Muy buen trabajo muy prolijo quedamos muy conforme con el trabajo realizado. Recomendable 👌🏼 las luces quedaron impecables.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Malvina Rebufello",
+          "texto": "Quedé muy conforme con su trabajo. Valoro la prolijidad y rapidez con que solucionó el problema. Recomendado!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carolina",
+          "texto": "Muy buen servicio. Instaló la cocina, reparó tomacorrientes y una lámpara, todo quedó perfecto. Es puntual, prolijo y amable, lo recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gowsher2g",
+          "texto": "Excelente trabajo, me soluciono una falla en el cableado y tomas para las computadoras. Todo ok.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Ferretería ferremania",
+      "reseñas": "35",
+      "rating": "4.8",
+      "telefono": "+59891261206",
+      "whatsapp": "https://wa.me/59891261206",
+      "link_maps": "https://www.google.com/maps/place/Ferreter%C3%ADa+ferremania/data=!4m7!3m6!1s0x959f8135c58db4b3:0x70dacc87baffef01!8m2!3d-34.9005054!4d-56.1738771!16s%2Fg%2F11w_njh8fb!19sChIJs7SNxTWBn5URAe__uofM2nA?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Arenal Grande 1522, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Tienda de herramientas",
+      "horarios": "lun a vie 9 a.m.–7 p.m. · sáb 9 a.m.–4 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Jose Da Costa",
+          "texto": "Está ferretería Me dejo impactado tienen de todo un poco. Fui por una pintura y salí con muchas cosas más, me impresionó que hasta conectores o adaptadores de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Horacio melo pissón",
+          "texto": "Excelente, me hicieron una copia de la llave en cinco minutos. No tenía cadena para dejar la bicicleta afuera y el muchacho me dejó entrarla. Muy buena…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leonardo Ramos",
+          "texto": "Gran variedad de productos y lo mejor de todo es la atención, con una buena vibra y energía positiva. No dudes en consultarles ya que te asesoran de forma…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mario Martinez",
+          "texto": "Tienen de todo hasta copias de llaves 🔑 y con una atención excelente. Siempre dispuestos a ayudar y asesorar. Muy buenos precios y ubicación ideal en el…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Mantenimientos2.0 plomero 24 horas",
+      "reseñas": "26",
+      "rating": "4.5",
+      "telefono": "+59898806013",
+      "whatsapp": "https://wa.me/59898806013",
+      "link_maps": "https://www.google.com/maps/place/Mantenimientos2.0+plomero+24+horas/data=!4m7!3m6!1s0x6b2113b7a101410b:0x48e7774d8b545461!8m2!3d-34.8948441!4d-56.1689082!16s%2Fg%2F11nr0y47sd!19sChIJC0EBobcTIWsRYVRUi01350g?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Dr. Salvador Ferrer Serra 2249, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Walter N",
+          "texto": "Excelente servicio !!!! Muy amables la atención, rapidez para solucionarlo , prolijos en el trabajo. Nada malo que decir , muy recomendable. Muchas gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana Sosa",
+          "texto": "Muy recomendable excelente trabajo gracias MANTENIMIENTOS2.0 sigan así re confiables y prolijos !!!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "marcela198517@gmail.com Marce",
+          "texto": "Sumamente conforme con el servicio . Llegaron muy rápido y me solucionaron en poco tiempo mi problema Lo recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Camila Hernandez",
+          "texto": "Excelente servicio. Respondió tarde en la noche y llegó puntual. Termino el trabajo en el tiempo estimado y con prolijidad. 100% recomendado.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "La Casa del Fittings",
+      "reseñas": "25",
+      "rating": "4.5",
+      "telefono": "+59899439531",
+      "whatsapp": "https://wa.me/59899439531",
+      "link_maps": "https://www.google.com/maps/place/La+Casa+del+Fittings/data=!4m7!3m6!1s0x959f819912c3085d:0x4f2482bc46aab47f!8m2!3d-34.9002001!4d-56.1728484!16s%2Fg%2F11jgv6g8nn!19sChIJXQjDEpmBn5URf7SqRryCJE8?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Dr. Pablo de María 1578, 11200 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Ferretería",
+      "horarios": "lun a vie 7 a.m.–6:30 p.m. · sáb 8 a.m.–1 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Hugo Dobal",
+          "texto": "Excelente atención. Me orientaron muy bien y me vendieron lo que necesitaba sin generarme gastos innecesarios. Volvería y recomiendo al 100%",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Melisa Fernandez",
+          "texto": "Excelente el trato! Los mejores sin dudas",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Santiago Cuello",
+          "texto": "Se consigue o se hace. Un genio Sergio, gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "AJMH",
+          "texto": "Excelente!!, Impecable!!, La atención y el trato fue impecable. Fui con varias dudas y me dieron todo lo necesario para resolver evitando gastos innecesarios…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Sanitaria Pocitos",
+      "reseñas": "21",
+      "rating": "4.2",
+      "telefono": "+59827092702",
+      "whatsapp": "https://wa.me/59827092702",
+      "link_maps": "https://www.google.com/maps/place/Sanitaria+Pocitos/data=!4m7!3m6!1s0x959f8145592a13ef:0xcd7cbe911cab551!8m2!3d-34.9093602!4d-56.145298!16s%2Fg%2F11h3k6vyx_!19sChIJ7xMqWUWBn5URUbXKEenL1ww?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Alejandro Chucarro 1287, 11300 Montevideo, Departamento de Montevideo, Uruguay",
+      "categoria": "Tienda de artículos de fontanería",
+      "horarios": "lun a vie 8 a.m.–5 p.m.",
+      "pais": "Uruguay",
+      "reseñas_texto": [
+        {
+          "nombre": "Fernando Mereles",
+          "texto": "Muy buena atención Precios acordes.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "DIEGO TABAREZ",
+          "texto": "Muy buena atención … Y los precios para la zona los mejores",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Richard Dinardi",
+          "texto": "Excelente atención! Recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vladimir De Bellis",
+          "texto": "De lo mejorcito en la vuelta. Excelente atención y buenos precios",
+          "estrellas": 5
+        }
+      ]
+    }
+  ]
+}

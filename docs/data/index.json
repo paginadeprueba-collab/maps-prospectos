@@ -1,6 +1,24 @@
 {
   "searches": [
     {
+      "id": "20261123-162024_plomeros-4-barrios-montevideo-uruguay",
+      "query": "plomeros · 4 barrios Montevideo Uruguay",
+      "date": "20261123-162024",
+      "date_label": "2026-11-23 16:20 (America/Buenos_Aires)",
+      "n_raw": 129,
+      "n_limpio": 14,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Barrio Sur, Montevideo, Uruguay",
+        "Cordón, Montevideo, Uruguay",
+        "Palermo, Montevideo, Uruguay",
+        "Parque Rodó, Montevideo, Uruguay"
+      ],
+      "pais": "Uruguay",
+      "file": "20261123-162024_plomeros-4-barrios-montevideo-uruguay.json"
+    },
+    {
       "id": "20261123-153538_fumigadores-1-ciudad-uruguay",
       "query": "fumigadores · 1 ciudad Uruguay",
       "date": "20261123-153538",
