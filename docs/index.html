@@ -889,6 +889,7 @@
 
   <script src="ejemplo/codec.js?v=20261118a"></script>
   <script src="ejemplo/hogar.js?v=20261123b"></script>
+  <script src="ejemplo/grupos-extra.js?v=20261123t"></script>
   <script src="ejemplo/resenas.js?v=20261116d"></script>
   <script src="latam.js?v=20261123c"></script>
   <script>
@@ -2073,7 +2074,8 @@
     function prepararEjemplo(r) {
       const grupos = window.EjemploGrupos || {};
       const ctx = contextoEjemplo();
-      const nombres = Object.keys(grupos);
+      // Primero los rubros con plantillas propias (psicología, constructora, jurídico…); hogar queda último.
+      const nombres = Object.keys(grupos).filter((k) => k !== "hogar").concat(grupos.hogar ? ["hogar"] : []);
       for (let i = 0; i < nombres.length; i++) {
         const g = grupos[nombres[i]];
         if (!g || typeof g.payload !== "function") continue;
@@ -2127,6 +2129,10 @@
     }
 
     function paginasDe(grupo) {
+      if (grupo && grupo.id === "hogar" && Array.isArray(grupo.paginas)) {
+        // Los 6 diseños de siempre (mismo orden) + los 3 de la Fábrica de Sitios.
+        return grupo.paginas.concat(["ejemplo/hogar-7.html", "ejemplo/hogar-8.html", "ejemplo/hogar-9.html"].filter((p) => grupo.paginas.indexOf(p) < 0));
+      }
       if (grupo && Array.isArray(grupo.paginas) && grupo.paginas.length) return grupo.paginas;
       return [grupo && grupo.pagina, grupo && grupo.pagina2].filter(Boolean);
     }

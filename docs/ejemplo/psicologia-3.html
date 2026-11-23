@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8eb4c8">
+<meta name="description" content="Atención psicológica presencial y online. Conocé los servicios y solicitá una primera consulta.">
+<title>Espacio de Psicología | Bienestar emocional</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap');
+:root{--ink:#18313b;--muted:#526b73;--cream:#f7f5ef;--blue:#8eb4c8;--accent:#d98673;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}
+a{color:inherit;text-decoration:none}.hero{min-height:760px;height:100svh;max-height:950px;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:clamp(28px,7vw,76px) clamp(22px,8vw,100px) 28px;background-image:linear-gradient(180deg,rgba(17,39,35,.30) 0%,rgba(17,39,35,.12) 42%,rgba(7,20,16,.56) 100%),url('https://images.unsplash.com/photo-1776965914164-3aec022dd9a3?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=85&w=1800');background-size:cover;background-position:center center;background-repeat:no-repeat;}
+.hero:before{content:none;display:none}
+.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,42,38,.20),rgba(18,42,38,.03) 38%,rgba(0,0,0,.16) 62%,rgba(0,0,0,.48));pointer-events:none}
+.hero>*{position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f6f5f1;margin:0 0 22px;font-weight:500}
+h1{font-weight:400;letter-spacing:-.065em;line-height:.88;font-size:clamp(3.3rem,10vw,7.6rem);color:#fff;margin:0;max-width:850px}
+h1 em{font-family:'Playfair Display',Georgia,serif;font-weight:500;letter-spacing:-.06em}
+.hero-copy{font-size:clamp(15px,2.1vw,21px);line-height:1.42;color:#fff;max-width:440px;margin:30px 0 0;text-shadow:0 1px 12px #314c56}
+.hero-spacer{flex:1;min-height:30px}
+.review-panel{width:min(100%,420px);background:rgba(255,255,255,.91);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.65);border-radius:16px;padding:15px 17px 14px;box-shadow:0 12px 35px rgba(14,35,38,.15);color:var(--ink);margin-bottom:22px}
+.review-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.stars{color:#d18b35;letter-spacing:2px;font-size:16px;white-space:nowrap}.verified{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#55736f;font-weight:600}
+.review-text{font-size:13px;line-height:1.45;margin:0;min-height:38px;transition:opacity .35s ease}.review-author{font-size:11px;color:#687c80;margin-top:7px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 19px;font-size:13px;font-weight:600;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-light{background:#fff;color:#203b44}.btn-outline{border:1px solid rgba(255,255,255,.75);color:#fff;background:rgba(255,255,255,.08)}
+.section{padding:76px clamp(22px,7vw,90px)}.section-head{max-width:650px;margin:0 auto 28px;text-align:center}.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9b7467;font-weight:600}.section h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.055em;line-height:1.02;font-weight:400;margin:12px 0;color:var(--ink)}.section-head p{color:var(--muted);line-height:1.6;font-size:15px;margin:0}
+.services{background:#eef1ec;overflow:hidden}.service-track-wrap{overflow:hidden;position:relative}.service-track{display:flex;gap:14px;width:max-content;animation:slide 34s linear infinite}.service-track-wrap:hover .service-track{animation-play-state:paused}.service-card{width:245px;min-height:180px;border-radius:18px;background:#fff;padding:23px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 24px rgba(29,57,60,.06)}.service-no{font-family:'Playfair Display',serif;font-style:italic;color:#c68a79;font-size:24px}.service-card h3{font-size:19px;font-weight:500;letter-spacing:-.03em;margin:20px 0 7px}.service-card p{font-size:13px;color:var(--muted);line-height:1.5;margin:0}
+@keyframes slide{to{transform:translateX(-50%)}}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-visual{min-height:300px;border-radius:22px;background:linear-gradient(145deg,#b5cbd0,#e7d8c5);display:flex;align-items:center;justify-content:center;padding:35px;text-align:center;color:#35515a}.about-visual blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.15;margin:0}.about-copy p{color:var(--muted);line-height:1.7;font-size:15px}.about-copy h2{margin-top:10px}
+.booking{background:#dce8e7}.booking-inner{max-width:850px;margin:auto;background:rgba(255,255,255,.72);border-radius:24px;padding:clamp(22px,5vw,42px);display:grid;grid-template-columns:1fr 1fr;gap:30px}.booking h2{font-size:clamp(2rem,5vw,3rem);font-weight:400;letter-spacing:-.05em;line-height:1;margin:10px 0 15px}.booking p{color:var(--muted);line-height:1.6;font-size:14px}.form{display:grid;gap:11px}.form input,.form select,.form textarea{width:100%;border:1px solid #d4dfdc;border-radius:11px;background:#fff;padding:13px 14px;font:inherit;font-size:14px;color:var(--ink)}.form textarea{min-height:82px;resize:vertical}.form button{border:0;background:#294d53;color:#fff;cursor:pointer;font:600 14px 'DM Sans';padding:14px;border-radius:999px}.small-note{font-size:11px!important;color:#718489!important;margin-top:8px}
+footer{padding:26px 22px;text-align:center;font-size:12px;color:#718087}
+@media(max-width:650px){.hero{min-height:760px;height:100svh;padding:35px 22px 24px}.hero{background-position:center center}h1{font-size:clamp(3.1rem,15vw,5rem)}.hero-copy{max-width:320px;margin-top:22px}.review-panel{padding:13px 14px;margin-bottom:16px}.review-text{font-size:12px;min-height:36px}.section{padding:58px 20px}.about{grid-template-columns:1fr;gap:25px}.about-visual{min-height:220px}.booking-inner{grid-template-columns:1fr;gap:15px}.service-card{width:220px;min-height:170px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-track{animation:none}.review-text{transition:none}}
+</style>
+<style>/* Fábrica de Sitios: sello de reseñas */
+.sello-resenas-google.sello-resenas-google{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:#e8f8ee;color:#0b7a3b;font-weight:800;font-size:12px;letter-spacing:.01em;line-height:1.2;text-transform:none;text-shadow:none}
+</style>
+</head>
+<body>
+<header class="hero" id="inicio">
+  <p class="eyebrow"><span data-nombre>Espacio de Psicología</span> · Atención psicológica en <span data-zona>tu zona</span></p>
+  <h1><em>Un lugar</em><br>para volver<br>a <em>encontrarte.</em></h1>
+  <p class="hero-copy">Acompañamiento psicológico para comprender lo que te pasa y construir nuevas herramientas para tu bienestar.</p>
+  <div class="hero-spacer"></div>
+  <div class="review-panel" aria-label="Opiniones" data-hide-if="reviews-text">
+    <div class="review-head"><span class="stars" data-stars>★★★★★</span><span class="sello-resenas-google">Reseñas verificadas de Google</span></div>
+    <p class="review-text" id="reviewText"></p><span data-reviews-count hidden></span>
+    <div class="review-author" id="reviewAuthor"></div>
+  </div>
+  <div class="hero-actions">
+    <a class="btn btn-light" href="#turnos">Solicitar una consulta</a>
+    <a class="btn btn-outline" href="#servicios">Conocer servicios</a>
+  </div>
+</header>
+
+<main>
+<section class="section services" id="servicios">
+  <div class="section-head"><span class="kicker">Cómo podemos trabajar</span><h2>Un acompañamiento<br>para cada momento.</h2><p>Conocé las modalidades de atención. Deslizá para explorar los servicios.</p></div>
+  <div class="service-track-wrap">
+    <div class="service-track" id="serviceTrack">
+      <article class="service-card"><span class="service-no">01</span><div><h3>Psicoterapia individual</h3><p>Un espacio personal para trabajar emociones, pensamientos y experiencias.</p></div></article>
+      <article class="service-card"><span class="service-no">02</span><div><h3>Atención online</h3><p>Encuentros a distancia, desde un espacio privado y cómodo.</p></div></article>
+      <article class="service-card"><span class="service-no">03</span><div><h3>Orientación y acompañamiento</h3><p>Herramientas para atravesar cambios y momentos difíciles.</p></div></article>
+      <article class="service-card"><span class="service-no">04</span><div><h3>Adolescentes</h3><p>Un espacio de escucha adaptado a las necesidades de cada etapa.</p></div></article>
+      <article class="service-card"><span class="service-no">05</span><div><h3>Psicoterapia individual</h3><p>Un espacio personal para trabajar emociones, pensamientos y experiencias.</p></div></article>
+      <article class="service-card"><span class="service-no">06</span><div><h3>Atención online</h3><p>Encuentros a distancia, desde un espacio privado y cómodo.</p></div></article>
+      <article class="service-card"><span class="service-no">07</span><div><h3>Orientación y acompañamiento</h3><p>Herramientas para atravesar cambios y momentos difíciles.</p></div></article>
+      <article class="service-card"><span class="service-no">08</span><div><h3>Adolescentes</h3><p>Un espacio de escucha adaptado a las necesidades de cada etapa.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="about-visual"><blockquote>“Pedir ayuda también es una forma de cuidarte.”</blockquote></div>
+  <div class="about-copy"><span class="kicker">Atención profesional</span><h2>Un espacio de escucha, sin juicios.</h2><p>La terapia es un proceso singular. El trabajo se construye en conjunto, respetando tu historia, tus tiempos y tus objetivos.</p><p><strong>Completá esta sección</strong> con el nombre, matrícula, formación, orientación terapéutica y modalidad de atención de la profesional.</p></div>
+</section>
+
+<section class="section booking" id="turnos">
+  <div class="booking-inner">
+    <div><span class="kicker">Primer paso</span><h2>Coordinemos<br>una consulta.</h2><p>Dejanos tus datos y se abrirá WhatsApp con el mensaje listo para enviar. La solicitud queda confirmada cuando recibas respuesta.</p><p class="small-note">No incluyas información clínica ni detalles sensibles en este formulario.</p></div>
+    <form class="form" id="bookingForm">
+      <input id="name" name="name" placeholder="Tu nombre" autocomplete="name" required>
+      <select id="modality" name="modality"><option value="Presencial">Modalidad presencial</option><option value="Online">Modalidad online</option><option value="A consultar">Quiero consultar</option></select>
+      <input id="availability" name="availability" placeholder="Días u horarios de preferencia">
+      <textarea id="message" name="message" placeholder="Mensaje breve (opcional)"></textarea>
+      <button type="submit">Solicitar turno por WhatsApp</button>
+      <p class="small-note">Al enviar, se abrirá WhatsApp para que revises y envíes el mensaje.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><span data-nombre>Espacio de Psicología</span> · Atención presencial y online</footer>
+<script>
+var WHATSAPP_NUMBER=""; // Lo completa llenar.js con el WhatsApp del negocio.
+let reviews=[];
+window.alLlenar=function(d){const g=!(d.g===0||d.g==="0");reviews=(d.e||[]).filter(r=>r&&r[1]).map(r=>({text:"“"+String(r[1]).slice(0,180)+"”",author:r[0]||(g?"Reseña publicada en Google":"Paciente")}));if(reviews.length){reviewText.textContent=reviews[0].text;reviewAuthor.textContent=reviews[0].author;}};
+let currentReview=0;
+const reviewText=document.getElementById("reviewText"), reviewAuthor=document.getElementById("reviewAuthor");
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+ setInterval(()=>{if(reviews.length<2)return;reviewText.style.opacity="0";reviewAuthor.style.opacity="0";setTimeout(()=>{currentReview=(currentReview+1)%reviews.length;reviewText.textContent=reviews[currentReview].text;reviewAuthor.textContent=reviews[currentReview].author;reviewText.style.opacity="1";reviewAuthor.style.opacity="1";},350)},4200);
+}
+document.getElementById("bookingForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(!WHATSAPP_NUMBER){alert("Este sitio de ejemplo todavía no tiene WhatsApp cargado.");return;}
+ const name=document.getElementById("name").value.trim();
+ const modality=document.getElementById("modality").value;
+ const availability=document.getElementById("availability").value.trim();
+ const message=document.getElementById("message").value.trim();
+ const body=`Hola, mi nombre es ${name}. Quisiera solicitar una consulta.\nModalidad: ${modality}\nDisponibilidad: ${availability||"A coordinar"}\nMensaje: ${message||"Sin mensaje adicional"}`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`,"_blank","noopener");
+});
+</script>
+<script src="codec.js?v=20261123t"></script>
+<script src="hogar.js?v=20261123t"></script>
+<script src="grupos-extra.js?v=20261123t"></script>
+<script src="llenar.js?v=20261123t"></script>
+</body>
+</html>
