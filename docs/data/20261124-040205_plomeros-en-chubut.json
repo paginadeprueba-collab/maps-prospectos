@@ -1,0 +1,279 @@
+{
+  "id": "20261124-040205_plomeros-en-chubut",
+  "query": "plomeros en Chubut",
+  "date": "20261124-040205",
+  "date_label": "2026-11-24 04:02 (America/Buenos_Aires)",
+  "n_raw": 207,
+  "n_limpio": 11,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "Comodoro Rivadavia, Chubut, Argentina",
+    "Trelew, Chubut, Argentina",
+    "Puerto Madryn, Chubut, Argentina",
+    "Rawson, Chubut, Argentina",
+    "Esquel, Chubut, Argentina",
+    "Rada Tilly, Chubut, Argentina",
+    "Gaiman, Chubut, Argentina",
+    "Sarmiento, Chubut, Argentina",
+    "Lago Puelo, Chubut, Argentina",
+    "Playa Unión, Chubut, Argentina",
+    "José de San Martín, Chubut, Argentina",
+    "Camarones, Chubut, Argentina",
+    "Tecka, Chubut, Argentina",
+    "Paso de Indios, Chubut, Argentina",
+    "Alto Río Senguer, Chubut, Argentina"
+  ],
+  "pais": "Argentina",
+  "prospects": [
+    {
+      "nombre": "Gasista Matriculado Garay & Otañez",
+      "reseñas": "9",
+      "rating": "4.3",
+      "telefono": "2974001867",
+      "whatsapp": "https://wa.me/5492974001867",
+      "link_maps": "https://www.google.com/maps/place/Gasista+Matriculado+Garay+%26+Ota%C3%B1ez/data=!4m7!3m6!1s0xbde45532db85be3d:0x29f0e41ced03d391!8m2!3d-45.867561!4d-67.5398748!16s%2Fg%2F11h0nr52z3!19sChIJPb6F2zJV5L0RkdMD7Rzk8Ck?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "C. 508, U9002 Comodoro Rivadavia, Chubut, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Facundo Martinez",
+          "texto": "Excelente servicio! hicieron su trabajo, llegó el día de la inspección de Camuzzi y estaba todo perfecto. Y de paso me hizo otro arreglo en casa. Muy genios…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Alejandro GS",
+          "texto": "Recomendable, seriedad y profesionalismo. Cumplió con la hora pactada para el trabajo , realizo una limpieza en 3 calefactores detallista en la misma .",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Julio Horacio Barrionuevo",
+          "texto": "Cumplió con el horario acordado y me resolvió el problema, recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "yuliana tello",
+          "texto": "Tuve problema con un calefactor, llamé y esa misma tarde me lo solucionaron, el señor muy amable, responsable y súper prolijo",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Gasista y Plomero Puerto Madryn",
+      "reseñas": "7",
+      "rating": "5.0",
+      "telefono": "2804644707",
+      "whatsapp": "https://wa.me/5492804644707",
+      "link_maps": "https://www.google.com/maps/place/Gasista+y+Plomero+Puerto+Madryn/data=!4m7!3m6!1s0xbe023500535f0b69:0xb0d6b70a72c9587e!8m2!3d-42.7888836!4d-65.0301775!16s%2Fg%2F11zd014491!19sChIJaQtfUwA1Ar4RfljJcgq31rA?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Juan B. Justo 2450, U9120 Puerto Madryn, Chubut, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Rocio Olariaga",
+          "texto": "Muy prolijo y responsable! Super recomendable 👌",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juani LVP",
+          "texto": "Muy recomendable!! super prolijo cumplió con tiempo y forma de todo lo acordado.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "silvia gimenez",
+          "texto": "Super recomendable por el servicio 👍 !!!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Celeste Noguera",
+          "texto": "Predisposición, confiabilidad y excelencia en sus servicios 🙌🏼👏🏼",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "GASISTA MATRICULADO",
+      "reseñas": "6",
+      "rating": "5.0",
+      "telefono": "1169070711",
+      "whatsapp": "https://wa.me/5491169070711",
+      "link_maps": "https://www.google.com/maps/place/GASISTA+MATRICULADO/data=!4m7!3m6!1s0xbe0157b1c3289089:0x27a0c6e11e77bd27!8m2!3d-43.3219531!4d-65.0526627!16s%2Fg%2F11l024d2n9!19sChIJiZAow7FXAb4RJ713HuHGoCc?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Cacique Nahuelpan 1337, U9120 Playa Union, Chubut, Argentina",
+      "categoria": "Oficinas de empresa",
+      "horarios": "lun a sáb 8 a.m.–6 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Claudia Tedeschi",
+          "texto": "Diego, responsable y quedamos muy conformes con tu trabajo gracias",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julian Olguin",
+          "texto": "Gasista muy responsable y prolijo, precios razonables. Lo recomiendo",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Martín Lassaga",
+          "texto": "Muy responsable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Andrea",
+          "texto": "Responsable y de confianza",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "GASISTA MATRICULADO. MDM SERVICIO MATRICULADO",
+      "reseñas": "5",
+      "rating": "5.0",
+      "telefono": "2804292984",
+      "whatsapp": "https://wa.me/5492804292984",
+      "link_maps": "https://www.google.com/maps/place/GASISTA+MATRICULADO.+MDM+SERVICIO+MATRICULADO/data=!4m7!3m6!1s0xbe023568a4a30899:0x901cf9c92e60aa66!8m2!3d-42.7757465!4d-65.0371237!16s%2Fg%2F11q9rnqr_7!19sChIJmQijpGg1Ar4RZqpgLsn5HJA?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "M. T. de Alvear, Estivariz &, Puerto Madryn, Chubut, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie Abierto las 24 horas · sáb 8 a.m.–1 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Alejandro Godoy",
+          "texto": "Gran profesionalidad y precio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ale Santoyani",
+          "texto": "Un genio...lo llame a la mañana al medio día arregló la estufa...precio acorde a lo que está todo hoy en día.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Claudia Alvarez",
+          "texto": "Muy buen servicio!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuel Hidalgo",
+          "texto": "Excelente ,muy recomendable 👍",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Melisa Pacheco Gasista",
+      "reseñas": "4",
+      "rating": "4.8",
+      "telefono": "2804537370",
+      "whatsapp": "https://wa.me/5492804537370",
+      "link_maps": "https://www.google.com/maps/place/Melisa+Pacheco+Gasista/data=!4m7!3m6!1s0xbe024b561c078aa3:0x4a6979d3f075379c!8m2!3d-42.7506275!4d-65.0468163!16s%2Fg%2F11yv1dbfwn!19sChIJo4oHHFZLAr4RnDd18NN5aUo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "U9120 Puerto Madryn, Chubut, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom 8 a.m.–8 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Gabriel Mendez",
+          "texto": "Excelente profesional. comprometida con su trabajo. Se nota su experiencia y resolución inmediata en lo relacionado con instalaciones de gas. Realizó junto a…",
+          "estrellas": 4
+        },
+        {
+          "nombre": "David Lera",
+          "texto": "Trabaje con Melisa en un proyecto situado en Puerto Madryn y quede muy conforme tanto con su trabajo como también su predisposición para atenderme y disipar…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ezequiel Posternak",
+          "texto": "Excelente! Super responsable y precisa con la documentacion .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Maria Lorena Torres",
+          "texto": "Excelente servicio, súper responsables y de confianza",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Maestro Mayor de Obras - Gasista Matriculado - Plomero",
+      "reseñas": "2",
+      "rating": "5.0",
+      "telefono": "2804533826",
+      "whatsapp": "https://wa.me/5492804533826",
+      "link_maps": "https://www.google.com/maps/place/Maestro+Mayor+de+Obras+-+Gasista+Matriculado+-+Plomero/data=!4m7!3m6!1s0xbe02352634382d15:0x27ce1d0309db506e!8m2!3d-42.7855346!4d-65.0480588!16s%2Fg%2F11r8btvs25!19sChIJFS04NCY1Ar4RblDbCQMdzic?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Fournier 1666, U9120 Puerto Madryn, Chubut, Argentina",
+      "categoria": "Empresa constructora",
+      "horarios": "",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "Servicios Destapaciones Antonio",
+      "reseñas": "1",
+      "rating": "5.0",
+      "telefono": "2804571101",
+      "whatsapp": "https://wa.me/5492804571101",
+      "link_maps": "https://www.google.com/maps/place/Servicios+Destapaciones+Antonio/data=!4m7!3m6!1s0xbe02356ca743e0fd:0x2b8cd7e48b8a805d!8m2!3d-42.7570262!4d-65.0495867!16s%2Fg%2F11z6sxgwqm!19sChIJ_eBDp2w1Ar4RXYCKi-TXjCs?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Pje. Padilla 195, U9120 Puerto Madryn, Chubut, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Evelyn Levin",
+          "texto": "Excelente trabajo de Antonio y su equipo 👏 solucionaron un problema de un caño roto y obstruido por la raíz de un árbol. Lo recomiendo ampliamente.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "JD servicios generales Gasista Matrículada",
+      "reseñas": "0",
+      "rating": "0.0",
+      "telefono": "2974122543",
+      "whatsapp": "https://wa.me/5492974122543",
+      "link_maps": "https://www.google.com/maps/place/JD+servicios+generales+Gasista+Matr%C3%ADculada/data=!4m7!3m6!1s0xbde4555dd038e585:0xd14fea70e16243ce!8m2!3d-45.8668816!4d-67.5331122!16s%2Fg%2F11njd9qzd_!19sChIJheU40F1V5L0RzkNi4XDqT9E?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "El Patagonico 1509, U9000 Comodoro Rivadavia, Chubut, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "SG",
+      "reseñas": "0",
+      "rating": "0.0",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/SG/data=!4m7!3m6!1s0xbde455938525053d:0xb26d4651774ad3e6!8m2!3d-45.8656149!4d-67.4822429!16s%2Fg%2F11p1y29l03!19sChIJPQUlhZNV5L0R5tNKd1FGbbI?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Pasaje henguis 950, U9000AXB Comodoro Rivadavia, Chubut, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "Beto Gasista",
+      "reseñas": "0",
+      "rating": "0.0",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Beto+Gasista/data=!4m7!3m6!1s0xbe0144b6cf6769bb:0x8a36972890f61e7f!8m2!3d-43.2493016!4d-65.3076351!16s%2Fg%2F1hc2gbkvv!19sChIJu2lnz7ZEAb4Rfx72kCiXNoo?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "B°70 Viv, Trelew, Chubut, Argentina",
+      "categoria": "Comercio",
+      "horarios": "",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "San Martín gasista matriculado y plomero",
+      "reseñas": "0",
+      "rating": "0.0",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/San+Mart%C3%ADn+gasista+matriculado+y+plomero/data=!4m7!3m6!1s0x961c69c968df116b:0xd06157dfdff08de4!8m2!3d-42.5060301!4d-71.427364!16s%2Fg%2F11ndvfnmzg!19sChIJaxHfaMlpHJYR5I3w399XYdA?authuser=0&hl=es&g_ep=EgoyMDI2MTEyMi4wIJJjKgBIAVAD&rclk=1",
+      "direccion": "Los Ñires, U9217 Cholila, Chubut, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "",
+      "pais": "Argentina"
+    }
+  ]
+}
