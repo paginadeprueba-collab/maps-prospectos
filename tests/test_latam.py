@@ -70,6 +70,30 @@ class ZonasTest(unittest.TestCase):
         self.assertIn("Medellín", ciudades("CO"))
         self.assertIn("La Habana", ciudades("CU"))
 
+    def test_catamarca_tiene_las_cabeceras_departamentales(self):
+        cat = next(r for r in P["AR"]["regiones"] if r["nombre"] == "Catamarca")
+        cabeceras = {
+            "San Fernando del Valle de Catamarca",
+            "San Isidro",
+            "San José",
+            "Belén",
+            "Andalgalá",
+            "Tinogasta",
+            "Santa María",
+            "Recreo",
+            "Chumbicha",
+            "La Merced",
+            "La Puerta",
+            "Saujil",
+            "Ancasti",
+            "El Alto",
+            "Antofagasta de la Sierra",
+            "Bañado de Ovanta",
+        }
+        self.assertTrue(cabeceras.issubset(set(cat["ciudades"])), set(cat["ciudades"]))
+        self.assertGreaterEqual(len(cat["ciudades"]), 16)
+        self.assertEqual(len(cat["ciudades"]), len(set(cat["ciudades"])))
+
     def test_barrios_validos(self):
         total = 0
         for p in ZONAS["paises"]:
@@ -346,6 +370,13 @@ class WorkflowTest(unittest.TestCase):
         i_sel = yml.index("> seleccion.json\n          python3 filtrar.py")
         self.assertGreater(i_sel, 0)
         self.assertIn("--seleccion seleccion.json", yml)
+
+    def test_workflow_reaplica_estado_si_el_push_choca(self):
+        yml = (ROOT / ".github" / "workflows" / "buscar.yml").read_text(encoding="utf-8")
+        self.assertNotIn('git pull --rebase origin "${{ github.ref_name }}" || true', yml)
+        self.assertIn("/tmp/estado-in-progress.json", yml)
+        self.assertIn('git push origin "HEAD:${{ github.ref_name }}"', yml)
+        self.assertIn("git reset --hard", yml)
 
 
 if __name__ == "__main__":

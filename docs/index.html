@@ -1525,7 +1525,7 @@
     }
     async function loadZonasLatam() {
       try {
-        const res = await fetch("./zonas-latam.json?v=20261123c");
+        const res = await fetch("./zonas-latam.json?v=20261124a");
         if (!res.ok) throw new Error("zonas-latam " + res.status);
         const data = await res.json();
         ZONAS_LATAM = Array.isArray(data.paises) ? data.paises : [];
@@ -1712,6 +1712,21 @@
       return fallback;
     }
 
+
+    function recortarSiPasaElTope(queries, nVar, label) {
+      const tope = FabricaLatam.AVISO_BUSQUEDAS;
+      const nQ = queries.length * Math.max(1, nVar);
+      if (nQ <= tope) return { queries, label, ok: true };
+      const maxLugares = Math.max(1, Math.floor(tope / Math.max(1, nVar)));
+      const ok = confirm(
+        "Son " + queries.length + " lugares (~" + nQ + " búsquedas). El máximo por tanda es " + maxLugares +
+        " lugares (200 búsquedas). ¿Lanzo las primeras " + maxLugares + "? El resto lo podés buscar después."
+      );
+      if (!ok) return { queries, label, ok: false };
+      const recortadas = queries.slice(0, maxLugares);
+      return { queries: recortadas, label: label.replace(/\d+ (barrios?|ciudades?|lugares?)/, recortadas.length + " $1"), ok: true };
+    }
+
     async function launchSearch() {
       let payload = {};
       let label = "";
@@ -1730,7 +1745,7 @@
           alert("Elegí al menos un barrio.");
           return;
         }
-        const queries = buildCabaQueries(rubro);
+        let queries = buildCabaQueries(rubro);
         const nVar = variantsForRubro(rubro).length;
         label =
           rubro +
@@ -1740,6 +1755,10 @@
           (selectedBarrios.size === 1 ? "" : "s") +
           " CABA" +
           (profunda ? " · profunda" : "");
+        const topeCaba = recortarSiPasaElTope(queries, nVar, label);
+        if (!topeCaba.ok) return;
+        queries = topeCaba.queries;
+        label = topeCaba.label;
         fallbackQ = queries.join("; ");
         recordarSeleccion(rubro, [...selectedBarrios]);
         payload = {
@@ -1762,7 +1781,7 @@
           return;
         }
         const sel = [...latSel.values()];
-        const queries = FabricaLatam.buildQueries(rubro, sel, pais);
+        let queries = FabricaLatam.buildQueries(rubro, sel, pais);
         const nVar = variantsForRubro(rubro).length;
         label =
           rubro +
@@ -1777,6 +1796,10 @@
           })() +
           pais.nombre +
           (profunda ? " · profunda" : "");
+        const topeLat = recortarSiPasaElTope(queries, nVar, label);
+        if (!topeLat.ok) return;
+        queries = topeLat.queries;
+        label = topeLat.label;
         fallbackQ = queries.join("; ");
         recordarSeleccion(rubro, [], {
           lugares: sel.map((x) => FabricaLatam.lugar(x.ciudad, x.region, pais, x.barrio)),
@@ -2393,7 +2416,19 @@
     el("latRegion").addEventListener("change", renderLatCiudades);
     el("btnLatTodas").addEventListener("click", () => {
       const r = latRegion();
-      if (r) latCiudadesDe(latPais(), r).forEach((c) => setCiudad({ ciudad: c, region: r.nombre }, true));
+      if (!r) return;
+      const ciudades = latCiudadesDe(latPais(), r);
+      let cortada = false;
+      for (const c of ciudades) {
+        if (!setCiudad({ ciudad: c, region: r.nombre }, true)) {
+          cortada = true;
+          break;
+        }
+      }
+      const n = ciudades.filter((c) => latSel.has(FabricaLatam.clave({ ciudad: c, region: r.nombre }))).length;
+      if (cortada) {
+        alert("Elegí " + n + " de " + ciudades.length + " ciudades de " + r.nombre + ". El máximo por búsqueda es " + FabricaLatam.MAX_CIUDADES + " lugares; el resto lo podés buscar en otra tanda.");
+      }
     });
     el("btnLatLimpiar").addEventListener("click", () => {
       latSel.clear();

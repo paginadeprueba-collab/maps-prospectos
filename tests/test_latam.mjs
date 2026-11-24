@@ -46,6 +46,15 @@ t("todas las ciudades del archivo arman consultas válidas", () => {
   }));
   assert.ok(n > 800, "ciudades: " + n);
 });
+t("Catamarca incluye las cabeceras departamentales, no solo 7 ciudades", () => {
+  const ar = pais("Argentina");
+  const cat = ar.regiones.find((r) => r.nombre === "Catamarca");
+  const have = new Set(cat.ciudades);
+  ["San Fernando del Valle de Catamarca", "San Isidro", "San José", "Chumbicha", "Recreo", "Antofagasta de la Sierra"].forEach((c) => {
+    assert.ok(have.has(c), c);
+  });
+  assert.ok(cat.ciudades.length >= 16, "ciudades Catamarca: " + cat.ciudades.length);
+});
 t("zonas: Argentina con 23 provincias (CABA aparte) y países con código", () => {
   const ar = pais("Argentina");
   assert.equal(ar.regiones.length, 23);
@@ -129,6 +138,8 @@ t("index.html: modo Provincias y Latinoamérica y CABA intacto", () => {
   assert.match(html, /fetch\("\.\/zonas-latam\.json/);
   assert.match(html, /return \[\.\.\.selectedBarrios\]\.map\(\(b\) => r \+ " en " \+ b \+ ", CABA"\);/);
   assert.match(html, /FabricaLatam\.buildQueries\(rubro, sel, pais\)/);
+  assert.match(html, /function recortarSiPasaElTope\(/);
+  assert.match(html, /El máximo por tanda es/);
 });
 
 // Barrios / zonas por ciudad (como CABA).

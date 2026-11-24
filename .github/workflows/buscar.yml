@@ -283,19 +283,29 @@ jobs:
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp
+          cp docs/data/estado.json /tmp/estado-in-progress.json
           git add docs/data/estado.json
           if git diff --staged --quiet; then
             echo "estado.json sin cambios"
           else
             git commit -m "estado: buscando — ${BUSQUEDA}"
             for attempt in 1 2 3; do
-              if git push; then
+              if git push origin "HEAD:${{ github.ref_name }}"; then
+                echo "Push estado OK"
                 break
               fi
-              echo "push falló (intento $attempt), rebase…"
-              git pull --rebase origin "${{ github.ref_name }}" || true
+              echo "push falló (intento $attempt), reaplicar estado sobre el tip…"
+              git rebase --abort 2>/dev/null || true
+              git merge --abort 2>/dev/null || true
+              git fetch origin "${{ github.ref_name }}"
+              git reset --hard "origin/${{ github.ref_name }}"
+              mkdir -p docs/data
+              cp /tmp/estado-in-progress.json docs/data/estado.json
+              git add docs/data/estado.json
+              git commit -m "estado: buscando — ${BUSQUEDA}" || true
               if [ "$attempt" = "3" ]; then
-                git push
+                git push origin "HEAD:${{ github.ref_name }}"
               fi
             done
           fi
