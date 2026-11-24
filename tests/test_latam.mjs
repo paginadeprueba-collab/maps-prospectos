@@ -140,6 +140,29 @@ t("index.html: modo Provincias y Latinoamérica y CABA intacto", () => {
   assert.match(html, /FabricaLatam\.buildQueries\(rubro, sel, pais\)/);
   assert.match(html, /function recortarSiPasaElTope\(/);
   assert.match(html, /El máximo por tanda es/);
+  assert.match(html, /function maxLugaresPorTanda\(/);
+  assert.match(html, /function guardarColaTanda\(/);
+  assert.match(html, /id="btnLatSiguienteTanda"/);
+  assert.match(html, /id="btnCabaSiguienteTanda"/);
+  assert.match(html, /Siguiente tanda/);
+});
+
+t("Argentina: provincias completas, conurbano y cabeceras oficiales", () => {
+  const ar = Z.paises.find((p) => p.id === "AR");
+  assert.equal(ar.regiones.length, 23);
+  const hay = Object.fromEntries(ar.regiones.map((r) => [r.nombre, r.ciudades]));
+  assert.ok(hay["Buenos Aires"].length >= 135, "Buenos Aires: " + hay["Buenos Aires"].length);
+  assert.ok(hay["Córdoba"].length >= 26);
+  assert.ok(hay["Santiago del Estero"].length >= 27);
+  assert.ok(hay["Tierra del Fuego"].length >= 3);
+  ["Adrogué", "San Justo", "Ramos Mejía", "Monte Grande", "Carhué"].forEach((c) => {
+    assert.ok(hay["Buenos Aires"].includes(c), c);
+  });
+  ["Cosquín", "San Agustín", "Laboulaye"].forEach((c) => assert.ok(hay["Córdoba"].includes(c), c));
+  ["Campo Grande", "Puerto Esperanza", "Alba Posse"].forEach((c) => assert.ok(hay["Misiones"].includes(c), c));
+  assert.ok(hay["Mendoza"].includes("Villa Nueva"));
+  const n = ar.regiones.reduce((s, r) => s + r.ciudades.length, 0);
+  assert.ok(n >= 1000, "ciudades AR: " + n);
 });
 
 // Barrios / zonas por ciudad (como CABA).

@@ -690,6 +690,7 @@
           <div id="cabaBarrios">
           <div class="quick-row" style="margin-top:4px">
             <button type="button" class="btn btn-ghost btn-tiny" id="btnAllBarrios">Todos los barrios</button>
+            <button type="button" class="btn btn-ghost btn-tiny hidden" id="btnCabaSiguienteTanda">Siguiente tanda</button>
             <button type="button" class="btn btn-ghost btn-tiny" id="btnClearBarrios">Limpiar</button>
           </div>
 
@@ -715,6 +716,7 @@
             </div>
             <div class="quick-row" style="margin-top:4px">
               <button type="button" class="btn btn-ghost btn-tiny" id="btnLatTodas">Todas las ciudades</button>
+              <button type="button" class="btn btn-ghost btn-tiny hidden" id="btnLatSiguienteTanda">Siguiente tanda</button>
               <button type="button" class="btn btn-ghost btn-tiny" id="btnLatLimpiar">Limpiar</button>
             </div>
             <div class="zona-block"><div class="chips-barrios" id="latCiudades"></div></div>
@@ -738,6 +740,7 @@
               <span class="eta" id="latEta">Elegí al menos una</span>
             </div>
             <p class="lat-aviso hidden" id="latAviso"></p>
+            <p class="hint hidden" id="latTandaInfo" style="margin:6px 0 0"></p>
           </div>
         </div>
 
@@ -1522,10 +1525,11 @@
       el("latElegidas").textContent = elegidas.length
         ? "Elegidas: " + elegidas.map((x) => x.barrio ? x.barrio + " (" + x.ciudad + ")" : x.ciudad + (normKey(x.ciudad) === normKey(x.region) ? "" : " (" + x.region + ")")).join(", ")
         : "";
+      actualizarBotonTanda();
     }
     async function loadZonasLatam() {
       try {
-        const res = await fetch("./zonas-latam.json?v=20261124a");
+        const res = await fetch("./zonas-latam.json?v=20261124b");
         if (!res.ok) throw new Error("zonas-latam " + res.status);
         const data = await res.json();
         ZONAS_LATAM = Array.isArray(data.paises) ? data.paises : [];
@@ -1713,18 +1717,83 @@
     }
 
 
-    function recortarSiPasaElTope(queries, nVar, label) {
+    let latColaTanda = null;
+
+    function maxLugaresPorTanda(nVar) {
+      const porBusquedas = Math.max(1, Math.floor(FabricaLatam.AVISO_BUSQUEDAS / Math.max(1, nVar)));
+      return Math.min(FabricaLatam.MAX_CIUDADES, porBusquedas);
+    }
+
+    function nVarActual() {
+      const rubro = (el("rubroBox").value || "").trim();
+      return rubro ? variantsForRubro(rubro).length : 1;
+    }
+
+    function guardarColaTanda(items, next, modo) {
+      if (!items || next >= items.length) latColaTanda = null;
+      else latColaTanda = { items: items, next: next, modo: modo };
+      actualizarBotonTanda();
+    }
+
+    function actualizarBotonTanda() {
+      const cola = latColaTanda;
+      const quedan = cola && cola.next < cola.items.length ? cola.items.length - cola.next : 0;
+      const btnLat = el("btnLatSiguienteTanda");
+      const btnCaba = el("btnCabaSiguienteTanda");
+      const info = el("latTandaInfo");
+      if (btnLat) {
+        const show = !!(cola && cola.modo === "latam" && quedan);
+        btnLat.classList.toggle("hidden", !show);
+        if (show) btnLat.textContent = "Siguiente tanda (" + quedan + " restantes)";
+      }
+      if (btnCaba) {
+        const show = !!(cola && cola.modo === "caba" && quedan);
+        btnCaba.classList.toggle("hidden", !show);
+        if (show) btnCaba.textContent = "Siguiente tanda (" + quedan + " restantes)";
+      }
+      if (info) {
+        if (cola && quedan) {
+          const max = maxLugaresPorTanda(nVarActual());
+          const nTandas = Math.ceil(cola.items.length / max);
+          const nActual = Math.min(nTandas, Math.floor(cola.next / max) + 1);
+          info.textContent = "Tanda " + nActual + " de " + nTandas + ". Quedan " + quedan + " de " + cola.items.length + " lugares: tocá «Siguiente tanda» cuando termine esta búsqueda.";
+          info.classList.remove("hidden");
+        } else {
+          info.textContent = "";
+          info.classList.add("hidden");
+        }
+      }
+    }
+
+    function etiquetaTanda(label) {
+      const cola = latColaTanda;
+      if (!cola || !cola.items.length) return label;
+      const max = maxLugaresPorTanda(nVarActual());
+      const nTandas = Math.ceil(cola.items.length / max);
+      if (nTandas <= 1) return label;
+      const nActual = Math.max(1, Math.ceil(cola.next / max) || 1);
+      if (label.indexOf("tanda ") !== -1) return label;
+      return label + " · tanda " + nActual + " de " + nTandas;
+    }
+
+    function recortarSiPasaElTope(queries, nVar, label, itemsCola, modo) {
       const tope = FabricaLatam.AVISO_BUSQUEDAS;
       const nQ = queries.length * Math.max(1, nVar);
-      if (nQ <= tope) return { queries, label, ok: true };
-      const maxLugares = Math.max(1, Math.floor(tope / Math.max(1, nVar)));
+      const maxLugares = maxLugaresPorTanda(nVar);
+      if (nQ <= tope && queries.length <= maxLugares) return { queries, label: etiquetaTanda(label), ok: true };
+      const nTandas = Math.ceil(queries.length / maxLugares);
       const ok = confirm(
         "Son " + queries.length + " lugares (~" + nQ + " búsquedas). El máximo por tanda es " + maxLugares +
-        " lugares (200 búsquedas). ¿Lanzo las primeras " + maxLugares + "? El resto lo podés buscar después."
+        " lugares (200 búsquedas). ¿Lanzo la tanda 1 de " + nTandas + "? Después tocá «Siguiente tanda» para seguir."
       );
       if (!ok) return { queries, label, ok: false };
       const recortadas = queries.slice(0, maxLugares);
-      return { queries: recortadas, label: label.replace(/\d+ (barrios?|ciudades?|lugares?)/, recortadas.length + " $1"), ok: true };
+      if (itemsCola && itemsCola.length > maxLugares) guardarColaTanda(itemsCola, maxLugares, modo);
+      return {
+        queries: recortadas,
+        label: etiquetaTanda(label.replace(/\d+ (barrios?|ciudades?|lugares?)/, recortadas.length + " $1")),
+        ok: true
+      };
     }
 
     async function launchSearch() {
@@ -1755,7 +1824,7 @@
           (selectedBarrios.size === 1 ? "" : "s") +
           " CABA" +
           (profunda ? " · profunda" : "");
-        const topeCaba = recortarSiPasaElTope(queries, nVar, label);
+        const topeCaba = recortarSiPasaElTope(queries, nVar, label, [...selectedBarrios], "caba");
         if (!topeCaba.ok) return;
         queries = topeCaba.queries;
         label = topeCaba.label;
@@ -1796,7 +1865,7 @@
           })() +
           pais.nombre +
           (profunda ? " · profunda" : "");
-        const topeLat = recortarSiPasaElTope(queries, nVar, label);
+        const topeLat = recortarSiPasaElTope(queries, nVar, label, sel, "latam");
         if (!topeLat.ok) return;
         queries = topeLat.queries;
         label = topeLat.label;
@@ -2411,24 +2480,43 @@
     el("modeLatam").addEventListener("click", () => setSearchMode("latam"));
     el("latPais").addEventListener("change", () => {
       latSel.clear();
+      latColaTanda = null;
+      actualizarBotonTanda();
       renderLatRegiones();
     });
-    el("latRegion").addEventListener("change", renderLatCiudades);
+    el("latRegion").addEventListener("change", () => {
+      latColaTanda = null;
+      actualizarBotonTanda();
+      renderLatCiudades();
+    });
     el("btnLatTodas").addEventListener("click", () => {
       const r = latRegion();
       if (!r) return;
       const ciudades = latCiudadesDe(latPais(), r);
-      let cortada = false;
-      for (const c of ciudades) {
-        if (!setCiudad({ ciudad: c, region: r.nombre }, true)) {
-          cortada = true;
-          break;
-        }
+      const items = ciudades.map((c) => ({ ciudad: c, region: r.nombre }));
+      const max = maxLugaresPorTanda(nVarActual());
+      latSel.clear();
+      const slice = items.slice(0, max);
+      for (const x of slice) setCiudad(x, true);
+      if (items.length > max) {
+        guardarColaTanda(items, slice.length, "latam");
+        alert("Elegí " + slice.length + " de " + items.length + " ciudades de " + r.nombre + ". Cuando termine esta búsqueda, tocá «Siguiente tanda» para seguir con las que faltan.");
+      } else {
+        guardarColaTanda(null, 0, "latam");
       }
-      const n = ciudades.filter((c) => latSel.has(FabricaLatam.clave({ ciudad: c, region: r.nombre }))).length;
-      if (cortada) {
-        alert("Elegí " + n + " de " + ciudades.length + " ciudades de " + r.nombre + ". El máximo por búsqueda es " + FabricaLatam.MAX_CIUDADES + " lugares; el resto lo podés buscar en otra tanda.");
-      }
+      renderLatCiudades();
+      updateLatMeta();
+    });
+    if (el("btnLatSiguienteTanda")) el("btnLatSiguienteTanda").addEventListener("click", () => {
+      if (!latColaTanda || latColaTanda.modo !== "latam") return;
+      const max = maxLugaresPorTanda(nVarActual());
+      const slice = latColaTanda.items.slice(latColaTanda.next, latColaTanda.next + max);
+      if (!slice.length) return;
+      latSel.clear();
+      for (const x of slice) setCiudad(x, true);
+      guardarColaTanda(latColaTanda.items, latColaTanda.next + slice.length, "latam");
+      renderLatCiudades();
+      updateLatMeta();
     });
     el("btnLatLimpiar").addEventListener("click", () => {
       latSel.clear();
@@ -2457,7 +2545,25 @@
       }
     });
     el("btnAllBarrios").addEventListener("click", () => {
-      ALL_BARRIOS.forEach((b) => setBarrio(b, true));
+      const items = ALL_BARRIOS.slice();
+      const max = maxLugaresPorTanda(nVarActual());
+      ALL_BARRIOS.forEach((b) => setBarrio(b, false));
+      items.slice(0, max).forEach((b) => setBarrio(b, true));
+      if (items.length > max) {
+        guardarColaTanda(items, Math.min(max, items.length), "caba");
+        alert("Elegí " + Math.min(max, items.length) + " de " + items.length + " barrios de CABA. Cuando termine esta búsqueda, tocá «Siguiente tanda» para seguir con los que faltan.");
+      } else {
+        guardarColaTanda(null, 0, "caba");
+      }
+    });
+    if (el("btnCabaSiguienteTanda")) el("btnCabaSiguienteTanda").addEventListener("click", () => {
+      if (!latColaTanda || latColaTanda.modo !== "caba") return;
+      const max = maxLugaresPorTanda(nVarActual());
+      const slice = latColaTanda.items.slice(latColaTanda.next, latColaTanda.next + max);
+      if (!slice.length) return;
+      ALL_BARRIOS.forEach((b) => setBarrio(b, false));
+      slice.forEach((b) => setBarrio(b, true));
+      guardarColaTanda(latColaTanda.items, latColaTanda.next + slice.length, "caba");
     });
     el("btnClearBarrios").addEventListener("click", () => {
       ALL_BARRIOS.forEach((b) => setBarrio(b, false));

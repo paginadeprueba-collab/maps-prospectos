@@ -94,6 +94,46 @@ class ZonasTest(unittest.TestCase):
         self.assertGreaterEqual(len(cat["ciudades"]), 16)
         self.assertEqual(len(cat["ciudades"]), len(set(cat["ciudades"])))
 
+    def test_provincias_argentinas_completas(self):
+        # Mínimos: una ciudad por departamento/partido (TDF excluye Antártida e Islas).
+        minimos = {
+            "Buenos Aires": 135, "Catamarca": 16, "Chaco": 25, "Chubut": 15,
+            "Córdoba": 26, "Corrientes": 25, "Entre Ríos": 17, "Formosa": 9,
+            "Jujuy": 16, "La Pampa": 22, "La Rioja": 18, "Mendoza": 18,
+            "Misiones": 17, "Neuquén": 16, "Río Negro": 13, "Salta": 23,
+            "San Juan": 19, "San Luis": 9, "Santa Cruz": 7, "Santa Fe": 19,
+            "Santiago del Estero": 27, "Tierra del Fuego": 3, "Tucumán": 17,
+        }
+        hay = {r["nombre"]: r["ciudades"] for r in P["AR"]["regiones"]}
+        self.assertEqual(set(hay), set(minimos))
+        for prov, n in minimos.items():
+            self.assertGreaterEqual(len(hay[prov]), n, prov)
+        known = {
+            "Buenos Aires": ["Carhué", "Adrogué", "San Justo", "Ramos Mejía", "Monte Grande", "Caseros", "Burzaco", "La Plata", "Mar del Plata"],
+            "Catamarca": ["La Puerta", "Recreo", "Antofagasta de la Sierra", "Bañado de Ovanta"],
+            "Córdoba": ["Cosquín", "San Agustín", "Jesús María", "Laboulaye", "Salsacate", "Córdoba"],
+            "Misiones": ["Campo Grande", "Puerto Esperanza", "Alba Posse", "Concepción de la Sierra", "Posadas"],
+            "Mendoza": ["Villa Nueva", "Villa Tulumaya", "Chacras de Coria"],
+            "Salta": ["Joaquín V. González"],
+            "Tierra del Fuego": ["Ushuaia", "Río Grande", "Tolhuin"],
+        }
+        for prov, names in known.items():
+            have = set(hay[prov])
+            missing = [n for n in names if n not in have]
+            self.assertFalse(missing, (prov, missing))
+        # CABA no se mezcla en este modo
+        for r in P["AR"]["regiones"]:
+            self.assertFalse(any(c.startswith("CABA") or "comuna" in c.lower() for c in r["ciudades"]), r["nombre"])
+
+    def test_tandas_en_la_ui(self):
+        html = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("function maxLugaresPorTanda(", html)
+        self.assertIn("function guardarColaTanda(", html)
+        self.assertIn('id="btnLatSiguienteTanda"', html)
+        self.assertIn('id="btnCabaSiguienteTanda"', html)
+        self.assertIn("Siguiente tanda", html)
+        self.assertIn('zonas-latam.json?v=20261124b', html)
+
     def test_barrios_validos(self):
         total = 0
         for p in ZONAS["paises"]:
