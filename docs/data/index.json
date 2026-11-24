@@ -1,6 +1,41 @@
 {
   "searches": [
     {
+      "id": "20261124-153558_plomeros-21-ciudades-argentina",
+      "query": "plomeros · 21 ciudades Argentina",
+      "date": "20261124-153558",
+      "date_label": "2026-11-24 15:35 (America/Buenos_Aires)",
+      "n_raw": 386,
+      "n_limpio": 2,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "San Fernando del Valle de Catamarca, Catamarca, Argentina",
+        "San Isidro, Catamarca, Argentina",
+        "San José, Catamarca, Argentina",
+        "Belén, Catamarca, Argentina",
+        "Andalgalá, Catamarca, Argentina",
+        "Tinogasta, Catamarca, Argentina",
+        "Santa María, Catamarca, Argentina",
+        "Recreo, Catamarca, Argentina",
+        "Fiambalá, Catamarca, Argentina",
+        "Chumbicha, Catamarca, Argentina",
+        "La Merced, Catamarca, Argentina",
+        "La Puerta, Catamarca, Argentina",
+        "El Rodeo, Catamarca, Argentina",
+        "Saujil, Catamarca, Argentina",
+        "Londres, Catamarca, Argentina",
+        "Ancasti, Catamarca, Argentina",
+        "El Alto, Catamarca, Argentina",
+        "Antofagasta de la Sierra, Catamarca, Argentina",
+        "Bañado de Ovanta, Catamarca, Argentina",
+        "Los Altos, Catamarca, Argentina",
+        "Icaño, Catamarca, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-153558_plomeros-21-ciudades-argentina.json"
+    },
+    {
       "id": "20261124-150313_plomeros-en-ushuaia-tierra-del-fuego-arg",
       "query": "plomeros en Ushuaia, Tierra del Fuego, Argentina; plomeros en Río Grande, Tierra del Fuego, Argentina; plomeros en Tolhuin, Tierra del Fuego, Argentina",
       "date": "20261124-150313",

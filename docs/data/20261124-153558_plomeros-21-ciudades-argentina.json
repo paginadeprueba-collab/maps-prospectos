@@ -1,0 +1,104 @@
+{
+  "id": "20261124-153558_plomeros-21-ciudades-argentina",
+  "query": "plomeros · 21 ciudades Argentina",
+  "date": "20261124-153558",
+  "date_label": "2026-11-24 15:35 (America/Buenos_Aires)",
+  "n_raw": 386,
+  "n_limpio": 2,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "San Fernando del Valle de Catamarca, Catamarca, Argentina",
+    "San Isidro, Catamarca, Argentina",
+    "San José, Catamarca, Argentina",
+    "Belén, Catamarca, Argentina",
+    "Andalgalá, Catamarca, Argentina",
+    "Tinogasta, Catamarca, Argentina",
+    "Santa María, Catamarca, Argentina",
+    "Recreo, Catamarca, Argentina",
+    "Fiambalá, Catamarca, Argentina",
+    "Chumbicha, Catamarca, Argentina",
+    "La Merced, Catamarca, Argentina",
+    "La Puerta, Catamarca, Argentina",
+    "El Rodeo, Catamarca, Argentina",
+    "Saujil, Catamarca, Argentina",
+    "Londres, Catamarca, Argentina",
+    "Ancasti, Catamarca, Argentina",
+    "El Alto, Catamarca, Argentina",
+    "Antofagasta de la Sierra, Catamarca, Argentina",
+    "Bañado de Ovanta, Catamarca, Argentina",
+    "Los Altos, Catamarca, Argentina",
+    "Icaño, Catamarca, Argentina"
+  ],
+  "pais": "Argentina",
+  "prospects": [
+    {
+      "nombre": "Grasi Gas Catamarca",
+      "reseñas": "39",
+      "rating": "4.7",
+      "telefono": "3834094444",
+      "whatsapp": "https://wa.me/5493834094444",
+      "link_maps": "https://www.google.com/maps/place/Grasi+Gas+Catamarca/data=!4m7!3m6!1s0x942429ded7179131:0xd44e5bc7ac328cef!8m2!3d-28.5130881!4d-65.7861771!16s%2Fg%2F11jk2t8v_t!19sChIJMZEX194pJJQR74wyrMdbTtQ?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "RN38, San Fernando del Valle de Catamarca, Catamarca, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a mar 9 a.m.–1 p.m., 5:30–8 p.m. · mié 9 a.m.–5 p.m., 5:30–8 p.m. · jue a vie 9 a.m.–1 p.m., 5:30–8 p.m. · sáb 9 a.m.–12:30 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Paola Lobo",
+          "texto": "Hola, consulta, piden seña previa para envío a domicilio?POR FAVOR ATIENDAN AL TELÉFONO PARA EVITAR ESTAFAS!! ME CANSE DE LLAMAR PARA CONSULTAR. HAY…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Pablo Ruiz del Castillo",
+          "texto": "Muy bueno el servicio. Muy atentos los muchachos.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diego Fernando Araya",
+          "texto": "Buenos precios y muy buena atención sobre todo a domicilio",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabian Ale",
+          "texto": "muy buen servicio",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Luis Ferreyra plomero",
+      "reseñas": "4",
+      "rating": "5.0",
+      "telefono": "3834576663",
+      "whatsapp": "https://wa.me/5493834576663",
+      "link_maps": "https://www.google.com/maps/place/Luis+Ferreyra+plomero/data=!4m7!3m6!1s0x94242ffaecbc1429:0xd8c3f50e0dec7ba9!8m2!3d-28.4721739!4d-65.7265402!16s%2Fg%2F11h0bks41n!19sChIJKRS87PovJJQRqXvsDQ71w9g?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Manuel Soria, San Isidro, Catamarca, Argentina",
+      "categoria": "Empresa de construcción",
+      "horarios": "",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Ramón Leiva",
+          "texto": "Muy buen servicio, te resuelve el problema lo mejor que puede y lo solucioma, sin estafarte .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gastón Oscar Aicardi",
+          "texto": "Excelente atención. Compromiso. Respeto y muy buena predisposición. Con movilidad propia y herramientas. 100% recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Roberto Zaina",
+          "texto": "Excelente atención de Luis, el mejor plomero de Catamarca, serio, conciente y precios correctos del trabajo realizado",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Patricio Zaina",
+          "texto": "Un crack. Garantía de solución a los problemas de cañerias...",
+          "estrellas": 5
+        }
+      ]
+    }
+  ]
+}
