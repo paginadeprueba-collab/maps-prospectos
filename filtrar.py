@@ -191,11 +191,14 @@ RESENAS_PARA_CONFIAR_RATING = 10
 
 
 def pasa_umbral_o_oficio(rating, reviews, min_rating: float, min_reviews: int, modo: str, es_oficio: bool) -> bool:
-    """Si es claramente el oficio, no lo sacamos por tener pocas o cero reseñas.
-    El mínimo de rating solo se aplica cuando hay reseñas de sobra para confiar."""
+    """Respeta el mínimo de reseñas que eligió el usuario (0, 3, 5…).
+    Si es el oficio y hay pocas reseñas, no lo sacamos por un rating flojo.
+    Con 10 o más reseñas, un rating bajo sí se descarta."""
     if not es_oficio:
         return pasa_umbral(rating, reviews, min_rating, min_reviews, modo)
     n = reviews if reviews is not None else 0
+    if min_reviews > 0 and n < min_reviews:
+        return False
     if n < RESENAS_PARA_CONFIAR_RATING:
         return True
     r = rating if rating is not None else 0.0
@@ -352,6 +355,12 @@ CATEGORIAS_AJENAS = (
     "club deportivo",
     "lavanderia",
     "alojamiento",
+    "casa rural",
+    "cabana",
+    "hotel",
+    "hosteria",
+    "oficinas de empresa",
+    "oficina de gobierno local",
     "lugar de interes historico",
     "comunidad para jubilados",
     "oficina de la administracion",
@@ -410,6 +419,9 @@ def excluir_como_ajeno(rubro: str, categoria: str, nombre: str = "") -> bool:
         return False
     if es_oficio_buscado(rubro, categoria, nombre):
         return False
+    # Si el rubro es un oficio conocido y no coincide ni la categoría ni el nombre, no es prospecto.
+    if _claves_rubro(rubro):
+        return True
     if categoria_ajena(categoria):
         return True
     n = _norm_txt(nombre)

@@ -254,9 +254,19 @@ class VariantesYSeleccionTest(unittest.TestCase):
         self.assertIn("fontanero en Montevideo, Uruguay", uy)
         self.assertNotIn("gasista plomero en Montevideo, Uruguay", uy)
         caba = expand_query_variants("plomeros en Palermo, CABA")
-        self.assertEqual(caba, ["plomeros en Palermo, CABA", "plomero en Palermo, CABA", "gasista plomero en Palermo, CABA"])
+        self.assertEqual(caba, [
+                "plomeros en Palermo, CABA",
+                "plomero en Palermo, CABA",
+                "gasista plomero en Palermo, CABA",
+                "gasista en Palermo, CABA",
+                "fontanero en Palermo, CABA",
+                "destapaciones en Palermo, CABA",
+            ])
         prov = expand_query_variants("plomeros en Rosario, Santa Fe, Argentina")
-        self.assertNotIn("fontanero en Rosario, Santa Fe, Argentina", prov)
+        self.assertIn("fontanero en Rosario, Santa Fe, Argentina", prov)
+        self.assertIn("gasista en Rosario, Santa Fe, Argentina", prov)
+        self.assertIn("destapaciones en Rosario, Santa Fe, Argentina", prov)
+        self.assertTrue(all("plomería" not in q for q in prov))
         mx = expand_query_variants("dentistas en Guadalajara, Jalisco, México")
         self.assertIn("consultorio dental en Guadalajara, Jalisco, México", mx)
 
@@ -301,6 +311,9 @@ class VariantesYSeleccionTest(unittest.TestCase):
                 "plomeros en Palermo, CABA",
                 "plomero en Palermo, CABA",
                 "gasista plomero en Palermo, CABA",
+                "gasista en Palermo, CABA",
+                "fontanero en Palermo, CABA",
+                "destapaciones en Palermo, CABA",
             ],
         )
         self.assertTrue(all("plomería" not in q for q in caba))
@@ -424,10 +437,13 @@ class FiltrarTest(unittest.TestCase):
         self.assertFalse(excluir_como_ajeno("cerrajeros", "Cerrajero", "Cerrajeria Mendieta"))
         self.assertTrue(es_oficio_buscado("plomeros", "Fontanero", "X"))
         self.assertTrue(es_oficio_buscado("plomeros", "Comercio", "Beto Gasista"))
-        # Oficios de pueblo: no se caen por pocas o cero reseñas, ni por un rating flojo con pocas opiniones.
-        self.assertTrue(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", True))
+        # Si el usuario pide un mínimo, se respeta también en oficios.
+        self.assertFalse(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", True))
         self.assertFalse(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", False))
-        self.assertTrue(pasa_umbral_o_oficio(1.0, 1, 4.0, 20, "and", True))
+        self.assertFalse(pasa_umbral_o_oficio(5.0, 0, 4.0, 5, "and", True))
+        self.assertFalse(pasa_umbral_o_oficio(4.3, 3, 4.0, 5, "and", True))
+        self.assertTrue(pasa_umbral_o_oficio(4.3, 5, 4.0, 5, "and", True))
+        # Mínimo 0: oficios de pueblo no se caen por cero reseñas ni por un rating flojo con pocas opiniones.
         self.assertTrue(pasa_umbral_o_oficio(None, 0, 4.0, 0, "and", True))
         self.assertTrue(pasa_umbral_o_oficio(3.0, 8, 4.0, 0, "and", True))
         # Con 10 o más reseñas, un rating claramente bajo sí se descarta.
@@ -443,7 +459,17 @@ class FiltrarTest(unittest.TestCase):
         self.assertTrue(excluir_como_ajeno("plomeros", "", "Servimar Empresa Metalurgica"))
         self.assertFalse(excluir_como_ajeno("plomeros", "Comercio", "Beto Gasista"))
 
+    def test_saca_cabañas_y_calefaccion_si_buscas_plomeros(self):
+        # Tierra del Fuego 11:42: entraban negocios que no son el oficio.
+        self.assertTrue(excluir_como_ajeno("plomeros", "Casa rural", "Cabañas La Querencia"))
+        self.assertTrue(excluir_como_ajeno("plomeros", "Empresa de calefacción", "Poliser SRL"))
+        self.assertTrue(excluir_como_ajeno("plomeros", "Oficinas de empresa", "Central de Calefaccion"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Instalador de gas", "Gasista urgencias 24 hs"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Fontanero", "Destapes de cloacas Rg"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Empresa de construcción", "Gasista matriculado plomeria y herreria"))
+
     def test_filtro_ciudad_saca_capital_si_no_se_pidio(self):
+
         lugares = [
             "Río Cuarto, Córdoba, Argentina",
             "Villa Carlos Paz, Córdoba, Argentina",

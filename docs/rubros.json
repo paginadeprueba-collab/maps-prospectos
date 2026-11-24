@@ -58,7 +58,7 @@
       "items": [
         {
           "nombre": "plomeros",
-          "variantes": ["plomero", "gasista plomero"],
+          "variantes": ["plomero", "gasista plomero", "gasista", "fontanero", "destapaciones"],
           "latam": ["plomero", "fontanero"],
           "latam_pais": {
             "CL": ["gásfiter", "gasfiter", "plomero", "fontanero"],
