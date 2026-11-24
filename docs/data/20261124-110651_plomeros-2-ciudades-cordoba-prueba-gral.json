@@ -1,0 +1,106 @@
+{
+  "id": "20261124-110651_plomeros-2-ciudades-cordoba-prueba-gral",
+  "query": "plomeros · 2 ciudades Córdoba (prueba Gral y typo)",
+  "date": "20261124-110651",
+  "date_label": "2026-11-24 11:06 (America/Buenos_Aires)",
+  "n_raw": 42,
+  "n_limpio": 5,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "Río Cuarto, Córdoba, Argentina",
+    "Villa General Belgrano, Córdoba, Argentina"
+  ],
+  "pais": "Argentina",
+  "prospects": [
+    {
+      "nombre": "Gasista matriculado David Ávalos",
+      "reseñas": "13",
+      "rating": "5.0",
+      "telefono": "3584836638",
+      "whatsapp": "https://wa.me/5493584836638",
+      "link_maps": "https://www.google.com/maps/place/Gasista+matriculado+David+%C3%81valos/data=!4m7!3m6!1s0x95d2014b8e6c4bb3:0x4c64c85c0bed10e8!8m2!3d-33.1147252!4d-64.3634949!16s%2Fg%2F11zx_8k50q!19sChIJs0tsjksB0pUR6BDtC1zIZEw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Alonso 1450, X5806 Río Cuarto, Córdoba, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a vie 9 a.m.–8 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Romina Giisel",
+          "texto": "¡Muy recomendable! Excelente predisposición, claridad en las explicaciones y un trabajo de primera calidad con la instalación. Da mucha confianza contratar a…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Silvia Somare",
+          "texto": "Muy conforme y agradecida con su trabajo. Super responsable y de excelente trato! Muy recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ricardo Heredia",
+          "texto": "Excelente el servicio, la prolijidad al trabajar, cumpliendo con los tiempos estipulados.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Enzo Arguello",
+          "texto": "Brindaron una muy buena atención, respetaron los plazos acordados y entregaron un trabajo prolijo.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomería Electricidad y Mantenimiento En General Rio4 y Zona",
+      "reseñas": "1",
+      "rating": "5.0",
+      "telefono": "3585149032",
+      "whatsapp": "https://wa.me/5493585149032",
+      "link_maps": "https://www.google.com/maps/place/Plomer%C3%ADa+Electricidad+y+Mantenimiento+En+General+Rio4+y+Zona/data=!4m7!3m6!1s0x95d201e274357309:0xb0a272811c80b92!8m2!3d-33.1092954!4d-64.3567791!16s%2Fg%2F11zy7qtv87!19sChIJCXM1dOIB0pURkgvIESgnCgs?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "X5800 Río Cuarto, Córdoba, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun a sáb Abierto las 24 horas",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "German Arévalo Servicios",
+      "reseñas": "1",
+      "rating": "5.0",
+      "telefono": "3458412876",
+      "whatsapp": "https://wa.me/5493458412876",
+      "link_maps": "https://www.google.com/maps/place/German+Ar%C3%A9valo+Servicios/data=!4m7!3m6!1s0x95d1ff09f8055b8d:0xb57677143e523ac5!8m2!3d-33.1509704!4d-64.3471723!16s%2Fg%2F11sxx775kn!19sChIJjVsF-An_0ZURxTpSPhR3drU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Pje. Sugasti 78, X5800 Río Cuarto, Córdoba, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a sáb Abierto las 24 horas",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "Ricardo Ferrero gasista matriculado.Mat 2539",
+      "reseñas": "1",
+      "rating": "5.0",
+      "telefono": "3584010183",
+      "whatsapp": "https://wa.me/5493584010183",
+      "link_maps": "https://www.google.com/maps/place/Ricardo+Ferrero+gasista+matriculado.Mat+2539/data=!4m7!3m6!1s0x95cdff6927ac0e39:0xd415c36aff5524a3!8m2!3d-33.103301!4d-64.3386882!16s%2Fg%2F11z_661dkz!19sChIJOQ6sJ2n_zZURoyRV_2rDFdQ?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Victor Hugo 864, X5800AAA Río Cuarto, Córdoba, Argentina",
+      "categoria": "Servicio de instalación de gas",
+      "horarios": "",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Martin Filippetti",
+          "texto": "trabajador prolijo, educado y honesto!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Tu Gasista/Plomero",
+      "reseñas": "0",
+      "rating": "0.0",
+      "telefono": "3584011654",
+      "whatsapp": "https://wa.me/5493584011654",
+      "link_maps": "https://www.google.com/maps/place/Tu+Gasista%2FPlomero/data=!4m7!3m6!1s0x95cdff124878ef93:0x98bf407b48db7efe!8m2!3d-33.0951727!4d-64.2937414!16s%2Fg%2F11w32rr5_8!19sChIJk-94SBL_zZUR_n7bSHtAv5g?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gral. Las Heras 162 Depto 8, X5805 Río Cuarto, Córdoba, Argentina",
+      "categoria": "Mantenimiento de propiedades",
+      "horarios": "lun a vie 8 a.m.–8 p.m. · sáb 8 a.m.–12 p.m.",
+      "pais": "Argentina"
+    }
+  ]
+}

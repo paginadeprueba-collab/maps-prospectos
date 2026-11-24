@@ -1,6 +1,22 @@
 {
   "searches": [
     {
+      "id": "20261124-110651_plomeros-2-ciudades-cordoba-prueba-gral",
+      "query": "plomeros · 2 ciudades Córdoba (prueba Gral y typo)",
+      "date": "20261124-110651",
+      "date_label": "2026-11-24 11:06 (America/Buenos_Aires)",
+      "n_raw": 42,
+      "n_limpio": 5,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Río Cuarto, Córdoba, Argentina",
+        "Villa General Belgrano, Córdoba, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-110651_plomeros-2-ciudades-cordoba-prueba-gral.json"
+    },
+    {
       "id": "20261124-103217_plomeros-3-ciudades-cordoba-prueba-filtr",
       "query": "plomeros · 3 ciudades Córdoba (prueba filtro)",
       "date": "20261124-103217",
