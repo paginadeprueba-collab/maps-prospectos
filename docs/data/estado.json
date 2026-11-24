@@ -1,7 +1,3 @@
 {
-  "status": "in_progress",
-  "query": "plomeros · 3 ciudades Córdoba (mínimo 0)",
-  "started_at": "2026-11-24T11:19:38-03:00",
-  "started_at_label": "2026-11-24 11:19 (America/Buenos_Aires)",
-  "started_at_epoch": 1795529978
+  "status": "idle"
 }

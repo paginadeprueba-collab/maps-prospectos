@@ -1,6 +1,23 @@
 {
   "searches": [
     {
+      "id": "20261124-112435_plomeros-3-ciudades-cordoba-minimo-0",
+      "query": "plomeros · 3 ciudades Córdoba (mínimo 0)",
+      "date": "20261124-112435",
+      "date_label": "2026-11-24 11:24 (America/Buenos_Aires)",
+      "n_raw": 61,
+      "n_limpio": 22,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Villa Carlos Paz, Córdoba, Argentina",
+        "Río Cuarto, Córdoba, Argentina",
+        "Alta Gracia, Córdoba, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-112435_plomeros-3-ciudades-cordoba-minimo-0.json"
+    },
+    {
       "id": "20261124-110651_plomeros-2-ciudades-cordoba-prueba-gral",
       "query": "plomeros · 2 ciudades Córdoba (prueba Gral y typo)",
       "date": "20261124-110651",
