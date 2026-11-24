@@ -15,10 +15,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 import paises  # noqa: E402
-from filtrar import clean_phone, telefono_y_whatsapp, whatsapp_link  # noqa: E402
+from filtrar import clean_phone, excluir_como_tienda, telefono_y_whatsapp, whatsapp_link  # noqa: E402
 from resumen import build_json_payload, load_seleccion  # noqa: E402
 from seleccion import parse_queries  # noqa: E402
-from variantes import CATALOGO, expand_query_variants  # noqa: E402
+from variantes import CATALOGO, expand_query_variants, variants_for_rubro  # noqa: E402
 
 ZONAS = json.loads((ROOT / "docs" / "zonas-latam.json").read_text(encoding="utf-8"))
 P = {p["id"]: p for p in ZONAS["paises"]}
@@ -185,12 +185,74 @@ class VariantesYSeleccionTest(unittest.TestCase):
 
     def test_latam_es_lista_valida(self):
         n = 0
+        ids = {p["id"] for p in ZONAS["paises"] if p["id"] != "AR"}
         for g in CATALOGO["grupos"]:
             for it in g["items"]:
                 if "latam" in it:
                     n += 1
                     self.assertTrue(it["latam"] and all(isinstance(x, str) and x.strip() for x in it["latam"]), it["nombre"])
-        self.assertGreaterEqual(n, 10)
+                    # Evitar términos que en Maps tiran locales de venta cuando el rubro es un oficio.
+                    if it["nombre"] == "plomeros":
+                        bajos = " ".join(it["latam"]).lower()
+                        self.assertNotIn("plomería", bajos)
+                        self.assertNotIn("fontanería", bajos)
+                        self.assertNotIn("gasfitería", bajos)
+                if "latam_pais" in it:
+                    self.assertIsInstance(it["latam_pais"], dict, it["nombre"])
+                    self.assertTrue(it["latam_pais"], it["nombre"])
+                    for k, vals in it["latam_pais"].items():
+                        self.assertIn(k, ids, f"{it['nombre']} país {k}")
+                        self.assertTrue(vals and all(isinstance(x, str) and x.strip() for x in vals), f"{it['nombre']} {k}")
+        self.assertGreaterEqual(n, 20)
+
+    def test_plomero_chile_busca_gasfiter_no_la_tienda(self):
+        cl = expand_query_variants("plomeros en Providencia, Santiago, Chile")
+        self.assertIn("gásfiter en Providencia, Santiago, Chile", cl)
+        self.assertIn("plomero en Providencia, Santiago, Chile", cl)
+        self.assertIn("fontanero en Providencia, Santiago, Chile", cl)
+        self.assertTrue(all("plomería" not in q and "fontanería" not in q and "gasfitería" not in q for q in cl))
+        pe = expand_query_variants("plomeros en Lima, Lima, Perú")
+        self.assertIn("gasfitero en Lima, Lima, Perú", pe)
+        ec = expand_query_variants("plomeros en Quito, Pichincha, Ecuador")
+        self.assertIn("gasfitero en Quito, Pichincha, Ecuador", ec)
+        self.assertIn("plomero en Quito, Pichincha, Ecuador", ec)
+        # Argentina no cambia: sigue con plomería y gasista plomero.
+        caba = expand_query_variants("plomeros en Palermo, CABA")
+        self.assertEqual(
+            caba,
+            [
+                "plomeros en Palermo, CABA",
+                "plomero en Palermo, CABA",
+                "plomería en Palermo, CABA",
+                "gasista plomero en Palermo, CABA",
+            ],
+        )
+
+    def test_sinonimos_locales_de_otros_oficios(self):
+        self.assertIn("corredora de propiedades en Las Condes, Santiago, Chile",
+                      expand_query_variants("inmobiliarias en Las Condes, Santiago, Chile"))
+        self.assertIn("escribano en Montevideo, Uruguay",
+                      expand_query_variants("escribanos en Montevideo, Uruguay"))
+        self.assertNotIn("notario en Montevideo, Uruguay",
+                         expand_query_variants("escribanos en Montevideo, Uruguay"))
+        self.assertIn("notario en Ciudad de México, CDMX, México",
+                      expand_query_variants("escribanos en Ciudad de México, CDMX, México"))
+        self.assertIn("kinesiólogo en Ñuñoa, Santiago, Chile",
+                      expand_query_variants("kinesiólogos en Ñuñoa, Santiago, Chile"))
+        self.assertIn("fisioterapeuta en Guadalajara, Jalisco, México",
+                      expand_query_variants("kinesiólogos en Guadalajara, Jalisco, México"))
+        self.assertIn("destapacaños en Guadalajara, Jalisco, México",
+                      expand_query_variants("destapaciones en Guadalajara, Jalisco, México"))
+        self.assertIn("destape de alcantarillado en Santiago, Chile",
+                      expand_query_variants("destapaciones en Santiago, Chile"))
+        self.assertIn("gomería en Montevideo, Uruguay",
+                      expand_query_variants("gomerías en Montevideo, Uruguay"))
+        self.assertIn("llantera en Guadalajara, Jalisco, México",
+                      expand_query_variants("gomerías en Guadalajara, Jalisco, México"))
+        self.assertIn("jardín infantil en Santiago, Chile",
+                      expand_query_variants("jardines de infantes en Santiago, Chile"))
+        # El término original del rubro siempre va primero.
+        self.assertEqual(variants_for_rubro("plomeros", latam=True, pais="CL")[0], "plomeros")
 
     def test_seleccion_guarda_el_pais(self):
         sel = parse_queries(["plomeros en Montevideo, Uruguay", "plomeros en Salto, Uruguay"])
@@ -236,7 +298,49 @@ class FiltrarTest(unittest.TestCase):
         self.assertEqual(rows["Sin dirección"]["whatsapp"], "https://wa.me/59899765432")
 
 
+    def test_saca_ferreterias_si_el_rubro_es_un_oficio(self):
+        filas = [
+            {"title": "Fontanero Sur", "category": "Fontanero", "place_id": "a"},
+            {"title": "Centro Ferretero", "category": "Ferretería", "place_id": "b"},
+            {"title": "Ferretools", "category": "Tienda de herramientas", "place_id": "c"},
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            src, dst, sel = Path(tmp) / "raw.csv", Path(tmp) / "limpio.csv", Path(tmp) / "seleccion.json"
+            sel.write_text(json.dumps({"rubro": "plomeros", "pais": "Chile"}), encoding="utf-8")
+            with src.open("w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=["title", "phone", "website", "review_rating", "review_count", "link", "address", "category", "place_id"])
+                w.writeheader()
+                for x in filas:
+                    w.writerow({**x, "phone": "+56912345678", "website": "", "review_rating": "4.5", "review_count": "30", "link": "", "address": "Santiago, Chile"})
+            subprocess.check_call([sys.executable, str(ROOT / "filtrar.py"), str(src), str(dst), "--seleccion", str(sel)], cwd=ROOT,
+                                  stdout=subprocess.DEVNULL)
+            with dst.open(encoding="utf-8") as f:
+                rows = list(csv.DictReader(f))
+        self.assertEqual([r["nombre"] for r in rows], ["Fontanero Sur"])
+
+    def test_no_saca_ferreterias_si_el_rubro_es_ferreterias(self):
+        self.assertFalse(excluir_como_tienda("ferreterías", "Ferretería"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Ferretería"))
+        self.assertTrue(excluir_como_tienda("electricistas", "Tienda de material eléctrico"))
+        self.assertTrue(excluir_como_tienda("pintores", "Pinturería"))
+        self.assertFalse(excluir_como_tienda("plomeros", "Fontanero"))
+        self.assertFalse(excluir_como_tienda("plomeros", "Instalador de gas"))
+        self.assertFalse(excluir_como_tienda("", "Ferretería"))
+
+    def test_filtro_sobre_la_busqueda_real_de_santiago(self):
+        path = ROOT / "docs" / "data" / "20261123-165537_plomeros-18-barrios-santiago-chile.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        kept, dropped = [], []
+        for p in data["prospects"]:
+            (dropped if excluir_como_tienda("plomeros", p.get("categoria") or "") else kept).append(p)
+        self.assertGreaterEqual(len(dropped), 40)
+        self.assertTrue(any("Fontanero" == p.get("categoria") for p in kept))
+        self.assertFalse(any("ferret" in (p.get("categoria") or "").lower() for p in kept))
+        self.assertTrue(any("Ferretería" == p.get("categoria") for p in dropped))
+
+
 class WorkflowTest(unittest.TestCase):
+
     def test_workflow_pasa_la_seleccion_a_filtrar(self):
         yml = (ROOT / ".github" / "workflows" / "buscar.yml").read_text(encoding="utf-8")
         i_sel = yml.index("> seleccion.json\n          python3 filtrar.py")

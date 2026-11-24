@@ -26,7 +26,10 @@
         {
           "nombre": "inmobiliarias",
           "variantes": ["inmobiliaria", "inmobiliarias", "agente inmobiliario", "martillero"],
-          "latam": ["inmobiliaria", "bienes raíces", "agente inmobiliario"]
+          "latam": ["inmobiliaria", "bienes raíces", "agente inmobiliario"],
+          "latam_pais": {
+            "CL": ["corredora de propiedades", "corredor de propiedades", "inmobiliaria"]
+          }
         },
         {
           "nombre": "contadores",
@@ -35,15 +38,18 @@
         },
         {
           "nombre": "arquitectos",
-          "variantes": ["arquitecto", "arquitectos", "estudio de arquitectura"]
+          "variantes": ["arquitecto", "arquitectos", "estudio de arquitectura"],
+          "latam": ["arquitecto", "estudio de arquitectura"]
         },
         {
           "nombre": "veterinarias",
-          "variantes": ["veterinaria", "veterinario", "clínica veterinaria"]
+          "variantes": ["veterinaria", "veterinario", "clínica veterinaria"],
+          "latam": ["veterinaria", "veterinario", "clínica veterinaria"]
         },
         {
           "nombre": "psicólogos",
-          "variantes": ["psicólogo", "psicólogos", "psicóloga", "consultorio psicológico"]
+          "variantes": ["psicólogo", "psicólogos", "psicóloga", "consultorio psicológico"],
+          "latam": ["psicólogo", "psicóloga", "consultorio psicológico"]
         }
       ]
     },
@@ -53,33 +59,49 @@
         {
           "nombre": "plomeros",
           "variantes": ["plomero", "plomería", "gasista plomero"],
-          "latam": ["plomero", "plomería", "fontanero", "fontanería"]
+          "latam": ["plomero", "fontanero"],
+          "latam_pais": {
+            "CL": ["gásfiter", "gasfiter", "plomero", "fontanero"],
+            "PE": ["gasfitero", "plomero", "fontanero"],
+            "EC": ["plomero", "gasfitero", "fontanero"]
+          }
         },
         {
           "nombre": "electricistas",
           "variantes": ["electricista", "electricistas", "instalaciones eléctricas"],
-          "latam": ["electricista", "instalaciones eléctricas", "técnico electricista"]
+          "latam": ["electricista", "técnico electricista"]
         },
         {
           "nombre": "cerrajeros",
-          "variantes": ["cerrajero", "cerrajería", "cerrajeros 24 horas"]
+          "variantes": ["cerrajero", "cerrajería", "cerrajeros 24 horas"],
+          "latam": ["cerrajero", "cerrajería", "cerrajero 24 horas"]
         },
         {
           "nombre": "gasistas",
           "variantes": ["gasista", "gasista matriculado", "plomero gasista"],
-          "latam": ["gasfiter", "instalaciones de gas", "técnico en gas"]
+          "latam": ["instalador de gas", "técnico en gas"],
+          "latam_pais": {
+            "CL": ["instalador de gas", "gásfiter", "técnico en gas"],
+            "PE": ["instalador de gas", "gasfitero", "técnico en gas"],
+            "EC": ["instalador de gas", "gasfitero", "técnico en gas"],
+            "UY": ["gasista", "gasista matriculado", "instalador de gas"],
+            "PY": ["gasista", "gasista matriculado", "instalador de gas"]
+          }
         },
         {
           "nombre": "mudanzas",
-          "variantes": ["mudanzas", "empresa de mudanzas", "fletes mudanzas"]
+          "variantes": ["mudanzas", "empresa de mudanzas", "fletes mudanzas"],
+          "latam": ["mudanzas", "empresa de mudanzas", "servicio de mudanzas"]
         },
         {
           "nombre": "fumigadores",
-          "variantes": ["fumigación", "control de plagas", "fumigadores"]
+          "variantes": ["fumigación", "control de plagas", "fumigadores"],
+          "latam": ["fumigación", "control de plagas"]
         },
         {
           "nombre": "aire acondicionado",
-          "variantes": ["aire acondicionado", "instalación aire acondicionado", "técnico aire acondicionado"]
+          "variantes": ["aire acondicionado", "instalación aire acondicionado", "técnico aire acondicionado"],
+          "latam": ["aire acondicionado", "técnico aire acondicionado", "instalación aire acondicionado"]
         },
         {
           "nombre": "mecánicos",
@@ -115,7 +137,10 @@
         {
           "nombre": "kioscos",
           "variantes": ["kiosco", "kioscos", "maxikiosco"],
-          "latam": ["minimarket", "tienda de abarrotes", "kiosco"]
+          "latam": ["minimarket", "tienda de abarrotes", "kiosco"],
+          "latam_pais": {
+            "MX": ["miscelánea", "tienda de abarrotes", "minimarket"]
+          }
         },
         {
           "nombre": "ferreterías",
@@ -133,7 +158,14 @@
         {
           "nombre": "kinesiólogos",
           "variantes": ["kinesiólogo", "kinesiología", "kinesiólogo deportivo"],
-          "latam": ["fisioterapeuta", "fisioterapia", "kinesiólogo"]
+          "latam": ["fisioterapeuta", "fisioterapia", "kinesiólogo"],
+          "latam_pais": {
+            "CL": ["kinesiólogo", "kinesiología"],
+            "UY": ["kinesiólogo", "kinesiología"],
+            "MX": ["fisioterapeuta", "terapeuta físico", "terapia física"],
+            "PE": ["fisioterapeuta", "terapia física"],
+            "PR": ["terapeuta físico", "fisioterapeuta"]
+          }
         },
         {
           "nombre": "nutricionistas",
@@ -204,7 +236,11 @@
         {
           "nombre": "escribanos",
           "variantes": ["escribano", "escribanía", "escribano público"],
-          "latam": ["notaría", "notario"]
+          "latam": ["notario", "notaría"],
+          "latam_pais": {
+            "UY": ["escribano", "escribanía", "escribano público"],
+            "PY": ["escribano", "escribanía", "escribano público"]
+          }
         },
         {
           "nombre": "gestores",
@@ -233,31 +269,38 @@
       "items": [
         {
           "nombre": "pintores",
-          "variantes": ["pintor", "pintor de obras", "pintura de interiores"]
+          "variantes": ["pintor", "pintor de obras", "pintura de interiores"],
+          "latam": ["pintor", "pintor de obras", "pintor de casas"]
         },
         {
           "nombre": "albañiles",
-          "variantes": ["albañil", "albañilería", "construcción"]
+          "variantes": ["albañil", "albañilería", "construcción"],
+          "latam": ["albañil", "maestro de obra", "maestro albañil"]
         },
         {
           "nombre": "carpinteros",
-          "variantes": ["carpintero", "carpintería", "muebles a medida"]
+          "variantes": ["carpintero", "carpintería", "muebles a medida"],
+          "latam": ["carpintero", "carpintería", "muebles a medida"]
         },
         {
           "nombre": "herreros",
-          "variantes": ["herrero", "herrería", "rejas"]
+          "variantes": ["herrero", "herrería", "rejas"],
+          "latam": ["herrero", "herrería"]
         },
         {
           "nombre": "techistas",
-          "variantes": ["techista", "reparación de techos", "techos"]
+          "variantes": ["techista", "reparación de techos", "techos"],
+          "latam": ["reparación de techos", "techador"]
         },
         {
           "nombre": "jardineros",
-          "variantes": ["jardinero", "jardinería", "paisajismo"]
+          "variantes": ["jardinero", "jardinería", "paisajismo"],
+          "latam": ["jardinero", "jardinería", "paisajismo"]
         },
         {
           "nombre": "tapiceros",
-          "variantes": ["tapicero", "tapicería", "tapizado de sillones"]
+          "variantes": ["tapicero", "tapicería", "tapizado de sillones"],
+          "latam": ["tapicero", "tapicería", "tapizado de sillones"]
         }
       ]
     },
@@ -279,7 +322,16 @@
         {
           "nombre": "gomerías",
           "variantes": ["gomería", "gomerías", "neumáticos"],
-          "latam": ["llantera", "vulcanizadora", "venta de llantas"]
+          "latam": ["llantera", "vulcanizadora"],
+          "latam_pais": {
+            "UY": ["gomería", "vulcanizadora"],
+            "PY": ["gomería", "vulcanizadora"],
+            "BO": ["gomería", "vulcanizadora"],
+            "CL": ["vulcanización", "vulcanizadora"],
+            "MX": ["llantera", "vulcanizadora"],
+            "EC": ["llantera", "vulcanizadora"],
+            "HN": ["llantera", "vulcanizadora"]
+          }
         },
         {
           "nombre": "librerías",
@@ -319,7 +371,12 @@
         {
           "nombre": "jardines de infantes",
           "variantes": ["jardín de infantes", "jardín maternal", "guardería"],
-          "latam": ["guardería", "preescolar", "jardín de niños"]
+          "latam": ["guardería", "preescolar", "jardín de niños"],
+          "latam_pais": {
+            "CL": ["jardín infantil", "guardería"],
+            "UY": ["jardín de infantes", "guardería"],
+            "MX": ["jardín de niños", "kínder", "guardería"]
+          }
         },
         {
           "nombre": "agencias de viajes",
@@ -349,15 +406,21 @@
         {
           "nombre": "destapaciones",
           "variantes": ["destapaciones", "destapación de cloacas", "destapaciones 24 horas"],
-          "latam": ["destape de cañerías", "desatascos", "limpieza de drenajes"]
+          "latam": ["destape de cañerías", "destape de drenaje"],
+          "latam_pais": {
+            "CL": ["destape de cañerías", "destape de alcantarillado"],
+            "MX": ["destapacaños", "desazolve", "destape de drenaje"]
+          }
         },
         {
           "nombre": "impermeabilización",
-          "variantes": ["impermeabilización", "impermeabilización de techos", "membrana techos"]
+          "variantes": ["impermeabilización", "impermeabilización de techos", "membrana techos"],
+          "latam": ["impermeabilización", "impermeabilización de techos"]
         },
         {
           "nombre": "vidrierías",
-          "variantes": ["vidriería", "vidrierías", "vidrios a medida"]
+          "variantes": ["vidriería", "vidrierías", "vidrios a medida"],
+          "latam": ["vidriería", "vidrios a medida"]
         },
         {
           "nombre": "construcción en seco",
@@ -371,7 +434,8 @@
         },
         {
           "nombre": "reformas",
-          "variantes": ["empresa de reformas", "remodelaciones", "reformas de casas"]
+          "variantes": ["empresa de reformas", "remodelaciones", "reformas de casas"],
+          "latam": ["remodelaciones", "empresa de reformas", "reformas de casas"]
         }
       ]
     },
@@ -380,7 +444,8 @@
       "items": [
         {
           "nombre": "cámaras y alarmas",
-          "variantes": ["instalación de cámaras de seguridad", "alarmas", "seguridad electrónica"]
+          "variantes": ["instalación de cámaras de seguridad", "alarmas", "seguridad electrónica"],
+          "latam": ["instalación de cámaras de seguridad", "alarmas", "seguridad electrónica"]
         },
         {
           "nombre": "matafuegos",
@@ -389,7 +454,8 @@
         },
         {
           "nombre": "empresas de limpieza",
-          "variantes": ["empresa de limpieza", "limpieza de oficinas", "limpieza final de obra"]
+          "variantes": ["empresa de limpieza", "limpieza de oficinas", "limpieza final de obra"],
+          "latam": ["empresa de limpieza", "limpieza de oficinas"]
         },
         {
           "nombre": "limpieza de tanques",

@@ -61,9 +61,52 @@ def _armar_latam(data: dict) -> dict[str, list[str]]:
     return out
 
 
+def _pais_id(pais: str | None) -> str | None:
+    """'CL', 'Chile', 'México' → id del país. None si no lo conoce."""
+    if not pais:
+        return None
+    try:
+        from paises import pais_por_nombre
+    except Exception:
+        return str(pais).strip().upper() or None
+    p = pais_por_nombre(str(pais))
+    if p:
+        return p["id"]
+    s = str(pais).strip().upper()
+    return s or None
+
+
+def _armar_latam_pais(data: dict) -> dict[str, dict[str, list[str]]]:
+    """Sinónimos por país ('latam_pais' en rubros.json). Claves: id de país (CL, PE…)."""
+    out: dict[str, dict[str, list[str]]] = {}
+    for grupo in data["grupos"]:
+        for item in grupo.get("items") or []:
+            raw = item.get("latam_pais")
+            if not isinstance(raw, dict) or not raw:
+                continue
+            por_pais: dict[str, list[str]] = {}
+            for clave, vals in raw.items():
+                if not isinstance(vals, list):
+                    continue
+                limpios = [str(v).strip() for v in vals if str(v).strip()]
+                if not limpios:
+                    continue
+                pid = _pais_id(str(clave).strip()) or str(clave).strip().upper()
+                por_pais[pid] = limpios
+            if not por_pais:
+                continue
+            claves = [str(item.get("nombre") or "").strip()]
+            claves += [str(a).strip() for a in (item.get("alias") or []) if str(a).strip()]
+            for clave in claves:
+                if clave:
+                    out[norm(clave)] = por_pais
+    return out
+
+
 CATALOGO = cargar_catalogo()
 VARIANTES: dict[str, list[str]] = _armar_variantes(CATALOGO)
 LATAM: dict[str, list[str]] = _armar_latam(CATALOGO)
+LATAM_PAIS: dict[str, dict[str, list[str]]] = _armar_latam_pais(CATALOGO)
 
 
 def _es_otro_pais(zona: str) -> bool:
@@ -75,31 +118,37 @@ def _es_otro_pais(zona: str) -> bool:
     return p is not None and not es_argentina(p)
 
 
-def variants_for_rubro(rubro: str, latam: bool = False) -> list[str]:
+def _clave_en(tabla: dict, key: str) -> str | None:
+    if key in tabla:
+        return key
+    for k in tabla:
+        if key == k or key.startswith(k) or k.startswith(key) or key in k or k in key:
+            return k
+    return None
+
+
+def variants_for_rubro(rubro: str, latam: bool = False, pais: str | None = None) -> list[str]:
     r = rubro.strip()
     if not r:
         return []
     key = norm(r)
     tabla = VARIANTES
     if latam:
-        # Otro país: sinónimos latinoamericanos si el rubro los tiene; si no, los de siempre.
-        k_base = key if key in VARIANTES else next(
-            (k for k in VARIANTES if key == k or key.startswith(k) or k.startswith(key) or key in k or k in key), None
-        )
-        if k_base and k_base in LATAM:
+        # Otro país: primero los de ese país, si no los de latam, si no los de siempre.
+        k_base = _clave_en(VARIANTES, key) or key
+        pid = _pais_id(pais)
+        if pid and k_base in LATAM_PAIS and pid in LATAM_PAIS[k_base]:
+            tabla = {k_base: LATAM_PAIS[k_base][pid]}
+            key = k_base
+        elif k_base in LATAM:
             tabla = {k_base: LATAM[k_base]}
             key = k_base
     # match exact or startswith / contained
     if key in tabla:
         out = list(tabla[key])
     else:
-        out = None
-        for k, vals in tabla.items():
-            if key == k or key.startswith(k) or k.startswith(key) or key in k or k in key:
-                out = list(vals)
-                break
-        if out is None:
-            out = [r]
+        k_hit = _clave_en(tabla, key)
+        out = list(tabla[k_hit]) if k_hit else [r]
     # always include original first
     seen: set[str] = set()
     final: list[str] = []
@@ -133,7 +182,16 @@ def expand_query_variants(query: str) -> list[str]:
         # sin "en": expandir el texto entero como rubro
         return variants_for_rubro(query) or ([query] if query.strip() else [])
     rubro, zona = parts
-    return [f"{v} en {zona}" for v in variants_for_rubro(rubro, latam=_es_otro_pais(zona))]
+    otro = _es_otro_pais(zona)
+    pais = None
+    if otro:
+        try:
+            from paises import pais_de_texto
+            p = pais_de_texto(zona)
+            pais = p["id"] if p else None
+        except Exception:
+            pais = None
+    return [f"{v} en {zona}" for v in variants_for_rubro(rubro, latam=otro, pais=pais)]
 
 
 def expand_lines(lines: list[str]) -> list[str]:

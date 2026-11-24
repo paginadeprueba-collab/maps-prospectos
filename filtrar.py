@@ -7,6 +7,7 @@ import csv
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 
@@ -184,6 +185,95 @@ def pasa_umbral(rating, reviews, min_rating: float, min_reviews: int, modo: str 
     return ok_rating or ok_reviews
 
 
+
+def _norm_txt(s: str) -> str:
+    s = unicodedata.normalize("NFKD", str(s or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"\s+", " ", s.lower().strip())
+
+
+# Rubros que SON un local de venta: no se les saca la categoría tienda.
+RUBROS_COMERCIO = {
+    "ferreterias",
+    "kioscos",
+    "panaderias",
+    "farmacias",
+    "dieteticas",
+    "florerias",
+    "gomerias",
+    "librerias",
+    "heladerias",
+    "rotiserias",
+    "pet shops",
+    "carnicerias",
+    "verdulerias",
+    "opticas",
+}
+
+# Categorías de Maps que son un local de venta, no el oficio (plomero, electricista, etc.).
+CATEGORIAS_TIENDA = (
+    "ferreteria",
+    "hardware store",
+    "tienda de herramientas",
+    "tienda de materiales para la construccion",
+    "tienda de materiales de construccion",
+    "tienda de articulos para el hogar",
+    "tienda de articulos de fontaneria",
+    "tienda de equipos de banos",
+    "tienda de pinturas",
+    "pintureria",
+    "centro comercial",
+    "shopping center",
+    "shopping mall",
+    "proveedor de tuberias",
+    "proveedor de repuestos",
+    "building materials store",
+    "home improvement store",
+    "home goods store",
+    "plumbing supply",
+    "houseware store",
+    "tienda de material electrico",
+    "tienda de articulos de electricidad",
+    "supermercado",
+    "supermarket",
+    "almacen de materiales",
+    "deposito de materiales",
+    "casa de electricos",
+    "casa de electricidad",
+)
+
+
+def es_rubro_comercio(rubro: str) -> bool:
+    k = _norm_txt(rubro)
+    if not k:
+        return False
+    if k in RUBROS_COMERCIO:
+        return True
+    for c in RUBROS_COMERCIO:
+        if k == c or k.startswith(c + " ") or c.startswith(k):
+            return True
+    return False
+
+
+def categoria_de_tienda(categoria: str) -> bool:
+    c = _norm_txt(categoria)
+    if not c:
+        return False
+    for t in CATEGORIAS_TIENDA:
+        if c == t or t in c:
+            return True
+    if c.startswith("tienda de ") or c.startswith("tienda "):
+        return True
+    return False
+
+
+def excluir_como_tienda(rubro: str, categoria: str) -> bool:
+    """True si el rubro es un oficio/servicio y la categoría de Maps es un local de venta."""
+    if not rubro or es_rubro_comercio(rubro):
+        return False
+    return categoria_de_tienda(categoria)
+
+
 def website_empty(row: dict) -> bool:
     w = _get(row, "website", "Website", "web", "site")
     if not w:
@@ -253,10 +343,26 @@ def main() -> int:
         deduped.append(row)
     n_dupes = len(rows) - len(deduped)
 
+    from paises import AR, pais_de_texto, pais_por_nombre
+
+    pais_default = AR
+    rubro_sel = ""
+    if args.seleccion and Path(args.seleccion).is_file():
+        try:
+            sel = json.loads(Path(args.seleccion).read_text(encoding="utf-8") or "{}")
+            pais_default = pais_por_nombre(str((sel or {}).get("pais") or "")) or AR
+            rubro_sel = str((sel or {}).get("rubro") or "").strip()
+        except (json.JSONDecodeError, AttributeError):
+            pais_default = AR
+
     total = len(rows)
     sin_web = []
+    n_tienda = 0
     for row in deduped:
         if not website_empty(row):
+            continue
+        if excluir_como_tienda(rubro_sel, _get(row, "category", "categoria", "Category")):
+            n_tienda += 1
             continue
         rating = parse_float(_get(row, "review_rating", "rating", "Review Rating"))
         reviews = parse_int(_get(row, "review_count", "reviews", "Review Count"))
@@ -273,16 +379,6 @@ def main() -> int:
         )
 
     sin_web.sort(key=sort_key, reverse=True)
-
-    from paises import AR, pais_de_texto, pais_por_nombre
-
-    pais_default = AR
-    if args.seleccion and Path(args.seleccion).is_file():
-        try:
-            sel = json.loads(Path(args.seleccion).read_text(encoding="utf-8") or "{}")
-            pais_default = pais_por_nombre(str((sel or {}).get("pais") or "")) or AR
-        except (json.JSONDecodeError, AttributeError):
-            pais_default = AR
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", newline="", encoding="utf-8") as f:
@@ -315,6 +411,8 @@ def main() -> int:
     print(
         f"Tras filtro (sin web + rating>={args.min_rating} {args.modo} reseñas>={args.min_reviews}): {len(sin_web)}"
     )
+    if n_tienda:
+        print(f"Tiendas sacadas (rubro de servicio): {n_tienda}")
     print(f"Escrito: {out_path}")
     return 0
 
