@@ -1,7 +1,3 @@
 {
-  "status": "in_progress",
-  "query": "plomeros · 21 ciudades Argentina",
-  "started_at": "2026-11-24T15:52:01-03:00",
-  "started_at_label": "2026-11-24 15:52 (America/Buenos_Aires)",
-  "started_at_epoch": 1795546321
+  "status": "idle"
 }
