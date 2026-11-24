@@ -1,6 +1,27 @@
 {
   "searches": [
     {
+      "id": "20261124-024919_abogados-7-ciudades-argentina",
+      "query": "abogados · 7 ciudades Argentina",
+      "date": "20261124-024919",
+      "date_label": "2026-11-24 02:49 (America/Buenos_Aires)",
+      "n_raw": 234,
+      "n_limpio": 4,
+      "rubro": "abogados",
+      "barrios": [],
+      "lugares": [
+        "San Fernando del Valle de Catamarca, Catamarca, Argentina",
+        "Belén, Catamarca, Argentina",
+        "Andalgalá, Catamarca, Argentina",
+        "Tinogasta, Catamarca, Argentina",
+        "Santa María, Catamarca, Argentina",
+        "Recreo, Catamarca, Argentina",
+        "Fiambalá, Catamarca, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-024919_abogados-7-ciudades-argentina.json"
+    },
+    {
       "id": "20261123-165537_plomeros-18-barrios-santiago-chile",
       "query": "plomeros · 18 barrios Santiago Chile",
       "date": "20261123-165537",

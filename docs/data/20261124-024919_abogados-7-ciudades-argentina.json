@@ -1,0 +1,158 @@
+{
+  "id": "20261124-024919_abogados-7-ciudades-argentina",
+  "query": "abogados · 7 ciudades Argentina",
+  "date": "20261124-024919",
+  "date_label": "2026-11-24 02:49 (America/Buenos_Aires)",
+  "n_raw": 234,
+  "n_limpio": 4,
+  "rubro": "abogados",
+  "barrios": [],
+  "lugares": [
+    "San Fernando del Valle de Catamarca, Catamarca, Argentina",
+    "Belén, Catamarca, Argentina",
+    "Andalgalá, Catamarca, Argentina",
+    "Tinogasta, Catamarca, Argentina",
+    "Santa María, Catamarca, Argentina",
+    "Recreo, Catamarca, Argentina",
+    "Fiambalá, Catamarca, Argentina"
+  ],
+  "pais": "Argentina",
+  "prospects": [
+    {
+      "nombre": "Casa de campo. Club de Abogados. Caja Forense",
+      "reseñas": "358",
+      "rating": "4.4",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Casa+de+campo.+Club+de+Abogados.+Caja+Forense/data=!4m7!3m6!1s0x9424288119f7dc97:0x486b74aa05728f41!8m2!3d-28.4550705!4d-65.804925!16s%2Fg%2F11d_bgddc1!19sChIJl9z3GYEoJJQRQY9yBap0a0g?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Bartolomé de Castro 312, K4700 San Fernando del Valle de Catamarca, Catamarca, Argentina",
+      "categoria": "Club de campo",
+      "horarios": "lun a dom 7 a.m.–1 a.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Luis Sanchez Ruiz",
+          "texto": "Es nuestro pequeño...gran lugar...lleno de recuerdos sensaciones, cada espacio con cientos de vivencias que vibran en el aire...como bien lo dice el nombre, es…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fabricia gabriela Zarate",
+          "texto": "Excelente lugar mi hijo disfruto de las instalaciones junto a sus amiguitos excelente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Germán Cerda Lopez",
+          "texto": "Hermoso predio, muchos árboles y amplios jardines para disfrutar de sus exteriores. Linda pileta para chapotear un buen rato. Sus interiores son cómodos y son…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "RAMON ARIEL AGUERO",
+          "texto": "El lugar es espectacular..muy lindo .envidiable con respeto ...tiene todo lo que uno puede o pretende .desde piletas para más chicos hasta los mas grandes…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Estudio Jurídico Molina y asociados",
+      "reseñas": "40",
+      "rating": "4.9",
+      "telefono": "3834686017",
+      "whatsapp": "https://wa.me/5493834686017",
+      "link_maps": "https://www.google.com/maps/place/Estudio+Jur%C3%ADdico+Molina+y+asociados/data=!4m7!3m6!1s0x942428c0b9e39ec1:0x6c989251829eb275!8m2!3d-28.4678882!4d-65.7748852!16s%2Fg%2F1pp2vjq9k!19sChIJwZ7jucAoJJQRdbKeglGSmGw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "República 838, K4700BMR San Fernando del Valle de Catamarca, Catamarca, Argentina",
+      "categoria": "Bufete",
+      "horarios": "lun a vie 8 a.m.–1 p.m., 6–9 p.m. · sáb 9 a.m.–2 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Pablo Sebastián González",
+          "texto": "Excelente atención, predisposición y empatía. Dispuestos a encontrar soluciones y celeridad en las acciones necesarias. Recomiendo este Estudio jurídico y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mariana Soledad Herrera",
+          "texto": "Son excelentes profesionales. Además del desempeño profesional, me brindaron contención personal con gran empatía y compromiso. Realmente son de mucha…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "graciela lazarte",
+          "texto": "Con mucha decepción volví de la Obra Social OSEP cuando me dijeron no se puede, mí esposo tiene una discapacidad y para la medicación y el tratamiento no nos…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis Palacios",
+          "texto": "Muchas gracias doc. Muy buen servicio el de su estudio... solucionaron super rápido mi problema ante la obra social q no se querían hacer hacer cargo…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Zalazar Juárez Abogados",
+      "reseñas": "37",
+      "rating": "5.0",
+      "telefono": "3834065050",
+      "whatsapp": "https://wa.me/5493834065050",
+      "link_maps": "https://www.google.com/maps/place/Zalazar+Ju%C3%A1rez+Abogados/data=!4m7!3m6!1s0x9424295144ebc04b:0x8f830d31d7963ee8!8m2!3d-28.4659589!4d-65.783739!16s%2Fg%2F11xvm89h7f!19sChIJS8DrRFEpJJQR6D6W1zENg48?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Prado, K4700 San Fernando del Valle de Catamarca, Catamarca, Argentina",
+      "categoria": "Abogado",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Juan",
+          "texto": "Son profesionales dedicados, sumamente respetuosos. Mi experiencia personal fue muy buena, jamás tuve un inconveniente o una complicación. Recibí el…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cain Ramirez",
+          "texto": "Para mí uno de los mejores estudios.. Muy buena atención y muy respetuosos los asistentes . Zalazar Juárez su labor fortalece la justicia en Argentina.\"…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Hector Lobo",
+          "texto": "*Hola buenos días, antes que nada quería agradecer a su estudio jurídico por llevar a cabo las gestiones durante todo mí proceso mediante la RT, gracias a las…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Cecilia Ortega",
+          "texto": "Excelente atención muy profesionales.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "AURELIA Complejo Turístico",
+      "reseñas": "31",
+      "rating": "4.5",
+      "telefono": "3837439711",
+      "whatsapp": "https://wa.me/5493837439711",
+      "link_maps": "https://www.google.com/maps/place/AURELIA+Complejo+Tur%C3%ADstico/data=!4m7!3m6!1s0x969e3180e0087ce3:0xc634b685411c7fca!8m2!3d-27.6885266!4d-67.6140122!16s%2Fg%2F11t_k2kl40!19sChIJ43wI4IAxnpYRyn8cQYW2NMY?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "K5345 Fiambala, Catamarca, Argentina",
+      "categoria": "Complejo de apartamentos",
+      "horarios": "",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Cintia Castillo",
+          "texto": "Excelente lugar, limpio completo. Esta vez viaje sola y la experiencia fue muy buena. Viviana es muy atenta, una gran anfitriona. El lugar es super…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Fernanda Alcaraz",
+          "texto": "Recomendado, estuvimos hace dos semanas (enero 2026) y el lugar es cómodo,está todo equipado y nosotras fuimos sin vehículo y pudimos ir del centro al complejo…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "silvia frez",
+          "texto": "Complejo Aurelia es fascinante!! Me encanto!! Ordenado, limpio, muy tranquilo y Viviana muy amable. Nos recibió con la característica de los lugareños!!…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Evelyn Di Lorenzo",
+          "texto": "El lugar es cómodo , las camas son buenas !! Es tranquilo para dejar el auto ! El asador es genial ! Está a pocas cuadras de la plaza.. la dueña siempre atenta…",
+          "estrellas": 4
+        }
+      ]
+    }
+  ]
+}
