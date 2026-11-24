@@ -1,6 +1,39 @@
 {
   "searches": [
     {
+      "id": "20261124-033501_plomeros-19-ciudades-argentina",
+      "query": "plomeros · 19 ciudades Argentina",
+      "date": "20261124-033501",
+      "date_label": "2026-11-24 03:35 (America/Buenos_Aires)",
+      "n_raw": 234,
+      "n_limpio": 16,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Comodoro Rivadavia, Chubut, Argentina",
+        "Trelew, Chubut, Argentina",
+        "Puerto Madryn, Chubut, Argentina",
+        "Rawson, Chubut, Argentina",
+        "Esquel, Chubut, Argentina",
+        "Gaiman, Chubut, Argentina",
+        "Sarmiento, Chubut, Argentina",
+        "Camarones, Chubut, Argentina",
+        "José de San Martín, Chubut, Argentina",
+        "Alto Río Senguer, Chubut, Argentina",
+        "Paso de Indios, Chubut, Argentina",
+        "Tecka, Chubut, Argentina",
+        "Gastre, Chubut, Argentina",
+        "Las Plumas, Chubut, Argentina",
+        "Leleque, Chubut, Argentina",
+        "Telsen, Chubut, Argentina",
+        "Rada Tilly, Chubut, Argentina",
+        "Playa Unión, Chubut, Argentina",
+        "Lago Puelo, Chubut, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-033501_plomeros-19-ciudades-argentina.json"
+    },
+    {
       "id": "20261124-024919_abogados-7-ciudades-argentina",
       "query": "abogados · 7 ciudades Argentina",
       "date": "20261124-024919",

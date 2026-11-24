@@ -1,0 +1,556 @@
+{
+  "id": "20261124-033501_plomeros-19-ciudades-argentina",
+  "query": "plomeros · 19 ciudades Argentina",
+  "date": "20261124-033501",
+  "date_label": "2026-11-24 03:35 (America/Buenos_Aires)",
+  "n_raw": 234,
+  "n_limpio": 16,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "Comodoro Rivadavia, Chubut, Argentina",
+    "Trelew, Chubut, Argentina",
+    "Puerto Madryn, Chubut, Argentina",
+    "Rawson, Chubut, Argentina",
+    "Esquel, Chubut, Argentina",
+    "Gaiman, Chubut, Argentina",
+    "Sarmiento, Chubut, Argentina",
+    "Camarones, Chubut, Argentina",
+    "José de San Martín, Chubut, Argentina",
+    "Alto Río Senguer, Chubut, Argentina",
+    "Paso de Indios, Chubut, Argentina",
+    "Tecka, Chubut, Argentina",
+    "Gastre, Chubut, Argentina",
+    "Las Plumas, Chubut, Argentina",
+    "Leleque, Chubut, Argentina",
+    "Telsen, Chubut, Argentina",
+    "Rada Tilly, Chubut, Argentina",
+    "Playa Unión, Chubut, Argentina",
+    "Lago Puelo, Chubut, Argentina"
+  ],
+  "pais": "Argentina",
+  "prospects": [
+    {
+      "nombre": "YPF TECKA",
+      "reseñas": "1520",
+      "rating": "4.4",
+      "telefono": "2945493012",
+      "whatsapp": "https://wa.me/5492945493012",
+      "link_maps": "https://www.google.com/maps/place/YPF+TECKA/@-43.496518,-70.807481,17z/data=!3m1!4b1!4m6!3m5!1s0xbdf7dcbc10b02e4d:0x3262a87db79dfb6a!8m2!3d-43.496518!4d-70.807481!16s%2Fg%2F1hc3b3vrm?hl=es&entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D",
+      "direccion": "Soldado Austin Y Güemes S/N°, U9201 Tecka, Chubut, Argentina",
+      "categoria": "Gasolinera",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina"
+    },
+    {
+      "nombre": "Servimat - Todo para la construcción",
+      "reseñas": "840",
+      "rating": "4.8",
+      "telefono": "2804260053",
+      "whatsapp": "https://wa.me/5492804260053",
+      "link_maps": "https://www.google.com/maps/place/Servimat+-+Todo+para+la+construcci%C3%B3n/data=!4m7!3m6!1s0xbe014758c1a981a5:0xd35352075d8806d!8m2!3d-43.2888701!4d-65.4870144!16s%2Fg%2F1tr7f0xj!19sChIJpYGpwVhHAb4RbYDYdSA1NQ0?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Eugenio Tello 1043, U9105 Gaiman, Chubut, Argentina",
+      "categoria": "Proveedor de materiales de construcción",
+      "horarios": "lun a vie 8 a.m.–4 p.m. · sáb 8 a.m.–12:30 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Alan Daniel Cerda",
+          "texto": "Excelente atención, muy buenos precios y buena calidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Juan Dávila",
+          "texto": "Precios muy buenos y hacen los envíos de materiales rápido!, pedimos materiales para dolavon y los llevaron al otro día ..La atención exelente",
+          "estrellas": 5
+        },
+        {
+          "nombre": "escu adra",
+          "texto": "Nuestro corralón de confianza, precios competitivos y Sergio siempre esta al tanto para resolver cualquier problema!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Diana Rogers",
+          "texto": "Presupuesto con valores razonables. Entrega acordada en fecha especial, que se cumplió. Atención en el local muy buena y responsable. Emiliano me avisó…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "VS Materiales - Red Acindar",
+      "reseñas": "515",
+      "rating": "4.2",
+      "telefono": "2804420861",
+      "whatsapp": "https://wa.me/5492804420861",
+      "link_maps": "https://www.google.com/maps/place/VS+Materiales+-+Red+Acindar/data=!4m7!3m6!1s0xbe0144ce15db8a35:0xb19d56ac13b15191!8m2!3d-43.2593151!4d-65.2970122!16s%2Fg%2F11c310h5df!19sChIJNYrbFc5EAb4RkVGxE6xWnbE?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Hipólito Yrigoyen 1190, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Proveedor de materiales de construcción",
+      "horarios": "lun a vie 8 a.m.–6 p.m. · sáb 8 a.m.–1 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Beatriz Valloire",
+          "texto": "Un lugar cálido,exelente atención único en Pueryo Madryn,,en la calidad de sus productos.Todo esquisto, pero los sándwiches insuperables super super…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carina Alejandra Villegas",
+          "texto": "Muy buena atención y sobre todo buenos precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Sandro Acuña",
+          "texto": "Excelente atención y muy buenos precios y reparto en el acto",
+          "estrellas": 5
+        },
+        {
+          "nombre": "leonardo estevez",
+          "texto": "Publican un número de teléfono para atención al público y nunca atienden , directamente te cortan , imaginaos la atención y el respeto de la empresa…",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Eolo Construcciones Plomeros/Gasistas/Electric",
+      "reseñas": "472",
+      "rating": "4.9",
+      "telefono": "1154909749",
+      "whatsapp": "https://wa.me/5491154909749",
+      "link_maps": "https://www.google.com/maps/place/Eolo+Construcciones+Plomeros%2FGasistas%2FElectric/data=!4m7!3m6!1s0x95bcb12cdcf0a781:0x29557aa51608cb7c!8m2!3d-34.5011403!4d-58.4809131!16s%2Fg%2F11fhlcl9rh!19sChIJgafw3CyxvJURfMsIFqV6VSk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "1636, Tomás Espora 3074, B1636 Cdad. Autónoma de Buenos Aires, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "lun 7:30 a.m.–7:30 p.m. · mar a vie 8 a.m.–7:30 p.m. · sáb 8 a.m.–5 p.m. · dom 8 a.m.–12 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Maia la más pro",
+          "texto": "Gran equipo de trabajo. Muy ordenados, traen sus herramientas, trabajan limpios y te dejan todo funcionando. Hicieron gas, agua y luz en mi obra sin ningún…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Romina Aldrovandi",
+          "texto": "Súper recomendable. Me dieron un servicio de excelencia. Ulises atendió mi consulta de forma rápida, eficiente y resolvió el problema de mi calefón sin…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Julieta Tajes Albani",
+          "texto": "Los mejores. Fue una experiencia hermosa con Eolo construcciones. Tenia una perdida de gas y un problema en el tablero electrico. vinieron y lo arreglaron…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo F",
+          "texto": "Muy buen servicio. Hace excelente el trabajo. Puntual, responsable, respetuoso. Lo llamé en dos oportunidades, por plomería, y en ambos casos trabajó…",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Cerrajeria Automotor Pantano e Hijos",
+      "reseñas": "176",
+      "rating": "4.4",
+      "telefono": "2804688208",
+      "whatsapp": "https://wa.me/5492804688208",
+      "link_maps": "https://www.google.com/maps/place/Cerrajeria+Automotor+Pantano+e+Hijos/data=!4m7!3m6!1s0xbe0144d27531dd3f:0xe7a577865b54a508!8m2!3d-43.2530286!4d-65.2833051!16s%2Fg%2F11bbrmdw_h!19sChIJP90xddJEAb4RCKVUW4Z3pec?authuser=0&hl=es&g_ep=EgoyMDI2MTEyMi4wIJJjKgBIAVAD&rclk=1",
+      "direccion": "Galina 1227, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Cerrajero",
+      "horarios": "lun a vie 9 a.m.–6 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "CM Jones",
+          "texto": "Muy buen servicio, decenas de años de experiencia, buenos costos, si es posible reparar, lo reparan.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Walter TW",
+          "texto": "Hice solamente copia de llave. Excelente trabajo",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Irma Beatriz Sandoval",
+          "texto": "Muy buena atención y eficientes ,lo recomiendo!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Vero Barra",
+          "texto": "Buenas atención , predisposición para resolver inconvenientes A mí en 1 hora me arreglaron la llave del auto y pude volver a trabajar",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Lubricentro Union",
+      "reseñas": "143",
+      "rating": "4.9",
+      "telefono": "2804260302",
+      "whatsapp": "https://wa.me/5492804260302",
+      "link_maps": "https://www.google.com/maps/place/Lubricentro+Union/data=!4m7!3m6!1s0xbe0156686f7abec9:0xad43c03a479ff671!8m2!3d-43.3095569!4d-65.0487998!16s%2Fg%2F11c54bsfx7!19sChIJyb56b2hWAb4RcfafRzrAQ60?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Av. Juan Manuel de Rosas 722, U9120 Playa Union, Chubut, Argentina",
+      "categoria": "Estación de inspección de vehículos",
+      "horarios": "lun a vie 9 a.m.–8:30 p.m. · sáb 9:30 a.m.–6 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Giulianna Piccirillo",
+          "texto": "Excelente atención y rapidez en el trabajo. Muy conforme con el servicio. ¡Totalmente recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "alejandro ruben bericat",
+          "texto": "Muy buena atención y excelente servicio. Trabajan rápido y bien. Muy conforme con todo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Angeles Da Silva",
+          "texto": "Excelente servicio y muy cordiales los empleados, súper recomendables",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Boris Bel",
+          "texto": "Excelente, eficaz y muy buena atención. Recomiendo.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Cerrajeria Mendieta",
+      "reseñas": "102",
+      "rating": "4.6",
+      "telefono": "2804689586",
+      "whatsapp": "https://wa.me/5492804689586",
+      "link_maps": "https://www.google.com/maps/place/Cerrajeria+Mendieta/data=!4m7!3m6!1s0xbe0144c0584a0c5d:0x7309d92fe11c759!8m2!3d-43.2569459!4d-65.3156898!16s%2Fg%2F11bbrp6qkf!19sChIJXQxKWMBEAb4RWccR_pKdMAc?authuser=0&hl=es&g_ep=EgoyMDI2MTEyMi4wIJJjKgBIAVAD&rclk=1",
+      "direccion": "28 de Julio 794, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Cerrajero",
+      "horarios": "lun a jue 8:30 a.m.–12 p.m., 1–7 p.m. · vie 8:30 a.m.–12 p.m., 1 p.m.–12 a.m. · sáb 12–7 a.m., 10 a.m.–1 p.m., 4–7 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Rulito Aravena",
+          "texto": "Muy bien servicio y precio acorde al trabajo, recomendable",
+          "estrellas": 4
+        },
+        {
+          "nombre": "horacio jaramillo",
+          "texto": "Excelente. Hice copias de llave. Una quedo mal hice el reclamo y me lo soluciono. Despues hice llave de candado y quedo. Muy bien y la realizo en muy poco…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Joaquín Silva",
+          "texto": "Me la recomendó mí suegro, el confía ciegamente en ésta cerrajería. Mí experiencia es corta pero muy buena con ésta gente que no tienen grandes locales ni…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pablo Armada",
+          "texto": "Muy buena atención rápido y económico. Sin duda los sigo eligiendo.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Cerrajería \"La Salvación \"",
+      "reseñas": "96",
+      "rating": "4.9",
+      "telefono": "2804381793",
+      "whatsapp": "https://wa.me/5492804381793",
+      "link_maps": "https://www.google.com/maps/place/Cerrajer%C3%ADa+%22La+Salvaci%C3%B3n+%22/data=!4m7!3m6!1s0xbe0145d5ab61d707:0x4281eade2d5aef96!8m2!3d-43.2589298!4d-65.3113229!16s%2Fg%2F11nsvl41rn!19sChIJB9dhq9VFAb4Rlu9aLd7qgUI?authuser=0&hl=es&g_ep=EgoyMDI2MTEyMi4wIJJjKgBIAVAD&rclk=1",
+      "direccion": "Soberanía Nacional 596, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Cerrajero",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Jjmgallego Jjmgallego",
+          "texto": "Servicio excelente. Siempre busca la mejor opción en los arreglos tratando de que no gastes de más. La disponibilidad 10 puntos, dice 24 Hs y así es.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "mariela classen",
+          "texto": "Excelente servicio. Súper rápido. Muy amable. Muy buen precio. Muy recomendable! Muchas gracias! Me re salvaron!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Jordan Jaramillo",
+          "texto": "Rapida atención y buen servicio Super recomendable",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Yaco Heunulaf",
+          "texto": "Excelente atención y comprensión de los muchachos🙏 muy bueno",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Corralón Rada Tilly SRL",
+      "reseñas": "95",
+      "rating": "4.4",
+      "telefono": "2974140358",
+      "whatsapp": "https://wa.me/5492974140358",
+      "link_maps": "https://www.google.com/maps/place/Corral%C3%B3n+Rada+Tilly+SRL/data=!4m7!3m6!1s0xbde5ac5d17cdcc3f:0xe5629cef3f858cd2!8m2!3d-45.9225789!4d-67.5586857!16s%2Fg%2F1q62l7ypn!19sChIJP8zNF12s5b0R0oyFP--cYuU?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Lago Esperanza 2117, Rada Tilly, CHUBUT, Argentina",
+      "categoria": "Proveedor de materiales de construcción",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Victoria Barrientos",
+          "texto": "Excelente atención! La mejor onda.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Ortiz",
+          "texto": "Muy buena atención.. servicio tambien",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Selva Scatena",
+          "texto": "ES EL MEJOR CORRALÓN DE MATERIALES DE RADA TILLY, excelente atención, los mejores precios, tienen todos los productos que buscamos, muy buena ubicación y…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Comba Silva",
+          "texto": "Muy buena atención. Buena calidad de productos!!",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "FRANZETTI",
+      "reseñas": "85",
+      "rating": "4.5",
+      "telefono": "2804633734",
+      "whatsapp": "https://wa.me/5492804633734",
+      "link_maps": "https://www.google.com/maps/place/FRANZETTI/data=!4m7!3m6!1s0xbe0144b642b9cd11:0xf9ae13584a4b1592!8m2!3d-43.2543161!4d-65.2854185!16s%2Fg%2F1tj_6g_y!19sChIJEc25QrZEAb4RkhVLSlgTrvk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Galina 839, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Proveedor de materiales de construcción",
+      "horarios": "lun a vie 8:30 a.m.–5 p.m. · sáb 9 a.m.–1 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Roman Macias",
+          "texto": "Encontraste siempre todo lo que necesitas. Excelente lugar y atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Candela Pucheta Gallego",
+          "texto": "Hacen un poco de mansplaining pero conseguí el material que necesitaba :)",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Juan Zara",
+          "texto": "Buena atención y precios. Muy cómodo el horario de corrido.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ricardo José Hernández",
+          "texto": "Lo que buscas para instalar agua y gas completísimo. Y además muchas cosas más. Los precios son acordé a los materiales. Muy recomendable.",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "Gas Trelew SA",
+      "reseñas": "80",
+      "rating": "4.0",
+      "telefono": "2804446177",
+      "whatsapp": "https://wa.me/5492804446177",
+      "link_maps": "https://www.google.com/maps/place/Gas+Trelew+SA/data=!4m7!3m6!1s0xbe01448a36aba83d:0x6d7f897dfb68eb9f!8m2!3d-43.2584609!4d-65.3454337!16s%2Fg%2F11bbrp32_k!19sChIJPairNopEAb4Rn-to-32Jf20?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Laura Vicuña 3136, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Compañía del gas",
+      "horarios": "lun a vie 8 a.m.–12 p.m., 2–6 p.m. · sáb 8 a.m.–12 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "fiorella pucheta",
+          "texto": "Buena atención. Como crítica solo aceptan dinero en efectivo. No aceptan tarjetas débito crédito, ni billetera virtual. Es un problema eso",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rodrigo Herbas",
+          "texto": "Exelente atención,muy rápido y económico 💪🏻",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Leandro hernan Figueredo",
+          "texto": "Excelente! Cargué mí garrafita en 10 minutos, te atienden bien y es barato. También es más barato comprar la garrafa hogareña. Se puede pagar con tarjetas. La…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "yessica dzaja",
+          "texto": "atienden bien lastima que solo acepta efectivo",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Trelew Chubut.",
+      "reseñas": "77",
+      "rating": "4.5",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Trelew+Chubut./data=!4m7!3m6!1s0xbe01459975528553:0x6c202d2cfd44b5d6!8m2!3d-43.2612991!4d-65.3225975!16s%2Fg%2F11kh8925yn!19sChIJU4VSdZlFAb4R1rVE_SwtIGw?authuser=0&hl=es&g_ep=EgoyMDI2MTEyMi4wIJJjKgBIAVAD&rclk=1",
+      "direccion": "Sarmiento 248, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Abogado especialista en derecho de extranjería",
+      "horarios": "",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Daniel Rivas Mendoza",
+          "texto": "Ciudad única y con diversas actividades, ideal para pasar en familia. Tenes cordero patagonico, buen asado, museo e historia sobre los dinosaurios, pista de…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Mia Abelas",
+          "texto": "Una ves fui con mi hermana cuando tenía 5-6 una experiencia hermosa recomiendo el lugar buenísimo ^^",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Santiago E. Flores",
+          "texto": "Lindas cosas para ofrecer, medio chato",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Lorena Ballistreri",
+          "texto": "Excelente la atención de Marcela y hermosa la ropa.",
+          "estrellas": 4
+        }
+      ]
+    },
+    {
+      "nombre": "WIMER - Agente Oficial,Electrodomésticos,Repuestos",
+      "reseñas": "67",
+      "rating": "4.1",
+      "telefono": "2804425926",
+      "whatsapp": "https://wa.me/5492804425926",
+      "link_maps": "https://www.google.com/maps/place/WIMER+-+Agente+Oficial,Electrodom%C3%A9sticos,Repuestos/data=!4m7!3m6!1s0xbe0144c3e66634d7:0xe6985461b482473f!8m2!3d-43.2594848!4d-65.3114238!16s%2Fg%2F1vnnknhx!19sChIJ1zRm5sNEAb4RP0eCtGFUmOY?authuser=0&hl=es&g_ep=EgoyMDI2MTEyMi4wIJJjKgBIAVAD&rclk=1",
+      "direccion": "Ameghino 749, U9100 Trelew, Chubut, Argentina",
+      "categoria": "Comercio",
+      "horarios": "lun a vie 9:30 a.m.–12:30 p.m., 4–8 p.m. · sáb 9:30 a.m.–1 a.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Francisco Fotos Peucelle",
+          "texto": "Muy surtido y muy buena atención",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Perez",
+          "texto": "Muy buena atención y tienen todo lo que quieras o te dan uno que te va a servir igual.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Herminia Conedini",
+          "texto": "Muy bien todo !!! Siempre solucionando todo lo que le llevo o necesito, además de un muy buen asesoramiento , muy buena atención y precios",
+          "estrellas": 5
+        },
+        {
+          "nombre": "marilyn buezas",
+          "texto": "Mala atención. Fuí muy mal atendida; me hizo sentir incómoda, como si molestará. Y de supone que es agente ATMA y el único en Trelew",
+          "estrellas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Servimar Empresa Metalurgica",
+      "reseñas": "48",
+      "rating": "4.4",
+      "telefono": "2804446010",
+      "whatsapp": "https://wa.me/5492804446010",
+      "link_maps": "https://www.google.com/maps/place/Servimar+Empresa+Metalurgica/data=!4m7!3m6!1s0xbe01448e80300965:0x49f58ba71dbbcdd7!8m2!3d-43.2558687!4d-65.3395!16s%2Fg%2F1hc2f2xcd!19sChIJZQkwgI5EAb4R1827HaeL9Uk?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gral Mosconi Norte 54, Trelew, Chubut, Argentina",
+      "categoria": "",
+      "horarios": "lun a vie 9 a.m.–6 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Silvia Williams",
+          "texto": "Excelente atención y servicio. Muy amables y respetuosos los choferes y personal que realiza los repartos. Sigo apostando a ésta empresa recomendando a los que…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Tatiana Cuello",
+          "texto": "Buena atención telefónica, Áridos de buena calidad, y el reparto llegó súper rapido 👏",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Luis Alberto Mazzini",
+          "texto": "Muy buen servicio y rápido. Tienen cortes redondos en planchas de hierro y trafilado, que no se consiguen en plegadoras tradicionales.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Jorge Oscar Lloyd Jones",
+          "texto": "Excelente el dueño Jorge Martínez. Buena gente buenos productos calidad y precio razonables.",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "NIL PISCINAS",
+      "reseñas": "35",
+      "rating": "5.0",
+      "telefono": "2975934521",
+      "whatsapp": "https://wa.me/5492975934521",
+      "link_maps": "https://www.google.com/maps/place/NIL+PISCINAS/data=!4m7!3m6!1s0xbde455e7d06ccb31:0x6ccd19d5bfa701b1!8m2!3d-45.9394763!4d-67.5756581!16s%2Fg%2F11qh3zkjwv!19sChIJMcts0OdV5L0RsQGnv9UZzWw?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Faro Almte. Brown 542, U9001AAA Rada Tilly, Chubut, Argentina",
+      "categoria": "Proveedor de materiales de construcción",
+      "horarios": "lun a vie 9 a.m.–6 p.m. · sáb 9 a.m.–1:30 p.m.",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Romyna Gonzalez",
+          "texto": "Excelente atención y asesoramiento por parte del personal. Precios muy buenos en relación con otros lugares. Los recomiendo.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana María Rojas",
+          "texto": "Excelente atención muy buenos precios y muy buena calidad.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Walter Tafra M.M.O.",
+          "texto": "Excelente atención de Martin y Julián. Un servicio totalmente innovador en la ciudad. Todo lo que buscas, lo tienen, y eso es un buen servicio. Mis…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "stefania Añahual",
+          "texto": "Excelente atención y variedad en articulos!!! Super recomendable!!!",
+          "estrellas": 5
+        }
+      ]
+    },
+    {
+      "nombre": "Plomero Gasista Matriculado",
+      "reseñas": "35",
+      "rating": "5.0",
+      "telefono": "",
+      "whatsapp": "",
+      "link_maps": "https://www.google.com/maps/place/Plomero+Gasista+Matriculado/data=!4m7!3m6!1s0x95bcb73de18841a3:0x833bae1111c45c77!8m2!3d-34.5950634!4d-58.5349733!16s%2Fg%2F11z39b3014!19sChIJo0GI4T23vJURd1zEERGuO4M?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Gral. Lamadrid 646, B1672 Villa Lynch, Provincia de Buenos Aires, Argentina",
+      "categoria": "Fontanero",
+      "horarios": "",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "CAROLINA DANIELA FLORES",
+          "texto": "Necesitaba comunicarme con él por una fuga de gas que me tenía preocupada y respondió mi llamado a la primera, además de venir rapidísimo a ver el problema. Me…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Adrian Telleria",
+          "texto": "Muy buen plomero, respetuoso y franco a la hora de realizar el trabajo. Recomendable!",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Grace Fernan",
+          "texto": "Trabaja a conciencia. Se nota que sabe lo que hace. Es muy profesional. Recomendable.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "vecinos villa lynch",
+          "texto": "muy buena atención... muy responsables prolijos y muy educados los trabajos son de excelente calidad muy recomendables precio justo",
+          "estrellas": 5
+        }
+      ]
+    }
+  ]
+}
