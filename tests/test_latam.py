@@ -15,7 +15,17 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 import paises  # noqa: E402
-from filtrar import clean_phone, excluir_como_tienda, telefono_y_whatsapp, whatsapp_link  # noqa: E402
+from filtrar import (  # noqa: E402
+    clean_phone,
+    es_oficio_buscado,
+    excluir_como_ajeno,
+    excluir_como_tienda,
+    fuera_de_la_zona,
+    pasa_umbral_o_oficio,
+    provincias_buscadas,
+    telefono_y_whatsapp,
+    whatsapp_link,
+)
 from resumen import build_json_payload, load_seleccion  # noqa: E402
 from seleccion import parse_queries  # noqa: E402
 from variantes import CATALOGO, expand_query_variants, variants_for_rubro  # noqa: E402
@@ -241,7 +251,7 @@ class VariantesYSeleccionTest(unittest.TestCase):
         self.assertIn("fontanero en Montevideo, Uruguay", uy)
         self.assertNotIn("gasista plomero en Montevideo, Uruguay", uy)
         caba = expand_query_variants("plomeros en Palermo, CABA")
-        self.assertEqual(caba, ["plomeros en Palermo, CABA", "plomero en Palermo, CABA", "plomería en Palermo, CABA", "gasista plomero en Palermo, CABA"])
+        self.assertEqual(caba, ["plomeros en Palermo, CABA", "plomero en Palermo, CABA", "gasista plomero en Palermo, CABA"])
         prov = expand_query_variants("plomeros en Rosario, Santa Fe, Argentina")
         self.assertNotIn("fontanero en Rosario, Santa Fe, Argentina", prov)
         mx = expand_query_variants("dentistas en Guadalajara, Jalisco, México")
@@ -280,17 +290,17 @@ class VariantesYSeleccionTest(unittest.TestCase):
         ec = expand_query_variants("plomeros en Quito, Pichincha, Ecuador")
         self.assertIn("gasfitero en Quito, Pichincha, Ecuador", ec)
         self.assertIn("plomero en Quito, Pichincha, Ecuador", ec)
-        # Argentina no cambia: sigue con plomería y gasista plomero.
+        # Argentina: plomero y gasista plomero, sin "plomería" (trae ferreterías).
         caba = expand_query_variants("plomeros en Palermo, CABA")
         self.assertEqual(
             caba,
             [
                 "plomeros en Palermo, CABA",
                 "plomero en Palermo, CABA",
-                "plomería en Palermo, CABA",
                 "gasista plomero en Palermo, CABA",
             ],
         )
+        self.assertTrue(all("plomería" not in q for q in caba))
 
     def test_sinonimos_locales_de_otros_oficios(self):
         self.assertIn("corredora de propiedades en Las Condes, Santiago, Chile",
@@ -390,6 +400,33 @@ class FiltrarTest(unittest.TestCase):
         self.assertFalse(excluir_como_tienda("plomeros", "Fontanero"))
         self.assertFalse(excluir_como_tienda("plomeros", "Instalador de gas"))
         self.assertFalse(excluir_como_tienda("", "Ferretería"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Proveedor de materiales de construcción"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Comercio", "Corralón Rada Tilly SRL"))
+        self.assertTrue(excluir_como_tienda("plomeros", "", "Servimat - Todo para la construcción"))
+        self.assertFalse(excluir_como_tienda("ferreterías", "Proveedor de materiales de construcción"))
+
+    def test_saca_oficios_ajenos_y_fuera_de_provincia(self):
+        self.assertTrue(excluir_como_ajeno("plomeros", "Gasolinera", "YPF TECKA"))
+        self.assertTrue(excluir_como_ajeno("plomeros", "Cerrajero", "Cerrajeria Mendieta"))
+        self.assertTrue(excluir_como_ajeno("plomeros", "Abogado especialista en derecho de extranjería", "Trelew Chubut."))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Fontanero", "Servicios Destapaciones Antonio"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Instalador de gas", "Gasista Matriculado Garay"))
+        self.assertFalse(excluir_como_ajeno("cerrajeros", "Cerrajero", "Cerrajeria Mendieta"))
+        self.assertTrue(es_oficio_buscado("plomeros", "Fontanero", "X"))
+        self.assertTrue(es_oficio_buscado("plomeros", "Comercio", "Beto Gasista"))
+        # Con 9 reseñas un gasista de pueblo pasa; una ferretería no usa esta vía.
+        self.assertTrue(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", True))
+        self.assertFalse(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", False))
+        self.assertFalse(pasa_umbral_o_oficio(1.0, 1, 4.0, 20, "and", True))
+        chubut = provincias_buscadas(["Comodoro Rivadavia, Chubut, Argentina", "Trelew, Chubut, Argentina"])
+        self.assertEqual(chubut, {"chubut"})
+        self.assertTrue(fuera_de_la_zona("Gral. Lamadrid 646, B1672 Villa Lynch, Provincia de Buenos Aires, Argentina", chubut))
+        self.assertFalse(fuera_de_la_zona("C. 508, U9002 Comodoro Rivadavia, Chubut, Argentina", chubut))
+        self.assertTrue(fuera_de_la_zona("", chubut))
+        self.assertTrue(fuera_de_la_zona('{"borough":"","street":"","city":"","state":""}', chubut))
+        self.assertTrue(excluir_como_ajeno("plomeros", "Comercio", "WIMER - Electrodomésticos"))
+        self.assertTrue(excluir_como_ajeno("plomeros", "", "Servimar Empresa Metalurgica"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Comercio", "Beto Gasista"))
 
     def test_filtro_sobre_la_busqueda_real_de_santiago(self):
         path = ROOT / "docs" / "data" / "20261123-165537_plomeros-18-barrios-santiago-chile.json"

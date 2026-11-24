@@ -185,6 +185,18 @@ def pasa_umbral(rating, reviews, min_rating: float, min_reviews: int, modo: str 
     return ok_rating or ok_reviews
 
 
+def pasa_umbral_o_oficio(rating, reviews, min_rating: float, min_reviews: int, modo: str, es_oficio: bool) -> bool:
+    """Si es claramente el oficio buscado, no exigimos el mínimo de reseñas (pueblos chicos).
+    Si tiene reseñas, el rating igual tiene que llegar al mínimo."""
+    if not es_oficio:
+        return pasa_umbral(rating, reviews, min_rating, min_reviews, modo)
+    n = reviews if reviews is not None else 0
+    if n <= 0:
+        return True
+    r = rating if rating is not None else 0.0
+    return r >= min_rating
+
+
 
 def _norm_txt(s: str) -> str:
     s = unicodedata.normalize("NFKD", str(s or ""))
@@ -240,6 +252,15 @@ CATEGORIAS_TIENDA = (
     "deposito de materiales",
     "casa de electricos",
     "casa de electricidad",
+    "proveedor de materiales de construccion",
+    "proveedor de materiales",
+    "tienda de material sanitario",
+    "establecimiento de venta de madera",
+    "tienda de electricidad",
+    "empresa de suministros industriales",
+    "corralon",
+    "lumber store",
+    "lumber yard",
 )
 
 
@@ -267,11 +288,210 @@ def categoria_de_tienda(categoria: str) -> bool:
     return False
 
 
-def excluir_como_tienda(rubro: str, categoria: str) -> bool:
-    """True si el rubro es un oficio/servicio y la categoría de Maps es un local de venta."""
+# Palabras en el nombre que delatan un local de venta (corralón, etc.).
+NOMBRE_TIENDA = (
+    "corralon",
+    "ferreteria",
+    "ferreterias",
+    "todo para la construccion",
+    "materiales de construccion",
+    "pintureria",
+)
+
+
+def nombre_de_tienda(nombre: str) -> bool:
+    n = _norm_txt(nombre)
+    if not n:
+        return False
+    return any(tok in n for tok in NOMBRE_TIENDA)
+
+
+def excluir_como_tienda(rubro: str, categoria: str, nombre: str = "") -> bool:
+    """True si el rubro es un oficio/servicio y Maps o el nombre apuntan a un local de venta."""
     if not rubro or es_rubro_comercio(rubro):
         return False
-    return categoria_de_tienda(categoria)
+    return categoria_de_tienda(categoria) or nombre_de_tienda(nombre)
+
+
+# Categorías que no son el oficio buscado (ni un local de venta ya cubierto).
+CATEGORIAS_AJENAS = (
+    "gasolinera",
+    "gas station",
+    "estacion de servicio",
+    "estacion de inspeccion de vehiculos",
+    "abogado",
+    "lawyer",
+    "attorney",
+    "hospital",
+    "parque local",
+    "ayuntamiento",
+    "club deportivo",
+    "lavanderia",
+    "alojamiento",
+    "lugar de interes historico",
+    "comunidad para jubilados",
+    "oficina de la administracion",
+    "compania del gas",
+    "compania suministradora de agua",
+    "baños publicos",
+    "banos publicos",
+)
+
+
+def categoria_ajena(categoria: str) -> bool:
+    c = _norm_txt(categoria)
+    if not c:
+        return False
+    for tok in CATEGORIAS_AJENAS:
+        if c == tok or tok in c:
+            return True
+    return False
+
+
+# Si coinciden, no exigimos 20 reseñas (en pueblos chicos casi nadie las tiene).
+OFICIO_POR_RUBRO = {
+    "plomeros": ("fontanero", "plomero", "gasista", "instalador de gas", "plumber", "destapacion", "destapaciones"),
+    "gasistas": ("gasista", "instalador de gas", "plomero", "fontanero"),
+    "electricistas": ("electricista", "electrician", "instalador electrico"),
+    "cerrajeros": ("cerrajero", "locksmith"),
+    "pintores": ("pintor", "painter"),
+    "albaniles": ("albanil", "mason"),
+}
+
+
+def _claves_rubro(rubro: str) -> tuple[str, ...]:
+    k = _norm_txt(rubro)
+    if k in OFICIO_POR_RUBRO:
+        return OFICIO_POR_RUBRO[k]
+    for base, toks in OFICIO_POR_RUBRO.items():
+        if k == base or k.startswith(base) or base.startswith(k.rstrip("s")):
+            return toks
+    return ()
+
+
+def es_oficio_buscado(rubro: str, categoria: str = "", nombre: str = "") -> bool:
+    """True si la categoría o el nombre coinciden con el oficio del rubro."""
+    toks = _claves_rubro(rubro)
+    if not toks:
+        return False
+    blob = _norm_txt(f"{categoria} {nombre}")
+    if not blob:
+        return False
+    return any(tok in blob for tok in toks)
+
+
+def excluir_como_ajeno(rubro: str, categoria: str, nombre: str = "") -> bool:
+    """Saca rubros que no tienen nada que ver (YPF, abogados, cerrajeros si buscás plomeros)."""
+    if not rubro or es_rubro_comercio(rubro):
+        return False
+    if es_oficio_buscado(rubro, categoria, nombre):
+        return False
+    if categoria_ajena(categoria):
+        return True
+    n = _norm_txt(nombre)
+    if any(tok in n for tok in ("electrodomesticos", "lubricentro", "metalurgica")):
+        return True
+    c = _norm_txt(categoria)
+    if c in {"", "comercio"}:
+        return True
+    ajenos_oficio = {
+        "cerrajero": "cerrajeros",
+        "locksmith": "cerrajeros",
+        "electricista": "electricistas",
+        "abogado": "abogados",
+    }
+    c = _norm_txt(categoria)
+    rk = _norm_txt(rubro)
+    for tok, rub in ajenos_oficio.items():
+        if tok in c and rk != rub and not rk.startswith(rub.rstrip("s")):
+            return True
+    return False
+
+
+PROVINCIAS_AR = (
+    "buenos aires",
+    "ciudad autonoma de buenos aires",
+    "capital federal",
+    "catamarca",
+    "chaco",
+    "chubut",
+    "cordoba",
+    "corrientes",
+    "entre rios",
+    "formosa",
+    "jujuy",
+    "la pampa",
+    "la rioja",
+    "mendoza",
+    "misiones",
+    "neuquen",
+    "rio negro",
+    "salta",
+    "san juan",
+    "san luis",
+    "santa cruz",
+    "santa fe",
+    "santiago del estero",
+    "tierra del fuego",
+    "tucuman",
+)
+
+
+def _provincias_en(texto: str) -> set[str]:
+    n = _norm_txt(texto)
+    if not n:
+        return set()
+    found: set[str] = set()
+    if (
+        ", caba" in n
+        or n.endswith(" caba")
+        or n.endswith(",caba")
+        or "cdad. autonoma" in n
+        or "cdad autonoma" in n
+        or "ciudad autonoma de buenos aires" in n
+        or "capital federal" in n
+    ):
+        found.add("ciudad autonoma de buenos aires")
+    for p in sorted(PROVINCIAS_AR, key=len, reverse=True):
+        if p in n:
+            found.add(p)
+    return found
+
+
+def provincias_buscadas(lugares: list | None) -> set[str]:
+    out: set[str] = set()
+    for l in lugares or []:
+        out |= _provincias_en(str(l))
+    return out
+
+
+def direccion_util(direccion: str) -> str:
+    """Texto usable de la dirección. Si Maps mandó un JSON vacío, queda en blanco."""
+    s = (direccion or "").strip()
+    if not s:
+        return ""
+    if s.startswith("{") and s.endswith("}"):
+        try:
+            data = json.loads(s)
+        except json.JSONDecodeError:
+            return s
+        if isinstance(data, dict):
+            parts = [str(data.get(k) or "").strip() for k in ("street", "borough", "city", "state", "postal_code", "country")]
+            s = ", ".join(p for p in parts if p)
+    return s
+
+
+def fuera_de_la_zona(direccion: str, provincias: set[str]) -> bool:
+    """True si la dirección es de otra provincia, o no hay dirección cuando la búsqueda es provincial."""
+    if not provincias:
+        return False
+    s = direccion_util(direccion)
+    if not s:
+        return True
+    en_dir = _provincias_en(s)
+    if not en_dir:
+        return False
+    return en_dir.isdisjoint(provincias)
 
 
 def website_empty(row: dict) -> bool:
@@ -347,26 +567,41 @@ def main() -> int:
 
     pais_default = AR
     rubro_sel = ""
+    lugares_sel: list[str] = []
     if args.seleccion and Path(args.seleccion).is_file():
         try:
             sel = json.loads(Path(args.seleccion).read_text(encoding="utf-8") or "{}")
             pais_default = pais_por_nombre(str((sel or {}).get("pais") or "")) or AR
             rubro_sel = str((sel or {}).get("rubro") or "").strip()
+            lugares_sel = list((sel or {}).get("lugares") or [])
         except (json.JSONDecodeError, AttributeError):
             pais_default = AR
+    provincias_sel = provincias_buscadas(lugares_sel)
 
     total = len(rows)
     sin_web = []
     n_tienda = 0
+    n_ajeno = 0
+    n_fuera = 0
     for row in deduped:
         if not website_empty(row):
             continue
-        if excluir_como_tienda(rubro_sel, _get(row, "category", "categoria", "Category")):
+        categoria = _get(row, "category", "categoria", "Category")
+        nombre = _get(row, "title", "name", "nombre", "Title")
+        direccion = _get(row, "address", "complete_address", "direccion", "Address")
+        if excluir_como_tienda(rubro_sel, categoria, nombre):
             n_tienda += 1
+            continue
+        if excluir_como_ajeno(rubro_sel, categoria, nombre):
+            n_ajeno += 1
+            continue
+        if fuera_de_la_zona(direccion, provincias_sel):
+            n_fuera += 1
             continue
         rating = parse_float(_get(row, "review_rating", "rating", "Review Rating"))
         reviews = parse_int(_get(row, "review_count", "reviews", "Review Count"))
-        if not pasa_umbral(rating, reviews, args.min_rating, args.min_reviews, args.modo):
+        es_oficio = es_oficio_buscado(rubro_sel, categoria, nombre)
+        if not pasa_umbral_o_oficio(rating, reviews, args.min_rating, args.min_reviews, args.modo, es_oficio):
             continue
         sin_web.append((row, rating, reviews))
 
@@ -413,6 +648,10 @@ def main() -> int:
     )
     if n_tienda:
         print(f"Tiendas sacadas (rubro de servicio): {n_tienda}")
+    if n_ajeno:
+        print(f"Otros rubros sacados (no son el oficio): {n_ajeno}")
+    if n_fuera:
+        print(f"Fuera de la zona buscada: {n_fuera}")
     print(f"Escrito: {out_path}")
     return 0
 
