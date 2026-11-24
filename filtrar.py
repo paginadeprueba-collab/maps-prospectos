@@ -550,11 +550,77 @@ def aplica_filtro_ciudad(lugares: list | None) -> bool:
     return all(p in PROVINCIAS_AR for p in padres)
 
 
-def _ciudad_en(direccion_norm: str, ciudad: str) -> bool:
-    c = _norm_txt(ciudad)
-    if not c or not direccion_norm:
+_ABREV_LUGAR = (
+    (re.compile(r"\bgral\.?\b"), "general"),
+    (re.compile(r"\bpte\.?\b"), "presidente"),
+    (re.compile(r"\btte\.?\b"), "teniente"),
+    (re.compile(r"\bcnel\.?\b"), "coronel"),
+    (re.compile(r"\bsta\.?\b"), "santa"),
+    (re.compile(r"\bsto\.?\b"), "santo"),
+    (re.compile(r"\bdpto\.?\b"), "departamento"),
+    (re.compile(r"\bdepto\.?\b"), "departamento"),
+    (re.compile(r"\bcdad\.?\b"), "ciudad"),
+)
+
+
+def _norm_lugar(s: str) -> str:
+    """Como _norm_txt, pero expande 'Gral.' y saca puntos: Villa Gral. Belgrano = Villa General Belgrano."""
+    n = _norm_txt(s).replace(".", " ")
+    n = re.sub(r"\s+", " ", n).strip()
+    for pat, repl in _ABREV_LUGAR:
+        n = pat.sub(repl, n)
+    return re.sub(r"\s+", " ", n).strip()
+
+
+def _compact_lugar(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", _norm_lugar(s))
+
+
+def _levenshtein(a: str, b: str) -> int:
+    if a == b:
+        return 0
+    if not a:
+        return len(b)
+    if not b:
+        return len(a)
+    if abs(len(a) - len(b)) > 1:
+        return 2
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
+
+
+def _ciudades_equivalentes(a: str, b: str) -> bool:
+    """True si son la misma ciudad, aunque Maps abrevie o coma una letra (Río → 'R o')."""
+    na, nb = _norm_lugar(a), _norm_lugar(b)
+    if not na or not nb:
         return False
-    return re.search(r"(?<![a-z0-9])" + re.escape(c) + r"(?![a-z0-9])", direccion_norm) is not None
+    if na == nb:
+        return True
+    ca, cb = _compact_lugar(a), _compact_lugar(b)
+    if ca == cb and len(ca) >= 5:
+        return True
+    if min(len(ca), len(cb)) >= 6 and abs(len(ca) - len(cb)) <= 1 and _levenshtein(ca, cb) <= 1:
+        return True
+    return False
+
+
+def _ciudad_en(direccion_norm: str, ciudad: str) -> bool:
+    d = _norm_lugar(direccion_norm)
+    c = _norm_lugar(ciudad)
+    if not c or not d:
+        return False
+    if re.search(r"(?<![a-z0-9])" + re.escape(c) + r"(?![a-z0-9])", d):
+        return True
+    for part in re.split(r"[,/]", d):
+        part = _norm_lugar(_strip_cp(part))
+        if _ciudades_equivalentes(part, ciudad):
+            return True
+    return False
 
 
 def _strip_cp(texto: str) -> str:
@@ -603,15 +669,15 @@ def fuera_de_las_ciudades(direccion: str, ciudades: list[str], aplicar: bool) ->
     s = direccion_util(direccion)
     if not s:
         return True
-    addr = _norm_txt(s)
-    pedidas = {_norm_txt(c) for c in ciudades}
-    declarada = ciudad_declarada(s)
-    if declarada in pedidas:
+    addr = _norm_lugar(s)
+    pedidas = {_norm_lugar(c) for c in ciudades}
+    declarada = _norm_lugar(ciudad_declarada(s))
+    if declarada and any(_ciudades_equivalentes(declarada, c) for c in ciudades):
         return False
-    hits = [c for c in sorted(ciudades, key=lambda x: -len(_norm_txt(x))) if _ciudad_en(addr, c)]
+    hits = [c for c in sorted(ciudades, key=lambda x: -len(_norm_lugar(x))) if _ciudad_en(addr, c)]
     if hits:
         # «San Francisco» no debe aceptar «San Francisco del Chañar».
-        if declarada and any(declarada.startswith(_norm_txt(c) + " ") for c in hits):
+        if declarada and any(declarada.startswith(_norm_lugar(c) + " ") for c in hits):
             return True
         return False
     if not declarada or _parece_calle(declarada):

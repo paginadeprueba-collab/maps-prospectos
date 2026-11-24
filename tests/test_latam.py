@@ -468,6 +468,23 @@ class FiltrarTest(unittest.TestCase):
         self.assertTrue(fuera_de_las_ciudades(
             "Calle 1, San Francisco del Chañar, Córdoba, Argentina", solo_sf, True
         ))
+        # Maps a veces escribe «Gral.» o se come una letra («Río» → «R o»).
+        self.assertFalse(fuera_de_las_ciudades(
+            "Ruta 5 km 82, X5194 Villa Gral. Belgrano, Córdoba, Argentina",
+            ciudades_buscadas(["Villa General Belgrano, Córdoba, Argentina"]),
+            True,
+        ))
+        self.assertFalse(fuera_de_las_ciudades(
+            "P R Nolasko 288, R o Cuarto, Cordoba, Argentina",
+            ciudades_buscadas(["Río Cuarto, Córdoba, Argentina"]),
+            True,
+        ))
+        # Una capital mal escrita no se cuela como ciudad pedida.
+        self.assertTrue(fuera_de_las_ciudades(
+            "Calle 10 38, C rdoba, Cordoba, Argentina",
+            ciudades_buscadas(["Río Cuarto, Córdoba, Argentina"]),
+            True,
+        ))
         # Barrios de Santiago: no se filtra por el primer tramo.
         stgo = ["Providencia, Santiago, Chile", "Vitacura, Santiago, Chile"]
         self.assertFalse(aplica_filtro_ciudad(stgo))
