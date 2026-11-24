@@ -1,3 +1,7 @@
 {
-  "status": "idle"
+  "status": "in_progress",
+  "query": "plomeros en Chubut",
+  "started_at": "2026-11-24T04:09:29-03:00",
+  "started_at_label": "2026-11-24 04:09 (America/Buenos_Aires)",
+  "started_at_epoch": 1795504169
 }
