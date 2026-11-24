@@ -758,8 +758,11 @@
         <div id="minResenasWrap" style="margin:16px 0 8px">
         <label class="label-sm" for="minResenasBox">Mínimo de reseñas</label>
         <select id="minResenasBox" class="field" aria-label="Mínimo de reseñas">
+          <option value="0">Sin mínimo</option>
+          <option value="3">3 o más</option>
+          <option value="5" selected>5 o más</option>
           <option value="10">10 o más</option>
-          <option value="20" selected>20 o más</option>
+          <option value="20">20 o más</option>
           <option value="30">30 o más</option>
         </select>
         <p class="hint">Siempre sin sitio web. Cuantas más reseñas, mejor: después se ordenan de mayor a menor.</p>
@@ -811,8 +814,11 @@
       </div>
       <div class="toolbar">
         <select id="minResenasFiltro" class="field" style="min-height:44px;padding:10px 14px;font-size:.9rem;flex:1" aria-label="Mínimo de reseñas">
+          <option value="0">Sin mínimo</option>
+          <option value="3">3 o más reseñas</option>
+          <option value="5" selected>5 o más reseñas</option>
           <option value="10">10 o más reseñas</option>
-          <option value="20" selected>20 o más reseñas</option>
+          <option value="20">20 o más reseñas</option>
           <option value="30">30 o más reseñas</option>
         </select>
         <select id="sortBox" class="field" style="min-height:44px;padding:10px 14px;font-size:.9rem;flex:1" aria-label="Ordenar">
@@ -1712,7 +1718,7 @@
 
     function minResenasDe(id, fallback) {
       const n = parseInt((el(id) && el(id).value) || String(fallback), 10);
-      if (n === 10 || n === 20 || n === 30) return n;
+      if (Number.isFinite(n) && n >= 0) return n;
       return fallback;
     }
 
@@ -1802,7 +1808,7 @@
       let fallbackQ = "";
       const profunda = !!(el("chkProfunda") && el("chkProfunda").checked);
       const depth = profunda ? DEPTH_PROFUNDA : DEPTH_RAPIDA;
-      const minResenas = String(minResenasDe("minResenasBox", 20));
+      const minResenas = String(minResenasDe("minResenasBox", 5));
 
       if (searchMode === "caba") {
         const rubro = (el("rubroBox").value || "").trim();
@@ -2119,7 +2125,7 @@
       if (!current) return [];
       const q = (el("filterBox").value || "").trim().toLowerCase();
       const hideSeen = el("hideSeen").checked;
-      const minRes = minResenasDe("minResenasFiltro", 20);
+      const minRes = minResenasDe("minResenasFiltro", 5);
       let rows = (current.prospects || []).slice();
 
       rows = rows.filter((r) => {

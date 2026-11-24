@@ -271,19 +271,24 @@ class FiltroResenasTest(unittest.TestCase):
         )
         self.assertEqual([r["nombre"] for r in out], ["Cincuenta", "Diez"])
 
-    def test_fabrica_tiene_selector_sin_cero_y_ordena_por_resenas(self):
+    def test_fabrica_tiene_selector_de_resenas_con_default_cinco(self):
         html = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
         yml = (ROOT / ".github" / "workflows" / "buscar.yml").read_text(encoding="utf-8")
         self.assertIn('id="minResenasBox"', html)
         self.assertIn('id="minResenasFiltro"', html)
         self.assertIn("min_resenas: minResenas", html)
-        self.assertNotIn('<option value="0">', html)
+        self.assertIn('<option value="0">', html)
+        self.assertIn('<option value="3">', html)
+        self.assertIn('<option value="5" selected>', html)
         self.assertIn('<option value="10">', html)
-        self.assertIn('<option value="20" selected>', html)
+        self.assertIn('<option value="20">', html)
         self.assertIn('<option value="30">', html)
+        self.assertNotIn('<option value="20" selected>', html)
         self.assertIn('<option value="reviews" selected>', html)
+        self.assertIn("n >= 0", html)
+        self.assertIn('minResenasDe("minResenasBox", 5)', html)
         self.assertIn('--modo and', yml)
-        self.assertIn('default: "20"', yml)
+        self.assertIn('default: "5"', yml)
 
 
 

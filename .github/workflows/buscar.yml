@@ -20,7 +20,7 @@ name: Buscar prospectos
       min_resenas:
         description: "Cantidad mínima de reseñas"
         required: false
-        default: "20"
+        default: "5"
         type: string
       profundidad:
         description: "Profundidad (-depth). Default 1 = rápido (~1 min por zona en paralelo)"
@@ -87,7 +87,7 @@ jobs:
             Q=$(printf '%s' "$Q" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
             DEPTH="4"
             RATING="4.0"
-            RESENAS="20"
+            RESENAS="5"
             EXPANDIR="true"
             ISSUE_NUM="$ISSUE_NUMBER"
             QUERIES_JSON=""
@@ -95,7 +95,7 @@ jobs:
             Q="$INPUT_BUSQUEDA"
             DEPTH="${INPUT_DEPTH:-1}"
             RATING="${INPUT_RATING:-4.0}"
-            RESENAS="${INPUT_RESENAS:-20}"
+            RESENAS="${INPUT_RESENAS:-5}"
             EXPANDIR="${INPUT_EXPANDIR:-true}"
             ISSUE_NUM=""
             QUERIES_JSON="${INPUT_QUERIES:-}"
