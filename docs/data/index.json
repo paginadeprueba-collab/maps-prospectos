@@ -1,6 +1,23 @@
 {
   "searches": [
     {
+      "id": "20261124-103217_plomeros-3-ciudades-cordoba-prueba-filtr",
+      "query": "plomeros · 3 ciudades Córdoba (prueba filtro)",
+      "date": "20261124-103217",
+      "date_label": "2026-11-24 10:32 (America/Buenos_Aires)",
+      "n_raw": 64,
+      "n_limpio": 13,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Villa Carlos Paz, Córdoba, Argentina",
+        "La Falda, Córdoba, Argentina",
+        "Cosquín, Córdoba, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-103217_plomeros-3-ciudades-cordoba-prueba-filtr.json"
+    },
+    {
       "id": "20261124-102202_plomeros-33-ciudades-argentina",
       "query": "plomeros · 33 ciudades Argentina",
       "date": "20261124-102202",
