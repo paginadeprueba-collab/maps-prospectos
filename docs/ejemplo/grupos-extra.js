@@ -127,7 +127,7 @@
   var odontologia = crearGrupo({
     id: "odontologia",
     titulo: "Odontología",
-    paginas: ["ejemplo/odontologia.html", "ejemplo/odontologia-2.html"],
+    paginas: ["ejemplo/odontologia.html", "ejemplo/odontologia-2.html", "ejemplo/odontologia-3.html", "ejemplo/odontologia-4.html", "ejemplo/odontologia-5.html", "ejemplo/odontologia-6.html"],
     alias: ["odontologo", "odontologos", "odontologa", "odontologas", "odontologia", "dentista", "dentistas", "clinica dental", "clinicas dentales", "consultorio odontologico", "consultorio dental", "clinica odontologica", "centro odontologico", "ortodoncia", "ortodoncista", "implantes dentales", "estetica dental"],
     rubros: [{
       id: "odo",

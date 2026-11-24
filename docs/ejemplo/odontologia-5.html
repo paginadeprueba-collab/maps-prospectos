@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#171044">
+<title>Consultorio odontológico</title>
+<style>
+:root{
+ --navy:#171044;--purple:#6547ed;--violet:#8b73ff;--mint:#bdf4df;
+ --ink:#19182a;--muted:#777587;--paper:#fbfaff;--line:#eceaf4;
+ --gold:#ffbd3f;--green:#16845b;--radius:23px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+button,input,select,textarea{font:inherit}
+a{color:inherit;text-decoration:none}
+.container{width:100%;max-width:760px;margin:0 auto}
+.topbar{height:66px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#171044;color:#fff;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.3px}
+.brand-mark{width:37px;height:37px;border-radius:13px;background:#fff;color:var(--purple);display:grid;place-items:center;font-weight:950;font-size:16px}
+.brand small{display:block;color:#c7c1ed;font-size:9px;font-weight:550;letter-spacing:.3px;margin-top:2px}
+.menu-btn{border:1px solid #ffffff40;background:#ffffff12;color:white;width:39px;height:39px;border-radius:13px;font-size:19px}
+.hero{background:radial-gradient(circle at 88% 15%,#8c77ff 0,transparent 34%),linear-gradient(135deg,#171044 0%,#302071 53%,#6547ed 100%);color:#fff;padding:22px 20px 28px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:290px;height:290px;border:1px solid #ffffff20;border-radius:50%;right:-145px;top:90px;box-shadow:0 0 0 32px #ffffff08,0 0 0 64px #ffffff06}
+.hero-inner{position:relative;z-index:1}
+.eyebrow{font-size:10px;font-weight:850;letter-spacing:1.8px;color:var(--mint);text-transform:uppercase}
+.hero h1{font-size:clamp(34px,9vw,55px);line-height:.99;letter-spacing:-1.8px;margin:13px 0 12px;max-width:530px}
+.hero-copy{font-size:14px;line-height:1.55;color:#e4e0ff;max-width:430px;margin:0}
+.doctor-block{display:grid;grid-template-columns:1fr 118px;gap:14px;align-items:end;margin-top:21px}
+.doctor-meta{padding-bottom:6px}
+.doctor-name{font-weight:850;font-size:14px}
+.doctor-role{font-size:11px;color:#d3ccff;margin-top:4px}
+.doctor-photo{height:154px;width:118px;object-fit:cover;object-position:top center;border-radius:23px 23px 8px 23px;border:3px solid #ffffff55;box-shadow:0 12px 30px #100b3c55}
+.hero-actions{display:flex;gap:9px;margin-top:18px}
+.btn{border:0;border-radius:30px;padding:14px 17px;font-size:12px;font-weight:850;display:inline-flex;justify-content:center;align-items:center;gap:7px;cursor:pointer}
+.btn-light{background:#fff;color:#281b72;flex:1}
+.btn-outline{background:#ffffff12;color:#fff;border:1px solid #ffffff66;flex:1}
+.trust-wrap{padding:0 16px;margin-top:-1px;position:relative;z-index:1}
+.trust-card{background:#fff;border-radius:0 0 23px 23px;padding:17px 16px 18px;box-shadow:0 12px 30px #30236d10}
+.google-line{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.google-label{font-size:11px;font-weight:850;color:#247b57;display:flex;align-items:center;gap:7px}
+.google-g{width:23px;height:23px;border-radius:50%;background:#f2f7f5;display:grid;place-items:center;color:#4285f4;font-weight:950;font-size:15px}
+.score-row{display:flex;align-items:center;gap:13px;margin-top:10px}
+.score{font-size:43px;font-weight:950;letter-spacing:-2px;color:var(--navy);line-height:1}
+.stars{color:var(--gold);font-size:22px;letter-spacing:1px;white-space:nowrap}
+.review-count{font-size:10px;color:var(--muted);margin-top:3px}
+.review-quote{font-size:12px;line-height:1.5;color:#555365;margin:11px 0 0;padding-top:11px;border-top:1px solid var(--line)}
+.review-quote b{color:#242139}
+.section{padding:29px 20px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:15px}
+.kicker{font-size:9px;font-weight:900;letter-spacing:1.6px;color:var(--purple);text-transform:uppercase}
+.section h2{font-size:25px;line-height:1.05;letter-spacing:-.8px;margin:5px 0 0;color:var(--navy)}
+.section-sub{font-size:12px;line-height:1.5;color:var(--muted);margin:8px 0 0}
+.service-list{display:grid;gap:11px}
+.service-card{display:grid;grid-template-columns:104px 1fr;min-height:112px;background:white;border:1px solid #efedf5;border-radius:19px;overflow:hidden;box-shadow:0 7px 22px #29205d08;cursor:pointer;text-align:left;padding:0;color:inherit}
+.service-card img{width:104px;height:100%;min-height:112px;object-fit:cover}
+.service-copy{padding:13px 12px;display:flex;flex-direction:column;justify-content:center}
+.service-copy strong{font-size:13px;color:var(--navy)}
+.service-copy small{font-size:10px;color:var(--muted);line-height:1.4;margin-top:5px}
+.service-copy span{font-size:10px;font-weight:850;color:var(--purple);margin-top:8px}
+.reviews-section{margin-top:27px;background:#f0edff;padding:27px 20px 25px}
+.review-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.review-top h2{font-size:24px;line-height:1.05;letter-spacing:-.7px;margin:5px 0 0;color:var(--navy)}
+.review-card{background:#fff;border-radius:19px;padding:16px;margin-bottom:10px;box-shadow:0 7px 20px #31246e0a}
+.review-card .stars{font-size:17px}
+.review-card h3{font-size:13px;margin:8px 0 5px}
+.review-card p{font-size:11px;line-height:1.55;color:#5f5d6d;margin:0}
+.review-card small{display:block;color:#9996a4;font-size:9px;margin-top:10px}
+.booking-section{padding:30px 16px 28px}
+.booking-shell{background:linear-gradient(145deg,#24175f,#6547ed);border-radius:27px;padding:20px 16px;color:#fff;box-shadow:0 16px 32px #6547ed35}
+.booking-shell .kicker{color:var(--mint)}
+.booking-shell h2{color:#fff;font-size:27px;letter-spacing:-.8px;line-height:1.02;margin:7px 0}
+.booking-shell>p{font-size:11px;line-height:1.5;color:#e1dcff;margin:0 0 17px}
+.field{margin-top:12px}
+.field label{display:block;font-size:10px;font-weight:800;margin-bottom:6px;color:#eeeaff}
+.field input,.field select,.field textarea{width:100%;border:0;border-radius:13px;background:#fff;color:#29263a;padding:13px 12px;font-size:12px;outline:0}
+.slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.slot{border:1px solid #ffffff66;border-radius:12px;background:#ffffff14;color:#fff;padding:10px 4px;font-size:10px;font-weight:800;cursor:pointer}
+.slot.active{background:#fff;color:#5d43d4;border-color:#fff}
+.booking-submit{width:100%;background:var(--mint);color:#143f36;border:0;border-radius:14px;padding:15px;font-size:12px;font-weight:950;margin-top:17px;cursor:pointer}
+.booking-note{font-size:9px;color:#ded8ff;line-height:1.45;margin:10px 2px 0}
+.location-card{background:#fff;border:1px solid var(--line);border-radius:21px;padding:16px;box-shadow:0 7px 20px #29205d08}
+.location-card strong{font-size:13px}
+.location-card p{font-size:11px;color:var(--muted);line-height:1.5}
+.map-placeholder{height:155px;border-radius:15px;background:linear-gradient(135deg,#e7e4f7,#d8e9e7);display:grid;place-items:center;color:#51469a;font-size:12px;font-weight:800;margin-top:12px;overflow:hidden;position:relative}
+.map-placeholder:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(35deg,transparent 0 24px,#ffffff70 25px 28px),repeating-linear-gradient(120deg,transparent 0 38px,#ffffff65 39px 42px)}
+.map-placeholder span{z-index:1;background:#fff;border-radius:25px;padding:10px 14px;box-shadow:0 4px 15px #34305b20}
+.footer{padding:26px 20px 35px;text-align:center;color:#9895a4;font-size:10px}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);padding:10px 14px calc(10px + env(safe-area-inset-bottom));border-top:1px solid #eae7f2;display:flex;gap:9px}
+.sticky-cta a{flex:1;text-align:center;padding:13px 10px;border-radius:25px;font-size:11px;font-weight:900}
+.sticky-book{background:var(--purple);color:white}.sticky-wa{background:#e7f8ef;color:#16744d}
+.toast{display:none;position:fixed;z-index:10;bottom:85px;left:50%;transform:translateX(-50%);background:#20184f;color:#fff;padding:12px 17px;border-radius:25px;font-size:11px;max-width:90%;text-align:center}
+@media(min-width:700px){.hero{padding:34px 34px 35px}.hero-inner,.section,.reviews-section,.booking-section,.footer{padding-left:34px;padding-right:34px}.trust-wrap{padding:0 28px}.doctor-block{grid-template-columns:1fr 150px}.doctor-photo{width:150px;height:180px}.service-list{grid-template-columns:1fr 1fr}.service-card{grid-template-columns:95px 1fr}.sticky-cta{max-width:760px;left:50%;transform:translateX(-50%);border-radius:18px 18px 0 0}}
+</style>
+<style>
+.sello-resenas-google.sello-resenas-google{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:#e8f8ee;color:#0b7a3b;font-weight:800;font-size:12px;letter-spacing:.01em;line-height:1.2;text-transform:none;text-shadow:none}
+.rv-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:18px}
+.rv-item{background:#fff;color:#1d2b2a;border-radius:16px;padding:18px;box-shadow:0 8px 24px #0001}
+.rv-item .rv-s{color:#e0a100;letter-spacing:2px}.rv-item p{margin:8px 0}.rv-item b{font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="topbar">
+ <div class="brand"><div class="brand-mark" data-iniciales>CD</div><div><span data-nombre-mayus>CONSULTORIO DENTAL</span><small>ODONTOLOGÍA INTEGRAL</small></div></div>
+ <button class="menu-btn" aria-label="Ir a contacto" onclick="document.getElementById('ubicacion').scrollIntoView({behavior:'smooth'})">☰</button>
+</header>
+
+<section class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">Cuidamos tu sonrisa</div>
+  <h1>Una sonrisa sana cambia todo.</h1>
+  <p class="hero-copy">Atención odontológica personalizada, tratamientos modernos y un equipo profesional que te acompaña en cada paso.</p>
+  <div class="doctor-block">
+   <div class="doctor-meta"><div class="doctor-name">Dr./Dra. Nombre Apellido</div><div class="doctor-role">Odontólogo/a · Matrícula profesional</div></div>
+   <img class="doctor-photo" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=85" alt="Profesional odontológico">
+  </div>
+  <div class="hero-actions"><a class="btn btn-light" href="#agenda">Reservar consulta ↗</a><a class="btn btn-outline" href="#servicios">Ver tratamientos</a></div>
+ </div>
+</section>
+
+<div class="trust-wrap">
+ <div class="trust-card">
+  <div class="google-line"><div class="google-label"><span class="google-g">G</span> OPINIONES EN GOOGLE</div><span style="font-size:9px;color:#16845b;font-weight:850">RESEÑAS DE PACIENTES</span></div>
+  <div class="score-row"><div class="score">5,0</div><div><div class="stars">★★★★★</div><div class="review-count">Calificación y cantidad de reseñas a conectar</div></div></div>
+  <p class="review-quote"><b>La confianza de nuestros pacientes es lo más importante.</b> Conocé sus experiencias y opiniones sobre la atención recibida.</p>
+ </div>
+</div>
+
+<section class="section" id="servicios">
+ <div class="section-head"><div><div class="kicker">Tratamientos</div><h2>Todo para tu salud dental</h2><p class="section-sub">Elegí el servicio que necesitás y consultanos por tu caso.</p></div></div>
+ <div class="service-list">
+  <button class="service-card" onclick="selectService('Limpieza y prevención')"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=420&q=85" alt="Limpieza dental"><span class="service-copy"><strong>Limpieza y prevención</strong><small>Higiene bucal y controles periódicos.</small><span>Consultar tratamiento →</span></span></button>
+  <button class="service-card" onclick="selectService('Estética y blanqueamiento')"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=420&q=85" alt="Estética dental"><span class="service-copy"><strong>Estética y blanqueamiento</strong><small>Opciones para mejorar tu sonrisa.</small><span>Consultar tratamiento →</span></span></button>
+  <button class="service-card" onclick="selectService('Ortodoncia')"><img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=420&q=85" alt="Ortodoncia"><span class="service-copy"><strong>Ortodoncia</strong><small>Evaluación y corrección de la posición dental.</small><span>Consultar tratamiento →</span></span></button>
+  <button class="service-card" onclick="selectService('Implantes y prótesis')"><img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=420&q=85" alt="Implantes dentales"><span class="service-copy"><strong>Implantes y prótesis</strong><small>Alternativas de rehabilitación oral.</small><span>Consultar tratamiento →</span></span></button>
+ </div>
+</section>
+
+<section class="section reviews" id="resenas" data-hide-if="reviews-text"><div class="wrap"><div class="section-head"><span class="kicker">Experiencias de pacientes</span><h2>Opiniones que inspiran confianza</h2><p><span class="sello-resenas-google">Reseñas verificadas de Google</span> <span data-hide-if="rating"><span data-rating></span> <span data-stars></span> · <span data-reviews-count></span> opiniones</span></p></div>
+<div class="rv-list" data-reviews><article class="rv-item"><div class="rv-s" data-r-s>★★★★★</div><p data-r-t></p><b data-r-n></b></article></div></div></section>
+
+<section class="booking-section" id="agenda">
+ <div class="booking-shell">
+  <div class="kicker">Turnos online</div><h2>Agendá tu consulta</h2><p>Completá tus datos, elegí el tratamiento y envianos tu solicitud por WhatsApp.</p>
+  <div class="field"><label for="tratamiento">¿Qué tratamiento necesitás?</label><select id="tratamiento"><option value="">Seleccionar tratamiento</option><option>Consulta odontológica</option><option>Limpieza y prevención</option><option>Estética y blanqueamiento</option><option>Ortodoncia</option><option>Implantes y prótesis</option><option>Otro</option></select></div>
+  <div class="field"><label>Elegí un horario preferido</label><div class="slot-grid" id="slots"><button class="slot">09:00</button><button class="slot">10:30</button><button class="slot active">12:00</button><button class="slot">14:00</button><button class="slot">15:30</button><button class="slot">17:00</button></div></div>
+  <div class="field"><label for="fecha">Fecha de preferencia</label><input id="fecha" type="date"></div>
+  <div class="field"><label for="nombre">Nombre y apellido</label><input id="nombre" placeholder="Escribí tu nombre"></div>
+  <div class="field"><label for="telefono">Teléfono de contacto</label><input id="telefono" type="tel" placeholder="Código de área + número"></div>
+  <button class="booking-submit" onclick="sendBooking()">Solicitar turno por WhatsApp →</button>
+  <p class="booking-note">La solicitud no confirma automáticamente el turno. El consultorio deberá verificar y confirmar la disponibilidad.</p>
+ </div>
+</section>
+
+<section class="section" id="ubicacion">
+ <div class="section-head"><div><div class="kicker">Encontranos</div><h2>Ubicación y contacto</h2></div></div>
+ <div class="location-card"><strong data-nombre>Consultorio odontológico</strong><p data-dir></p><div class="map-placeholder"><a data-maps href="https://www.google.com/maps" target="_blank" rel="noopener">📍 Ver ubicación en Google Maps</a></div></div>
+</section>
+<footer class="footer"><span data-nombre>Consultorio odontológico</span> · Atención con cita previa</footer>
+</div>
+<div class="sticky-cta"><a class="sticky-book" href="#agenda">Agendar consulta</a><a class="sticky-wa" href="#agenda">Consultar por WhatsApp</a></div>
+<div class="toast" id="toast"></div>
+<script>
+let chosenSlot='12:00';
+document.querySelectorAll('.slot').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.slot').forEach(x=>x.classList.remove('active'));b.classList.add('active');chosenSlot=b.textContent.trim()}));
+const date=document.getElementById('fecha');let tomorrow=new Date();tomorrow.setDate(tomorrow.getDate()+1);date.min=tomorrow.toISOString().slice(0,10);
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.style.display='none',2600)}
+function selectService(s){document.getElementById('tratamiento').value=s;document.getElementById('agenda').scrollIntoView({behavior:'smooth'});}
+function sendBooking(){
+ const treatment=document.getElementById('tratamiento').value,name=document.getElementById('nombre').value.trim(),phone=document.getElementById('telefono').value.trim(),day=document.getElementById('fecha').value;
+ if(!treatment||!name||!phone||!day){toast('Completá todos los campos para enviar tu solicitud.');return}
+ const msg=`Hola, quisiera solicitar un turno.%0ATratamiento: ${encodeURIComponent(treatment)}%0ANombre: ${encodeURIComponent(name)}%0ATeléfono: ${encodeURIComponent(phone)}%0AFecha: ${encodeURIComponent(day)}%0AHorario preferido: ${encodeURIComponent(chosenSlot)}. ¿Podrían confirmarme disponibilidad?`;
+ const wa=String(window.WHATSAPP_NUMBER||'');
+ if(!wa){toast('Este sitio de ejemplo todavía no tiene WhatsApp cargado.');return}
+ window.open(`https://wa.me/${wa}?text=${msg}`,'_blank');
+}
+</script>
+<script src="codec.js?v=20261124v"></script>
+<script src="hogar.js?v=20261124v"></script>
+<script src="grupos-extra.js?v=20261124v"></script>
+<script src="llenar.js?v=20261124v"></script>
+</body>
+</html>
