@@ -170,7 +170,7 @@
       color: var(--muted);
     }
     .progress-wrap {
-      margin: 16px 0 0;
+      margin: 0 0 16px;
       padding: 12px;
       border-radius: var(--radius-sm);
       background: var(--warn-soft);
@@ -662,6 +662,14 @@
   </header>
 
   <main class="wrap">
+    <div id="progressWrap" class="progress-wrap hidden">
+      <div class="progress-label">
+        <strong id="progressTitle">Buscando…</strong>
+        <span id="progressMeta">0%</span>
+      </div>
+      <div class="bar" aria-hidden="true"><i id="progressBar"></i></div>
+      <p class="hint" id="progressHint" style="margin-top:10px">La página se actualiza sola cuando termina.</p>
+    </div>
     <section id="viewList">
       <div class="panel" id="buscar">
         <p class="eyebrow">Nueva búsqueda</p>
@@ -770,14 +778,6 @@
 
         <button type="button" class="btn btn-primary btn-block" id="btnBuscar">Buscar</button>
 
-        <div id="progressWrap" class="progress-wrap hidden">
-          <div class="progress-label">
-            <strong id="progressTitle">Buscando…</strong>
-            <span id="progressMeta">0%</span>
-          </div>
-          <div class="bar" aria-hidden="true"><i id="progressBar"></i></div>
-          <p class="hint" id="progressHint" style="margin-top:10px">La página se actualiza sola cuando termina.</p>
-        </div>
 
         <p class="hint" id="modeHint">Si el Worker no está configurado, se abre un issue en GitHub (mismo resultado).</p>
 
@@ -814,9 +814,9 @@
       </div>
       <div class="toolbar">
         <select id="minResenasFiltro" class="field" style="min-height:44px;padding:10px 14px;font-size:.9rem;flex:1" aria-label="Mínimo de reseñas">
-          <option value="0">Sin mínimo</option>
+          <option value="0" selected>Sin mínimo</option>
           <option value="3">3 o más reseñas</option>
-          <option value="5" selected>5 o más reseñas</option>
+          <option value="5">5 o más reseñas</option>
           <option value="10">10 o más reseñas</option>
           <option value="20">20 o más reseñas</option>
           <option value="30">30 o más reseñas</option>
@@ -1579,7 +1579,7 @@
     }
 
     async function waitForNewSearch(label, maxAttempts) {
-      const attempts = maxAttempts || 30;
+      const attempts = maxAttempts || 90;
       for (let i = 0; i < attempts; i++) {
         await loadIndex(false);
         const newest = (indexData.searches || [])[0];
@@ -1608,15 +1608,68 @@
       return null;
     }
 
+    function createdAtMs(data) {
+      const t = Date.parse((data && (data.created_at || data.run_started_at)) || "");
+      return Number.isFinite(t) ? t : 0;
+    }
+
+    function runEsDeEstaBusqueda(data) {
+      if (!data || !data.run_id) return false;
+      if (!searchStartedAt) return !!data.in_progress;
+      const created = createdAtMs(data);
+      if (!created) return !!data.in_progress;
+      return created >= searchStartedAt - 20000;
+    }
+
+    async function fetchEstado(runId) {
+      const q = runId
+        ? "/estado?run_id=" + encodeURIComponent(runId) + "&t=" + Date.now()
+        : "/estado?t=" + Date.now();
+      const res = await fetch(WORKER_URL.replace(/\/$/, "") + q, { cache: "no-store" });
+      if (!res.ok) throw new Error("estado " + res.status);
+      return res.json();
+    }
+
     async function pollEstado() {
-      if (!WORKER_URL || !activeRunId) return;
+      if (!WORKER_URL) return;
       try {
-        const res = await fetch(
-          WORKER_URL.replace(/\/$/, "") + "/estado?run_id=" + encodeURIComponent(activeRunId) + "&t=" + Date.now(),
-          { cache: "no-store" }
-        );
-        if (!res.ok) throw new Error("estado " + res.status);
-        const data = await res.json();
+        let data;
+        if (activeRunId) {
+          data = await fetchEstado(activeRunId);
+          if (!data.in_progress && searchStartedAt && !runEsDeEstaBusqueda(data)) {
+            activeRunId = null;
+            data = await fetchEstado(null);
+          }
+        } else {
+          data = await fetchEstado(null);
+        }
+        if (data && data.in_progress && data.run_id && runEsDeEstaBusqueda(data)) {
+          activeRunId = data.run_id;
+        } else if (data && data.in_progress && !searchStartedAt) {
+          activeRunId = data.run_id || activeRunId;
+        }
+
+        // El Worker a veces devuelve el run anterior, ya terminado. Seguimos esperando el nuevo.
+        if (!data.in_progress && searchStartedAt && !runEsDeEstaBusqueda(data)) {
+          const elapsed = Date.now() - searchStartedAt;
+          const soft = Math.min(40, 15 + (elapsed / 60000) * 5);
+          setProgress(
+            true,
+            soft,
+            "En cola en GitHub Actions…",
+            Math.round(soft) + "%",
+            "Esperando que arranque la búsqueda nueva."
+          );
+          if (elapsed > 60000) {
+            await loadIndex(false);
+            const newest = (indexData.searches || [])[0];
+            if (newest && prevSearchIds.size && !prevSearchIds.has(newest.id)) {
+              stopPoll();
+              await waitForNewSearch(searchLabelExpect, 24);
+            }
+          }
+          return;
+        }
 
         // Soft progress por tiempo (evita quedarse clavado en 55/60%)
         const elapsed = Date.now() - (searchStartedAt || Date.now());
@@ -1662,7 +1715,7 @@
               ok ? "Listo — buscando resultados nuevos…" : ("Terminó: " + (data.conclusion || "")),
               "92%"
             );
-            await waitForNewSearch(searchLabelExpect, 36);
+            await waitForNewSearch(searchLabelExpect, 90);
           }
         }
       } catch (e) {
@@ -1923,16 +1976,15 @@
           const data = await res.json().catch(() => ({}));
           if (!res.ok) throw new Error(data.message || data.error || "Error " + res.status);
           activeRunId = data.run_id || null;
-          // Si el worker devolvió un run viejo completed, re-consultar latest
-          if (!activeRunId || data.status === "completed") {
+          // /buscar a veces devuelve el run anterior, ya terminado. Ese no es el nuestro.
+          if (activeRunId && data.status === "completed") {
+            activeRunId = null;
+          }
+          if (!activeRunId) {
             await sleep(2000);
             try {
-              const er = await fetch(WORKER_URL.replace(/\/$/, "") + "/estado?t=" + Date.now(), {
-                cache: "no-store",
-              });
-              const ed = await er.json();
-              if (ed.run_id && ed.in_progress) activeRunId = ed.run_id;
-              else if (ed.run_id) activeRunId = ed.run_id;
+              const ed = await fetchEstado(null);
+              if (ed.run_id && (ed.in_progress || runEsDeEstaBusqueda(ed))) activeRunId = ed.run_id;
             } catch (_) {}
           }
           setProgress(true, 15, "En cola en GitHub Actions…", "15%");
@@ -1953,20 +2005,60 @@
       }
     }
 
-    async function checkPagesEstado() {
-      // Solo informativo; el progreso real viene del Worker /estado
+    async function retomarBusquedaEnCurso() {
+      // Si recargás el celular a mitad de una búsqueda, hay que mostrar el progreso
+      // (antes solo se veía si esta pestaña había lanzado el run).
+      prevSearchIds = new Set((indexData.searches || []).map((s) => s.id));
+      let queryPages = "";
+      let pagesBusy = false;
       try {
         const res = await fetch(DATA_BASE + "estado.json?t=" + Date.now(), { cache: "no-store" });
-        if (!res.ok) return;
-        const est = await res.json();
-        if (est.status === "in_progress" && activeRunId) {
-          // no pisar % con 60 fijo
-          const title = el("progressTitle").textContent || "";
-          if (!title || title.indexOf("Lanzando") === 0 || title.indexOf("En cola") === 0) {
-            setProgress(true, null, "Buscando «" + (est.query || "") + "»…", el("progressMeta").textContent);
+        if (res.ok) {
+          const est = await res.json();
+          if (est.status === "in_progress") {
+            pagesBusy = true;
+            queryPages = est.query || "";
+            searchLabelExpect = queryPages;
+            if (est.started_at_epoch) searchStartedAt = Number(est.started_at_epoch) * 1000 || Date.now();
+            else if (est.started_at) searchStartedAt = Date.parse(est.started_at) || Date.now();
+            else searchStartedAt = Date.now() - 60000;
+            setProgress(
+              true,
+              20,
+              "Buscando «" + queryPages + "»…",
+              "20%",
+              "La búsqueda sigue en curso. Dejá la página abierta — se actualiza sola."
+            );
           }
         }
       } catch (_) {}
+
+      if (WORKER_URL) {
+        try {
+          const ed = await fetchEstado(null);
+          if (ed.in_progress) {
+            activeRunId = ed.run_id;
+            const titulo = queryPages || ed.display_title || "prospectos";
+            searchLabelExpect = searchLabelExpect || titulo;
+            if (!searchStartedAt) searchStartedAt = createdAtMs(ed) || Date.now();
+            setProgress(
+              true,
+              ed.progress || 20,
+              "Buscando «" + titulo + "»…",
+              (ed.progress || 20) + "%",
+              "La búsqueda sigue en curso. Dejá la página abierta — se actualiza sola."
+            );
+            stopPoll();
+            pollTimer = setInterval(pollEstado, 4000);
+            setTimeout(pollEstado, 500);
+            return;
+          }
+        } catch (_) {}
+      }
+
+      if (pagesBusy) {
+        await waitForNewSearch(queryPages || searchLabelExpect, 90);
+      }
     }
 
     function renderRubroGroups() {
@@ -2008,7 +2100,7 @@
 
     async function loadIndex(doRoute) {
       try {
-        const res = await fetch(DATA_BASE + "index.json?t=" + Date.now());
+        const res = await fetch(DATA_BASE + "index.json?t=" + Date.now(), { cache: "no-store" });
         if (!res.ok) throw new Error("index " + res.status);
         indexData = await res.json();
         if (!indexData.searches) indexData.searches = [];
@@ -2080,7 +2172,7 @@
       const meta = (indexData.searches || []).find((x) => x.id === id);
       const file = meta ? meta.file : id + ".json";
       try {
-        const res = await fetch(DATA_BASE + file + "?t=" + Date.now());
+        const res = await fetch(DATA_BASE + file + "?t=" + Date.now(), { cache: "no-store" });
         if (!res.ok) throw new Error("search " + res.status);
         current = await res.json();
         // Búsquedas viejas: si falta el WhatsApp pero hay teléfono, se arma acá (Argentina 549…, otros países +código).
@@ -2125,7 +2217,7 @@
       if (!current) return [];
       const q = (el("filterBox").value || "").trim().toLowerCase();
       const hideSeen = el("hideSeen").checked;
-      const minRes = minResenasDe("minResenasFiltro", 5);
+      const minRes = minResenasDe("minResenasFiltro", 0);
       let rows = (current.prospects || []).slice();
 
       rows = rows.filter((r) => {
@@ -2689,7 +2781,8 @@
       pintarYa();
     }
 
-    Promise.all([loadIndex(false), loadCatalogo(), loadZonasLatam(), rebuildSeenLinks(), checkPagesEstado()])
+    loadIndex(false)
+      .then(() => Promise.all([loadCatalogo(), loadZonasLatam(), rebuildSeenLinks(), retomarBusquedaEnCurso()]))
       .then(() => loadHistorial())
       .then(route);
   </script>

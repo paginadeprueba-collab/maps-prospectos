@@ -254,6 +254,8 @@ CATEGORIAS_TIENDA = (
     "casa de electricidad",
     "proveedor de materiales de construccion",
     "proveedor de materiales",
+    "mercado de materiales de construccion",
+    "mercado de materiales",
     "tienda de material sanitario",
     "establecimiento de venta de madera",
     "tienda de electricidad",
@@ -494,6 +496,129 @@ def fuera_de_la_zona(direccion: str, provincias: set[str]) -> bool:
     return en_dir.isdisjoint(provincias)
 
 
+_PAISES_DIR = {
+    "argentina",
+    "chile",
+    "uruguay",
+    "paraguay",
+    "peru",
+    "mexico",
+    "colombia",
+    "bolivia",
+    "ecuador",
+    "brasil",
+    "brazil",
+}
+
+
+def _partes_lugar(lugar: str) -> list[str]:
+    return [p.strip() for p in str(lugar or "").split(",") if p.strip()]
+
+
+def ciudades_buscadas(lugares: list | None) -> list[str]:
+    """Ciudad (primer tramo) de cada lugar «Ciudad, Provincia, País»."""
+    out: list[str] = []
+    seen: set[str] = set()
+    for l in lugares or []:
+        parts = _partes_lugar(l)
+        if not parts:
+            continue
+        ciudad = parts[0]
+        k = _norm_txt(ciudad)
+        if k and k not in seen:
+            seen.add(k)
+            out.append(ciudad)
+    return out
+
+
+def padres_buscados(lugares: list | None) -> set[str]:
+    out: set[str] = set()
+    for l in lugares or []:
+        parts = _partes_lugar(l)
+        if len(parts) >= 3:
+            out.add(_norm_txt(parts[-2]))
+        elif len(parts) == 2:
+            out.add(_norm_txt(parts[-1]))
+    return out
+
+
+def aplica_filtro_ciudad(lugares: list | None) -> bool:
+    """Solo ciudades de una provincia argentina. No se aplica a barrios de Santiago o Montevideo."""
+    padres = padres_buscados(lugares)
+    if not padres:
+        return False
+    return all(p in PROVINCIAS_AR for p in padres)
+
+
+def _ciudad_en(direccion_norm: str, ciudad: str) -> bool:
+    c = _norm_txt(ciudad)
+    if not c or not direccion_norm:
+        return False
+    return re.search(r"(?<![a-z0-9])" + re.escape(c) + r"(?![a-z0-9])", direccion_norm) is not None
+
+
+def _strip_cp(texto: str) -> str:
+    t = (texto or "").strip()
+    t = re.sub(r"^(?:[A-Za-z]?\d{4}[A-Za-z]*\s*)+", "", t)
+    return t.strip()
+
+
+def _parece_postal(n: str) -> bool:
+    return bool(re.fullmatch(r"[a-z]?\d{4}[a-z]*", n or ""))
+
+
+def ciudad_declarada(direccion: str) -> str:
+    """Ciudad que declara la dirección, si se puede leer."""
+    parts = _partes_lugar(direccion_util(direccion))
+    if not parts:
+        return ""
+    if _norm_txt(parts[-1]) in _PAISES_DIR:
+        parts = parts[:-1]
+    if not parts:
+        return ""
+    last = _norm_txt(parts[-1])
+    padres = set(PROVINCIAS_AR) | {"santiago", "montevideo", "caba", "provincia de buenos aires"}
+    if last in padres:
+        raw = parts[-2] if len(parts) >= 2 else parts[-1]
+        city = _norm_txt(_strip_cp(raw))
+        # CP o calle donde debería ir la ciudad: es la capital de esa provincia.
+        if not city or _parece_postal(city) or _parece_calle(city):
+            return last
+        return city
+    return _norm_txt(_strip_cp(parts[-1]))
+
+
+def _parece_calle(n: str) -> bool:
+    if not n:
+        return False
+    if re.search(r"\d", n):
+        return True
+    return bool(re.match(r"^(av|avda|avenida|calle|c\.|pje|pasaje|ruta|rta|diagonal|blvd)", n))
+
+
+def fuera_de_las_ciudades(direccion: str, ciudades: list[str], aplicar: bool) -> bool:
+    """True si se buscaron ciudades concretas de una provincia y la dirección es de otra (p. ej. la capital)."""
+    if not aplicar or not ciudades:
+        return False
+    s = direccion_util(direccion)
+    if not s:
+        return True
+    addr = _norm_txt(s)
+    pedidas = {_norm_txt(c) for c in ciudades}
+    declarada = ciudad_declarada(s)
+    if declarada in pedidas:
+        return False
+    hits = [c for c in sorted(ciudades, key=lambda x: -len(_norm_txt(x))) if _ciudad_en(addr, c)]
+    if hits:
+        # «San Francisco» no debe aceptar «San Francisco del Chañar».
+        if declarada and any(declarada.startswith(_norm_txt(c) + " ") for c in hits):
+            return True
+        return False
+    if not declarada or _parece_calle(declarada):
+        return False
+    return True
+
+
 def website_empty(row: dict) -> bool:
     w = _get(row, "website", "Website", "web", "site")
     if not w:
@@ -577,6 +702,8 @@ def main() -> int:
         except (json.JSONDecodeError, AttributeError):
             pais_default = AR
     provincias_sel = provincias_buscadas(lugares_sel)
+    ciudades_sel = ciudades_buscadas(lugares_sel)
+    filtrar_ciudad = aplica_filtro_ciudad(lugares_sel)
 
     total = len(rows)
     sin_web = []
@@ -595,7 +722,9 @@ def main() -> int:
         if excluir_como_ajeno(rubro_sel, categoria, nombre):
             n_ajeno += 1
             continue
-        if fuera_de_la_zona(direccion, provincias_sel):
+        if fuera_de_la_zona(direccion, provincias_sel) or fuera_de_las_ciudades(
+            direccion, ciudades_sel, filtrar_ciudad
+        ):
             n_fuera += 1
             continue
         rating = parse_float(_get(row, "review_rating", "rating", "Review Rating"))

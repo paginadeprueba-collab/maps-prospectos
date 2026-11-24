@@ -19,8 +19,11 @@ from filtrar import (  # noqa: E402
     clean_phone,
     es_oficio_buscado,
     excluir_como_ajeno,
+    aplica_filtro_ciudad,
+    ciudades_buscadas,
     excluir_como_tienda,
     fuera_de_la_zona,
+    fuera_de_las_ciudades,
     pasa_umbral_o_oficio,
     provincias_buscadas,
     telefono_y_whatsapp,
@@ -428,7 +431,54 @@ class FiltrarTest(unittest.TestCase):
         self.assertTrue(excluir_como_ajeno("plomeros", "", "Servimar Empresa Metalurgica"))
         self.assertFalse(excluir_como_ajeno("plomeros", "Comercio", "Beto Gasista"))
 
+    def test_filtro_ciudad_saca_capital_si_no_se_pidio(self):
+        lugares = [
+            "Río Cuarto, Córdoba, Argentina",
+            "Villa Carlos Paz, Córdoba, Argentina",
+            "Villa Allende, Córdoba, Argentina",
+            "La Falda, Córdoba, Argentina",
+        ]
+        ciudades = ciudades_buscadas(lugares)
+        self.assertEqual(ciudades, ["Río Cuarto", "Villa Carlos Paz", "Villa Allende", "La Falda"])
+        self.assertTrue(aplica_filtro_ciudad(lugares))
+        # Capital de Córdoba, no estaba en la lista.
+        self.assertTrue(fuera_de_las_ciudades(
+            "Obispo Salguero 500, X5003 Córdoba, Argentina", ciudades, True
+        ))
+        self.assertTrue(fuera_de_las_ciudades("X5000 Córdoba, Argentina", ciudades, True))
+        self.assertTrue(fuera_de_las_ciudades(
+            "Caseros 700, X5000AHM X5000AHM, Córdoba, Argentina", ciudades, True
+        ))
+        # Ciudad pedida.
+        self.assertFalse(fuera_de_las_ciudades(
+            "Av. San Martín 100, Villa Carlos Paz, Córdoba, Argentina", ciudades, True
+        ))
+        # Villa Allende escrito en la calle y Córdoba como ciudad.
+        self.assertFalse(fuera_de_las_ciudades(
+            "Mz 55 casa 10 barrio Arturo capdevila Villa Allende, X5012 Córdoba, Argentina",
+            ciudades,
+            True,
+        ))
+        # Otro pueblo de la misma provincia, no pedido.
+        self.assertTrue(fuera_de_las_ciudades(
+            "Juana Azurduy 180, Anisacate, Córdoba, Argentina", ciudades, True
+        ))
+        # San Francisco no debe tragar San Francisco del Chañar.
+        solo_sf = ciudades_buscadas(["San Francisco, Córdoba, Argentina"])
+        self.assertTrue(fuera_de_las_ciudades(
+            "Calle 1, San Francisco del Chañar, Córdoba, Argentina", solo_sf, True
+        ))
+        # Barrios de Santiago: no se filtra por el primer tramo.
+        stgo = ["Providencia, Santiago, Chile", "Vitacura, Santiago, Chile"]
+        self.assertFalse(aplica_filtro_ciudad(stgo))
+        self.assertFalse(fuera_de_las_ciudades(
+            "Av. Apoquindo 100, Santiago, Chile", ciudades_buscadas(stgo), False
+        ))
+        # Tienda que se colaba como mercado de materiales.
+        self.assertTrue(excluir_como_tienda("plomeros", "Mercado de materiales de construcción", "Laboulaye Sanitarios"))
+
     def test_filtro_sobre_la_busqueda_real_de_santiago(self):
+
         path = ROOT / "docs" / "data" / "20261123-165537_plomeros-18-barrios-santiago-chile.json"
         data = json.loads(path.read_text(encoding="utf-8"))
         kept, dropped = [], []
