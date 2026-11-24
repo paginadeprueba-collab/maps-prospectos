@@ -20,7 +20,7 @@ name: Buscar prospectos
       min_resenas:
         description: "Cantidad mínima de reseñas"
         required: false
-        default: "5"
+        default: "0"
         type: string
       profundidad:
         description: "Profundidad (-depth). Default 1 = rápido (~1 min por zona en paralelo)"
@@ -456,7 +456,7 @@ jobs:
           printf '%s\n' "${SELECCION_JSON:-}" > seleccion.json
           python3 filtrar.py output/raw.csv final/limpio.csv \
             --min-rating "${MIN_RATING:-4.0}" \
-            --min-reviews "${MIN_RESENAS:-20}" \
+            --min-reviews "${MIN_RESENAS:-0}" \
             --modo and \
             --seleccion seleccion.json
 

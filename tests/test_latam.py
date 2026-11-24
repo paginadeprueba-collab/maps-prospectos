@@ -407,6 +407,13 @@ class FiltrarTest(unittest.TestCase):
         self.assertTrue(excluir_como_tienda("plomeros", "Comercio", "Corralón Rada Tilly SRL"))
         self.assertTrue(excluir_como_tienda("plomeros", "", "Servimat - Todo para la construcción"))
         self.assertFalse(excluir_como_tienda("ferreterías", "Proveedor de materiales de construcción"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Proveedor de equipos de calefacción", "Técnicas Térmicas"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Tienda de calefacción"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Proveedor de equipos eléctricos", "Pymet"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Mercado de materiales de construcción", "Laboulaye Sanitarios"))
+        self.assertTrue(excluir_como_tienda("plomeros", "Comercio", "Laboulaye Sanitarios"))
+        self.assertFalse(excluir_como_tienda("plomeros", "Instalador de gas", "RV INSTALACIONES SANITARIAS"))
+        self.assertFalse(excluir_como_tienda("plomeros", "Mantenimiento de propiedades", "Montador gasista Sanitarista domiciliario"))
 
     def test_saca_oficios_ajenos_y_fuera_de_provincia(self):
         self.assertTrue(excluir_como_ajeno("plomeros", "Gasolinera", "YPF TECKA"))
@@ -417,10 +424,15 @@ class FiltrarTest(unittest.TestCase):
         self.assertFalse(excluir_como_ajeno("cerrajeros", "Cerrajero", "Cerrajeria Mendieta"))
         self.assertTrue(es_oficio_buscado("plomeros", "Fontanero", "X"))
         self.assertTrue(es_oficio_buscado("plomeros", "Comercio", "Beto Gasista"))
-        # Con 9 reseñas un gasista de pueblo pasa; una ferretería no usa esta vía.
+        # Oficios de pueblo: no se caen por pocas o cero reseñas, ni por un rating flojo con pocas opiniones.
         self.assertTrue(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", True))
         self.assertFalse(pasa_umbral_o_oficio(4.3, 9, 4.0, 20, "and", False))
-        self.assertFalse(pasa_umbral_o_oficio(1.0, 1, 4.0, 20, "and", True))
+        self.assertTrue(pasa_umbral_o_oficio(1.0, 1, 4.0, 20, "and", True))
+        self.assertTrue(pasa_umbral_o_oficio(None, 0, 4.0, 0, "and", True))
+        self.assertTrue(pasa_umbral_o_oficio(3.0, 8, 4.0, 0, "and", True))
+        # Con 10 o más reseñas, un rating claramente bajo sí se descarta.
+        self.assertFalse(pasa_umbral_o_oficio(3.0, 15, 4.0, 0, "and", True))
+        self.assertTrue(pasa_umbral_o_oficio(4.2, 15, 4.0, 0, "and", True))
         chubut = provincias_buscadas(["Comodoro Rivadavia, Chubut, Argentina", "Trelew, Chubut, Argentina"])
         self.assertEqual(chubut, {"chubut"})
         self.assertTrue(fuera_de_la_zona("Gral. Lamadrid 646, B1672 Villa Lynch, Provincia de Buenos Aires, Argentina", chubut))

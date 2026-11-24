@@ -185,13 +185,18 @@ def pasa_umbral(rating, reviews, min_rating: float, min_reviews: int, modo: str 
     return ok_rating or ok_reviews
 
 
+# Con pocas reseñas el promedio no es confiable (un 3.0 con 2 opiniones no dice mucho).
+# Recién con 10 o más se puede descartar a un oficio por mala puntuación.
+RESENAS_PARA_CONFIAR_RATING = 10
+
+
 def pasa_umbral_o_oficio(rating, reviews, min_rating: float, min_reviews: int, modo: str, es_oficio: bool) -> bool:
-    """Si es claramente el oficio buscado, no exigimos el mínimo de reseñas (pueblos chicos).
-    Si tiene reseñas, el rating igual tiene que llegar al mínimo."""
+    """Si es claramente el oficio, no lo sacamos por tener pocas o cero reseñas.
+    El mínimo de rating solo se aplica cuando hay reseñas de sobra para confiar."""
     if not es_oficio:
         return pasa_umbral(rating, reviews, min_rating, min_reviews, modo)
     n = reviews if reviews is not None else 0
-    if n <= 0:
+    if n < RESENAS_PARA_CONFIAR_RATING:
         return True
     r = rating if rating is not None else 0.0
     return r >= min_rating
@@ -254,9 +259,17 @@ CATEGORIAS_TIENDA = (
     "casa de electricidad",
     "proveedor de materiales de construccion",
     "proveedor de materiales",
+    "proveedor de equipos de calefaccion",
+    "proveedor de equipos electricos",
+    "proveedor de equipos",
     "mercado de materiales de construccion",
     "mercado de materiales",
     "tienda de material sanitario",
+    "tienda de calefaccion",
+    "casa de sanitarios",
+    "distribuidor",
+    "distribuidora",
+    "mayorista",
     "establecimiento de venta de madera",
     "tienda de electricidad",
     "empresa de suministros industriales",
@@ -287,6 +300,8 @@ def categoria_de_tienda(categoria: str) -> bool:
             return True
     if c.startswith("tienda de ") or c.startswith("tienda "):
         return True
+    if c.startswith("proveedor de ") or c.startswith("distribuidor") or c.startswith("distribuidora"):
+        return True
     return False
 
 
@@ -297,7 +312,9 @@ NOMBRE_TIENDA = (
     "ferreterias",
     "todo para la construccion",
     "materiales de construccion",
+    "materiales electricos",
     "pintureria",
+    "casa de sanitarios",
 )
 
 
@@ -305,7 +322,12 @@ def nombre_de_tienda(nombre: str) -> bool:
     n = _norm_txt(nombre)
     if not n:
         return False
-    return any(tok in n for tok in NOMBRE_TIENDA)
+    if any(tok in n for tok in NOMBRE_TIENDA):
+        return True
+    # "Laboulaye Sanitarios" es un comercio; "sanitarista" o "instalaciones sanitarias" es el oficio.
+    if "sanitarios" in n and "sanitarista" not in n and "instalaciones sanitarias" not in n and "instalacion sanitaria" not in n:
+        return True
+    return False
 
 
 def excluir_como_tienda(rubro: str, categoria: str, nombre: str = "") -> bool:

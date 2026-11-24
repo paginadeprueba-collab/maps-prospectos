@@ -766,14 +766,14 @@
         <div id="minResenasWrap" style="margin:16px 0 8px">
         <label class="label-sm" for="minResenasBox">Mínimo de reseñas</label>
         <select id="minResenasBox" class="field" aria-label="Mínimo de reseñas">
-          <option value="0">Sin mínimo</option>
+          <option value="0" selected>Sin mínimo</option>
           <option value="3">3 o más</option>
-          <option value="5" selected>5 o más</option>
+          <option value="5">5 o más</option>
           <option value="10">10 o más</option>
           <option value="20">20 o más</option>
           <option value="30">30 o más</option>
         </select>
-        <p class="hint">Siempre sin sitio web. Cuantas más reseñas, mejor: después se ordenan de mayor a menor.</p>
+        <p class="hint">Siempre sin sitio web y sin ferreterías ni comercios. El mínimo arranca en 0: después se ordenan de mayor a menor reseñas.</p>
         </div>
 
         <button type="button" class="btn btn-primary btn-block" id="btnBuscar">Buscar</button>
@@ -1861,7 +1861,7 @@
       let fallbackQ = "";
       const profunda = !!(el("chkProfunda") && el("chkProfunda").checked);
       const depth = profunda ? DEPTH_PROFUNDA : DEPTH_RAPIDA;
-      const minResenas = String(minResenasDe("minResenasBox", 5));
+      const minResenas = String(minResenasDe("minResenasBox", 0));
 
       if (searchMode === "caba") {
         const rubro = (el("rubroBox").value || "").trim();

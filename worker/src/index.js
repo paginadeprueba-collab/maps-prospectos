@@ -212,7 +212,7 @@ async function handleBuscar(request, env) {
     busqueda: label.slice(0, 200),
     expandir: String(expandir),
     min_rating: String(body.min_rating || "4.0"),
-    min_resenas: String(body.min_resenas || "5"),
+    min_resenas: String(body.min_resenas == null || body.min_resenas === "" ? "0" : body.min_resenas),
     profundidad: String(body.profundidad || "1"),
     queries: hasExplicit ? JSON.stringify(queries) : "",
   };
