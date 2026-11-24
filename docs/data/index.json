@@ -1,6 +1,35 @@
 {
   "searches": [
     {
+      "id": "20261124-041822_plomeros-en-chubut",
+      "query": "plomeros en Chubut",
+      "date": "20261124-041822",
+      "date_label": "2026-11-24 04:18 (America/Buenos_Aires)",
+      "n_raw": 150,
+      "n_limpio": 13,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Comodoro Rivadavia, Chubut, Argentina",
+        "Trelew, Chubut, Argentina",
+        "Puerto Madryn, Chubut, Argentina",
+        "Rawson, Chubut, Argentina",
+        "Esquel, Chubut, Argentina",
+        "Rada Tilly, Chubut, Argentina",
+        "Gaiman, Chubut, Argentina",
+        "Sarmiento, Chubut, Argentina",
+        "Lago Puelo, Chubut, Argentina",
+        "Playa Unión, Chubut, Argentina",
+        "José de San Martín, Chubut, Argentina",
+        "Camarones, Chubut, Argentina",
+        "Tecka, Chubut, Argentina",
+        "Paso de Indios, Chubut, Argentina",
+        "Alto Río Senguer, Chubut, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-041822_plomeros-en-chubut.json"
+    },
+    {
       "id": "20261124-040205_plomeros-en-chubut",
       "query": "plomeros en Chubut",
       "date": "20261124-040205",
