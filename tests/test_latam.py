@@ -23,6 +23,10 @@ from filtrar import (  # noqa: E402
     ciudades_buscadas,
     excluir_como_tienda,
     fuera_de_la_zona,
+    coords_de_fila,
+    km_entre,
+    puntos_en_zona,
+    fuera_de_zona_fila,
     fuera_de_las_ciudades,
     pasa_umbral_o_oficio,
     provincias_buscadas,
@@ -467,6 +471,35 @@ class FiltrarTest(unittest.TestCase):
         self.assertFalse(excluir_como_ajeno("plomeros", "Instalador de gas", "Gasista urgencias 24 hs"))
         self.assertFalse(excluir_como_ajeno("plomeros", "Fontanero", "Destapes de cloacas Rg"))
         self.assertFalse(excluir_como_ajeno("plomeros", "Empresa de construcción", "Gasista matriculado plomeria y herreria"))
+
+
+    def test_plomeria_en_el_nombre_es_el_oficio(self):
+        # "plomería" no contiene "plomero"; si no está en las claves, se descartaba como ajeno.
+        self.assertTrue(es_oficio_buscado("plomeros", "", "Servicio de Plomeria y Electricidad del Valle"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "", "Servicio de Plomeria y Electricidad del Valle"))
+        self.assertTrue(es_oficio_buscado("plomeros", "Servicios de diseño", "Gali instalaciones. Plomería gas y cloacas"))
+        self.assertFalse(excluir_como_ajeno("plomeros", "Servicios de diseño", "Gali instalaciones. Plomería gas y cloacas"))
+        # Un comercio sigue fuera.
+        self.assertTrue(excluir_como_ajeno("plomeros", "Comercio", "La Casa del Instalador SRL"))
+
+    def test_sin_direccion_usa_coordenadas_de_la_zona(self):
+        vacia = '{"borough":"","street":"","city":"","postal_code":"","state":"","country":""}'
+        provincias = {"catamarca"}
+        ciudades = ["San Fernando del Valle de Catamarca", "Santa María"]
+        # Puntos con dirección en la capital (referencia).
+        refs = [(-28.469, -65.779), (-28.47, -65.78)]
+        # ConstruGas: en la capital, pero Maps no mandó dirección.
+        self.assertFalse(
+            fuera_de_zona_fila(vacia, provincias, ciudades, True, (-28.464534, -65.775160), refs)
+        )
+        # Plomero ya: en Tucumán (~180 km), no hay que colarlo.
+        self.assertTrue(
+            fuera_de_zona_fila(vacia, provincias, ciudades, True, (-26.832859, -65.251696), refs)
+        )
+        # Sin coords seguimos descartando, como antes.
+        self.assertTrue(fuera_de_zona_fila(vacia, provincias, ciudades, True, None, refs))
+        self.assertTrue(fuera_de_la_zona("", provincias))
+
 
     def test_filtro_ciudad_saca_capital_si_no_se_pidio(self):
 

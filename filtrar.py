@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import re
 import sys
 import unicodedata
@@ -383,8 +384,8 @@ def categoria_ajena(categoria: str) -> bool:
 
 # Si coinciden, no exigimos 20 reseñas (en pueblos chicos casi nadie las tiene).
 OFICIO_POR_RUBRO = {
-    "plomeros": ("fontanero", "plomero", "gasista", "instalador de gas", "plumber", "destapacion", "destapaciones"),
-    "gasistas": ("gasista", "instalador de gas", "plomero", "fontanero"),
+    "plomeros": ("fontanero", "plomero", "plomeria", "gasista", "instalador de gas", "plumber", "destapacion", "destapaciones", "cloaca", "cloacas"),
+    "gasistas": ("gasista", "instalador de gas", "plomero", "plomeria", "fontanero"),
     "electricistas": ("electricista", "electrician", "instalador electrico"),
     "cerrajeros": ("cerrajero", "locksmith"),
     "pintores": ("pintor", "painter"),
@@ -515,6 +516,62 @@ def direccion_util(direccion: str) -> str:
             parts = [str(data.get(k) or "").strip() for k in ("street", "borough", "city", "state", "postal_code", "country")]
             s = ", ".join(p for p in parts if p)
     return s
+
+
+RADIO_COORDS_KM = 40
+
+
+def coords_de_fila(row: dict) -> tuple[float, float] | None:
+    """Lat/lon del scraper, si vinieron."""
+    lat = parse_float(_get(row, "latitude", "lat", "Latitude"))
+    lon = parse_float(_get(row, "longitude", "lng", "lon", "Longitude"))
+    if lat is None or lon is None:
+        return None
+    if lat == 0 and lon == 0:
+        return None
+    return (lat, lon)
+
+
+def km_entre(a: tuple[float, float], b: tuple[float, float]) -> float:
+    rlat1, rlon1, rlat2, rlon2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    dlat = rlat2 - rlat1
+    dlon = rlon2 - rlon1
+    h = math.sin(dlat / 2) ** 2 + math.cos(rlat1) * math.cos(rlat2) * math.sin(dlon / 2) ** 2
+    return 6371.0 * 2 * math.atan2(math.sqrt(h), math.sqrt(max(0.0, 1 - h)))
+
+
+def puntos_en_zona(rows: list, provincias: set[str], ciudades: list[str], aplicar: bool) -> list[tuple[float, float]]:
+    """Puntos de filas que sí tienen dirección dentro de la zona pedida."""
+    refs: list[tuple[float, float]] = []
+    for row in rows:
+        d = _get(row, "address", "complete_address", "direccion", "Address")
+        if not direccion_util(d):
+            continue
+        if fuera_de_la_zona(d, provincias) or fuera_de_las_ciudades(d, ciudades, aplicar):
+            continue
+        c = coords_de_fila(row)
+        if c:
+            refs.append(c)
+    return refs
+
+
+def fuera_de_zona_fila(
+    direccion: str,
+    provincias: set[str],
+    ciudades: list[str],
+    aplicar: bool,
+    latlon: tuple[float, float] | None = None,
+    refs: list[tuple[float, float]] | None = None,
+) -> bool:
+    """Como fuera_de_la_zona + ciudades, pero si no hay dirección usa coordenadas."""
+    en_texto = fuera_de_la_zona(direccion, provincias) or fuera_de_las_ciudades(direccion, ciudades, aplicar)
+    if not en_texto:
+        return False
+    if direccion_util(direccion):
+        return True
+    if latlon and refs:
+        return not any(km_entre(latlon, r) <= RADIO_COORDS_KM for r in refs)
+    return True
 
 
 def fuera_de_la_zona(direccion: str, provincias: set[str]) -> bool:
@@ -804,6 +861,7 @@ def main() -> int:
     provincias_sel = provincias_buscadas(lugares_sel)
     ciudades_sel = ciudades_buscadas(lugares_sel)
     filtrar_ciudad = aplica_filtro_ciudad(lugares_sel)
+    refs_zona = puntos_en_zona(deduped, provincias_sel, ciudades_sel, filtrar_ciudad)
 
     total = len(rows)
     sin_web = []
@@ -822,8 +880,13 @@ def main() -> int:
         if excluir_como_ajeno(rubro_sel, categoria, nombre):
             n_ajeno += 1
             continue
-        if fuera_de_la_zona(direccion, provincias_sel) or fuera_de_las_ciudades(
-            direccion, ciudades_sel, filtrar_ciudad
+        if fuera_de_zona_fila(
+            direccion,
+            provincias_sel,
+            ciudades_sel,
+            filtrar_ciudad,
+            coords_de_fila(row),
+            refs_zona,
         ):
             n_fuera += 1
             continue
