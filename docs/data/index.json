@@ -1,6 +1,23 @@
 {
   "searches": [
     {
+      "id": "20261124-150313_plomeros-en-ushuaia-tierra-del-fuego-arg",
+      "query": "plomeros en Ushuaia, Tierra del Fuego, Argentina; plomeros en Río Grande, Tierra del Fuego, Argentina; plomeros en Tolhuin, Tierra del Fuego, Argentina",
+      "date": "20261124-150313",
+      "date_label": "2026-11-24 15:03 (America/Buenos_Aires)",
+      "n_raw": 67,
+      "n_limpio": 1,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Ushuaia, Tierra del Fuego, Argentina",
+        "Río Grande, Tierra del Fuego, Argentina",
+        "Tolhuin, Tierra del Fuego, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-150313_plomeros-en-ushuaia-tierra-del-fuego-arg.json"
+    },
+    {
       "id": "20261124-114254_plomeros-3-ciudades-argentina",
       "query": "plomeros · 3 ciudades Argentina",
       "date": "20261124-114254",

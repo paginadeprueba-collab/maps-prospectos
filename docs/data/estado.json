@@ -1,7 +1,3 @@
 {
-  "status": "in_progress",
-  "query": "plomeros en Ushuaia, Tierra del Fuego, Argentina; plomeros en Río Grande, Tierra del Fuego, Argentina; plomeros en Tolhuin, Tierra del Fuego, Argentina",
-  "started_at": "2026-11-24T14:58:19-03:00",
-  "started_at_label": "2026-11-24 14:58 (America/Buenos_Aires)",
-  "started_at_epoch": 1795543099
+  "status": "idle"
 }

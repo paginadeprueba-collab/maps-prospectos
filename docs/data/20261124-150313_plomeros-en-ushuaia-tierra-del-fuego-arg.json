@@ -1,0 +1,52 @@
+{
+  "id": "20261124-150313_plomeros-en-ushuaia-tierra-del-fuego-arg",
+  "query": "plomeros en Ushuaia, Tierra del Fuego, Argentina; plomeros en Río Grande, Tierra del Fuego, Argentina; plomeros en Tolhuin, Tierra del Fuego, Argentina",
+  "date": "20261124-150313",
+  "date_label": "2026-11-24 15:03 (America/Buenos_Aires)",
+  "n_raw": 67,
+  "n_limpio": 1,
+  "rubro": "plomeros",
+  "barrios": [],
+  "lugares": [
+    "Ushuaia, Tierra del Fuego, Argentina",
+    "Río Grande, Tierra del Fuego, Argentina",
+    "Tolhuin, Tierra del Fuego, Argentina"
+  ],
+  "pais": "Argentina",
+  "prospects": [
+    {
+      "nombre": "Gasista urgencias 24 hs",
+      "reseñas": "24",
+      "rating": "5.0",
+      "telefono": "2901532004",
+      "whatsapp": "https://wa.me/5492901532004",
+      "link_maps": "https://www.google.com/maps/place/Gasista+urgencias+24+hs/data=!4m7!3m6!1s0xbc4c3d89cf1b9b43:0xea67ce607968d276!8m2!3d-54.7768!4d-68.2757044!16s%2Fg%2F11zxcvs9x8!19sChIJQ5sbz4k9TLwRdtJoeWDOZ-o?authuser=0&hl=es&g_ep=EgoyMDI2MTExOC4xIJJjKgBIAVAD&rclk=1",
+      "direccion": "Valle Andorra quinta 33, V9411IVR Ushuaia, Tierra del Fuego, Argentina",
+      "categoria": "Instalador de gas",
+      "horarios": "lun a dom Abierto las 24 horas",
+      "pais": "Argentina",
+      "reseñas_texto": [
+        {
+          "nombre": "Multijuegos",
+          "texto": "Muy recomendable, profesional, super prolijo. La primera vez que nos hace un trabajo y sin duda los trabajos a futuro serán con el. Se ocupo de llamarnos para…",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Gustavo Codella",
+          "texto": "Exelente servicio,súper profesional,correcto, educado y amable y hasta tuvo la cortesía de arreglar algo que vio mal y no estaba en el trato",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos Gustavo Guevara",
+          "texto": "Excelente atención y muy profesional en su trabajo .",
+          "estrellas": 5
+        },
+        {
+          "nombre": "María Virginia López",
+          "texto": "Super recomendado! Muy prolijo, eficiente y una persona agradable :)",
+          "estrellas": 5
+        }
+      ]
+    }
+  ]
+}
