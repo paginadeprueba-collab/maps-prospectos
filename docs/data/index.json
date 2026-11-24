@@ -1,6 +1,23 @@
 {
   "searches": [
     {
+      "id": "20261124-114254_plomeros-3-ciudades-argentina",
+      "query": "plomeros · 3 ciudades Argentina",
+      "date": "20261124-114254",
+      "date_label": "2026-11-24 11:42 (America/Buenos_Aires)",
+      "n_raw": 33,
+      "n_limpio": 6,
+      "rubro": "plomeros",
+      "barrios": [],
+      "lugares": [
+        "Ushuaia, Tierra del Fuego, Argentina",
+        "Río Grande, Tierra del Fuego, Argentina",
+        "Tolhuin, Tierra del Fuego, Argentina"
+      ],
+      "pais": "Argentina",
+      "file": "20261124-114254_plomeros-3-ciudades-argentina.json"
+    },
+    {
       "id": "20261124-112435_plomeros-3-ciudades-cordoba-minimo-0",
       "query": "plomeros · 3 ciudades Córdoba (mínimo 0)",
       "date": "20261124-112435",
