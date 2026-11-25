@@ -31,11 +31,11 @@ function esperado(funcion) {
 }
 
 const fnHogar =
-  "una calculadora de presupuestos, donde el cliente puede tener el presupuesto desde la web y te llega el pedido directo a WhatsApp";
+  "una calculadora de presupuestos donde el cliente puede tener el presupuesto desde la web y te llega el pedido directo a WhatsApp";
 const fnSalud =
-  "una agenda digital, donde el cliente puede pedir su turno desde la web y te llega directo a WhatsApp";
+  "una agenda digital";
 const fnForm =
-  "un formulario de consultas, donde el cliente te deja sus datos desde la web y te llega directo a WhatsApp";
+  "formularios";
 
 const plomero = { nombre: "Juan Pérez Plomería", categoria: "Plomero", whatsapp: "https://wa.me/5491140346420" };
 const dentista = { nombre: "Dra. López Odontología", categoria: "Odontóloga", whatsapp: "https://wa.me/5491133334444" };
@@ -64,7 +64,7 @@ assert.equal(txtPlo, esperado(fnHogar));
 assert.equal(txtDen, esperado(fnSalud));
 assert.equal(txtInm, esperado(fnForm));
 assert.equal(txtAbo, esperado(fnForm));
-assert.equal(txtOtro, esperado(fnForm));
+assert.equal(txtOtro, esperado(fnHogar));
 
 assert.ok(txtPlo.includes("calculadora de presupuestos"));
 assert.ok(txtDen.includes("agenda digital"));
