@@ -614,6 +614,17 @@
       .ejemplo-sheet { align-items: center; }
       .ejemplo-card { border-radius: 12px; }
     }
+    .wa-editar-grupo { margin-top: 14px; }
+    .wa-editar-grupo .label-sm { display: block; margin-bottom: 4px; }
+    .wa-txt {
+      width: 100%;
+      min-height: 150px;
+      margin: 0 0 8px;
+      resize: vertical;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    #waMsgSheet { z-index: 85; }
     .opt-row {
       display: flex;
       flex-wrap: wrap;
@@ -786,6 +797,8 @@
           <textarea id="waTemplate" class="field" spellcheck="true"></textarea>
           <p class="hint">Usá {nombre} para el nombre del negocio. Se guarda en este celular.</p>
         </details>
+        <button type="button" class="btn btn-ghost btn-block" id="btnEditarWa" style="margin-top:8px">Editar mensaje de WhatsApp</button>
+        <p class="hint">Cambia el texto que se manda con la web de ejemplo, según el rubro. Se guarda en este celular.</p>
       </div>
 
       <p class="section-title">Anteriores</p>
@@ -802,6 +815,7 @@
       <a href="#/" class="back" id="btnBack">← Volver</a>
       <h2 id="detailTitle" style="margin:0 0 4px;font-size:1.35rem;letter-spacing:-0.03em"></h2>
       <p class="count-line" id="detailMeta"></p>
+      <button type="button" class="btn btn-ghost btn-block" id="btnEditarWaDetalle" style="margin:8px 0 12px">Editar mensaje de WhatsApp</button>
 
       <div class="tabs" role="tablist">
         <button type="button" class="tab active" data-filter="nuevos" role="tab">Nuevos</button>
@@ -892,7 +906,39 @@
       <p class="hint" id="ejemploSheetMsg">Buscando reseñas en Google Maps…</p>
       <div id="ejemploDisenos"></div>
       <p class="hint">WhatsApp abre el mensaje listo y no lo envía solo.</p>
+      <button type="button" class="btn btn-ghost btn-block" id="btnEditarWaEjemplo">Editar mensaje de WhatsApp</button>
       <button type="button" class="btn btn-ghost btn-block" id="ejemploCerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="waMsgSheet" class="ejemplo-sheet hidden" role="dialog" aria-modal="true" aria-labelledby="waMsgTitle" hidden>
+    <div class="ejemplo-card">
+      <h3 id="waMsgTitle">Editar mensaje de WhatsApp</h3>
+      <p class="hint">Este texto se usa cuando mandás la web de ejemplo por WhatsApp. Usá {NOMBRE} si querés el nombre del negocio y {LINK} para el link de la muestra. Se guarda en este celular.</p>
+      <div class="wa-editar-grupo">
+        <label class="label-sm" for="waTxtHogar">Servicios del hogar</label>
+        <textarea id="waTxtHogar" class="field wa-txt" spellcheck="true" data-wa-grupo="hogar"></textarea>
+        <button type="button" class="btn btn-ghost btn-sm" data-wa-restaurar="hogar">Restaurar texto original</button>
+      </div>
+      <div class="wa-editar-grupo">
+        <label class="label-sm" for="waTxtSalud">Salud</label>
+        <textarea id="waTxtSalud" class="field wa-txt" spellcheck="true" data-wa-grupo="salud"></textarea>
+        <button type="button" class="btn btn-ghost btn-sm" data-wa-restaurar="salud">Restaurar texto original</button>
+      </div>
+      <div class="wa-editar-grupo">
+        <label class="label-sm" for="waTxtLegal">Inmobiliarias y abogados</label>
+        <textarea id="waTxtLegal" class="field wa-txt" spellcheck="true" data-wa-grupo="legal"></textarea>
+        <button type="button" class="btn btn-ghost btn-sm" data-wa-restaurar="legal">Restaurar texto original</button>
+      </div>
+      <div class="wa-editar-grupo">
+        <label class="label-sm" for="waTxtOtros">Otros rubros</label>
+        <textarea id="waTxtOtros" class="field wa-txt" spellcheck="true" data-wa-grupo="otros"></textarea>
+        <button type="button" class="btn btn-ghost btn-sm" data-wa-restaurar="otros">Restaurar texto original</button>
+      </div>
+      <div class="ejemplo-actions" style="margin-top:16px">
+        <button type="button" class="btn btn-primary" id="waMsgGuardar">Guardar</button>
+        <button type="button" class="btn btn-ghost" id="waMsgCerrar">Cerrar</button>
+      </div>
     </div>
   </div>
 
@@ -2293,29 +2339,152 @@
       return u.toString();
     }
 
-    function waTextoEjemplo(url) {
+    const LS_WA_EJEMPLO = "fp_wa_textos_ejemplo";
+    const WA_FUNCIONES = {
+      hogar: "una calculadora de presupuestos, donde el cliente puede tener el presupuesto desde la web y te llega el pedido directo a WhatsApp",
+      salud: "una agenda digital, donde el cliente puede pedir su turno desde la web y te llega directo a WhatsApp",
+      legal: "un formulario de consultas, donde el cliente te deja sus datos desde la web y te llega directo a WhatsApp",
+      otros: "un formulario de consultas, donde el cliente te deja sus datos desde la web y te llega directo a WhatsApp"
+    };
+    function waMensajeBase(funcion) {
       return (
-        "Hola, ¿cómo estás?\n" +
-        "Te encontré en Google Maps y estuve buscando información sobre tu negocio, pero no encontré un sitio donde pueda ver tus trabajos, servicios, reseñas o calcular fácilmente cuánto les puede costar un trabajo.\n\n" +
-        "Me gustaría ayudarte a mejorar tu servicio. Por eso preparé una muestra de sitio web para tu negocio con una calculadora de presupuestos que envía las solicitudes directo a tu WhatsApp:\n" +
-        String(url || "") + "\n\n" +
-        "¿Qué te parece la web?\n" +
-        "Si te interesa, podemos ponerla online con 2 años de mantenimiento."
+        "Hola, ¿cómo estás? Mi nombre es Carlos.\n" +
+        "Vi tu negocio en Google Maps y te quería consultar si te interesa tener una página web para tus servicios.\n" +
+        "Cuenta con " + funcion + ".\n\n" +
+        "Te hice una muestra gratis de cómo quedaría tu página web:\n" +
+        "{LINK}\n\n" +
+        "¿Qué te pareció la muestra?"
       );
+    }
+    const WA_MENSAJES_DEFAULT = {
+      hogar: waMensajeBase(WA_FUNCIONES.hogar),
+      salud: waMensajeBase(WA_FUNCIONES.salud),
+      legal: waMensajeBase(WA_FUNCIONES.legal),
+      otros: waMensajeBase(WA_FUNCIONES.otros)
+    };
+    const WA_GRUPO_PLANTILLA = { hogar: "hogar", constructora: "hogar", odontologia: "salud", psicologia: "salud", juridico: "legal" };
+    const WA_ALIAS = {
+      legal: ["inmobiliaria", "inmobiliarias", "inmobiliario", "corredor inmobiliario", "abogado", "abogados", "abogada", "abogadas", "juridico", "estudio juridico", "estudio de abogados", "bufete", "despacho de abogados", "asesoria legal", "asesoria juridica", "servicios legales", "escribano", "escribania", "notario", "notaria"],
+      salud: ["odontologo", "odontologos", "odontologa", "odontologia", "dentista", "dentistas", "clinica dental", "consultorio odontologico", "consultorio dental", "ortodoncia", "ortodoncista", "implantes dentales", "estetica dental", "psicologo", "psicologos", "psicologa", "psicologia", "psicoterapeuta", "psicoterapia", "psicoanalista", "salud mental", "kinesiologo", "kinesiologia", "fisioterapia", "fisiatra", "medico", "medica", "medicos", "medicas", "consultorio medico", "clinica", "salud", "estetica", "cirugia estetica", "centro de estetica", "pediatra", "nutricionista", "dermatologo", "traumatologo", "cardiologo", "ginecologo", "oftalmologo"],
+      hogar: ["plomero", "plomeros", "plomeria", "gasista", "gasistas", "electricista", "electricistas", "pintor", "pintores", "constructora", "constructoras", "construccion", "arquitecto", "arquitectos", "arquitectura", "reformas", "albanil", "albaniles", "cerrajero", "cerrajeria", "fontanero", "fontaneros", "fontaneria", "destapaciones", "destape", "gasfiter", "gasfiteria", "jardinero", "jardineria", "fumigador", "fumigacion", "herrero", "herreria", "carpintero", "carpinteria", "aire acondicionado", "climatizacion", "techista", "impermeabilizacion", "mantenimiento del hogar", "servicios del hogar", "hogar"]
+    };
+
+    function waNormTexto(s) {
+      return String(s || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function waHayAlias(texto, lista) {
+      return lista.some((a) => {
+        const p = waNormTexto(a);
+        if (!p) return false;
+        const re = new RegExp("(^|[^a-z0-9])" + p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "([^a-z0-9]|$)", "i");
+        return re.test(texto);
+      });
+    }
+
+    function waGrupoDe(r, rubroBusqueda) {
+      if (typeof prepararEjemplo === "function" && r) {
+        try {
+          const listo = prepararEjemplo(r);
+          const id = listo && listo.grupo && listo.grupo.id;
+          if (id && WA_GRUPO_PLANTILLA[id]) return WA_GRUPO_PLANTILLA[id];
+        } catch (e) {}
+      }
+      const partes = [
+        rubroBusqueda,
+        r && r.rubro,
+        r && r.categoria,
+        r && r.nombre,
+        (typeof rubroDeBusqueda === "function") ? rubroDeBusqueda() : ""
+      ];
+      const t = waNormTexto(partes.filter(Boolean).join(" "));
+      if (waHayAlias(t, WA_ALIAS.legal)) return "legal";
+      if (waHayAlias(t, WA_ALIAS.salud)) return "salud";
+      if (waHayAlias(t, WA_ALIAS.hogar)) return "hogar";
+      return "otros";
+    }
+
+    function waTextosGuardados() {
+      try {
+        if (typeof localStorage === "undefined") return {};
+        const raw = localStorage.getItem(LS_WA_EJEMPLO);
+        if (!raw) return {};
+        const o = JSON.parse(raw);
+        return o && typeof o === "object" ? o : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function waTextoEjemplo(url, r, textosGuardados) {
+      const grupo = waGrupoDe(r);
+      const saved = textosGuardados || waTextosGuardados();
+      let tpl = (saved && saved[grupo]) || WA_MENSAJES_DEFAULT[grupo] || WA_MENSAJES_DEFAULT.otros;
+      const nombre = (r && r.nombre) || "";
+      return String(tpl)
+        .replace(/\{NOMBRE\}/g, nombre)
+        .replace(/\{LINK\}/g, String(url || ""))
+        .replace(/\{FUNCION\}/g, WA_FUNCIONES[grupo] || WA_FUNCIONES.otros);
     }
 
     function waEjemplo(r, url) {
-      const texto = waTextoEjemplo(url);
+      const texto = waTextoEjemplo(url, r);
       const base = String((r && r.whatsapp) || "");
       const m = base.match(/https:\/\/wa\.me\/\d+/);
       return (m ? m[0] : "https://wa.me/") + "?text=" + encodeURIComponent(texto);
     }
+
 
     function cerrarEjemploSheet() {
       const sheet = el("ejemploSheet");
       if (!sheet) return;
       sheet.classList.add("hidden");
       sheet.hidden = true;
+    }
+
+    const WA_EDITOR_IDS = { hogar: "waTxtHogar", salud: "waTxtSalud", legal: "waTxtLegal", otros: "waTxtOtros" };
+
+    function cerrarEditorWa() {
+      const sheet = el("waMsgSheet");
+      if (!sheet) return;
+      sheet.classList.add("hidden");
+      sheet.hidden = true;
+    }
+
+    function abrirEditorWa() {
+      const saved = waTextosGuardados();
+      Object.keys(WA_EDITOR_IDS).forEach((g) => {
+        const box = el(WA_EDITOR_IDS[g]);
+        if (box) box.value = saved[g] || WA_MENSAJES_DEFAULT[g];
+      });
+      const sheet = el("waMsgSheet");
+      if (!sheet) return;
+      sheet.classList.remove("hidden");
+      sheet.hidden = false;
+    }
+
+    function guardarEditorWa() {
+      const o = {};
+      Object.keys(WA_EDITOR_IDS).forEach((g) => {
+        const box = el(WA_EDITOR_IDS[g]);
+        const val = box ? String(box.value || "").trim() : "";
+        o[g] = val || WA_MENSAJES_DEFAULT[g];
+      });
+      localStorage.setItem(LS_WA_EJEMPLO, JSON.stringify(o));
+      if (ejemploActual && ejemploActual.r) {
+        pintarDisenosEjemplo(ejemploActual.urls || [], ejemploActual.r);
+      }
+      cerrarEditorWa();
+    }
+
+    function restaurarEditorWa(grupo) {
+      const box = el(WA_EDITOR_IDS[grupo]);
+      if (box) box.value = WA_MENSAJES_DEFAULT[grupo] || "";
     }
 
     function paginasDe(grupo) {
@@ -2346,12 +2515,16 @@
       }).join("");
     }
 
+    let ejemploActual = null;
+
     function mostrarEjemploSheet(urls, r, aviso) {
+      const lista = Array.isArray(urls) ? urls : [urls].filter(Boolean);
+      ejemploActual = { urls: lista, r: r };
       const sheet = el("ejemploSheet");
       sheet.classList.remove("hidden");
       sheet.hidden = false;
       el("ejemploSheetNombre").textContent = (r && r.nombre) || "";
-      pintarDisenosEjemplo(Array.isArray(urls) ? urls : [urls].filter(Boolean), r);
+      pintarDisenosEjemplo(lista, r);
       el("ejemploSheetMsg").textContent = aviso || "";
     }
 
@@ -2550,8 +2723,26 @@
       setTimeout(() => { btn.textContent = prev; }, 1600);
     });
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && !el("ejemploSheet").classList.contains("hidden")) cerrarEjemploSheet();
+      if (e.key !== "Escape") return;
+      if (el("waMsgSheet") && !el("waMsgSheet").classList.contains("hidden")) {
+        cerrarEditorWa();
+        return;
+      }
+      if (!el("ejemploSheet").classList.contains("hidden")) cerrarEjemploSheet();
     });
+    ["btnEditarWa", "btnEditarWaDetalle", "btnEditarWaEjemplo"].forEach((id) => {
+      const b = el(id);
+      if (b) b.addEventListener("click", abrirEditorWa);
+    });
+    if (el("waMsgCerrar")) el("waMsgCerrar").addEventListener("click", cerrarEditorWa);
+    if (el("waMsgGuardar")) el("waMsgGuardar").addEventListener("click", guardarEditorWa);
+    if (el("waMsgSheet")) {
+      el("waMsgSheet").addEventListener("click", (e) => {
+        if (e.target === el("waMsgSheet")) cerrarEditorWa();
+        const rest = e.target.closest && e.target.closest("[data-wa-restaurar]");
+        if (rest) restaurarEditorWa(rest.getAttribute("data-wa-restaurar"));
+      });
+    }
     el("btnBuscar").addEventListener("click", launchSearch);
     if (el("btnCompletarResenas")) {
       el("btnCompletarResenas").addEventListener("click", completarResenasGuardadas);
