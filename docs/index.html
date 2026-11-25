@@ -1266,12 +1266,7 @@
     }
 
     function telHref(r) {
-      if (!r) return "";
-      if (window.FabricaLatam && typeof FabricaLatam.telDesdeTelefono === "function" && r.telefono) {
-        const href = FabricaLatam.telDesdeTelefono(r.telefono, r.direccion);
-        if (href) return href;
-      }
-      const m = String((r.whatsapp || "")).match(/wa\.me\/(\d+)/);
+      const m = String((r && r.whatsapp) || "").match(/wa\.me\/(\d+)/);
       return m ? "tel:+" + m[1] : "";
     }
 
@@ -2630,7 +2625,7 @@
         const tel = telHref(r);
         if (wa) {
           actions += `<a class="btn btn-wa" href="${esc(wa)}" target="_blank" rel="noopener">WhatsApp</a>`;
-        } else if (r.telefono && !tel) {
+        } else if (r.telefono) {
           actions += `<span class="btn btn-ghost" style="flex:1;cursor:default">Tel ${esc(r.telefono)}</span>`;
         }
         if (tel) {
