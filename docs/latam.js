@@ -81,6 +81,13 @@
     return "";
   }
 
+  /* Mismo número que WhatsApp, para marcar con un toque: tel:+549… / tel:+598… */
+  function telDesdeTelefono(tel, direccion) {
+    var wa = waDesdeTelefono(tel, direccion);
+    var m = String(wa || "").match(/wa\.me\/(\d+)/);
+    return m ? "tel:+" + m[1] : "";
+  }
+
   /* Código ISO del país (para links como Meta Ads Library, que el Worker arma con country=AR). */
   var ISO = { argentina: "AR", uruguay: "UY", chile: "CL", paraguay: "PY", bolivia: "BO", peru: "PE", ecuador: "EC", colombia: "CO",
     venezuela: "VE", mexico: "MX", "costa rica": "CR", panama: "PA", guatemala: "GT", honduras: "HN", "el salvador": "SV",
@@ -92,7 +99,7 @@
     return String(url).replace(/([?&]country=)AR\b/, "$1" + iso);
   }
 
-  var api = { waDesdeTelefono: waDesdeTelefono, isoDe: isoDe, adsLibraryPais: adsLibraryPais, MAX_CIUDADES: MAX_CIUDADES, AVISO_BUSQUEDAS: AVISO_BUSQUEDAS, barriosDe: barriosDe, norm: norm, paisPorNombre: paisPorNombre, lugar: lugar, buildQueries: buildQueries, clave: clave, esInternacional: esInternacional };
+  var api = { waDesdeTelefono: waDesdeTelefono, telDesdeTelefono: telDesdeTelefono, isoDe: isoDe, adsLibraryPais: adsLibraryPais, MAX_CIUDADES: MAX_CIUDADES, AVISO_BUSQUEDAS: AVISO_BUSQUEDAS, barriosDe: barriosDe, norm: norm, paisPorNombre: paisPorNombre, lugar: lugar, buildQueries: buildQueries, clave: clave, esInternacional: esInternacional };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.FabricaLatam = api;
 })(typeof window !== "undefined" ? window : globalThis);

@@ -104,6 +104,7 @@
     }
     .btn-maps { background: var(--maps); border-color: var(--maps); color: #fff; flex: 1; }
     .btn-wa { background: var(--wa); border-color: var(--wa); color: #fff; flex: 1; }
+    .btn-llamar { background: var(--accent); border-color: var(--accent); color: #fff; flex: 1; }
     .btn-ghost {
       background: transparent;
       border: 1px solid var(--border);
@@ -1262,6 +1263,16 @@
       const msg = waMessage(r.nombre || "");
       const sep = base.includes("?") ? "&" : "?";
       return base + sep + "text=" + encodeURIComponent(msg);
+    }
+
+    function telHref(r) {
+      if (!r) return "";
+      if (window.FabricaLatam && typeof FabricaLatam.telDesdeTelefono === "function" && r.telefono) {
+        const href = FabricaLatam.telDesdeTelefono(r.telefono, r.direccion);
+        if (href) return href;
+      }
+      const m = String((r.whatsapp || "")).match(/wa\.me\/(\d+)/);
+      return m ? "tel:+" + m[1] : "";
     }
 
     function buildIssueUrl(query) {
@@ -2510,6 +2521,7 @@
           '<button type="button" class="btn btn-primary" data-copy="' + id + '">Copiar link</button>' +
           '<a class="btn btn-ghost' + (url ? "" : " hidden") + '" id="ejemploAbrir' + n + '" href="' + esc(url || "#") + '" target="_blank" rel="noopener">Abrir</a>' +
           '<a class="btn btn-wa' + (url ? "" : " hidden") + '" id="ejemploWa' + n + '" href="' + (url ? esc(waEjemplo(r, url)) : "#") + '" target="_blank" rel="noopener">WhatsApp</a>' +
+          (telHref(r) ? '<a class="btn btn-llamar" href="' + esc(telHref(r)) + '">Llamar</a>' : "") +
           "</div></div>"
         );
       }).join("");
@@ -2615,10 +2627,14 @@
           actions += `<a class="btn btn-maps" href="${esc(r.link_maps)}" target="_blank" rel="noopener">Maps</a>`;
         }
         const wa = waHref(r);
+        const tel = telHref(r);
         if (wa) {
           actions += `<a class="btn btn-wa" href="${esc(wa)}" target="_blank" rel="noopener">WhatsApp</a>`;
-        } else if (r.telefono) {
+        } else if (r.telefono && !tel) {
           actions += `<span class="btn btn-ghost" style="flex:1;cursor:default">Tel ${esc(r.telefono)}</span>`;
+        }
+        if (tel) {
+          actions += `<a class="btn btn-llamar" href="${esc(tel)}">Llamar</a>`;
         }
         const ejemplo = prepararEjemplo(r);
         div.innerHTML =

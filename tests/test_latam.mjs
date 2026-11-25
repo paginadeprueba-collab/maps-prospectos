@@ -79,6 +79,17 @@ t("waDesdeTelefono: búsquedas viejas sin link también tienen WhatsApp", () => 
   assert.equal(L.waDesdeTelefono("+5351234567"), "https://wa.me/5351234567");
   assert.equal(L.waDesdeTelefono(""), "");
 });
+t("telDesdeTelefono: mismo número, listo para marcar", () => {
+  assert.equal(L.telDesdeTelefono("1144445555"), "tel:+5491144445555");
+  assert.equal(L.telDesdeTelefono("91170965656"), "tel:+5491170965656");
+  assert.equal(L.telDesdeTelefono("2966690168"), "tel:+5492966690168");
+  assert.equal(L.telDesdeTelefono("351154123456"), "tel:+5493514123456");
+  assert.equal(L.telDesdeTelefono("1544445555", "Maza 1, Cdad. Autónoma de Buenos Aires, Argentina"), "tel:+5491144445555");
+  assert.equal(L.telDesdeTelefono("1544445555", "x, Córdoba, Argentina"), "");
+  assert.equal(L.telDesdeTelefono("+59899123456"), "tel:+59899123456");
+  assert.equal(L.telDesdeTelefono("+5351234567"), "tel:+5351234567");
+  assert.equal(L.telDesdeTelefono(""), "");
+});
 t("Brasil fuera, Cuba adentro", () => {
   assert.equal(pais("Brasil"), null);
   assert.equal(pais("Cuba").codigo_tel, "53");
