@@ -1,7 +1,3 @@
 {
-  "status": "in_progress",
-  "query": "odontólogos · 31 ciudades Argentina",
-  "started_at": "2026-11-25T23:59:36-03:00",
-  "started_at_label": "2026-11-25 23:59 (America/Buenos_Aires)",
-  "started_at_epoch": 1795661976
+  "status": "idle"
 }
